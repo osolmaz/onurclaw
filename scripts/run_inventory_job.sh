@@ -54,5 +54,8 @@ if ! git diff --quiet -- OPENCLAW_ONUR_INVENTORY.md; then
     commit -m "docs: refresh OpenClaw Onur inventory" >/dev/null
 fi
 
-printf '%s\n' "$report"
+if [ "$report" = "NO_REPLY" ]; then
+  report="NO_CHANGES"
+fi
 
+printf '%s\n' "$report"

@@ -42,7 +42,8 @@ The cron message should be boring and exact:
 
 ```text
 Run exactly: /workspace/scripts/run_inventory_job.sh
-Reply with the command output only.
+If the command output is exactly NO_CHANGES, reply exactly NO_REPLY.
+Otherwise reply with the command output only.
 ```
 
 `scripts/run_inventory_job.sh` then:
@@ -52,7 +53,9 @@ Reply with the command output only.
 3. Sorts `OPENCLAW_ONUR_INVENTORY.md` without live GitHub activity refresh.
 4. Compares the inventory against notifier state.
 5. Commits `OPENCLAW_ONUR_INVENTORY.md` if that file changed.
-6. Prints either `NO_REPLY` or the concise mismatch report.
+6. Prints either `NO_CHANGES` or the concise mismatch report. The cron prompt
+   maps `NO_CHANGES` to the final `NO_REPLY` sentinel so delivery can stay
+   quiet.
 
 It deliberately does not push. Publication should be a deterministic host-side
 step that only has access to the onurclaw repo, not to the sandbox prompt or
@@ -67,4 +70,3 @@ bash -n scripts/run_inventory_job.sh
 python3 -m py_compile scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py
 OPENCLAW_ONUR_INVENTORY_SKIP_ACTIVITY=1 python3 scripts/sort_openclaw_onur_inventory.py --no-activity
 ```
-
