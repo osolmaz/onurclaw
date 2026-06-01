@@ -8,64 +8,6 @@ Review watermark:
 - Last reviewed through PR: #89086.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-This is the curated issue/PR list after an item-by-item audit of the previous broad inventory. The broad 331-issue file was over-inclusive: it kept many rows where a local/open-weight term appeared incidentally in the archived body. This version keeps threads where the actual reported problem or PR change is materially about local models, self-hosted/open-weight serving, OpenAI-compatible/proxy behavior, local embeddings/QMD/GGUF/MLX, model routing/fallback, or specific open-weight model families.
-
-Sources checked:
-
-- Gitcrawl archive synced on 2026-05-26 with 10,352 threads and 6,961 open threads.
-- Live GitHub issue list fetched on 2026-05-26 with 3,784 open issues.
-- Live GitHub PR list fetched on 2026-05-26 with 3,086 open PRs.
-- Incremental local gitcrawl/notifier checks on 2026-05-29 covered local DB through issue #88047 and PR #88052; 20 newer local DB threads above the previous watermark were reviewed and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-30 covered local DB through issue #88087 and PR #88086; 33 newer local DB threads above the previous watermark were reviewed and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-30 covered local DB through issue #88111 and PR #88118; 27 newer local DB threads above the previous watermark were reviewed and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-30 covered local DB through issue #88128 and PR #88137; 14 newer local DB threads above the previous watermark were reviewed, with live state checked only for newly relevant rows, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88457 and PR #88459; 282 newer local DB threads above the previous watermark were reviewed, with no broad network refresh run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88490 and PR #88487; 27 newer local DB threads above the previous watermark were reviewed, with no broad network refresh run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88502 and PR #88503; 12 newer local DB threads above the previous watermark were reviewed, one new direct OpenAI-compatible issue was retained, closed local DB rows were moved out of the open tables, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88517 and PR #88518; 12 newer local DB threads above the previous watermark were reviewed, 6 materially relevant model-routing/local-runtime rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88528 and PR #88536; 17 newer local DB threads above the previous watermark were reviewed, one new DeepSeek provider usage PR was retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88568 and PR #88564; 27 newer local DB threads above the previous watermark were reviewed, 10 materially relevant model-routing/OpenAI-compatible rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88586 and PR #88589; 19 newer local DB threads above the previous watermark were reviewed, 2 materially relevant model-routing/provider-auth rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88616 and PR #88625; 25 newer local DB threads above the previous watermark were reviewed, 5 materially relevant model-routing/provider-auth/local-embedding rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-05-31 covered local DB through issue #88671 and PR #88667; 36 newer local DB threads above the previous watermark were reviewed, 8 materially relevant local-runtime/model-routing/open-weight rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #88712 and PR #88716; 44 newer local DB threads above the previous watermark were reviewed, 13 materially relevant local-memory/model-routing/OpenAI-compatible rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #88741 and PR #88746; 24 newer local DB threads above the previous watermark were reviewed, 5 materially relevant local-runtime/model-routing/open-weight rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #88788 and PR #88787; 35 newer local DB threads above the previous watermark were reviewed, 11 materially relevant model-routing/OpenAI-compatible/open-weight rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #88811 and PR #88804; 18 newer local DB threads above the previous watermark were reviewed, 5 materially relevant local-runtime/model-routing/OpenAI-compatible rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #88844 and PR #88842; 33 newer local DB threads above the previous watermark were reviewed, 7 materially relevant local-memory/local-runtime/model-routing/OpenAI-compatible rows were retained, closed local DB rows were moved out of the open tables, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #88874 and PR #88881; 31 newer local DB threads above the previous watermark were reviewed, 10 materially relevant local-memory/full-local/model-routing/OpenAI-compatible/open-weight rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #88918 and PR #88923; 40 newer local DB threads above the previous watermark were reviewed, 13 materially relevant local-memory/local-runtime/model-routing/OpenAI-compatible/open-weight rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #88967 and PR #88963; 35 newer local DB threads above the previous watermark were reviewed, 11 materially relevant local-runtime/model-routing/OpenAI-compatible/open-weight rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #89009 and PR #89014; 39 newer local DB threads above the previous watermark were reviewed, 8 materially relevant local-runtime/model-routing/OpenAI-compatible/open-weight rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #89054 and PR #89055; 37 newer local DB threads above the previous watermark were reviewed, 8 materially relevant local-runtime/model-routing/OpenAI-compatible/open-weight rows were retained, and no broad network refresh was run.
-- Incremental local gitcrawl/notifier checks on 2026-06-01 covered local DB through issue #89087 and PR #89086; 29 newer local DB threads above the previous watermark were reviewed, 2 materially relevant local-runtime/model-routing rows were retained, and no broad network refresh was run.
-- Prior broad issue inventory audited: 331 live-open rows.
-- Raw local/open-weight candidate search: 1,446 open issue matches and 1,184 open PR matches.
-
-Audit result:
-
-- Kept open issues: 247.
-- Kept open PRs: 204.
-- Removed from the previous broad issue table: 152 rows whose local/open-weight evidence was incidental or too generic.
-- Kept items can still vary in priority; inclusion here means related, not necessarily urgent.
-
-Inclusion criteria used:
-
-- Keep: direct local model/runtime failures such as Ollama, LM Studio, vLLM, llama.cpp, GGUF, MLX, or local one-shot infer behavior.
-- Keep: OpenAI-compatible, OpenAI completions/responses, LiteLLM, Open-WebUI, proxy, or custom-provider behavior that affects self-hosted/open-weight routing.
-- Keep: local embedding, QMD, memory embedding, reranker, vector/FTS, or model-aware memory issues.
-- Keep: model routing, fallback, picker, auth-profile, catalog, or actual-model reporting when it affects model/provider correctness.
-- Keep: model-family-specific failures for Kimi, Qwen, DeepSeek, Moonshot, GLM/Z.ai, Gemma, Mistral, MiMo/Xiaomi, Nemotron, and similar open-weight/provider paths.
-- Drop: generic channel, UI, gateway, Discord/Telegram, cron, memory, bootstrap, docs, or install issues where the only evidence is an incidental provider/model name in the body.
-
-## HIGHEST-RISK OPEN AREAS
-
-1. Local runtime stalls and gateway blocking: #89070, #89051, #89049, #89040, #88999, #88918, #88907, #88890, #88884, #88882, #88881, #88873, #88822, #88789, #88771, #88746, #88705, #88671, #88645, #88632, #88514, #88460, #88457, #88439, #88381, #88366, #88212, #88201, #88181, #87955, #87940, #87856, #87850, #87818, #87768, #87756, #87687, #87642, #87619, #87617, #87616, #87587, #87586, #87558, #87414, #87285, #87262, #86599, #85826, #63229, #54155.
-2. OpenAI-compatible/proxy correctness: #89039, #89032, #89016, #89013, #89001, #88964, #88918, #88917, #88893, #88861, #88833, #88804, #88799, #88791, #88787, #88769, #88512, #88499, #88480, #88267, #88098, #88071, #88068, #87996, #87933, #87763, #87737, #87325, #84697, #84575, #79897, #66125.
-3. Open-weight tool/reasoning parsing: #89070, #89032, #88999, #88976, #88918, #88907, #88869, #88868, #88769, #88754, #88741, #88671, #88657, #88645, #88457, #88378, #88320, #88289, #88079, #87943, #87766, #87596, #85918, #85321, #85192, #71491, #71273, #51593.
-4. Local embeddings/QMD reliability: #88905, #88887, #88873, #88864, #88830, #88806, #88705, #88704, #88696, #88615, #88263, #88238, #88078, #88077, #88009, #87907, #87881, #87854, #87689, #87572, #87443, #85382, #83333, #77645, #74204, #72015, #59808, #57996.
-5. Provider routing and model fallback: #89087, #89049, #89039, #89029, #89027, #89016, #89008, #88994, #88977, #88922, #88917, #88907, #88906, #88902, #88896, #88880, #88878, #88874, #88869, #88851, #88837, #88827, #88816, #88800, #88787, #88767, #88748, #88723, #88709, #88707, #88679, #88630, #88616, #88608, #88596, #88579, #88562, #88561, #88553, #88551, #88548, #88512, #88506, #88490, #88482, #88480, #88470, #88468, #88400, #88357, #88351, #88329, #88249, #88241, #88125, #88108, #88082, #88049, #88039, #87958, #87957, #87932, #87927, #87925, #87923, #87895, #87893, #87876, #87801, #87752, #87746, #87740, #87697, #87694, #87628, #87603, #87538, #87484, #87480, #87467, #87462, #87407, #87404, #87381, #87343, #87318, #87277, #85126, #84865.
-
 ## OPEN ISSUES (247)
 
 | Issue | Activity | Area | Title |
@@ -688,3 +630,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 4. Keep direct/material matches, drop incidental body mentions, and preserve closed/removed notable items in the collapsed details block above.
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so open issue and PR tables sort by `Activity` score descending, then GitHub number descending. Closed or removed rows stay newest-first by GitHub number.
+7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
