@@ -12,6 +12,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from urllib.parse import quote
 
 
 DEFAULT_INVENTORY = Path(
@@ -171,7 +172,8 @@ def compare(inventory_path: Path, notifier_db: Path) -> dict[str, Any]:
     false_negatives = []
     false_positives = []
 
-    conn = sqlite3.connect(notifier_db)
+    db_uri = f"file:{quote(str(notifier_db), safe='/')}?mode=ro&immutable=1"
+    conn = sqlite3.connect(db_uri, uri=True)
     conn.row_factory = sqlite3.Row
     try:
         for inventory_item in inventory:
@@ -373,4 +375,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
