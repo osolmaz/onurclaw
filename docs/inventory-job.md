@@ -1,0 +1,70 @@
+# OpenClaw Onur Inventory Job
+
+This repo carries the public, non-secret half of the periodic OpenClaw Onur
+inventory automation. Deployment-specific paths, credentials, message
+destinations, and host security details intentionally live outside this public
+repo.
+
+## Security Contract
+
+Run the job as an isolated automation agent with a narrow execution surface:
+
+- The working repo is mounted read/write as `/workspace`.
+- Gitcrawl-derived data is mounted read-only as `/gitcrawl`.
+- Job state is mounted read/write as `/state`.
+- Network egress is disabled for the job sandbox.
+- No host credential directories, shell history, SSH keys, GitHub tokens, or
+  OpenClaw runtime secrets are mounted into the sandbox.
+- The cron payload allows only the `exec` tool.
+- Exec approval allows only `/workspace/scripts/run_inventory_job.sh`.
+
+The prompt is not a security boundary. Treat GitHub issue text, Discord text,
+model output, inventory rows, and database contents as untrusted input. A prompt
+injection can ask for more tools, more files, or network access, but the runtime
+must not provide those capabilities.
+
+## Data Inputs
+
+The job expects these files to be provided by the private deployment:
+
+- `/gitcrawl/gitcrawl.db`: read-only Gitcrawl archive data.
+- `/gitcrawl/notifier.sqlite`: read-only notifier classification data.
+- `/state/inventory-notifier-compare-state.json`: persistent compare state. The
+  file is created on first run if missing.
+
+The public script validates that the read-only data files exist before doing
+anything useful. Data export, snapshot freshness, and GitHub publication are
+private deployment responsibilities.
+
+## Job Flow
+
+The cron message should be boring and exact:
+
+```text
+Run exactly: /workspace/scripts/run_inventory_job.sh
+Reply with the command output only.
+```
+
+`scripts/run_inventory_job.sh` then:
+
+1. Verifies that it is running from the expected mounted repo.
+2. Verifies the read-only Gitcrawl/notifier inputs and writable state directory.
+3. Sorts `OPENCLAW_ONUR_INVENTORY.md` without live GitHub activity refresh.
+4. Compares the inventory against notifier state.
+5. Commits `OPENCLAW_ONUR_INVENTORY.md` if that file changed.
+6. Prints either `NO_REPLY` or the concise mismatch report.
+
+It deliberately does not push. Publication should be a deterministic host-side
+step that only has access to the onurclaw repo, not to the sandbox prompt or
+model context.
+
+## Local Smoke Checks
+
+From this repo:
+
+```bash
+bash -n scripts/run_inventory_job.sh
+python3 -m py_compile scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py
+OPENCLAW_ONUR_INVENTORY_SKIP_ACTIVITY=1 python3 scripts/sort_openclaw_onur_inventory.py --no-activity
+```
+
