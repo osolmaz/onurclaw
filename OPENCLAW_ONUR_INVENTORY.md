@@ -4,11 +4,11 @@ Updated: 2026-06-02
 
 Review watermark:
 
-- Last reviewed through issue: #89401.
-- Last reviewed through PR: #89404.
+- Last reviewed through issue: #89434.
+- Last reviewed through PR: #89435.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (446)
+## OPEN THREADS (452)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,12 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🐛 [#89431](https://github.com/openclaw/openclaw/issues/89431) | 0 | Local/media model provider | [Bug]: macos say command in daemon not output to speakers |
+| 🔀 [#89429](https://github.com/openclaw/openclaw/pull/89429) | 0 | Open-weight/provider behavior | fix(plugin-sdk): quarantine invalid provider tool schemas<br>Assignee: vincentkoc |
+| 🔀 [#89427](https://github.com/openclaw/openclaw/pull/89427) | 0 | Local/media model provider | fix: add missing extensions/speech-core/ source files for npm tarball |
+| 🐛 [#89425](https://github.com/openclaw/openclaw/issues/89425) | 0 | Local/media model provider | [Bug]: Missing extensions/speech-core/ in npm tarball (v2026.5.28) — "Unable to resolve bundled plugin public surface speech-core/runtime-api.js" |
+| 🔀 [#89420](https://github.com/openclaw/openclaw/pull/89420) | 0 | Open-weight/provider behavior | fix(llm): filter out reasoning_content from streaming output when reasoning is disabled |
+| 🔀 [#89413](https://github.com/openclaw/openclaw/pull/89413) | 0 | OpenAI-compatible/proxy | fix(openai): quarantine unreadable projected tools<br>Assignee: vincentkoc |
 | 🔀 [#89400](https://github.com/openclaw/openclaw/pull/89400) | 0 | Model routing/config | fix(google): add missing gemini-3.1-flash-lite to google-vertex catalog |
 | 🐛 [#89392](https://github.com/openclaw/openclaw/issues/89392) | 0 | Open-weight/provider behavior | Long streaming model responses cause event loop starvation |
 | 🐛 [#89390](https://github.com/openclaw/openclaw/issues/89390) | 0 | Model routing/config | google-vertex: gemini-3.1-flash-lite missing from pi-ai model catalog, causes silent failure with no fallback |
@@ -697,4 +703,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 446 (242 issues, 204 PRs).
+- Kept open threads: 452 (244 issues, 208 PRs).
