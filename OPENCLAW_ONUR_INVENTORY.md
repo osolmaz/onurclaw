@@ -4,11 +4,11 @@ Updated: 2026-06-03
 
 Review watermark:
 
-- Last reviewed through issue: #89573.
-- Last reviewed through PR: #89577.
+- Last reviewed through issue: #89594.
+- Last reviewed through PR: #89604.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (480)
+## OPEN THREADS (482)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,8 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀 [#89602](https://github.com/openclaw/openclaw/pull/89602) | 0 | Model routing/config | fix(status): show effective channel model override |
+| 🔀 [#89584](https://github.com/openclaw/openclaw/pull/89584) | 0 | Local memory/embedding | feat(memory-core): optional cross-encoder rerank stage for memory search |
 | 🔀 [#89571](https://github.com/openclaw/openclaw/pull/89571) | 0 | Open-weight/provider behavior | fix(provider): harden provider tool schema hooks<br>Assignee: vincentkoc |
 | 🔀 [#89561](https://github.com/openclaw/openclaw/pull/89561) | 0 | Model routing/config | fix(hooks): honor session-memory hook model override for LLM slug generation [AI-assisted] |
 | 🔀 [#89560](https://github.com/openclaw/openclaw/pull/89560) | 0 | Local memory/embedding | fix(telegram): isolate verbose status after streamed finals |
@@ -731,4 +733,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 480 (256 issues, 224 PRs).
+- Kept open threads: 482 (256 issues, 226 PRs).
