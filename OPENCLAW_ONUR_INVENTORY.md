@@ -4,11 +4,11 @@ Updated: 2026-06-02
 
 Review watermark:
 
-- Last reviewed through issue: #89382.
-- Last reviewed through PR: #89381.
+- Last reviewed through issue: #89401.
+- Last reviewed through PR: #89404.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (441)
+## OPEN THREADS (446)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,11 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀 [#89400](https://github.com/openclaw/openclaw/pull/89400) | 0 | Model routing/config | fix(google): add missing gemini-3.1-flash-lite to google-vertex catalog |
+| 🐛 [#89392](https://github.com/openclaw/openclaw/issues/89392) | 0 | Open-weight/provider behavior | Long streaming model responses cause event loop starvation |
+| 🐛 [#89390](https://github.com/openclaw/openclaw/issues/89390) | 0 | Model routing/config | google-vertex: gemini-3.1-flash-lite missing from pi-ai model catalog, causes silent failure with no fallback |
+| 🐛 [#89389](https://github.com/openclaw/openclaw/issues/89389) | 0 | Model/provider behavior | [Bug]: MiniMax Global OAuth fails with Connect Timeout (api.minimax.io/oauth/code now redirects) |
+| 🐛 [#89386](https://github.com/openclaw/openclaw/issues/89386) | 0 | OpenAI-compatible/proxy | Bug: 5.28 transport refactor regressed prompt caching for Anthropic and OpenAI-compatible providers |
 | 🐛 [#89382](https://github.com/openclaw/openclaw/issues/89382) | 0 | Model routing/config | GitHub Copilot timeout marks auth profile in cooldown and blocks same-provider fallback models |
 | 🔀 [#89381](https://github.com/openclaw/openclaw/pull/89381) | 0 | Model/provider behavior | fix(plugin-sdk): guard provider tool schema traversal<br>Assignee: vincentkoc |
 | 🔀 [#89379](https://github.com/openclaw/openclaw/pull/89379) | 0 | Model/provider behavior | fix(providers): use native reasoning mode for Gemini instead of tagged |
@@ -692,4 +697,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 441 (238 issues, 203 PRs).
+- Kept open threads: 446 (242 issues, 204 PRs).
