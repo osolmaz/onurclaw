@@ -60,6 +60,10 @@ the exported Gitcrawl database. It should write that pool to
 `/state/inventory-candidates.jsonl` and print only the summary line. The model
 must still decide each item against the skill criteria.
 
+The sandbox does not provide Codex's `apply_patch` helper. Mechanical file
+edits should use checked-in scripts or simple shell/Python commands that pass
+the sandbox command preflight, followed by the sorter/finalizer.
+
 `scripts/finalize_inventory_job.sh` then:
 
 1. Verifies that it is running from the expected mounted repo.

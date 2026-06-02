@@ -78,7 +78,10 @@ OpenAI-compatible routing, local runtime behavior, or local embeddings.
 9. Update `Updated: YYYY-MM-DD`.
 10. Advance `Last reviewed through issue` and `Last reviewed through PR` only
    after all threads up to those numbers have been considered.
-11. Run the finalizer:
+11. If you need mechanical edits, use checked-in scripts or simple shell/Python
+    commands that the sandbox can preflight. Do not use `apply_patch`; it is
+    not installed in the sandbox.
+12. Run the finalizer:
 
    ```bash
    /workspace/scripts/finalize_inventory_job.sh
