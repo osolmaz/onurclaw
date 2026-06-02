@@ -1,14 +1,14 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-02
+Updated: 2026-06-03
 
 Review watermark:
 
-- Last reviewed through issue: #89477.
-- Last reviewed through PR: #89479.
+- Last reviewed through issue: #89525.
+- Last reviewed through PR: #89526.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (465)
+## OPEN THREADS (468)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,9 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🐛 [#89522](https://github.com/openclaw/openclaw/issues/89522) | 0 | Model routing/config | [Feature]: Inherit requester session model for native subagents |
+| 🐛 [#89509](https://github.com/openclaw/openclaw/issues/89509) | 0 | Local/media model provider | Bug: [[tts:text]] tag content not passed to TTS engine — surrounding text sent instead |
+| 🔀 [#89508](https://github.com/openclaw/openclaw/pull/89508) | 0 | OpenAI-compatible/proxy | fix(models): clarify provider model registration hint |
 | 🔀 [#89479](https://github.com/openclaw/openclaw/pull/89479) | 0 | Local/media model provider | fix: auto-fix for issue #89431 (macos say command daemon audio output) |
 | 🐛 [#89477](https://github.com/openclaw/openclaw/issues/89477) | 0 | Local memory/embedding | [Feature]: optional cross-encoder rerank stage for memory search |
 | 🐛 [#89476](https://github.com/openclaw/openclaw/issues/89476) | 0 | OpenAI-compatible/proxy | feat(onboard): install-daemon UI support for custom provider setup |
@@ -716,4 +719,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 465 (248 issues, 217 PRs).
+- Kept open threads: 468 (250 issues, 218 PRs).
