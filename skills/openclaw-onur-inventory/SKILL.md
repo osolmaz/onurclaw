@@ -56,25 +56,29 @@ OpenAI-compatible routing, local runtime behavior, or local embeddings.
 2. Read the `Review watermark` near the top of
    `OPENCLAW_ONUR_INVENTORY.md`.
 3. Build the new-thread review pool from `/gitcrawl/gitcrawl.db`. The helper is
-   a convenience filter, not a final decision:
+   a convenience filter, not a final decision. Write candidates to `/state`
+   first so large review pools do not flood the model transcript:
 
    ```bash
-   python3 scripts/list_inventory_review_candidates.py --format markdown
+   python3 scripts/list_inventory_review_candidates.py --format jsonl --output /state/inventory-candidates.jsonl
    ```
 
-4. You must review every listed candidate one by one. Keep direct/material
+4. Review `/state/inventory-candidates.jsonl` in small chunks, for example with
+   `sed -n '1,40p' /state/inventory-candidates.jsonl`, then the next range.
+   Do not print the whole file into the transcript.
+5. You must review every listed candidate one by one. Keep direct/material
    matches and drop incidental body/comment/label matches.
-5. For the highest issue and PR numbers in Gitcrawl, also confirm there are no
+6. For the highest issue and PR numbers in Gitcrawl, also confirm there are no
    unreviewed non-candidate rows that should have been considered. If you only
    review a subset, do not advance that watermark beyond the reviewed range.
-6. Add kept open issues under `## OPEN ISSUES`; add kept open PRs under
+7. Add kept open issues under `## OPEN ISSUES`; add kept open PRs under
    `## OPEN PRS`.
-7. Put closed or removed notable threads under the existing collapsed
+8. Put closed or removed notable threads under the existing collapsed
    `<details>` block so they do not bloat the open inventory.
-8. Update `Updated: YYYY-MM-DD`.
-9. Advance `Last reviewed through issue` and `Last reviewed through PR` only
+9. Update `Updated: YYYY-MM-DD`.
+10. Advance `Last reviewed through issue` and `Last reviewed through PR` only
    after all threads up to those numbers have been considered.
-10. Run the finalizer:
+11. Run the finalizer:
 
    ```bash
    /workspace/scripts/finalize_inventory_job.sh

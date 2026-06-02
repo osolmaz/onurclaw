@@ -45,8 +45,10 @@ The cron message should make the curation step explicit:
 ```text
 Read /workspace/skills/openclaw-onur-inventory/SKILL.md and follow it to
 refresh /workspace/OPENCLAW_ONUR_INVENTORY.md from /gitcrawl/gitcrawl.db.
-Review new issue/PR candidates one by one, update the inventory and watermark
-only for ranges fully reviewed, then run exactly:
+Use scripts/list_inventory_review_candidates.py with --format jsonl --output
+/state/inventory-candidates.jsonl, review candidates from that file in small
+chunks without printing the whole file, update the inventory and watermark only
+for ranges fully reviewed, then run exactly:
 /workspace/scripts/finalize_inventory_job.sh
 If the command output is exactly NO_CHANGES, reply exactly NO_REPLY.
 Otherwise reply with the command output only.
@@ -54,8 +56,9 @@ Otherwise reply with the command output only.
 
 The model does the curation before the finalizer. The helper
 `scripts/list_inventory_review_candidates.py` builds a broad review pool from
-the exported Gitcrawl database, but the model must still decide each item
-against the skill criteria.
+the exported Gitcrawl database. It should write that pool to
+`/state/inventory-candidates.jsonl` and print only the summary line. The model
+must still decide each item against the skill criteria.
 
 `scripts/finalize_inventory_job.sh` then:
 

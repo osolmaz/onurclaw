@@ -270,11 +270,24 @@ def json_lines(threads: list[Thread], *, include_all: bool) -> str:
     return "\n".join(json.dumps(row, sort_keys=True) for row in rows) + ("\n" if rows else "")
 
 
+def candidate_count(text: str, *, format_name: str) -> int:
+    if not text:
+        return 0
+    if format_name == "jsonl":
+        return len(text.rstrip("\n").splitlines())
+    return sum(1 for line in text.splitlines() if line.startswith("### "))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--inventory", type=Path, default=DEFAULT_INVENTORY)
     parser.add_argument("--gitcrawl-db", type=Path, default=DEFAULT_GITCRAWL_DB)
     parser.add_argument("--format", choices=("markdown", "jsonl"), default="markdown")
+    parser.add_argument(
+        "--output",
+        type=Path,
+        help="Write candidates to this file and print only a concise summary.",
+    )
     parser.add_argument(
         "--all",
         action="store_true",
@@ -285,9 +298,16 @@ def main() -> int:
     issue_watermark, pr_watermark = read_watermark(args.inventory)
     threads = load_threads(args.gitcrawl_db, issue_watermark, pr_watermark)
     if args.format == "jsonl":
-        print(json_lines(threads, include_all=args.all), end="")
+        output = json_lines(threads, include_all=args.all)
     else:
-        print(markdown(threads, include_all=args.all), end="")
+        output = markdown(threads, include_all=args.all)
+    if args.output:
+        args.output.parent.mkdir(parents=True, exist_ok=True)
+        args.output.write_text(output, encoding="utf-8")
+        count = candidate_count(output, format_name=args.format)
+        print(f"WROTE {count} candidates to {args.output}")
+    else:
+        print(output, end="")
     return 0
 
 
