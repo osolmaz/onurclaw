@@ -4,11 +4,11 @@ Updated: 2026-06-03
 
 Review watermark:
 
-- Last reviewed through issue: #89525.
-- Last reviewed through PR: #89526.
+- Last reviewed through issue: #89573.
+- Last reviewed through PR: #89577.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (468)
+## OPEN THREADS (480)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,18 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀 [#89571](https://github.com/openclaw/openclaw/pull/89571) | 0 | Open-weight/provider behavior | fix(provider): harden provider tool schema hooks<br>Assignee: vincentkoc |
+| 🔀 [#89561](https://github.com/openclaw/openclaw/pull/89561) | 0 | Model routing/config | fix(hooks): honor session-memory hook model override for LLM slug generation [AI-assisted] |
+| 🔀 [#89560](https://github.com/openclaw/openclaw/pull/89560) | 0 | Local memory/embedding | fix(telegram): isolate verbose status after streamed finals |
+| 🔀 [#89558](https://github.com/openclaw/openclaw/pull/89558) | 0 | Model routing/config | docs: document embedded compaction context contracts |
+| 🐛 [#89551](https://github.com/openclaw/openclaw/issues/89551) | 0 | Model routing/config | [Bug]: session-memory hook model config ignored for LLM slug generation |
+| 🐛 [#89549](https://github.com/openclaw/openclaw/issues/89549) | 0 | Model routing/config | [Bug]: sessions_spawn accepts subagent runs that later fail on a different auth/provider path than the healthy main session |
+| 🔀 [#89543](https://github.com/openclaw/openclaw/pull/89543) | 0 | OpenAI-compatible/proxy | fix(agents): harden OpenAI strict schema inspection<br>Assignee: vincentkoc |
+| 🐛 [#89540](https://github.com/openclaw/openclaw/issues/89540) | 0 | Local memory/embedding | [Bug]: Telegram /v Active Memory status can overwrite short streamed replies |
+| 🔀 [#89535](https://github.com/openclaw/openclaw/pull/89535) | 0 | Model routing/config | test(codex): cover binds without model overrides |
+| 🐛 [#89534](https://github.com/openclaw/openclaw/issues/89534) | 0 | Model routing/config | [Bug]: /codex bind without --model can fail with defaultModel ReferenceError |
+| 🐛 [#89532](https://github.com/openclaw/openclaw/issues/89532) | 0 | Model routing/config | Bug: /status does not show effective model from channels.modelByChannel |
+| 🐛 [#89531](https://github.com/openclaw/openclaw/issues/89531) | 0 | OpenAI-compatible/proxy | [Bug] amazon-bedrock-openai / openai-responses: streaming emits multiple incremental final_answer phases, causing duplicate channel messages |
 | 🐛 [#89522](https://github.com/openclaw/openclaw/issues/89522) | 0 | Model routing/config | [Feature]: Inherit requester session model for native subagents |
 | 🐛 [#89509](https://github.com/openclaw/openclaw/issues/89509) | 0 | Local/media model provider | Bug: [[tts:text]] tag content not passed to TTS engine — surrounding text sent instead |
 | 🔀 [#89508](https://github.com/openclaw/openclaw/pull/89508) | 0 | OpenAI-compatible/proxy | fix(models): clarify provider model registration hint |
@@ -719,4 +731,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 468 (250 issues, 218 PRs).
+- Kept open threads: 480 (256 issues, 224 PRs).
