@@ -4,11 +4,11 @@ Updated: 2026-06-02
 
 Review watermark:
 
-- Last reviewed through issue: #89434.
-- Last reviewed through PR: #89435.
+- Last reviewed through issue: #89477.
+- Last reviewed through PR: #89479.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (452)
+## OPEN THREADS (465)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,19 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀 [#89479](https://github.com/openclaw/openclaw/pull/89479) | 0 | Local/media model provider | fix: auto-fix for issue #89431 (macos say command daemon audio output) |
+| 🐛 [#89477](https://github.com/openclaw/openclaw/issues/89477) | 0 | Local memory/embedding | [Feature]: optional cross-encoder rerank stage for memory search |
+| 🐛 [#89476](https://github.com/openclaw/openclaw/issues/89476) | 0 | OpenAI-compatible/proxy | feat(onboard): install-daemon UI support for custom provider setup |
+| 🐛 [#89473](https://github.com/openclaw/openclaw/issues/89473) | 0 | Model/provider behavior | [Bug]: Reasoning tokens leak to chat channels when models stream interleaved text/thinking blocks |
+| 🔀 [#89469](https://github.com/openclaw/openclaw/pull/89469) | 0 | Model routing/config | feat(agents): inherit requester model for subagents |
+| 🔀 [#89460](https://github.com/openclaw/openclaw/pull/89460) | 0 | OpenAI-compatible/proxy | fix(models): preserve provider prompt cache boundaries |
+| 🔀 [#89453](https://github.com/openclaw/openclaw/pull/89453) | 0 | Model/provider behavior | fix(android): filter thinking and reasoning blocks from chat message display |
+| 🔀 [#89451](https://github.com/openclaw/openclaw/pull/89451) | 0 | Model/provider behavior | fix(google): quarantine invalid extension tool schemas |
+| 🐛 [#89444](https://github.com/openclaw/openclaw/issues/89444) | 0 | Local memory/embedding | Dreaming promotion still writes raw/junk data into MEMORY.md (regression from #67580) |
+| 🔀 [#89443](https://github.com/openclaw/openclaw/pull/89443) | 0 | Local memory/embedding | fix(active-memory): drop assistant chitchat boilerplate from recall summaries |
+| 🔀 [#89441](https://github.com/openclaw/openclaw/pull/89441) | 0 | Local/media model provider | fix: add missing extensions/speech-core/ source files for npm tarball |
+| 🔀 [#89440](https://github.com/openclaw/openclaw/pull/89440) | 0 | OpenAI-compatible/proxy | fix(llm): keep OpenAI-compatible reasoning streams active |
+| 🔀 [#89437](https://github.com/openclaw/openclaw/pull/89437) | 0 | Model/provider behavior | fix(google): quarantine invalid tool declarations |
 | 🐛 [#89431](https://github.com/openclaw/openclaw/issues/89431) | 0 | Local/media model provider | [Bug]: macos say command in daemon not output to speakers |
 | 🔀 [#89429](https://github.com/openclaw/openclaw/pull/89429) | 0 | Open-weight/provider behavior | fix(plugin-sdk): quarantine invalid provider tool schemas<br>Assignee: vincentkoc |
 | 🔀 [#89427](https://github.com/openclaw/openclaw/pull/89427) | 0 | Local/media model provider | fix: add missing extensions/speech-core/ source files for npm tarball |
@@ -703,4 +716,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 452 (244 issues, 208 PRs).
+- Kept open threads: 465 (248 issues, 217 PRs).
