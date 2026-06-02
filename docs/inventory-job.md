@@ -15,8 +15,10 @@ Run the job as an isolated automation agent with a narrow execution surface:
 - Network egress is disabled for the job sandbox.
 - No host credential directories, shell history, SSH keys, GitHub tokens, or
   OpenClaw runtime secrets are mounted into the sandbox.
-- The cron payload allows only the `exec` tool.
-- Exec approval allows only `/workspace/scripts/run_inventory_job.sh`.
+- The cron payload allows only sandbox `exec`/`process` tools.
+- Broad command execution is allowed only inside the locked sandbox. The sandbox
+  still has no network, host credentials, host secrets, or host workspace
+  mounts.
 
 The prompt is not a security boundary. Treat GitHub issue text, Discord text,
 model output, inventory rows, and database contents as untrusted input. A prompt
@@ -38,15 +40,24 @@ private deployment responsibilities.
 
 ## Job Flow
 
-The cron message should be boring and exact:
+The cron message should make the curation step explicit:
 
 ```text
-Run exactly: /workspace/scripts/run_inventory_job.sh
+Read /workspace/skills/openclaw-onur-inventory/SKILL.md and follow it to
+refresh /workspace/OPENCLAW_ONUR_INVENTORY.md from /gitcrawl/gitcrawl.db.
+Review new issue/PR candidates one by one, update the inventory and watermark
+only for ranges fully reviewed, then run exactly:
+/workspace/scripts/finalize_inventory_job.sh
 If the command output is exactly NO_CHANGES, reply exactly NO_REPLY.
 Otherwise reply with the command output only.
 ```
 
-`scripts/run_inventory_job.sh` then:
+The model does the curation before the finalizer. The helper
+`scripts/list_inventory_review_candidates.py` builds a broad review pool from
+the exported Gitcrawl database, but the model must still decide each item
+against the skill criteria.
+
+`scripts/finalize_inventory_job.sh` then:
 
 1. Verifies that it is running from the expected mounted repo.
 2. Verifies the read-only Gitcrawl/notifier inputs and writable state directory.
@@ -61,12 +72,16 @@ It deliberately does not push. Publication should be a deterministic host-side
 step that only has access to the onurclaw repo, not to the sandbox prompt or
 model context.
 
+`scripts/run_inventory_job.sh` is kept as a compatibility alias for the
+finalizer. The cron prompt should call `finalize_inventory_job.sh` only after
+the curation work is done.
+
 ## Local Smoke Checks
 
 From this repo:
 
 ```bash
-bash -n scripts/run_inventory_job.sh
-python3 -m py_compile scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py
+bash -n scripts/run_inventory_job.sh scripts/finalize_inventory_job.sh
+python3 -m py_compile scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py scripts/list_inventory_review_candidates.py
 OPENCLAW_ONUR_INVENTORY_SKIP_ACTIVITY=1 python3 scripts/sort_openclaw_onur_inventory.py --no-activity
 ```
