@@ -4,11 +4,11 @@ Updated: 2026-06-03
 
 Review watermark:
 
-- Last reviewed through issue: #89691.
-- Last reviewed through PR: #89699.
+- Last reviewed through issue: #89718.
+- Last reviewed through PR: #89724.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (503)
+## OPEN THREADS (506)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,9 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#89716](https://github.com/openclaw/openclaw/pull/89716) | 0 | OpenAI-compatible/proxy | fix(providers): strip cache-boundary marker from non-Anthropic prompts |
+| 📝&nbsp;[#89706](https://github.com/openclaw/openclaw/issues/89706) | 0 | Model routing/config | github-copilot: gemini-3.1-pro appears in models list but fails silently when selected |
+| 🔀&nbsp;[#89703](https://github.com/openclaw/openclaw/pull/89703) | 0 | OpenAI-compatible/proxy | fix(openai): guard responses tool payload names<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#89692](https://github.com/openclaw/openclaw/pull/89692) | 0 | OpenAI-compatible/proxy | fix(config): allow compat.requiresReasoningContentOnAssistantMessages in model config |
 | 📝&nbsp;[#89691](https://github.com/openclaw/openclaw/issues/89691) | 0 | Local memory/embedding | Active-memory embedded memory_search intermittently loses embedding provider and falls back to FTS-only |
 | 🔀&nbsp;[#89685](https://github.com/openclaw/openclaw/pull/89685) | 0 | Model routing/config | fix(acpx): handle Claude ACP model startup options |
@@ -755,4 +758,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 503 (263 issues, 240 PRs).
+- Kept open threads: 506 (264 issues, 242 PRs).
