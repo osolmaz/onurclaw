@@ -4,11 +4,11 @@ Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #89928.
-- Last reviewed through PR: #89929.
+- Last reviewed through issue: #89954.
+- Last reviewed through PR: #89959.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (471)
+## OPEN THREADS (481)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -159,6 +159,16 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#89957](https://github.com/openclaw/openclaw/pull/89957) | 0 | Local memory/embedding | @kiagentkronos-cell | docs: add section on extending memory with corpus supplements |
+| 🔀&nbsp;[#89952](https://github.com/openclaw/openclaw/pull/89952) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard provider auth choice metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89948](https://github.com/openclaw/openclaw/pull/89948) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard plugin id alias metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89946](https://github.com/openclaw/openclaw/pull/89946) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard provider policy metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89945](https://github.com/openclaw/openclaw/pull/89945) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard provider discovery metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89941](https://github.com/openclaw/openclaw/pull/89941) | 0 | Local/media model provider | @xuwei-xy | fix(issue): resolve #89425 [Bug]: Missing extensions/speech-core/ in npm tarball (v2026 |
+| 🔀&nbsp;[#89940](https://github.com/openclaw/openclaw/pull/89940) | 0 | Model routing/config | @vincentkoc | fix(models): guard manifest model id metadata<br>Assignee: vincentkoc |
+| 📝&nbsp;[#89937](https://github.com/openclaw/openclaw/issues/89937) | 0 | Local memory/embedding | @Enominera | [Bug] before_prompt_build hook not triggered in agent-runner / embedded-agent path (chat user messages) |
+| 🔀&nbsp;[#89936](https://github.com/openclaw/openclaw/pull/89936) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard model suppression metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89933](https://github.com/openclaw/openclaw/pull/89933) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard synthetic auth metadata<br>Assignee: vincentkoc |
 | 📝&nbsp;[#89927](https://github.com/openclaw/openclaw/issues/89927) | 0 | Model routing/config | @A1fred-AI | Fallback sessions don't terminate parent lane → concurrent orchestrator lanes, duplicate billed subagent dispatches, and wedged sessions |
 | 🔀&nbsp;[#89918](https://github.com/openclaw/openclaw/pull/89918) | 0 | Model/provider behavior | @alkor2000 | fix(vertex): route eu/us multi-region to .rep.googleapis.com host |
 | 🔀&nbsp;[#89917](https://github.com/openclaw/openclaw/pull/89917) | 0 | Model routing/config | @vincentkoc | fix(agents): guard provider auth alias metadata<br>Assignee: vincentkoc |
@@ -777,4 +787,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 471 (240 issues, 231 PRs).
+- Kept open threads: 481 (241 issues, 240 PRs).
