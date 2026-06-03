@@ -101,10 +101,11 @@ The open thread table must use this column order:
 - `Title`
 
 The `Thread` cell must show the issue/PR kind with an emoji and the linked
-GitHub number, without adding a type/kind column:
+GitHub number, without adding a type/kind column. Use `&nbsp;` between the
+emoji and link so rendered markdown does not line-break between them:
 
-- `🐛 [#123](https://github.com/openclaw/openclaw/issues/123)` for issues
-- `🔀 [#456](https://github.com/openclaw/openclaw/pull/456)` for PRs
+- `📝&nbsp;[#123](https://github.com/openclaw/openclaw/issues/123)` for issues
+- `🔀&nbsp;[#456](https://github.com/openclaw/openclaw/pull/456)` for PRs
 
 New rows created in the sandbox should use `0` for `Activity`; the sorter
 merges old open issue/PR sections if needed and keeps the open thread table
