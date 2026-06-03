@@ -1,14 +1,14 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-03
+Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #89856.
-- Last reviewed through PR: #89866.
+- Last reviewed through issue: #89928.
+- Last reviewed through PR: #89929.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (461)
+## OPEN THREADS (471)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -159,6 +159,16 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#89927](https://github.com/openclaw/openclaw/issues/89927) | 0 | Model routing/config | @A1fred-AI | Fallback sessions don't terminate parent lane → concurrent orchestrator lanes, duplicate billed subagent dispatches, and wedged sessions |
+| 🔀&nbsp;[#89918](https://github.com/openclaw/openclaw/pull/89918) | 0 | Model/provider behavior | @alkor2000 | fix(vertex): route eu/us multi-region to .rep.googleapis.com host |
+| 🔀&nbsp;[#89917](https://github.com/openclaw/openclaw/pull/89917) | 0 | Model routing/config | @vincentkoc | fix(agents): guard provider auth alias metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89910](https://github.com/openclaw/openclaw/pull/89910) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard provider auth choice metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89905](https://github.com/openclaw/openclaw/pull/89905) | 0 | Model routing/config | @dwc1997 | fix(hooks): honor hook-level model override for session-memory slug generation |
+| 🔀&nbsp;[#89901](https://github.com/openclaw/openclaw/pull/89901) | 0 | Model/provider behavior | @dwc1997 | fix(vertex): support eu and us multi-region endpoints |
+| 🔀&nbsp;[#89899](https://github.com/openclaw/openclaw/pull/89899) | 0 | Local/media model provider | @zhangguiping-xydt | fix #89425: [Bug]: Missing extensions/speech-core/ in npm tarball (v2026.5.28) — "Unable to resolve bundled plugin public surface speech-core/runtime-api.js" |
+| 📝&nbsp;[#89891](https://github.com/openclaw/openclaw/issues/89891) | 0 | Model/provider behavior | @Wimcomander | [Bug]: Vertex AI eu multi-region unreachable — host prefix is hardcoded |
+| 🔀&nbsp;[#89880](https://github.com/openclaw/openclaw/pull/89880) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard model catalog registration metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89874](https://github.com/openclaw/openclaw/pull/89874) | 0 | Local model runtime | @openperf | fix(agents): detect unsigned thinking-only stall when reasoning payload inflates payloadCount |
 | 🔀&nbsp;[#89845](https://github.com/openclaw/openclaw/pull/89845) | 0 | OpenAI-compatible/proxy | @obuchowski | fix(fireworks): optimize caching with x-session-affinity |
 | 🔀&nbsp;[#89832](https://github.com/openclaw/openclaw/pull/89832) | 0 | OpenAI-compatible/proxy | @KrasimirKralev | fix(config): allow requiresReasoningContentOnAssistantMessages in ModelCompatSchema |
 | 🔀&nbsp;[#89818](https://github.com/openclaw/openclaw/pull/89818) | 0 | Model/provider behavior | @masatohoshino | fix(providers): forward stop sequences in bundled Anthropic transports |
@@ -767,4 +777,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 461 (238 issues, 223 PRs).
+- Kept open threads: 471 (240 issues, 231 PRs).
