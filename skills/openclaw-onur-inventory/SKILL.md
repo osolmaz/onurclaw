@@ -71,8 +71,9 @@ OpenAI-compatible routing, local runtime behavior, or local embeddings.
 6. For the highest issue and PR numbers in Gitcrawl, also confirm there are no
    unreviewed non-candidate rows that should have been considered. If you only
    review a subset, do not advance that watermark beyond the reviewed range.
-7. Add kept open issues under `## OPEN ISSUES`; add kept open PRs under
-   `## OPEN PRS`.
+7. Add kept open issues and PRs together under `## OPEN THREADS`. Mark the
+   type inside the first cell with an emoji; do not add a separate type/kind
+   column.
 8. Put closed or removed notable threads under the existing collapsed
    `<details>` block so they do not bloat the open inventory.
 9. Update `Updated: YYYY-MM-DD`.
@@ -89,15 +90,22 @@ OpenAI-compatible routing, local runtime behavior, or local embeddings.
 
 ## Row Format
 
-Open issue and PR tables must use this column order:
+The open thread table must use this column order:
 
-- `Issue` or `PR`
+- `Thread`
 - `Activity`
 - `Area`
 - `Title`
 
-New rows created in the sandbox should use `0` for `Activity`; the sorter keeps
-the table ordered by `Activity` descending, then GitHub number descending.
+The `Thread` cell must show the issue/PR kind with an emoji and the linked
+GitHub number, without adding a type/kind column:
+
+- `🐛 [#123](https://github.com/openclaw/openclaw/issues/123)` for issues
+- `🔀 [#456](https://github.com/openclaw/openclaw/pull/456)` for PRs
+
+New rows created in the sandbox should use `0` for `Activity`; the sorter
+merges old open issue/PR sections if needed and keeps the open thread table
+ordered by `Activity` descending, then GitHub number descending/latest.
 
 Use these area labels unless an existing label is clearly more specific:
 
@@ -119,8 +127,7 @@ Keep the inventory file terse. The top of the file must contain only:
 - title
 - `Updated: YYYY-MM-DD`
 - `Review watermark`
-- open issue table
-- open PR table
+- merged open thread table
 - collapsed closed/removed details
 - short regeneration notes
 
