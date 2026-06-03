@@ -4,11 +4,11 @@ Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #89976.
-- Last reviewed through PR: #89990.
+- Last reviewed through issue: #90023.
+- Last reviewed through PR: #90022.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (487)
+## OPEN THREADS (491)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -159,6 +159,10 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#90023](https://github.com/openclaw/openclaw/issues/90023) | 0 | Local memory/embedding | @ruben2000de | QMD memory_search zero-hit queries trigger synchronous force sync and stall interactive turns |
+| 📝&nbsp;[#90021](https://github.com/openclaw/openclaw/issues/90021) | 0 | Model routing/config | @claw0gang | OpenAI model with agentRuntime.id "openclaw" appears to switch to OpenAI Codex runtime after first Telegram message |
+| 🔀&nbsp;[#90019](https://github.com/openclaw/openclaw/pull/90019) | 0 | Local memory/embedding | @sahibzada-allahyar | fix(memory-search): default periodic sync fallback |
+| 📝&nbsp;[#90015](https://github.com/openclaw/openclaw/issues/90015) | 0 | Open-weight/provider behavior | @SebTardif | DSML recovery buffer grows without bound on unclosed DSML blocks |
 | 🔀&nbsp;[#89983](https://github.com/openclaw/openclaw/pull/89983) | 0 | Model/provider behavior | @vincentkoc | fix(agents): isolate provider attribution manifest rows<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#89981](https://github.com/openclaw/openclaw/pull/89981) | 0 | Model/provider behavior | @mycarrysun | fix(diagnostics-otel): keep full model id on spans instead of collapsing to "unknown" |
 | 🔀&nbsp;[#89979](https://github.com/openclaw/openclaw/pull/89979) | 0 | Model routing/config | @vincentkoc | fix(config): isolate provider auto-enable rows<br>Assignee: vincentkoc |
@@ -793,4 +797,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 487 (242 issues, 245 PRs).
+- Kept open threads: 491 (245 issues, 246 PRs).
