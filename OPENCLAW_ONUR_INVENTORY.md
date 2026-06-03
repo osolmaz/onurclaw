@@ -4,11 +4,11 @@ Updated: 2026-06-03
 
 Review watermark:
 
-- Last reviewed through issue: #89633.
-- Last reviewed through PR: #89640.
+- Last reviewed through issue: #89664.
+- Last reviewed through PR: #89663.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (488)
+## OPEN THREADS (497)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,15 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🐛 [#89664](https://github.com/openclaw/openclaw/issues/89664) | 0 | Model routing/config | [Bug] secrets audit / doctor falsely flags static routing header as plaintext secret |
+| 🐛 [#89660](https://github.com/openclaw/openclaw/issues/89660) | 0 | OpenAI-compatible/proxy | [Bug]: requiresReasoningContentOnAssistantMessages missing from ModelCompatSchema — can't replicate native DeepSeek behavior on custom providers |
+| 🔀 [#89657](https://github.com/openclaw/openclaw/pull/89657) | 0 | Model routing/config | fix(plugins): harden installed index stale metadata<br>Assignee: vincentkoc |
+| 🐛 [#89655](https://github.com/openclaw/openclaw/issues/89655) | 0 | Model routing/config | [Bug]: `NODE_USE_SYSTEM_CA=1` breaks `openai-codex` auth/keychain paths on macOS and can fail fresh runtime launch with `SecItemCopyMatching failed -50` |
+| 🔀 [#89652](https://github.com/openclaw/openclaw/pull/89652) | 0 | Local memory/embedding | fix(plugins): load owning plugin for configured memory embedding provider at startup |
+| 🐛 [#89651](https://github.com/openclaw/openclaw/issues/89651) | 0 | Local memory/embedding | Gateway startup does not load the plugin owning a configured memory embedding provider (memorySearch.provider) |
+| 🔀 [#89647](https://github.com/openclaw/openclaw/pull/89647) | 0 | Model routing/config | fix(plugins): guard startup manifest channels<br>Assignee: vincentkoc |
+| 🔀 [#89646](https://github.com/openclaw/openclaw/pull/89646) | 0 | Model routing/config | fix(model-catalog): guard model id policies<br>Assignee: vincentkoc |
+| 🔀 [#89644](https://github.com/openclaw/openclaw/pull/89644) | 0 | Model routing/config | fix(model-catalog): skip unreadable catalog records<br>Assignee: vincentkoc |
 | 🐛 [#89633](https://github.com/openclaw/openclaw/issues/89633) | 0 | Model routing/config | Codex turn fails with generic Telegram fallback when invalid image tool model is configured, leaving child agent orphaned on full stdout pipe |
 | 🔀 [#89629](https://github.com/openclaw/openclaw/pull/89629) | 0 | Model routing/config | feat(hooks): expose per-turn usageState on reply_payload_sending |
 | 🔀 [#89624](https://github.com/openclaw/openclaw/pull/89624) | 0 | Local model runtime | fix(ollama): guard tool schema normalization<br>Assignee: vincentkoc |
@@ -740,4 +749,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 488 (258 issues, 230 PRs).
+- Kept open threads: 497 (262 issues, 235 PRs).
