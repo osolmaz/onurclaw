@@ -4,11 +4,11 @@ Updated: 2026-06-03
 
 Review watermark:
 
-- Last reviewed through issue: #89664.
-- Last reviewed through PR: #89663.
+- Last reviewed through issue: #89691.
+- Last reviewed through PR: #89699.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (497)
+## OPEN THREADS (503)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,12 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀 [#89692](https://github.com/openclaw/openclaw/pull/89692) | 0 | OpenAI-compatible/proxy | fix(config): allow compat.requiresReasoningContentOnAssistantMessages in model config |
+| 🐛 [#89691](https://github.com/openclaw/openclaw/issues/89691) | 0 | Local memory/embedding | Active-memory embedded memory_search intermittently loses embedding provider and falls back to FTS-only |
+| 🔀 [#89685](https://github.com/openclaw/openclaw/pull/89685) | 0 | Model routing/config | fix(acpx): handle Claude ACP model startup options |
+| 🔀 [#89669](https://github.com/openclaw/openclaw/pull/89669) | 0 | Model/provider behavior | fix(agents): contain provider schema hook failures<br>Assignee: vincentkoc |
+| 🔀 [#89667](https://github.com/openclaw/openclaw/pull/89667) | 0 | OpenAI-compatible/proxy | fix(config): allow requiresReasoningContentOnAssistantMessages in ModelCompatSchema [AI-assisted] |
+| 🔀 [#89665](https://github.com/openclaw/openclaw/pull/89665) | 0 | Open-weight/provider behavior | fix(plugin-sdk): guard provider tool schema walks<br>Assignee: vincentkoc |
 | 🐛 [#89664](https://github.com/openclaw/openclaw/issues/89664) | 0 | Model routing/config | [Bug] secrets audit / doctor falsely flags static routing header as plaintext secret |
 | 🐛 [#89660](https://github.com/openclaw/openclaw/issues/89660) | 0 | OpenAI-compatible/proxy | [Bug]: requiresReasoningContentOnAssistantMessages missing from ModelCompatSchema — can't replicate native DeepSeek behavior on custom providers |
 | 🔀 [#89657](https://github.com/openclaw/openclaw/pull/89657) | 0 | Model routing/config | fix(plugins): harden installed index stale metadata<br>Assignee: vincentkoc |
@@ -749,4 +755,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 497 (262 issues, 235 PRs).
+- Kept open threads: 503 (263 issues, 240 PRs).
