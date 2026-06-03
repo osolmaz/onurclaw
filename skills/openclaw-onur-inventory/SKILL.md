@@ -52,10 +52,13 @@ OpenAI-compatible routing, local runtime behavior, or local embeddings.
 
 ## Refresh Workflow
 
-1. Work in `/workspace`.
-2. Read the `Review watermark` near the top of
+1. Run `git checkout main` in `/workspace` before reading or editing files. This
+   cron job owns `/workspace` and must always operate on `main`, even if a
+   previous human or PR workflow left the checkout on another branch.
+2. Work in `/workspace`.
+3. Read the `Review watermark` near the top of
    `OPENCLAW_ONUR_INVENTORY.md`.
-3. Build the new-thread review pool from `/gitcrawl/gitcrawl.db`. The helper is
+4. Build the new-thread review pool from `/gitcrawl/gitcrawl.db`. The helper is
    a convenience filter, not a final decision. Write candidates to `/state`
    first so large review pools do not flood the model transcript:
 
@@ -63,26 +66,26 @@ OpenAI-compatible routing, local runtime behavior, or local embeddings.
    python3 scripts/list_inventory_review_candidates.py --format jsonl --output /state/inventory-candidates.jsonl
    ```
 
-4. Review `/state/inventory-candidates.jsonl` in small chunks, for example with
+5. Review `/state/inventory-candidates.jsonl` in small chunks, for example with
    `sed -n '1,40p' /state/inventory-candidates.jsonl`, then the next range.
    Do not print the whole file into the transcript.
-5. You must review every listed candidate one by one. Keep direct/material
+6. You must review every listed candidate one by one. Keep direct/material
    matches and drop incidental body/comment/label matches.
-6. For the highest issue and PR numbers in Gitcrawl, also confirm there are no
+7. For the highest issue and PR numbers in Gitcrawl, also confirm there are no
    unreviewed non-candidate rows that should have been considered. If you only
    review a subset, do not advance that watermark beyond the reviewed range.
-7. Add kept open issues and PRs together under `## OPEN THREADS`. Mark the
+8. Add kept open issues and PRs together under `## OPEN THREADS`. Mark the
    type inside the first cell with an emoji; do not add a separate type/kind
    column.
-8. Put closed or removed notable threads under the existing collapsed
+9. Put closed or removed notable threads under the existing collapsed
    `<details>` block so they do not bloat the open inventory.
-9. Update `Updated: YYYY-MM-DD`.
-10. Advance `Last reviewed through issue` and `Last reviewed through PR` only
+10. Update `Updated: YYYY-MM-DD`.
+11. Advance `Last reviewed through issue` and `Last reviewed through PR` only
    after all threads up to those numbers have been considered.
-11. If you need mechanical edits, use checked-in scripts or simple shell/Python
+12. If you need mechanical edits, use checked-in scripts or simple shell/Python
     commands that the sandbox can preflight. Do not use `apply_patch`; it is
     not installed in the sandbox.
-12. Run the finalizer:
+13. Run the finalizer:
 
    ```bash
    /workspace/scripts/finalize_inventory_job.sh

@@ -45,6 +45,7 @@ The cron message should make the curation step explicit:
 ```text
 Read /workspace/skills/openclaw-onur-inventory/SKILL.md and follow it to
 refresh /workspace/OPENCLAW_ONUR_INVENTORY.md from /gitcrawl/gitcrawl.db.
+First run: git checkout main
 Use scripts/list_inventory_review_candidates.py with --format jsonl --output
 /state/inventory-candidates.jsonl, review candidates from that file in small
 chunks without printing the whole file, update the inventory and watermark only
