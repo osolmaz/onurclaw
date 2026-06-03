@@ -98,6 +98,7 @@ The open thread table must use this column order:
 - `Thread`
 - `Activity`
 - `Area`
+- `Creator`
 - `Title`
 
 The `Thread` cell must show the issue/PR kind with an emoji and the linked
@@ -107,9 +108,14 @@ emoji and link so rendered markdown does not line-break between them:
 - `📝&nbsp;[#123](https://github.com/openclaw/openclaw/issues/123)` for issues
 - `🔀&nbsp;[#456](https://github.com/openclaw/openclaw/pull/456)` for PRs
 
+The `Creator` cell must contain the GitHub issue opener or PR author handle,
+formatted as `@login`. Fill it from Gitcrawl (`threads.author_login`) when
+available. Leave it blank only when the source data lacks an author.
+
 New rows created in the sandbox should use `0` for `Activity`; the sorter
-merges old open issue/PR sections if needed and keeps the open thread table
-ordered by `Activity` descending, then GitHub number descending/latest.
+fills missing `Creator` cells from `/gitcrawl/gitcrawl.db`, merges old open
+issue/PR sections if needed, and keeps the open thread table ordered by
+`Activity` descending, then GitHub number descending/latest.
 
 Use these area labels unless an existing label is clearly more specific:
 

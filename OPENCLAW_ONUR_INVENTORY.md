@@ -10,469 +10,469 @@ Review watermark:
 
 ## OPEN THREADS (461)
 
-| Thread | Activity | Area | Title |
-| --- | --- | --- | --- |
-| 📝&nbsp;[#67035](https://github.com/openclaw/openclaw/issues/67035) | 34 | Local model runtime | [Bug]: 2026.4.14 Windows chat UI regression: input text swallowed, streamed replies often invisible until refresh, typing indicator flashes then blanks |
-| 📝&nbsp;[#72015](https://github.com/openclaw/openclaw/issues/72015) | 29 | Local memory/embedding | Reliability: active-memory blocks replies and QMD boot initialization can overload multi-agent gateways |
-| 📝&nbsp;[#71491](https://github.com/openclaw/openclaw/issues/71491) | 25 | Open-weight/provider behavior | Kimi K2.6 reasoning_content 400 regression in long conversations after LCM compaction (follow-up #70392) |
-| 📝&nbsp;[#86599](https://github.com/openclaw/openclaw/issues/86599) | 23 | Local memory/embedding | [Bug]: Local model provider calls thread block gateway event loop on Windows beta; trivial infer run takes ~4 minutes |
-| 📝&nbsp;[#75378](https://github.com/openclaw/openclaw/issues/75378) | 22 | Local model runtime | [Bug] Gateway event loop saturation during parallel subagent spawn causes 1012 restart (v2026.4.29) |
-| 📝&nbsp;[#17925](https://github.com/openclaw/openclaw/issues/17925) | 20 | Open-weight/provider behavior | [Feature]: Support native web_search passthrough for ZAI (GLM) and Google (Gemini) providers |
-| 🔀&nbsp;[#84581](https://github.com/openclaw/openclaw/pull/84581) | 17 | OpenAI-compatible/proxy | fix(agents): strip plaintext model provider keys |
-| 📝&nbsp;[#74586](https://github.com/openclaw/openclaw/issues/74586) | 17 | Local memory/embedding | AM embedded run aborts memory_search tool calls; classifies as timeout despite model completion |
-| 📝&nbsp;[#62328](https://github.com/openclaw/openclaw/issues/62328) | 17 | Local memory/embedding | node:sqlite missing FTS5 module - memory search keyword fallback broken |
-| 🔀&nbsp;[#56674](https://github.com/openclaw/openclaw/pull/56674) | 17 | OpenAI-compatible/proxy | feat(openresponses): return reasoning/thinking content in /v1/responses output |
-| 📝&nbsp;[#33962](https://github.com/openclaw/openclaw/issues/33962) | 15 | Local model runtime | [Feature]: slug-generator: use lightweight model instead of agent primary to prevent lane congestion |
-| 🔀&nbsp;[#79745](https://github.com/openclaw/openclaw/pull/79745) | 14 | Local memory/embedding | Memory/QMD: isolate mcporter sidecars per agent |
-| 📝&nbsp;[#74986](https://github.com/openclaw/openclaw/issues/74986) | 14 | Local model runtime | [Bug]: openclaw infer hangs indefinitely on 2026.4.27 - openclaw-infer child spins at 100% CPU with zero network I/O |
-| 📝&nbsp;[#68920](https://github.com/openclaw/openclaw/issues/68920) | 14 | Local memory/embedding | HTTP /v1/chat/completions: 10-15s TTFB due to full agent context assembly - needs lightContext/voice mode |
-| 📝&nbsp;[#85192](https://github.com/openclaw/openclaw/issues/85192) | 13 | OpenAI-compatible/proxy | DeepSeek V4: isSignedThinkingBlock misses unsigned thinking blocks - reasoning-only retry fails |
-| 📝&nbsp;[#84569](https://github.com/openclaw/openclaw/issues/84569) | 13 | Local model runtime | WhatsApp session stalls on long model_call: incomplete turn with payloads=0, reply never delivered |
-| 🔀&nbsp;[#81834](https://github.com/openclaw/openclaw/pull/81834) | 13 | Local/media model provider | feat(senseaudio): add SenseAudio TTS provider |
-| 📝&nbsp;[#79847](https://github.com/openclaw/openclaw/issues/79847) | 13 | Local memory/embedding | qmd-manager leaks XDG_CONFIG_HOME / XDG_CACHE_HOME to all child spawns, breaking mcporter >= 0.10 integration |
-| 🔀&nbsp;[#87247](https://github.com/openclaw/openclaw/pull/87247) | 12 | Local memory/embedding | docs: note LanceDB dreaming v0.2.3 via memory-lancedb-dreaming plugin |
-| 🔀&nbsp;[#77158](https://github.com/openclaw/openclaw/pull/77158) | 12 | Local memory/embedding | perf(qmd): persistent export-state cache + stat fast path in exportSessions |
-| 📝&nbsp;[#54155](https://github.com/openclaw/openclaw/issues/54155) | 12 | Local memory/embedding | Gateway memory leak: 389MB -> 14.7GB over 4 days with session accumulation |
-| 📝&nbsp;[#51441](https://github.com/openclaw/openclaw/issues/51441) | 12 | OpenAI-compatible/proxy | feat: expose resolved backend model in session_status and agent runtime |
-| 🔀&nbsp;[#50051](https://github.com/openclaw/openclaw/pull/50051) | 12 | Local/media model provider | feat(macos): ExecuTorch Parakeet-TDT STT for Talk Mode + model-plugin runtime |
-| 📝&nbsp;[#45049](https://github.com/openclaw/openclaw/issues/45049) | 12 | OpenAI-compatible/proxy | Agent loop allows simulated tool calls instead of enforcing real tool invocation |
-| 🔀&nbsp;[#81443](https://github.com/openclaw/openclaw/pull/81443) | 11 | Local memory/embedding | fix: resolve QMD Windows shims and guard image URL downloads |
-| 🔀&nbsp;[#77339](https://github.com/openclaw/openclaw/pull/77339) | 11 | Model routing/config | fix(auto-reply): clear runtime model cache on reset |
-| 🔀&nbsp;[#68079](https://github.com/openclaw/openclaw/pull/68079) | 11 | OpenAI-compatible/proxy | feat(providers/zai): inject X-Session-Id header for prompt cache stickiness |
-| 📝&nbsp;[#85126](https://github.com/openclaw/openclaw/issues/85126) | 10 | Local model runtime | Bug: Control UI (TUI/WebChat) sessions auto-select wrong authProfileOverride (deepseek instead of minimax) at creation |
-| 🔀&nbsp;[#78747](https://github.com/openclaw/openclaw/pull/78747) | 10 | Model/provider behavior | fix(cache): emit `tools` before `input` in OpenAI Responses request body for prefix-cache stability |
-| 📝&nbsp;[#54463](https://github.com/openclaw/openclaw/issues/54463) | 10 | Local memory/embedding | QMD memory indexing can recurse into symlink loops in workspace-visible temp monorepos and fail with ENAMETOOLONG<br>Assignee: vincentkoc |
-| 📝&nbsp;[#33329](https://github.com/openclaw/openclaw/issues/33329) | 10 | Local model runtime | Document and add config toggles for all implicit discovery mechanisms |
-| 🔀&nbsp;[#87404](https://github.com/openclaw/openclaw/pull/87404) | 9 | Model routing/config | fix(agents): honor ACP alias model.primary overrides (Fixes #87381) |
-| 🔀&nbsp;[#86564](https://github.com/openclaw/openclaw/pull/86564) | 9 | Model/provider behavior | fix(gateway): disable provider auth prewarm by default |
-| 📝&nbsp;[#86090](https://github.com/openclaw/openclaw/issues/86090) | 9 | Local model runtime | runHeartbeatOnce returns {status: "ran"} in 78ms on idle agent — phantom run, no model turn executed |
-| 📝&nbsp;[#85773](https://github.com/openclaw/openclaw/issues/85773) | 9 | Local model runtime | [Bug]: After reinstalling (v2026.5.20), agents only provide generic replies, completely ignoring workspace files content and skills |
-| 🔀&nbsp;[#84977](https://github.com/openclaw/openclaw/pull/84977) | 9 | Local model runtime | feat: handle gemma 4 format tool call |
-| 📝&nbsp;[#73432](https://github.com/openclaw/openclaw/issues/73432) | 9 | Local memory/embedding | [Bug]: qmd embedding is never triggered per memory.qmd.update.interval/embedInterval |
-| 🔀&nbsp;[#71062](https://github.com/openclaw/openclaw/pull/71062) | 9 | OpenAI-compatible/proxy | fix(/v1/responses): drop the extra phantom assistant turn on client-tool calls |
-| 🔀&nbsp;[#70739](https://github.com/openclaw/openclaw/pull/70739) | 9 | OpenAI-compatible/proxy | fix(gateway): add SSE heartbeat to keep /v1/responses and /v1/chat/completions streams alive through idle-timeout proxies |
-| 🔀&nbsp;[#70596](https://github.com/openclaw/openclaw/pull/70596) | 9 | Local memory/embedding | perf(memory): prewarm explicit local embeddings on gateway startup |
-| 🔀&nbsp;[#68725](https://github.com/openclaw/openclaw/pull/68725) | 9 | OpenAI-compatible/proxy | feat(amazon-bedrock-mantle): add known context windows for open-weight Mantle models |
-| 📝&nbsp;[#60546](https://github.com/openclaw/openclaw/issues/60546) | 9 | OpenAI-compatible/proxy | [Bug]: microsoft-foundry provider selects Claude deployments but routes them through OpenAI Foundry endpoints |
-| 📝&nbsp;[#37966](https://github.com/openclaw/openclaw/issues/37966) | 9 | OpenAI-compatible/proxy | [Bug]: cacheRetention ignored for LiteLLM-proxied Anthropic models |
-| 📝&nbsp;[#10480](https://github.com/openclaw/openclaw/issues/10480) | 9 | OpenAI-compatible/proxy | Support Workers AI model selection during onboard |
-| 🔀&nbsp;[#87393](https://github.com/openclaw/openclaw/pull/87393) | 8 | Local/media model provider | fix(media): suppress local whisper progress transcripts |
-| 🔀&nbsp;[#87300](https://github.com/openclaw/openclaw/pull/87300) | 8 | Model routing/config | feat: group model select with collapsible panel in Control UI |
-| 🔀&nbsp;[#86554](https://github.com/openclaw/openclaw/pull/86554) | 8 | OpenAI-compatible/proxy | fix(agents): add missing DeepSeek V4 proxy models to reasoning_content replay set |
-| 📝&nbsp;[#76665](https://github.com/openclaw/openclaw/issues/76665) | 8 | Open-weight/provider behavior | Session context silently lost between consecutive turns with z.ai provider (GLM gateway) |
-| 🔀&nbsp;[#75270](https://github.com/openclaw/openclaw/pull/75270) | 8 | OpenAI-compatible/proxy | fix(agent): prevent sticky model fallback |
-| 📝&nbsp;[#74021](https://github.com/openclaw/openclaw/issues/74021) | 8 | OpenAI-compatible/proxy | Support reasoning-field outputs and visible final-answer handling for native reasoning models |
-| 🔀&nbsp;[#73512](https://github.com/openclaw/openclaw/pull/73512) | 8 | Local memory/embedding | fix(memory): schedule qmd embed when embedInterval is configured regardless of searchMode |
-| 🔀&nbsp;[#67008](https://github.com/openclaw/openclaw/pull/67008) | 8 | Open-weight/provider behavior | feat(chutes): add zai-org/GLM-5.1-TEE to static model catalog |
-| 📝&nbsp;[#64438](https://github.com/openclaw/openclaw/issues/64438) | 8 | Local memory/embedding | Feature Request: Remote Reranker Endpoint Support |
-| 📝&nbsp;[#62121](https://github.com/openclaw/openclaw/issues/62121) | 8 | Local model runtime | DeepSeek preamble text leaks to Telegram after 3.13 -> 4.5 upgrade (untagged assistant text bypasses commentary filter) |
-| 📝&nbsp;[#52029](https://github.com/openclaw/openclaw/issues/52029) | 8 | Local model runtime | Feature Request: heartbeat.tools option to disable tools during heartbeat |
-| 📝&nbsp;[#45508](https://github.com/openclaw/openclaw/issues/45508) | 8 | OpenAI-compatible/proxy | [Feature]: Self-hosted STT/TTS provider support in webchat (Route webchat TTS through the gateway instead of browser Speech API) |
-| 📝&nbsp;[#41372](https://github.com/openclaw/openclaw/issues/41372) | 8 | Model/provider behavior | Field Report: 25 findings from 4 weeks of self-hosted production use (config crashes, CLI docs, Discord, cron) |
-| 📝&nbsp;[#15073](https://github.com/openclaw/openclaw/issues/15073) | 8 | Local model runtime | Feature Request: Per-agent context/workspace on model fallback |
-| 🔀&nbsp;[#77053](https://github.com/openclaw/openclaw/pull/77053) | 7 | OpenAI-compatible/proxy | feat(lmstudio): opt-in idle TTL via native load API |
-| 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | feat(plugins): let hooks prefer auth profiles |
-| 📝&nbsp;[#30381](https://github.com/openclaw/openclaw/issues/30381) | 7 | OpenAI-compatible/proxy | chatCompletions: ignore request model when x-openclaw-agent-id header is present |
-| 📝&nbsp;[#75959](https://github.com/openclaw/openclaw/issues/75959) | 6 | OpenAI-compatible/proxy | [Feature]: Support image analysis for Kimi Code Plan |
-| 🔀&nbsp;[#75075](https://github.com/openclaw/openclaw/pull/75075) | 6 | OpenAI-compatible/proxy | feat(gateway): surface built-in tool calls as function_call output items on /v1/responses |
-| 📝&nbsp;[#63990](https://github.com/openclaw/openclaw/issues/63990) | 6 | Local memory/embedding | Feature: Multi-index embedding memory with model-aware failover (no mixed vector spaces) |
-| 📝&nbsp;[#48300](https://github.com/openclaw/openclaw/issues/48300) | 6 | Local memory/embedding | Bug: memory_search hybrid mode not returning FTS matches |
-| 🔀&nbsp;[#87705](https://github.com/openclaw/openclaw/pull/87705) | 5 | Local model runtime | fix(agents): make subagent-control timeout configurable |
-| 🔀&nbsp;[#87694](https://github.com/openclaw/openclaw/pull/87694) | 5 | Model routing/config | fix(auth): tighten billing cooldown defaults to recover from multi-hour lockouts (#70903) |
-| 🔀&nbsp;[#87619](https://github.com/openclaw/openclaw/pull/87619) | 5 | Local model runtime | fix(diagnostics): account stream deltas incrementally |
-| 🔀&nbsp;[#87617](https://github.com/openclaw/openclaw/pull/87617) | 5 | Local model runtime | fix(agents): broaden local model lean profile |
-| 🔀&nbsp;[#87296](https://github.com/openclaw/openclaw/pull/87296) | 5 | Model routing/config | feat: group model select with collapsible panel in Control UI |
-| 📝&nbsp;[#83402](https://github.com/openclaw/openclaw/issues/83402) | 5 | OpenAI-compatible/proxy | [Bug]: Providers/Xiaomi: MiMo mimo-v2.5-pro still rejects cron embedded agent tool schema with 400 after 2026.5.12 fix |
-| 📝&nbsp;[#81961](https://github.com/openclaw/openclaw/issues/81961) | 5 | OpenAI-compatible/proxy | [Feature]: Add a simple Dashboard UX to manage multiple model providers |
-| 📝&nbsp;[#81525](https://github.com/openclaw/openclaw/issues/81525) | 5 | OpenAI-compatible/proxy | [Bug]: media-understanding silently routes images to user-declared vision models without validating declared capabilities |
-| 🔀&nbsp;[#78085](https://github.com/openclaw/openclaw/pull/78085) | 5 | OpenAI-compatible/proxy | fix(agents): parse prompt_tokens/completion_tokens in CLI usage for llama.cpp compatibility (#77992) |
-| 📝&nbsp;[#76884](https://github.com/openclaw/openclaw/issues/76884) | 5 | Local model runtime | [Bug]: OpenClaw on native Windows getting notably slower and slower with each new version??? |
-| 📝&nbsp;[#75105](https://github.com/openclaw/openclaw/issues/75105) | 5 | Open-weight/provider behavior | [Feature]: Allow per-model setting for Deepseek `reasoning_content` fix |
-| 📝&nbsp;[#74732](https://github.com/openclaw/openclaw/issues/74732) | 5 | Local memory/embedding | docs+feat: Document oMLX (Apple Silicon MLX) as memorySearch embedding provider |
-| 🔀&nbsp;[#74403](https://github.com/openclaw/openclaw/pull/74403) | 5 | Open-weight/provider behavior | fix(deepseek): strip reasoning_content when extra_body disables thinking |
-| 🔀&nbsp;[#74185](https://github.com/openclaw/openclaw/pull/74185) | 5 | Model/provider behavior | fix(infra): wrap provider auth resolution in timeout for status --usage --json |
-| 🔀&nbsp;[#73594](https://github.com/openclaw/openclaw/pull/73594) | 5 | Open-weight/provider behavior | feat(openrouter): inject cache_control for closed-source qwen models |
-| 🔀&nbsp;[#71678](https://github.com/openclaw/openclaw/pull/71678) | 5 | Local memory/embedding | Fix: Issue 71522 memory embeddings |
-| 📝&nbsp;[#66125](https://github.com/openclaw/openclaw/issues/66125) | 5 | OpenAI-compatible/proxy | [Bug]: openai-completions fallback candidate is selected, but fallback does not complete successfully through an OpenAI-compatible proxy |
-| 🔀&nbsp;[#61187](https://github.com/openclaw/openclaw/pull/61187) | 5 | Open-weight/provider behavior | fix(kimi, moonshot): model picker shows wrong models |
-| 🔀&nbsp;[#87932](https://github.com/openclaw/openclaw/pull/87932) | 4 | Model routing/config | feat(compaction): support percentage strings for token thresholds |
-| 📝&nbsp;[#87756](https://github.com/openclaw/openclaw/issues/87756) | 4 | Local model runtime | [Bug]: Regression: prompt-launched Lobster workflow hangs on nested /tools/invoke, while curl-launched workflow works |
-| 📝&nbsp;[#87752](https://github.com/openclaw/openclaw/issues/87752) | 4 | Model routing/config | [Bug]: Failover selects unconfigured model MiniMax-M2.7-highspeed causing complete session failure |
-| 🔀&nbsp;[#87572](https://github.com/openclaw/openclaw/pull/87572) | 4 | Local memory/embedding | fix(memory): increase QMD embedTimeoutMs default to 600s for local GGUF |
-| 🔀&nbsp;[#87480](https://github.com/openclaw/openclaw/pull/87480) | 4 | Model routing/config | fix(anthropic): configure undici Agent with extended keep-alive to prevent socket failures |
-| 📝&nbsp;[#87407](https://github.com/openclaw/openclaw/issues/87407) | 4 | Model routing/config | [Bug]: Anthropic provider: UND_ERR_SOCKET keep-alive failures trigger silent mid-turn fallback to OpenAI/Codex |
-| 📝&nbsp;[#87325](https://github.com/openclaw/openclaw/issues/87325) | 4 | OpenAI-compatible/proxy | Support Azure Foundry GPT Realtime Talk via gateway relay |
-| 📝&nbsp;[#87318](https://github.com/openclaw/openclaw/issues/87318) | 4 | Model routing/config | amazon-bedrock provider: Haiku 4.5 inference profile ARN not supported; params.modelId override ignored |
-| 📝&nbsp;[#87285](https://github.com/openclaw/openclaw/issues/87285) | 4 | Local model runtime | Gateway frequent restarts: config reload too aggressive + auth pre-warm blocks event loop |
-| 📝&nbsp;[#87170](https://github.com/openclaw/openclaw/issues/87170) | 4 | Model routing/config | Agent always returns "Provider returned error" with auto model after gateway restart |
-| 📝&nbsp;[#87140](https://github.com/openclaw/openclaw/issues/87140) | 4 | Local/media model provider | [Feature]: Pluggable STT backend for macOS Push-to-Talk |
-| 📝&nbsp;[#86868](https://github.com/openclaw/openclaw/issues/86868) | 4 | Model routing/config | Embedded runtime: model fallback chain breaks at intermediate candidates instead of walking to the last entry |
-| 📝&nbsp;[#86632](https://github.com/openclaw/openclaw/issues/86632) | 4 | Local model runtime | OpenClaw local embedded Ollama/Qwen session fails live-data request that Pi coding agent handles via shell/curl |
-| 🔀&nbsp;[#86551](https://github.com/openclaw/openclaw/pull/86551) | 4 | OpenAI-compatible/proxy | fix(agents): add missing DeepSeek V4 proxy models to reasoning_content replay set |
-| 📝&nbsp;[#86034](https://github.com/openclaw/openclaw/issues/86034) | 4 | OpenAI-compatible/proxy | Media generation succeeds but completion delivery fails and looks like generation failure |
-| 📝&nbsp;[#85826](https://github.com/openclaw/openclaw/issues/85826) | 4 | Local model runtime | [Bug]: Agent stall detector hard-coded 120s threshold kills legitimate long model calls on local vLLM |
-| 📝&nbsp;[#85382](https://github.com/openclaw/openclaw/issues/85382) | 4 | Local memory/embedding | [Bug] post-compaction embedding sync fails with 500 when memorySearch.remote.baseUrl points to non-OpenAI host |
-| 📝&nbsp;[#84575](https://github.com/openclaw/openclaw/issues/84575) | 4 | OpenAI-compatible/proxy | [Bug] /v1/chat/completions: second request with same x-openclaw-session-key during in-flight turn runs in isolated session, loses memory scope |
-| 🔀&nbsp;[#84228](https://github.com/openclaw/openclaw/pull/84228) | 4 | Open-weight/provider behavior | fix(nvidia): update Nemotron 3 Super contextWindow to 1M per NVIDIA spec |
-| 📝&nbsp;[#84218](https://github.com/openclaw/openclaw/issues/84218) | 4 | Local model runtime | Heartbeat isolatedSession=true replays prior heartbeat context, causing deterministic overflow/restart loop |
-| 📝&nbsp;[#83584](https://github.com/openclaw/openclaw/issues/83584) | 4 | OpenAI-compatible/proxy | [Bug]: Outbound MEDIA: directive on /v1/responses and /v1/chat/completions is passed through as raw text instead of translated to image_url / file content block |
-| 🔀&nbsp;[#83227](https://github.com/openclaw/openclaw/pull/83227) | 4 | OpenAI-compatible/proxy | fix(openai): mark mp3 TTS voice output compatible |
-| 📝&nbsp;[#81960](https://github.com/openclaw/openclaw/issues/81960) | 4 | Local model runtime | [Feature]: Allow onboarding to configure multiple providers and models |
-| 🔀&nbsp;[#80947](https://github.com/openclaw/openclaw/pull/80947) | 4 | Local memory/embedding | fix(doctor): warn and document QMD session recall gates |
-| 📝&nbsp;[#80722](https://github.com/openclaw/openclaw/issues/80722) | 4 | Local model runtime | config set "Restart the gateway to apply" warning is misleading for active agents without agentRuntime override |
-| 📝&nbsp;[#80081](https://github.com/openclaw/openclaw/issues/80081) | 4 | OpenAI-compatible/proxy | Need documented config keys for disabling plugin/tool/channel/owner-elevated surfaces for proposal-only mode |
-| 📝&nbsp;[#79897](https://github.com/openclaw/openclaw/issues/79897) | 4 | OpenAI-compatible/proxy | OpenAI-compatible streaming with llama.cpp saves zero usage (stream closed before final usage chunk) |
-| 📝&nbsp;[#78897](https://github.com/openclaw/openclaw/issues/78897) | 4 | OpenAI-compatible/proxy | OpenAI Responses provider should allow store=true for LiteLLM gpt-5.5 continuations |
-| 📝&nbsp;[#77692](https://github.com/openclaw/openclaw/issues/77692) | 4 | OpenAI-compatible/proxy | fix(tts/xiaomi): Xiaomi Token Plan endpoint uses Bearer auth, not api-key header |
-| 📝&nbsp;[#77675](https://github.com/openclaw/openclaw/issues/77675) | 4 | Local model runtime | [Bug]: request.headers SecretRefs on model providers fail in embedded agent context with "unresolved SecretRef" error |
-| 📝&nbsp;[#77142](https://github.com/openclaw/openclaw/issues/77142) | 4 | Local memory/embedding | [Feature]: Parametric consolidation channel for dreaming pipeline (CLS Phase 4) |
-| 🔀&nbsp;[#76002](https://github.com/openclaw/openclaw/pull/76002) | 4 | OpenAI-compatible/proxy | fix(kimi): switch to openai-completions endpoint for image support |
-| 🔀&nbsp;[#75860](https://github.com/openclaw/openclaw/pull/75860) | 4 | Local memory/embedding | fix(memory): improve QMD recall for channel queries |
-| 🔀&nbsp;[#75350](https://github.com/openclaw/openclaw/pull/75350) | 4 | Open-weight/provider behavior | fix(deepseek): strip reasoning_content from input messages when thinking is enabled |
-| 📝&nbsp;[#75301](https://github.com/openclaw/openclaw/issues/75301) | 4 | Local model runtime | [Feature]: `openclaw caches` command to inspect and prune unbounded `~/.openclaw/` cache dirs (plugin-runtime-deps, browser, tools, orphan transcripts) |
-| 📝&nbsp;[#75163](https://github.com/openclaw/openclaw/issues/75163) | 4 | OpenAI-compatible/proxy | Bug: TUI mid-session model switch passes raw alias instead of resolved model ID |
-| 📝&nbsp;[#74910](https://github.com/openclaw/openclaw/issues/74910) | 4 | Local memory/embedding | doctor: agents.defaults.llm.idleTimeoutSeconds auto-fix discards the user value; runtime gives no signal until doctor runs |
-| 📝&nbsp;[#73801](https://github.com/openclaw/openclaw/issues/73801) | 4 | OpenAI-compatible/proxy | Active Memory with Cerebras gpt-oss-120b times out and can pin gateway CPU |
-| 🔀&nbsp;[#72537](https://github.com/openclaw/openclaw/pull/72537) | 4 | Local memory/embedding | fix(tts): honor provider timeoutMs in chat synthesis |
-| 📝&nbsp;[#69943](https://github.com/openclaw/openclaw/issues/69943) | 4 | Local memory/embedding | [Bug]: session-memory hook persists raw chat-template tokens and unparsed tool calls - re-injected context creates self-reinforcing poisoning loop, agents emit role tokens / NO_REPLY across all subsequent /new sessions |
-| 🔀&nbsp;[#68996](https://github.com/openclaw/openclaw/pull/68996) | 4 | OpenAI-compatible/proxy | fix(google): route Gemma models through native Generative AI API |
-| 📝&nbsp;[#63229](https://github.com/openclaw/openclaw/issues/63229) | 4 | Local model runtime | Bug: Gateway falsely marks healthy local vLLM endpoints as timed out/overloaded, causing 1-23 min fallback cascades |
-| 📝&nbsp;[#62924](https://github.com/openclaw/openclaw/issues/62924) | 4 | Local model runtime | Expose actual media-understanding chosen model in inbound body to avoid guessed media model reporting |
-| 📝&nbsp;[#62599](https://github.com/openclaw/openclaw/issues/62599) | 4 | Local model runtime | [Bug]: openclaw status loads memory plugins locally and can report false vector state |
-| 📝&nbsp;[#60344](https://github.com/openclaw/openclaw/issues/60344) | 4 | Open-weight/provider behavior | [Bug]: Recursive output of system marker [image data removed - already processed by model] in kimi-coding/k2p |
-| 🔀&nbsp;[#58434](https://github.com/openclaw/openclaw/pull/58434) | 4 | OpenAI-compatible/proxy | feat(openresponses): add per-request tool_deny override to /v1/responses |
-| 📝&nbsp;[#57996](https://github.com/openclaw/openclaw/issues/57996) | 4 | Local memory/embedding | QMD per-agent SQLite caches cause extreme disk I/O on multi-agent deployments<br>Assignee: vincentkoc |
-| 📝&nbsp;[#53550](https://github.com/openclaw/openclaw/issues/53550) | 4 | Local memory/embedding | experimental.sessionMemory does not surface gateway-dispatched sessions in memory_search |
-| 📝&nbsp;[#49205](https://github.com/openclaw/openclaw/issues/49205) | 4 | OpenAI-compatible/proxy | [Bug]: Control UI messages can reach shared context but still not appear in Open WebUI visible chat history |
-| 📝&nbsp;[#46661](https://github.com/openclaw/openclaw/issues/46661) | 4 | OpenAI-compatible/proxy | [Feature]: Support Custom ASR (Speech-to-Text) Server Configuration |
-| 📝&nbsp;[#22021](https://github.com/openclaw/openclaw/issues/22021) | 4 | Local model runtime | [Feature]: Add X-Actual-Model header to expose runtime model in HTTP responses |
-| 📝&nbsp;[#13962](https://github.com/openclaw/openclaw/issues/13962) | 4 | Local model runtime | Feature: Per-mention model routing + context window for group mentions |
-| 📝&nbsp;[#82594](https://github.com/openclaw/openclaw/issues/82594) | 2 | Local model runtime | [Bug]: openclaw onboard extremely slow on Windows during model loading |
-| 🔀&nbsp;[#74761](https://github.com/openclaw/openclaw/pull/74761) | 2 | Local memory/embedding | docs: Document oMLX (Apple Silicon MLX) as memorySearch embedding provider |
-| 🔀&nbsp;[#73817](https://github.com/openclaw/openclaw/pull/73817) | 2 | OpenAI-compatible/proxy | fix(media): allow private openai compatible audio transcription endpoints |
-| 📝&nbsp;[#59168](https://github.com/openclaw/openclaw/issues/59168) | 2 | Local model runtime | feat(models): use provider/name as internal key to decouple from API model ID |
-| 🔀&nbsp;[#86637](https://github.com/openclaw/openclaw/pull/86637) | 1 | Open-weight/provider behavior | fix(agents): recover tool calls from DeepSeek DSML text markup |
-| 📝&nbsp;[#77645](https://github.com/openclaw/openclaw/issues/77645) | 1 | Local memory/embedding | memory status --deep reports QMD embeddings unavailable when searchMode=search intentionally disables vectors |
-| 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | Feature: Auto-revert to primary model after image analysis |
-| 🔀&nbsp;[#73667](https://github.com/openclaw/openclaw/pull/73667) | 1 | Local memory/embedding | Bound active-memory recall latency and jitter QMD startup |
-| 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
-| 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
-| 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
-| 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
-| 🔀&nbsp;[#89845](https://github.com/openclaw/openclaw/pull/89845) | 0 | OpenAI-compatible/proxy | fix(fireworks): optimize caching with x-session-affinity |
-| 🔀&nbsp;[#89832](https://github.com/openclaw/openclaw/pull/89832) | 0 | OpenAI-compatible/proxy | fix(config): allow requiresReasoningContentOnAssistantMessages in ModelCompatSchema |
-| 🔀&nbsp;[#89818](https://github.com/openclaw/openclaw/pull/89818) | 0 | Model/provider behavior | fix(providers): forward stop sequences in bundled Anthropic transports |
-| 📝&nbsp;[#89787](https://github.com/openclaw/openclaw/issues/89787) | 0 | Open-weight/provider behavior | [Bug]: Agent stalls indefinitely when model emits stopReason="stop" with no toolCall - only thinking block generated |
-| 📝&nbsp;[#89758](https://github.com/openclaw/openclaw/issues/89758) | 0 | Model routing/config | [Bug] overloaded_error triggers immediate rotate_profile without retry, causing cascade fallback on transient provider overload |
-| 🔀&nbsp;[#89741](https://github.com/openclaw/openclaw/pull/89741) | 0 | Local memory/embedding | fix(memory): add EPERM fallback for atomic reindex |
-| 🔀&nbsp;[#89730](https://github.com/openclaw/openclaw/pull/89730) | 0 | Local model runtime | fix(agents): guard lean tool name reads<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89729](https://github.com/openclaw/openclaw/pull/89729) | 0 | OpenAI-compatible/proxy | fix: skip Responses item id replay when store support is stripped |
-| 📝&nbsp;[#89728](https://github.com/openclaw/openclaw/issues/89728) | 0 | OpenAI-compatible/proxy | Custom OpenAI Responses-compatible providers still replay item ids when store support is stripped |
-| 🔀&nbsp;[#89716](https://github.com/openclaw/openclaw/pull/89716) | 0 | OpenAI-compatible/proxy | fix(providers): strip cache-boundary marker from non-Anthropic prompts |
-| 📝&nbsp;[#89706](https://github.com/openclaw/openclaw/issues/89706) | 0 | Model routing/config | github-copilot: gemini-3.1-pro appears in models list but fails silently when selected |
-| 🔀&nbsp;[#89703](https://github.com/openclaw/openclaw/pull/89703) | 0 | OpenAI-compatible/proxy | fix(openai): guard responses tool payload names<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89692](https://github.com/openclaw/openclaw/pull/89692) | 0 | OpenAI-compatible/proxy | fix(config): allow compat.requiresReasoningContentOnAssistantMessages in model config |
-| 📝&nbsp;[#89691](https://github.com/openclaw/openclaw/issues/89691) | 0 | Local memory/embedding | Active-memory embedded memory_search intermittently loses embedding provider and falls back to FTS-only |
-| 🔀&nbsp;[#89685](https://github.com/openclaw/openclaw/pull/89685) | 0 | Model routing/config | fix(acpx): handle Claude ACP model startup options |
-| 🔀&nbsp;[#89669](https://github.com/openclaw/openclaw/pull/89669) | 0 | Model/provider behavior | fix(agents): contain provider schema hook failures<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89667](https://github.com/openclaw/openclaw/pull/89667) | 0 | OpenAI-compatible/proxy | fix(config): allow requiresReasoningContentOnAssistantMessages in ModelCompatSchema [AI-assisted] |
-| 🔀&nbsp;[#89665](https://github.com/openclaw/openclaw/pull/89665) | 0 | Open-weight/provider behavior | fix(plugin-sdk): guard provider tool schema walks<br>Assignee: vincentkoc |
-| 📝&nbsp;[#89664](https://github.com/openclaw/openclaw/issues/89664) | 0 | Model routing/config | [Bug] secrets audit / doctor falsely flags static routing header as plaintext secret |
-| 📝&nbsp;[#89660](https://github.com/openclaw/openclaw/issues/89660) | 0 | OpenAI-compatible/proxy | [Bug]: requiresReasoningContentOnAssistantMessages missing from ModelCompatSchema — can't replicate native DeepSeek behavior on custom providers |
-| 🔀&nbsp;[#89657](https://github.com/openclaw/openclaw/pull/89657) | 0 | Model routing/config | fix(plugins): harden installed index stale metadata<br>Assignee: vincentkoc |
-| 📝&nbsp;[#89655](https://github.com/openclaw/openclaw/issues/89655) | 0 | Model routing/config | [Bug]: `NODE_USE_SYSTEM_CA=1` breaks `openai-codex` auth/keychain paths on macOS and can fail fresh runtime launch with `SecItemCopyMatching failed -50` |
-| 🔀&nbsp;[#89652](https://github.com/openclaw/openclaw/pull/89652) | 0 | Local memory/embedding | fix(plugins): load owning plugin for configured memory embedding provider at startup |
-| 📝&nbsp;[#89651](https://github.com/openclaw/openclaw/issues/89651) | 0 | Local memory/embedding | Gateway startup does not load the plugin owning a configured memory embedding provider (memorySearch.provider) |
-| 🔀&nbsp;[#89647](https://github.com/openclaw/openclaw/pull/89647) | 0 | Model routing/config | fix(plugins): guard startup manifest channels<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89646](https://github.com/openclaw/openclaw/pull/89646) | 0 | Model routing/config | fix(model-catalog): guard model id policies<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89644](https://github.com/openclaw/openclaw/pull/89644) | 0 | Model routing/config | fix(model-catalog): skip unreadable catalog records<br>Assignee: vincentkoc |
-| 📝&nbsp;[#89633](https://github.com/openclaw/openclaw/issues/89633) | 0 | Model routing/config | Codex turn fails with generic Telegram fallback when invalid image tool model is configured, leaving child agent orphaned on full stdout pipe |
-| 🔀&nbsp;[#89629](https://github.com/openclaw/openclaw/pull/89629) | 0 | Model routing/config | feat(hooks): expose per-turn usageState on reply_payload_sending |
-| 🔀&nbsp;[#89624](https://github.com/openclaw/openclaw/pull/89624) | 0 | Local model runtime | fix(ollama): guard tool schema normalization<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89618](https://github.com/openclaw/openclaw/pull/89618) | 0 | Local model runtime | feat(atomicchat): add Atomic Chat as a bundled local provider |
-| 📝&nbsp;[#89617](https://github.com/openclaw/openclaw/issues/89617) | 0 | Local model runtime | Add Atomic Chat as a bundled local provider (OpenAI-compatible, 127.0.0.1:1337) |
-| 🔀&nbsp;[#89613](https://github.com/openclaw/openclaw/pull/89613) | 0 | Model routing/config | docs: document auth profile failure policy contract |
-| 🔀&nbsp;[#89602](https://github.com/openclaw/openclaw/pull/89602) | 0 | Model routing/config | fix(status): show effective channel model override |
-| 🔀&nbsp;[#89584](https://github.com/openclaw/openclaw/pull/89584) | 0 | Local memory/embedding | feat(memory-core): optional cross-encoder rerank stage for memory search |
-| 🔀&nbsp;[#89571](https://github.com/openclaw/openclaw/pull/89571) | 0 | Open-weight/provider behavior | fix(provider): harden provider tool schema hooks<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89561](https://github.com/openclaw/openclaw/pull/89561) | 0 | Model routing/config | fix(hooks): honor session-memory hook model override for LLM slug generation [AI-assisted] |
-| 🔀&nbsp;[#89560](https://github.com/openclaw/openclaw/pull/89560) | 0 | Local memory/embedding | fix(telegram): isolate verbose status after streamed finals |
-| 🔀&nbsp;[#89558](https://github.com/openclaw/openclaw/pull/89558) | 0 | Model routing/config | docs: document embedded compaction context contracts |
-| 📝&nbsp;[#89551](https://github.com/openclaw/openclaw/issues/89551) | 0 | Model routing/config | [Bug]: session-memory hook model config ignored for LLM slug generation |
-| 📝&nbsp;[#89549](https://github.com/openclaw/openclaw/issues/89549) | 0 | Model routing/config | [Bug]: sessions_spawn accepts subagent runs that later fail on a different auth/provider path than the healthy main session |
-| 🔀&nbsp;[#89543](https://github.com/openclaw/openclaw/pull/89543) | 0 | OpenAI-compatible/proxy | fix(agents): harden OpenAI strict schema inspection<br>Assignee: vincentkoc |
-| 📝&nbsp;[#89540](https://github.com/openclaw/openclaw/issues/89540) | 0 | Local memory/embedding | [Bug]: Telegram /v Active Memory status can overwrite short streamed replies |
-| 🔀&nbsp;[#89535](https://github.com/openclaw/openclaw/pull/89535) | 0 | Model routing/config | test(codex): cover binds without model overrides |
-| 📝&nbsp;[#89534](https://github.com/openclaw/openclaw/issues/89534) | 0 | Model routing/config | [Bug]: /codex bind without --model can fail with defaultModel ReferenceError |
-| 📝&nbsp;[#89532](https://github.com/openclaw/openclaw/issues/89532) | 0 | Model routing/config | Bug: /status does not show effective model from channels.modelByChannel |
-| 📝&nbsp;[#89531](https://github.com/openclaw/openclaw/issues/89531) | 0 | OpenAI-compatible/proxy | [Bug] amazon-bedrock-openai / openai-responses: streaming emits multiple incremental final_answer phases, causing duplicate channel messages |
-| 📝&nbsp;[#89522](https://github.com/openclaw/openclaw/issues/89522) | 0 | Model routing/config | [Feature]: Inherit requester session model for native subagents |
-| 📝&nbsp;[#89509](https://github.com/openclaw/openclaw/issues/89509) | 0 | Local/media model provider | Bug: [[tts:text]] tag content not passed to TTS engine — surrounding text sent instead |
-| 🔀&nbsp;[#89508](https://github.com/openclaw/openclaw/pull/89508) | 0 | OpenAI-compatible/proxy | fix(models): clarify provider model registration hint |
-| 📝&nbsp;[#89477](https://github.com/openclaw/openclaw/issues/89477) | 0 | Local memory/embedding | [Feature]: optional cross-encoder rerank stage for memory search |
-| 📝&nbsp;[#89476](https://github.com/openclaw/openclaw/issues/89476) | 0 | OpenAI-compatible/proxy | feat(onboard): install-daemon UI support for custom provider setup |
-| 📝&nbsp;[#89473](https://github.com/openclaw/openclaw/issues/89473) | 0 | Model/provider behavior | [Bug]: Reasoning tokens leak to chat channels when models stream interleaved text/thinking blocks |
-| 🔀&nbsp;[#89469](https://github.com/openclaw/openclaw/pull/89469) | 0 | Model routing/config | feat(agents): inherit requester model for subagents |
-| 🔀&nbsp;[#89453](https://github.com/openclaw/openclaw/pull/89453) | 0 | Model/provider behavior | fix(android): filter thinking and reasoning blocks from chat message display |
-| 🔀&nbsp;[#89451](https://github.com/openclaw/openclaw/pull/89451) | 0 | Model/provider behavior | fix(google): quarantine invalid extension tool schemas |
-| 📝&nbsp;[#89444](https://github.com/openclaw/openclaw/issues/89444) | 0 | Local memory/embedding | Dreaming promotion still writes raw/junk data into MEMORY.md (regression from #67580) |
-| 🔀&nbsp;[#89443](https://github.com/openclaw/openclaw/pull/89443) | 0 | Local memory/embedding | fix(active-memory): drop assistant chitchat boilerplate from recall summaries |
-| 🔀&nbsp;[#89437](https://github.com/openclaw/openclaw/pull/89437) | 0 | Model/provider behavior | fix(google): quarantine invalid tool declarations |
-| 📝&nbsp;[#89431](https://github.com/openclaw/openclaw/issues/89431) | 0 | Local/media model provider | [Bug]: macos say command in daemon not output to speakers |
-| 🔀&nbsp;[#89429](https://github.com/openclaw/openclaw/pull/89429) | 0 | Open-weight/provider behavior | fix(plugin-sdk): quarantine invalid provider tool schemas<br>Assignee: vincentkoc |
-| 📝&nbsp;[#89425](https://github.com/openclaw/openclaw/issues/89425) | 0 | Local/media model provider | [Bug]: Missing extensions/speech-core/ in npm tarball (v2026.5.28) — "Unable to resolve bundled plugin public surface speech-core/runtime-api.js" |
-| 🔀&nbsp;[#89413](https://github.com/openclaw/openclaw/pull/89413) | 0 | OpenAI-compatible/proxy | fix(openai): quarantine unreadable projected tools<br>Assignee: vincentkoc |
-| 📝&nbsp;[#89392](https://github.com/openclaw/openclaw/issues/89392) | 0 | Open-weight/provider behavior | Long streaming model responses cause event loop starvation |
-| 🔀&nbsp;[#89381](https://github.com/openclaw/openclaw/pull/89381) | 0 | Model/provider behavior | fix(plugin-sdk): guard provider tool schema traversal<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89378](https://github.com/openclaw/openclaw/pull/89378) | 0 | OpenAI-compatible/proxy | fix(agents): guard OpenAI tool schema conversion<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89371](https://github.com/openclaw/openclaw/pull/89371) | 0 | Local memory/embedding | fix(memory): clean stale short-term temp files |
-| 📝&nbsp;[#89362](https://github.com/openclaw/openclaw/issues/89362) | 0 | Local memory/embedding | Expose batchEmbed from the Ollama memory adapter so batch indexing can be enabled |
-| 🔀&nbsp;[#89360](https://github.com/openclaw/openclaw/pull/89360) | 0 | Local memory/embedding | refactor: add QMD session artifact identity mapping |
-| 🔀&nbsp;[#89353](https://github.com/openclaw/openclaw/pull/89353) | 0 | Model/provider behavior | fix(plugin-sdk): guard provider schema inspection<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#89348](https://github.com/openclaw/openclaw/pull/89348) | 0 | Local memory/embedding | refactor: add memory session sync identity API |
-| 🔀&nbsp;[#89334](https://github.com/openclaw/openclaw/pull/89334) | 0 | Local memory/embedding | docs: note active memory timeout circuit breaker |
-| 🔀&nbsp;[#89324](https://github.com/openclaw/openclaw/pull/89324) | 0 | Model/provider behavior | fix(xai): skip unreadable tool payload entries |
-| 🔀&nbsp;[#89322](https://github.com/openclaw/openclaw/pull/89322) | 0 | Local model runtime | fix(ollama): skip unreadable tool descriptors |
-| 🔀&nbsp;[#89317](https://github.com/openclaw/openclaw/pull/89317) | 0 | Model/provider behavior | fix(bedrock): guard tool config projection |
-| 📝&nbsp;[#89300](https://github.com/openclaw/openclaw/issues/89300) | 0 | Model/provider behavior | model-fetch logs lost in v2026.5.28 - degraded from log.info to log.debug behind env flag |
-| 🔀&nbsp;[#89290](https://github.com/openclaw/openclaw/pull/89290) | 0 | Model/provider behavior | [codex] Keep Codex waiting after raw reasoning progress |
-| 📝&nbsp;[#89278](https://github.com/openclaw/openclaw/issues/89278) | 0 | Model routing/config | [Bug]: Codex OAuth refresh succeeds but cron/heartbeat fail with 10s auth refresh timeout |
-| 🔀&nbsp;[#89273](https://github.com/openclaw/openclaw/pull/89273) | 0 | Model/provider behavior | fix(doctor): sanitize provider catalog findings |
-| 📝&nbsp;[#89265](https://github.com/openclaw/openclaw/issues/89265) | 0 | Local model runtime | [Feature]: More local providers |
-| 📝&nbsp;[#89264](https://github.com/openclaw/openclaw/issues/89264) | 0 | Local memory/embedding | [Bug]: Dreaming deep promotion biased to stale 3-5 day old content; REM produces repetitive meta-themes; promotion gates bypassed via phase-signal boost |
-| 📝&nbsp;[#89259](https://github.com/openclaw/openclaw/issues/89259) | 0 | Model/provider behavior | EmbeddedAttemptSessionTakeoverError fires at ~120s on long Bedrock streams (fence whitelist too narrow?) |
-| 🔀&nbsp;[#89251](https://github.com/openclaw/openclaw/pull/89251) | 0 | Local/media model provider | fix: deliver tts tool audio on whatsapp |
-| 🔀&nbsp;[#89244](https://github.com/openclaw/openclaw/pull/89244) | 0 | Local memory/embedding | fix(config): warn only on large memory watch trees |
-| 📝&nbsp;[#89233](https://github.com/openclaw/openclaw/issues/89233) | 0 | Local model runtime | [Bug]: Default models.providers.lmstudio.apiKey ships as plaintext placeholder 'lm-studio' - triggers false-positive security audit warning |
-| 🔀&nbsp;[#89229](https://github.com/openclaw/openclaw/pull/89229) | 0 | Model/provider behavior | fix(llm): guard Anthropic provider tool descriptors |
-| 🔀&nbsp;[#89221](https://github.com/openclaw/openclaw/pull/89221) | 0 | Model/provider behavior | fix(agents): guard Anthropic tool descriptors |
-| 📝&nbsp;[#89202](https://github.com/openclaw/openclaw/issues/89202) | 0 | Model/provider behavior | [Bug]: Telegram heavy turns can cause incomplete codex-app server turn around compaction, including under OpenClaw runtime. |
-| 📝&nbsp;[#89198](https://github.com/openclaw/openclaw/issues/89198) | 0 | Local/media model provider | Feature Request: Support Gateway TTS/STT in iOS App |
-| 📝&nbsp;[#89197](https://github.com/openclaw/openclaw/issues/89197) | 0 | Model routing/config | Gateway agent run failure with no model reachable: chat.history returns incomplete state, Control UI clears conversation history |
-| 📝&nbsp;[#89196](https://github.com/openclaw/openclaw/issues/89196) | 0 | Local memory/embedding | Dreaming REM: sub-session visible in session switcher + narrative diary fails to write to DREAMS.md |
-| 🔀&nbsp;[#89194](https://github.com/openclaw/openclaw/pull/89194) | 0 | Model routing/config | fix: include name field in model_not_found remediation hint |
-| 📝&nbsp;[#89192](https://github.com/openclaw/openclaw/issues/89192) | 0 | Model routing/config | bug(models): model_not_found remediation message is incomplete - suggests `{ "id": ... }` but `name` is required and `api`/`baseUrl` are silently needed (misroutes to OpenAI) |
-| 🔀&nbsp;[#89190](https://github.com/openclaw/openclaw/pull/89190) | 0 | Model/provider behavior | feat(xai): add grok-composer-2.5-fast model |
-| 🔀&nbsp;[#89183](https://github.com/openclaw/openclaw/pull/89183) | 0 | Local model runtime | fix(tui): keep local slash commands out of model prompts |
-| 📝&nbsp;[#89173](https://github.com/openclaw/openclaw/issues/89173) | 0 | Local memory/embedding | External plugin tools (memory_store, memory_recall, etc.) not routed/exposed to the Agent in v2026.5.27+ |
-| 📝&nbsp;[#89167](https://github.com/openclaw/openclaw/issues/89167) | 0 | Model routing/config | Session in status:failed remains bound as agent:main:main, crashing next TUI launch |
-| 📝&nbsp;[#89164](https://github.com/openclaw/openclaw/issues/89164) | 0 | Model/provider behavior | Completed model responses occasionally do not persist to session jsonl despite trajectory recording success |
-| 🔀&nbsp;[#89160](https://github.com/openclaw/openclaw/pull/89160) | 0 | Model/provider behavior | fix(agents): detect truncated API responses to prevent silent session hang |
-| 🔀&nbsp;[#89155](https://github.com/openclaw/openclaw/pull/89155) | 0 | Open-weight/provider behavior | feat(openrouter): forward OpenClaw session id as session_id |
-| 🔀&nbsp;[#89150](https://github.com/openclaw/openclaw/pull/89150) | 0 | Model routing/config | obs(model-fallback): emit `model.fallback.exhausted` counter on chain exhaustion |
-| 📝&nbsp;[#89147](https://github.com/openclaw/openclaw/issues/89147) | 0 | Model/provider behavior | Native hook relay starves mid-turn after long model-thinking gap (renewal loop tool-call-driven) |
-| 📝&nbsp;[#89139](https://github.com/openclaw/openclaw/issues/89139) | 0 | Model/provider behavior | webchat creates new agent run per message, destroying prompt cache (93% -> 29% hit rate) |
-| 🔀&nbsp;[#89138](https://github.com/openclaw/openclaw/pull/89138) | 0 | Local memory/embedding | fix #88009: [Feature]: batched memory embedding should batch over files |
-| 🔀&nbsp;[#89133](https://github.com/openclaw/openclaw/pull/89133) | 0 | Model routing/config | Restore GPT-5.3 Codex Spark OAuth routing |
-| 🔀&nbsp;[#89118](https://github.com/openclaw/openclaw/pull/89118) | 0 | Open-weight/provider behavior | fix(outbound): sanitize message.send arguments to prevent runtime scaffolding leaks |
-| 🔀&nbsp;[#89117](https://github.com/openclaw/openclaw/pull/89117) | 0 | Local memory/embedding | Support Gemini Embedding 2 GA |
-| 📝&nbsp;[#89114](https://github.com/openclaw/openclaw/issues/89114) | 0 | Open-weight/provider behavior | Minimax M3: /think menu missing xhigh, adaptive, max levels (provider profile limitation) |
-| 🔀&nbsp;[#89109](https://github.com/openclaw/openclaw/pull/89109) | 0 | Open-weight/provider behavior | fix(agents): block message-tool spam loops defeated by volatile message ids |
-| 🔀&nbsp;[#89102](https://github.com/openclaw/openclaw/pull/89102) | 0 | Model routing/config | refactor(auth): store auth profiles in SQLite |
-| 📝&nbsp;[#89100](https://github.com/openclaw/openclaw/issues/89100) | 0 | Open-weight/provider behavior | Sanitise outbound message.send tool arguments to prevent runtime scaffolding leak (FM-3) and chat_id routing bleed (FM-2) on weaker models |
-| 🔀&nbsp;[#89091](https://github.com/openclaw/openclaw/pull/89091) | 0 | Local memory/embedding | fix(memory-core): retry narrative message reads |
-| 📝&nbsp;[#89090](https://github.com/openclaw/openclaw/issues/89090) | 0 | OpenAI-compatible/proxy | Bug: loopDetection cannot block message tool loops — volatile messageId in result defeats all critical-level detection paths |
-| 🔀&nbsp;[#89088](https://github.com/openclaw/openclaw/pull/89088) | 0 | Model routing/config | test(gateway): cover rollover model override preservation |
-| 📝&nbsp;[#89087](https://github.com/openclaw/openclaw/issues/89087) | 0 | Model routing/config | Bug: Session model override lost on UTC midnight rollover |
-| 🔀&nbsp;[#89070](https://github.com/openclaw/openclaw/pull/89070) | 0 | Local model runtime | fix(stream): handle cumulative JSON chunks from local llama.cpp tool calls |
-| 📝&nbsp;[#89051](https://github.com/openclaw/openclaw/issues/89051) | 0 | Local model runtime | [Bug]: Embedded agent session silently hangs after auto-compaction with no error logging or recovery |
-| 🔀&nbsp;[#89040](https://github.com/openclaw/openclaw/pull/89040) | 0 | Local model runtime | perf: avoid event-loop stall during embedded_run bootstrap-context |
-| 🔀&nbsp;[#89039](https://github.com/openclaw/openclaw/pull/89039) | 0 | OpenAI-compatible/proxy | fix: prevent silent message loss from EmbeddedAttemptSessionTakeoverError |
-| 🔀&nbsp;[#89029](https://github.com/openclaw/openclaw/pull/89029) | 0 | Model routing/config | fix(cli): accept empty Claude end turns |
-| 🔀&nbsp;[#89027](https://github.com/openclaw/openclaw/pull/89027) | 0 | Model routing/config | fix(cli): prevent empty_response failover for completed thinking-only turns |
-| 🔀&nbsp;[#89016](https://github.com/openclaw/openclaw/pull/89016) | 0 | OpenAI-compatible/proxy | fix(agents): guard OpenAI transport tool descriptors |
-| 🔀&nbsp;[#89013](https://github.com/openclaw/openclaw/pull/89013) | 0 | OpenAI-compatible/proxy | fix(agents): materialize OpenAI tool schemas |
-| 🔀&nbsp;[#89001](https://github.com/openclaw/openclaw/pull/89001) | 0 | OpenAI-compatible/proxy | fix: support Azure Responses text stream events |
-| 🔀&nbsp;[#88999](https://github.com/openclaw/openclaw/pull/88999) | 0 | Local model runtime | fix(cron): repair concatenated JSON keys from local-model tool-call parsers |
-| 🔀&nbsp;[#88994](https://github.com/openclaw/openclaw/pull/88994) | 0 | Model routing/config | fix(agents): quarantine normalized runtime tools |
-| 🔀&nbsp;[#88977](https://github.com/openclaw/openclaw/pull/88977) | 0 | Model routing/config | fix(agents): tolerate provider tool schema hook failures |
-| 🔀&nbsp;[#88964](https://github.com/openclaw/openclaw/pull/88964) | 0 | OpenAI-compatible/proxy | [codex] Repair context-engine tool-result pairing |
-| 🔀&nbsp;[#88959](https://github.com/openclaw/openclaw/pull/88959) | 0 | Model routing/config | fix(plugins): ignore throwing provider runtime hooks |
-| 🔀&nbsp;[#88958](https://github.com/openclaw/openclaw/pull/88958) | 0 | Model routing/config | Fix BTW OAuth side-question routing |
-| 🔀&nbsp;[#88956](https://github.com/openclaw/openclaw/pull/88956) | 0 | Model routing/config | Repair compacted tool-result chains |
-| 🔀&nbsp;[#88950](https://github.com/openclaw/openclaw/pull/88950) | 0 | Model routing/config | fix(plugins): ignore throwing provider policy hooks |
-| 🔀&nbsp;[#88940](https://github.com/openclaw/openclaw/pull/88940) | 0 | OpenAI-compatible/proxy | fix(llm): repairJson injects control chars for backslash b/f/n/r/t into Windows paths |
-| 🔀&nbsp;[#88931](https://github.com/openclaw/openclaw/pull/88931) | 0 | Local model runtime | fix(agents): cap tool search fanout in lean mode |
-| 🔀&nbsp;[#88917](https://github.com/openclaw/openclaw/pull/88917) | 0 | OpenAI-compatible/proxy | fix: retry stale Responses reasoning replay safely |
-| 📝&nbsp;[#88907](https://github.com/openclaw/openclaw/issues/88907) | 0 | Open-weight/provider behavior | Chronic agent failures on Telegram - LLM timeouts before configured timeout + silent incomplete turns + dead fallbacks (OpenRouter/DeepSeek+V4-Flash, v2026.5.28) |
-| 🔀&nbsp;[#88906](https://github.com/openclaw/openclaw/pull/88906) | 0 | Model routing/config | fix(openai): allow Codex Spark via harness |
-| 🔀&nbsp;[#88905](https://github.com/openclaw/openclaw/pull/88905) | 0 | Local memory/embedding | feat(dreaming): expose shadow-trial scoring in reports |
-| 📝&nbsp;[#88902](https://github.com/openclaw/openclaw/issues/88902) | 0 | Model routing/config | [Bug]: Codex OAuth /btw still falls back to OpenAI Responses after /new |
-| 🔀&nbsp;[#88893](https://github.com/openclaw/openclaw/pull/88893) | 0 | OpenAI-compatible/proxy | fix: support Azure Responses API text content type |
-| 🔀&nbsp;[#88890](https://github.com/openclaw/openclaw/pull/88890) | 0 | Local model runtime | fix #87768: [Bug]: push to talk mac os companion app hard codes thinking low |
-| 🔀&nbsp;[#88887](https://github.com/openclaw/openclaw/pull/88887) | 0 | Local memory/embedding | fix(memory-core): don't run the LLM reranker in vsearch/search modes |
-| 🔀&nbsp;[#88884](https://github.com/openclaw/openclaw/pull/88884) | 0 | Local model runtime | fix(agents): trim web tools in lean mode |
-| 🔀&nbsp;[#88882](https://github.com/openclaw/openclaw/pull/88882) | 0 | Local model runtime | test(gateway): add small model live profile |
-| 🔀&nbsp;[#88881](https://github.com/openclaw/openclaw/pull/88881) | 0 | Local model runtime | fix(agents): trim media tools in lean mode |
-| 🔀&nbsp;[#88880](https://github.com/openclaw/openclaw/pull/88880) | 0 | Model routing/config | fix(agents): project nullable tool schemas for providers |
-| 🔀&nbsp;[#88878](https://github.com/openclaw/openclaw/pull/88878) | 0 | Model routing/config | fix(agents): project cron tool schemas for providers |
-| 🔀&nbsp;[#88869](https://github.com/openclaw/openclaw/pull/88869) | 0 | Open-weight/provider behavior | Add MiniMax M3 support to the bundled MiniMax provider |
-| 📝&nbsp;[#88868](https://github.com/openclaw/openclaw/issues/88868) | 0 | Open-weight/provider behavior | Add MiniMax M3 support to the bundled MiniMax provider |
-| 📝&nbsp;[#88864](https://github.com/openclaw/openclaw/issues/88864) | 0 | Local memory/embedding | [Bug]: `memory-wiki` bridge imports all workspace artifacts into shared vault, causing `path-mismatch` error |
-| 🔀&nbsp;[#88837](https://github.com/openclaw/openclaw/pull/88837) | 0 | Model routing/config | fix(agent): use static catalog for skip-agent model resolution |
-| 🔀&nbsp;[#88822](https://github.com/openclaw/openclaw/pull/88822) | 0 | Local model runtime | fix(agents): compact lean local tool catalogs |
-| 🔀&nbsp;[#88800](https://github.com/openclaw/openclaw/pull/88800) | 0 | Model routing/config | fix(models): keep generated secret refs out of plaintext |
-| 🔀&nbsp;[#88789](https://github.com/openclaw/openclaw/pull/88789) | 0 | Local model runtime | feat(agents): auto-trim lean local tools |
-| 🔀&nbsp;[#88771](https://github.com/openclaw/openclaw/pull/88771) | 0 | Local model runtime | fix(agents): stream phased text deltas incrementally |
-| 🔀&nbsp;[#88754](https://github.com/openclaw/openclaw/pull/88754) | 0 | Open-weight/provider behavior | fix(text): normalize CJK/fullwidth quotes in reasoning tag delimiters |
-| 🔀&nbsp;[#88748](https://github.com/openclaw/openclaw/pull/88748) | 0 | Model routing/config | fix(gemini): bridge OAuth profiles into CLI runtime |
-| 🔀&nbsp;[#88709](https://github.com/openclaw/openclaw/pull/88709) | 0 | Model routing/config | fix(auth): cooldown inline api key billing failures |
-| 📝&nbsp;[#88707](https://github.com/openclaw/openclaw/issues/88707) | 0 | Model routing/config | [Bug] Regression 2026.5.27→2026.5.28: "No API provider registered for api: bedrock-converse-stream" — pi-ai removal breaks Bedrock provider registration; bearer token auth broken |
-| 📝&nbsp;[#88705](https://github.com/openclaw/openclaw/issues/88705) | 0 | Local memory/embedding | Bug: npm updates drop node-llama-cpp, breaking local memory_search after every OpenClaw update |
-| 🔀&nbsp;[#88696](https://github.com/openclaw/openclaw/pull/88696) | 0 | Local memory/embedding | fix #70559: runUnsafeReindex crashes with "no such table: chunks_vec" when sqlite-vec is enabled |
-| 📝&nbsp;[#88679](https://github.com/openclaw/openclaw/issues/88679) | 0 | Model routing/config | [Feature]: Per-Tool Model Routing — route specific tool calls to different models |
-| 📝&nbsp;[#88657](https://github.com/openclaw/openclaw/issues/88657) | 0 | Open-weight/provider behavior | Bug: DeepSeek V4 Flash incomplete turn (payloads=0, tools=2, replaySafe=no, stopReason=stop) in 2026.5.27/28 |
-| 🔀&nbsp;[#88645](https://github.com/openclaw/openclaw/pull/88645) | 0 | Local model runtime | fix(llm): use JSON5 as intermediate fallback in parseStreamingJson to avoid partial-json key corruption |
-| 📝&nbsp;[#88632](https://github.com/openclaw/openclaw/issues/88632) | 0 | Local model runtime | [Bug]: gateway model-run sessions accumulate until session maxEntries cap |
-| 🔀&nbsp;[#88630](https://github.com/openclaw/openclaw/pull/88630) | 0 | Model routing/config | fix(codex): avoid guardian review for local models |
-| 📝&nbsp;[#88616](https://github.com/openclaw/openclaw/issues/88616) | 0 | Model routing/config | [Feature]: Forward session_id to OpenRouter for sticky routing & prompt caching |
-| 📝&nbsp;[#88615](https://github.com/openclaw/openclaw/issues/88615) | 0 | Local memory/embedding | [Bug]: sqlite-vec fails to load on Node 22 Linux x64 (Vector store: unknown, distinct from #64776 and #65033) |
-| 📝&nbsp;[#88579](https://github.com/openclaw/openclaw/issues/88579) | 0 | Model routing/config | LLM error: Authorization Not Found - SecretRef apiKey not properly resolved in Gateway |
-| 📝&nbsp;[#88562](https://github.com/openclaw/openclaw/issues/88562) | 0 | Model routing/config | [Bug]: models.json generator writes apiKey as plain string instead of secret-ref object |
-| 📝&nbsp;[#88561](https://github.com/openclaw/openclaw/issues/88561) | 0 | Model routing/config | lossless-claw compaction breaks tool_calls/tool message chain -> 499 error on model switch |
-| 🔀&nbsp;[#88553](https://github.com/openclaw/openclaw/pull/88553) | 0 | Model routing/config | fix(agents): unblock fallback classification tests |
-| 🔀&nbsp;[#88551](https://github.com/openclaw/openclaw/pull/88551) | 0 | Model routing/config | fix(agents): skip auth gate for CLI-owned transport |
-| 📝&nbsp;[#88548](https://github.com/openclaw/openclaw/issues/88548) | 0 | Model routing/config | GitHub Copilot: static default model list shadows live entitlement discovery |
-| 🔀&nbsp;[#88514](https://github.com/openclaw/openclaw/pull/88514) | 0 | Local model runtime | fix(gateway): avoid default provider auth startup prewarm |
-| 🔀&nbsp;[#88506](https://github.com/openclaw/openclaw/pull/88506) | 0 | Model routing/config | feat: add per-agent compaction overrides |
-| 📝&nbsp;[#88490](https://github.com/openclaw/openclaw/issues/88490) | 0 | Model routing/config | Session model override from Codex persists in unrelated sessions (e.g. Telegram) |
-| 🔀&nbsp;[#88460](https://github.com/openclaw/openclaw/pull/88460) | 0 | Local model runtime | fix(cron): recover from local-llamacpp parameter serialization bugs |
-| 📝&nbsp;[#88457](https://github.com/openclaw/openclaw/issues/88457) | 0 | Open-weight/provider behavior | [Bug]: opencode-go works via direct infer but fails in embedded agent runtime with session takeover |
-| 🔀&nbsp;[#88400](https://github.com/openclaw/openclaw/pull/88400) | 0 | Model routing/config | fix(config): accept overlays for bundled provider aliases |
-| 🔀&nbsp;[#88329](https://github.com/openclaw/openclaw/pull/88329) | 0 | Model routing/config | fix: user-pinned model falls back to global chain on quota exhaustion |
-| 🔀&nbsp;[#88263](https://github.com/openclaw/openclaw/pull/88263) | 0 | Local memory/embedding | fix(memory-core): use native recursive fs.watch in QMD watcher to prevent per-file FD leak |
-| 🔀&nbsp;[#88249](https://github.com/openclaw/openclaw/pull/88249) | 0 | Model routing/config | feat(desktop): add Tauri model setup app |
-| 🔀&nbsp;[#88212](https://github.com/openclaw/openclaw/pull/88212) | 0 | Local model runtime | feat(agents): auto-trim lean local model tools |
-| 📝&nbsp;[#88201](https://github.com/openclaw/openclaw/issues/88201) | 0 | Local model runtime | [Bug]: OpenClaw 5.22: ~10 sec per-call inference overhead in infer model run (both --gateway and --local) vs ~1.3 sec direct provider call |
-| 🔀&nbsp;[#88181](https://github.com/openclaw/openclaw/pull/88181) | 0 | Local model runtime | feat(agents): add strict local model lean profile |
-| 🔀&nbsp;[#88108](https://github.com/openclaw/openclaw/pull/88108) | 0 | Local model runtime | fix(agents): compact lean local tool catalogs |
-| 🔀&nbsp;[#88098](https://github.com/openclaw/openclaw/pull/88098) | 0 | OpenAI-compatible/proxy | feat(onboard): add --custom-context-window flag for non-interactive setup |
-| 🔀&nbsp;[#88082](https://github.com/openclaw/openclaw/pull/88082) | 0 | Model routing/config | feat(stepfun): add step-3.7-flash model |
-| 📝&nbsp;[#88079](https://github.com/openclaw/openclaw/issues/88079) | 0 | Open-weight/provider behavior | [Regression] WebChat: reasoning_content not streamed for Kimi Code & DeepSeek Reasoner — only MiniMax works |
-| 🔀&nbsp;[#88078](https://github.com/openclaw/openclaw/pull/88078) | 0 | Local memory/embedding | fix(active-memory): trim recall prompt envelope |
-| 📝&nbsp;[#88077](https://github.com/openclaw/openclaw/issues/88077) | 0 | Local memory/embedding | [Bug]: Active Memory recall context uses full OpenClaw prompt envelope |
-| 📝&nbsp;[#88009](https://github.com/openclaw/openclaw/issues/88009) | 0 | Local memory/embedding | [Feature]: batched memory embedding should batch over files |
-| 📝&nbsp;[#87996](https://github.com/openclaw/openclaw/issues/87996) | 0 | OpenAI-compatible/proxy | Vertex beta INVALID_ARGUMENT can wedge long Enterprise sessions without actionable recovery |
-| 🔀&nbsp;[#87958](https://github.com/openclaw/openclaw/pull/87958) | 0 | Model routing/config | fix(agents): scale read output for small contexts |
-| 📝&nbsp;[#87957](https://github.com/openclaw/openclaw/issues/87957) | 0 | Model routing/config | Refactor session model/auth state resolution |
-| 🔀&nbsp;[#87955](https://github.com/openclaw/openclaw/pull/87955) | 0 | Local model runtime | fix(agents): keep lean tools behind catalog controls |
-| 📝&nbsp;[#87943](https://github.com/openclaw/openclaw/issues/87943) | 0 | Open-weight/provider behavior | feat: Add Xiaomi MiMo Web Search provider |
-| 🔀&nbsp;[#87940](https://github.com/openclaw/openclaw/pull/87940) | 0 | Local model runtime | fix(gateway): keep dense stream updates incremental |
-| 🔀&nbsp;[#87933](https://github.com/openclaw/openclaw/pull/87933) | 0 | OpenAI-compatible/proxy | fix(agents): respect compat.thinkingFormat override for DeepSeek V4 models |
-| 🔀&nbsp;[#87927](https://github.com/openclaw/openclaw/pull/87927) | 0 | Model routing/config | fix(agents): cap compaction budgets for small contexts |
-| 📝&nbsp;[#87925](https://github.com/openclaw/openclaw/issues/87925) | 0 | Model routing/config | thinkingLevel: model switch silently downgrades and persists an inherited explicit override |
-| 🔀&nbsp;[#87923](https://github.com/openclaw/openclaw/pull/87923) | 0 | Model routing/config | fix(thinking): keep explicit session thinkingLevel when runtime downgrades (#87740) |
-| 🔀&nbsp;[#87895](https://github.com/openclaw/openclaw/pull/87895) | 0 | Open-weight/provider behavior | test(agents): broaden small live hosted model matrix |
-| 🔀&nbsp;[#87893](https://github.com/openclaw/openclaw/pull/87893) | 0 | Model routing/config | fix(auth-profiles): repair stale auto runtime auth selection |
-| 📝&nbsp;[#87881](https://github.com/openclaw/openclaw/issues/87881) | 0 | Local memory/embedding | Gap Analysis: v2026.5.27 config keys rejected as unknown by schema |
-| 📝&nbsp;[#87876](https://github.com/openclaw/openclaw/issues/87876) | 0 | Model routing/config | Bug: Bedrock Converse Streaming silently aborts on long-context agent sessions (~6 min timeout, no retry, no fallback) |
-| 🔀&nbsp;[#87856](https://github.com/openclaw/openclaw/pull/87856) | 0 | Local model runtime | fix(agents): count streamed model deltas incrementally |
-| 🔀&nbsp;[#87850](https://github.com/openclaw/openclaw/pull/87850) | 0 | Local model runtime | fix(agents): avoid constructing lean local model tools<br>Assignee: vincentkoc |
-| 📝&nbsp;[#87816](https://github.com/openclaw/openclaw/issues/87816) | 0 | Local/media model provider | feat(tts): xiaomi voicedesign/voiceclone model support |
-| 📝&nbsp;[#87766](https://github.com/openclaw/openclaw/issues/87766) | 0 | Open-weight/provider behavior | [Bug] Kimi web_search always returns "ungrounded" error - Moonshot API no longer returns search_results field[Bug]: |
-| 📝&nbsp;[#87763](https://github.com/openclaw/openclaw/issues/87763) | 0 | OpenAI-compatible/proxy | SSRF guard pinned DNS dispatcher causes model fetch timeouts when autoSelectFamily is enabled |
-| 🔀&nbsp;[#87697](https://github.com/openclaw/openclaw/pull/87697) | 0 | Model routing/config | fix(auth): clear stale provider cooldowns after reauth |
-| 📝&nbsp;[#87689](https://github.com/openclaw/openclaw/issues/87689) | 0 | Local memory/embedding | Dreaming needs supported guard to disable session transcript ingestion during QMD migrations |
-| 📝&nbsp;[#87687](https://github.com/openclaw/openclaw/issues/87687) | 0 | Local model runtime | vllm openai-completions streaming parser drops tool_calls when reasoning_content streams first for gpt-oss-120b at large systemPrompt |
-| 📝&nbsp;[#87642](https://github.com/openclaw/openclaw/issues/87642) | 0 | Local model runtime | Expose subagent-control waitForRun timeout as a config knob (hardcoded 30s blocks slow local LLMs) |
-| 📝&nbsp;[#87603](https://github.com/openclaw/openclaw/issues/87603) | 0 | Model routing/config | lossless-claw contextThreshold does not adapt to actual model context window after fallback |
-| 🔀&nbsp;[#87596](https://github.com/openclaw/openclaw/pull/87596) | 0 | Open-weight/provider behavior | fix(moonshot): rewrite duplicate native Kimi tool_call ids on replay |
-| 🔀&nbsp;[#87587](https://github.com/openclaw/openclaw/pull/87587) | 0 | Local model runtime | fix(agents): keep exec visible for lean local models |
-| 📝&nbsp;[#87586](https://github.com/openclaw/openclaw/issues/87586) | 0 | Local model runtime | [Feature]: Unixsocket Provider plugin |
-| 🔀&nbsp;[#87562](https://github.com/openclaw/openclaw/pull/87562) | 0 | Open-weight/provider behavior | fix(openrouter): reconcile streamed cost with /generation total_cost |
-| 📝&nbsp;[#87466](https://github.com/openclaw/openclaw/issues/87466) | 0 | Local/media model provider | [Bug]:Telegram voice delivery is unstable across model runtimes because voice generation depends on model-generated media tags |
-| 📝&nbsp;[#87443](https://github.com/openclaw/openclaw/issues/87443) | 0 | Local memory/embedding | sqlite-vec vector search fails on musl-based systems |
-| 🔀&nbsp;[#87414](https://github.com/openclaw/openclaw/pull/87414) | 0 | Local model runtime | [codex] Key llama.cpp sessions for local reuse |
-| 📝&nbsp;[#87384](https://github.com/openclaw/openclaw/issues/87384) | 0 | Local/media model provider | Bug: CLI audio transcription can use progress stdout when transcript file is empty |
-| 🔀&nbsp;[#87343](https://github.com/openclaw/openclaw/pull/87343) | 0 | Model routing/config | feat(cron): surface fallback progress |
-| 📝&nbsp;[#87277](https://github.com/openclaw/openclaw/issues/87277) | 0 | Open-weight/provider behavior | [Feature] Add MiMo-V2.5 to Xiaomi catalog + automatic multimodal routing when DeepSeek V4-Pro is primary model |
-| 📝&nbsp;[#87267](https://github.com/openclaw/openclaw/issues/87267) | 0 | Local model runtime | [Bug]: Dream Diary narrative needs separate config for timeout/concurrency or disablement, while keeping dreaming enabled. |
-| 📝&nbsp;[#87262](https://github.com/openclaw/openclaw/issues/87262) | 0 | Local model runtime | [Bug]: qqbot + ollama + local model: qwen3.5:27b report: error Embedded agent failed before reply: LLM request failed: network connection was interrupted |
-| 📝&nbsp;[#87168](https://github.com/openclaw/openclaw/issues/87168) | 0 | Model routing/config | `image` media-understanding tool can bypass configured Codex image route via model overrides and direct OpenAI auto-selection |
-| 📝&nbsp;[#87110](https://github.com/openclaw/openclaw/issues/87110) | 0 | Local model runtime | When calling a VLLM model, the usage page statistics show no data. How can I calculate usage and cost when using VLLM? |
-| 📝&nbsp;[#86813](https://github.com/openclaw/openclaw/issues/86813) | 0 | Model routing/config | `/new` does not clear persisted model override in channel-bound sessions |
-| 🔀&nbsp;[#86776](https://github.com/openclaw/openclaw/pull/86776) | 0 | Model routing/config | fix(models): apply provider policy defaults to inline models |
-| 📝&nbsp;[#86773](https://github.com/openclaw/openclaw/issues/86773) | 0 | Local model runtime | Provider auth prewarm can starve gateway event loop and cause sessions.list timeouts after restart |
-| 📝&nbsp;[#86752](https://github.com/openclaw/openclaw/issues/86752) | 0 | Local model runtime | [Bug]: 2026.5.22 Docker/WSL2 gateway event-loop starvation, 284s provider-auth prewarm, slow Telegram turn, and local RPC timeouts |
-| 📝&nbsp;[#86521](https://github.com/openclaw/openclaw/issues/86521) | 0 | OpenAI-compatible/proxy | fix: preserve reasoning_content for DeepSeek models through proxy providers (opencode-native) |
-| 📝&nbsp;[#86182](https://github.com/openclaw/openclaw/issues/86182) | 0 | Local model runtime | discord/picker: structural 25-option / 5-row / 100-char limits constrain large wildcard configs |
-| 📝&nbsp;[#86174](https://github.com/openclaw/openclaw/issues/86174) | 0 | Model routing/config | [Bug]: WebChat + New Session displays default model but inherits parent's model override |
-| 📝&nbsp;[#85684](https://github.com/openclaw/openclaw/issues/85684) | 0 | OpenAI-compatible/proxy | pi-embedded-runner: reasoning-only retry short-circuited in group chats by silentReplyPolicy default |
-| 📝&nbsp;[#85321](https://github.com/openclaw/openclaw/issues/85321) | 0 | Open-weight/provider behavior | `wrapStreamRepairMalformedToolCallArguments` clears valid tool call arguments for Moonshot/Kimi provider |
-| 📝&nbsp;[#84918](https://github.com/openclaw/openclaw/issues/84918) | 0 | OpenAI-compatible/proxy | OpenWebUI image uploads reach image tool as empty image via /v1/chat/completions on 2026.5.18 |
-| 📝&nbsp;[#84865](https://github.com/openclaw/openclaw/issues/84865) | 0 | Open-weight/provider behavior | user-switched model has no fallback chain, causing session deadlock on provider outage |
-| 🔀&nbsp;[#84554](https://github.com/openclaw/openclaw/pull/84554) | 0 | Local memory/embedding | fix(memory-core): guard builtin fallback after qmd failures |
-| 📝&nbsp;[#84217](https://github.com/openclaw/openclaw/issues/84217) | 0 | Local model runtime | [Bug]: Heartbeat dispatch delivers free text block alongside message-tool call (chatty non-Codex providers, v2026.5.18) |
-| 🔀&nbsp;[#84072](https://github.com/openclaw/openclaw/pull/84072) | 0 | Model routing/config | Add model fallback circuit breaker |
-| 📝&nbsp;[#84070](https://github.com/openclaw/openclaw/issues/84070) | 0 | Local model runtime | Active Memory embedded runner fails to expose plugin tools when hidden runner is on the DeepSeek provider path |
-| 🔀&nbsp;[#83436](https://github.com/openclaw/openclaw/pull/83436) | 0 | Model routing/config | fix(agents): rethrow EmbeddedAttemptSessionTakeoverError before model fallback |
-| 📝&nbsp;[#83399](https://github.com/openclaw/openclaw/issues/83399) | 0 | OpenAI-compatible/proxy | Bug: Tool call loop when assistant generates text + toolCall with openai-completions API |
-| 🔀&nbsp;[#83213](https://github.com/openclaw/openclaw/pull/83213) | 0 | Model routing/config | fix(gateway): clear live model switch on reset |
-| 🔀&nbsp;[#82557](https://github.com/openclaw/openclaw/pull/82557) | 0 | Model routing/config | Allow onboarding to configure multiple model providers |
-| 🔀&nbsp;[#82145](https://github.com/openclaw/openclaw/pull/82145) | 0 | Local model runtime | cron: allow retries for local model preflight |
-| 📝&nbsp;[#81925](https://github.com/openclaw/openclaw/issues/81925) | 0 | Local memory/embedding | Compaction: `after_compaction` not emitted when `result.compacted:false`; validation: single-quote delimiter trips tool-caller retries |
-| 📝&nbsp;[#81835](https://github.com/openclaw/openclaw/issues/81835) | 0 | OpenAI-compatible/proxy | Bug: thinking parameter format incompatible with Volcengine CodingPlan v3 API |
-| 🔀&nbsp;[#80957](https://github.com/openclaw/openclaw/pull/80957) | 0 | OpenAI-compatible/proxy | fix: refresh status context window after model switch |
-| 📝&nbsp;[#80521](https://github.com/openclaw/openclaw/issues/80521) | 0 | Local model runtime | UI feature request: model picker + drag-to-reorder for primary/fallback model selection in Agents > Overview |
-| 🔀&nbsp;[#80418](https://github.com/openclaw/openclaw/pull/80418) | 0 | OpenAI-compatible/proxy | fix(/v1/responses): accept text field on requests for OpenAI SDK 6.x parity |
-| 📝&nbsp;[#80336](https://github.com/openclaw/openclaw/issues/80336) | 0 | Local model runtime | [Bug]: placeholder.openclaw.cloud unreachable on WSL2 with custom gateway port |
-| 📝&nbsp;[#80317](https://github.com/openclaw/openclaw/issues/80317) | 0 | OpenAI-compatible/proxy | TTS OpenAI provider: MP3 responseFormat not voice-compatible for Telegram, unlike Edge TTS |
-| 🔀&nbsp;[#80033](https://github.com/openclaw/openclaw/pull/80033) | 0 | Open-weight/provider behavior | fix(opencode-go): add supportedReasoningEfforts to DeepSeek V4 model entries |
-| 📝&nbsp;[#79437](https://github.com/openclaw/openclaw/issues/79437) | 0 | Local memory/embedding | Prebuilt `node-llama-cpp` Windows binaries crash (0xC0000005) on Intel Alder Lake-N (N95) - qmd LLM half unusable |
-| 🔀&nbsp;[#79185](https://github.com/openclaw/openclaw/pull/79185) | 0 | Open-weight/provider behavior | fix(tts/xiaomi): support Token Plan TTS endpoint |
-| 📝&nbsp;[#78091](https://github.com/openclaw/openclaw/issues/78091) | 0 | OpenAI-compatible/proxy | [Bug]: Open-WebUI creates new session per message instead of reusing persistent session |
-| 📝&nbsp;[#75811](https://github.com/openclaw/openclaw/issues/75811) | 0 | Local model runtime | [Bug]: `exec` tool schema exposes `security`/`elevated`/`ask` fields as model-controllable; model self-imposes denial |
-| 📝&nbsp;[#75312](https://github.com/openclaw/openclaw/issues/75312) | 0 | Local memory/embedding | Bug: wiki_search throws 'sharedMemoryManager.search is not a function' when search.backend=shared and corpus includes memory/all |
-| 🔀&nbsp;[#75274](https://github.com/openclaw/openclaw/pull/75274) | 0 | Local model runtime | fix(ollama): per-request URL routing for multi-provider setups |
-| 🔀&nbsp;[#75267](https://github.com/openclaw/openclaw/pull/75267) | 0 | Model routing/config | Fix model picker alias/provider scoped options |
-| 📝&nbsp;[#75189](https://github.com/openclaw/openclaw/issues/75189) | 0 | Local model runtime | [Bug]: Default `bootstrapMaxChars=20000` + verbose auto-generated bootstrap content degrades tool dispatch on small/mid models |
-| 📝&nbsp;[#75187](https://github.com/openclaw/openclaw/issues/75187) | 0 | Local model runtime | [Bug]: Auto-generated `AGENTS.md` puts load-bearing tool-use rules at the bottom; head-truncation by `bootstrapMaxChars` strips them |
-| 📝&nbsp;[#75040](https://github.com/openclaw/openclaw/issues/75040) | 0 | Local model runtime | [Bug]: extra_body overwriting request payload keys: thinking - framework-level thinking field collision affecting all providers |
-| 📝&nbsp;[#75026](https://github.com/openclaw/openclaw/issues/75026) | 0 | OpenAI-compatible/proxy | MiniMax token usage shows 0 in Control UI Usage page (only message count works) |
-| 📝&nbsp;[#74900](https://github.com/openclaw/openclaw/issues/74900) | 0 | Local memory/embedding | [Feature]: stable public SDK path for embedding provider API (independent of memory-core) |
-| 📝&nbsp;[#74835](https://github.com/openclaw/openclaw/issues/74835) | 0 | OpenAI-compatible/proxy | Add global provider request proxy/default SSRF policy for model providers |
-| 📝&nbsp;[#74481](https://github.com/openclaw/openclaw/issues/74481) | 0 | OpenAI-compatible/proxy | feat: dynamic catalog refresh from configured provider /v1/models |
-| 📝&nbsp;[#74204](https://github.com/openclaw/openclaw/issues/74204) | 0 | Local memory/embedding | memory.qmd.update.embedTimeoutMs default (120 s) is too low for local GGUF; error message doesn't surface the fix |
-| 📝&nbsp;[#74020](https://github.com/openclaw/openclaw/issues/74020) | 0 | OpenAI-compatible/proxy | Gateway startup: models.mode=replace should skip pricing fetches |
-| 📝&nbsp;[#73186](https://github.com/openclaw/openclaw/issues/73186) | 0 | OpenAI-compatible/proxy | [Bug]: Thinking/reasoning content leaks into cron announce delivery for Matrix/Feishu |
-| 📝&nbsp;[#72359](https://github.com/openclaw/openclaw/issues/72359) | 0 | Local memory/embedding | Active Memory: add single-shot mode (no embedded agent loop) for low-latency preflight injection |
-| 📝&nbsp;[#71273](https://github.com/openclaw/openclaw/issues/71273) | 0 | Open-weight/provider behavior | Bug: Kimi Code model enters infinite tool call loop |
-| 🔀&nbsp;[#70647](https://github.com/openclaw/openclaw/pull/70647) | 0 | Open-weight/provider behavior | test(agents): pin empty-turn coverage for non-strict-agentic nemotron |
-| 📝&nbsp;[#70559](https://github.com/openclaw/openclaw/issues/70559) | 0 | Local memory/embedding | runUnsafeReindex crashes with "no such table: chunks_vec" when sqlite-vec is enabled |
-| 🔀&nbsp;[#69729](https://github.com/openclaw/openclaw/pull/69729) | 0 | OpenAI-compatible/proxy | fix(qwen): enable qwen3.6-plus on Coding Plan CN, correct reasoning flag |
-| 🔀&nbsp;[#69495](https://github.com/openclaw/openclaw/pull/69495) | 0 | Model routing/config | feat(heartbeat): support model fallbacks via {primary,fallbacks} (#69434) |
-| 🔀&nbsp;[#69245](https://github.com/openclaw/openclaw/pull/69245) | 0 | OpenAI-compatible/proxy | feat: enable cache-ttl context pruning for openai-completions providers |
-| 🔀&nbsp;[#68975](https://github.com/openclaw/openclaw/pull/68975) | 0 | Local memory/embedding | feat(memory): switch default local embedding model to bge-m3 Q8_0 AI-assisted |
-| 🔀&nbsp;[#68590](https://github.com/openclaw/openclaw/pull/68590) | 0 | Local memory/embedding | fix(memory-core): rewrite qmd index on managed collection repair |
-| 🔀&nbsp;[#68435](https://github.com/openclaw/openclaw/pull/68435) | 0 | OpenAI-compatible/proxy | feat(gateway): accept audio/file content blocks in /v1/chat/completions |
-| 📝&nbsp;[#68222](https://github.com/openclaw/openclaw/issues/68222) | 0 | Open-weight/provider behavior | [Bug]: Kimi Code model frequent sessions_yield tool call/output interrupts long-running tasks, requires manual intervention to resume |
-| 📝&nbsp;[#67379](https://github.com/openclaw/openclaw/issues/67379) | 0 | Local memory/embedding | qmd scope denies subagent sessions - channel/chatType resolve to undefined |
-| 📝&nbsp;[#65557](https://github.com/openclaw/openclaw/issues/65557) | 0 | Local model runtime | Provider & model selection per session/account with admin-controlled allowlists |
-| 🔀&nbsp;[#65547](https://github.com/openclaw/openclaw/pull/65547) | 0 | Local memory/embedding | test(memory-qmd): verify extraCollections pattern reaches qmd collection add CLI args |
-| 🔀&nbsp;[#65423](https://github.com/openclaw/openclaw/pull/65423) | 0 | Model routing/config | feat(agents): shuffle auth profile candidates for subagent runs |
-| 🔀&nbsp;[#65180](https://github.com/openclaw/openclaw/pull/65180) | 0 | Local model runtime | fix(cli,sessions): make local model run stateless by default and keep transcript fallback profile-scoped |
-| 🔀&nbsp;[#64335](https://github.com/openclaw/openclaw/pull/64335) | 0 | Open-weight/provider behavior | fix(zai): rotate env-backed API keys on rate limit |
-| 📝&nbsp;[#64224](https://github.com/openclaw/openclaw/issues/64224) | 0 | OpenAI-compatible/proxy | Billing cooldown flags entire provider instead of individual model - breaks proxy/litellm setups |
-| 📝&nbsp;[#64212](https://github.com/openclaw/openclaw/issues/64212) | 0 | Open-weight/provider behavior | [Bug]: Image tool fails with "Request was aborted" for NVIDIA Kimi K2.5 |
-| 📝&nbsp;[#63531](https://github.com/openclaw/openclaw/issues/63531) | 0 | Local memory/embedding | [Feature]: Add MLX Talk provider MVP for local macOS TTS |
-| 📝&nbsp;[#62780](https://github.com/openclaw/openclaw/issues/62780) | 0 | Local model runtime | Feature: message:before_send hook to enable content-quality fallback gating |
-| 🔀&nbsp;[#62733](https://github.com/openclaw/openclaw/pull/62733) | 0 | Local memory/embedding | Fix local memory embedding VRAM fallback and logging file resolution |
-| 🔀&nbsp;[#62710](https://github.com/openclaw/openclaw/pull/62710) | 0 | Model routing/config | fix(auth): stop new sessions inheriting auto-selected auth profile overrides |
-| 📝&nbsp;[#62436](https://github.com/openclaw/openclaw/issues/62436) | 0 | OpenAI-compatible/proxy | Feature: Lightweight LLM passthrough mode for /v1/chat/completions - skip session persistence entirely |
-| 📝&nbsp;[#62432](https://github.com/openclaw/openclaw/issues/62432) | 0 | Open-weight/provider behavior | [Bug]: Xiaomi/MiMo sessions can repeatedly relaunch exec after 'Command still running' instead of switching to process poll |
-| 📝&nbsp;[#62109](https://github.com/openclaw/openclaw/issues/62109) | 0 | OpenAI-compatible/proxy | Interactive runs fail with auth-style 403 when custom OpenAI-compatible provider baseUrl uses Unicode/IDN or punycode hostname, but ASCII hostname/IP works |
-| 📝&nbsp;[#61716](https://github.com/openclaw/openclaw/issues/61716) | 0 | OpenAI-compatible/proxy | [Feature]: Add model parameter prompts (context window, max_tokens, modalities) during OpenAI-compatible provider onboarding CLI flow |
-| 📝&nbsp;[#58765](https://github.com/openclaw/openclaw/issues/58765) | 0 | Local memory/embedding | Feature: Support output dimensionality truncation for local GGUF embedding models |
-| 🔀&nbsp;[#58405](https://github.com/openclaw/openclaw/pull/58405) | 0 | OpenAI-compatible/proxy | feat(openresponses): add per-request skills override to /v1/responses |
-| 📝&nbsp;[#57638](https://github.com/openclaw/openclaw/issues/57638) | 0 | OpenAI-compatible/proxy | feat: cron.defaults for model, delivery, and contextTokens |
-| 📝&nbsp;[#57443](https://github.com/openclaw/openclaw/issues/57443) | 0 | OpenAI-compatible/proxy | [Bug]: Tool JSON Schema patternProperties causes 400 errors on BytePlus Ark (doubao) - schema cleaning should be universal, not provider-specific |
-| 🔀&nbsp;[#55477](https://github.com/openclaw/openclaw/pull/55477) | 0 | OpenAI-compatible/proxy | feat: stamp session_key, message_channel, context_limit into LiteLLM request metadata |
-| 📝&nbsp;[#54128](https://github.com/openclaw/openclaw/issues/54128) | 0 | Local memory/embedding | Add maxThreads config for local embedding (node-llama-cpp) |
-| 📝&nbsp;[#53810](https://github.com/openclaw/openclaw/issues/53810) | 0 | OpenAI-compatible/proxy | Subagent Premature Announce Bug - Model-Specific Tool Call Handling Issues |
-| 📝&nbsp;[#51593](https://github.com/openclaw/openclaw/issues/51593) | 0 | Open-weight/provider behavior | [Bug]: HTTP 400: "tool call id exec:26 is duplicated" with moonshot/kimi-k2.5 in WhatsApp group chats |
-| 📝&nbsp;[#44789](https://github.com/openclaw/openclaw/issues/44789) | 0 | OpenAI-compatible/proxy | [Bug]: openclaw 2026.03.11 partially config litellm |
-| 📝&nbsp;[#43432](https://github.com/openclaw/openclaw/issues/43432) | 0 | Local memory/embedding | [Feature]: Memory durability config - hard flush threshold, priority-aware compaction, cache TTL |
-| 📝&nbsp;[#42408](https://github.com/openclaw/openclaw/issues/42408) | 0 | Local memory/embedding | [Bug/Docs]: local+hybrid memory_search quality can appear unstable due to extraPaths path drift + benchmark-file contamination |
+| Thread | Activity | Area | Creator | Title |
+| --- | --- | --- | --- | --- |
+| 📝&nbsp;[#67035](https://github.com/openclaw/openclaw/issues/67035) | 34 | Local model runtime | @q7793527 | [Bug]: 2026.4.14 Windows chat UI regression: input text swallowed, streamed replies often invisible until refresh, typing indicator flashes then blanks |
+| 📝&nbsp;[#72015](https://github.com/openclaw/openclaw/issues/72015) | 29 | Local memory/embedding | @0xCNAI | Reliability: active-memory blocks replies and QMD boot initialization can overload multi-agent gateways |
+| 📝&nbsp;[#71491](https://github.com/openclaw/openclaw/issues/71491) | 25 | Open-weight/provider behavior | @RoseKongPS | Kimi K2.6 reasoning_content 400 regression in long conversations after LCM compaction (follow-up #70392) |
+| 📝&nbsp;[#86599](https://github.com/openclaw/openclaw/issues/86599) | 23 | Local memory/embedding | @JakeBiggs | [Bug]: Local model provider calls thread block gateway event loop on Windows beta; trivial infer run takes ~4 minutes |
+| 📝&nbsp;[#75378](https://github.com/openclaw/openclaw/issues/75378) | 22 | Local model runtime | @kai-the-man[bot] | [Bug] Gateway event loop saturation during parallel subagent spawn causes 1012 restart (v2026.4.29) |
+| 📝&nbsp;[#17925](https://github.com/openclaw/openclaw/issues/17925) | 20 | Open-weight/provider behavior | @cedar202510-dotcom | [Feature]: Support native web_search passthrough for ZAI (GLM) and Google (Gemini) providers |
+| 🔀&nbsp;[#84581](https://github.com/openclaw/openclaw/pull/84581) | 17 | OpenAI-compatible/proxy | @pcdqc | fix(agents): strip plaintext model provider keys |
+| 📝&nbsp;[#74586](https://github.com/openclaw/openclaw/issues/74586) | 17 | Local memory/embedding | @islandpreneur007 | AM embedded run aborts memory_search tool calls; classifies as timeout despite model completion |
+| 📝&nbsp;[#62328](https://github.com/openclaw/openclaw/issues/62328) | 17 | Local memory/embedding | @TimeAground | node:sqlite missing FTS5 module - memory search keyword fallback broken |
+| 🔀&nbsp;[#56674](https://github.com/openclaw/openclaw/pull/56674) | 17 | OpenAI-compatible/proxy | @tonga54 | feat(openresponses): return reasoning/thinking content in /v1/responses output |
+| 📝&nbsp;[#33962](https://github.com/openclaw/openclaw/issues/33962) | 15 | Local model runtime | @zhangsensen | [Feature]: slug-generator: use lightweight model instead of agent primary to prevent lane congestion |
+| 🔀&nbsp;[#79745](https://github.com/openclaw/openclaw/pull/79745) | 14 | Local memory/embedding | @SYU8384 | Memory/QMD: isolate mcporter sidecars per agent |
+| 📝&nbsp;[#74986](https://github.com/openclaw/openclaw/issues/74986) | 14 | Local model runtime | @mlaihk | [Bug]: openclaw infer hangs indefinitely on 2026.4.27 - openclaw-infer child spins at 100% CPU with zero network I/O |
+| 📝&nbsp;[#68920](https://github.com/openclaw/openclaw/issues/68920) | 14 | Local memory/embedding | @mehdic | HTTP /v1/chat/completions: 10-15s TTFB due to full agent context assembly - needs lightContext/voice mode |
+| 📝&nbsp;[#85192](https://github.com/openclaw/openclaw/issues/85192) | 13 | OpenAI-compatible/proxy | @yxyujian98-png | DeepSeek V4: isSignedThinkingBlock misses unsigned thinking blocks - reasoning-only retry fails |
+| 📝&nbsp;[#84569](https://github.com/openclaw/openclaw/issues/84569) | 13 | Local model runtime | @kiagentkronos-cell | WhatsApp session stalls on long model_call: incomplete turn with payloads=0, reply never delivered |
+| 🔀&nbsp;[#81834](https://github.com/openclaw/openclaw/pull/81834) | 13 | Local/media model provider | @KLilyZ | feat(senseaudio): add SenseAudio TTS provider |
+| 📝&nbsp;[#79847](https://github.com/openclaw/openclaw/issues/79847) | 13 | Local memory/embedding | @ChrisBot2026 | qmd-manager leaks XDG_CONFIG_HOME / XDG_CACHE_HOME to all child spawns, breaking mcporter >= 0.10 integration |
+| 🔀&nbsp;[#87247](https://github.com/openclaw/openclaw/pull/87247) | 12 | Local memory/embedding | @airbing11 | docs: note LanceDB dreaming v0.2.3 via memory-lancedb-dreaming plugin |
+| 🔀&nbsp;[#77158](https://github.com/openclaw/openclaw/pull/77158) | 12 | Local memory/embedding | @zeroaltitude | perf(qmd): persistent export-state cache + stat fast path in exportSessions |
+| 📝&nbsp;[#54155](https://github.com/openclaw/openclaw/issues/54155) | 12 | Local memory/embedding | @the-lobsternaut | Gateway memory leak: 389MB -> 14.7GB over 4 days with session accumulation |
+| 📝&nbsp;[#51441](https://github.com/openclaw/openclaw/issues/51441) | 12 | OpenAI-compatible/proxy | @Kyzcreig | feat: expose resolved backend model in session_status and agent runtime |
+| 🔀&nbsp;[#50051](https://github.com/openclaw/openclaw/pull/50051) | 12 | Local/media model provider | @seyeong-han | feat(macos): ExecuTorch Parakeet-TDT STT for Talk Mode + model-plugin runtime |
+| 📝&nbsp;[#45049](https://github.com/openclaw/openclaw/issues/45049) | 12 | OpenAI-compatible/proxy | @ArnoldJr | Agent loop allows simulated tool calls instead of enforcing real tool invocation |
+| 🔀&nbsp;[#81443](https://github.com/openclaw/openclaw/pull/81443) | 11 | Local memory/embedding | @knightplat-blip | fix: resolve QMD Windows shims and guard image URL downloads |
+| 🔀&nbsp;[#77339](https://github.com/openclaw/openclaw/pull/77339) | 11 | Model routing/config | @mjamiv | fix(auto-reply): clear runtime model cache on reset |
+| 🔀&nbsp;[#68079](https://github.com/openclaw/openclaw/pull/68079) | 11 | OpenAI-compatible/proxy | @Frrrrrrrrank | feat(providers/zai): inject X-Session-Id header for prompt cache stickiness |
+| 📝&nbsp;[#85126](https://github.com/openclaw/openclaw/issues/85126) | 10 | Local model runtime | @mlaihk | Bug: Control UI (TUI/WebChat) sessions auto-select wrong authProfileOverride (deepseek instead of minimax) at creation |
+| 🔀&nbsp;[#78747](https://github.com/openclaw/openclaw/pull/78747) | 10 | Model/provider behavior | @ashvinnagarajan | fix(cache): emit `tools` before `input` in OpenAI Responses request body for prefix-cache stability |
+| 📝&nbsp;[#54463](https://github.com/openclaw/openclaw/issues/54463) | 10 | Local memory/embedding | @bwjoke | QMD memory indexing can recurse into symlink loops in workspace-visible temp monorepos and fail with ENAMETOOLONG<br>Assignee: vincentkoc |
+| 📝&nbsp;[#33329](https://github.com/openclaw/openclaw/issues/33329) | 10 | Local model runtime | @bhalliburton | Document and add config toggles for all implicit discovery mechanisms |
+| 🔀&nbsp;[#87404](https://github.com/openclaw/openclaw/pull/87404) | 9 | Model routing/config | @deepujain | fix(agents): honor ACP alias model.primary overrides (Fixes #87381) |
+| 🔀&nbsp;[#86564](https://github.com/openclaw/openclaw/pull/86564) | 9 | Model/provider behavior | @wesleysimplicio | fix(gateway): disable provider auth prewarm by default |
+| 📝&nbsp;[#86090](https://github.com/openclaw/openclaw/issues/86090) | 9 | Local model runtime | @dustytext-bot | runHeartbeatOnce returns {status: "ran"} in 78ms on idle agent — phantom run, no model turn executed |
+| 📝&nbsp;[#85773](https://github.com/openclaw/openclaw/issues/85773) | 9 | Local model runtime | @philippulus | [Bug]: After reinstalling (v2026.5.20), agents only provide generic replies, completely ignoring workspace files content and skills |
+| 🔀&nbsp;[#84977](https://github.com/openclaw/openclaw/pull/84977) | 9 | Local model runtime | @ouchuan | feat: handle gemma 4 format tool call |
+| 📝&nbsp;[#73432](https://github.com/openclaw/openclaw/issues/73432) | 9 | Local memory/embedding | @danielngn | [Bug]: qmd embedding is never triggered per memory.qmd.update.interval/embedInterval |
+| 🔀&nbsp;[#71062](https://github.com/openclaw/openclaw/pull/71062) | 9 | OpenAI-compatible/proxy | @PopFlamingo | fix(/v1/responses): drop the extra phantom assistant turn on client-tool calls |
+| 🔀&nbsp;[#70739](https://github.com/openclaw/openclaw/pull/70739) | 9 | OpenAI-compatible/proxy | @tonga54 | fix(gateway): add SSE heartbeat to keep /v1/responses and /v1/chat/completions streams alive through idle-timeout proxies |
+| 🔀&nbsp;[#70596](https://github.com/openclaw/openclaw/pull/70596) | 9 | Local memory/embedding | @taosiyuan163 | perf(memory): prewarm explicit local embeddings on gateway startup |
+| 🔀&nbsp;[#68725](https://github.com/openclaw/openclaw/pull/68725) | 9 | OpenAI-compatible/proxy | @wirjo | feat(amazon-bedrock-mantle): add known context windows for open-weight Mantle models |
+| 📝&nbsp;[#60546](https://github.com/openclaw/openclaw/issues/60546) | 9 | OpenAI-compatible/proxy | @jtgcyber | [Bug]: microsoft-foundry provider selects Claude deployments but routes them through OpenAI Foundry endpoints |
+| 📝&nbsp;[#37966](https://github.com/openclaw/openclaw/issues/37966) | 9 | OpenAI-compatible/proxy | @V0v1kkkAssistant | [Bug]: cacheRetention ignored for LiteLLM-proxied Anthropic models |
+| 📝&nbsp;[#10480](https://github.com/openclaw/openclaw/issues/10480) | 9 | OpenAI-compatible/proxy | @sidharthachatterjee | Support Workers AI model selection during onboard |
+| 🔀&nbsp;[#87393](https://github.com/openclaw/openclaw/pull/87393) | 8 | Local/media model provider | @kesslerio | fix(media): suppress local whisper progress transcripts |
+| 🔀&nbsp;[#87300](https://github.com/openclaw/openclaw/pull/87300) | 8 | Model routing/config | @newbie-yu | feat: group model select with collapsible panel in Control UI |
+| 🔀&nbsp;[#86554](https://github.com/openclaw/openclaw/pull/86554) | 8 | OpenAI-compatible/proxy | @liaoyl830 | fix(agents): add missing DeepSeek V4 proxy models to reasoning_content replay set |
+| 📝&nbsp;[#76665](https://github.com/openclaw/openclaw/issues/76665) | 8 | Open-weight/provider behavior | @Nelsoncongbao | Session context silently lost between consecutive turns with z.ai provider (GLM gateway) |
+| 🔀&nbsp;[#75270](https://github.com/openclaw/openclaw/pull/75270) | 8 | OpenAI-compatible/proxy | @Komzpa | fix(agent): prevent sticky model fallback |
+| 📝&nbsp;[#74021](https://github.com/openclaw/openclaw/issues/74021) | 8 | OpenAI-compatible/proxy | @jmystaki-create | Support reasoning-field outputs and visible final-answer handling for native reasoning models |
+| 🔀&nbsp;[#73512](https://github.com/openclaw/openclaw/pull/73512) | 8 | Local memory/embedding | @SymbolStar | fix(memory): schedule qmd embed when embedInterval is configured regardless of searchMode |
+| 🔀&nbsp;[#67008](https://github.com/openclaw/openclaw/pull/67008) | 8 | Open-weight/provider behavior | @tardigrde | feat(chutes): add zai-org/GLM-5.1-TEE to static model catalog |
+| 📝&nbsp;[#64438](https://github.com/openclaw/openclaw/issues/64438) | 8 | Local memory/embedding | @GravenSm | Feature Request: Remote Reranker Endpoint Support |
+| 📝&nbsp;[#62121](https://github.com/openclaw/openclaw/issues/62121) | 8 | Local model runtime | @tlnini-afk | DeepSeek preamble text leaks to Telegram after 3.13 -> 4.5 upgrade (untagged assistant text bypasses commentary filter) |
+| 📝&nbsp;[#52029](https://github.com/openclaw/openclaw/issues/52029) | 8 | Local model runtime | @andyk-ms | Feature Request: heartbeat.tools option to disable tools during heartbeat |
+| 📝&nbsp;[#45508](https://github.com/openclaw/openclaw/issues/45508) | 8 | OpenAI-compatible/proxy | @mcfex | [Feature]: Self-hosted STT/TTS provider support in webchat (Route webchat TTS through the gateway instead of browser Speech API) |
+| 📝&nbsp;[#41372](https://github.com/openclaw/openclaw/issues/41372) | 8 | Model/provider behavior | @e740554 | Field Report: 25 findings from 4 weeks of self-hosted production use (config crashes, CLI docs, Discord, cron) |
+| 📝&nbsp;[#15073](https://github.com/openclaw/openclaw/issues/15073) | 8 | Local model runtime | @lucca-alma | Feature Request: Per-agent context/workspace on model fallback |
+| 🔀&nbsp;[#77053](https://github.com/openclaw/openclaw/pull/77053) | 7 | OpenAI-compatible/proxy | @firat-elbey | feat(lmstudio): opt-in idle TTL via native load API |
+| 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
+| 📝&nbsp;[#30381](https://github.com/openclaw/openclaw/issues/30381) | 7 | OpenAI-compatible/proxy | @mr-slurpy-wildcard | chatCompletions: ignore request model when x-openclaw-agent-id header is present |
+| 📝&nbsp;[#75959](https://github.com/openclaw/openclaw/issues/75959) | 6 | OpenAI-compatible/proxy | @hpfan | [Feature]: Support image analysis for Kimi Code Plan |
+| 🔀&nbsp;[#75075](https://github.com/openclaw/openclaw/pull/75075) | 6 | OpenAI-compatible/proxy | @glow1128 | feat(gateway): surface built-in tool calls as function_call output items on /v1/responses |
+| 📝&nbsp;[#63990](https://github.com/openclaw/openclaw/issues/63990) | 6 | Local memory/embedding | @DIZ-admin | Feature: Multi-index embedding memory with model-aware failover (no mixed vector spaces) |
+| 📝&nbsp;[#48300](https://github.com/openclaw/openclaw/issues/48300) | 6 | Local memory/embedding | @sabo961 | Bug: memory_search hybrid mode not returning FTS matches |
+| 🔀&nbsp;[#87705](https://github.com/openclaw/openclaw/pull/87705) | 5 | Local model runtime | @EnjouZeratul | fix(agents): make subagent-control timeout configurable |
+| 🔀&nbsp;[#87694](https://github.com/openclaw/openclaw/pull/87694) | 5 | Model routing/config | @sweetcornna | fix(auth): tighten billing cooldown defaults to recover from multi-hour lockouts (#70903) |
+| 🔀&nbsp;[#87619](https://github.com/openclaw/openclaw/pull/87619) | 5 | Local model runtime | @vincentkoc | fix(diagnostics): account stream deltas incrementally |
+| 🔀&nbsp;[#87617](https://github.com/openclaw/openclaw/pull/87617) | 5 | Local model runtime | @vincentkoc | fix(agents): broaden local model lean profile |
+| 🔀&nbsp;[#87296](https://github.com/openclaw/openclaw/pull/87296) | 5 | Model routing/config | @newbie-yu | feat: group model select with collapsible panel in Control UI |
+| 📝&nbsp;[#83402](https://github.com/openclaw/openclaw/issues/83402) | 5 | OpenAI-compatible/proxy | @Guardl1n | [Bug]: Providers/Xiaomi: MiMo mimo-v2.5-pro still rejects cron embedded agent tool schema with 400 after 2026.5.12 fix |
+| 📝&nbsp;[#81961](https://github.com/openclaw/openclaw/issues/81961) | 5 | OpenAI-compatible/proxy | @alexandre-leng | [Feature]: Add a simple Dashboard UX to manage multiple model providers |
+| 📝&nbsp;[#81525](https://github.com/openclaw/openclaw/issues/81525) | 5 | OpenAI-compatible/proxy | @holgergruenhagen | [Bug]: media-understanding silently routes images to user-declared vision models without validating declared capabilities |
+| 🔀&nbsp;[#78085](https://github.com/openclaw/openclaw/pull/78085) | 5 | OpenAI-compatible/proxy | @Beandon13 | fix(agents): parse prompt_tokens/completion_tokens in CLI usage for llama.cpp compatibility (#77992) |
+| 📝&nbsp;[#76884](https://github.com/openclaw/openclaw/issues/76884) | 5 | Local model runtime | @wingraver | [Bug]: OpenClaw on native Windows getting notably slower and slower with each new version??? |
+| 📝&nbsp;[#75105](https://github.com/openclaw/openclaw/issues/75105) | 5 | Open-weight/provider behavior | @flofrie | [Feature]: Allow per-model setting for Deepseek `reasoning_content` fix |
+| 📝&nbsp;[#74732](https://github.com/openclaw/openclaw/issues/74732) | 5 | Local memory/embedding | @mppyes-ai | docs+feat: Document oMLX (Apple Silicon MLX) as memorySearch embedding provider |
+| 🔀&nbsp;[#74403](https://github.com/openclaw/openclaw/pull/74403) | 5 | Open-weight/provider behavior | @SymbolStar | fix(deepseek): strip reasoning_content when extra_body disables thinking |
+| 🔀&nbsp;[#74185](https://github.com/openclaw/openclaw/pull/74185) | 5 | Model/provider behavior | @yelog | fix(infra): wrap provider auth resolution in timeout for status --usage --json |
+| 🔀&nbsp;[#73594](https://github.com/openclaw/openclaw/pull/73594) | 5 | Open-weight/provider behavior | @simpx | feat(openrouter): inject cache_control for closed-source qwen models |
+| 🔀&nbsp;[#71678](https://github.com/openclaw/openclaw/pull/71678) | 5 | Local memory/embedding | @sahilsatralkar | Fix: Issue 71522 memory embeddings |
+| 📝&nbsp;[#66125](https://github.com/openclaw/openclaw/issues/66125) | 5 | OpenAI-compatible/proxy | @Cybertr0n313 | [Bug]: openai-completions fallback candidate is selected, but fallback does not complete successfully through an OpenAI-compatible proxy |
+| 🔀&nbsp;[#61187](https://github.com/openclaw/openclaw/pull/61187) | 5 | Open-weight/provider behavior | @Luckymingxuan | fix(kimi, moonshot): model picker shows wrong models |
+| 🔀&nbsp;[#87932](https://github.com/openclaw/openclaw/pull/87932) | 4 | Model routing/config | @tanshanshan | feat(compaction): support percentage strings for token thresholds |
+| 📝&nbsp;[#87756](https://github.com/openclaw/openclaw/issues/87756) | 4 | Local model runtime | @rogerallen1 | [Bug]: Regression: prompt-launched Lobster workflow hangs on nested /tools/invoke, while curl-launched workflow works |
+| 📝&nbsp;[#87752](https://github.com/openclaw/openclaw/issues/87752) | 4 | Model routing/config | @jlin53882 | [Bug]: Failover selects unconfigured model MiniMax-M2.7-highspeed causing complete session failure |
+| 🔀&nbsp;[#87572](https://github.com/openclaw/openclaw/pull/87572) | 4 | Local memory/embedding | @tanshanshan | fix(memory): increase QMD embedTimeoutMs default to 600s for local GGUF |
+| 🔀&nbsp;[#87480](https://github.com/openclaw/openclaw/pull/87480) | 4 | Model routing/config | @bladin | fix(anthropic): configure undici Agent with extended keep-alive to prevent socket failures |
+| 📝&nbsp;[#87407](https://github.com/openclaw/openclaw/issues/87407) | 4 | Model routing/config | @chrisgarcia-cpu | [Bug]: Anthropic provider: UND_ERR_SOCKET keep-alive failures trigger silent mid-turn fallback to OpenAI/Codex |
+| 📝&nbsp;[#87325](https://github.com/openclaw/openclaw/issues/87325) | 4 | OpenAI-compatible/proxy | @BSG2000 | Support Azure Foundry GPT Realtime Talk via gateway relay |
+| 📝&nbsp;[#87318](https://github.com/openclaw/openclaw/issues/87318) | 4 | Model routing/config | @Haderach-Ram | amazon-bedrock provider: Haiku 4.5 inference profile ARN not supported; params.modelId override ignored |
+| 📝&nbsp;[#87285](https://github.com/openclaw/openclaw/issues/87285) | 4 | Local model runtime | @junxuku-byte | Gateway frequent restarts: config reload too aggressive + auth pre-warm blocks event loop |
+| 📝&nbsp;[#87170](https://github.com/openclaw/openclaw/issues/87170) | 4 | Model routing/config | @phyosweet84-dev | Agent always returns "Provider returned error" with auto model after gateway restart |
+| 📝&nbsp;[#87140](https://github.com/openclaw/openclaw/issues/87140) | 4 | Local/media model provider | @StephenCYL | [Feature]: Pluggable STT backend for macOS Push-to-Talk |
+| 📝&nbsp;[#86868](https://github.com/openclaw/openclaw/issues/86868) | 4 | Model routing/config | @John1Tang | Embedded runtime: model fallback chain breaks at intermediate candidates instead of walking to the last entry |
+| 📝&nbsp;[#86632](https://github.com/openclaw/openclaw/issues/86632) | 4 | Local model runtime | @ebelo | OpenClaw local embedded Ollama/Qwen session fails live-data request that Pi coding agent handles via shell/curl |
+| 🔀&nbsp;[#86551](https://github.com/openclaw/openclaw/pull/86551) | 4 | OpenAI-compatible/proxy | @liaoyl830 | fix(agents): add missing DeepSeek V4 proxy models to reasoning_content replay set |
+| 📝&nbsp;[#86034](https://github.com/openclaw/openclaw/issues/86034) | 4 | OpenAI-compatible/proxy | @tianxiaochannel-oss88 | Media generation succeeds but completion delivery fails and looks like generation failure |
+| 📝&nbsp;[#85826](https://github.com/openclaw/openclaw/issues/85826) | 4 | Local model runtime | @kiagentkronos-cell | [Bug]: Agent stall detector hard-coded 120s threshold kills legitimate long model calls on local vLLM |
+| 📝&nbsp;[#85382](https://github.com/openclaw/openclaw/issues/85382) | 4 | Local memory/embedding | @mmhzlrj | [Bug] post-compaction embedding sync fails with 500 when memorySearch.remote.baseUrl points to non-OpenAI host |
+| 📝&nbsp;[#84575](https://github.com/openclaw/openclaw/issues/84575) | 4 | OpenAI-compatible/proxy | @juergenvh | [Bug] /v1/chat/completions: second request with same x-openclaw-session-key during in-flight turn runs in isolated session, loses memory scope |
+| 🔀&nbsp;[#84228](https://github.com/openclaw/openclaw/pull/84228) | 4 | Open-weight/provider behavior | @nedirante | fix(nvidia): update Nemotron 3 Super contextWindow to 1M per NVIDIA spec |
+| 📝&nbsp;[#84218](https://github.com/openclaw/openclaw/issues/84218) | 4 | Local model runtime | @reboost-openclaw-team[bot] | Heartbeat isolatedSession=true replays prior heartbeat context, causing deterministic overflow/restart loop |
+| 📝&nbsp;[#83584](https://github.com/openclaw/openclaw/issues/83584) | 4 | OpenAI-compatible/proxy | @kwizzlek | [Bug]: Outbound MEDIA: directive on /v1/responses and /v1/chat/completions is passed through as raw text instead of translated to image_url / file content block |
+| 🔀&nbsp;[#83227](https://github.com/openclaw/openclaw/pull/83227) | 4 | OpenAI-compatible/proxy | @HemantSudarshan | fix(openai): mark mp3 TTS voice output compatible |
+| 📝&nbsp;[#81960](https://github.com/openclaw/openclaw/issues/81960) | 4 | Local model runtime | @alexandre-leng | [Feature]: Allow onboarding to configure multiple providers and models |
+| 🔀&nbsp;[#80947](https://github.com/openclaw/openclaw/pull/80947) | 4 | Local memory/embedding | @anyech | fix(doctor): warn and document QMD session recall gates |
+| 📝&nbsp;[#80722](https://github.com/openclaw/openclaw/issues/80722) | 4 | Local model runtime | @islandpreneur007 | config set "Restart the gateway to apply" warning is misleading for active agents without agentRuntime override |
+| 📝&nbsp;[#80081](https://github.com/openclaw/openclaw/issues/80081) | 4 | OpenAI-compatible/proxy | @torbisoc | Need documented config keys for disabling plugin/tool/channel/owner-elevated surfaces for proposal-only mode |
+| 📝&nbsp;[#79897](https://github.com/openclaw/openclaw/issues/79897) | 4 | OpenAI-compatible/proxy | @alexanderatkins | OpenAI-compatible streaming with llama.cpp saves zero usage (stream closed before final usage chunk) |
+| 📝&nbsp;[#78897](https://github.com/openclaw/openclaw/issues/78897) | 4 | OpenAI-compatible/proxy | @Proita | OpenAI Responses provider should allow store=true for LiteLLM gpt-5.5 continuations |
+| 📝&nbsp;[#77692](https://github.com/openclaw/openclaw/issues/77692) | 4 | OpenAI-compatible/proxy | @kidding1412 | fix(tts/xiaomi): Xiaomi Token Plan endpoint uses Bearer auth, not api-key header |
+| 📝&nbsp;[#77675](https://github.com/openclaw/openclaw/issues/77675) | 4 | Local model runtime | @nickytonline | [Bug]: request.headers SecretRefs on model providers fail in embedded agent context with "unresolved SecretRef" error |
+| 📝&nbsp;[#77142](https://github.com/openclaw/openclaw/issues/77142) | 4 | Local memory/embedding | @vuho60-byte | [Feature]: Parametric consolidation channel for dreaming pipeline (CLS Phase 4) |
+| 🔀&nbsp;[#76002](https://github.com/openclaw/openclaw/pull/76002) | 4 | OpenAI-compatible/proxy | @symonbaikov | fix(kimi): switch to openai-completions endpoint for image support |
+| 🔀&nbsp;[#75860](https://github.com/openclaw/openclaw/pull/75860) | 4 | Local memory/embedding | @codexGW | fix(memory): improve QMD recall for channel queries |
+| 🔀&nbsp;[#75350](https://github.com/openclaw/openclaw/pull/75350) | 4 | Open-weight/provider behavior | @t6am3 | fix(deepseek): strip reasoning_content from input messages when thinking is enabled |
+| 📝&nbsp;[#75301](https://github.com/openclaw/openclaw/issues/75301) | 4 | Local model runtime | @mogglemoss | [Feature]: `openclaw caches` command to inspect and prune unbounded `~/.openclaw/` cache dirs (plugin-runtime-deps, browser, tools, orphan transcripts) |
+| 📝&nbsp;[#75163](https://github.com/openclaw/openclaw/issues/75163) | 4 | OpenAI-compatible/proxy | @david-r-jones | Bug: TUI mid-session model switch passes raw alias instead of resolved model ID |
+| 📝&nbsp;[#74910](https://github.com/openclaw/openclaw/issues/74910) | 4 | Local memory/embedding | @andhai | doctor: agents.defaults.llm.idleTimeoutSeconds auto-fix discards the user value; runtime gives no signal until doctor runs |
+| 📝&nbsp;[#73801](https://github.com/openclaw/openclaw/issues/73801) | 4 | OpenAI-compatible/proxy | @iannwu | Active Memory with Cerebras gpt-oss-120b times out and can pin gateway CPU |
+| 🔀&nbsp;[#72537](https://github.com/openclaw/openclaw/pull/72537) | 4 | Local memory/embedding | @masonjamie | fix(tts): honor provider timeoutMs in chat synthesis |
+| 📝&nbsp;[#69943](https://github.com/openclaw/openclaw/issues/69943) | 4 | Local memory/embedding | @reidperyam | [Bug]: session-memory hook persists raw chat-template tokens and unparsed tool calls - re-injected context creates self-reinforcing poisoning loop, agents emit role tokens / NO_REPLY across all subsequent /new sessions |
+| 🔀&nbsp;[#68996](https://github.com/openclaw/openclaw/pull/68996) | 4 | OpenAI-compatible/proxy | @tanjinlimkelvin-dot | fix(google): route Gemma models through native Generative AI API |
+| 📝&nbsp;[#63229](https://github.com/openclaw/openclaw/issues/63229) | 4 | Local model runtime | @clawdia-lobster | Bug: Gateway falsely marks healthy local vLLM endpoints as timed out/overloaded, causing 1-23 min fallback cascades |
+| 📝&nbsp;[#62924](https://github.com/openclaw/openclaw/issues/62924) | 4 | Local model runtime | @ulttla | Expose actual media-understanding chosen model in inbound body to avoid guessed media model reporting |
+| 📝&nbsp;[#62599](https://github.com/openclaw/openclaw/issues/62599) | 4 | Local model runtime | @shawnpetros | [Bug]: openclaw status loads memory plugins locally and can report false vector state |
+| 📝&nbsp;[#60344](https://github.com/openclaw/openclaw/issues/60344) | 4 | Open-weight/provider behavior | @doctorhexb163 | [Bug]: Recursive output of system marker [image data removed - already processed by model] in kimi-coding/k2p |
+| 🔀&nbsp;[#58434](https://github.com/openclaw/openclaw/pull/58434) | 4 | OpenAI-compatible/proxy | @tonga54 | feat(openresponses): add per-request tool_deny override to /v1/responses |
+| 📝&nbsp;[#57996](https://github.com/openclaw/openclaw/issues/57996) | 4 | Local memory/embedding | @Orionation | QMD per-agent SQLite caches cause extreme disk I/O on multi-agent deployments<br>Assignee: vincentkoc |
+| 📝&nbsp;[#53550](https://github.com/openclaw/openclaw/issues/53550) | 4 | Local memory/embedding | @shivasymbl | experimental.sessionMemory does not surface gateway-dispatched sessions in memory_search |
+| 📝&nbsp;[#49205](https://github.com/openclaw/openclaw/issues/49205) | 4 | OpenAI-compatible/proxy | @SHAREN | [Bug]: Control UI messages can reach shared context but still not appear in Open WebUI visible chat history |
+| 📝&nbsp;[#46661](https://github.com/openclaw/openclaw/issues/46661) | 4 | OpenAI-compatible/proxy | @sheldon123z | [Feature]: Support Custom ASR (Speech-to-Text) Server Configuration |
+| 📝&nbsp;[#22021](https://github.com/openclaw/openclaw/issues/22021) | 4 | Local model runtime | @dekaru | [Feature]: Add X-Actual-Model header to expose runtime model in HTTP responses |
+| 📝&nbsp;[#13962](https://github.com/openclaw/openclaw/issues/13962) | 4 | Local model runtime | @dantaik | Feature: Per-mention model routing + context window for group mentions |
+| 📝&nbsp;[#82594](https://github.com/openclaw/openclaw/issues/82594) | 2 | Local model runtime | @alexandre-leng | [Bug]: openclaw onboard extremely slow on Windows during model loading |
+| 🔀&nbsp;[#74761](https://github.com/openclaw/openclaw/pull/74761) | 2 | Local memory/embedding | @mppyes-ai | docs: Document oMLX (Apple Silicon MLX) as memorySearch embedding provider |
+| 🔀&nbsp;[#73817](https://github.com/openclaw/openclaw/pull/73817) | 2 | OpenAI-compatible/proxy | @spi3 | fix(media): allow private openai compatible audio transcription endpoints |
+| 📝&nbsp;[#59168](https://github.com/openclaw/openclaw/issues/59168) | 2 | Local model runtime | @Kaspre | feat(models): use provider/name as internal key to decouple from API model ID |
+| 🔀&nbsp;[#86637](https://github.com/openclaw/openclaw/pull/86637) | 1 | Open-weight/provider behavior | @SebTardif | fix(agents): recover tool calls from DeepSeek DSML text markup |
+| 📝&nbsp;[#77645](https://github.com/openclaw/openclaw/issues/77645) | 1 | Local memory/embedding | @aderius | memory status --deep reports QMD embeddings unavailable when searchMode=search intentionally disables vectors |
+| 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
+| 🔀&nbsp;[#73667](https://github.com/openclaw/openclaw/pull/73667) | 1 | Local memory/embedding | @0xCNAI | Bound active-memory recall latency and jitter QMD startup |
+| 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
+| 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
+| 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
+| 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#89845](https://github.com/openclaw/openclaw/pull/89845) | 0 | OpenAI-compatible/proxy | @obuchowski | fix(fireworks): optimize caching with x-session-affinity |
+| 🔀&nbsp;[#89832](https://github.com/openclaw/openclaw/pull/89832) | 0 | OpenAI-compatible/proxy | @KrasimirKralev | fix(config): allow requiresReasoningContentOnAssistantMessages in ModelCompatSchema |
+| 🔀&nbsp;[#89818](https://github.com/openclaw/openclaw/pull/89818) | 0 | Model/provider behavior | @masatohoshino | fix(providers): forward stop sequences in bundled Anthropic transports |
+| 📝&nbsp;[#89787](https://github.com/openclaw/openclaw/issues/89787) | 0 | Open-weight/provider behavior | @ArthurusDent | [Bug]: Agent stalls indefinitely when model emits stopReason="stop" with no toolCall - only thinking block generated |
+| 📝&nbsp;[#89758](https://github.com/openclaw/openclaw/issues/89758) | 0 | Model routing/config | @Enominera | [Bug] overloaded_error triggers immediate rotate_profile without retry, causing cascade fallback on transient provider overload |
+| 🔀&nbsp;[#89741](https://github.com/openclaw/openclaw/pull/89741) | 0 | Local memory/embedding | @TurboTheTurtle | fix(memory): add EPERM fallback for atomic reindex |
+| 🔀&nbsp;[#89730](https://github.com/openclaw/openclaw/pull/89730) | 0 | Local model runtime | @vincentkoc | fix(agents): guard lean tool name reads<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89729](https://github.com/openclaw/openclaw/pull/89729) | 0 | OpenAI-compatible/proxy | @snowzlm | fix: skip Responses item id replay when store support is stripped |
+| 📝&nbsp;[#89728](https://github.com/openclaw/openclaw/issues/89728) | 0 | OpenAI-compatible/proxy | @snowzlm | Custom OpenAI Responses-compatible providers still replay item ids when store support is stripped |
+| 🔀&nbsp;[#89716](https://github.com/openclaw/openclaw/pull/89716) | 0 | OpenAI-compatible/proxy | @masatohoshino | fix(providers): strip cache-boundary marker from non-Anthropic prompts |
+| 📝&nbsp;[#89706](https://github.com/openclaw/openclaw/issues/89706) | 0 | Model routing/config | @nyuDSA | github-copilot: gemini-3.1-pro appears in models list but fails silently when selected |
+| 🔀&nbsp;[#89703](https://github.com/openclaw/openclaw/pull/89703) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(openai): guard responses tool payload names<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89692](https://github.com/openclaw/openclaw/pull/89692) | 0 | OpenAI-compatible/proxy | @draix | fix(config): allow compat.requiresReasoningContentOnAssistantMessages in model config |
+| 📝&nbsp;[#89691](https://github.com/openclaw/openclaw/issues/89691) | 0 | Local memory/embedding | @joeykrug | Active-memory embedded memory_search intermittently loses embedding provider and falls back to FTS-only |
+| 🔀&nbsp;[#89685](https://github.com/openclaw/openclaw/pull/89685) | 0 | Model routing/config | @moeedahmed | fix(acpx): handle Claude ACP model startup options |
+| 🔀&nbsp;[#89669](https://github.com/openclaw/openclaw/pull/89669) | 0 | Model/provider behavior | @vincentkoc | fix(agents): contain provider schema hook failures<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89667](https://github.com/openclaw/openclaw/pull/89667) | 0 | OpenAI-compatible/proxy | @luyao618 | fix(config): allow requiresReasoningContentOnAssistantMessages in ModelCompatSchema [AI-assisted] |
+| 🔀&nbsp;[#89665](https://github.com/openclaw/openclaw/pull/89665) | 0 | Open-weight/provider behavior | @vincentkoc | fix(plugin-sdk): guard provider tool schema walks<br>Assignee: vincentkoc |
+| 📝&nbsp;[#89664](https://github.com/openclaw/openclaw/issues/89664) | 0 | Model routing/config | @Stache73 | [Bug] secrets audit / doctor falsely flags static routing header as plaintext secret |
+| 📝&nbsp;[#89660](https://github.com/openclaw/openclaw/issues/89660) | 0 | OpenAI-compatible/proxy | @kyKKK | [Bug]: requiresReasoningContentOnAssistantMessages missing from ModelCompatSchema — can't replicate native DeepSeek behavior on custom providers |
+| 🔀&nbsp;[#89657](https://github.com/openclaw/openclaw/pull/89657) | 0 | Model routing/config | @vincentkoc | fix(plugins): harden installed index stale metadata<br>Assignee: vincentkoc |
+| 📝&nbsp;[#89655](https://github.com/openclaw/openclaw/issues/89655) | 0 | Model routing/config | @kasanuowa | [Bug]: `NODE_USE_SYSTEM_CA=1` breaks `openai-codex` auth/keychain paths on macOS and can fail fresh runtime launch with `SecItemCopyMatching failed -50` |
+| 🔀&nbsp;[#89652](https://github.com/openclaw/openclaw/pull/89652) | 0 | Local memory/embedding | @joeykrug | fix(plugins): load owning plugin for configured memory embedding provider at startup |
+| 📝&nbsp;[#89651](https://github.com/openclaw/openclaw/issues/89651) | 0 | Local memory/embedding | @joeykrug | Gateway startup does not load the plugin owning a configured memory embedding provider (memorySearch.provider) |
+| 🔀&nbsp;[#89647](https://github.com/openclaw/openclaw/pull/89647) | 0 | Model routing/config | @vincentkoc | fix(plugins): guard startup manifest channels<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89646](https://github.com/openclaw/openclaw/pull/89646) | 0 | Model routing/config | @vincentkoc | fix(model-catalog): guard model id policies<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89644](https://github.com/openclaw/openclaw/pull/89644) | 0 | Model routing/config | @vincentkoc | fix(model-catalog): skip unreadable catalog records<br>Assignee: vincentkoc |
+| 📝&nbsp;[#89633](https://github.com/openclaw/openclaw/issues/89633) | 0 | Model routing/config | @goslingmanagment | Codex turn fails with generic Telegram fallback when invalid image tool model is configured, leaving child agent orphaned on full stdout pipe |
+| 🔀&nbsp;[#89629](https://github.com/openclaw/openclaw/pull/89629) | 0 | Model routing/config | @Marvinthebored | feat(hooks): expose per-turn usageState on reply_payload_sending |
+| 🔀&nbsp;[#89624](https://github.com/openclaw/openclaw/pull/89624) | 0 | Local model runtime | @vincentkoc | fix(ollama): guard tool schema normalization<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89618](https://github.com/openclaw/openclaw/pull/89618) | 0 | Local model runtime | @danyurkin | feat(atomicchat): add Atomic Chat as a bundled local provider |
+| 📝&nbsp;[#89617](https://github.com/openclaw/openclaw/issues/89617) | 0 | Local model runtime | @danyurkin | Add Atomic Chat as a bundled local provider (OpenAI-compatible, 127.0.0.1:1337) |
+| 🔀&nbsp;[#89613](https://github.com/openclaw/openclaw/pull/89613) | 0 | Model routing/config | @steipete | docs: document auth profile failure policy contract |
+| 🔀&nbsp;[#89602](https://github.com/openclaw/openclaw/pull/89602) | 0 | Model routing/config | @zerone0x | fix(status): show effective channel model override |
+| 🔀&nbsp;[#89584](https://github.com/openclaw/openclaw/pull/89584) | 0 | Local memory/embedding | @ubehera | feat(memory-core): optional cross-encoder rerank stage for memory search |
+| 🔀&nbsp;[#89571](https://github.com/openclaw/openclaw/pull/89571) | 0 | Open-weight/provider behavior | @vincentkoc | fix(provider): harden provider tool schema hooks<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89561](https://github.com/openclaw/openclaw/pull/89561) | 0 | Model routing/config | @luyao618 | fix(hooks): honor session-memory hook model override for LLM slug generation [AI-assisted] |
+| 🔀&nbsp;[#89560](https://github.com/openclaw/openclaw/pull/89560) | 0 | Local memory/embedding | @kesslerio | fix(telegram): isolate verbose status after streamed finals |
+| 🔀&nbsp;[#89558](https://github.com/openclaw/openclaw/pull/89558) | 0 | Model routing/config | @steipete | docs: document embedded compaction context contracts |
+| 📝&nbsp;[#89551](https://github.com/openclaw/openclaw/issues/89551) | 0 | Model routing/config | @syncword | [Bug]: session-memory hook model config ignored for LLM slug generation |
+| 📝&nbsp;[#89549](https://github.com/openclaw/openclaw/issues/89549) | 0 | Model routing/config | @himynameisluna | [Bug]: sessions_spawn accepts subagent runs that later fail on a different auth/provider path than the healthy main session |
+| 🔀&nbsp;[#89543](https://github.com/openclaw/openclaw/pull/89543) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(agents): harden OpenAI strict schema inspection<br>Assignee: vincentkoc |
+| 📝&nbsp;[#89540](https://github.com/openclaw/openclaw/issues/89540) | 0 | Local memory/embedding | @kesslerio | [Bug]: Telegram /v Active Memory status can overwrite short streamed replies |
+| 🔀&nbsp;[#89535](https://github.com/openclaw/openclaw/pull/89535) | 0 | Model routing/config | @kesslerio | test(codex): cover binds without model overrides |
+| 📝&nbsp;[#89534](https://github.com/openclaw/openclaw/issues/89534) | 0 | Model routing/config | @kesslerio | [Bug]: /codex bind without --model can fail with defaultModel ReferenceError |
+| 📝&nbsp;[#89532](https://github.com/openclaw/openclaw/issues/89532) | 0 | Model routing/config | @tess020126-cmyk | Bug: /status does not show effective model from channels.modelByChannel |
+| 📝&nbsp;[#89531](https://github.com/openclaw/openclaw/issues/89531) | 0 | OpenAI-compatible/proxy | @pigfoot | [Bug] amazon-bedrock-openai / openai-responses: streaming emits multiple incremental final_answer phases, causing duplicate channel messages |
+| 📝&nbsp;[#89522](https://github.com/openclaw/openclaw/issues/89522) | 0 | Model routing/config | @Gausons | [Feature]: Inherit requester session model for native subagents |
+| 📝&nbsp;[#89509](https://github.com/openclaw/openclaw/issues/89509) | 0 | Local/media model provider | @WilhelminaVonHunt | Bug: [[tts:text]] tag content not passed to TTS engine — surrounding text sent instead |
+| 🔀&nbsp;[#89508](https://github.com/openclaw/openclaw/pull/89508) | 0 | OpenAI-compatible/proxy | @sweetcornna | fix(models): clarify provider model registration hint |
+| 📝&nbsp;[#89477](https://github.com/openclaw/openclaw/issues/89477) | 0 | Local memory/embedding | @ubehera | [Feature]: optional cross-encoder rerank stage for memory search |
+| 📝&nbsp;[#89476](https://github.com/openclaw/openclaw/issues/89476) | 0 | OpenAI-compatible/proxy | @simon998888 | feat(onboard): install-daemon UI support for custom provider setup |
+| 📝&nbsp;[#89473](https://github.com/openclaw/openclaw/issues/89473) | 0 | Model/provider behavior | @zax0rz | [Bug]: Reasoning tokens leak to chat channels when models stream interleaved text/thinking blocks |
+| 🔀&nbsp;[#89469](https://github.com/openclaw/openclaw/pull/89469) | 0 | Model routing/config | @Gausons | feat(agents): inherit requester model for subagents |
+| 🔀&nbsp;[#89453](https://github.com/openclaw/openclaw/pull/89453) | 0 | Model/provider behavior | @xianshishan | fix(android): filter thinking and reasoning blocks from chat message display |
+| 🔀&nbsp;[#89451](https://github.com/openclaw/openclaw/pull/89451) | 0 | Model/provider behavior | @vincentkoc | fix(google): quarantine invalid extension tool schemas |
+| 📝&nbsp;[#89444](https://github.com/openclaw/openclaw/issues/89444) | 0 | Local memory/embedding | @Josephur | Dreaming promotion still writes raw/junk data into MEMORY.md (regression from #67580) |
+| 🔀&nbsp;[#89443](https://github.com/openclaw/openclaw/pull/89443) | 0 | Local memory/embedding | @Alix-007 | fix(active-memory): drop assistant chitchat boilerplate from recall summaries |
+| 🔀&nbsp;[#89437](https://github.com/openclaw/openclaw/pull/89437) | 0 | Model/provider behavior | @vincentkoc | fix(google): quarantine invalid tool declarations |
+| 📝&nbsp;[#89431](https://github.com/openclaw/openclaw/issues/89431) | 0 | Local/media model provider | @guzzijones | [Bug]: macos say command in daemon not output to speakers |
+| 🔀&nbsp;[#89429](https://github.com/openclaw/openclaw/pull/89429) | 0 | Open-weight/provider behavior | @vincentkoc | fix(plugin-sdk): quarantine invalid provider tool schemas<br>Assignee: vincentkoc |
+| 📝&nbsp;[#89425](https://github.com/openclaw/openclaw/issues/89425) | 0 | Local/media model provider | @ant1b0t | [Bug]: Missing extensions/speech-core/ in npm tarball (v2026.5.28) — "Unable to resolve bundled plugin public surface speech-core/runtime-api.js" |
+| 🔀&nbsp;[#89413](https://github.com/openclaw/openclaw/pull/89413) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(openai): quarantine unreadable projected tools<br>Assignee: vincentkoc |
+| 📝&nbsp;[#89392](https://github.com/openclaw/openclaw/issues/89392) | 0 | Open-weight/provider behavior | @xiaoyaolanyun | Long streaming model responses cause event loop starvation |
+| 🔀&nbsp;[#89381](https://github.com/openclaw/openclaw/pull/89381) | 0 | Model/provider behavior | @vincentkoc | fix(plugin-sdk): guard provider tool schema traversal<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89378](https://github.com/openclaw/openclaw/pull/89378) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(agents): guard OpenAI tool schema conversion<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89371](https://github.com/openclaw/openclaw/pull/89371) | 0 | Local memory/embedding | @yelog | fix(memory): clean stale short-term temp files |
+| 📝&nbsp;[#89362](https://github.com/openclaw/openclaw/issues/89362) | 0 | Local memory/embedding | @BomBastikDE | Expose batchEmbed from the Ollama memory adapter so batch indexing can be enabled |
+| 🔀&nbsp;[#89360](https://github.com/openclaw/openclaw/pull/89360) | 0 | Local memory/embedding | @jalehman | refactor: add QMD session artifact identity mapping |
+| 🔀&nbsp;[#89353](https://github.com/openclaw/openclaw/pull/89353) | 0 | Model/provider behavior | @vincentkoc | fix(plugin-sdk): guard provider schema inspection<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#89348](https://github.com/openclaw/openclaw/pull/89348) | 0 | Local memory/embedding | @jalehman | refactor: add memory session sync identity API |
+| 🔀&nbsp;[#89334](https://github.com/openclaw/openclaw/pull/89334) | 0 | Local memory/embedding | @AdrianIp0204 | docs: note active memory timeout circuit breaker |
+| 🔀&nbsp;[#89324](https://github.com/openclaw/openclaw/pull/89324) | 0 | Model/provider behavior | @vincentkoc | fix(xai): skip unreadable tool payload entries |
+| 🔀&nbsp;[#89322](https://github.com/openclaw/openclaw/pull/89322) | 0 | Local model runtime | @vincentkoc | fix(ollama): skip unreadable tool descriptors |
+| 🔀&nbsp;[#89317](https://github.com/openclaw/openclaw/pull/89317) | 0 | Model/provider behavior | @vincentkoc | fix(bedrock): guard tool config projection |
+| 📝&nbsp;[#89300](https://github.com/openclaw/openclaw/issues/89300) | 0 | Model/provider behavior | @Enominera | model-fetch logs lost in v2026.5.28 - degraded from log.info to log.debug behind env flag |
+| 🔀&nbsp;[#89290](https://github.com/openclaw/openclaw/pull/89290) | 0 | Model/provider behavior | @amittell | [codex] Keep Codex waiting after raw reasoning progress |
+| 📝&nbsp;[#89278](https://github.com/openclaw/openclaw/issues/89278) | 0 | Model routing/config | @kopl-blip | [Bug]: Codex OAuth refresh succeeds but cron/heartbeat fail with 10s auth refresh timeout |
+| 🔀&nbsp;[#89273](https://github.com/openclaw/openclaw/pull/89273) | 0 | Model/provider behavior | @vincentkoc | fix(doctor): sanitize provider catalog findings |
+| 📝&nbsp;[#89265](https://github.com/openclaw/openclaw/issues/89265) | 0 | Local model runtime | @CobraSoftware | [Feature]: More local providers |
+| 📝&nbsp;[#89264](https://github.com/openclaw/openclaw/issues/89264) | 0 | Local memory/embedding | @C1-BA-B1-F3 | [Bug]: Dreaming deep promotion biased to stale 3-5 day old content; REM produces repetitive meta-themes; promotion gates bypassed via phase-signal boost |
+| 📝&nbsp;[#89259](https://github.com/openclaw/openclaw/issues/89259) | 0 | Model/provider behavior | @swiser-nexa | EmbeddedAttemptSessionTakeoverError fires at ~120s on long Bedrock streams (fence whitelist too narrow?) |
+| 🔀&nbsp;[#89251](https://github.com/openclaw/openclaw/pull/89251) | 0 | Local/media model provider | @mcaxtr | fix: deliver tts tool audio on whatsapp |
+| 🔀&nbsp;[#89244](https://github.com/openclaw/openclaw/pull/89244) | 0 | Local memory/embedding | @RomneyDa | fix(config): warn only on large memory watch trees |
+| 📝&nbsp;[#89233](https://github.com/openclaw/openclaw/issues/89233) | 0 | Local model runtime | @CameronWeller | [Bug]: Default models.providers.lmstudio.apiKey ships as plaintext placeholder 'lm-studio' - triggers false-positive security audit warning |
+| 🔀&nbsp;[#89229](https://github.com/openclaw/openclaw/pull/89229) | 0 | Model/provider behavior | @vincentkoc | fix(llm): guard Anthropic provider tool descriptors |
+| 🔀&nbsp;[#89221](https://github.com/openclaw/openclaw/pull/89221) | 0 | Model/provider behavior | @vincentkoc | fix(agents): guard Anthropic tool descriptors |
+| 📝&nbsp;[#89202](https://github.com/openclaw/openclaw/issues/89202) | 0 | Model/provider behavior | @aaronescobar09 | [Bug]: Telegram heavy turns can cause incomplete codex-app server turn around compaction, including under OpenClaw runtime. |
+| 📝&nbsp;[#89198](https://github.com/openclaw/openclaw/issues/89198) | 0 | Local/media model provider | @talentshf | Feature Request: Support Gateway TTS/STT in iOS App |
+| 📝&nbsp;[#89197](https://github.com/openclaw/openclaw/issues/89197) | 0 | Model routing/config | @yangiit | Gateway agent run failure with no model reachable: chat.history returns incomplete state, Control UI clears conversation history |
+| 📝&nbsp;[#89196](https://github.com/openclaw/openclaw/issues/89196) | 0 | Local memory/embedding | @yangiit | Dreaming REM: sub-session visible in session switcher + narrative diary fails to write to DREAMS.md |
+| 🔀&nbsp;[#89194](https://github.com/openclaw/openclaw/pull/89194) | 0 | Model routing/config | @Kailigithub | fix: include name field in model_not_found remediation hint |
+| 📝&nbsp;[#89192](https://github.com/openclaw/openclaw/issues/89192) | 0 | Model routing/config | @aaajiao | bug(models): model_not_found remediation message is incomplete - suggests `{ "id": ... }` but `name` is required and `api`/`baseUrl` are silently needed (misroutes to OpenAI) |
+| 🔀&nbsp;[#89190](https://github.com/openclaw/openclaw/pull/89190) | 0 | Model/provider behavior | @lidge-jun | feat(xai): add grok-composer-2.5-fast model |
+| 🔀&nbsp;[#89183](https://github.com/openclaw/openclaw/pull/89183) | 0 | Local model runtime | @ferminquant | fix(tui): keep local slash commands out of model prompts |
+| 📝&nbsp;[#89173](https://github.com/openclaw/openclaw/issues/89173) | 0 | Local memory/embedding | @DerekEXS | External plugin tools (memory_store, memory_recall, etc.) not routed/exposed to the Agent in v2026.5.27+ |
+| 📝&nbsp;[#89167](https://github.com/openclaw/openclaw/issues/89167) | 0 | Model routing/config | @devin-ai-integration[bot] | Session in status:failed remains bound as agent:main:main, crashing next TUI launch |
+| 📝&nbsp;[#89164](https://github.com/openclaw/openclaw/issues/89164) | 0 | Model/provider behavior | @devin-ai-integration[bot] | Completed model responses occasionally do not persist to session jsonl despite trajectory recording success |
+| 🔀&nbsp;[#89160](https://github.com/openclaw/openclaw/pull/89160) | 0 | Model/provider behavior | @joelnishanth | fix(agents): detect truncated API responses to prevent silent session hang |
+| 🔀&nbsp;[#89155](https://github.com/openclaw/openclaw/pull/89155) | 0 | Open-weight/provider behavior | @Alex-vonAllmen | feat(openrouter): forward OpenClaw session id as session_id |
+| 🔀&nbsp;[#89150](https://github.com/openclaw/openclaw/pull/89150) | 0 | Model routing/config | @ttruongatl | obs(model-fallback): emit `model.fallback.exhausted` counter on chain exhaustion |
+| 📝&nbsp;[#89147](https://github.com/openclaw/openclaw/issues/89147) | 0 | Model/provider behavior | @scipher888 | Native hook relay starves mid-turn after long model-thinking gap (renewal loop tool-call-driven) |
+| 📝&nbsp;[#89139](https://github.com/openclaw/openclaw/issues/89139) | 0 | Model/provider behavior | @Enominera | webchat creates new agent run per message, destroying prompt cache (93% -> 29% hit rate) |
+| 🔀&nbsp;[#89138](https://github.com/openclaw/openclaw/pull/89138) | 0 | Local memory/embedding | @mushuiyu886 | fix #88009: [Feature]: batched memory embedding should batch over files |
+| 🔀&nbsp;[#89133](https://github.com/openclaw/openclaw/pull/89133) | 0 | Model routing/config | @VACInc | Restore GPT-5.3 Codex Spark OAuth routing |
+| 🔀&nbsp;[#89118](https://github.com/openclaw/openclaw/pull/89118) | 0 | Open-weight/provider behavior | @LiLan0125 | fix(outbound): sanitize message.send arguments to prevent runtime scaffolding leaks |
+| 🔀&nbsp;[#89117](https://github.com/openclaw/openclaw/pull/89117) | 0 | Local memory/embedding | @abel-zer0 | Support Gemini Embedding 2 GA |
+| 📝&nbsp;[#89114](https://github.com/openclaw/openclaw/issues/89114) | 0 | Open-weight/provider behavior | @superandylin | Minimax M3: /think menu missing xhigh, adaptive, max levels (provider profile limitation) |
+| 🔀&nbsp;[#89109](https://github.com/openclaw/openclaw/pull/89109) | 0 | Open-weight/provider behavior | @openperf | fix(agents): block message-tool spam loops defeated by volatile message ids |
+| 🔀&nbsp;[#89102](https://github.com/openclaw/openclaw/pull/89102) | 0 | Model routing/config | @steipete | refactor(auth): store auth profiles in SQLite |
+| 📝&nbsp;[#89100](https://github.com/openclaw/openclaw/issues/89100) | 0 | Open-weight/provider behavior | @bobgitmcgrath | Sanitise outbound message.send tool arguments to prevent runtime scaffolding leak (FM-3) and chat_id routing bleed (FM-2) on weaker models |
+| 🔀&nbsp;[#89091](https://github.com/openclaw/openclaw/pull/89091) | 0 | Local memory/embedding | @bennewell35 | fix(memory-core): retry narrative message reads |
+| 📝&nbsp;[#89090](https://github.com/openclaw/openclaw/issues/89090) | 0 | OpenAI-compatible/proxy | @wujiaming88 | Bug: loopDetection cannot block message tool loops — volatile messageId in result defeats all critical-level detection paths |
+| 🔀&nbsp;[#89088](https://github.com/openclaw/openclaw/pull/89088) | 0 | Model routing/config | @charles-openclaw | test(gateway): cover rollover model override preservation |
+| 📝&nbsp;[#89087](https://github.com/openclaw/openclaw/issues/89087) | 0 | Model routing/config | @pitbuild | Bug: Session model override lost on UTC midnight rollover |
+| 🔀&nbsp;[#89070](https://github.com/openclaw/openclaw/pull/89070) | 0 | Local model runtime | @XuZehan-iCenter | fix(stream): handle cumulative JSON chunks from local llama.cpp tool calls |
+| 📝&nbsp;[#89051](https://github.com/openclaw/openclaw/issues/89051) | 0 | Local model runtime | @ArthurusDent | [Bug]: Embedded agent session silently hangs after auto-compaction with no error logging or recovery |
+| 🔀&nbsp;[#89040](https://github.com/openclaw/openclaw/pull/89040) | 0 | Local model runtime | @Jerry-Xin | perf: avoid event-loop stall during embedded_run bootstrap-context |
+| 🔀&nbsp;[#89039](https://github.com/openclaw/openclaw/pull/89039) | 0 | OpenAI-compatible/proxy | @Jerry-Xin | fix: prevent silent message loss from EmbeddedAttemptSessionTakeoverError |
+| 🔀&nbsp;[#89029](https://github.com/openclaw/openclaw/pull/89029) | 0 | Model routing/config | @charles-openclaw | fix(cli): accept empty Claude end turns |
+| 🔀&nbsp;[#89027](https://github.com/openclaw/openclaw/pull/89027) | 0 | Model routing/config | @Huangting-xy | fix(cli): prevent empty_response failover for completed thinking-only turns |
+| 🔀&nbsp;[#89016](https://github.com/openclaw/openclaw/pull/89016) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(agents): guard OpenAI transport tool descriptors |
+| 🔀&nbsp;[#89013](https://github.com/openclaw/openclaw/pull/89013) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(agents): materialize OpenAI tool schemas |
+| 🔀&nbsp;[#89001](https://github.com/openclaw/openclaw/pull/89001) | 0 | OpenAI-compatible/proxy | @BSG2000 | fix: support Azure Responses text stream events |
+| 🔀&nbsp;[#88999](https://github.com/openclaw/openclaw/pull/88999) | 0 | Local model runtime | @Huangting-xy | fix(cron): repair concatenated JSON keys from local-model tool-call parsers |
+| 🔀&nbsp;[#88994](https://github.com/openclaw/openclaw/pull/88994) | 0 | Model routing/config | @vincentkoc | fix(agents): quarantine normalized runtime tools |
+| 🔀&nbsp;[#88977](https://github.com/openclaw/openclaw/pull/88977) | 0 | Model routing/config | @vincentkoc | fix(agents): tolerate provider tool schema hook failures |
+| 🔀&nbsp;[#88964](https://github.com/openclaw/openclaw/pull/88964) | 0 | OpenAI-compatible/proxy | @MonkeyLeeT | [codex] Repair context-engine tool-result pairing |
+| 🔀&nbsp;[#88959](https://github.com/openclaw/openclaw/pull/88959) | 0 | Model routing/config | @vincentkoc | fix(plugins): ignore throwing provider runtime hooks |
+| 🔀&nbsp;[#88958](https://github.com/openclaw/openclaw/pull/88958) | 0 | Model routing/config | @TurboTheTurtle | Fix BTW OAuth side-question routing |
+| 🔀&nbsp;[#88956](https://github.com/openclaw/openclaw/pull/88956) | 0 | Model routing/config | @TurboTheTurtle | Repair compacted tool-result chains |
+| 🔀&nbsp;[#88950](https://github.com/openclaw/openclaw/pull/88950) | 0 | Model routing/config | @vincentkoc | fix(plugins): ignore throwing provider policy hooks |
+| 🔀&nbsp;[#88940](https://github.com/openclaw/openclaw/pull/88940) | 0 | OpenAI-compatible/proxy | @deepshekhardas | fix(llm): repairJson injects control chars for backslash b/f/n/r/t into Windows paths |
+| 🔀&nbsp;[#88931](https://github.com/openclaw/openclaw/pull/88931) | 0 | Local model runtime | @vincentkoc | fix(agents): cap tool search fanout in lean mode |
+| 🔀&nbsp;[#88917](https://github.com/openclaw/openclaw/pull/88917) | 0 | OpenAI-compatible/proxy | @physicswolf | fix: retry stale Responses reasoning replay safely |
+| 📝&nbsp;[#88907](https://github.com/openclaw/openclaw/issues/88907) | 0 | Open-weight/provider behavior | @ivannin | Chronic agent failures on Telegram - LLM timeouts before configured timeout + silent incomplete turns + dead fallbacks (OpenRouter/DeepSeek+V4-Flash, v2026.5.28) |
+| 🔀&nbsp;[#88906](https://github.com/openclaw/openclaw/pull/88906) | 0 | Model routing/config | @keshavbotagent | fix(openai): allow Codex Spark via harness |
+| 🔀&nbsp;[#88905](https://github.com/openclaw/openclaw/pull/88905) | 0 | Local memory/embedding | @iFiras-Max1 | feat(dreaming): expose shadow-trial scoring in reports |
+| 📝&nbsp;[#88902](https://github.com/openclaw/openclaw/issues/88902) | 0 | Model routing/config | @khalil-omer | [Bug]: Codex OAuth /btw still falls back to OpenAI Responses after /new |
+| 🔀&nbsp;[#88893](https://github.com/openclaw/openclaw/pull/88893) | 0 | OpenAI-compatible/proxy | @bladin | fix: support Azure Responses API text content type |
+| 🔀&nbsp;[#88890](https://github.com/openclaw/openclaw/pull/88890) | 0 | Local model runtime | @zhangguiping-xydt | fix #87768: [Bug]: push to talk mac os companion app hard codes thinking low |
+| 🔀&nbsp;[#88887](https://github.com/openclaw/openclaw/pull/88887) | 0 | Local memory/embedding | @potterdigital | fix(memory-core): don't run the LLM reranker in vsearch/search modes |
+| 🔀&nbsp;[#88884](https://github.com/openclaw/openclaw/pull/88884) | 0 | Local model runtime | @vincentkoc | fix(agents): trim web tools in lean mode |
+| 🔀&nbsp;[#88882](https://github.com/openclaw/openclaw/pull/88882) | 0 | Local model runtime | @vincentkoc | test(gateway): add small model live profile |
+| 🔀&nbsp;[#88881](https://github.com/openclaw/openclaw/pull/88881) | 0 | Local model runtime | @vincentkoc | fix(agents): trim media tools in lean mode |
+| 🔀&nbsp;[#88880](https://github.com/openclaw/openclaw/pull/88880) | 0 | Model routing/config | @vincentkoc | fix(agents): project nullable tool schemas for providers |
+| 🔀&nbsp;[#88878](https://github.com/openclaw/openclaw/pull/88878) | 0 | Model routing/config | @vincentkoc | fix(agents): project cron tool schemas for providers |
+| 🔀&nbsp;[#88869](https://github.com/openclaw/openclaw/pull/88869) | 0 | Open-weight/provider behavior | @NianJiuZst | Add MiniMax M3 support to the bundled MiniMax provider |
+| 📝&nbsp;[#88868](https://github.com/openclaw/openclaw/issues/88868) | 0 | Open-weight/provider behavior | @NianJiuZst | Add MiniMax M3 support to the bundled MiniMax provider |
+| 📝&nbsp;[#88864](https://github.com/openclaw/openclaw/issues/88864) | 0 | Local memory/embedding | @MarsCNS | [Bug]: `memory-wiki` bridge imports all workspace artifacts into shared vault, causing `path-mismatch` error |
+| 🔀&nbsp;[#88837](https://github.com/openclaw/openclaw/pull/88837) | 0 | Model routing/config | @charles-openclaw | fix(agent): use static catalog for skip-agent model resolution |
+| 🔀&nbsp;[#88822](https://github.com/openclaw/openclaw/pull/88822) | 0 | Local model runtime | @vincentkoc | fix(agents): compact lean local tool catalogs |
+| 🔀&nbsp;[#88800](https://github.com/openclaw/openclaw/pull/88800) | 0 | Model routing/config | @TurboTheTurtle | fix(models): keep generated secret refs out of plaintext |
+| 🔀&nbsp;[#88789](https://github.com/openclaw/openclaw/pull/88789) | 0 | Local model runtime | @vincentkoc | feat(agents): auto-trim lean local tools |
+| 🔀&nbsp;[#88771](https://github.com/openclaw/openclaw/pull/88771) | 0 | Local model runtime | @vincentkoc | fix(agents): stream phased text deltas incrementally |
+| 🔀&nbsp;[#88754](https://github.com/openclaw/openclaw/pull/88754) | 0 | Open-weight/provider behavior | @Kailigithub | fix(text): normalize CJK/fullwidth quotes in reasoning tag delimiters |
+| 🔀&nbsp;[#88748](https://github.com/openclaw/openclaw/pull/88748) | 0 | Model routing/config | @jason-allen-oneal | fix(gemini): bridge OAuth profiles into CLI runtime |
+| 🔀&nbsp;[#88709](https://github.com/openclaw/openclaw/pull/88709) | 0 | Model routing/config | @MertBasar0 | fix(auth): cooldown inline api key billing failures |
+| 📝&nbsp;[#88707](https://github.com/openclaw/openclaw/issues/88707) | 0 | Model routing/config | @podulator | [Bug] Regression 2026.5.27→2026.5.28: "No API provider registered for api: bedrock-converse-stream" — pi-ai removal breaks Bedrock provider registration; bearer token auth broken |
+| 📝&nbsp;[#88705](https://github.com/openclaw/openclaw/issues/88705) | 0 | Local memory/embedding | @Peilsender | Bug: npm updates drop node-llama-cpp, breaking local memory_search after every OpenClaw update |
+| 🔀&nbsp;[#88696](https://github.com/openclaw/openclaw/pull/88696) | 0 | Local memory/embedding | @zhangguiping-xydt | fix #70559: runUnsafeReindex crashes with "no such table: chunks_vec" when sqlite-vec is enabled |
+| 📝&nbsp;[#88679](https://github.com/openclaw/openclaw/issues/88679) | 0 | Model routing/config | @junxuku-byte | [Feature]: Per-Tool Model Routing — route specific tool calls to different models |
+| 📝&nbsp;[#88657](https://github.com/openclaw/openclaw/issues/88657) | 0 | Open-weight/provider behavior | @mikefaierberg-byte | Bug: DeepSeek V4 Flash incomplete turn (payloads=0, tools=2, replaySafe=no, stopReason=stop) in 2026.5.27/28 |
+| 🔀&nbsp;[#88645](https://github.com/openclaw/openclaw/pull/88645) | 0 | Local model runtime | @whiteyzy | fix(llm): use JSON5 as intermediate fallback in parseStreamingJson to avoid partial-json key corruption |
+| 📝&nbsp;[#88632](https://github.com/openclaw/openclaw/issues/88632) | 0 | Local model runtime | @wangwllu | [Bug]: gateway model-run sessions accumulate until session maxEntries cap |
+| 🔀&nbsp;[#88630](https://github.com/openclaw/openclaw/pull/88630) | 0 | Model routing/config | @vincentkoc | fix(codex): avoid guardian review for local models |
+| 📝&nbsp;[#88616](https://github.com/openclaw/openclaw/issues/88616) | 0 | Model routing/config | @Alex-vonAllmen | [Feature]: Forward session_id to OpenRouter for sticky routing & prompt caching |
+| 📝&nbsp;[#88615](https://github.com/openclaw/openclaw/issues/88615) | 0 | Local memory/embedding | @Joelincn | [Bug]: sqlite-vec fails to load on Node 22 Linux x64 (Vector store: unknown, distinct from #64776 and #65033) |
+| 📝&nbsp;[#88579](https://github.com/openclaw/openclaw/issues/88579) | 0 | Model routing/config | @Goron01 | LLM error: Authorization Not Found - SecretRef apiKey not properly resolved in Gateway |
+| 📝&nbsp;[#88562](https://github.com/openclaw/openclaw/issues/88562) | 0 | Model routing/config | @mnowrot | [Bug]: models.json generator writes apiKey as plain string instead of secret-ref object |
+| 📝&nbsp;[#88561](https://github.com/openclaw/openclaw/issues/88561) | 0 | Model routing/config | @Finn-jiejie | lossless-claw compaction breaks tool_calls/tool message chain -> 499 error on model switch |
+| 🔀&nbsp;[#88553](https://github.com/openclaw/openclaw/pull/88553) | 0 | Model routing/config | @yu-xin-c | fix(agents): unblock fallback classification tests |
+| 🔀&nbsp;[#88551](https://github.com/openclaw/openclaw/pull/88551) | 0 | Model routing/config | @yu-xin-c | fix(agents): skip auth gate for CLI-owned transport |
+| 📝&nbsp;[#88548](https://github.com/openclaw/openclaw/issues/88548) | 0 | Model routing/config | @saju01 | GitHub Copilot: static default model list shadows live entitlement discovery |
+| 🔀&nbsp;[#88514](https://github.com/openclaw/openclaw/pull/88514) | 0 | Local model runtime | @vincentkoc | fix(gateway): avoid default provider auth startup prewarm |
+| 🔀&nbsp;[#88506](https://github.com/openclaw/openclaw/pull/88506) | 0 | Model routing/config | @kklouzal | feat: add per-agent compaction overrides |
+| 📝&nbsp;[#88490](https://github.com/openclaw/openclaw/issues/88490) | 0 | Model routing/config | @edgardoalvarez100 | Session model override from Codex persists in unrelated sessions (e.g. Telegram) |
+| 🔀&nbsp;[#88460](https://github.com/openclaw/openclaw/pull/88460) | 0 | Local model runtime | @Linux2010 | fix(cron): recover from local-llamacpp parameter serialization bugs |
+| 📝&nbsp;[#88457](https://github.com/openclaw/openclaw/issues/88457) | 0 | Open-weight/provider behavior | @ReyesAdrian | [Bug]: opencode-go works via direct infer but fails in embedded agent runtime with session takeover |
+| 🔀&nbsp;[#88400](https://github.com/openclaw/openclaw/pull/88400) | 0 | Model routing/config | @Pluviobyte | fix(config): accept overlays for bundled provider aliases |
+| 🔀&nbsp;[#88329](https://github.com/openclaw/openclaw/pull/88329) | 0 | Model routing/config | @Knowcheng | fix: user-pinned model falls back to global chain on quota exhaustion |
+| 🔀&nbsp;[#88263](https://github.com/openclaw/openclaw/pull/88263) | 0 | Local memory/embedding | @whiteyzy | fix(memory-core): use native recursive fs.watch in QMD watcher to prevent per-file FD leak |
+| 🔀&nbsp;[#88249](https://github.com/openclaw/openclaw/pull/88249) | 0 | Model routing/config | @Darclindy | feat(desktop): add Tauri model setup app |
+| 🔀&nbsp;[#88212](https://github.com/openclaw/openclaw/pull/88212) | 0 | Local model runtime | @vincentkoc | feat(agents): auto-trim lean local model tools |
+| 📝&nbsp;[#88201](https://github.com/openclaw/openclaw/issues/88201) | 0 | Local model runtime | @adamdksaad-ops | [Bug]: OpenClaw 5.22: ~10 sec per-call inference overhead in infer model run (both --gateway and --local) vs ~1.3 sec direct provider call |
+| 🔀&nbsp;[#88181](https://github.com/openclaw/openclaw/pull/88181) | 0 | Local model runtime | @vincentkoc | feat(agents): add strict local model lean profile |
+| 🔀&nbsp;[#88108](https://github.com/openclaw/openclaw/pull/88108) | 0 | Local model runtime | @vincentkoc | fix(agents): compact lean local tool catalogs |
+| 🔀&nbsp;[#88098](https://github.com/openclaw/openclaw/pull/88098) | 0 | OpenAI-compatible/proxy | @ericlevine | feat(onboard): add --custom-context-window flag for non-interactive setup |
+| 🔀&nbsp;[#88082](https://github.com/openclaw/openclaw/pull/88082) | 0 | Model routing/config | @lit26 | feat(stepfun): add step-3.7-flash model |
+| 📝&nbsp;[#88079](https://github.com/openclaw/openclaw/issues/88079) | 0 | Open-weight/provider behavior | @xx1170822819 | [Regression] WebChat: reasoning_content not streamed for Kimi Code & DeepSeek Reasoner — only MiniMax works |
+| 🔀&nbsp;[#88078](https://github.com/openclaw/openclaw/pull/88078) | 0 | Local memory/embedding | @gisk0 | fix(active-memory): trim recall prompt envelope |
+| 📝&nbsp;[#88077](https://github.com/openclaw/openclaw/issues/88077) | 0 | Local memory/embedding | @gisk0 | [Bug]: Active Memory recall context uses full OpenClaw prompt envelope |
+| 📝&nbsp;[#88009](https://github.com/openclaw/openclaw/issues/88009) | 0 | Local memory/embedding | @hartmark | [Feature]: batched memory embedding should batch over files |
+| 📝&nbsp;[#87996](https://github.com/openclaw/openclaw/issues/87996) | 0 | OpenAI-compatible/proxy | @liaoandi | Vertex beta INVALID_ARGUMENT can wedge long Enterprise sessions without actionable recovery |
+| 🔀&nbsp;[#87958](https://github.com/openclaw/openclaw/pull/87958) | 0 | Model routing/config | @vincentkoc | fix(agents): scale read output for small contexts |
+| 📝&nbsp;[#87957](https://github.com/openclaw/openclaw/issues/87957) | 0 | Model routing/config | @osolmaz | Refactor session model/auth state resolution |
+| 🔀&nbsp;[#87955](https://github.com/openclaw/openclaw/pull/87955) | 0 | Local model runtime | @vincentkoc | fix(agents): keep lean tools behind catalog controls |
+| 📝&nbsp;[#87943](https://github.com/openclaw/openclaw/issues/87943) | 0 | Open-weight/provider behavior | @Xel-tik | feat: Add Xiaomi MiMo Web Search provider |
+| 🔀&nbsp;[#87940](https://github.com/openclaw/openclaw/pull/87940) | 0 | Local model runtime | @deepshekhardas | fix(gateway): keep dense stream updates incremental |
+| 🔀&nbsp;[#87933](https://github.com/openclaw/openclaw/pull/87933) | 0 | OpenAI-compatible/proxy | @MukundaKatta | fix(agents): respect compat.thinkingFormat override for DeepSeek V4 models |
+| 🔀&nbsp;[#87927](https://github.com/openclaw/openclaw/pull/87927) | 0 | Model routing/config | @vincentkoc | fix(agents): cap compaction budgets for small contexts |
+| 📝&nbsp;[#87925](https://github.com/openclaw/openclaw/issues/87925) | 0 | Model routing/config | @hoobnn | thinkingLevel: model switch silently downgrades and persists an inherited explicit override |
+| 🔀&nbsp;[#87923](https://github.com/openclaw/openclaw/pull/87923) | 0 | Model routing/config | @hoobnn | fix(thinking): keep explicit session thinkingLevel when runtime downgrades (#87740) |
+| 🔀&nbsp;[#87895](https://github.com/openclaw/openclaw/pull/87895) | 0 | Open-weight/provider behavior | @vincentkoc | test(agents): broaden small live hosted model matrix |
+| 🔀&nbsp;[#87893](https://github.com/openclaw/openclaw/pull/87893) | 0 | Model routing/config | @osolmaz | fix(auth-profiles): repair stale auto runtime auth selection |
+| 📝&nbsp;[#87881](https://github.com/openclaw/openclaw/issues/87881) | 0 | Local memory/embedding | @slideshow-dingo | Gap Analysis: v2026.5.27 config keys rejected as unknown by schema |
+| 📝&nbsp;[#87876](https://github.com/openclaw/openclaw/issues/87876) | 0 | Model routing/config | @Haderach-Ram | Bug: Bedrock Converse Streaming silently aborts on long-context agent sessions (~6 min timeout, no retry, no fallback) |
+| 🔀&nbsp;[#87856](https://github.com/openclaw/openclaw/pull/87856) | 0 | Local model runtime | @vincentkoc | fix(agents): count streamed model deltas incrementally |
+| 🔀&nbsp;[#87850](https://github.com/openclaw/openclaw/pull/87850) | 0 | Local model runtime | @vincentkoc | fix(agents): avoid constructing lean local model tools<br>Assignee: vincentkoc |
+| 📝&nbsp;[#87816](https://github.com/openclaw/openclaw/issues/87816) | 0 | Local/media model provider | @DoiiarX | feat(tts): xiaomi voicedesign/voiceclone model support |
+| 📝&nbsp;[#87766](https://github.com/openclaw/openclaw/issues/87766) | 0 | Open-weight/provider behavior | @hccc1203 | [Bug] Kimi web_search always returns "ungrounded" error - Moonshot API no longer returns search_results field[Bug]: |
+| 📝&nbsp;[#87763](https://github.com/openclaw/openclaw/issues/87763) | 0 | OpenAI-compatible/proxy | @georgenaz | SSRF guard pinned DNS dispatcher causes model fetch timeouts when autoSelectFamily is enabled |
+| 🔀&nbsp;[#87697](https://github.com/openclaw/openclaw/pull/87697) | 0 | Model routing/config | @ferminquant | fix(auth): clear stale provider cooldowns after reauth |
+| 📝&nbsp;[#87689](https://github.com/openclaw/openclaw/issues/87689) | 0 | Local memory/embedding | @Countermarch | Dreaming needs supported guard to disable session transcript ingestion during QMD migrations |
+| 📝&nbsp;[#87687](https://github.com/openclaw/openclaw/issues/87687) | 0 | Local model runtime | @sonofanton44 | vllm openai-completions streaming parser drops tool_calls when reasoning_content streams first for gpt-oss-120b at large systemPrompt |
+| 📝&nbsp;[#87642](https://github.com/openclaw/openclaw/issues/87642) | 0 | Local model runtime | @chrisslee | Expose subagent-control waitForRun timeout as a config knob (hardcoded 30s blocks slow local LLMs) |
+| 📝&nbsp;[#87603](https://github.com/openclaw/openclaw/issues/87603) | 0 | Model routing/config | @luzhidong | lossless-claw contextThreshold does not adapt to actual model context window after fallback |
+| 🔀&nbsp;[#87596](https://github.com/openclaw/openclaw/pull/87596) | 0 | Open-weight/provider behavior | @Pluviobyte | fix(moonshot): rewrite duplicate native Kimi tool_call ids on replay |
+| 🔀&nbsp;[#87587](https://github.com/openclaw/openclaw/pull/87587) | 0 | Local model runtime | @vincentkoc | fix(agents): keep exec visible for lean local models |
+| 📝&nbsp;[#87586](https://github.com/openclaw/openclaw/issues/87586) | 0 | Local model runtime | @taocwal | [Feature]: Unixsocket Provider plugin |
+| 🔀&nbsp;[#87562](https://github.com/openclaw/openclaw/pull/87562) | 0 | Open-weight/provider behavior | @Pluviobyte | fix(openrouter): reconcile streamed cost with /generation total_cost |
+| 📝&nbsp;[#87466](https://github.com/openclaw/openclaw/issues/87466) | 0 | Local/media model provider | @UrsineBear | [Bug]:Telegram voice delivery is unstable across model runtimes because voice generation depends on model-generated media tags |
+| 📝&nbsp;[#87443](https://github.com/openclaw/openclaw/issues/87443) | 0 | Local memory/embedding | @bxf471494973 | sqlite-vec vector search fails on musl-based systems |
+| 🔀&nbsp;[#87414](https://github.com/openclaw/openclaw/pull/87414) | 0 | Local model runtime | @ezcoder | [codex] Key llama.cpp sessions for local reuse |
+| 📝&nbsp;[#87384](https://github.com/openclaw/openclaw/issues/87384) | 0 | Local/media model provider | @kesslerio | Bug: CLI audio transcription can use progress stdout when transcript file is empty |
+| 🔀&nbsp;[#87343](https://github.com/openclaw/openclaw/pull/87343) | 0 | Model routing/config | @riosbotchen-source | feat(cron): surface fallback progress |
+| 📝&nbsp;[#87277](https://github.com/openclaw/openclaw/issues/87277) | 0 | Open-weight/provider behavior | @0mlkrizzz655335v | [Feature] Add MiMo-V2.5 to Xiaomi catalog + automatic multimodal routing when DeepSeek V4-Pro is primary model |
+| 📝&nbsp;[#87267](https://github.com/openclaw/openclaw/issues/87267) | 0 | Local model runtime | @rogerallen1 | [Bug]: Dream Diary narrative needs separate config for timeout/concurrency or disablement, while keeping dreaming enabled. |
+| 📝&nbsp;[#87262](https://github.com/openclaw/openclaw/issues/87262) | 0 | Local model runtime | @huangzeqi | [Bug]: qqbot + ollama + local model: qwen3.5:27b report: error Embedded agent failed before reply: LLM request failed: network connection was interrupted |
+| 📝&nbsp;[#87168](https://github.com/openclaw/openclaw/issues/87168) | 0 | Model routing/config | @bek91 | `image` media-understanding tool can bypass configured Codex image route via model overrides and direct OpenAI auto-selection |
+| 📝&nbsp;[#87110](https://github.com/openclaw/openclaw/issues/87110) | 0 | Local model runtime | @knight-666 | When calling a VLLM model, the usage page statistics show no data. How can I calculate usage and cost when using VLLM? |
+| 📝&nbsp;[#86813](https://github.com/openclaw/openclaw/issues/86813) | 0 | Model routing/config | @pppetertao | `/new` does not clear persisted model override in channel-bound sessions |
+| 🔀&nbsp;[#86776](https://github.com/openclaw/openclaw/pull/86776) | 0 | Model routing/config | @kierandotai | fix(models): apply provider policy defaults to inline models |
+| 📝&nbsp;[#86773](https://github.com/openclaw/openclaw/issues/86773) | 0 | Local model runtime | @chac4l | Provider auth prewarm can starve gateway event loop and cause sessions.list timeouts after restart |
+| 📝&nbsp;[#86752](https://github.com/openclaw/openclaw/issues/86752) | 0 | Local model runtime | @balaji1968-kingler | [Bug]: 2026.5.22 Docker/WSL2 gateway event-loop starvation, 284s provider-auth prewarm, slow Telegram turn, and local RPC timeouts |
+| 📝&nbsp;[#86521](https://github.com/openclaw/openclaw/issues/86521) | 0 | OpenAI-compatible/proxy | @mindflarevortx-maker | fix: preserve reasoning_content for DeepSeek models through proxy providers (opencode-native) |
+| 📝&nbsp;[#86182](https://github.com/openclaw/openclaw/issues/86182) | 0 | Local model runtime | @rendrag-git | discord/picker: structural 25-option / 5-row / 100-char limits constrain large wildcard configs |
+| 📝&nbsp;[#86174](https://github.com/openclaw/openclaw/issues/86174) | 0 | Model routing/config | @rqlangley | [Bug]: WebChat + New Session displays default model but inherits parent's model override |
+| 📝&nbsp;[#85684](https://github.com/openclaw/openclaw/issues/85684) | 0 | OpenAI-compatible/proxy | @iFwu | pi-embedded-runner: reasoning-only retry short-circuited in group chats by silentReplyPolicy default |
+| 📝&nbsp;[#85321](https://github.com/openclaw/openclaw/issues/85321) | 0 | Open-weight/provider behavior | @Galaxy-Chen | `wrapStreamRepairMalformedToolCallArguments` clears valid tool call arguments for Moonshot/Kimi provider |
+| 📝&nbsp;[#84918](https://github.com/openclaw/openclaw/issues/84918) | 0 | OpenAI-compatible/proxy | @killo3967 | OpenWebUI image uploads reach image tool as empty image via /v1/chat/completions on 2026.5.18 |
+| 📝&nbsp;[#84865](https://github.com/openclaw/openclaw/issues/84865) | 0 | Open-weight/provider behavior | @njuboy11 | user-switched model has no fallback chain, causing session deadlock on provider outage |
+| 🔀&nbsp;[#84554](https://github.com/openclaw/openclaw/pull/84554) | 0 | Local memory/embedding | @jetd1 | fix(memory-core): guard builtin fallback after qmd failures |
+| 📝&nbsp;[#84217](https://github.com/openclaw/openclaw/issues/84217) | 0 | Local model runtime | @fanispoulinakisai-boop | [Bug]: Heartbeat dispatch delivers free text block alongside message-tool call (chatty non-Codex providers, v2026.5.18) |
+| 🔀&nbsp;[#84072](https://github.com/openclaw/openclaw/pull/84072) | 0 | Model routing/config | @wiatrM | Add model fallback circuit breaker |
+| 📝&nbsp;[#84070](https://github.com/openclaw/openclaw/issues/84070) | 0 | Local model runtime | @islandpreneur007 | Active Memory embedded runner fails to expose plugin tools when hidden runner is on the DeepSeek provider path |
+| 🔀&nbsp;[#83436](https://github.com/openclaw/openclaw/pull/83436) | 0 | Model routing/config | @cael-dandelion-cult | fix(agents): rethrow EmbeddedAttemptSessionTakeoverError before model fallback |
+| 📝&nbsp;[#83399](https://github.com/openclaw/openclaw/issues/83399) | 0 | OpenAI-compatible/proxy | @yuzhihui886 | Bug: Tool call loop when assistant generates text + toolCall with openai-completions API |
+| 🔀&nbsp;[#83213](https://github.com/openclaw/openclaw/pull/83213) | 0 | Model routing/config | @Derekko-web | fix(gateway): clear live model switch on reset |
+| 🔀&nbsp;[#82557](https://github.com/openclaw/openclaw/pull/82557) | 0 | Model routing/config | @alexandre-leng | Allow onboarding to configure multiple model providers |
+| 🔀&nbsp;[#82145](https://github.com/openclaw/openclaw/pull/82145) | 0 | Local model runtime | @cthornsburg | cron: allow retries for local model preflight |
+| 📝&nbsp;[#81925](https://github.com/openclaw/openclaw/issues/81925) | 0 | Local memory/embedding | @castigiova | Compaction: `after_compaction` not emitted when `result.compacted:false`; validation: single-quote delimiter trips tool-caller retries |
+| 📝&nbsp;[#81835](https://github.com/openclaw/openclaw/issues/81835) | 0 | OpenAI-compatible/proxy | @STLI69 | Bug: thinking parameter format incompatible with Volcengine CodingPlan v3 API |
+| 🔀&nbsp;[#80957](https://github.com/openclaw/openclaw/pull/80957) | 0 | OpenAI-compatible/proxy | @chenyanchen | fix: refresh status context window after model switch |
+| 📝&nbsp;[#80521](https://github.com/openclaw/openclaw/issues/80521) | 0 | Local model runtime | @wherewolf87 | UI feature request: model picker + drag-to-reorder for primary/fallback model selection in Agents > Overview |
+| 🔀&nbsp;[#80418](https://github.com/openclaw/openclaw/pull/80418) | 0 | OpenAI-compatible/proxy | @logicbridgedev | fix(/v1/responses): accept text field on requests for OpenAI SDK 6.x parity |
+| 📝&nbsp;[#80336](https://github.com/openclaw/openclaw/issues/80336) | 0 | Local model runtime | @kinerliu | [Bug]: placeholder.openclaw.cloud unreachable on WSL2 with custom gateway port |
+| 📝&nbsp;[#80317](https://github.com/openclaw/openclaw/issues/80317) | 0 | OpenAI-compatible/proxy | @vokasug | TTS OpenAI provider: MP3 responseFormat not voice-compatible for Telegram, unlike Edge TTS |
+| 🔀&nbsp;[#80033](https://github.com/openclaw/openclaw/pull/80033) | 0 | Open-weight/provider behavior | @wrcno1 | fix(opencode-go): add supportedReasoningEfforts to DeepSeek V4 model entries |
+| 📝&nbsp;[#79437](https://github.com/openclaw/openclaw/issues/79437) | 0 | Local memory/embedding | @bp2u | Prebuilt `node-llama-cpp` Windows binaries crash (0xC0000005) on Intel Alder Lake-N (N95) - qmd LLM half unusable |
+| 🔀&nbsp;[#79185](https://github.com/openclaw/openclaw/pull/79185) | 0 | Open-weight/provider behavior | @kidding1412 | fix(tts/xiaomi): support Token Plan TTS endpoint |
+| 📝&nbsp;[#78091](https://github.com/openclaw/openclaw/issues/78091) | 0 | OpenAI-compatible/proxy | @wurdzy | [Bug]: Open-WebUI creates new session per message instead of reusing persistent session |
+| 📝&nbsp;[#75811](https://github.com/openclaw/openclaw/issues/75811) | 0 | Local model runtime | @camerono | [Bug]: `exec` tool schema exposes `security`/`elevated`/`ask` fields as model-controllable; model self-imposes denial |
+| 📝&nbsp;[#75312](https://github.com/openclaw/openclaw/issues/75312) | 0 | Local memory/embedding | @xuanmingguo | Bug: wiki_search throws 'sharedMemoryManager.search is not a function' when search.backend=shared and corpus includes memory/all |
+| 🔀&nbsp;[#75274](https://github.com/openclaw/openclaw/pull/75274) | 0 | Local model runtime | @davidvv | fix(ollama): per-request URL routing for multi-provider setups |
+| 🔀&nbsp;[#75267](https://github.com/openclaw/openclaw/pull/75267) | 0 | Model routing/config | @fancymatt | Fix model picker alias/provider scoped options |
+| 📝&nbsp;[#75189](https://github.com/openclaw/openclaw/issues/75189) | 0 | Local model runtime | @camerono | [Bug]: Default `bootstrapMaxChars=20000` + verbose auto-generated bootstrap content degrades tool dispatch on small/mid models |
+| 📝&nbsp;[#75187](https://github.com/openclaw/openclaw/issues/75187) | 0 | Local model runtime | @camerono | [Bug]: Auto-generated `AGENTS.md` puts load-bearing tool-use rules at the bottom; head-truncation by `bootstrapMaxChars` strips them |
+| 📝&nbsp;[#75040](https://github.com/openclaw/openclaw/issues/75040) | 0 | Local model runtime | @kingkong9817 | [Bug]: extra_body overwriting request payload keys: thinking - framework-level thinking field collision affecting all providers |
+| 📝&nbsp;[#75026](https://github.com/openclaw/openclaw/issues/75026) | 0 | OpenAI-compatible/proxy | @mmhzlrj | MiniMax token usage shows 0 in Control UI Usage page (only message count works) |
+| 📝&nbsp;[#74900](https://github.com/openclaw/openclaw/issues/74900) | 0 | Local memory/embedding | @jarimustonen | [Feature]: stable public SDK path for embedding provider API (independent of memory-core) |
+| 📝&nbsp;[#74835](https://github.com/openclaw/openclaw/issues/74835) | 0 | OpenAI-compatible/proxy | @abnershang | Add global provider request proxy/default SSRF policy for model providers |
+| 📝&nbsp;[#74481](https://github.com/openclaw/openclaw/issues/74481) | 0 | OpenAI-compatible/proxy | @sunapi386 | feat: dynamic catalog refresh from configured provider /v1/models |
+| 📝&nbsp;[#74204](https://github.com/openclaw/openclaw/issues/74204) | 0 | Local memory/embedding | @Skeptomenos | memory.qmd.update.embedTimeoutMs default (120 s) is too low for local GGUF; error message doesn't surface the fix |
+| 📝&nbsp;[#74020](https://github.com/openclaw/openclaw/issues/74020) | 0 | OpenAI-compatible/proxy | @CassidyTTWD-bot | Gateway startup: models.mode=replace should skip pricing fetches |
+| 📝&nbsp;[#73186](https://github.com/openclaw/openclaw/issues/73186) | 0 | OpenAI-compatible/proxy | @fryccerGit | [Bug]: Thinking/reasoning content leaks into cron announce delivery for Matrix/Feishu |
+| 📝&nbsp;[#72359](https://github.com/openclaw/openclaw/issues/72359) | 0 | Local memory/embedding | @thecolormaroun | Active Memory: add single-shot mode (no embedded agent loop) for low-latency preflight injection |
+| 📝&nbsp;[#71273](https://github.com/openclaw/openclaw/issues/71273) | 0 | Open-weight/provider behavior | @y9c | Bug: Kimi Code model enters infinite tool call loop |
+| 🔀&nbsp;[#70647](https://github.com/openclaw/openclaw/pull/70647) | 0 | Open-weight/provider behavior | @chengjiew | test(agents): pin empty-turn coverage for non-strict-agentic nemotron |
+| 📝&nbsp;[#70559](https://github.com/openclaw/openclaw/issues/70559) | 0 | Local memory/embedding | @Gaia39rus | runUnsafeReindex crashes with "no such table: chunks_vec" when sqlite-vec is enabled |
+| 🔀&nbsp;[#69729](https://github.com/openclaw/openclaw/pull/69729) | 0 | OpenAI-compatible/proxy | @wAnyBug-Com | fix(qwen): enable qwen3.6-plus on Coding Plan CN, correct reasoning flag |
+| 🔀&nbsp;[#69495](https://github.com/openclaw/openclaw/pull/69495) | 0 | Model routing/config | @zote | feat(heartbeat): support model fallbacks via {primary,fallbacks} (#69434) |
+| 🔀&nbsp;[#69245](https://github.com/openclaw/openclaw/pull/69245) | 0 | OpenAI-compatible/proxy | @g18166599417-svg | feat: enable cache-ttl context pruning for openai-completions providers |
+| 🔀&nbsp;[#68975](https://github.com/openclaw/openclaw/pull/68975) | 0 | Local memory/embedding | @kami-saia | feat(memory): switch default local embedding model to bge-m3 Q8_0 AI-assisted |
+| 🔀&nbsp;[#68590](https://github.com/openclaw/openclaw/pull/68590) | 0 | Local memory/embedding | @imadal1n | fix(memory-core): rewrite qmd index on managed collection repair |
+| 🔀&nbsp;[#68435](https://github.com/openclaw/openclaw/pull/68435) | 0 | OpenAI-compatible/proxy | @foxer0952 | feat(gateway): accept audio/file content blocks in /v1/chat/completions |
+| 📝&nbsp;[#68222](https://github.com/openclaw/openclaw/issues/68222) | 0 | Open-weight/provider behavior | @huangjk1103 | [Bug]: Kimi Code model frequent sessions_yield tool call/output interrupts long-running tasks, requires manual intervention to resume |
+| 📝&nbsp;[#67379](https://github.com/openclaw/openclaw/issues/67379) | 0 | Local memory/embedding | @colakang | qmd scope denies subagent sessions - channel/chatType resolve to undefined |
+| 📝&nbsp;[#65557](https://github.com/openclaw/openclaw/issues/65557) | 0 | Local model runtime | @alexanderatkins | Provider & model selection per session/account with admin-controlled allowlists |
+| 🔀&nbsp;[#65547](https://github.com/openclaw/openclaw/pull/65547) | 0 | Local memory/embedding | @jochenfrey | test(memory-qmd): verify extraCollections pattern reaches qmd collection add CLI args |
+| 🔀&nbsp;[#65423](https://github.com/openclaw/openclaw/pull/65423) | 0 | Model routing/config | @ryanngit | feat(agents): shuffle auth profile candidates for subagent runs |
+| 🔀&nbsp;[#65180](https://github.com/openclaw/openclaw/pull/65180) | 0 | Local model runtime | @jnk0423 | fix(cli,sessions): make local model run stateless by default and keep transcript fallback profile-scoped |
+| 🔀&nbsp;[#64335](https://github.com/openclaw/openclaw/pull/64335) | 0 | Open-weight/provider behavior | @serg0x | fix(zai): rotate env-backed API keys on rate limit |
+| 📝&nbsp;[#64224](https://github.com/openclaw/openclaw/issues/64224) | 0 | OpenAI-compatible/proxy | @hugalafutro | Billing cooldown flags entire provider instead of individual model - breaks proxy/litellm setups |
+| 📝&nbsp;[#64212](https://github.com/openclaw/openclaw/issues/64212) | 0 | Open-weight/provider behavior | @Iderty | [Bug]: Image tool fails with "Request was aborted" for NVIDIA Kimi K2.5 |
+| 📝&nbsp;[#63531](https://github.com/openclaw/openclaw/issues/63531) | 0 | Local memory/embedding | @ImLukeF | [Feature]: Add MLX Talk provider MVP for local macOS TTS |
+| 📝&nbsp;[#62780](https://github.com/openclaw/openclaw/issues/62780) | 0 | Local model runtime | @jeremyf327 | Feature: message:before_send hook to enable content-quality fallback gating |
+| 🔀&nbsp;[#62733](https://github.com/openclaw/openclaw/pull/62733) | 0 | Local memory/embedding | @nSPIR3D | Fix local memory embedding VRAM fallback and logging file resolution |
+| 🔀&nbsp;[#62710](https://github.com/openclaw/openclaw/pull/62710) | 0 | Model routing/config | @zeynalnia | fix(auth): stop new sessions inheriting auto-selected auth profile overrides |
+| 📝&nbsp;[#62436](https://github.com/openclaw/openclaw/issues/62436) | 0 | OpenAI-compatible/proxy | @gucasbrg | Feature: Lightweight LLM passthrough mode for /v1/chat/completions - skip session persistence entirely |
+| 📝&nbsp;[#62432](https://github.com/openclaw/openclaw/issues/62432) | 0 | Open-weight/provider behavior | @NikolaFC | [Bug]: Xiaomi/MiMo sessions can repeatedly relaunch exec after 'Command still running' instead of switching to process poll |
+| 📝&nbsp;[#62109](https://github.com/openclaw/openclaw/issues/62109) | 0 | OpenAI-compatible/proxy | @nboody | Interactive runs fail with auth-style 403 when custom OpenAI-compatible provider baseUrl uses Unicode/IDN or punycode hostname, but ASCII hostname/IP works |
+| 📝&nbsp;[#61716](https://github.com/openclaw/openclaw/issues/61716) | 0 | OpenAI-compatible/proxy | @Andy-Xie-1145 | [Feature]: Add model parameter prompts (context window, max_tokens, modalities) during OpenAI-compatible provider onboarding CLI flow |
+| 📝&nbsp;[#58765](https://github.com/openclaw/openclaw/issues/58765) | 0 | Local memory/embedding | @losz5000 | Feature: Support output dimensionality truncation for local GGUF embedding models |
+| 🔀&nbsp;[#58405](https://github.com/openclaw/openclaw/pull/58405) | 0 | OpenAI-compatible/proxy | @tonga54 | feat(openresponses): add per-request skills override to /v1/responses |
+| 📝&nbsp;[#57638](https://github.com/openclaw/openclaw/issues/57638) | 0 | OpenAI-compatible/proxy | @Kyzcreig | feat: cron.defaults for model, delivery, and contextTokens |
+| 📝&nbsp;[#57443](https://github.com/openclaw/openclaw/issues/57443) | 0 | OpenAI-compatible/proxy | @wujiaming88 | [Bug]: Tool JSON Schema patternProperties causes 400 errors on BytePlus Ark (doubao) - schema cleaning should be universal, not provider-specific |
+| 🔀&nbsp;[#55477](https://github.com/openclaw/openclaw/pull/55477) | 0 | OpenAI-compatible/proxy | @Kyzcreig | feat: stamp session_key, message_channel, context_limit into LiteLLM request metadata |
+| 📝&nbsp;[#54128](https://github.com/openclaw/openclaw/issues/54128) | 0 | Local memory/embedding | @hsuaaron | Add maxThreads config for local embedding (node-llama-cpp) |
+| 📝&nbsp;[#53810](https://github.com/openclaw/openclaw/issues/53810) | 0 | OpenAI-compatible/proxy | @FiredMosquito831 | Subagent Premature Announce Bug - Model-Specific Tool Call Handling Issues |
+| 📝&nbsp;[#51593](https://github.com/openclaw/openclaw/issues/51593) | 0 | Open-weight/provider behavior | @Faaab84 | [Bug]: HTTP 400: "tool call id exec:26 is duplicated" with moonshot/kimi-k2.5 in WhatsApp group chats |
+| 📝&nbsp;[#44789](https://github.com/openclaw/openclaw/issues/44789) | 0 | OpenAI-compatible/proxy | @Hylance | [Bug]: openclaw 2026.03.11 partially config litellm |
+| 📝&nbsp;[#43432](https://github.com/openclaw/openclaw/issues/43432) | 0 | Local memory/embedding | @omegabyte-ai | [Feature]: Memory durability config - hard flush threshold, priority-aware compaction, cache TTL |
+| 📝&nbsp;[#42408](https://github.com/openclaw/openclaw/issues/42408) | 0 | Local memory/embedding | @1sexywoo8 | [Bug/Docs]: local+hybrid memory_search quality can appear unstable due to extraPaths path drift + benchmark-file contamination |
 
 ## RECENTLY CLOSED OR REMOVED FROM OPEN INVENTORY
 
@@ -765,6 +765,6 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 3. Review every candidate for whether the actual problem or PR change is materially about local/open-weight/model-provider behavior.
 4. Keep direct/material matches, drop incidental body mentions, and preserve closed/removed notable items in the collapsed details block above.
 5. Recount rows and compare against the retained issue/PR number sets before committing.
-6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
+6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
 - Kept open threads: 461 (238 issues, 223 PRs).
