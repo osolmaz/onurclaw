@@ -4,11 +4,11 @@ Updated: 2026-06-03
 
 Review watermark:
 
-- Last reviewed through issue: #89617.
-- Last reviewed through PR: #89621.
+- Last reviewed through issue: #89633.
+- Last reviewed through PR: #89640.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (485)
+## OPEN THREADS (488)
 
 | Thread | Activity | Area | Title |
 | --- | --- | --- | --- |
@@ -170,6 +170,9 @@ Review watermark:
 | 🐛 [#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | feat: add Kimi/Moonshot provider usage and balance display |
 | 🐛 [#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 🐛 [#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🐛 [#89633](https://github.com/openclaw/openclaw/issues/89633) | 0 | Model routing/config | Codex turn fails with generic Telegram fallback when invalid image tool model is configured, leaving child agent orphaned on full stdout pipe |
+| 🔀 [#89629](https://github.com/openclaw/openclaw/pull/89629) | 0 | Model routing/config | feat(hooks): expose per-turn usageState on reply_payload_sending |
+| 🔀 [#89624](https://github.com/openclaw/openclaw/pull/89624) | 0 | Local model runtime | fix(ollama): guard tool schema normalization<br>Assignee: vincentkoc |
 | 🔀 [#89618](https://github.com/openclaw/openclaw/pull/89618) | 0 | Local model runtime | feat(atomicchat): add Atomic Chat as a bundled local provider |
 | 🐛 [#89617](https://github.com/openclaw/openclaw/issues/89617) | 0 | Local model runtime | Add Atomic Chat as a bundled local provider (OpenAI-compatible, 127.0.0.1:1337) |
 | 🔀 [#89613](https://github.com/openclaw/openclaw/pull/89613) | 0 | Model routing/config | docs: document auth profile failure policy contract |
@@ -737,4 +740,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 485 (257 issues, 228 PRs).
+- Kept open threads: 488 (258 issues, 230 PRs).
