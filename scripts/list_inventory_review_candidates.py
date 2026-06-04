@@ -14,6 +14,7 @@ from urllib.parse import quote
 
 
 DEFAULT_INVENTORY = Path("OPENCLAW_ONUR_INVENTORY.md")
+DEFAULT_INVENTORY_JSON = Path("OPENCLAW_ONUR_INVENTORY.json")
 DEFAULT_GITCRAWL_DB = Path("/gitcrawl/gitcrawl.db")
 REPO_URL = "https://github.com/openclaw/openclaw"
 WATERMARK_RE = re.compile(r"Last reviewed through (?P<kind>issue|PR): #(?P<number>\d+)")
@@ -121,7 +122,26 @@ class Thread:
     updated_at_gh: str | None
 
 
-def read_watermark(path: Path) -> tuple[int, int]:
+def read_json_watermark(path: Path) -> tuple[int, int] | None:
+    if not path.exists():
+        return None
+    data = json.loads(path.read_text(encoding="utf-8"))
+    watermark = data.get("review_watermark") if isinstance(data, dict) else None
+    if not isinstance(watermark, dict):
+        return None
+    issue = watermark.get("issue")
+    pr = watermark.get("pr")
+    if isinstance(issue, int) and isinstance(pr, int):
+        return issue, pr
+    return None
+
+
+def read_watermark(path: Path, json_path: Path | None = None) -> tuple[int, int]:
+    if json_path is not None:
+        json_watermark = read_json_watermark(json_path)
+        if json_watermark is not None:
+            return json_watermark
+
     issue = pr = None
     for line in path.read_text(encoding="utf-8").splitlines():
         match = WATERMARK_RE.search(line)
@@ -281,6 +301,7 @@ def candidate_count(text: str, *, format_name: str) -> int:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--inventory", type=Path, default=DEFAULT_INVENTORY)
+    parser.add_argument("--inventory-json", type=Path, default=DEFAULT_INVENTORY_JSON)
     parser.add_argument("--gitcrawl-db", type=Path, default=DEFAULT_GITCRAWL_DB)
     parser.add_argument("--format", choices=("markdown", "jsonl"), default="markdown")
     parser.add_argument(
@@ -295,7 +316,7 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    issue_watermark, pr_watermark = read_watermark(args.inventory)
+    issue_watermark, pr_watermark = read_watermark(args.inventory, args.inventory_json)
     threads = load_threads(args.gitcrawl_db, issue_watermark, pr_watermark)
     if args.format == "jsonl":
         output = json_lines(threads, include_all=args.all)

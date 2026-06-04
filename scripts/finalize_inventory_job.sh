@@ -3,6 +3,7 @@ set -euo pipefail
 
 workspace="${OPENCLAW_ONUR_WORKSPACE:-/workspace}"
 inventory="${OPENCLAW_ONUR_INVENTORY_PATH:-${workspace}/OPENCLAW_ONUR_INVENTORY.md}"
+inventory_json="${OPENCLAW_ONUR_INVENTORY_JSON_PATH:-${workspace}/OPENCLAW_ONUR_INVENTORY.json}"
 gitcrawl_db="${OPENCLAW_ONUR_GITCRAWL_DB:-/gitcrawl/gitcrawl.db}"
 notifier_db="${OPENCLAW_ONUR_NOTIFIER_DB:-/gitcrawl/notifier.sqlite}"
 state_file="${OPENCLAW_ONUR_COMPARE_STATE:-/state/inventory-notifier-compare-state.json}"
@@ -38,16 +39,20 @@ esac
 OPENCLAW_ONUR_INVENTORY_SKIP_ACTIVITY=1 \
   python3 scripts/sort_openclaw_onur_inventory.py --no-activity "$inventory" >/dev/null
 
+python3 scripts/export_inventory_json.py "$inventory" "$inventory_json" >/dev/null
+python3 scripts/validate_inventory_json.py "$inventory_json" >/dev/null
+
 report="$(
   python3 scripts/inventory_notifier_compare.py \
     --inventory "$inventory" \
+    --inventory-json "$inventory_json" \
     --notifier-db "$notifier_db" \
     --state-file "$state_file" \
     --limit "$limit"
 )"
 
-if ! git diff --quiet -- OPENCLAW_ONUR_INVENTORY.md; then
-  git add -- OPENCLAW_ONUR_INVENTORY.md
+if ! git diff --quiet -- OPENCLAW_ONUR_INVENTORY.md OPENCLAW_ONUR_INVENTORY.json; then
+  git add -- OPENCLAW_ONUR_INVENTORY.md OPENCLAW_ONUR_INVENTORY.json
   git \
     -c user.name="${ONURCLAW_GIT_AUTHOR_NAME:-Onur Inventory Job}" \
     -c user.email="${ONURCLAW_GIT_AUTHOR_EMAIL:-onur-inventory-job@example.invalid}" \

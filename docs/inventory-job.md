@@ -70,9 +70,13 @@ the sandbox command preflight, followed by the sorter/finalizer.
 1. Verifies that it is running from the expected mounted repo.
 2. Verifies the read-only Gitcrawl/notifier inputs and writable state directory.
 3. Sorts `OPENCLAW_ONUR_INVENTORY.md` without live GitHub activity refresh.
-4. Compares the inventory against notifier state.
-5. Commits `OPENCLAW_ONUR_INVENTORY.md` if that file changed.
-6. Prints either `NO_CHANGES` or the concise mismatch report. The cron prompt
+4. Exports and validates `OPENCLAW_ONUR_INVENTORY.json`, the machine-readable
+   mirror used by automation.
+5. Compares the JSON inventory against notifier state. The compare path must
+   not parse Markdown tables.
+6. Commits `OPENCLAW_ONUR_INVENTORY.md` and
+   `OPENCLAW_ONUR_INVENTORY.json` if either file changed.
+7. Prints either `NO_CHANGES` or the concise mismatch report. The cron prompt
    maps `NO_CHANGES` to the final `NO_REPLY` sentinel so delivery can stay
    quiet.
 
@@ -90,6 +94,9 @@ From this repo:
 
 ```bash
 bash -n scripts/run_inventory_job.sh scripts/finalize_inventory_job.sh
-python3 -m py_compile scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py scripts/list_inventory_review_candidates.py
+python3 -m py_compile scripts/inventory_data.py scripts/export_inventory_json.py scripts/validate_inventory_json.py scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py scripts/list_inventory_review_candidates.py
 OPENCLAW_ONUR_INVENTORY_SKIP_ACTIVITY=1 python3 scripts/sort_openclaw_onur_inventory.py --no-activity
+python3 scripts/export_inventory_json.py
+python3 scripts/validate_inventory_json.py
+python3 scripts/inventory_notifier_compare.py --inventory-json OPENCLAW_ONUR_INVENTORY.json --notifier-db .inventory-job-state/gitcrawl/notifier.sqlite --no-state --limit 3
 ```

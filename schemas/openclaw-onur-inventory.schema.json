@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/osolmaz/onurclaw/schemas/openclaw-onur-inventory.schema.json",
+  "title": "OpenClaw Onur Inventory",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schema_version",
+    "updated",
+    "review_watermark",
+    "counts",
+    "open_threads",
+    "closed_threads"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "updated": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "review_watermark": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "issue",
+        "pr"
+      ],
+      "properties": {
+        "issue": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pr": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "open_threads",
+        "open_issues",
+        "open_prs",
+        "closed_threads"
+      ],
+      "properties": {
+        "open_threads": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "open_issues": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "open_prs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "closed_threads": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "open_threads": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/open_thread"
+      }
+    },
+    "closed_threads": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/closed_thread"
+      }
+    }
+  },
+  "$defs": {
+    "thread_type": {
+      "enum": [
+        "issue",
+        "pull_request"
+      ]
+    },
+    "github_url": {
+      "type": "string",
+      "pattern": "^https://github\\.com/openclaw/openclaw/(issues|pull)/\\d+$"
+    },
+    "open_thread": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "number",
+        "url",
+        "activity",
+        "area",
+        "creator",
+        "title"
+      ],
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/thread_type"
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "url": {
+          "$ref": "#/$defs/github_url"
+        },
+        "activity": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "area": {
+          "type": "string",
+          "minLength": 1
+        },
+        "creator": {
+          "type": "string",
+          "pattern": "^@[^\\s]+$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "assignee": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "closed_thread": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "number",
+        "url",
+        "status",
+        "title"
+      ],
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/thread_type"
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "url": {
+          "$ref": "#/$defs/github_url"
+        },
+        "status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

@@ -14,9 +14,16 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import quote
 
+from inventory_data import load_open_threads, parse_markdown_inventory
 
 DEFAULT_INVENTORY = Path(
     os.environ.get("OPENCLAW_ONUR_INVENTORY_PATH", "/workspace/OPENCLAW_ONUR_INVENTORY.md")
+)
+DEFAULT_INVENTORY_JSON = Path(
+    os.environ.get(
+        "OPENCLAW_ONUR_INVENTORY_JSON_PATH",
+        "/workspace/OPENCLAW_ONUR_INVENTORY.json",
+    )
 )
 DEFAULT_NOTIFIER_DB = Path(
     os.environ.get("OPENCLAW_ONUR_NOTIFIER_DB", "/gitcrawl/notifier.sqlite")
@@ -29,81 +36,31 @@ DEFAULT_STATE_FILE = Path(
 )
 GITHUB_REPO_URL = "https://github.com/openclaw/openclaw"
 LIVE_NOTIFICATION_STATUSES = {"pending", "sending", "sent"}
-THREAD_KIND_BY_MARKER = {
-    "📝": "github_issue",
-    "\U0001F41B": "github_issue",
-    "🔀": "github_pr",
-}
 
 
-def parse_inventory(path: Path) -> list[dict[str, Any]]:
-    section = None
-    items = []
-    for raw_line in path.read_text().splitlines():
-        line = raw_line.strip()
-        if line.startswith("## OPEN THREADS"):
-            section = "open_threads"
-            continue
-        if line.startswith("## OPEN ISSUES"):
-            section = "github_issue"
-            continue
-        if line.startswith("## OPEN PRS"):
-            section = "github_pr"
-            continue
-        if line.startswith("## ") and section:
-            section = None
-            continue
-        if not section or not line.startswith("|"):
-            continue
+def notifier_type(thread_type: str) -> str:
+    return "github_pr" if thread_type == "pull_request" else "github_issue"
 
-        columns = [column.strip() for column in line.strip("|").split("|")]
-        if not columns or columns[0] in {"Thread", "Issue", "PR"}:
-            continue
-        if all(set(column) <= {"-", " "} for column in columns):
-            continue
 
-        if section == "open_threads":
-            if len(columns) < 4:
-                continue
-            priority = ""
-            area = columns[2]
-            title = columns[4] if len(columns) >= 5 else columns[3]
-        else:
-            if len(columns) >= 6:
-                priority = columns[1]
-                area = columns[3]
-                title = columns[5]
-            elif len(columns) >= 4:
-                priority = ""
-                area = columns[2]
-                title = columns[3]
-            else:
-                continue
-
-        match = re.search(r"#(\d+)", columns[0])
-        if not match:
-            continue
-        item_type = section
-        if section == "open_threads":
-            if "/pull/" in columns[0]:
-                item_type = "github_pr"
-            elif "/issues/" in columns[0]:
-                item_type = "github_issue"
-            else:
-                marker = columns[0].lstrip()[:1]
-                item_type = THREAD_KIND_BY_MARKER.get(marker)
-            if item_type is None:
-                continue
-        items.append(
-            {
-                "type": item_type,
-                "number": int(match.group(1)),
-                "priority": priority,
-                "area": area,
-                "title": title,
-            }
-        )
-    return items
+def load_inventory_items(
+    *,
+    inventory_json: Path | None,
+    inventory_markdown: Path,
+) -> list[dict[str, Any]]:
+    if inventory_json is not None and inventory_json.exists():
+        threads = load_open_threads(inventory_json)
+    else:
+        threads = parse_markdown_inventory(inventory_markdown)["open_threads"]
+    return [
+        {
+            "type": notifier_type(str(thread.get("type", "issue"))),
+            "number": int(thread["number"]),
+            "area": str(thread.get("area") or ""),
+            "title": str(thread.get("title") or ""),
+        }
+        for thread in threads
+        if isinstance(thread.get("number"), int) or str(thread.get("number", "")).isdigit()
+    ]
 
 
 def load_latest_result(conn: sqlite3.Connection, item_id: int) -> sqlite3.Row | None:
@@ -196,8 +153,16 @@ def filter_new(items: list[dict[str, Any]], seen_keys: set[str]) -> list[dict[st
     return [item for item in items if state_key(item) not in seen_keys]
 
 
-def compare(inventory_path: Path, notifier_db: Path) -> dict[str, Any]:
-    inventory = parse_inventory(inventory_path)
+def compare(
+    *,
+    inventory_json: Path | None,
+    inventory_markdown: Path,
+    notifier_db: Path,
+) -> dict[str, Any]:
+    inventory = load_inventory_items(
+        inventory_json=inventory_json,
+        inventory_markdown=inventory_markdown,
+    )
     inventory_numbers = {(item["type"], item["number"]) for item in inventory}
     counters: Counter[str] = Counter()
     false_negatives = []
@@ -304,7 +269,18 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description="Compare OpenClaw Onur inventory with notifier routing."
     )
-    parser.add_argument("--inventory", type=Path, default=DEFAULT_INVENTORY)
+    parser.add_argument(
+        "--inventory",
+        type=Path,
+        default=DEFAULT_INVENTORY,
+        help="Markdown fallback inventory path.",
+    )
+    parser.add_argument(
+        "--inventory-json",
+        type=Path,
+        default=DEFAULT_INVENTORY_JSON,
+        help="Machine-readable inventory JSON path.",
+    )
     parser.add_argument("--notifier-db", type=Path, default=DEFAULT_NOTIFIER_DB)
     parser.add_argument("--state-file", type=Path, default=DEFAULT_STATE_FILE)
     parser.add_argument("--limit", type=int, default=8)
@@ -326,7 +302,11 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    result = compare(args.inventory, args.notifier_db)
+    result = compare(
+        inventory_json=args.inventory_json,
+        inventory_markdown=args.inventory,
+        notifier_db=args.notifier_db,
+    )
     state = (
         {"version": 1, "false_negatives": [], "false_positives": []}
         if args.no_state
