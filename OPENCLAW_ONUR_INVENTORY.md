@@ -4,11 +4,11 @@ Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #90315.
-- Last reviewed through PR: #90311.
+- Last reviewed through issue: #90353.
+- Last reviewed through PR: #90356.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (549)
+## OPEN THREADS (565)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,22 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90356](https://github.com/openclaw/openclaw/pull/90356) | 0 | Model routing/config | @sovushik | fix(status): use legacy Codex OAuth profiles for OpenAI usage |
+| 📝&nbsp;[#90349](https://github.com/openclaw/openclaw/issues/90349) | 0 | Model routing/config | @AungMyoKyaw | Feature: Context Budget/Compactor — intelligent prompt slimming for small-context models |
+| 📝&nbsp;[#90342](https://github.com/openclaw/openclaw/issues/90342) | 0 | Local model runtime | @AungMyoKyaw | Feature: Model Cookbook — hardware-aware model recommendations with one-click download/serve |
+| 📝&nbsp;[#90340](https://github.com/openclaw/openclaw/issues/90340) | 0 | Model routing/config | @toruvieI | [Bug]: Auto-compaction does not resolve compaction model aliases before dispatch |
+| 📝&nbsp;[#90338](https://github.com/openclaw/openclaw/issues/90338) | 0 | Local memory/embedding | @junxuku-byte | Memory index meta never written when gateway auto-sync finds identity missing with existing chunks |
+| 🔀&nbsp;[#90337](https://github.com/openclaw/openclaw/pull/90337) | 0 | Model routing/config | @whiteyzy | fix(anthropic): add Claude Haiku 4.5 to static model catalog |
+| 🔀&nbsp;[#90336](https://github.com/openclaw/openclaw/pull/90336) | 0 | Local memory/embedding | @osolmaz | fix(memory): fail fast when embeddings provider is unavailable |
+| 🔀&nbsp;[#90331](https://github.com/openclaw/openclaw/pull/90331) | 0 | Model routing/config | @Daozheyuanxi | fix(agents): harden gateway config self-edits |
+| 🔀&nbsp;[#90330](https://github.com/openclaw/openclaw/pull/90330) | 0 | OpenAI-compatible/proxy | @sercada | Fix ChatGPT Codex streams without content-type |
+| 🔀&nbsp;[#90328](https://github.com/openclaw/openclaw/pull/90328) | 0 | Model routing/config | @ooiuuii | Expose model picker agent runtimes |
+| 🔀&nbsp;[#90327](https://github.com/openclaw/openclaw/pull/90327) | 0 | OpenAI-compatible/proxy | @aaajiao | fix(openai): send Codex request contract headers on the boundary-aware transport |
+| 🔀&nbsp;[#90326](https://github.com/openclaw/openclaw/pull/90326) | 0 | Model routing/config | @obuchowski | fix(fireworks): resolve catalog model limits from plugin.json via core |
+| 🔀&nbsp;[#90323](https://github.com/openclaw/openclaw/pull/90323) | 0 | Local memory/embedding | @googlerest | fix(memory): replace node:sqlite with better-sqlite3 to enable sqlite-vec on macOS |
+| 🔀&nbsp;[#90321](https://github.com/openclaw/openclaw/pull/90321) | 0 | Model routing/config | @ooiuuii | Normalize legacy Codex session runtime state |
+| 🔀&nbsp;[#90319](https://github.com/openclaw/openclaw/pull/90319) | 0 | Model routing/config | @ooiuuii | Add Codex session route migration coverage |
+| 🔀&nbsp;[#90317](https://github.com/openclaw/openclaw/pull/90317) | 0 | Model routing/config | @ooiuuii | Add Codex multi-agent config migration coverage |
 | 📝&nbsp;[#90315](https://github.com/openclaw/openclaw/issues/90315) | 0 | Local model runtime | @civiltox | [Bug]: Ollama Cloud live-discovered model loses capability metadata in gateway catalog |
 | 📝&nbsp;[#90313](https://github.com/openclaw/openclaw/issues/90313) | 0 | Local memory/embedding | @Adam-Researchh | Dreaming session-corpus: cron classification doesn't follow subagent parentage; archived (`.deleted`/`.reset`) transcripts re-ingested |
 | 🔀&nbsp;[#90310](https://github.com/openclaw/openclaw/pull/90310) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-responses): sanitize null content before SDK serialization (#90094) |
@@ -867,4 +883,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 549 (265 issues, 284 PRs).
+- Kept open threads: 565 (269 issues, 296 PRs).

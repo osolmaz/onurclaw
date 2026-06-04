@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 265,
-    "open_prs": 284,
-    "open_threads": 549
+    "open_issues": 269,
+    "open_prs": 296,
+    "open_threads": 565
   },
   "open_threads": [
     {
@@ -3298,6 +3298,150 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@sovushik",
+      "number": 90356,
+      "title": "fix(status): use legacy Codex OAuth profiles for OpenAI usage",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90356"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@AungMyoKyaw",
+      "number": 90349,
+      "title": "Feature: Context Budget/Compactor — intelligent prompt slimming for small-context models",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90349"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@AungMyoKyaw",
+      "number": 90342,
+      "title": "Feature: Model Cookbook — hardware-aware model recommendations with one-click download/serve",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90342"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@toruvieI",
+      "number": 90340,
+      "title": "[Bug]: Auto-compaction does not resolve compaction model aliases before dispatch",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90340"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@junxuku-byte",
+      "number": 90338,
+      "title": "Memory index meta never written when gateway auto-sync finds identity missing with existing chunks",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90338"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@whiteyzy",
+      "number": 90337,
+      "title": "fix(anthropic): add Claude Haiku 4.5 to static model catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90337"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@osolmaz",
+      "number": 90336,
+      "title": "fix(memory): fail fast when embeddings provider is unavailable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90336"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Daozheyuanxi",
+      "number": 90331,
+      "title": "fix(agents): harden gateway config self-edits",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90331"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@sercada",
+      "number": 90330,
+      "title": "Fix ChatGPT Codex streams without content-type",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90330"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ooiuuii",
+      "number": 90328,
+      "title": "Expose model picker agent runtimes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90328"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@aaajiao",
+      "number": 90327,
+      "title": "fix(openai): send Codex request contract headers on the boundary-aware transport",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90327"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@obuchowski",
+      "number": 90326,
+      "title": "fix(fireworks): resolve catalog model limits from plugin.json via core",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90326"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@googlerest",
+      "number": 90323,
+      "title": "fix(memory): replace node:sqlite with better-sqlite3 to enable sqlite-vec on macOS",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90323"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ooiuuii",
+      "number": 90321,
+      "title": "Normalize legacy Codex session runtime state",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90321"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ooiuuii",
+      "number": 90319,
+      "title": "Add Codex session route migration coverage",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90319"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ooiuuii",
+      "number": 90317,
+      "title": "Add Codex multi-agent config migration coverage",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90317"
     },
     {
       "activity": 0,
@@ -6973,8 +7117,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90315,
-    "pr": 90311
+    "issue": 90353,
+    "pr": 90356
   },
   "schema_version": 1,
   "updated": "2026-06-04"
