@@ -9,8 +9,10 @@ This repo contains curated maintainer artifacts that are useful to share openly:
 - `schemas/openclaw-onur-inventory.schema.json`: JSON schema for the machine-readable mirror.
 - `scripts/sort_openclaw_onur_inventory.py`: sorter/activity refresher for the inventory.
 - `scripts/export_inventory_json.py`: exports the Markdown inventory to JSON.
+- `scripts/check_synced_skill.py`: verifies that the sandbox inventory skill copy matches the tools source when that checkout is available.
 - `scripts/run_inventory_job.sh`: constrained cron entrypoint for the inventory automation.
 - `docs/inventory-job.md`: public security contract for the sandboxed inventory job.
+- `skills/openclaw-onur-inventory/SKILL.md`: local sandbox skill copy read by the no-network inventory job.
 - `openclaw-*.md` and `active-memory-issue.md`: public OpenClaw implementation plans, repro notes, and findings.
 - `notes/openclaw/`: older public OpenClaw root-cause notes and PR writeups.
 
