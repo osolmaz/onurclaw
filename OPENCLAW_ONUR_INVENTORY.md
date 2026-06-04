@@ -4,11 +4,11 @@ Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #90233.
-- Last reviewed through PR: #90239.
+- Last reviewed through issue: #90282.
+- Last reviewed through PR: #90283.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (529)
+## OPEN THREADS (538)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,15 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90283](https://github.com/openclaw/openclaw/pull/90283) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(providers): skip unreadable OpenAI completion tool schemas<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#90278](https://github.com/openclaw/openclaw/pull/90278) | 0 | Model/provider behavior | @vincentkoc | fix(providers): skip unreadable Anthropic tool schemas<br>Assignee: vincentkoc |
+| 📝&nbsp;[#90277](https://github.com/openclaw/openclaw/issues/90277) | 0 | Model routing/config | @Kvikkulf | gateway install --force drops MINIMAX_API_KEY from service-env despite managed keys list |
+| 📝&nbsp;[#90276](https://github.com/openclaw/openclaw/issues/90276) | 0 | Local/media model provider | @WilhelminaVonHunt | TTS timeoutMs hard cap of 120000ms (120s) too low for local TTS models — silent fallback to default provider |
+| 🔀&nbsp;[#90264](https://github.com/openclaw/openclaw/pull/90264) | 0 | Local memory/embedding | @osolmaz | fix(memory): move local embeddings to llama.cpp provider |
+| 🔀&nbsp;[#90260](https://github.com/openclaw/openclaw/pull/90260) | 0 | Model/provider behavior | @yetval | fix(agents): decode xai and venice tool-call arguments exactly once |
+| 🔀&nbsp;[#90249](https://github.com/openclaw/openclaw/pull/90249) | 0 | Model/provider behavior | @vincentkoc | fix(providers): skip unreadable Google tool schemas<br>Assignee: vincentkoc |
+| 📝&nbsp;[#90243](https://github.com/openclaw/openclaw/issues/90243) | 0 | Model routing/config | @silvesterxm | feat(llm/google-vertex): Support physical model mapping/aliasing to support Google's Priority and Flex PayGo tiers |
+| 🔀&nbsp;[#90242](https://github.com/openclaw/openclaw/pull/90242) | 0 | Open-weight/provider behavior | @vincentkoc | fix(providers): skip unreadable Mistral tool schemas<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#90235](https://github.com/openclaw/openclaw/pull/90235) | 0 | Local model runtime | @deepshekhardas | fix(gateway): repair Ollama dense stream — preserve replacement stream deltas and rich tool call deltas |
 | 🔀&nbsp;[#90234](https://github.com/openclaw/openclaw/pull/90234) | 0 | Model routing/config | @ferminquant | fix(agents): filter unresolved model registry rows |
 | 🔀&nbsp;[#90221](https://github.com/openclaw/openclaw/pull/90221) | 0 | Model routing/config | @wangmiao0668000666 | fix(compaction): allow compaction with aws-sdk auth without apiKey or headers |
@@ -847,4 +856,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 529 (256 issues, 273 PRs).
+- Kept open threads: 538 (259 issues, 279 PRs).
