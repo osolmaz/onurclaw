@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 280,
-    "open_prs": 311,
-    "open_threads": 591
+    "open_issues": 283,
+    "open_prs": 312,
+    "open_threads": 595
   },
   "open_threads": [
     {
@@ -3298,6 +3298,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mrizzo123",
+      "number": 90466,
+      "title": "[Bug]:memory-core dreaming on 2026.6.1: session-corpus contains .jsonl.deleted.* paths; narrative phase writes fallback despite valid prose responses",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90466"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@jaylfc",
+      "number": 90465,
+      "title": "Auto-discover models for the generic openai-completions provider from /v1/models",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90465"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@al-osokin",
+      "number": 90462,
+      "title": "Fallback provider can become pinned in session metadata and trap a chat on unavailable LM Studio model",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90462"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ai-hpc",
+      "number": 90457,
+      "title": "fix(models): persist agent catalog cache",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90457"
     },
     {
       "activity": 0,
@@ -7353,8 +7389,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90454,
-    "pr": 90453
+    "issue": 90467,
+    "pr": 90469
   },
   "schema_version": 1,
   "updated": "2026-06-05"
