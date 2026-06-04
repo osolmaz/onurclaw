@@ -29,6 +29,11 @@ DEFAULT_STATE_FILE = Path(
 )
 GITHUB_REPO_URL = "https://github.com/openclaw/openclaw"
 LIVE_NOTIFICATION_STATUSES = {"pending", "sending", "sent"}
+THREAD_KIND_BY_MARKER = {
+    "📝": "github_issue",
+    "\U0001F41B": "github_issue",
+    "🔀": "github_pr",
+}
 
 
 def parse_inventory(path: Path) -> list[dict[str, Any]]:
@@ -36,6 +41,9 @@ def parse_inventory(path: Path) -> list[dict[str, Any]]:
     items = []
     for raw_line in path.read_text().splitlines():
         line = raw_line.strip()
+        if line.startswith("## OPEN THREADS"):
+            section = "open_threads"
+            continue
         if line.startswith("## OPEN ISSUES"):
             section = "github_issue"
             continue
@@ -45,27 +53,50 @@ def parse_inventory(path: Path) -> list[dict[str, Any]]:
         if line.startswith("## ") and section:
             section = None
             continue
-        if not section or not line.startswith("| [#"):
+        if not section or not line.startswith("|"):
             continue
 
         columns = [column.strip() for column in line.strip("|").split("|")]
-        if len(columns) >= 6:
-            priority = columns[1]
-            area = columns[3]
-            title = columns[5]
-        elif len(columns) >= 4:
+        if not columns or columns[0] in {"Thread", "Issue", "PR"}:
+            continue
+        if all(set(column) <= {"-", " "} for column in columns):
+            continue
+
+        if section == "open_threads":
+            if len(columns) < 4:
+                continue
             priority = ""
             area = columns[2]
-            title = columns[3]
+            title = columns[4] if len(columns) >= 5 else columns[3]
         else:
-            continue
+            if len(columns) >= 6:
+                priority = columns[1]
+                area = columns[3]
+                title = columns[5]
+            elif len(columns) >= 4:
+                priority = ""
+                area = columns[2]
+                title = columns[3]
+            else:
+                continue
 
         match = re.search(r"#(\d+)", columns[0])
         if not match:
             continue
+        item_type = section
+        if section == "open_threads":
+            if "/pull/" in columns[0]:
+                item_type = "github_pr"
+            elif "/issues/" in columns[0]:
+                item_type = "github_issue"
+            else:
+                marker = columns[0].lstrip()[:1]
+                item_type = THREAD_KIND_BY_MARKER.get(marker)
+            if item_type is None:
+                continue
         items.append(
             {
-                "type": section,
+                "type": item_type,
                 "number": int(match.group(1)),
                 "priority": priority,
                 "area": area,
