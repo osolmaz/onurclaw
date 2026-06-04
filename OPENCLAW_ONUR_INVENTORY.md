@@ -4,11 +4,11 @@ Updated: 2026-06-05
 
 Review watermark:
 
-- Last reviewed through issue: #90404.
-- Last reviewed through PR: #90407.
+- Last reviewed through issue: #90428.
+- Last reviewed through PR: #90429.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (577)
+## OPEN THREADS (583)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,12 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90429](https://github.com/openclaw/openclaw/pull/90429) | 0 | Local model runtime | @christineyan4 | Fix LM Studio wizard prompter binding |
+| 🔀&nbsp;[#90425](https://github.com/openclaw/openclaw/pull/90425) | 0 | Model/provider behavior | @toruvieI | fix(openai): preserve encrypted reasoning replay ids |
+| 🔀&nbsp;[#90422](https://github.com/openclaw/openclaw/pull/90422) | 0 | Local memory/embedding | @Alix-007 | fix(memory-core): keep durable index identity visible during safe reindex |
+| 📝&nbsp;[#90420](https://github.com/openclaw/openclaw/issues/90420) | 0 | Model routing/config | @ooiuuii | Codex runtime route is hard to verify after the 2026.6.1 openai-codex migration |
+| 📝&nbsp;[#90414](https://github.com/openclaw/openclaw/issues/90414) | 0 | Local memory/embedding | @AS76 | agentmemory__memory_search returns "index metadata is missing" persistently (memory-core manager state cache) |
+| 📝&nbsp;[#90413](https://github.com/openclaw/openclaw/issues/90413) | 0 | Local memory/embedding | @colinmac-boop | memory status always reports "Vector search: paused" with blank expected model (2026.6.1) |
 | 🔀&nbsp;[#90407](https://github.com/openclaw/openclaw/pull/90407) | 0 | Local memory/embedding | @sahibzada-allahyar | fix(memory-lancedb): align apache arrow peer dependency |
 | 📝&nbsp;[#90403](https://github.com/openclaw/openclaw/issues/90403) | 0 | Model routing/config | @nerv00kaworu | [Performance] Model Picker UI very slow in v2026.5.28 |
 | 🔀&nbsp;[#90401](https://github.com/openclaw/openclaw/pull/90401) | 0 | OpenAI-compatible/proxy | @danyurkin | docs(local-models): add Atomic Chat as an OpenAI-compatible local server |
@@ -895,4 +901,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 577 (274 issues, 303 PRs).
+- Kept open threads: 583 (277 issues, 306 PRs).

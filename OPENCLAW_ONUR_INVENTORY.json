@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 274,
-    "open_prs": 303,
-    "open_threads": 577
+    "open_issues": 277,
+    "open_prs": 306,
+    "open_threads": 583
   },
   "open_threads": [
     {
@@ -3298,6 +3298,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@christineyan4",
+      "number": 90429,
+      "title": "Fix LM Studio wizard prompter binding",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90429"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@toruvieI",
+      "number": 90425,
+      "title": "fix(openai): preserve encrypted reasoning replay ids",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90425"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Alix-007",
+      "number": 90422,
+      "title": "fix(memory-core): keep durable index identity visible during safe reindex",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90422"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ooiuuii",
+      "number": 90420,
+      "title": "Codex runtime route is hard to verify after the 2026.6.1 openai-codex migration",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90420"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@AS76",
+      "number": 90414,
+      "title": "agentmemory__memory_search returns \"index metadata is missing\" persistently (memory-core manager state cache)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90414"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@colinmac-boop",
+      "number": 90413,
+      "title": "memory status always reports \"Vector search: paused\" with blank expected model (2026.6.1)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90413"
     },
     {
       "activity": 0,
@@ -7227,8 +7281,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90404,
-    "pr": 90407
+    "issue": 90428,
+    "pr": 90429
   },
   "schema_version": 1,
   "updated": "2026-06-05"
