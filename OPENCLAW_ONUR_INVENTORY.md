@@ -4,11 +4,11 @@ Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #90148.
-- Last reviewed through PR: #90151.
+- Last reviewed through issue: #90193.
+- Last reviewed through PR: #90189.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (518)
+## OPEN THREADS (521)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,9 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#90193](https://github.com/openclaw/openclaw/issues/90193) | 0 | OpenAI-compatible/proxy | @jalehman | Refactor duplicate Codex Responses paths for agent turns and llm.complete |
+| 📝&nbsp;[#90170](https://github.com/openclaw/openclaw/issues/90170) | 0 | Open-weight/provider behavior | @1240981163-lab | [Bug]: Possible token/cost regression after OpenClaw v2026.5.28 with DeepSeek v4-pro |
+| 🔀&nbsp;[#90165](https://github.com/openclaw/openclaw/pull/90165) | 0 | Local memory/embedding | @rudi193-cmd | fix(memory): do not filter FTS keyword search by embedding model (#48300) |
 | 🔀&nbsp;[#90149](https://github.com/openclaw/openclaw/pull/90149) | 0 | Model routing/config | @glenn-agent | fix: preserve user model on stale rollover |
 | 📝&nbsp;[#90146](https://github.com/openclaw/openclaw/issues/90146) | 0 | Model routing/config | @nyuDSA | google-vertex: Missing gemini-3.1-flash-lite in provider catalog causes silent failure instead of error |
 | 🔀&nbsp;[#90145](https://github.com/openclaw/openclaw/pull/90145) | 0 | Model routing/config | @pgondhi987 | fix: protect global agent config defaults [AI] |
@@ -836,4 +839,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 518 (254 issues, 264 PRs).
+- Kept open threads: 521 (256 issues, 265 PRs).

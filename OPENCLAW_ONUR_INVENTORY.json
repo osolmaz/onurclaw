@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 254,
-    "open_prs": 264,
-    "open_threads": 518
+    "open_issues": 256,
+    "open_prs": 265,
+    "open_threads": 521
   },
   "open_threads": [
     {
@@ -3298,6 +3298,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@jalehman",
+      "number": 90193,
+      "title": "Refactor duplicate Codex Responses paths for agent turns and llm.complete",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90193"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@1240981163-lab",
+      "number": 90170,
+      "title": "[Bug]: Possible token/cost regression after OpenClaw v2026.5.28 with DeepSeek v4-pro",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90170"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@rudi193-cmd",
+      "number": 90165,
+      "title": "fix(memory): do not filter FTS keyword search by embedding model (#48300)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90165"
     },
     {
       "activity": 0,
@@ -6686,8 +6713,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90148,
-    "pr": 90151
+    "issue": 90193,
+    "pr": 90189
   },
   "schema_version": 1,
   "updated": "2026-06-04"
