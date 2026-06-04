@@ -4,11 +4,11 @@ Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #90282.
-- Last reviewed through PR: #90283.
+- Last reviewed through issue: #90315.
+- Last reviewed through PR: #90311.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (538)
+## OPEN THREADS (549)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,17 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#90315](https://github.com/openclaw/openclaw/issues/90315) | 0 | Local model runtime | @civiltox | [Bug]: Ollama Cloud live-discovered model loses capability metadata in gateway catalog |
+| 📝&nbsp;[#90313](https://github.com/openclaw/openclaw/issues/90313) | 0 | Local memory/embedding | @Adam-Researchh | Dreaming session-corpus: cron classification doesn't follow subagent parentage; archived (`.deleted`/`.reset`) transcripts re-ingested |
+| 🔀&nbsp;[#90310](https://github.com/openclaw/openclaw/pull/90310) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-responses): sanitize null content before SDK serialization (#90094) |
+| 🔀&nbsp;[#90304](https://github.com/openclaw/openclaw/pull/90304) | 0 | Local memory/embedding | @osolmaz | feat(memory): support qmd query rerank toggle |
+| 📝&nbsp;[#90302](https://github.com/openclaw/openclaw/issues/90302) | 0 | Model routing/config | @Walliiee | [Feature]: Expose --fallbacks on openclaw cron create/edit |
+| 📝&nbsp;[#90295](https://github.com/openclaw/openclaw/issues/90295) | 0 | Local memory/embedding | @allenhurff | memory-lancedb 2026.6.1 fails to install: apache-arrow 21.1.0 conflicts with @lancedb/lancedb 0.30.0 peer range |
+| 📝&nbsp;[#90292](https://github.com/openclaw/openclaw/issues/90292) | 0 | Local memory/embedding | @FerrumLogic | [Bug] Dreaming narrative writes fallback snippets despite subagent generating valid poems |
+| 🔀&nbsp;[#90291](https://github.com/openclaw/openclaw/pull/90291) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(providers): guard OpenAI web search tool detection<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#90289](https://github.com/openclaw/openclaw/pull/90289) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(providers): skip unreadable Anthropic payload tool schemas<br>Assignee: vincentkoc |
+| 📝&nbsp;[#90288](https://github.com/openclaw/openclaw/issues/90288) | 0 | OpenAI-compatible/proxy | @Lvan185 | [Bug]: Non-Anthropic models output tool calls as plain text '[tool: exec]' instead of tool_use blocks |
+| 🔀&nbsp;[#90286](https://github.com/openclaw/openclaw/pull/90286) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(providers): skip unreadable OpenAI responses tool schemas<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#90283](https://github.com/openclaw/openclaw/pull/90283) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(providers): skip unreadable OpenAI completion tool schemas<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#90278](https://github.com/openclaw/openclaw/pull/90278) | 0 | Model/provider behavior | @vincentkoc | fix(providers): skip unreadable Anthropic tool schemas<br>Assignee: vincentkoc |
 | 📝&nbsp;[#90277](https://github.com/openclaw/openclaw/issues/90277) | 0 | Model routing/config | @Kvikkulf | gateway install --force drops MINIMAX_API_KEY from service-env despite managed keys list |
@@ -856,4 +867,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 538 (259 issues, 279 PRs).
+- Kept open threads: 549 (265 issues, 284 PRs).

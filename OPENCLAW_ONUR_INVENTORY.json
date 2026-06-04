@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 259,
-    "open_prs": 279,
-    "open_threads": 538
+    "open_issues": 265,
+    "open_prs": 284,
+    "open_threads": 549
   },
   "open_threads": [
     {
@@ -3298,6 +3298,108 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@civiltox",
+      "number": 90315,
+      "title": "[Bug]: Ollama Cloud live-discovered model loses capability metadata in gateway catalog",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90315"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Adam-Researchh",
+      "number": 90313,
+      "title": "Dreaming session-corpus: cron classification doesn't follow subagent parentage; archived (`.deleted`/`.reset`) transcripts re-ingested",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90313"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 90310,
+      "title": "fix(openai-responses): sanitize null content before SDK serialization (#90094)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90310"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@osolmaz",
+      "number": 90304,
+      "title": "feat(memory): support qmd query rerank toggle",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90304"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Walliiee",
+      "number": 90302,
+      "title": "[Feature]: Expose --fallbacks on openclaw cron create/edit",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90302"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@allenhurff",
+      "number": 90295,
+      "title": "memory-lancedb 2026.6.1 fails to install: apache-arrow 21.1.0 conflicts with @lancedb/lancedb 0.30.0 peer range",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90295"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@FerrumLogic",
+      "number": 90292,
+      "title": "[Bug] Dreaming narrative writes fallback snippets despite subagent generating valid poems",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90292"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 90291,
+      "title": "fix(providers): guard OpenAI web search tool detection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90291"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 90289,
+      "title": "fix(providers): skip unreadable Anthropic payload tool schemas",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90289"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Lvan185",
+      "number": 90288,
+      "title": "[Bug]: Non-Anthropic models output tool calls as plain text '[tool: exec]' instead of tool_use blocks",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90288"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 90286,
+      "title": "fix(providers): skip unreadable OpenAI responses tool schemas",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90286"
     },
     {
       "activity": 0,
@@ -6871,8 +6973,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90282,
-    "pr": 90283
+    "issue": 90315,
+    "pr": 90311
   },
   "schema_version": 1,
   "updated": "2026-06-04"
