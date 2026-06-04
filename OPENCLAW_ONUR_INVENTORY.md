@@ -4,11 +4,11 @@ Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #90108.
-- Last reviewed through PR: #90114.
+- Last reviewed through issue: #90148.
+- Last reviewed through PR: #90151.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (505)
+## OPEN THREADS (518)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,19 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90149](https://github.com/openclaw/openclaw/pull/90149) | 0 | Model routing/config | @glenn-agent | fix: preserve user model on stale rollover |
+| 📝&nbsp;[#90146](https://github.com/openclaw/openclaw/issues/90146) | 0 | Model routing/config | @nyuDSA | google-vertex: Missing gemini-3.1-flash-lite in provider catalog causes silent failure instead of error |
+| 🔀&nbsp;[#90145](https://github.com/openclaw/openclaw/pull/90145) | 0 | Model routing/config | @pgondhi987 | fix: protect global agent config defaults [AI] |
+| 📝&nbsp;[#90139](https://github.com/openclaw/openclaw/issues/90139) | 0 | Model/provider behavior | @PriceNing | dropThinkingBlocks sanitizer: short text replies shown as [assistant reasoning omitted] in TUI/webchat/WeChat |
+| 🔀&nbsp;[#90138](https://github.com/openclaw/openclaw/pull/90138) | 0 | Model/provider behavior | @IamVNIE | fix(minimax): exempt M3 from thinking-disabled wrapper |
+| 🔀&nbsp;[#90137](https://github.com/openclaw/openclaw/pull/90137) | 0 | Model/provider behavior | @lgezyxr | fix: strip thinking signatures from entries after compaction |
+| 🔀&nbsp;[#90130](https://github.com/openclaw/openclaw/pull/90130) | 0 | Model routing/config | @vincentkoc | fix(auth): guard preferred provider metadata<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#90128](https://github.com/openclaw/openclaw/pull/90128) | 0 | Model routing/config | @Marvinthebored | fix(sessions): preserve user /model override across daily/idle session rollover (#90119) |
+| 🔀&nbsp;[#90125](https://github.com/openclaw/openclaw/pull/90125) | 0 | Model routing/config | @bladin | fix(embedded-runner): distinguish model initialization errors from assistant execution errors |
+| 🔀&nbsp;[#90124](https://github.com/openclaw/openclaw/pull/90124) | 0 | Model/provider behavior | @cbire880 | fix(agents): harden tool-call handling against A2A/model tool-call poisoning |
+| 📝&nbsp;[#90119](https://github.com/openclaw/openclaw/issues/90119) | 0 | Model routing/config | @Marvinthebored | [Bug]: User /model override silently dropped on daily/idle session rollover (survives /new but not the 4AM reset) |
+| 🔀&nbsp;[#90117](https://github.com/openclaw/openclaw/pull/90117) | 0 | Local memory/embedding | @arkyu2077 | fix: skip qmd zero-hit sync retry in memory_search |
+| 🔀&nbsp;[#90116](https://github.com/openclaw/openclaw/pull/90116) | 0 | Model routing/config | @arkyu2077 | fix: add Claude Haiku 4.5 static catalog entries |
 | 🔀&nbsp;[#90112](https://github.com/openclaw/openclaw/pull/90112) | 0 | Model routing/config | @vincentkoc | fix(commands): guard provider catalog aliases<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#90110](https://github.com/openclaw/openclaw/pull/90110) | 0 | Model routing/config | @harjothkhara | [codex] fix Anthropic Haiku 4.5 static catalog |
 | 🔀&nbsp;[#90109](https://github.com/openclaw/openclaw/pull/90109) | 0 | Model routing/config | @vincentkoc | fix(commands): guard manifest catalog filters<br>Assignee: vincentkoc |
@@ -823,4 +836,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 505 (251 issues, 254 PRs).
+- Kept open threads: 518 (254 issues, 264 PRs).

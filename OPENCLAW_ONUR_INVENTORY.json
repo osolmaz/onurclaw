@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 251,
-    "open_prs": 254,
-    "open_threads": 505
+    "open_issues": 254,
+    "open_prs": 264,
+    "open_threads": 518
   },
   "open_threads": [
     {
@@ -3298,6 +3298,124 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@glenn-agent",
+      "number": 90149,
+      "title": "fix: preserve user model on stale rollover",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90149"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@nyuDSA",
+      "number": 90146,
+      "title": "google-vertex: Missing gemini-3.1-flash-lite in provider catalog causes silent failure instead of error",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90146"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@pgondhi987",
+      "number": 90145,
+      "title": "fix: protect global agent config defaults [AI]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90145"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@PriceNing",
+      "number": 90139,
+      "title": "dropThinkingBlocks sanitizer: short text replies shown as [assistant reasoning omitted] in TUI/webchat/WeChat",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90139"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@IamVNIE",
+      "number": 90138,
+      "title": "fix(minimax): exempt M3 from thinking-disabled wrapper",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90138"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@lgezyxr",
+      "number": 90137,
+      "title": "fix: strip thinking signatures from entries after compaction",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90137"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 90130,
+      "title": "fix(auth): guard preferred provider metadata",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90130"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Marvinthebored",
+      "number": 90128,
+      "title": "fix(sessions): preserve user /model override across daily/idle session rollover (#90119)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90128"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@bladin",
+      "number": 90125,
+      "title": "fix(embedded-runner): distinguish model initialization errors from assistant execution errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90125"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@cbire880",
+      "number": 90124,
+      "title": "fix(agents): harden tool-call handling against A2A/model tool-call poisoning",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90124"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Marvinthebored",
+      "number": 90119,
+      "title": "[Bug]: User /model override silently dropped on daily/idle session rollover (survives /new but not the 4AM reset)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90119"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@arkyu2077",
+      "number": 90117,
+      "title": "fix: skip qmd zero-hit sync retry in memory_search",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90117"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@arkyu2077",
+      "number": 90116,
+      "title": "fix: add Claude Haiku 4.5 static catalog entries",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90116"
     },
     {
       "activity": 0,
@@ -6568,8 +6686,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90108,
-    "pr": 90114
+    "issue": 90148,
+    "pr": 90151
   },
   "schema_version": 1,
   "updated": "2026-06-04"
