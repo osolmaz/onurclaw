@@ -4,11 +4,11 @@ Updated: 2026-06-05
 
 Review watermark:
 
-- Last reviewed through issue: #90428.
-- Last reviewed through PR: #90429.
+- Last reviewed through issue: #90454.
+- Last reviewed through PR: #90453.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (583)
+## OPEN THREADS (591)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,14 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#90454](https://github.com/openclaw/openclaw/issues/90454) | 0 | Local memory/embedding | @nocode-ananas | active-memory plugin discards verbose sub-agent responses as status=unavailable, surface_error reason=none |
+| 🔀&nbsp;[#90453](https://github.com/openclaw/openclaw/pull/90453) | 0 | Local memory/embedding | @849261680 | fix(memory-core): guard searches during safe reindex |
+| 🔀&nbsp;[#90451](https://github.com/openclaw/openclaw/pull/90451) | 0 | Model routing/config | @ooiuuii | fix(codex): honor legacy context overrides after OpenAI unification |
+| 📝&nbsp;[#90448](https://github.com/openclaw/openclaw/issues/90448) | 0 | Model routing/config | @ooiuuii | Codex context override can fall back to 272k after 2026.6.1 OpenAI route unification |
+| 🔀&nbsp;[#90447](https://github.com/openclaw/openclaw/pull/90447) | 0 | Local memory/embedding | @Kailigithub | fix(memory-core): resolve adapter default model for index identity state |
+| 📝&nbsp;[#90445](https://github.com/openclaw/openclaw/issues/90445) | 0 | Model routing/config | @openkralle | Control Panel: Add tooltips/clarifying labels for Reasoning and Thinking dropdowns (Config↔UI naming collision) |
+| 🔀&nbsp;[#90436](https://github.com/openclaw/openclaw/pull/90436) | 0 | Open-weight/provider behavior | @jacobtomlinson | Add NVIDIA Nemotron 3 Ultra default |
+| 🔀&nbsp;[#90433](https://github.com/openclaw/openclaw/pull/90433) | 0 | Local memory/embedding | @xiaobao-k8s | fix(memory-core): exclude archived transcripts from Dreaming session corpus |
 | 🔀&nbsp;[#90429](https://github.com/openclaw/openclaw/pull/90429) | 0 | Local model runtime | @christineyan4 | Fix LM Studio wizard prompter binding |
 | 🔀&nbsp;[#90425](https://github.com/openclaw/openclaw/pull/90425) | 0 | Model/provider behavior | @toruvieI | fix(openai): preserve encrypted reasoning replay ids |
 | 🔀&nbsp;[#90422](https://github.com/openclaw/openclaw/pull/90422) | 0 | Local memory/embedding | @Alix-007 | fix(memory-core): keep durable index identity visible during safe reindex |
@@ -901,4 +909,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 583 (277 issues, 306 PRs).
+- Kept open threads: 591 (280 issues, 311 PRs).

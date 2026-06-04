@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 277,
-    "open_prs": 306,
-    "open_threads": 583
+    "open_issues": 280,
+    "open_prs": 311,
+    "open_threads": 591
   },
   "open_threads": [
     {
@@ -3298,6 +3298,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@nocode-ananas",
+      "number": 90454,
+      "title": "active-memory plugin discards verbose sub-agent responses as status=unavailable, surface_error reason=none",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90454"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@849261680",
+      "number": 90453,
+      "title": "fix(memory-core): guard searches during safe reindex",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90453"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ooiuuii",
+      "number": 90451,
+      "title": "fix(codex): honor legacy context overrides after OpenAI unification",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90451"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ooiuuii",
+      "number": 90448,
+      "title": "Codex context override can fall back to 272k after 2026.6.1 OpenAI route unification",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90448"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Kailigithub",
+      "number": 90447,
+      "title": "fix(memory-core): resolve adapter default model for index identity state",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90447"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@openkralle",
+      "number": 90445,
+      "title": "Control Panel: Add tooltips/clarifying labels for Reasoning and Thinking dropdowns (Config↔UI naming collision)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90445"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@jacobtomlinson",
+      "number": 90436,
+      "title": "Add NVIDIA Nemotron 3 Ultra default",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90436"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xiaobao-k8s",
+      "number": 90433,
+      "title": "fix(memory-core): exclude archived transcripts from Dreaming session corpus",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90433"
     },
     {
       "activity": 0,
@@ -7281,8 +7353,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90428,
-    "pr": 90429
+    "issue": 90454,
+    "pr": 90453
   },
   "schema_version": 1,
   "updated": "2026-06-05"
