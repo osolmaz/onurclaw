@@ -1979,8 +1979,8 @@
   "counts": {
     "closed_threads": 282,
     "open_issues": 256,
-    "open_prs": 265,
-    "open_threads": 521
+    "open_prs": 273,
+    "open_threads": 529
   },
   "open_threads": [
     {
@@ -3298,6 +3298,79 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@deepshekhardas",
+      "number": 90235,
+      "title": "fix(gateway): repair Ollama dense stream — preserve replacement stream deltas and rich tool call deltas",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90235"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ferminquant",
+      "number": 90234,
+      "title": "fix(agents): filter unresolved model registry rows",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90234"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wangmiao0668000666",
+      "number": 90221,
+      "title": "fix(compaction): allow compaction with aws-sdk auth without apiKey or headers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90221"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yichu10c",
+      "number": 90210,
+      "title": "fix(anthropic): add claude-haiku-4-5 to static model catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90210"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mushuiyu886",
+      "number": 90206,
+      "title": "Fix Bedrock aws-sdk compaction auth",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90206"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@jalehman",
+      "number": 90205,
+      "title": "fix: tolerate missing streamed response content type",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90205"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 90200,
+      "title": "fix(agents): guard OpenAI strict tool diagnostics",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90200"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@theashbhat",
+      "number": 90196,
+      "title": "feat(ios): Add Piper TTS as on-device voice engine option",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90196"
     },
     {
       "activity": 0,
@@ -6713,8 +6786,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90193,
-    "pr": 90189
+    "issue": 90233,
+    "pr": 90239
   },
   "schema_version": 1,
   "updated": "2026-06-04"
