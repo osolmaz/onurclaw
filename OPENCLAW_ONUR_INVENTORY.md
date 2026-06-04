@@ -4,11 +4,11 @@ Updated: 2026-06-04
 
 Review watermark:
 
-- Last reviewed through issue: #90023.
-- Last reviewed through PR: #90022.
+- Last reviewed through issue: #90049.
+- Last reviewed through PR: #90065.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (491)
+## OPEN THREADS (501)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -159,6 +159,16 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90056](https://github.com/openclaw/openclaw/pull/90056) | 0 | Model routing/config | @openperf | fix(doctor): merge disjoint openai-codex model entries into canonical openai provider |
+| 🔀&nbsp;[#90051](https://github.com/openclaw/openclaw/pull/90051) | 0 | OpenAI-compatible/proxy | @MonkeyLeeT | [codex] fix reasoning tag leakage |
+| 📝&nbsp;[#90049](https://github.com/openclaw/openclaw/issues/90049) | 0 | Local model runtime | @zenassist26-create | Heartbeat sessions report 'assistant turn failed before producing content' on model initialization failure |
+| 📝&nbsp;[#90047](https://github.com/openclaw/openclaw/issues/90047) | 0 | Model routing/config | @holgergruenhagen | Codex migration (2026.6.1) drops the gpt-5.5 model when a canonical `openai` provider exists for embeddings — agents go silent |
+| 📝&nbsp;[#90042](https://github.com/openclaw/openclaw/issues/90042) | 0 | Local memory/embedding | @Bizman365 | Gateway memory_search index stuck dirty: provider.model empty during boot overwrites correct index identity |
+| 📝&nbsp;[#90036](https://github.com/openclaw/openclaw/issues/90036) | 0 | Model routing/config | @nexic-hh | Session model route drifts from openai/gpt-5.5 to openai-codex/gpt-5.5 with native Codex runtime |
+| 🔀&nbsp;[#90033](https://github.com/openclaw/openclaw/pull/90033) | 0 | OpenAI-compatible/proxy | @obuchowski | fix(llm): apply model.compat.sendSessionAffinityHeaders at openai-transport-stream |
+| 🔀&nbsp;[#90030](https://github.com/openclaw/openclaw/pull/90030) | 0 | Local memory/embedding | @sahibzada-allahyar | fix(memory-core): skip qmd zero-hit search sync |
+| 🔀&nbsp;[#90029](https://github.com/openclaw/openclaw/pull/90029) | 0 | Model routing/config | @fuller-stack-dev | feat: refresh OpenCode Go model catalog |
+| 🔀&nbsp;[#90028](https://github.com/openclaw/openclaw/pull/90028) | 0 | Model routing/config | @jalehman | docs: clarify legacy openai-codex auth |
 | 📝&nbsp;[#90023](https://github.com/openclaw/openclaw/issues/90023) | 0 | Local memory/embedding | @ruben2000de | QMD memory_search zero-hit queries trigger synchronous force sync and stall interactive turns |
 | 📝&nbsp;[#90021](https://github.com/openclaw/openclaw/issues/90021) | 0 | Model routing/config | @claw0gang | OpenAI model with agentRuntime.id "openclaw" appears to switch to OpenAI Codex runtime after first Telegram message |
 | 🔀&nbsp;[#90019](https://github.com/openclaw/openclaw/pull/90019) | 0 | Local memory/embedding | @sahibzada-allahyar | fix(memory-search): default periodic sync fallback |
@@ -797,4 +807,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py` before committing so the merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 491 (245 issues, 246 PRs).
+- Kept open threads: 501 (249 issues, 252 PRs).
