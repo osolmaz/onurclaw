@@ -1,14 +1,14 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-04
+Updated: 2026-06-05
 
 Review watermark:
 
-- Last reviewed through issue: #90353.
-- Last reviewed through PR: #90356.
+- Last reviewed through issue: #90404.
+- Last reviewed through PR: #90407.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (565)
+## OPEN THREADS (577)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,18 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90407](https://github.com/openclaw/openclaw/pull/90407) | 0 | Local memory/embedding | @sahibzada-allahyar | fix(memory-lancedb): align apache arrow peer dependency |
+| 📝&nbsp;[#90403](https://github.com/openclaw/openclaw/issues/90403) | 0 | Model routing/config | @nerv00kaworu | [Performance] Model Picker UI very slow in v2026.5.28 |
+| 🔀&nbsp;[#90401](https://github.com/openclaw/openclaw/pull/90401) | 0 | OpenAI-compatible/proxy | @danyurkin | docs(local-models): add Atomic Chat as an OpenAI-compatible local server |
+| 🔀&nbsp;[#90399](https://github.com/openclaw/openclaw/pull/90399) | 0 | OpenAI-compatible/proxy | @baanish | fix(openai): send Accept: text/event-stream on ChatGPT Responses |
+| 🔀&nbsp;[#90397](https://github.com/openclaw/openclaw/pull/90397) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(openai): skip unreadable responses tool schemas<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#90395](https://github.com/openclaw/openclaw/pull/90395) | 0 | Local memory/embedding | @chengzhichao-xydt | fix(memory-core): write meta after sync when identity is missing with existing chunks |
+| 🔀&nbsp;[#90383](https://github.com/openclaw/openclaw/pull/90383) | 0 | Local model runtime | @vincentkoc | fix(ollama): skip unreadable tool schemas<br>Assignee: vincentkoc |
+| 📝&nbsp;[#90382](https://github.com/openclaw/openclaw/issues/90382) | 0 | OpenAI-compatible/proxy | @baanish | [Bug]: ChatGPT-OAuth gpt-5.5 fails with invalid_provider_content_type after 2026.6.1 (SDK Responses stream missing Accept: text/event-stream) |
+| 📝&nbsp;[#90372](https://github.com/openclaw/openclaw/issues/90372) | 0 | Local model runtime | @JsuHod | [Bug]: Ollama cloud model received a 14M-token prompt before OpenClaw detected context overflow |
+| 📝&nbsp;[#90368](https://github.com/openclaw/openclaw/issues/90368) | 0 | Model routing/config | @xdemocle | 2026.6.1: agent_model_catalogs / model_capability_cache tables defined but never written; models list takes 25–53s |
+| 📝&nbsp;[#90361](https://github.com/openclaw/openclaw/issues/90361) | 0 | Local memory/embedding | @AyitLabs | [Bug]:Intermittent memory_search "index metadata is missing" despite valid builtin memory index; likely search/reindex race. Locally hotfixed. |
+| 🔀&nbsp;[#90357](https://github.com/openclaw/openclaw/pull/90357) | 0 | Model routing/config | @alkor2000 | fix(agents): resolve compaction model alias before dispatch |
 | 🔀&nbsp;[#90356](https://github.com/openclaw/openclaw/pull/90356) | 0 | Model routing/config | @sovushik | fix(status): use legacy Codex OAuth profiles for OpenAI usage |
 | 📝&nbsp;[#90349](https://github.com/openclaw/openclaw/issues/90349) | 0 | Model routing/config | @AungMyoKyaw | Feature: Context Budget/Compactor — intelligent prompt slimming for small-context models |
 | 📝&nbsp;[#90342](https://github.com/openclaw/openclaw/issues/90342) | 0 | Local model runtime | @AungMyoKyaw | Feature: Model Cookbook — hardware-aware model recommendations with one-click download/serve |
@@ -883,4 +895,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 565 (269 issues, 296 PRs).
+- Kept open threads: 577 (274 issues, 303 PRs).

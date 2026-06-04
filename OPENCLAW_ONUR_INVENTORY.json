@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 269,
-    "open_prs": 296,
-    "open_threads": 565
+    "open_issues": 274,
+    "open_prs": 303,
+    "open_threads": 577
   },
   "open_threads": [
     {
@@ -3298,6 +3298,116 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@sahibzada-allahyar",
+      "number": 90407,
+      "title": "fix(memory-lancedb): align apache arrow peer dependency",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90407"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@nerv00kaworu",
+      "number": 90403,
+      "title": "[Performance] Model Picker UI very slow in v2026.5.28",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90403"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@danyurkin",
+      "number": 90401,
+      "title": "docs(local-models): add Atomic Chat as an OpenAI-compatible local server",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90401"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@baanish",
+      "number": 90399,
+      "title": "fix(openai): send Accept: text/event-stream on ChatGPT Responses",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90399"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 90397,
+      "title": "fix(openai): skip unreadable responses tool schemas",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90397"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chengzhichao-xydt",
+      "number": 90395,
+      "title": "fix(memory-core): write meta after sync when identity is missing with existing chunks",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90395"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 90383,
+      "title": "fix(ollama): skip unreadable tool schemas",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90383"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@baanish",
+      "number": 90382,
+      "title": "[Bug]: ChatGPT-OAuth gpt-5.5 fails with invalid_provider_content_type after 2026.6.1 (SDK Responses stream missing Accept: text/event-stream)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90382"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@JsuHod",
+      "number": 90372,
+      "title": "[Bug]: Ollama cloud model received a 14M-token prompt before OpenClaw detected context overflow",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90372"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xdemocle",
+      "number": 90368,
+      "title": "2026.6.1: agent_model_catalogs / model_capability_cache tables defined but never written; models list takes 25–53s",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90368"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@AyitLabs",
+      "number": 90361,
+      "title": "[Bug]:Intermittent memory_search \"index metadata is missing\" despite valid builtin memory index; likely search/reindex race. Locally hotfixed.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90361"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@alkor2000",
+      "number": 90357,
+      "title": "fix(agents): resolve compaction model alias before dispatch",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90357"
     },
     {
       "activity": 0,
@@ -7117,9 +7227,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 90353,
-    "pr": 90356
+    "issue": 90404,
+    "pr": 90407
   },
   "schema_version": 1,
-  "updated": "2026-06-04"
+  "updated": "2026-06-05"
 }
