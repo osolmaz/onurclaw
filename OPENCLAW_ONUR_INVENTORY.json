@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 284,
-    "open_prs": 312,
-    "open_threads": 596
+    "open_issues": 287,
+    "open_prs": 315,
+    "open_threads": 602
   },
   "open_threads": [
     {
@@ -3298,6 +3298,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@sahibzada-allahyar",
+      "number": 90513,
+      "title": "fix(anthropic): add haiku catalog entry",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90513"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@joeykrug",
+      "number": 90508,
+      "title": "memory-core main reindex thrashes, leaks main.sqlite.tmp files, and leaves memory_search paused after repair",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90508"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@sahibzada-allahyar",
+      "number": 90507,
+      "title": "fix(doctor): preserve codex context metadata",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90507"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@paulogogs",
+      "number": 90506,
+      "title": "[Bug]: [Bug]: google-vertex models fail with model_not_found at runtime on 2026.5.28 and 2026.6.1 — direct Vertex API calls succeed with same credentials",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90506"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@TurboTheTurtle",
+      "number": 90500,
+      "title": "Fix stale session routes for removed providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90500"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@nguyenjustin214-lab",
+      "number": 90496,
+      "title": "Discord channel remains trapped in oversized session after /new; compaction fails provider_error_4xx and model drifts from codex/gpt-5.5 to gpt-5.4",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90496"
     },
     {
       "activity": 0,
@@ -7398,8 +7452,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90473,
-    "pr": 90482
+    "issue": 90516,
+    "pr": 90513
   },
   "schema_version": 1,
   "updated": "2026-06-05"
