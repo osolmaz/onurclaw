@@ -4,11 +4,11 @@ Updated: 2026-06-05
 
 Review watermark:
 
-- Last reviewed through issue: #90467.
-- Last reviewed through PR: #90469.
+- Last reviewed through issue: #90473.
+- Last reviewed through PR: #90482.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (595)
+## OPEN THREADS (596)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,7 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#90471](https://github.com/openclaw/openclaw/issues/90471) | 0 | Model routing/config | @centralpc | [Bug]: Deleted provider session overrides persist in sessions.json — silent financial damage risk |
 | 📝&nbsp;[#90466](https://github.com/openclaw/openclaw/issues/90466) | 0 | Local memory/embedding | @mrizzo123 | [Bug]:memory-core dreaming on 2026.6.1: session-corpus contains .jsonl.deleted.* paths; narrative phase writes fallback despite valid prose responses |
 | 📝&nbsp;[#90465](https://github.com/openclaw/openclaw/issues/90465) | 0 | OpenAI-compatible/proxy | @jaylfc | Auto-discover models for the generic openai-completions provider from /v1/models |
 | 📝&nbsp;[#90462](https://github.com/openclaw/openclaw/issues/90462) | 0 | Local model runtime | @al-osokin | Fallback provider can become pinned in session metadata and trap a chat on unavailable LM Studio model |
@@ -913,4 +914,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 595 (283 issues, 312 PRs).
+- Kept open threads: 596 (284 issues, 312 PRs).
