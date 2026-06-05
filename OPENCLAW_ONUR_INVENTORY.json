@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 301,
-    "open_prs": 327,
-    "open_threads": 628
+    "open_issues": 302,
+    "open_prs": 330,
+    "open_threads": 632
   },
   "open_threads": [
     {
@@ -3298,6 +3298,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@snowzlm",
+      "number": 90706,
+      "title": "fix(OpenAI Responses): disable item id replay for storeless providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90706"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@LiuwqGit",
+      "number": 90705,
+      "title": "fix(llm): preserve streamed tool args when Responses done omits arguments",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90705"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Alex-Govorov",
+      "number": 90703,
+      "title": "Support compat reasoning levels for thinking xhigh",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90703"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@brtkwr",
+      "number": 90702,
+      "title": "[Bug]: blockedUntil for subscription_limit set far in the future never re-probes when no fallback is configured",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90702"
     },
     {
       "activity": 0,
@@ -7686,9 +7722,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 90692,
-    "pr": 90691
+    "issue": 90711,
+    "pr": 90712
   },
   "schema_version": 1,
-  "updated": "2026-06-05"
+  "updated": "2026-06-06"
 }

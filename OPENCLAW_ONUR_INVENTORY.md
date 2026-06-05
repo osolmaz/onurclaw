@@ -1,14 +1,14 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-05
+Updated: 2026-06-06
 
 Review watermark:
 
-- Last reviewed through issue: #90692.
-- Last reviewed through PR: #90691.
+- Last reviewed through issue: #90711.
+- Last reviewed through PR: #90712.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (628)
+## OPEN THREADS (632)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,10 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90706](https://github.com/openclaw/openclaw/pull/90706) | 0 | OpenAI-compatible/proxy | @snowzlm | fix(OpenAI Responses): disable item id replay for storeless providers |
+| 🔀&nbsp;[#90705](https://github.com/openclaw/openclaw/pull/90705) | 0 | OpenAI-compatible/proxy | @LiuwqGit | fix(llm): preserve streamed tool args when Responses done omits arguments |
+| 🔀&nbsp;[#90703](https://github.com/openclaw/openclaw/pull/90703) | 0 | OpenAI-compatible/proxy | @Alex-Govorov | Support compat reasoning levels for thinking xhigh |
+| 📝&nbsp;[#90702](https://github.com/openclaw/openclaw/issues/90702) | 0 | Model routing/config | @brtkwr | [Bug]: blockedUntil for subscription_limit set far in the future never re-probes when no fallback is configured |
 | 🔀&nbsp;[#90689](https://github.com/openclaw/openclaw/pull/90689) | 0 | OpenAI-compatible/proxy | @ly85206559 | fix(agents): align custom provider auth labels with runtime (#82020) |
 | 🔀&nbsp;[#90686](https://github.com/openclaw/openclaw/pull/90686) | 0 | Model routing/config | @rohitjavvadi | fix(gateway): honor profile auth for SecretRef model entries |
 | 📝&nbsp;[#90685](https://github.com/openclaw/openclaw/issues/90685) | 0 | Model routing/config | @rohitjavvadi | models.list marks auth-profile-backed SecretRef providers unavailable |
@@ -946,4 +950,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 628 (301 issues, 327 PRs).
+- Kept open threads: 632 (302 issues, 330 PRs).
