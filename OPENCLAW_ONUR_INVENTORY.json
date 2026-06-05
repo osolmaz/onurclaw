@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 302,
-    "open_prs": 330,
-    "open_threads": 632
+    "open_issues": 303,
+    "open_prs": 332,
+    "open_threads": 635
   },
   "open_threads": [
     {
@@ -3298,6 +3298,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@dr00-eth",
+      "number": 90727,
+      "title": "fix(memory): refresh rebuilt index handles",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90727"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@BaymaxBlpha",
+      "number": 90726,
+      "title": "[Bug] Cron jobs terminate immediately on HTTP 500 errors without triggering configured fallback mechanism / Cron 任务在遇到 HTTP 500 错误时直接中止，未能触发配置的 Fallback 机制",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90726"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@849261680",
+      "number": 90717,
+      "title": "fix(agents): re-probe single-provider primary during cooldown",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90717"
     },
     {
       "activity": 0,
@@ -7722,8 +7749,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90711,
-    "pr": 90712
+    "issue": 90729,
+    "pr": 90728
   },
   "schema_version": 1,
   "updated": "2026-06-06"
