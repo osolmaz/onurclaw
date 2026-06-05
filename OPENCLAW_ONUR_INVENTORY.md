@@ -4,11 +4,11 @@ Updated: 2026-06-05
 
 Review watermark:
 
-- Last reviewed through issue: #90657.
-- Last reviewed through PR: #90660.
+- Last reviewed through issue: #90692.
+- Last reviewed through PR: #90691.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (621)
+## OPEN THREADS (628)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,13 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90689](https://github.com/openclaw/openclaw/pull/90689) | 0 | OpenAI-compatible/proxy | @ly85206559 | fix(agents): align custom provider auth labels with runtime (#82020) |
+| 🔀&nbsp;[#90686](https://github.com/openclaw/openclaw/pull/90686) | 0 | Model routing/config | @rohitjavvadi | fix(gateway): honor profile auth for SecretRef model entries |
+| 📝&nbsp;[#90685](https://github.com/openclaw/openclaw/issues/90685) | 0 | Model routing/config | @rohitjavvadi | models.list marks auth-profile-backed SecretRef providers unavailable |
+| 📝&nbsp;[#90684](https://github.com/openclaw/openclaw/issues/90684) | 0 | Open-weight/provider behavior | @studentzhou-svg | Feishu (and non-Discord channels) should apply sanitizeAssistantVisibleText() on outbound text |
+| 🔀&nbsp;[#90683](https://github.com/openclaw/openclaw/pull/90683) | 0 | Local model runtime | @JuanHuaXu | fix: retry safe post-tool continuation turns |
+| 📝&nbsp;[#90675](https://github.com/openclaw/openclaw/issues/90675) | 0 | OpenAI-compatible/proxy | @JohnnyBlack123 | [Bug]: Dashboard/agent fake tool calls with dmxapi model; native claude route returns incomplete terminal response |
+| 📝&nbsp;[#90674](https://github.com/openclaw/openclaw/issues/90674) | 0 | Model/provider behavior | @motteman | Gateway writes usage.cost: 0 for model strings absent from its internal price table (silent cost under-reporting) |
 | 📝&nbsp;[#90657](https://github.com/openclaw/openclaw/issues/90657) | 0 | OpenAI-compatible/proxy | @snowzlm | tracking(OpenAI Responses): reproduce storeless replay and strict state/stream regressions in GitHub Actions |
 | 📝&nbsp;[#90642](https://github.com/openclaw/openclaw/issues/90642) | 0 | Local/media model provider | @ruizcrp | [Feature]: Gemma4-12b (and other models) audio not supported yet |
 | 🔀&nbsp;[#90613](https://github.com/openclaw/openclaw/pull/90613) | 0 | Model routing/config | @openperf | fix(agents): propagate ADC credential marker so google-vertex passes isWritableProviderConfig |
@@ -939,4 +946,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 621 (297 issues, 324 PRs).
+- Kept open threads: 628 (301 issues, 327 PRs).
