@@ -4,11 +4,11 @@ Updated: 2026-06-05
 
 Review watermark:
 
-- Last reviewed through issue: #90589.
-- Last reviewed through PR: #90592.
+- Last reviewed through issue: #90623.
+- Last reviewed through PR: #90620.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (614)
+## OPEN THREADS (619)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,6 +158,11 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90613](https://github.com/openclaw/openclaw/pull/90613) | 0 | Model routing/config | @openperf | fix(agents): propagate ADC credential marker so google-vertex passes isWritableProviderConfig |
+| 🔀&nbsp;[#90609](https://github.com/openclaw/openclaw/pull/90609) | 0 | Model routing/config | @849261680 | fix(google): preserve Vertex ADC catalog auth |
+| 🔀&nbsp;[#90603](https://github.com/openclaw/openclaw/pull/90603) | 0 | Model routing/config | @Bartok9 | fix(secrets): use configured default agent ID in auth/model path discovery (#90573) |
+| 🔀&nbsp;[#90594](https://github.com/openclaw/openclaw/pull/90594) | 0 | Model routing/config | @Tosko4 | fix(android): align provider readiness with available models |
+| 🔀&nbsp;[#90593](https://github.com/openclaw/openclaw/pull/90593) | 0 | OpenAI-compatible/proxy | @849261680 | fix: preserve LM Studio Responses tool arguments |
 | 📝&nbsp;[#90585](https://github.com/openclaw/openclaw/issues/90585) | 0 | Local model runtime | @ceo-nada | [Bug]: [REGRESSION] Tool calls with arguments arrive as empty objects when using LM Studio (openai-responses API). |
 | 🔀&nbsp;[#90574](https://github.com/openclaw/openclaw/pull/90574) | 0 | OpenAI-compatible/proxy | @BSG2000 | fix(openai): omit gpt-5.5 tool reasoning effort |
 | 📝&nbsp;[#90570](https://github.com/openclaw/openclaw/issues/90570) | 0 | OpenAI-compatible/proxy | @Osshaikh | Azure AI Foundry models (/openai/v1/responses) fail with 400 Invalid value and 400 schema mismatch across all GPT-5.x deployments |
@@ -932,4 +937,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 614 (295 issues, 319 PRs).
+- Kept open threads: 619 (295 issues, 324 PRs).
