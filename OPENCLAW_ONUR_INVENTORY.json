@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 303,
-    "open_prs": 332,
-    "open_threads": 635
+    "open_issues": 304,
+    "open_prs": 335,
+    "open_threads": 639
   },
   "open_threads": [
     {
@@ -3298,6 +3298,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@holgergruenhagen",
+      "number": 90746,
+      "title": "Document practical requirements for QMD memory backend on CPU-only VPS deployments",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90746"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zeroaltitude",
+      "number": 90741,
+      "title": "perf(models-config): unify auth-profile fingerprint cache + targetProvider short-circuit",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90741"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@brokemac79",
+      "number": 90739,
+      "title": "fix(active-memory): preserve verbose recall summaries",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90739"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@849261680",
+      "number": 90731,
+      "title": "fix(agents): hydrate allowlisted dynamic model metadata",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90731"
     },
     {
       "activity": 0,
@@ -7749,8 +7785,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90729,
-    "pr": 90728
+    "issue": 90746,
+    "pr": 90745
   },
   "schema_version": 1,
   "updated": "2026-06-06"
