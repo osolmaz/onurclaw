@@ -1978,9 +1978,9 @@
   ],
   "counts": {
     "closed_threads": 282,
-    "open_issues": 287,
-    "open_prs": 315,
-    "open_threads": 602
+    "open_issues": 290,
+    "open_prs": 318,
+    "open_threads": 608
   },
   "open_threads": [
     {
@@ -3298,6 +3298,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@sahibzada-allahyar",
+      "number": 90539,
+      "title": "fix(agents): skip foundry aliases for deepseek thinking",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90539"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ozp",
+      "number": 90536,
+      "title": "OpenAI OAuth missing 'model.request' scope — GPT-5.5 falls back silently",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90536"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@clawsweeper[bot]",
+      "number": 90533,
+      "title": "fix(openai): accept missing content-type on ChatGPT Responses SSE stream",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90533"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@amoni094",
+      "number": 90528,
+      "title": "[Bug]: OpenAI/Codex OAuth Profile Not Attached to Inference Requests",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90528"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@wlassalle724",
+      "number": 90520,
+      "title": "Microsoft Foundry DeepSeek V4 alias providers still inject `thinking` after #87737 fix",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90520"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@baskduf",
+      "number": 90514,
+      "title": "fix(session): clear stale fallback model state on reset",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90514"
     },
     {
       "activity": 0,
@@ -7452,8 +7506,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90516,
-    "pr": 90513
+    "issue": 90536,
+    "pr": 90539
   },
   "schema_version": 1,
   "updated": "2026-06-05"
