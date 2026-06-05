@@ -4,11 +4,11 @@ Updated: 2026-06-05
 
 Review watermark:
 
-- Last reviewed through issue: #90536.
-- Last reviewed through PR: #90539.
+- Last reviewed through issue: #90568.
+- Last reviewed through PR: #90561.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (608)
+## OPEN THREADS (611)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -158,7 +158,10 @@ Review watermark:
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#61834](https://github.com/openclaw/openclaw/issues/61834) | 1 | Local memory/embedding | @kouka-t0yohei | [Feature]: expose QMD no-rerank for memory.qmd query mode |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#90567](https://github.com/openclaw/openclaw/issues/90567) | 0 | OpenAI-compatible/proxy | @tinypoint-xy | Bug: pdf tool fails with 401 on xiaomi token-plan provider |
+| 📝&nbsp;[#90556](https://github.com/openclaw/openclaw/issues/90556) | 0 | Local model runtime | @Wsq-159 | Chat UI: Display response latency under each message |
 | 🔀&nbsp;[#90539](https://github.com/openclaw/openclaw/pull/90539) | 0 | Open-weight/provider behavior | @sahibzada-allahyar | fix(agents): skip foundry aliases for deepseek thinking |
+| 📝&nbsp;[#90538](https://github.com/openclaw/openclaw/issues/90538) | 0 | Local memory/embedding | @itanyplus | [Bug] Memory Dreaming Promotion silently no-ops: cron isolated sessions get trigger=user instead of cron |
 | 📝&nbsp;[#90536](https://github.com/openclaw/openclaw/issues/90536) | 0 | Model routing/config | @ozp | OpenAI OAuth missing 'model.request' scope — GPT-5.5 falls back silently |
 | 🔀&nbsp;[#90533](https://github.com/openclaw/openclaw/pull/90533) | 0 | OpenAI-compatible/proxy | @clawsweeper[bot] | fix(openai): accept missing content-type on ChatGPT Responses SSE stream |
 | 📝&nbsp;[#90528](https://github.com/openclaw/openclaw/issues/90528) | 0 | Model routing/config | @amoni094 | [Bug]: OpenAI/Codex OAuth Profile Not Attached to Inference Requests |
@@ -926,4 +929,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 608 (290 issues, 318 PRs).
+- Kept open threads: 611 (293 issues, 318 PRs).
