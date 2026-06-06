@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 298,
-    "open_prs": 318,
-    "open_threads": 616
+    "open_issues": 302,
+    "open_prs": 320,
+    "open_threads": 622
   },
   "open_threads": [
     {
@@ -3558,6 +3558,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@abdulla2010",
+      "number": 90881,
+      "title": "doctor --fix migrates codex/gpt-5.5 to openai/gpt-5.5, then Codex app-server startup times out on 2026.6.1",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90881"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@alfonsostilo-crypto",
+      "number": 90878,
+      "title": "OAuth Codex profile falls back after openai-codex to openai namespace mismatch",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90878"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Xavier-Meng",
+      "number": 90877,
+      "title": "Issue on memory-lancedb",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90877"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@qianwu007",
+      "number": 90876,
+      "title": "docs: add ForAI provider setup guide",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90876"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Agent-Aurelius",
+      "number": 90870,
+      "title": "[AI] fix(memory-wiki): index wiki pages in query-dir subfolders",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90870"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Agent-Aurelius",
+      "number": 90869,
+      "title": "wiki_search silently drops pages in subfolders of the wiki query dirs (data loss)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90869"
     },
     {
       "activity": 0,
@@ -7865,8 +7919,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90862,
-    "pr": 90868
+    "issue": 90881,
+    "pr": 90879
   },
   "schema_version": 1,
   "updated": "2026-06-06"

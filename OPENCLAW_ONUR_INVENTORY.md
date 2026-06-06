@@ -4,11 +4,11 @@ Updated: 2026-06-06
 
 Review watermark:
 
-- Last reviewed through issue: #90862.
-- Last reviewed through PR: #90868.
+- Last reviewed through issue: #90881.
+- Last reviewed through PR: #90879.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (616)
+## OPEN THREADS (622)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,12 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#90881](https://github.com/openclaw/openclaw/issues/90881) | 0 | Model routing/config | @abdulla2010 | doctor --fix migrates codex/gpt-5.5 to openai/gpt-5.5, then Codex app-server startup times out on 2026.6.1 |
+| 📝&nbsp;[#90878](https://github.com/openclaw/openclaw/issues/90878) | 0 | Model routing/config | @alfonsostilo-crypto | OAuth Codex profile falls back after openai-codex to openai namespace mismatch |
+| 📝&nbsp;[#90877](https://github.com/openclaw/openclaw/issues/90877) | 0 | Local memory/embedding | @Xavier-Meng | Issue on memory-lancedb |
+| 🔀&nbsp;[#90876](https://github.com/openclaw/openclaw/pull/90876) | 0 | OpenAI-compatible/proxy | @qianwu007 | docs: add ForAI provider setup guide |
+| 🔀&nbsp;[#90870](https://github.com/openclaw/openclaw/pull/90870) | 0 | Local memory/embedding | @Agent-Aurelius | [AI] fix(memory-wiki): index wiki pages in query-dir subfolders |
+| 📝&nbsp;[#90869](https://github.com/openclaw/openclaw/issues/90869) | 0 | Local memory/embedding | @Agent-Aurelius | wiki_search silently drops pages in subfolders of the wiki query dirs (data loss) |
 | 🔀&nbsp;[#90863](https://github.com/openclaw/openclaw/pull/90863) | 0 | Model/provider behavior | @XuZehan-iCenter | fix(minimax): expose xhigh and max thinking levels for MiniMax-M3 |
 | 🔀&nbsp;[#90839](https://github.com/openclaw/openclaw/pull/90839) | 0 | Local memory/embedding | @lonexreb | fix(memory-core): exclude soft-deleted .jsonl.deleted paths from dreaming corpus (#90466) |
 | 🔀&nbsp;[#90830](https://github.com/openclaw/openclaw/pull/90830) | 0 | OpenAI-compatible/proxy | @lonexreb | fix(microsoft-foundry): suppress DeepSeek V4 thinking on alias provider ids (#90520) |
@@ -975,4 +981,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 616 (298 issues, 318 PRs).
+- Kept open threads: 622 (302 issues, 320 PRs).
