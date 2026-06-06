@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 304,
-    "open_prs": 325,
-    "open_threads": 629
+    "open_issues": 305,
+    "open_prs": 326,
+    "open_threads": 631
   },
   "open_threads": [
     {
@@ -3558,6 +3558,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@bosszukung",
+      "number": 90909,
+      "title": "[Feature]: Host-provided in-process LLM adapters for the embedded Lobster runner (#76101 bridge)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90909"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@shengting",
+      "number": 90908,
+      "title": "fix(model-fallback): don't rethrow provider-side AbortErrors as user cancellations",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90908"
     },
     {
       "activity": 0,
@@ -7982,8 +8000,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90901,
-    "pr": 90906
+    "issue": 90921,
+    "pr": 90923
   },
   "schema_version": 1,
   "updated": "2026-06-06"
