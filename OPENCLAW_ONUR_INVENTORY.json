@@ -2266,8 +2266,8 @@
   "counts": {
     "closed_threads": 323,
     "open_issues": 298,
-    "open_prs": 311,
-    "open_threads": 609
+    "open_prs": 317,
+    "open_threads": 615
   },
   "open_threads": [
     {
@@ -3558,6 +3558,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lonexreb",
+      "number": 90839,
+      "title": "fix(memory-core): exclude soft-deleted .jsonl.deleted paths from dreaming corpus (#90466)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90839"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lonexreb",
+      "number": 90830,
+      "title": "fix(microsoft-foundry): suppress DeepSeek V4 thinking on alias provider ids (#90520)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90830"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lonexreb",
+      "number": 90827,
+      "title": "fix(memory-core): surface empty narrative generation instead of silent fallback (#90781)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90827"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lonexreb",
+      "number": 90826,
+      "title": "fix(tui): render /models loading feedback before listing resolves (#90720)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90826"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@MonkeyLeeT",
+      "number": 90825,
+      "title": "fix(llm): warn on unknown model pricing",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90825"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Marvinthebored",
+      "number": 90811,
+      "title": "fix(agents): stabilize user-turn serialization across turns to preserve prompt cache",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90811"
     },
     {
       "activity": 0,
@@ -7802,8 +7856,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90810,
-    "pr": 90809
+    "issue": 90844,
+    "pr": 90847
   },
   "schema_version": 1,
   "updated": "2026-06-06"
