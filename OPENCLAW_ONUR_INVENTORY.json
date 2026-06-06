@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 309,
-    "open_prs": 330,
-    "open_threads": 639
+    "open_issues": 312,
+    "open_prs": 332,
+    "open_threads": 644
   },
   "open_threads": [
     {
@@ -3558,6 +3558,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@stevenepalmer",
+      "number": 91010,
+      "title": "fix(memory): honor local model path in index identity",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91010"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@aspalagin",
+      "number": 91009,
+      "title": "Codex PreToolUse native hook relay spawns CPU-bound openclaw-hooks processes and stalls gateway RPC",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91009"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@alijamal14",
+      "number": 91008,
+      "title": "fix: address P2 cleanup items in model picker UI (PR #68927)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91008"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Countermarch",
+      "number": 91007,
+      "title": "[Bug]: iOS Talk realtime session closes before audio append and ignores server stt-tts routing",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91007"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@samrrr",
+      "number": 91001,
+      "title": "[Bug]: local embeedings provider fail",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91001"
     },
     {
       "activity": 0,
@@ -8072,8 +8117,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90999,
-    "pr": 90997
+    "issue": 91009,
+    "pr": 91010
   },
   "schema_version": 1,
   "updated": "2026-06-07"
