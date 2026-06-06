@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 302,
-    "open_prs": 320,
-    "open_threads": 622
+    "open_issues": 304,
+    "open_prs": 325,
+    "open_threads": 629
   },
   "open_threads": [
     {
@@ -3558,6 +3558,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chengzhichao-xydt",
+      "number": 90904,
+      "title": "fix(doctor): match short-term memory files with -HHMM timestamp suffixes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90904"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@thinhkhang97",
+      "number": 90903,
+      "title": "fix(agents): inherit default agent model catalog for secondary agents",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90903"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@stevenjj33",
+      "number": 90896,
+      "title": "Bug: isShortTermMemoryPath regex skips daily memory files with timestamp suffixes (e.g. YYYY-MM-DD-HHMM.md)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90896"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@clawsweeper[bot]",
+      "number": 90889,
+      "title": "fix: cap session context overrides by model window",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90889"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@smisy-system-design[bot]",
+      "number": 90886,
+      "title": "gateway hangs at `[gateway] starting...` when a declared provider lacks credentials (regression v2026.4.8 -> v2026.4.26)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90886"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Huangting-xy",
+      "number": 90885,
+      "title": "fix(agent): resolve compaction model alias to canonical model ref",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90885"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Huangting-xy",
+      "number": 90884,
+      "title": "fix(agent): exclude Microsoft Foundry alias providers from DeepSeek V4 thinking wrapper",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90884"
     },
     {
       "activity": 0,
@@ -7919,8 +7982,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90881,
-    "pr": 90879
+    "issue": 90901,
+    "pr": 90906
   },
   "schema_version": 1,
   "updated": "2026-06-06"

@@ -4,11 +4,11 @@ Updated: 2026-06-06
 
 Review watermark:
 
-- Last reviewed through issue: #90881.
-- Last reviewed through PR: #90879.
+- Last reviewed through issue: #90901.
+- Last reviewed through PR: #90906.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (622)
+## OPEN THREADS (629)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,13 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90904](https://github.com/openclaw/openclaw/pull/90904) | 0 | Local memory/embedding | @chengzhichao-xydt | fix(doctor): match short-term memory files with -HHMM timestamp suffixes |
+| 🔀&nbsp;[#90903](https://github.com/openclaw/openclaw/pull/90903) | 0 | Model routing/config | @thinhkhang97 | fix(agents): inherit default agent model catalog for secondary agents |
+| 📝&nbsp;[#90896](https://github.com/openclaw/openclaw/issues/90896) | 0 | Local memory/embedding | @stevenjj33 | Bug: isShortTermMemoryPath regex skips daily memory files with timestamp suffixes (e.g. YYYY-MM-DD-HHMM.md) |
+| 🔀&nbsp;[#90889](https://github.com/openclaw/openclaw/pull/90889) | 0 | Model routing/config | @clawsweeper[bot] | fix: cap session context overrides by model window |
+| 📝&nbsp;[#90886](https://github.com/openclaw/openclaw/issues/90886) | 0 | Model routing/config | @smisy-system-design[bot] | gateway hangs at `[gateway] starting...` when a declared provider lacks credentials (regression v2026.4.8 -> v2026.4.26) |
+| 🔀&nbsp;[#90885](https://github.com/openclaw/openclaw/pull/90885) | 0 | Model routing/config | @Huangting-xy | fix(agent): resolve compaction model alias to canonical model ref |
+| 🔀&nbsp;[#90884](https://github.com/openclaw/openclaw/pull/90884) | 0 | Open-weight/provider behavior | @Huangting-xy | fix(agent): exclude Microsoft Foundry alias providers from DeepSeek V4 thinking wrapper |
 | 📝&nbsp;[#90881](https://github.com/openclaw/openclaw/issues/90881) | 0 | Model routing/config | @abdulla2010 | doctor --fix migrates codex/gpt-5.5 to openai/gpt-5.5, then Codex app-server startup times out on 2026.6.1 |
 | 📝&nbsp;[#90878](https://github.com/openclaw/openclaw/issues/90878) | 0 | Model routing/config | @alfonsostilo-crypto | OAuth Codex profile falls back after openai-codex to openai namespace mismatch |
 | 📝&nbsp;[#90877](https://github.com/openclaw/openclaw/issues/90877) | 0 | Local memory/embedding | @Xavier-Meng | Issue on memory-lancedb |
@@ -981,4 +988,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 622 (302 issues, 320 PRs).
+- Kept open threads: 629 (304 issues, 325 PRs).
