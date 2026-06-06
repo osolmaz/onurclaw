@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 307,
-    "open_prs": 329,
-    "open_threads": 636
+    "open_issues": 309,
+    "open_prs": 330,
+    "open_threads": 639
   },
   "open_threads": [
     {
@@ -3558,6 +3558,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@cx306806112",
+      "number": 90991,
+      "title": "Cron scheduled trigger contaminates global runtime state causing transient system-wide overload failures",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90991"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Kailigithub",
+      "number": 90990,
+      "title": "fix(agents): use appropriate log levels in model-resolver fallback paths",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90990"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@taerlandsen",
+      "number": 90982,
+      "title": "[Bug]: TUI hides tool-call validation errors behind \"run aborted\" — root cause only visible in gateway log",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90982"
     },
     {
       "activity": 0,
@@ -8045,8 +8072,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90980,
-    "pr": 90979
+    "issue": 90999,
+    "pr": 90997
   },
   "schema_version": 1,
   "updated": "2026-06-07"

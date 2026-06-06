@@ -4,11 +4,11 @@ Updated: 2026-06-07
 
 Review watermark:
 
-- Last reviewed through issue: #90980.
-- Last reviewed through PR: #90979.
+- Last reviewed through issue: #90999.
+- Last reviewed through PR: #90997.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (636)
+## OPEN THREADS (639)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,9 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#90991](https://github.com/openclaw/openclaw/issues/90991) | 0 | Model routing/config | @cx306806112 | Cron scheduled trigger contaminates global runtime state causing transient system-wide overload failures |
+| 🔀&nbsp;[#90990](https://github.com/openclaw/openclaw/pull/90990) | 0 | Model routing/config | @Kailigithub | fix(agents): use appropriate log levels in model-resolver fallback paths |
+| 📝&nbsp;[#90982](https://github.com/openclaw/openclaw/issues/90982) | 0 | Open-weight/provider behavior | @taerlandsen | [Bug]: TUI hides tool-call validation errors behind "run aborted" — root cause only visible in gateway log |
 | 🔀&nbsp;[#90975](https://github.com/openclaw/openclaw/pull/90975) | 0 | Model/provider behavior | @Kirchlive | feat(google): add Antigravity CLI backend |
 | 📝&nbsp;[#90974](https://github.com/openclaw/openclaw/issues/90974) | 0 | Model routing/config | @itanyplus | [Feedback] Stop shipping features. Start shipping a product that works. |
 | 🔀&nbsp;[#90968](https://github.com/openclaw/openclaw/pull/90968) | 0 | Model routing/config | @moeedahmed | fix: avoid reapplying ACP startup runtime options |
@@ -995,4 +998,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 636 (307 issues, 329 PRs).
+- Kept open threads: 639 (309 issues, 330 PRs).
