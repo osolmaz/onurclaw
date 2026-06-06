@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 306,
-    "open_prs": 327,
-    "open_threads": 633
+    "open_issues": 307,
+    "open_prs": 329,
+    "open_threads": 636
   },
   "open_threads": [
     {
@@ -3558,6 +3558,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Kirchlive",
+      "number": 90975,
+      "title": "feat(google): add Antigravity CLI backend",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90975"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@itanyplus",
+      "number": 90974,
+      "title": "[Feedback] Stop shipping features. Start shipping a product that works.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90974"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@moeedahmed",
+      "number": 90968,
+      "title": "fix: avoid reapplying ACP startup runtime options",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90968"
     },
     {
       "activity": 0,
@@ -8018,8 +8045,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90964,
-    "pr": 90965
+    "issue": 90980,
+    "pr": 90979
   },
   "schema_version": 1,
   "updated": "2026-06-07"
