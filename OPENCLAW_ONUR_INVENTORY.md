@@ -1,14 +1,14 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-06
+Updated: 2026-06-07
 
 Review watermark:
 
-- Last reviewed through issue: #90941.
-- Last reviewed through PR: #90937.
+- Last reviewed through issue: #90964.
+- Last reviewed through PR: #90965.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (632)
+## OPEN THREADS (633)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,7 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#90959](https://github.com/openclaw/openclaw/pull/90959) | 0 | Model routing/config | @openperf | fix(agents): apply default provider catalog timeout in all environments |
 | 📝&nbsp;[#90925](https://github.com/openclaw/openclaw/issues/90925) | 0 | Model routing/config | @DolencLuka | [Bug]: Subagent announce compaction for Codex/OAuth falls into openai-responses API-key route |
 | 📝&nbsp;[#90909](https://github.com/openclaw/openclaw/issues/90909) | 0 | Model routing/config | @bosszukung | [Feature]: Host-provided in-process LLM adapters for the embedded Lobster runner (#76101 bridge) |
 | 🔀&nbsp;[#90908](https://github.com/openclaw/openclaw/pull/90908) | 0 | Model routing/config | @shengting | fix(model-fallback): don't rethrow provider-side AbortErrors as user cancellations |
@@ -991,4 +992,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 632 (306 issues, 326 PRs).
+- Kept open threads: 633 (306 issues, 327 PRs).
