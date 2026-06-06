@@ -2013,9 +2013,9 @@
   ],
   "counts": {
     "closed_threads": 287,
-    "open_issues": 301,
+    "open_issues": 304,
     "open_prs": 337,
-    "open_threads": 638
+    "open_threads": 641
   },
   "open_threads": [
     {
@@ -3324,6 +3324,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@fenglanhua",
+      "number": 90787,
+      "title": "[Bug]: memorySearch provider silently resets to \"openai\" after upgrade to 2026.6.1, causing permanent Dirty index and vector search outage",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90787"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@fenglanhua",
+      "number": 90786,
+      "title": "[Bug]: memory status --index and --deep fail with \"Unknown memory embedding provider: google\" on 2026.6.1",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90786"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xdengli",
+      "number": 90781,
+      "title": "[Bug]: memory-core narrative generation silently produces no text and writes fallback diary entries (light/rem/deep phases)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90781"
     },
     {
       "activity": 0,
@@ -7811,8 +7838,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90774,
-    "pr": 90772
+    "issue": 90789,
+    "pr": 90792
   },
   "schema_version": 1,
   "updated": "2026-06-06"
