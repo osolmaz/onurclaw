@@ -2266,8 +2266,8 @@
   "counts": {
     "closed_threads": 323,
     "open_issues": 298,
-    "open_prs": 317,
-    "open_threads": 615
+    "open_prs": 318,
+    "open_threads": 616
   },
   "open_threads": [
     {
@@ -3558,6 +3558,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@XuZehan-iCenter",
+      "number": 90863,
+      "title": "fix(minimax): expose xhigh and max thinking levels for MiniMax-M3",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90863"
     },
     {
       "activity": 0,
@@ -7856,8 +7865,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90844,
-    "pr": 90847
+    "issue": 90862,
+    "pr": 90868
   },
   "schema_version": 1,
   "updated": "2026-06-06"
