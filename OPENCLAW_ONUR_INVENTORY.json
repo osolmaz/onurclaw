@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 305,
+    "open_issues": 306,
     "open_prs": 326,
-    "open_threads": 631
+    "open_threads": 632
   },
   "open_threads": [
     {
@@ -3558,6 +3558,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@DolencLuka",
+      "number": 90925,
+      "title": "[Bug]: Subagent announce compaction for Codex/OAuth falls into openai-responses API-key route",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90925"
     },
     {
       "activity": 0,
@@ -8000,8 +8009,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 90921,
-    "pr": 90923
+    "issue": 90941,
+    "pr": 90937
   },
   "schema_version": 1,
   "updated": "2026-06-06"
