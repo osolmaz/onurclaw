@@ -2,6 +2,34 @@
   "$schema": "schemas/openclaw-onur-inventory.schema.json",
   "closed_threads": [
     {
+      "number": 90896,
+      "status": "Closed in local gitcrawl 2026-06-07",
+      "title": "Bug: isShortTermMemoryPath regex skips daily memory files with timestamp suffixes (e.g. YYYY-MM-DD-HHMM.md); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90896"
+    },
+    {
+      "number": 90878,
+      "status": "Closed in local gitcrawl 2026-06-07",
+      "title": "OAuth Codex profile falls back after openai-codex to openai namespace mismatch; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90878"
+    },
+    {
+      "number": 90877,
+      "status": "Closed in local gitcrawl 2026-06-07",
+      "title": "Issue on memory-lancedb; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90877"
+    },
+    {
+      "number": 90810,
+      "status": "Closed in local gitcrawl 2026-06-07",
+      "title": "[Bug]: Prompt cache invalidated on every user turn on full-resend transports — transient timestamp + content-form decoration on the current user message (regression from #3658); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90810"
+    },
+    {
       "number": 90758,
       "status": "Closed in local gitcrawl 2026-06-06",
       "title": "Channel-level agentId for iMessage, WhatsApp, and Telegram DMs (escape-hatch routing); no longer open.",
@@ -91,6 +119,13 @@
       "title": "fix(memory-core): keep durable index identity visible during safe reindex; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/90422"
+    },
+    {
+      "number": 90413,
+      "status": "Closed in local gitcrawl 2026-06-07",
+      "title": "memory status always reports \"Vector search: paused\" with blank expected model (2026.6.1); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90413"
     },
     {
       "number": 90399,
@@ -247,11 +282,25 @@
       "url": "https://github.com/openclaw/openclaw/issues/89706"
     },
     {
+      "number": 89691,
+      "status": "Closed in local gitcrawl 2026-06-07",
+      "title": "Active-memory embedded memory_search intermittently loses embedding provider and falls back to FTS-only; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/89691"
+    },
+    {
       "number": 89685,
       "status": "Closed in local gitcrawl 2026-06-04",
       "title": "fix(acpx): handle Claude ACP model startup options; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/89685"
+    },
+    {
+      "number": 89651,
+      "status": "Closed in local gitcrawl 2026-06-07",
+      "title": "Gateway startup does not load the plugin owning a configured memory embedding provider (memorySearch.provider); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/89651"
     },
     {
       "number": 89613,
@@ -2193,6 +2242,13 @@
       "url": "https://github.com/openclaw/openclaw/pull/65914"
     },
     {
+      "number": 65557,
+      "status": "Closed in local gitcrawl 2026-06-07",
+      "title": "Provider & model selection per session/account with admin-controlled allowlists; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/65557"
+    },
+    {
       "number": 65502,
       "status": "Closed in local gitcrawl 2026-05-31",
       "title": "feat(agents): resilient model fallback with retry + context-aware safe mode; no longer open.",
@@ -2264,10 +2320,10 @@
     }
   ],
   "counts": {
-    "closed_threads": 323,
-    "open_issues": 321,
-    "open_prs": 351,
-    "open_threads": 672
+    "closed_threads": 331,
+    "open_issues": 313,
+    "open_prs": 361,
+    "open_threads": 674
   },
   "open_threads": [
     {
@@ -3561,6 +3617,96 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chengzhichao-xydt",
+      "number": 91188,
+      "title": "fix(memory-core): write ## Deep Sleep summary to DREAMS.md",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91188"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@openperf",
+      "number": 91187,
+      "title": "fix(cron): isolate auth profile failure policy so cron runs don't pollute shared cooldowns",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91187"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Huangting-xy",
+      "number": 91182,
+      "title": "fix(memory-core): exclude archive transcripts from dreaming session corpus collection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91182"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Kirchlive",
+      "number": 91177,
+      "title": "fix(tui): persist canonical provider in session modelProvider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91177"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zenglingbiao",
+      "number": 91175,
+      "title": "fix(memory-core): write Deep Sleep summary into DREAMS.md after deep dreaming phase (fixes #91051)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91175"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@kiagentkronos-cell",
+      "number": 91173,
+      "title": "fix(memory): self-heal missing index identity during sync",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91173"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@LiuwqGit",
+      "number": 91170,
+      "title": "fix(memory): align local modelPath index identity on status",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91170"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Kirchlive",
+      "number": 91168,
+      "title": "feat(tui,gateway): show CLI-routing label in /model picker",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91168"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zenglingbiao",
+      "number": 91153,
+      "title": "fix(agents): resolve model aliases in compaction model override (fixes #90340)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91153"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@steipete",
+      "number": 91118,
+      "title": "fix: preserve Foundry Responses reasoning replay ids",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91118"
+    },
+    {
+      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@steipete",
       "number": 91113,
@@ -3966,15 +4112,6 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@stevenjj33",
-      "number": 90896,
-      "title": "Bug: isShortTermMemoryPath regex skips daily memory files with timestamp suffixes (e.g. YYYY-MM-DD-HHMM.md)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90896"
-    },
-    {
-      "activity": 0,
       "area": "Model routing/config",
       "creator": "@clawsweeper[bot]",
       "number": 90889,
@@ -4017,24 +4154,6 @@
       "title": "doctor --fix migrates codex/gpt-5.5 to openai/gpt-5.5, then Codex app-server startup times out on 2026.6.1",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/90881"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@alfonsostilo-crypto",
-      "number": 90878,
-      "title": "OAuth Codex profile falls back after openai-codex to openai namespace mismatch",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90878"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@Xavier-Meng",
-      "number": 90877,
-      "title": "Issue on memory-lancedb",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90877"
     },
     {
       "activity": 0,
@@ -4125,15 +4244,6 @@
       "title": "fix(agents): stabilize user-turn serialization across turns to preserve prompt cache",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/90811"
-    },
-    {
-      "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@Marvinthebored",
-      "number": 90810,
-      "title": "[Bug]: Prompt cache invalidated on every user turn on full-resend transports — transient timestamp + content-form decoration on the current user message (regression from #3658)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90810"
     },
     {
       "activity": 0,
@@ -4656,15 +4766,6 @@
       "title": "agentmemory__memory_search returns \"index metadata is missing\" persistently (memory-core manager state cache)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/90414"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@colinmac-boop",
-      "number": 90413,
-      "title": "memory status always reports \"Vector search: paused\" with blank expected model (2026.6.1)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90413"
     },
     {
       "activity": 0,
@@ -5771,15 +5872,6 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@joeykrug",
-      "number": 89691,
-      "title": "Active-memory embedded memory_search intermittently loses embedding provider and falls back to FTS-only",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/89691"
-    },
-    {
-      "activity": 0,
       "area": "Model/provider behavior",
       "assignee": "vincentkoc",
       "creator": "@vincentkoc",
@@ -5852,15 +5944,6 @@
       "title": "fix(plugins): load owning plugin for configured memory embedding provider at startup",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/89652"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@joeykrug",
-      "number": 89651,
-      "title": "Gateway startup does not load the plugin owning a configured memory embedding provider (memorySearch.provider)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/89651"
     },
     {
       "activity": 0,
@@ -8135,15 +8218,6 @@
     },
     {
       "activity": 0,
-      "area": "Local model runtime",
-      "creator": "@alexanderatkins",
-      "number": 65557,
-      "title": "Provider & model selection per session/account with admin-controlled allowlists",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/65557"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@jochenfrey",
       "number": 65547,
@@ -8369,8 +8443,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91106,
-    "pr": 91113
+    "issue": 91138,
+    "pr": 91193
   },
   "schema_version": 1,
   "updated": "2026-06-07"
