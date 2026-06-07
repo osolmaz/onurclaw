@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 313,
-    "open_prs": 361,
-    "open_threads": 674
+    "open_prs": 363,
+    "open_threads": 676
   },
   "open_threads": [
     {
@@ -3614,6 +3614,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Kirchlive",
+      "number": 91211,
+      "title": "feat(tui): classify every model as CLI / OAuth / API in /model picker",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91211"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@tanshanshan",
+      "number": 91206,
+      "title": "fix(agents/subagent-spawn): Sub-agent model routing ignores model parameter",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91206"
     },
     {
       "activity": 0,
@@ -8444,8 +8462,8 @@
   ],
   "review_watermark": {
     "issue": 91138,
-    "pr": 91193
+    "pr": 91213
   },
   "schema_version": 1,
-  "updated": "2026-06-07"
+  "updated": "2026-06-08"
 }
