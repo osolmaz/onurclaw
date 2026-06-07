@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 319,
-    "open_prs": 344,
-    "open_threads": 663
+    "open_issues": 320,
+    "open_prs": 347,
+    "open_threads": 667
   },
   "open_threads": [
     {
@@ -3558,6 +3558,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zenglingbiao",
+      "number": 91094,
+      "title": "fix(media-understanding): skip image understanding when primary model supports vision, regardless of imageModel config (fixes #91084)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91094"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@amknight",
+      "number": 91091,
+      "title": "fix(memory): do not prune session index from a failed directory scan",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91091"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@AxelHu",
+      "number": 91084,
+      "title": "[Bug]: vision-skip guard bypassed when agents.defaults.imageModel is set, even with vision-capable primary model",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91084"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@amknight",
+      "number": 91081,
+      "title": "perf(memory): coalesce + cache session-file listings to cut NFS READDIR load",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91081"
     },
     {
       "activity": 0,
@@ -8288,8 +8324,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91079,
-    "pr": 91078
+    "issue": 91095,
+    "pr": 91094
   },
   "schema_version": 1,
   "updated": "2026-06-07"
