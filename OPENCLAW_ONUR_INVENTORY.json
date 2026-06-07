@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 316,
-    "open_prs": 335,
-    "open_threads": 651
+    "open_issues": 318,
+    "open_prs": 339,
+    "open_threads": 657
   },
   "open_threads": [
     {
@@ -3558,6 +3558,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@watsonagenda",
+      "number": 91060,
+      "title": "Feature Request: Per-task or Per-capability Model Routing",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91060"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@wangwllu",
+      "number": 91057,
+      "title": "fix(sessions): prune stale gateway model-run sessions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91057"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@xueqingli1",
+      "number": 91052,
+      "title": "[Feature]: make voice-call realtime barge-in detection configurable",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91052"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@7thfloorindustries",
+      "number": 91050,
+      "title": "fix(active-memory): keep a runnable iMessage channel so memory thread key builds",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91050"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@zenglingbiao",
+      "number": 91046,
+      "title": "fix(microsoft-foundry): exclude alias providers from DeepSeek V4 thinking wrapper (fixes #90520)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91046"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@harjothkhara",
+      "number": 91045,
+      "title": "fix(config): accept model thinkingLevelMap in provider config schema (#91011) [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91045"
     },
     {
       "activity": 0,
@@ -8180,8 +8234,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91039,
-    "pr": 91037
+    "issue": 91065,
+    "pr": 91059
   },
   "schema_version": 1,
   "updated": "2026-06-07"
