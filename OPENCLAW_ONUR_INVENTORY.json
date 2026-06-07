@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 313,
-    "open_prs": 363,
-    "open_threads": 676
+    "open_prs": 366,
+    "open_threads": 679
   },
   "open_threads": [
     {
@@ -3614,6 +3614,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@damianFelixPago",
+      "number": 91222,
+      "title": "fix(google-vertex): retry transient pre-stream failures and stale ADC",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91222"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@bymle",
+      "number": 91218,
+      "title": "fix(google): strip provider prefix from Vertex model path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91218"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@safrano9999",
+      "number": 91217,
+      "title": "feat(gateway): add deterministic dummy model (AI-assisted)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91217"
     },
     {
       "activity": 0,
@@ -8462,7 +8489,7 @@
   ],
   "review_watermark": {
     "issue": 91138,
-    "pr": 91213
+    "pr": 91222
   },
   "schema_version": 1,
   "updated": "2026-06-08"
