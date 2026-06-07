@@ -4,11 +4,11 @@ Updated: 2026-06-07
 
 Review watermark:
 
-- Last reviewed through issue: #91009.
-- Last reviewed through PR: #91010.
+- Last reviewed through issue: #91039.
+- Last reviewed through PR: #91037.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (644)
+## OPEN THREADS (651)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,13 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#91037](https://github.com/openclaw/openclaw/pull/91037) | 0 | Model routing/config | @wsyjh8 | fix(config): allow thinkingLevelMap in persisted model schema |
+| 📝&nbsp;[#91033](https://github.com/openclaw/openclaw/issues/91033) | 0 | OpenAI-compatible/proxy | @chrisreddington | [Bug]: microsoft-foundry reasoning models return 400 invalid_encrypted_content when continuing a thread |
+| 🔀&nbsp;[#91031](https://github.com/openclaw/openclaw/pull/91031) | 0 | Model routing/config | @kenrogers | [codex] Add OpenRouter OAuth login |
+| 🔀&nbsp;[#91028](https://github.com/openclaw/openclaw/pull/91028) | 0 | Model routing/config | @bosszukung | feat(lobster): in-process LLM adapters for embedded runner (#90909) |
+| 📝&nbsp;[#91018](https://github.com/openclaw/openclaw/issues/91018) | 0 | OpenAI-compatible/proxy | @RavenSS213 | ⚠️ Upgrade 2026.6.1 broke DeepSeek prompt cache - $6 burned in one hour |
+| 📝&nbsp;[#91016](https://github.com/openclaw/openclaw/issues/91016) | 0 | OpenAI-compatible/proxy | @RavenSS213 | ⚠️ 升级 2026.6.1 后 DeepSeek Prompt Cache 完全失效，一小时烧掉约 $6 |
+| 📝&nbsp;[#91011](https://github.com/openclaw/openclaw/issues/91011) | 0 | OpenAI-compatible/proxy | @chrisreddington | [Bug]: Foundry Entra ID onboarding fails to save with "Unrecognized key: thinkingLevelMap" |
 | 🔀&nbsp;[#91010](https://github.com/openclaw/openclaw/pull/91010) | 0 | Local memory/embedding | @stevenepalmer | fix(memory): honor local model path in index identity |
 | 📝&nbsp;[#91009](https://github.com/openclaw/openclaw/issues/91009) | 0 | Local model runtime | @aspalagin | Codex PreToolUse native hook relay spawns CPU-bound openclaw-hooks processes and stalls gateway RPC |
 | 🔀&nbsp;[#91008](https://github.com/openclaw/openclaw/pull/91008) | 0 | Model routing/config | @alijamal14 | fix: address P2 cleanup items in model picker UI (PR #68927) |
@@ -1003,4 +1010,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 644 (312 issues, 332 PRs).
+- Kept open threads: 651 (316 issues, 335 PRs).

@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 312,
-    "open_prs": 332,
-    "open_threads": 644
+    "open_issues": 316,
+    "open_prs": 335,
+    "open_threads": 651
   },
   "open_threads": [
     {
@@ -3558,6 +3558,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wsyjh8",
+      "number": 91037,
+      "title": "fix(config): allow thinkingLevelMap in persisted model schema",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91037"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@chrisreddington",
+      "number": 91033,
+      "title": "[Bug]: microsoft-foundry reasoning models return 400 invalid_encrypted_content when continuing a thread",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91033"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kenrogers",
+      "number": 91031,
+      "title": "[codex] Add OpenRouter OAuth login",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91031"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@bosszukung",
+      "number": 91028,
+      "title": "feat(lobster): in-process LLM adapters for embedded runner (#90909)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91028"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@RavenSS213",
+      "number": 91018,
+      "title": "⚠️ Upgrade 2026.6.1 broke DeepSeek prompt cache - $6 burned in one hour",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91018"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@RavenSS213",
+      "number": 91016,
+      "title": "⚠️ 升级 2026.6.1 后 DeepSeek Prompt Cache 完全失效，一小时烧掉约 $6",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91016"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@chrisreddington",
+      "number": 91011,
+      "title": "[Bug]: Foundry Entra ID onboarding fails to save with \"Unrecognized key: thinkingLevelMap\"",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91011"
     },
     {
       "activity": 0,
@@ -8117,8 +8180,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91009,
-    "pr": 91010
+    "issue": 91039,
+    "pr": 91037
   },
   "schema_version": 1,
   "updated": "2026-06-07"
