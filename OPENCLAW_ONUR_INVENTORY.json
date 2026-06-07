@@ -2265,9 +2265,9 @@
   ],
   "counts": {
     "closed_threads": 323,
-    "open_issues": 318,
-    "open_prs": 339,
-    "open_threads": 657
+    "open_issues": 319,
+    "open_prs": 344,
+    "open_threads": 663
   },
   "open_threads": [
     {
@@ -3558,6 +3558,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Schnup03",
+      "number": 91077,
+      "title": "[Bug] cacheRetention has no effect on Discord direct-message sessions; subagent/cron/channel sessions cache normally",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91077"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@steipete",
+      "number": 91073,
+      "title": "fix(openrouter): reconcile streamed generation cost",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91073"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@steipete",
+      "number": 91072,
+      "title": "refactor(memory-wiki): store source sync state in sqlite",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91072"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Huangting-xy",
+      "number": 91071,
+      "title": "fix(memory-core): write Deep Sleep summary to DREAMS.md with managed markers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91071"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@jesse-merhi",
+      "number": 91068,
+      "title": "Refactor core fetch paths off guarded fetch",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91068"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@arkyu2077",
+      "number": 91063,
+      "title": "fix(memory): write deep summaries into DREAMS.md",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91063"
     },
     {
       "activity": 0,
@@ -8234,8 +8288,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91065,
-    "pr": 91059
+    "issue": 91079,
+    "pr": 91078
   },
   "schema_version": 1,
   "updated": "2026-06-07"
