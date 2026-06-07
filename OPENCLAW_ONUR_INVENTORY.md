@@ -4,11 +4,11 @@ Updated: 2026-06-07
 
 Review watermark:
 
-- Last reviewed through issue: #91095.
-- Last reviewed through PR: #91094.
+- Last reviewed through issue: #91106.
+- Last reviewed through PR: #91113.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (667)
+## OPEN THREADS (672)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,11 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#91113](https://github.com/openclaw/openclaw/pull/91113) | 0 | OpenAI-compatible/proxy | @steipete | fix: align Xiaomi completions replay compat |
+| 🔀&nbsp;[#91112](https://github.com/openclaw/openclaw/pull/91112) | 0 | OpenAI-compatible/proxy | @zenglingbiao | fix(openai-completions): add Xiaomi endpoint detection to detectCompat (fixes #91106) |
+| 🔀&nbsp;[#91111](https://github.com/openclaw/openclaw/pull/91111) | 0 | Model routing/config | @wsyjh8 | fix(media-understanding): preserve native vision skip with imageModel… |
+| 🔀&nbsp;[#91109](https://github.com/openclaw/openclaw/pull/91109) | 0 | OpenAI-compatible/proxy | @whiteyzy | fix(openai-completions): add Xiaomi to detectCompat requiresReasoningContentOnAssistantMessages |
+| 📝&nbsp;[#91106](https://github.com/openclaw/openclaw/issues/91106) | 0 | OpenAI-compatible/proxy | @KrasimirKralev | [Bug]: detectCompat in openai-completions.ts misses Xiaomi endpoints for requiresReasoningContentOnAssistantMessages — diverges from openai-completions-compat.ts |
 | 🔀&nbsp;[#91094](https://github.com/openclaw/openclaw/pull/91094) | 0 | Model routing/config | @zenglingbiao | fix(media-understanding): skip image understanding when primary model supports vision, regardless of imageModel config (fixes #91084) |
 | 🔀&nbsp;[#91091](https://github.com/openclaw/openclaw/pull/91091) | 0 | Local memory/embedding | @amknight | fix(memory): do not prune session index from a failed directory scan |
 | 📝&nbsp;[#91084](https://github.com/openclaw/openclaw/issues/91084) | 0 | Model routing/config | @AxelHu | [Bug]: vision-skip guard bypassed when agents.defaults.imageModel is set, even with vision-capable primary model |
@@ -1026,4 +1031,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 667 (320 issues, 347 PRs).
+- Kept open threads: 672 (321 issues, 351 PRs).
