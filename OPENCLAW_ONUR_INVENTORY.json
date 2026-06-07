@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 313,
-    "open_prs": 371,
-    "open_threads": 684
+    "open_prs": 373,
+    "open_threads": 686
   },
   "open_threads": [
     {
@@ -3614,6 +3614,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zenglingbiao",
+      "number": 91255,
+      "title": "fix(memory-core): enrich collection paths from qmd collection show to enable rebind (fixes #91251)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91255"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@sasan1200",
+      "number": 91253,
+      "title": "fix(memory): rebind qmd collections when a collection root changes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91253"
     },
     {
       "activity": 0,
@@ -8534,7 +8552,7 @@
   ],
   "review_watermark": {
     "issue": 91138,
-    "pr": 91240
+    "pr": 91257
   },
   "schema_version": 1,
   "updated": "2026-06-08"
