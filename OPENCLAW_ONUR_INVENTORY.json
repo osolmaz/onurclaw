@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 313,
-    "open_prs": 366,
-    "open_threads": 679
+    "open_prs": 371,
+    "open_threads": 684
   },
   "open_threads": [
     {
@@ -3614,6 +3614,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@samson910022",
+      "number": 91239,
+      "title": "fix(opencode-go): add qwen3.7-max, qwen3.7-plus, minimax-m3 to provider catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91239"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Bartok9",
+      "number": 91237,
+      "title": "fix(providers/openrouter): treat openrouter.ai as long-TTL-eligible for Anthropic cache_control",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91237"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@849261680",
+      "number": 91231,
+      "title": "fix(anthropic): drop reasoning_content replay signatures",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91231"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zhangguiping-xydt",
+      "number": 91227,
+      "title": "fix #91216: [Bug]: gateway opens an empty memory database when main.sqlite is absent during the index swap, leaving memory_search paused with \"index metadata is missing\" until restart",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91227"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 91225,
+      "title": "fix #83830: [Bug]: Dreaming diary repeats \"first day\" narrative every sweep — same early memories dominate snippets",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91225"
     },
     {
       "activity": 0,
@@ -8489,7 +8534,7 @@
   ],
   "review_watermark": {
     "issue": 91138,
-    "pr": 91222
+    "pr": 91240
   },
   "schema_version": 1,
   "updated": "2026-06-08"
