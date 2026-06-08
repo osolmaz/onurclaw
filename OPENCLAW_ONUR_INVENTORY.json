@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 325,
-    "open_prs": 391,
-    "open_threads": 716
+    "open_prs": 396,
+    "open_threads": 721
   },
   "open_threads": [
     {
@@ -3614,6 +3614,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Premsenareddy",
+      "number": 91388,
+      "title": "[codex] Fix Claude tool-only empty response fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91388"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@BryanTegomoh",
+      "number": 91387,
+      "title": "fix(cron): clear payload model overrides",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91387"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Huangting-xy",
+      "number": 91380,
+      "title": "fix(cron): inherit default fallbacks for cron string models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91380"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@849261680",
+      "number": 91379,
+      "title": "fix(cron): inherit default fallbacks for string agent jobs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91379"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wangmiao0668000666",
+      "number": 91373,
+      "title": "fix(agent): string model configs inherit default fallbacks for cron sessions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91373"
     },
     {
       "activity": 0,
@@ -8822,7 +8867,7 @@
   ],
   "review_watermark": {
     "issue": 91260,
-    "pr": 91360
+    "pr": 91393
   },
   "schema_version": 1,
   "updated": "2026-06-08"
