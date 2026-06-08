@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 325,
-    "open_prs": 396,
-    "open_threads": 721
+    "open_prs": 401,
+    "open_threads": 726
   },
   "open_threads": [
     {
@@ -3614,6 +3614,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Linux2010",
+      "number": 91414,
+      "title": "fix(agent): agents.defaults.model.fallbacks not inherited by isolated cron sessions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91414"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ly-wang19",
+      "number": 91405,
+      "title": "fix(cli): thread silent-empty policy to CLI runner to stop duplicate group reply (fixes #91302)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91405"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ZengWen-DT",
+      "number": 91403,
+      "title": "fix(openai-completions): route empty stop with no content into error path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91403"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ErRickow",
+      "number": 91397,
+      "title": "feat(neosantara): add Neosantara gateway provider and responses API alias",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91397"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ly-wang19",
+      "number": 91395,
+      "title": "fix(cron): inherit default model fallbacks for plain-string agent models (fixes #91362)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91395"
     },
     {
       "activity": 0,
@@ -8867,7 +8912,7 @@
   ],
   "review_watermark": {
     "issue": 91260,
-    "pr": 91393
+    "pr": 91417
   },
   "schema_version": 1,
   "updated": "2026-06-08"
