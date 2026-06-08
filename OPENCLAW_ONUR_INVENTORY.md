@@ -4,11 +4,11 @@ Updated: 2026-06-09
 
 Review watermark:
 
-- Last reviewed through issue: #91260.
-- Last reviewed through PR: #91502.
+- Last reviewed through issue: #91517.
+- Last reviewed through PR: #91515.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (732)
+## OPEN THREADS (741)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,9 +155,14 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#91513](https://github.com/openclaw/openclaw/issues/91513) | 0 | Model routing/config | @karthikbhaskar-1 | ACP: model prefix not stripped when dispatching to Claude ACP adapter — Cannot replay saved model "anthropic/claude-sonnet-4-6" |
+| 📝&nbsp;[#91504](https://github.com/openclaw/openclaw/issues/91504) | 0 | Model/provider behavior | @resYuto | [Feature]: Support another Image generation models on OpenRouter |
+| 📝&nbsp;[#91498](https://github.com/openclaw/openclaw/issues/91498) | 0 | Model routing/config | @medikoo | [Feature]: Allow model aliases or runtimes to select different auth profiles for the same provider |
 | 🔀&nbsp;[#91459](https://github.com/openclaw/openclaw/pull/91459) | 0 | Local memory/embedding | @dwc1997 | fix(memory-wiki): include workspace in bridge artifact hash to prevent collisions |
 | 🔀&nbsp;[#91444](https://github.com/openclaw/openclaw/pull/91444) | 0 | Local memory/embedding | @dwc1997 | fix(google): register 'google' alias for memory embedding provider |
+| 📝&nbsp;[#91434](https://github.com/openclaw/openclaw/issues/91434) | 0 | Local model runtime | @lily-oc | [Bug]: LM Studio sessions start without tools |
 | 🔀&nbsp;[#91430](https://github.com/openclaw/openclaw/pull/91430) | 0 | OpenAI-compatible/proxy | @Pommelle | fix(openai): honor configured embedding model input limits |
+| 📝&nbsp;[#91428](https://github.com/openclaw/openclaw/issues/91428) | 0 | Local model runtime | @anijatsu | Gemma4/Qwen3.6 via local Ollama: only first token/word? rendered, while Ollama streams clean content-only output |
 | 🔀&nbsp;[#91427](https://github.com/openclaw/openclaw/pull/91427) | 0 | OpenAI-compatible/proxy | @849261680 | fix(openai-completions): reject provider empty stop replies |
 | 🔀&nbsp;[#91425](https://github.com/openclaw/openclaw/pull/91425) | 0 | Local memory/embedding | @pgondhi987 | fix(memory-lancedb): guard memory recall output [AI] |
 | 🔀&nbsp;[#91421](https://github.com/openclaw/openclaw/pull/91421) | 0 | Model routing/config | @849261680 | fix(cron): clear payload model overrides |
@@ -165,6 +170,7 @@ Review watermark:
 | 🔀&nbsp;[#91405](https://github.com/openclaw/openclaw/pull/91405) | 0 | Model routing/config | @ly-wang19 | fix(cli): thread silent-empty policy to CLI runner to stop duplicate group reply (fixes #91302) |
 | 🔀&nbsp;[#91403](https://github.com/openclaw/openclaw/pull/91403) | 0 | OpenAI-compatible/proxy | @ZengWen-DT | fix(openai-completions): route empty stop with no content into error path |
 | 🔀&nbsp;[#91397](https://github.com/openclaw/openclaw/pull/91397) | 0 | OpenAI-compatible/proxy | @ErRickow | feat(neosantara): add Neosantara gateway provider and responses API alias |
+| 📝&nbsp;[#91396](https://github.com/openclaw/openclaw/issues/91396) | 0 | Local memory/embedding | @xiangcaoni | Memory embedding fails with HTTP 400 when using SiliconFlow (fetchWithSsrFGuard incompatibility) |
 | 🔀&nbsp;[#91395](https://github.com/openclaw/openclaw/pull/91395) | 0 | Model routing/config | @ly-wang19 | fix(cron): inherit default model fallbacks for plain-string agent models (fixes #91362) |
 | 🔀&nbsp;[#91388](https://github.com/openclaw/openclaw/pull/91388) | 0 | Model routing/config | @Premsenareddy | [codex] Fix Claude tool-only empty response fallback |
 | 🔀&nbsp;[#91387](https://github.com/openclaw/openclaw/pull/91387) | 0 | Model routing/config | @BryanTegomoh | fix(cron): clear payload model overrides |
@@ -172,6 +178,8 @@ Review watermark:
 | 🔀&nbsp;[#91379](https://github.com/openclaw/openclaw/pull/91379) | 0 | Model routing/config | @849261680 | fix(cron): inherit default fallbacks for string agent jobs |
 | 🔀&nbsp;[#91373](https://github.com/openclaw/openclaw/pull/91373) | 0 | Model routing/config | @wangmiao0668000666 | fix(agent): string model configs inherit default fallbacks for cron sessions |
 | 🔀&nbsp;[#91360](https://github.com/openclaw/openclaw/pull/91360) | 0 | Model routing/config | @ly-wang19 | fix(cron): allow clearing payload.model via update (fixes #91298) |
+| 📝&nbsp;[#91354](https://github.com/openclaw/openclaw/issues/91354) | 0 | Local memory/embedding | @Louisone1 | memory: Gemini embeddings still use inline batch requests after remote.batch.enabled=false, causing 429 on low quota |
+| 📝&nbsp;[#91352](https://github.com/openclaw/openclaw/issues/91352) | 0 | Model routing/config | @chac4l | [Bug]: OpenAI Codex OAuth migration leaves stale default profile and codexPlugins app inventory can fail Codex harness |
 | 🔀&nbsp;[#91351](https://github.com/openclaw/openclaw/pull/91351) | 0 | Open-weight/provider behavior | @849261680 | fix(opencode-go): add qwen plus tiered pricing |
 | 🔀&nbsp;[#91338](https://github.com/openclaw/openclaw/pull/91338) | 0 | Model routing/config | @XuZehan-iCenter | fix(cron): allow payload.model and other optional fields to be cleared via null in update API |
 | 🔀&nbsp;[#91329](https://github.com/openclaw/openclaw/pull/91329) | 0 | Model routing/config | @AgentArcLab | fix(reply): pass silent-empty policy to CLI fallback runs |
@@ -187,6 +195,7 @@ Review watermark:
 | 🔀&nbsp;[#91292](https://github.com/openclaw/openclaw/pull/91292) | 0 | Model routing/config | @yetval | fix(models): keep bundled provider catalog when configured base URL is blank (#91270) |
 | 🔀&nbsp;[#91275](https://github.com/openclaw/openclaw/pull/91275) | 0 | Local memory/embedding | @XuZehan-iCenter | fix(memory-qmd): enrich collection list with path from 'qmd collection show' so rebind detects changed roots |
 | 🔀&nbsp;[#91274](https://github.com/openclaw/openclaw/pull/91274) | 0 | Local memory/embedding | @sasan1200 | refactor(memory): drop redundant agent-id scoping from qmd collection names |
+| 📝&nbsp;[#91270](https://github.com/openclaw/openclaw/issues/91270) | 0 | Model routing/config | @resYuto | [Bug]: Gemini can't resolve on embedded runtime |
 | 🔀&nbsp;[#91267](https://github.com/openclaw/openclaw/pull/91267) | 0 | Local memory/embedding | @zenglingbiao | fix(memory-core): skip session archive artifacts during dreaming corpus collection (fixes #90313) |
 | 🔀&nbsp;[#91265](https://github.com/openclaw/openclaw/pull/91265) | 0 | Local memory/embedding | @mpz4life | fix(memory): drop redundant agent-id scoping from QMD collection names |
 | 📝&nbsp;[#91260](https://github.com/openclaw/openclaw/issues/91260) | 0 | Model/provider behavior | @anmolxlight | opencode-go: bundled models from provider-catalog.ts (glm-5, glm-5.1, kimi-k2.5, mimo-v2.5-pro, minimax-m2.5, minimax-m2.7, qwen3.5-plus) are silently dropped at runtime — only 5 of 12 surface |
@@ -1099,4 +1108,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 732 (325 issues, 407 PRs).
+- Kept open threads: 741 (334 issues, 407 PRs).

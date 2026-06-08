@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 325,
+    "open_issues": 334,
     "open_prs": 407,
-    "open_threads": 732
+    "open_threads": 741
   },
   "open_threads": [
     {
@@ -3617,6 +3617,33 @@
     },
     {
       "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@karthikbhaskar-1",
+      "number": 91513,
+      "title": "ACP: model prefix not stripped when dispatching to Claude ACP adapter — Cannot replay saved model \"anthropic/claude-sonnet-4-6\"",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91513"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@resYuto",
+      "number": 91504,
+      "title": "[Feature]: Support another Image generation models on OpenRouter",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91504"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@medikoo",
+      "number": 91498,
+      "title": "[Feature]: Allow model aliases or runtimes to select different auth profiles for the same provider",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91498"
+    },
+    {
+      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@dwc1997",
       "number": 91459,
@@ -3635,12 +3662,30 @@
     },
     {
       "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lily-oc",
+      "number": 91434,
+      "title": "[Bug]: LM Studio sessions start without tools",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91434"
+    },
+    {
+      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@Pommelle",
       "number": 91430,
       "title": "fix(openai): honor configured embedding model input limits",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91430"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@anijatsu",
+      "number": 91428,
+      "title": "Gemma4/Qwen3.6 via local Ollama: only first token/word? rendered, while Ollama streams clean content-only output",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91428"
     },
     {
       "activity": 0,
@@ -3707,6 +3752,15 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xiangcaoni",
+      "number": 91396,
+      "title": "Memory embedding fails with HTTP 400 when using SiliconFlow (fetchWithSsrFGuard incompatibility)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91396"
+    },
+    {
+      "activity": 0,
       "area": "Model routing/config",
       "creator": "@ly-wang19",
       "number": 91395,
@@ -3767,6 +3821,24 @@
       "title": "fix(cron): allow clearing payload.model via update (fixes #91298)",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91360"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Louisone1",
+      "number": 91354,
+      "title": "memory: Gemini embeddings still use inline batch requests after remote.batch.enabled=false, causing 429 on low quota",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91354"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@chac4l",
+      "number": 91352,
+      "title": "[Bug]: OpenAI Codex OAuth migration leaves stale default profile and codexPlugins app inventory can fail Codex harness",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91352"
     },
     {
       "activity": 0,
@@ -3902,6 +3974,15 @@
       "title": "refactor(memory): drop redundant agent-id scoping from qmd collection names",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91274"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@resYuto",
+      "number": 91270,
+      "title": "[Bug]: Gemini can't resolve on embedded runtime",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91270"
     },
     {
       "activity": 0,
@@ -8965,8 +9046,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91260,
-    "pr": 91502
+    "issue": 91517,
+    "pr": 91515
   },
   "schema_version": 1,
   "updated": "2026-06-09"
