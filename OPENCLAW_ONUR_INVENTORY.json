@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 325,
-    "open_prs": 381,
-    "open_threads": 706
+    "open_prs": 388,
+    "open_threads": 713
   },
   "open_threads": [
     {
@@ -3614,6 +3614,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@AgentArcLab",
+      "number": 91329,
+      "title": "fix(reply): pass silent-empty policy to CLI fallback runs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91329"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@osolmaz",
+      "number": 91324,
+      "title": "fix(memory): move local llama.cpp runtime to provider plugin",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91324"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@deepshekhardas",
+      "number": 91323,
+      "title": "fix(gateway): keep dense stream updates incremental and preserve replacement stream deltas",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91323"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@TurboTheTurtle",
+      "number": 91319,
+      "title": "Fix CLI silent reply fallback policy",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91319"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@alkor2000",
+      "number": 91318,
+      "title": "fix(cron): allow update patches to clear payload.model back to inherit",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91318"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zenglingbiao",
+      "number": 91313,
+      "title": "fix(cron): allow null model/fallbacks in payload patch to clear overrides (fixes #91298)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91313"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@LiLan0125",
+      "number": 91310,
+      "title": "fix(memory): resolve embedding provider by authProviderId fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91310"
     },
     {
       "activity": 0,
@@ -8732,7 +8795,7 @@
   ],
   "review_watermark": {
     "issue": 91260,
-    "pr": 91308
+    "pr": 91329
   },
   "schema_version": 1,
   "updated": "2026-06-08"
