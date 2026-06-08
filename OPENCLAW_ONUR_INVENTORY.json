@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 325,
-    "open_prs": 377,
-    "open_threads": 702
+    "open_prs": 381,
+    "open_threads": 706
   },
   "open_threads": [
     {
@@ -3614,6 +3614,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@jsi-tross",
+      "number": 91308,
+      "title": "feat(xai): add realtime voice provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91308"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@XuZehan-iCenter",
+      "number": 91299,
+      "title": "fix(memory-core): write ## Deep Sleep summary into DREAMS.md after deep dreaming sweep",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91299"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@openperf",
+      "number": 91297,
+      "title": "fix(memory): rebind qmd collection when root path drifts despite list missing path (#91251)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91297"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yetval",
+      "number": 91292,
+      "title": "fix(models): keep bundled provider catalog when configured base URL is blank (#91270)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91292"
     },
     {
       "activity": 0,
@@ -8696,7 +8732,7 @@
   ],
   "review_watermark": {
     "issue": 91260,
-    "pr": 91287
+    "pr": 91308
   },
   "schema_version": 1,
   "updated": "2026-06-08"

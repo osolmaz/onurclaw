@@ -5,10 +5,10 @@ Updated: 2026-06-08
 Review watermark:
 
 - Last reviewed through issue: #91260.
-- Last reviewed through PR: #91287.
+- Last reviewed through PR: #91308.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (702)
+## OPEN THREADS (706)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,10 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#91308](https://github.com/openclaw/openclaw/pull/91308) | 0 | OpenAI-compatible/proxy | @jsi-tross | feat(xai): add realtime voice provider |
+| 🔀&nbsp;[#91299](https://github.com/openclaw/openclaw/pull/91299) | 0 | Local memory/embedding | @XuZehan-iCenter | fix(memory-core): write ## Deep Sleep summary into DREAMS.md after deep dreaming sweep |
+| 🔀&nbsp;[#91297](https://github.com/openclaw/openclaw/pull/91297) | 0 | Local memory/embedding | @openperf | fix(memory): rebind qmd collection when root path drifts despite list missing path (#91251) |
+| 🔀&nbsp;[#91292](https://github.com/openclaw/openclaw/pull/91292) | 0 | Model routing/config | @yetval | fix(models): keep bundled provider catalog when configured base URL is blank (#91270) |
 | 🔀&nbsp;[#91275](https://github.com/openclaw/openclaw/pull/91275) | 0 | Local memory/embedding | @XuZehan-iCenter | fix(memory-qmd): enrich collection list with path from 'qmd collection show' so rebind detects changed roots |
 | 🔀&nbsp;[#91274](https://github.com/openclaw/openclaw/pull/91274) | 0 | Local memory/embedding | @sasan1200 | refactor(memory): drop redundant agent-id scoping from qmd collection names |
 | 🔀&nbsp;[#91267](https://github.com/openclaw/openclaw/pull/91267) | 0 | Local memory/embedding | @zenglingbiao | fix(memory-core): skip session archive artifacts during dreaming corpus collection (fixes #90313) |
@@ -1069,4 +1073,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 702 (325 issues, 377 PRs).
+- Kept open threads: 706 (325 issues, 381 PRs).
