@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 325,
-    "open_prs": 401,
-    "open_threads": 726
+    "open_prs": 406,
+    "open_threads": 731
   },
   "open_threads": [
     {
@@ -3614,6 +3614,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@dwc1997",
+      "number": 91444,
+      "title": "fix(google): register 'google' alias for memory embedding provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91444"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Pommelle",
+      "number": 91430,
+      "title": "fix(openai): honor configured embedding model input limits",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91430"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@849261680",
+      "number": 91427,
+      "title": "fix(openai-completions): reject provider empty stop replies",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91427"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@pgondhi987",
+      "number": 91425,
+      "title": "fix(memory-lancedb): guard memory recall output [AI]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91425"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@849261680",
+      "number": 91421,
+      "title": "fix(cron): clear payload model overrides",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91421"
     },
     {
       "activity": 0,
@@ -8912,7 +8957,7 @@
   ],
   "review_watermark": {
     "issue": 91260,
-    "pr": 91417
+    "pr": 91444
   },
   "schema_version": 1,
   "updated": "2026-06-08"
