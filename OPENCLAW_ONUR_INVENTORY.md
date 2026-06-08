@@ -4,11 +4,11 @@ Updated: 2026-06-08
 
 Review watermark:
 
-- Last reviewed through issue: #91138.
-- Last reviewed through PR: #91257.
+- Last reviewed through issue: #91260.
+- Last reviewed through PR: #91287.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (686)
+## OPEN THREADS (702)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,26 +155,42 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#91275](https://github.com/openclaw/openclaw/pull/91275) | 0 | Local memory/embedding | @XuZehan-iCenter | fix(memory-qmd): enrich collection list with path from 'qmd collection show' so rebind detects changed roots |
+| 🔀&nbsp;[#91274](https://github.com/openclaw/openclaw/pull/91274) | 0 | Local memory/embedding | @sasan1200 | refactor(memory): drop redundant agent-id scoping from qmd collection names |
+| 🔀&nbsp;[#91267](https://github.com/openclaw/openclaw/pull/91267) | 0 | Local memory/embedding | @zenglingbiao | fix(memory-core): skip session archive artifacts during dreaming corpus collection (fixes #90313) |
+| 🔀&nbsp;[#91265](https://github.com/openclaw/openclaw/pull/91265) | 0 | Local memory/embedding | @mpz4life | fix(memory): drop redundant agent-id scoping from QMD collection names |
+| 📝&nbsp;[#91260](https://github.com/openclaw/openclaw/issues/91260) | 0 | Model/provider behavior | @anmolxlight | opencode-go: bundled models from provider-catalog.ts (glm-5, glm-5.1, kimi-k2.5, mimo-v2.5-pro, minimax-m2.5, minimax-m2.7, qwen3.5-plus) are silently dropped at runtime — only 5 of 12 surface |
+| 📝&nbsp;[#91259](https://github.com/openclaw/openclaw/issues/91259) | 0 | Local memory/embedding | @sasan1200 | memory(qmd): drop redundant agent-id scoping from collection names |
 | 🔀&nbsp;[#91255](https://github.com/openclaw/openclaw/pull/91255) | 0 | Local memory/embedding | @zenglingbiao | fix(memory-core): enrich collection paths from qmd collection show to enable rebind (fixes #91251) |
 | 🔀&nbsp;[#91253](https://github.com/openclaw/openclaw/pull/91253) | 0 | Local memory/embedding | @sasan1200 | fix(memory): rebind qmd collections when a collection root changes |
+| 📝&nbsp;[#91251](https://github.com/openclaw/openclaw/issues/91251) | 0 | Local memory/embedding | @sasan1200 | memory(qmd): collections never rebind when a collection's root path changes |
 | 🔀&nbsp;[#91239](https://github.com/openclaw/openclaw/pull/91239) | 0 | Open-weight/provider behavior | @samson910022 | fix(opencode-go): add qwen3.7-max, qwen3.7-plus, minimax-m3 to provider catalog |
+| 📝&nbsp;[#91238](https://github.com/openclaw/openclaw/issues/91238) | 0 | Model/provider behavior | @samson910022 | opencode-go provider: qwen3.7-max, qwen3.7-plus, minimax-m3 missing from static model catalog → "Unknown model" (model_not_found) |
 | 🔀&nbsp;[#91237](https://github.com/openclaw/openclaw/pull/91237) | 0 | OpenAI-compatible/proxy | @Bartok9 | fix(providers/openrouter): treat openrouter.ai as long-TTL-eligible for Anthropic cache_control |
 | 🔀&nbsp;[#91231](https://github.com/openclaw/openclaw/pull/91231) | 0 | OpenAI-compatible/proxy | @849261680 | fix(anthropic): drop reasoning_content replay signatures |
 | 🔀&nbsp;[#91227](https://github.com/openclaw/openclaw/pull/91227) | 0 | Local memory/embedding | @zhangguiping-xydt | fix #91216: [Bug]: gateway opens an empty memory database when main.sqlite is absent during the index swap, leaving memory_search paused with "index metadata is missing" until restart |
 | 🔀&nbsp;[#91225](https://github.com/openclaw/openclaw/pull/91225) | 0 | Local memory/embedding | @mushuiyu886 | fix #83830: [Bug]: Dreaming diary repeats "first day" narrative every sweep — same early memories dominate snippets |
+| 📝&nbsp;[#91223](https://github.com/openclaw/openclaw/issues/91223) | 0 | Local memory/embedding | @Enominera | [Bug]: Active memory injection breaks prompt cache hit rate (99.9% → 22%) |
 | 🔀&nbsp;[#91222](https://github.com/openclaw/openclaw/pull/91222) | 0 | Model/provider behavior | @damianFelixPago | fix(google-vertex): retry transient pre-stream failures and stale ADC |
 | 🔀&nbsp;[#91218](https://github.com/openclaw/openclaw/pull/91218) | 0 | Model routing/config | @bymle | fix(google): strip provider prefix from Vertex model path |
 | 🔀&nbsp;[#91217](https://github.com/openclaw/openclaw/pull/91217) | 0 | Model routing/config | @safrano9999 | feat(gateway): add deterministic dummy model (AI-assisted) |
+| 📝&nbsp;[#91216](https://github.com/openclaw/openclaw/issues/91216) | 0 | Local memory/embedding | @chrisreddington | [Bug]: gateway opens an empty memory database when main.sqlite is absent during the index swap, leaving memory_search paused with "index metadata is missing" until restart |
+| 📝&nbsp;[#91214](https://github.com/openclaw/openclaw/issues/91214) | 0 | OpenAI-compatible/proxy | @Enominera | [Bug]: Active memory injection breaks prompt_cache_key for OpenAI-compatible providers (compat.supportsPromptCacheKey=true) |
 | 🔀&nbsp;[#91211](https://github.com/openclaw/openclaw/pull/91211) | 0 | Model routing/config | @Kirchlive | feat(tui): classify every model as CLI / OAuth / API in /model picker |
 | 🔀&nbsp;[#91206](https://github.com/openclaw/openclaw/pull/91206) | 0 | Model routing/config | @tanshanshan | fix(agents/subagent-spawn): Sub-agent model routing ignores model parameter |
+| 📝&nbsp;[#91205](https://github.com/openclaw/openclaw/issues/91205) | 0 | Model/provider behavior | @bobgitmcgrath | Cross-provider thinking block signature poisoning bricks sessions when switching between non-Anthropic and Anthropic models |
 | 🔀&nbsp;[#91188](https://github.com/openclaw/openclaw/pull/91188) | 0 | Local memory/embedding | @chengzhichao-xydt | fix(memory-core): write ## Deep Sleep summary to DREAMS.md |
 | 🔀&nbsp;[#91187](https://github.com/openclaw/openclaw/pull/91187) | 0 | Model routing/config | @openperf | fix(cron): isolate auth profile failure policy so cron runs don't pollute shared cooldowns |
+| 📝&nbsp;[#91183](https://github.com/openclaw/openclaw/issues/91183) | 0 | Local memory/embedding | @zhong18804784882 | [Bug]: memorySearch index metadata lost after upgrade to 2026.6.5-beta.2, vector search paused despite 2272 cache entries |
 | 🔀&nbsp;[#91182](https://github.com/openclaw/openclaw/pull/91182) | 0 | Local memory/embedding | @Huangting-xy | fix(memory-core): exclude archive transcripts from dreaming session corpus collection |
 | 🔀&nbsp;[#91177](https://github.com/openclaw/openclaw/pull/91177) | 0 | Model routing/config | @Kirchlive | fix(tui): persist canonical provider in session modelProvider |
 | 🔀&nbsp;[#91175](https://github.com/openclaw/openclaw/pull/91175) | 0 | Local memory/embedding | @zenglingbiao | fix(memory-core): write Deep Sleep summary into DREAMS.md after deep dreaming phase (fixes #91051) |
 | 🔀&nbsp;[#91173](https://github.com/openclaw/openclaw/pull/91173) | 0 | Local memory/embedding | @kiagentkronos-cell | fix(memory): self-heal missing index identity during sync |
+| 📝&nbsp;[#91171](https://github.com/openclaw/openclaw/issues/91171) | 0 | Model routing/config | @wolfeee | [Bug]: Sub-agent model routing ignores model parameter, silently falls back to deepseek |
 | 🔀&nbsp;[#91170](https://github.com/openclaw/openclaw/pull/91170) | 0 | Local memory/embedding | @LiuwqGit | fix(memory): align local modelPath index identity on status |
 | 🔀&nbsp;[#91168](https://github.com/openclaw/openclaw/pull/91168) | 0 | Model routing/config | @Kirchlive | feat(tui,gateway): show CLI-routing label in /model picker |
+| 📝&nbsp;[#91167](https://github.com/openclaw/openclaw/issues/91167) | 0 | Local memory/embedding | @kiagentkronos-cell | bug(memory): gateway cannot self-heal a missing index identity when chunks are already indexed |
+| 📝&nbsp;[#91154](https://github.com/openclaw/openclaw/issues/91154) | 0 | Local memory/embedding | @mlaihk | memory-wiki: wiki.palace fails with (path-mismatch) and wiki.importInsights takes 100s+ under load |
 | 🔀&nbsp;[#91153](https://github.com/openclaw/openclaw/pull/91153) | 0 | Model routing/config | @zenglingbiao | fix(agents): resolve model aliases in compaction model override (fixes #90340) |
 | 🔀&nbsp;[#91118](https://github.com/openclaw/openclaw/pull/91118) | 0 | OpenAI-compatible/proxy | @steipete | fix: preserve Foundry Responses reasoning replay ids |
 | 🔀&nbsp;[#91113](https://github.com/openclaw/openclaw/pull/91113) | 0 | OpenAI-compatible/proxy | @steipete | fix: align Xiaomi completions replay compat |
@@ -1053,4 +1069,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 686 (313 issues, 373 PRs).
+- Kept open threads: 702 (325 issues, 377 PRs).

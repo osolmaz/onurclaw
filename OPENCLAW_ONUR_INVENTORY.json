@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 313,
-    "open_prs": 373,
-    "open_threads": 686
+    "open_issues": 325,
+    "open_prs": 377,
+    "open_threads": 702
   },
   "open_threads": [
     {
@@ -3618,6 +3618,60 @@
     {
       "activity": 0,
       "area": "Local memory/embedding",
+      "creator": "@XuZehan-iCenter",
+      "number": 91275,
+      "title": "fix(memory-qmd): enrich collection list with path from 'qmd collection show' so rebind detects changed roots",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91275"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@sasan1200",
+      "number": 91274,
+      "title": "refactor(memory): drop redundant agent-id scoping from qmd collection names",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91274"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zenglingbiao",
+      "number": 91267,
+      "title": "fix(memory-core): skip session archive artifacts during dreaming corpus collection (fixes #90313)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91267"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mpz4life",
+      "number": 91265,
+      "title": "fix(memory): drop redundant agent-id scoping from QMD collection names",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91265"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@anmolxlight",
+      "number": 91260,
+      "title": "opencode-go: bundled models from provider-catalog.ts (glm-5, glm-5.1, kimi-k2.5, mimo-v2.5-pro, minimax-m2.5, minimax-m2.7, qwen3.5-plus) are silently dropped at runtime — only 5 of 12 surface",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91260"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@sasan1200",
+      "number": 91259,
+      "title": "memory(qmd): drop redundant agent-id scoping from collection names",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91259"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
       "creator": "@zenglingbiao",
       "number": 91255,
       "title": "fix(memory-core): enrich collection paths from qmd collection show to enable rebind (fixes #91251)",
@@ -3635,12 +3689,30 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@sasan1200",
+      "number": 91251,
+      "title": "memory(qmd): collections never rebind when a collection's root path changes",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91251"
+    },
+    {
+      "activity": 0,
       "area": "Open-weight/provider behavior",
       "creator": "@samson910022",
       "number": 91239,
       "title": "fix(opencode-go): add qwen3.7-max, qwen3.7-plus, minimax-m3 to provider catalog",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91239"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@samson910022",
+      "number": 91238,
+      "title": "opencode-go provider: qwen3.7-max, qwen3.7-plus, minimax-m3 missing from static model catalog → \"Unknown model\" (model_not_found)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91238"
     },
     {
       "activity": 0,
@@ -3680,6 +3752,15 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Enominera",
+      "number": 91223,
+      "title": "[Bug]: Active memory injection breaks prompt cache hit rate (99.9% → 22%)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91223"
+    },
+    {
+      "activity": 0,
       "area": "Model/provider behavior",
       "creator": "@damianFelixPago",
       "number": 91222,
@@ -3707,6 +3788,24 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chrisreddington",
+      "number": 91216,
+      "title": "[Bug]: gateway opens an empty memory database when main.sqlite is absent during the index swap, leaving memory_search paused with \"index metadata is missing\" until restart",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91216"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Enominera",
+      "number": 91214,
+      "title": "[Bug]: Active memory injection breaks prompt_cache_key for OpenAI-compatible providers (compat.supportsPromptCacheKey=true)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91214"
+    },
+    {
+      "activity": 0,
       "area": "Model routing/config",
       "creator": "@Kirchlive",
       "number": 91211,
@@ -3725,6 +3824,15 @@
     },
     {
       "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@bobgitmcgrath",
+      "number": 91205,
+      "title": "Cross-provider thinking block signature poisoning bricks sessions when switching between non-Anthropic and Anthropic models",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91205"
+    },
+    {
+      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@chengzhichao-xydt",
       "number": 91188,
@@ -3740,6 +3848,15 @@
       "title": "fix(cron): isolate auth profile failure policy so cron runs don't pollute shared cooldowns",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91187"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zhong18804784882",
+      "number": 91183,
+      "title": "[Bug]: memorySearch index metadata lost after upgrade to 2026.6.5-beta.2, vector search paused despite 2272 cache entries",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91183"
     },
     {
       "activity": 0,
@@ -3779,6 +3896,15 @@
     },
     {
       "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wolfeee",
+      "number": 91171,
+      "title": "[Bug]: Sub-agent model routing ignores model parameter, silently falls back to deepseek",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91171"
+    },
+    {
+      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@LiuwqGit",
       "number": 91170,
@@ -3794,6 +3920,24 @@
       "title": "feat(tui,gateway): show CLI-routing label in /model picker",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91168"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@kiagentkronos-cell",
+      "number": 91167,
+      "title": "bug(memory): gateway cannot self-heal a missing index identity when chunks are already indexed",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91167"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mlaihk",
+      "number": 91154,
+      "title": "memory-wiki: wiki.palace fails with (path-mismatch) and wiki.importInsights takes 100s+ under load",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91154"
     },
     {
       "activity": 0,
@@ -8551,8 +8695,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91138,
-    "pr": 91257
+    "issue": 91260,
+    "pr": 91287
   },
   "schema_version": 1,
   "updated": "2026-06-08"
