@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 325,
-    "open_prs": 388,
-    "open_threads": 713
+    "open_prs": 389,
+    "open_threads": 714
   },
   "open_threads": [
     {
@@ -3614,6 +3614,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@XuZehan-iCenter",
+      "number": 91338,
+      "title": "fix(cron): allow payload.model and other optional fields to be cleared via null in update API",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91338"
     },
     {
       "activity": 0,
@@ -8795,7 +8804,7 @@
   ],
   "review_watermark": {
     "issue": 91260,
-    "pr": 91329
+    "pr": 91342
   },
   "schema_version": 1,
   "updated": "2026-06-08"
