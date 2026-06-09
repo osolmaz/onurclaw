@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 334,
-    "open_prs": 408,
-    "open_threads": 742
+    "open_prs": 413,
+    "open_threads": 747
   },
   "open_threads": [
     {
@@ -3614,6 +3614,52 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@joshavant",
+      "number": 91567,
+      "title": "fix(openai): require api-key auth for realtime voice",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91567"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Huangting-xy",
+      "number": 91559,
+      "title": "fix(agents): clean Gemini tool schemas by model id",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91559"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@studentzhou-svg",
+      "number": 91549,
+      "title": "fix: enable DeepSeek DSML filtering for proxy providers via model id detection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91549"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@arkyu2077",
+      "number": 91546,
+      "title": "fix: add gemini-3.5-flash to the Google provider catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91546"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 91538,
+      "title": "perf(control-ui): avoid startup catalog wait",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91538"
     },
     {
       "activity": 0,
@@ -9057,7 +9103,7 @@
   ],
   "review_watermark": {
     "issue": 91517,
-    "pr": 91531
+    "pr": 91568
   },
   "schema_version": 1,
   "updated": "2026-06-09"
