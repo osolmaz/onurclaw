@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 334,
-    "open_prs": 429,
-    "open_threads": 763
+    "open_prs": 431,
+    "open_threads": 765
   },
   "open_threads": [
     {
@@ -3614,6 +3614,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@saju01",
+      "number": 91728,
+      "title": "fix(github-copilot): prefer live model catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91728"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yu-xin-c",
+      "number": 91724,
+      "title": "fix(agents): infer runtime provider from qualified model ids",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91724"
     },
     {
       "activity": 0,
@@ -9248,8 +9266,8 @@
   ],
   "review_watermark": {
     "issue": 91517,
-    "pr": 91721
+    "pr": 91737
   },
   "schema_version": 1,
-  "updated": "2026-06-09"
+  "updated": "2026-06-10"
 }
