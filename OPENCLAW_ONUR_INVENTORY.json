@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 334,
-    "open_prs": 433,
-    "open_threads": 767
+    "open_issues": 351,
+    "open_prs": 435,
+    "open_threads": 786
   },
   "open_threads": [
     {
@@ -3618,6 +3618,24 @@
     {
       "activity": 0,
       "area": "Local memory/embedding",
+      "creator": "@ai-hpc",
+      "number": 91770,
+      "title": "fix(memory): abort search embeddings on tool timeout",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91770"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@aliahnaf2013-max",
+      "number": 91767,
+      "title": "Fix one-shot Codex app-server teardown",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91767"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
       "creator": "@dreamhunter2333",
       "number": 91742,
       "title": "fix(memory): abort orphaned embedding work when memory_search times out",
@@ -3632,6 +3650,24 @@
       "title": "fix(auth): verify SQLite auth migration before cleanup",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91740"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ruben2000de",
+      "number": 91739,
+      "title": "google-gemini-cli rejects image attachments before CLI image prestage",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91739"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@nikhilmaddirala",
+      "number": 91730,
+      "title": "[Bug]: OpenClaw-native provider failure leaves web chat session stuck in progress",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91730"
     },
     {
       "activity": 0,
@@ -3662,6 +3698,15 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@NOVA-Openclaw",
+      "number": 91718,
+      "title": "memory_search tool-level timeout orphans background embedding work",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91718"
+    },
+    {
+      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@dwc1997",
       "number": 91714,
@@ -3677,6 +3722,15 @@
       "title": ":bug: fix(agents): classify harness provider mismatch as format error (#91710)",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91711"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@a-tokyo",
+      "number": 91710,
+      "title": "[Bug]: v2026.6.1 regression: openai/gpt-5.3-codex silently falls back to Sonnet — Codex harness rejects \"openai\" provider due to stale npm plugin",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91710"
     },
     {
       "activity": 0,
@@ -3716,6 +3770,15 @@
     },
     {
       "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@GabeMillikan",
+      "number": 91683,
+      "title": "[Feature]: Add provider-native file/document forwarding for non-image attachments",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91683"
+    },
+    {
+      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@xydt-tanshanshan",
       "number": 91660,
@@ -3731,6 +3794,24 @@
       "title": "fix(ollama): use provider thinking default in SDK session factory",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91657"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@akang1798",
+      "number": 91651,
+      "title": "bug(tools): web_fetch fails with 'Invalid URL' when LLM generates a space in the protocol scheme",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91651"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@bfox55",
+      "number": 91645,
+      "title": "[Bug]: In-turn reasoning dropped on multi-turn tool replay for non-400 openai models (gemma4/vLLM) — silent agentic-quality regression",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91645"
     },
     {
       "activity": 0,
@@ -3752,6 +3833,15 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Beileian",
+      "number": 91634,
+      "title": "memory-tdai: ByteString encoding fails on fullwidth ellipsis (U+2026) in vec indexer",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91634"
+    },
+    {
+      "activity": 0,
       "area": "Model routing/config",
       "creator": "@ly-wang19",
       "number": 91625,
@@ -3761,12 +3851,30 @@
     },
     {
       "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@beerygaz",
+      "number": 91622,
+      "title": "gpt-5.4-mini via Responses API: incomplete turn false positive + claude eager_input_streaming schema rejection",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91622"
+    },
+    {
+      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@ly-wang19",
       "number": 91596,
       "title": "fix(memory): use local modelPath for status identity so custom local models aren't always dirty (fixes #91001)",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91596"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@StarbloomConsultingHub",
+      "number": 91592,
+      "title": "memory_search broken with \"index scope changed\" after --force rebuild — scopeHash mismatch persists",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91592"
     },
     {
       "activity": 0,
@@ -3799,11 +3907,47 @@
     {
       "activity": 0,
       "area": "Model routing/config",
+      "creator": "@lilineng",
+      "number": 91575,
+      "title": "[Feature]: Feature Request: Pre-request budget/cost check to prevent runaway spending on free tier accounts",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91575"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Orionation",
+      "number": 91572,
+      "title": "Dreaming light phase should ingest workspace file creation events, not just memory/*.md",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91572"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
       "creator": "@joshavant",
       "number": 91567,
       "title": "fix(openai): require api-key auth for realtime voice",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91567"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Orionation",
+      "number": 91563,
+      "title": "Dreaming deep phase: minUniqueQueries gate bypassed by day-diversity counting",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91563"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@W3i-Stephane",
+      "number": 91560,
+      "title": "[Bug]: Codex ACP native route fails with \"Authentication required\" when host Codex uses OAuth (ChatGPT login)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91560"
     },
     {
       "activity": 0,
@@ -3813,6 +3957,15 @@
       "title": "fix(agents): clean Gemini tool schemas by model id",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91559"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@rmichelena",
+      "number": 91552,
+      "title": "Codex app-server binding sidecar can retain stale GPT model across provider switches, causing embedded runs to dispatch zai/gpt-5.5",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91552"
     },
     {
       "activity": 0,
@@ -3834,6 +3987,15 @@
     },
     {
       "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@qiukui666",
+      "number": 91542,
+      "title": "[Bug] Gemini (jjcc/openai-compat) rejects cron tool schema: anyOf properties missing type field in v2026.6.1",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91542"
+    },
+    {
+      "activity": 0,
       "area": "Model routing/config",
       "assignee": "vincentkoc",
       "creator": "@vincentkoc",
@@ -3841,6 +4003,15 @@
       "title": "perf(control-ui): avoid startup catalog wait",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91538"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@mikealford-kuon",
+      "number": 91537,
+      "title": "[Bug]: Codex yolo mode leaks app-server processes and binding files",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91537"
     },
     {
       "activity": 0,
@@ -9283,8 +9454,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91517,
-    "pr": 91765
+    "issue": 91772,
+    "pr": 91771
   },
   "schema_version": 1,
   "updated": "2026-06-10"
