@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 334,
-    "open_prs": 419,
-    "open_threads": 753
+    "open_prs": 422,
+    "open_threads": 756
   },
   "open_threads": [
     {
@@ -3614,6 +3614,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xydt-tanshanshan",
+      "number": 91660,
+      "title": "[AI] fix(memory): backfill provider.model with resolved model name in…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91660"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@openperf",
+      "number": 91657,
+      "title": "fix(ollama): use provider thinking default in SDK session factory",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91657"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@tracy-e",
+      "number": 91644,
+      "title": "feat(gateway): add OpenAI-compatible /v1/audio/speech endpoint",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91644"
     },
     {
       "activity": 0,
@@ -9158,7 +9185,7 @@
   ],
   "review_watermark": {
     "issue": 91517,
-    "pr": 91642
+    "pr": 91667
   },
   "schema_version": 1,
   "updated": "2026-06-09"
