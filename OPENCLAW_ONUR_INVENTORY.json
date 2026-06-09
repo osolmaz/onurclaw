@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 334,
-    "open_prs": 424,
-    "open_threads": 758
+    "open_prs": 429,
+    "open_threads": 763
   },
   "open_threads": [
     {
@@ -3614,6 +3614,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@a-tokyo",
+      "number": 91720,
+      "title": "fix(openai): remove chatgpt-responses transport override from gpt-5.3-codex catalog entry",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91720"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@dwc1997",
+      "number": 91714,
+      "title": "fix(agents): apply Gemini schema cleaning for Gemini models via OpenAI-compat providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91714"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@a-tokyo",
+      "number": 91711,
+      "title": ":bug: fix(agents): classify harness provider mismatch as format error (#91710)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91711"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zenglingbiao",
+      "number": 91708,
+      "title": "fix(agents): preserve legacy openai-codex context overrides after provider unification (fixes #90448)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91708"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@tiffanychum",
+      "number": 91706,
+      "title": "fix(memory): keep local embedding indexes clean when only local.modelPath is set",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91706"
     },
     {
       "activity": 0,
@@ -9203,7 +9248,7 @@
   ],
   "review_watermark": {
     "issue": 91517,
-    "pr": 91699
+    "pr": 91721
   },
   "schema_version": 1,
   "updated": "2026-06-09"
