@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 334,
-    "open_prs": 407,
-    "open_threads": 741
+    "open_prs": 408,
+    "open_threads": 742
   },
   "open_threads": [
     {
@@ -3614,6 +3614,16 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 91531,
+      "title": "perf(control-ui): reuse startup model metadata",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91531"
     },
     {
       "activity": 0,
@@ -9047,7 +9057,7 @@
   ],
   "review_watermark": {
     "issue": 91517,
-    "pr": 91515
+    "pr": 91531
   },
   "schema_version": 1,
   "updated": "2026-06-09"
