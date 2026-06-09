@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 334,
-    "open_prs": 431,
-    "open_threads": 765
+    "open_prs": 433,
+    "open_threads": 767
   },
   "open_threads": [
     {
@@ -3614,6 +3614,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@dreamhunter2333",
+      "number": 91742,
+      "title": "fix(memory): abort orphaned embedding work when memory_search times out",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91742"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@fuller-stack-dev",
+      "number": 91740,
+      "title": "fix(auth): verify SQLite auth migration before cleanup",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91740"
     },
     {
       "activity": 0,
@@ -9266,7 +9284,7 @@
   ],
   "review_watermark": {
     "issue": 91517,
-    "pr": 91737
+    "pr": 91746
   },
   "schema_version": 1,
   "updated": "2026-06-10"
