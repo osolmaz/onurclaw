@@ -5,10 +5,10 @@ Updated: 2026-06-09
 Review watermark:
 
 - Last reviewed through issue: #91517.
-- Last reviewed through PR: #91568.
+- Last reviewed through PR: #91612.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (747)
+## OPEN THREADS (751)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,10 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#91596](https://github.com/openclaw/openclaw/pull/91596) | 0 | Local memory/embedding | @ly-wang19 | fix(memory): use local modelPath for status identity so custom local models aren't always dirty (fixes #91001) |
+| 🔀&nbsp;[#91589](https://github.com/openclaw/openclaw/pull/91589) | 0 | Model routing/config | @anthonyaluna | Harden external CLI auth sync diagnostics |
+| 🔀&nbsp;[#91580](https://github.com/openclaw/openclaw/pull/91580) | 0 | Local model runtime | @vincentkoc | fix(agents): trim dense text delta snapshots<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#91579](https://github.com/openclaw/openclaw/pull/91579) | 0 | Model routing/config | @wangmiao0668000666 | fix(agents): bootstrap OpenClaw auth for codex harness when provider is codex |
 | 🔀&nbsp;[#91567](https://github.com/openclaw/openclaw/pull/91567) | 0 | Model routing/config | @joshavant | fix(openai): require api-key auth for realtime voice |
 | 🔀&nbsp;[#91559](https://github.com/openclaw/openclaw/pull/91559) | 0 | OpenAI-compatible/proxy | @Huangting-xy | fix(agents): clean Gemini tool schemas by model id |
 | 🔀&nbsp;[#91549](https://github.com/openclaw/openclaw/pull/91549) | 0 | OpenAI-compatible/proxy | @studentzhou-svg | fix: enable DeepSeek DSML filtering for proxy providers via model id detection |
@@ -1114,4 +1118,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 747 (334 issues, 413 PRs).
+- Kept open threads: 751 (334 issues, 417 PRs).

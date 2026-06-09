@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 334,
-    "open_prs": 413,
-    "open_threads": 747
+    "open_prs": 417,
+    "open_threads": 751
   },
   "open_threads": [
     {
@@ -3614,6 +3614,43 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ly-wang19",
+      "number": 91596,
+      "title": "fix(memory): use local modelPath for status identity so custom local models aren't always dirty (fixes #91001)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91596"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@anthonyaluna",
+      "number": 91589,
+      "title": "Harden external CLI auth sync diagnostics",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91589"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 91580,
+      "title": "fix(agents): trim dense text delta snapshots",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91580"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wangmiao0668000666",
+      "number": 91579,
+      "title": "fix(agents): bootstrap OpenClaw auth for codex harness when provider is codex",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91579"
     },
     {
       "activity": 0,
@@ -9103,7 +9140,7 @@
   ],
   "review_watermark": {
     "issue": 91517,
-    "pr": 91568
+    "pr": 91612
   },
   "schema_version": 1,
   "updated": "2026-06-09"
