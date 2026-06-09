@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 334,
-    "open_prs": 417,
-    "open_threads": 751
+    "open_prs": 419,
+    "open_threads": 753
   },
   "open_threads": [
     {
@@ -3614,6 +3614,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@z1pp090",
+      "number": 91640,
+      "title": "docs(compaction): warn that compaction.model breaks native compaction on claude-cli/OAuth",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91640"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ly-wang19",
+      "number": 91625,
+      "title": "fix(cron): add cron edit --clear-model to clear a job's model override",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91625"
     },
     {
       "activity": 0,
@@ -9140,7 +9158,7 @@
   ],
   "review_watermark": {
     "issue": 91517,
-    "pr": 91612
+    "pr": 91642
   },
   "schema_version": 1,
   "updated": "2026-06-09"
