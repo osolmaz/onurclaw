@@ -1,16 +1,14 @@
-# Proposed Model For Managing OpenClaw Model Configurations
+# Options for maintaining OpenClaw local model configurations
 
-## The Problem With `localModelLean`
+OpenClaw currently has the `localModelLean:true/false` toggle. It is an internally disliked binary toggle which creates a "lite mode" for small models, which e.g. hide the browser and other tools to save context and not confuse the model. It was introduced quickly without grasping the complexity of making OpenClaw work for local models
 
-I am slowly coming back to my initial goal of how to carry OpenClaw configurability beyond the current badly designed binary toggle of `localModelLean:true/false`.
+My goal is to carry OpenClaw configurability beyond the current badly designed `localModelLean` toggle. I believe we should not get deeper and deeper in this mistake, and should deprecate it as soon as possible. It was a useful toggle short term, but we will need more than a single toggle long term. It already overlaps with some other configs like tool profiles.
 
-So I have mentioned `localModelLean` before. It is an internally disliked binary toggle which creates a "lite mode" for small models, which e.g. hide the browser and other tools to save context and not confuse the model.
+## Local-ness is misleading
 
-This was introduced quickly by a maintainer who didn't grasp the complexity behind making OpenClaw work for local models.
+I want to make a short conceptual point before I begin with the general proposal.
 
-We should not get deeper and deeper in the mistake of `localModelLean`. It's a useful toggle short term, but we will need more than a single toggle long term.
-
-Also, most local models are small because people's hardware is generally not bigger than 128GB. But some might be running Kimi locally which is big enough to handle full OpenClaw. Or a user could be using a small model like Qwen 8B on an inference provider, which would also need a "lite" mode.
+Most local models are small because people's hardware is generally not bigger than 128GB. But some might be running Kimi locally which is big enough to handle full OpenClaw. Or a user could be using a small model like Qwen 8B on an inference provider, which would also need a "lite" mode.
 
 A model being local doesn't mean it has to be weak. We need to change the concepts here. We need to phrase it independently from localness.
 
