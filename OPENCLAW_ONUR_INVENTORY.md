@@ -4,11 +4,11 @@ Updated: 2026-06-10
 
 Review watermark:
 
-- Last reviewed through issue: #91772.
-- Last reviewed through PR: #91837.
+- Last reviewed through issue: #91865.
+- Last reviewed through PR: #91866.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (791)
+## OPEN THREADS (800)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,11 +155,20 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#91864](https://github.com/openclaw/openclaw/pull/91864) | 0 | Local memory/embedding | @bladin | fix(memory-core): force exit after memory search --json output |
+| 🔀&nbsp;[#91862](https://github.com/openclaw/openclaw/pull/91862) | 0 | Local memory/embedding | @xydt-tanshanshan | fix(memory): gracefully degrade when embedding provider is unregistered |
+| 📝&nbsp;[#91854](https://github.com/openclaw/openclaw/issues/91854) | 0 | Local memory/embedding | @MahmutDehhan | [Bug]: Memory dreaming narrative/REM lane is given apply_patch and misuses it |
+| 📝&nbsp;[#91839](https://github.com/openclaw/openclaw/issues/91839) | 0 | Model routing/config | @aspalagin | [Bug]: Terminal provider model_not_available in subagent announce path can trigger chat.history storm and gateway event-loop starvation |
 | 🔀&nbsp;[#91837](https://github.com/openclaw/openclaw/pull/91837) | 0 | Local memory/embedding | @TurboTheTurtle | fix(memory-core): settle json search cleanup |
 | 🔀&nbsp;[#91830](https://github.com/openclaw/openclaw/pull/91830) | 0 | Model routing/config | @Patrick-Erichsen | feat: add OpenRouter OAuth to onboarding |
+| 📝&nbsp;[#91827](https://github.com/openclaw/openclaw/issues/91827) | 0 | Open-weight/provider behavior | @aegis-gh-agent[bot] | [P1] Structural fix: content-based dedup + delivery-mirror model-hiding for kimi-code message loops |
+| 📝&nbsp;[#91821](https://github.com/openclaw/openclaw/issues/91821) | 0 | Local memory/embedding | @xpysgdhr | memory search --json prints results but does not exit with QMD backend |
 | 🔀&nbsp;[#91813](https://github.com/openclaw/openclaw/pull/91813) | 0 | Local memory/embedding | @rubencu | fix(codex): restore memory recall from plugin tools |
+| 📝&nbsp;[#91809](https://github.com/openclaw/openclaw/issues/91809) | 0 | Model routing/config | @syfvb | [Performance] /models command slow in v2026.6.1 — catalog loading regression |
+| 📝&nbsp;[#91806](https://github.com/openclaw/openclaw/issues/91806) | 0 | Model routing/config | @Cornil79 | [Bug]: Session shows openai/gpt-5.5 in UI, but new turns execute via DeepSeek and chat history collapses into new leaf sessions |
 | 🔀&nbsp;[#91796](https://github.com/openclaw/openclaw/pull/91796) | 0 | Model routing/config | @XuZehan-iCenter | fix(anthropic): add Claude Haiku 4.5 to static model catalog |
 | 🔀&nbsp;[#91790](https://github.com/openclaw/openclaw/pull/91790) | 0 | Model routing/config | @zenglingbiao | fix(gateway): add google-gemini-cli image capability shim (fixes #91739) |
+| 📝&nbsp;[#91778](https://github.com/openclaw/openclaw/issues/91778) | 0 | Local memory/embedding | @1attila2 | [P0] memory_search cassé — index metadata is missing depuis v2026.6.1, reproduit sur v2026.6.5 |
 | 🔀&nbsp;[#91770](https://github.com/openclaw/openclaw/pull/91770) | 0 | Local memory/embedding | @ai-hpc | fix(memory): abort search embeddings on tool timeout |
 | 🔀&nbsp;[#91767](https://github.com/openclaw/openclaw/pull/91767) | 0 | Model/provider behavior | @aliahnaf2013-max | Fix one-shot Codex app-server teardown |
 | 🔀&nbsp;[#91742](https://github.com/openclaw/openclaw/pull/91742) | 0 | Local memory/embedding | @dreamhunter2333 | fix(memory): abort orphaned embedding work when memory_search times out |
@@ -1158,4 +1167,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 791 (351 issues, 440 PRs).
+- Kept open threads: 800 (358 issues, 442 PRs).
