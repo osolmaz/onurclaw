@@ -138,10 +138,12 @@ scripts/
 
 There is no `lock.ts`: with atomic manifest overwrite there is nothing for a
 lock to protect, and a lock protocol over an eventually-consistent remote is
-more dangerous than the race it prevents. Spike before implementing: confirm
-the bucket batch API (`batch_bucket_files`/`sync_bucket` in Python
-`huggingface_hub`) is reachable from Node via `@huggingface/hub`; if not, shell
-out to the `hf buckets` CLI inside the image for the same operations.
+more dangerous than the race it prevents.
+
+Bucket transport (decided 2026-06-11): `@huggingface/hub` 2.13.1 has no bucket
+support (git-repo operations only), so `hub.ts` shells out to the `hf buckets`
+CLI bundled in the Docker image. Python lives only inside the image; users
+still never need it locally. Revisit if `@huggingface/hub` gains bucket APIs.
 
 Built artifact inside the image:
 
@@ -337,11 +339,10 @@ huggingface.co/spaces/osolmaz/openclaw-huggingface
 
 Order:
 
-1. Spike: upload/download to a Storage Bucket from Node via `@huggingface/hub`
-   (fallback: `hf` CLI in the image). This decides `hub.ts`.
-2. `hf-state-sync` module + tests.
-3. Dockerfile/entrypoint: live state under `/tmp/openclaw-live`, no bucket
-   mount.
-4. Live verification per the checklist above.
-5. Only after live verification: update `osolmaz/openclaw-bootstrap` to stop
+1. `hf-state-sync` module + tests (`hub.ts` shells out to the bundled `hf
+   buckets` CLI; decided above).
+2. Dockerfile/entrypoint: live state under `/tmp/openclaw-live`, bundle the
+   `hf` CLI, no bucket mount.
+3. Live verification per the checklist above.
+4. Only after live verification: update `osolmaz/openclaw-bootstrap` to stop
    creating the bucket mount, and fix its README persistence wording.
