@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 375,
+    "open_issues": 380,
     "open_prs": 450,
-    "open_threads": 825
+    "open_threads": 830
   },
   "open_threads": [
     {
@@ -3614,6 +3614,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@danieljimz",
+      "number": 91982,
+      "title": "[Bug]: anthropic-vertex-provider adds cache_control to active-memory system block — triggers \"Found 5\" error when active-memory is enabled",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91982"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangwllu",
+      "number": 91975,
+      "title": "Native Anthropic adapter silently drops `thinking` to `off` for custom provider ids (resolveThinkingProfile only matches exact `anthropic`/`claude-cli`)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91975"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@nikosml",
+      "number": 91971,
+      "title": "[Bug]: @openclaw/llama-cpp-provider documented but not published to npm/ClawHub",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91971"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Staok",
+      "number": 91965,
+      "title": "[Bug]: memory_search permanently fails with \"index metadata is missing\" — cached indexIdentityState not refreshed after meta fix",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91965"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Andy283",
+      "number": 91961,
+      "title": "Memory status shows 'paused' after index rebuild despite vector search working (v2026.6.5)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91961"
     },
     {
       "activity": 0,
@@ -9806,9 +9851,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 91959,
-    "pr": 91963
+    "issue": 91989,
+    "pr": 91988
   },
   "schema_version": 1,
-  "updated": "2026-06-10"
+  "updated": "2026-06-11"
 }
