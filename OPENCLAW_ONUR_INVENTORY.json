@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 358,
-    "open_prs": 442,
-    "open_threads": 800
+    "open_issues": 362,
+    "open_prs": 448,
+    "open_threads": 810
   },
   "open_threads": [
     {
@@ -3614,6 +3614,97 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@charles717-art",
+      "number": 91902,
+      "title": "[BUG] memory index --force CLI writes incompatible meta providerKey, breaks runtime memory_search",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91902"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xydt-tanshanshan",
+      "number": 91897,
+      "title": "fix(memory): self-heal missing index identity by initializing provider during sync",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91897"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@TurboTheTurtle",
+      "number": 91895,
+      "title": "fix(webchat): finalize provider failure lifecycle",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91895"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@luciaski",
+      "number": 91892,
+      "title": "Cron jobs stall during AI model calls (model_call:stream_progress never completes)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91892"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@vincentkoc",
+      "number": 91884,
+      "title": "fix(memory): keep QMD background refreshes armed",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91884"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "assignee": "steipete",
+      "creator": "@steipete",
+      "number": 91882,
+      "title": "feat(anthropic): support Claude Fable 5 adaptive thinking",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91882"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@denisneuf",
+      "number": 91881,
+      "title": "v2026.6.5 - DeepSeek 401 auth error después de actualizar",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91881"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yichu10c",
+      "number": 91875,
+      "title": "fix(github-copilot): claude-opus-4.8 context window to 1M with reasoning support",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91875"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wyhgoodjob",
+      "number": 91870,
+      "title": "fix(github-copilot): claude-opus-4.8 is native 1M context + thinking (not 128K)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91870"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wyhgoodjob",
+      "number": 91869,
+      "title": "GitHub Copilot: claude-opus-4.8 hard-coded to 128K context (native 1M) + missing thinking support",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91869"
     },
     {
       "activity": 0,
@@ -9580,8 +9671,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91865,
-    "pr": 91866
+    "issue": 91902,
+    "pr": 91898
   },
   "schema_version": 1,
   "updated": "2026-06-10"
