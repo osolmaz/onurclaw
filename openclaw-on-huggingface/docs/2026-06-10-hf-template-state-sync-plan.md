@@ -34,21 +34,16 @@ disk, and writes verified snapshots back to the bucket.
 
 This tracking repo is not the final runtime source of truth.
 
-Target ownership:
+Target ownership (everything hosted on Hugging Face):
 
 ```text
-github.com/osolmaz/openclaw-huggingface
-  Source of truth for the HF Space template:
+huggingface.co/spaces/osolmaz/openclaw-huggingface
+  Source of truth AND deployable Space template:
   - TypeScript state sync implementation
   - tests
   - Dockerfile
   - entrypoint
   - template config
-  - release/sync tooling
-
-huggingface.co/spaces/osolmaz/openclaw-huggingface
-  Built deployable Space template artifact.
-  This should be generated/synced from the GitHub source repo.
 
 huggingface.co/osolmaz/openclaw-bootstrap
   Minimal bootstrap launcher.
@@ -56,7 +51,7 @@ huggingface.co/osolmaz/openclaw-bootstrap
   and sets secrets/env vars. It should not contain runtime state logic.
 
 user private bucket
-  Durable state snapshots, config, and recovery manifests.
+  Durable state snapshots and recovery manifests, written via the Hub API.
 
 user private Space
   Runtime copy of the template.
@@ -64,8 +59,9 @@ user private Space
 
 ## Why This Is The Right Split
 
-- GitHub is the right place for maintainable TypeScript, tests, review, and CI.
-- The HF Space is the deployable artifact, not the hand-maintained source.
+- Everything stays under Hugging Face; no external hosting dependency.
+- The Space repo is a normal git repo: source, tests, and the deployable are
+  one artifact, like the hermes-agent template.
 - The bootstrap repo stays small and security-sensitive: no users paste HF
   credentials into another Space.
 - Users do not need Python locally.
@@ -75,24 +71,28 @@ user private Space
 
 ## Runtime Layout
 
-Inside the Space:
+The bucket is NOT mounted into the Space. All bucket reads and writes go
+through the Hub HTTP API; the unreliable mount that corrupted live SQLite is
+out of the trust path entirely.
+
+Bucket repo contents:
 
 ```text
-/data/
-  openclaw-state/
-    manifest.json
-    snapshots/
-      state-2026-06-10T12-00-00Z.tar.zst
-      state-2026-06-10T12-05-00Z.tar.zst
-    locks/
-    tmp/
+manifest.json
+snapshots/
+  state-2026-06-10T12-00-00Z.tar.zst
+  state-2026-06-10T12-05-00Z.tar.zst
+```
 
+Inside the Space container:
+
+```text
 /tmp/openclaw-live/
   .openclaw/
     openclaw.json
     state/openclaw.sqlite
     agents/
-    credentials/
+    credentials/   # materialized from Space secrets at boot, never snapshotted
     ...
 ```
 
@@ -104,12 +104,12 @@ OPENCLAW_CONFIG_PATH=/tmp/openclaw-live/.openclaw/openclaw.json
 OPENCLAW_WORKSPACE_DIR=/tmp/openclaw-live/workspace
 ```
 
-The bucket path under `/data/openclaw-state` stores snapshots and manifests only,
-not the active SQLite database.
+The bucket stores snapshots and manifests only, never the active SQLite
+database or its WAL/SHM sidecars.
 
 ## TypeScript Components
 
-In `github.com/osolmaz/openclaw-huggingface`:
+In the Space repo (`huggingface.co/spaces/osolmaz/openclaw-huggingface`):
 
 ```text
 src/hf-state-sync/
@@ -117,10 +117,10 @@ src/hf-state-sync/
   restore.ts
   snapshot.ts
   manifest.ts
+  hub.ts        # bucket API upload/download (tarball upload + manifest overwrite)
   sqlite.ts
   paths.ts
   archive.ts
-  lock.ts
   retention.ts
 
 test/
@@ -129,13 +129,19 @@ test/
   hf-state-sync.manifest.test.ts
   hf-state-sync.sqlite.test.ts
 
-space/
-  Dockerfile
-  entrypoint.sh
-  openclaw.default.json
-  scripts/
-    configure-telegram.mjs
+Dockerfile
+entrypoint.sh
+openclaw.default.json
+scripts/
+  configure-telegram.mjs
 ```
+
+There is no `lock.ts`: with atomic manifest overwrite there is nothing for a
+lock to protect, and a lock protocol over an eventually-consistent remote is
+more dangerous than the race it prevents. Spike before implementing: confirm
+the bucket batch API (`batch_bucket_files`/`sync_bucket` in Python
+`huggingface_hub`) is reachable from Node via `@huggingface/hub`; if not, shell
+out to the `hf buckets` CLI inside the image for the same operations.
 
 Built artifact inside the image:
 
@@ -176,12 +182,22 @@ Manifest:
 Rules:
 
 - Never overwrite the only known-good snapshot.
-- Write new snapshots to a temp path first.
-- Verify archive checksum.
-- Verify every SQLite DB included in the snapshot with `PRAGMA integrity_check`.
-- Promote by replacing `manifest.json` only after verification passes.
+- Stage and verify locally first: build the archive in a local temp dir, verify
+  its checksum, and run `PRAGMA integrity_check` on every staged SQLite DB.
+- Promote in two steps over the bucket API: (1) upload the snapshot tarball to
+  its final `snapshots/` path, (2) only after upload succeeds, overwrite
+  `manifest.json` in a single object write. Object writes are atomic at the
+  object level, so readers see the old or the new manifest, never a partial
+  one, and the manifest never points at an archive that is not fully uploaded.
+- Buckets are non-versioned (no commits, no history), so the manifest's
+  `previous` list plus retained snapshot files are the ONLY rollback path.
+  Never delete a snapshot that the manifest still references.
+- Record the container run id and boot time in the manifest for observability.
+- No locking. Overlapping containers (e.g. during a rebuild) produce serialized
+  object writes; the last verified writer wins.
 - Keep the last N verified snapshots.
-- If the latest snapshot is bad on boot, try previous snapshots in order.
+- On boot, if the latest snapshot fails verification, walk back through
+  `previous` entries until one passes.
 
 ## SQLite Handling
 
@@ -217,10 +233,8 @@ Include:
 
 ```text
 openclaw.json
-.env if present and intentionally managed by this template
 agent-name.txt
 agents/
-credentials/
 state/*.sqlite as consistent standalone DB copies
 workspace metadata if stored under state
 ```
@@ -228,6 +242,8 @@ workspace metadata if stored under state
 Exclude:
 
 ```text
+credentials/          # secrets live in HF Space Secrets, never in snapshots
+.env                  # same
 state/*.sqlite-wal
 state/*.sqlite-shm
 logs that do not need durability
@@ -235,6 +251,10 @@ tmp/
 cache/
 large transient downloads
 ```
+
+Secrets rule: provider/bot tokens live in HF Space Secrets only; the entrypoint
+materializes them into the live state dir at boot. Anything that must survive a
+rebuild must live in state, not in `credentials/`.
 
 The exclude list should be explicit and tested.
 
@@ -290,27 +310,38 @@ For migration testing:
 
 The new template should refuse to promote a snapshot if SQLite integrity fails.
 
-## Open Questions
+## Resolved Decisions (2026-06-11)
 
-- Snapshot interval default: likely 30-60 seconds for Telegram UX.
-- Whether to snapshot immediately after important plugin-state writes is an
-  OpenClaw-core concern and should not be required for the first HF wrapper.
-- Whether to use `tar.zst` or `tar.gz` depends on what the final image includes.
-  Prefer `tar.zst` if `zstd` is available; otherwise use `tar.gz`.
-- Whether secrets should live in snapshots at all. Prefer HF Space secrets for
-  provider tokens; snapshot only runtime state that must persist.
+- Bucket I/O goes through the bucket HTTP API; the bucket is never mounted.
+  This matches the documented bucket access guidance: mounts are "not for"
+  multi-writer or lock-dependent workloads (hf-mount README), while CLI/API
+  sync is the documented path for backups (hub docs, "Rolling backups").
+- Promotion: upload tarball, then atomically overwrite `manifest.json`; no
+  lock protocol. Buckets are non-versioned, so manifest history + retained
+  snapshots are the only rollback.
+- Secrets are excluded from snapshots; HF Space Secrets are the only secret
+  store, materialized at boot.
+- Snapshot interval default: 60 seconds. Worst case, one interval of state is
+  lost on an unclean kill; SIGTERM takes a best-effort final snapshot.
+- Archive format: `tar.zst` (we control the Dockerfile; install `zstd`).
+- Snapshot-after-important-writes remains an OpenClaw-core concern; not
+  required for the first version.
 
 ## First Implementation Target
 
-Create the source repo:
-
-```text
-github.com/osolmaz/openclaw-huggingface
-```
-
-Then implement the TypeScript state sync layer, tests, and Space template there.
-After that, sync the built template to:
+Implement directly in the Space repo:
 
 ```text
 huggingface.co/spaces/osolmaz/openclaw-huggingface
 ```
+
+Order:
+
+1. Spike: upload/download to a Storage Bucket from Node via `@huggingface/hub`
+   (fallback: `hf` CLI in the image). This decides `hub.ts`.
+2. `hf-state-sync` module + tests.
+3. Dockerfile/entrypoint: live state under `/tmp/openclaw-live`, no bucket
+   mount.
+4. Live verification per the checklist above.
+5. Only after live verification: update `osolmaz/openclaw-bootstrap` to stop
+   creating the bucket mount, and fix its README persistence wording.
