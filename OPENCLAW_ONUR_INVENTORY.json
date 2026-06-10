@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 367,
-    "open_prs": 449,
-    "open_threads": 816
+    "open_issues": 375,
+    "open_prs": 450,
+    "open_threads": 825
   },
   "open_threads": [
     {
@@ -3614,6 +3614,87 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@phoenixyy",
+      "number": 91959,
+      "title": "Bedrock Mantle (openai-responses) cumulatively duplicates reply text with reasoning enabled (GPT-5.x)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91959"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zenglingbiao",
+      "number": 91958,
+      "title": "fix(memory): align memory_search tool deadline with configured QMD timeout (fixes #91947)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91958"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@xunx33",
+      "number": 91956,
+      "title": "bug: 飞书流式回复重复显示思考过程和工具调用信息",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91956"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lml2468",
+      "number": 91953,
+      "title": "[Bug]: empty-error-retry skipped when stop_reason=\"error\" turn contains a thinking block or non-zero output, causing silent mid-turn abort on multi-step tasks",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91953"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@workingpleasewait",
+      "number": 91951,
+      "title": "[Feature]: memory index: support maxAgeDays config to limit indexed window",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91951"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@philipmisner63-ux",
+      "number": 91949,
+      "title": "invalid_request_error from Anthropic kills session instead of triggering fallback",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91949"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@guojiongming",
+      "number": 91947,
+      "title": "memory_search 工具硬编码 15s timeout 不够 qmd query 跑完，建议可配置",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91947"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@alexminza",
+      "number": 91945,
+      "title": "[Feature]: Upgrade Cloudflare AI Gateway provider to the REST API",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91945"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@MOOSChen1989",
+      "number": 91942,
+      "title": "[Bug] l1-extractor 临时 workspace 上下文注入缺失，LLM 返回空字符串",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91942"
     },
     {
       "activity": 0,
@@ -9725,8 +9806,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91938,
-    "pr": 91934
+    "issue": 91959,
+    "pr": 91963
   },
   "schema_version": 1,
   "updated": "2026-06-10"

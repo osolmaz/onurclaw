@@ -4,11 +4,11 @@ Updated: 2026-06-10
 
 Review watermark:
 
-- Last reviewed through issue: #91938.
-- Last reviewed through PR: #91934.
+- Last reviewed through issue: #91959.
+- Last reviewed through PR: #91963.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (816)
+## OPEN THREADS (825)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,15 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#91959](https://github.com/openclaw/openclaw/issues/91959) | 0 | OpenAI-compatible/proxy | @phoenixyy | Bedrock Mantle (openai-responses) cumulatively duplicates reply text with reasoning enabled (GPT-5.x) |
+| 🔀&nbsp;[#91958](https://github.com/openclaw/openclaw/pull/91958) | 0 | Local memory/embedding | @zenglingbiao | fix(memory): align memory_search tool deadline with configured QMD timeout (fixes #91947) |
+| 📝&nbsp;[#91956](https://github.com/openclaw/openclaw/issues/91956) | 0 | Open-weight/provider behavior | @xunx33 | bug: 飞书流式回复重复显示思考过程和工具调用信息 |
+| 📝&nbsp;[#91953](https://github.com/openclaw/openclaw/issues/91953) | 0 | Model routing/config | @lml2468 | [Bug]: empty-error-retry skipped when stop_reason="error" turn contains a thinking block or non-zero output, causing silent mid-turn abort on multi-step tasks |
+| 📝&nbsp;[#91951](https://github.com/openclaw/openclaw/issues/91951) | 0 | Local memory/embedding | @workingpleasewait | [Feature]: memory index: support maxAgeDays config to limit indexed window |
+| 📝&nbsp;[#91949](https://github.com/openclaw/openclaw/issues/91949) | 0 | Model routing/config | @philipmisner63-ux | invalid_request_error from Anthropic kills session instead of triggering fallback |
+| 📝&nbsp;[#91947](https://github.com/openclaw/openclaw/issues/91947) | 0 | Local memory/embedding | @guojiongming | memory_search 工具硬编码 15s timeout 不够 qmd query 跑完，建议可配置 |
+| 📝&nbsp;[#91945](https://github.com/openclaw/openclaw/issues/91945) | 0 | OpenAI-compatible/proxy | @alexminza | [Feature]: Upgrade Cloudflare AI Gateway provider to the REST API |
+| 📝&nbsp;[#91942](https://github.com/openclaw/openclaw/issues/91942) | 0 | Local memory/embedding | @MOOSChen1989 | [Bug] l1-extractor 临时 workspace 上下文注入缺失，LLM 返回空字符串 |
 | 📝&nbsp;[#91930](https://github.com/openclaw/openclaw/issues/91930) | 0 | Model routing/config | @rp7181120-star | Docs feedback: /providers/opencode |
 | 📝&nbsp;[#91929](https://github.com/openclaw/openclaw/issues/91929) | 0 | OpenAI-compatible/proxy | @ofpay-code | [Bug]: model provider config custom proxy url, image generation error |
 | 📝&nbsp;[#91928](https://github.com/openclaw/openclaw/issues/91928) | 0 | Open-weight/provider behavior | @34262315716 | DeepSeek 模型在长上下文中注意力偏移（attention inertia）—— 倾向回应上一轮而非最新消息 |
@@ -1183,4 +1192,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 816 (367 issues, 449 PRs).
+- Kept open threads: 825 (375 issues, 450 PRs).
