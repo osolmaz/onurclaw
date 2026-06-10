@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 361,
-    "open_prs": 360,
-    "open_threads": 721
+    "open_issues": 362,
+    "open_prs": 361,
+    "open_threads": 723
   },
   "open_threads": [
     {
@@ -4430,6 +4430,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yetval",
+      "number": 92043,
+      "title": "Bug: 180s compaction timeout is a single wall clock over the whole chunk pipeline with no partial-progress reuse, so a legitimately-long compaction fails identically every turn",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92043"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@849261680",
+      "number": 92040,
+      "title": "fix(provider): route thinking profiles by model API",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92040"
     },
     {
       "activity": 0,
@@ -9726,8 +9744,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92038,
-    "pr": 92037
+    "issue": 92044,
+    "pr": 92040
   },
   "schema_version": 1,
   "updated": "2026-06-11"

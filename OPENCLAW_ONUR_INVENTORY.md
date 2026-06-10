@@ -4,11 +4,11 @@ Updated: 2026-06-11
 
 Review watermark:
 
-- Last reviewed through issue: #92038.
-- Last reviewed through PR: #92037.
+- Last reviewed through issue: #92044.
+- Last reviewed through PR: #92040.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (721)
+## OPEN THREADS (723)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -150,6 +150,8 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92043](https://github.com/openclaw/openclaw/issues/92043) | 0 | Model routing/config | @yetval | Bug: 180s compaction timeout is a single wall clock over the whole chunk pipeline with no partial-progress reuse, so a legitimately-long compaction fails identically every turn |
+| 🔀&nbsp;[#92040](https://github.com/openclaw/openclaw/pull/92040) | 0 | OpenAI-compatible/proxy | @849261680 | fix(provider): route thinking profiles by model API |
 | 📝&nbsp;[#92038](https://github.com/openclaw/openclaw/issues/92038) | 0 | Model routing/config | @vultusv | NO_REPLY silence reply counted as empty turn - retry + candidate_failed(format) + full fallback cascade on heartbeats (2026.6.5) |
 | 🔀&nbsp;[#92035](https://github.com/openclaw/openclaw/pull/92035) | 0 | Local memory/embedding | @fall4knight | feat(memory): apply temporal decay to QMD search results |
 | 🔀&nbsp;[#92034](https://github.com/openclaw/openclaw/pull/92034) | 0 | Open-weight/provider behavior | @hansraj316 | perf(agents): memoize XML attribute regex in DSML stream parser |
@@ -1211,4 +1213,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 721 (361 issues, 360 PRs).
+- Kept open threads: 723 (362 issues, 361 PRs).
