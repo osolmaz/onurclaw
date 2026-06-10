@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 364,
+    "open_issues": 367,
     "open_prs": 449,
-    "open_threads": 813
+    "open_threads": 816
   },
   "open_threads": [
     {
@@ -3614,6 +3614,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@rp7181120-star",
+      "number": 91930,
+      "title": "Docs feedback: /providers/opencode",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91930"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ofpay-code",
+      "number": 91929,
+      "title": "[Bug]: model provider config custom proxy url, image generation error",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91929"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@34262315716",
+      "number": 91928,
+      "title": "DeepSeek 模型在长上下文中注意力偏移（attention inertia）—— 倾向回应上一轮而非最新消息",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91928"
     },
     {
       "activity": 0,
@@ -9698,8 +9725,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91918,
-    "pr": 91915
+    "issue": 91938,
+    "pr": 91934
   },
   "schema_version": 1,
   "updated": "2026-06-10"
