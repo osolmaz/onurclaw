@@ -329,6 +329,18 @@ The new template should refuse to promote a snapshot if SQLite integrity fails.
 - Snapshot-after-important-writes remains an OpenClaw-core concern; not
   required for the first version.
 
+## Implementation Status (2026-06-11)
+
+Implemented and live-verified. The state-sync layer, tests, Dockerfile, and
+entrypoint live in the Space repo. Verified on the template Space
+(`osolmaz/openclaw-huggingface` + test bucket): fresh start on empty bucket,
+interval snapshot, SIGTERM final snapshot from the old container during
+restart overlap, and restore of the newest verified snapshot on boot. Rolled
+out to `osolmaz/onurclawtest` (pinned fence-fix image) with the old corrupt
+bucket data left untouched under the legacy layout; the new state lives under
+`openclaw-state/`. Bootstrap updated: no more `/data` mount, sets
+`OPENCLAW_HF_STATE_BUCKET` instead.
+
 ## First Implementation Target
 
 Implement directly in the Space repo:
