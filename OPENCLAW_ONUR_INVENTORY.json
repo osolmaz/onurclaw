@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 362,
-    "open_prs": 448,
-    "open_threads": 810
+    "open_issues": 364,
+    "open_prs": 449,
+    "open_threads": 813
   },
   "open_threads": [
     {
@@ -3614,6 +3614,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@mlaihk",
+      "number": 91913,
+      "title": "openai-completions legacy path drops `compat.reasoningEffortMap` and `thinkLevel`; LM Studio binary-thinking models silently fall back to thinking-on",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91913"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@peterskwang",
+      "number": 91912,
+      "title": "Feature request: per-session suppressFallbackNotice config option",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91912"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lanzhi-lee",
+      "number": 91911,
+      "title": "fix(agents): retry same model across short rate-limit windows",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91911"
     },
     {
       "activity": 0,
@@ -9671,8 +9698,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91902,
-    "pr": 91898
+    "issue": 91918,
+    "pr": 91915
   },
   "schema_version": 1,
   "updated": "2026-06-10"

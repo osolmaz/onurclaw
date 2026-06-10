@@ -4,11 +4,11 @@ Updated: 2026-06-10
 
 Review watermark:
 
-- Last reviewed through issue: #91902.
-- Last reviewed through PR: #91898.
+- Last reviewed through issue: #91918.
+- Last reviewed through PR: #91915.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (810)
+## OPEN THREADS (813)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -155,6 +155,9 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#91913](https://github.com/openclaw/openclaw/issues/91913) | 0 | Local model runtime | @mlaihk | openai-completions legacy path drops `compat.reasoningEffortMap` and `thinkLevel`; LM Studio binary-thinking models silently fall back to thinking-on |
+| 📝&nbsp;[#91912](https://github.com/openclaw/openclaw/issues/91912) | 0 | Model routing/config | @peterskwang | Feature request: per-session suppressFallbackNotice config option |
+| 🔀&nbsp;[#91911](https://github.com/openclaw/openclaw/pull/91911) | 0 | Model routing/config | @lanzhi-lee | fix(agents): retry same model across short rate-limit windows |
 | 📝&nbsp;[#91902](https://github.com/openclaw/openclaw/issues/91902) | 0 | Local memory/embedding | @charles717-art | [BUG] memory index --force CLI writes incompatible meta providerKey, breaks runtime memory_search |
 | 🔀&nbsp;[#91897](https://github.com/openclaw/openclaw/pull/91897) | 0 | Local memory/embedding | @xydt-tanshanshan | fix(memory): self-heal missing index identity by initializing provider during sync |
 | 🔀&nbsp;[#91895](https://github.com/openclaw/openclaw/pull/91895) | 0 | Model routing/config | @TurboTheTurtle | fix(webchat): finalize provider failure lifecycle |
@@ -1177,4 +1180,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 810 (362 issues, 448 PRs).
+- Kept open threads: 813 (364 issues, 449 PRs).
