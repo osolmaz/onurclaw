@@ -2322,8 +2322,8 @@
   "counts": {
     "closed_threads": 331,
     "open_issues": 351,
-    "open_prs": 436,
-    "open_threads": 787
+    "open_prs": 438,
+    "open_threads": 789
   },
   "open_threads": [
     {
@@ -3614,6 +3614,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@rubencu",
+      "number": 91813,
+      "title": "fix(codex): restore memory recall from plugin tools",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91813"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@XuZehan-iCenter",
+      "number": 91796,
+      "title": "fix(anthropic): add Claude Haiku 4.5 to static model catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91796"
     },
     {
       "activity": 0,
@@ -9464,7 +9482,7 @@
   ],
   "review_watermark": {
     "issue": 91772,
-    "pr": 91794
+    "pr": 91813
   },
   "schema_version": 1,
   "updated": "2026-06-10"
