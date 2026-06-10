@@ -1,5 +1,17 @@
 # 2026-06-10 HF Template State Sync Plan
 
+## Goal
+
+The product goal: anyone can create their own persistent OpenClaw agent on
+Hugging Face with one command. The Space runs the agent and is disposable;
+the user's private bucket is the agent's durable memory.
+
+This plan secures the one missing property: state must move between Space and
+bucket without loss or corruption. Running live SQLite directly on the bucket
+mount corrupts the database (see `tracking/`), so the runtime keeps live state
+on local disk and the bucket stores verified snapshots. Every section below
+serves that property; anything that does not is cuttable.
+
 ## Decision
 
 The long-term Hugging Face deployment should use:
