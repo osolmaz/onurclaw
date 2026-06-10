@@ -2321,9 +2321,9 @@
   ],
   "counts": {
     "closed_threads": 331,
-    "open_issues": 380,
-    "open_prs": 450,
-    "open_threads": 830
+    "open_issues": 381,
+    "open_prs": 451,
+    "open_threads": 832
   },
   "open_threads": [
     {
@@ -3614,6 +3614,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@nxmxbbd",
+      "number": 92002,
+      "title": "fix(lmstudio): deliver thinking \"off\" to binary-thinking models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92002"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@andresparilli",
+      "number": 91999,
+      "title": "Bug: Main agent model reverts to Gemini in terminal sessions",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91999"
     },
     {
       "activity": 0,
@@ -9851,8 +9869,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 91989,
-    "pr": 91988
+    "issue": 91999,
+    "pr": 92006
   },
   "schema_version": 1,
   "updated": "2026-06-11"
