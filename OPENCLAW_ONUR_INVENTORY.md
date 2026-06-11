@@ -4,11 +4,11 @@ Updated: 2026-06-12
 
 Review watermark:
 
-- Last reviewed through issue: #92246.
-- Last reviewed through PR: #92251.
+- Last reviewed through issue: #92260.
+- Last reviewed through PR: #92261.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (776)
+## OPEN THREADS (780)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -150,6 +150,10 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92261](https://github.com/openclaw/openclaw/pull/92261) | 0 | Local memory/embedding | @skocher | Fix live orphan session transcript visibility |
+| 📝&nbsp;[#92260](https://github.com/openclaw/openclaw/issues/92260) | 0 | Model/provider behavior | @jmpei | [Bug]: Heartbeat delivers reasoning payload as main reply when includeReasoning is false (resolveHeartbeatReplyPayload ignores isReasoning) |
+| 🔀&nbsp;[#92254](https://github.com/openclaw/openclaw/pull/92254) | 0 | Model routing/config | @jbetala7 | fix(model-picker): preserve auth profile override when selecting a model |
+| 🔀&nbsp;[#92253](https://github.com/openclaw/openclaw/pull/92253) | 0 | Local memory/embedding | @Glucksberg | [codex] active-memory default to configured agents |
 | 🔀&nbsp;[#92247](https://github.com/openclaw/openclaw/pull/92247) | 0 | Model routing/config | @samson910022 | fix(models): bound /models and models list catalog loading |
 | 📝&nbsp;[#92244](https://github.com/openclaw/openclaw/issues/92244) | 0 | Model routing/config | @saphoroth | [bug] Telegram model picker call to applyModelOverrideToSessionEntry doesn't pass preserveAuthProfileOverride, causing silent destruction of auth profile overrides set by non-picker sources |
 | 🔀&nbsp;[#92243](https://github.com/openclaw/openclaw/pull/92243) | 0 | OpenAI-compatible/proxy | @juan-lee | feat(coreweave): add CoreWeave Serverless Inference model provider |
@@ -1266,4 +1270,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 776 (380 issues, 396 PRs).
+- Kept open threads: 780 (381 issues, 399 PRs).

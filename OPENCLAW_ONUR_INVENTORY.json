@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 380,
-    "open_prs": 396,
-    "open_threads": 776
+    "open_issues": 381,
+    "open_prs": 399,
+    "open_threads": 780
   },
   "open_threads": [
     {
@@ -4430,6 +4430,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@skocher",
+      "number": 92261,
+      "title": "Fix live orphan session transcript visibility",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92261"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@jmpei",
+      "number": 92260,
+      "title": "[Bug]: Heartbeat delivers reasoning payload as main reply when includeReasoning is false (resolveHeartbeatReplyPayload ignores isReasoning)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92260"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jbetala7",
+      "number": 92254,
+      "title": "fix(model-picker): preserve auth profile override when selecting a model",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92254"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Glucksberg",
+      "number": 92253,
+      "title": "[codex] active-memory default to configured agents",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92253"
     },
     {
       "activity": 0,
@@ -10222,8 +10258,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92246,
-    "pr": 92251
+    "issue": 92260,
+    "pr": 92261
   },
   "schema_version": 1,
   "updated": "2026-06-12"
