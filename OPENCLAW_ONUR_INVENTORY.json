@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 377,
-    "open_prs": 390,
-    "open_threads": 767
+    "open_issues": 380,
+    "open_prs": 396,
+    "open_threads": 776
   },
   "open_threads": [
     {
@@ -4430,6 +4430,87 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@samson910022",
+      "number": 92247,
+      "title": "fix(models): bound /models and models list catalog loading",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92247"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@saphoroth",
+      "number": 92244,
+      "title": "[bug] Telegram model picker call to applyModelOverrideToSessionEntry doesn't pass preserveAuthProfileOverride, causing silent destruction of auth profile overrides set by non-picker sources",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92244"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@juan-lee",
+      "number": 92243,
+      "title": "feat(coreweave): add CoreWeave Serverless Inference model provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92243"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@joshavant",
+      "number": 92235,
+      "title": "fix: resolve managed SecretRef provider auth",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92235"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@juan-lee",
+      "number": 92232,
+      "title": "[Feature]: Add CoreWeave Serverless Inference (formerly Weights & Biases) model provider",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92232"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@clawSean",
+      "number": 92230,
+      "title": "feat: add model switch choices to /model",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92230"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@liuhao1024",
+      "number": 92228,
+      "title": "fix(cli): mark local models (Ollama) available in models list without auth",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92228"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@joshavant",
+      "number": 92226,
+      "title": "Fail closed for CLI-backed /btw fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92226"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lingfeizi",
+      "number": 92224,
+      "title": "Bug: CLI shows available: false for local Ollama models that are running and working",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92224"
     },
     {
       "activity": 0,
@@ -10141,8 +10222,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92218,
-    "pr": 92223
+    "issue": 92246,
+    "pr": 92251
   },
   "schema_version": 1,
   "updated": "2026-06-12"

@@ -4,11 +4,11 @@ Updated: 2026-06-12
 
 Review watermark:
 
-- Last reviewed through issue: #92218.
-- Last reviewed through PR: #92223.
+- Last reviewed through issue: #92246.
+- Last reviewed through PR: #92251.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (767)
+## OPEN THREADS (776)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -150,6 +150,15 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92247](https://github.com/openclaw/openclaw/pull/92247) | 0 | Model routing/config | @samson910022 | fix(models): bound /models and models list catalog loading |
+| 📝&nbsp;[#92244](https://github.com/openclaw/openclaw/issues/92244) | 0 | Model routing/config | @saphoroth | [bug] Telegram model picker call to applyModelOverrideToSessionEntry doesn't pass preserveAuthProfileOverride, causing silent destruction of auth profile overrides set by non-picker sources |
+| 🔀&nbsp;[#92243](https://github.com/openclaw/openclaw/pull/92243) | 0 | OpenAI-compatible/proxy | @juan-lee | feat(coreweave): add CoreWeave Serverless Inference model provider |
+| 🔀&nbsp;[#92235](https://github.com/openclaw/openclaw/pull/92235) | 0 | OpenAI-compatible/proxy | @joshavant | fix: resolve managed SecretRef provider auth |
+| 📝&nbsp;[#92232](https://github.com/openclaw/openclaw/issues/92232) | 0 | OpenAI-compatible/proxy | @juan-lee | [Feature]: Add CoreWeave Serverless Inference (formerly Weights & Biases) model provider |
+| 🔀&nbsp;[#92230](https://github.com/openclaw/openclaw/pull/92230) | 0 | Model routing/config | @clawSean | feat: add model switch choices to /model |
+| 🔀&nbsp;[#92228](https://github.com/openclaw/openclaw/pull/92228) | 0 | Local model runtime | @liuhao1024 | fix(cli): mark local models (Ollama) available in models list without auth |
+| 🔀&nbsp;[#92226](https://github.com/openclaw/openclaw/pull/92226) | 0 | Model routing/config | @joshavant | Fail closed for CLI-backed /btw fallback |
+| 📝&nbsp;[#92224](https://github.com/openclaw/openclaw/issues/92224) | 0 | Local model runtime | @lingfeizi | Bug: CLI shows available: false for local Ollama models that are running and working |
 | 📝&nbsp;[#92218](https://github.com/openclaw/openclaw/issues/92218) | 0 | Local memory/embedding | @zhbcher | memory_search tool disabled with QMD backend |
 | 🔀&nbsp;[#92217](https://github.com/openclaw/openclaw/pull/92217) | 0 | Open-weight/provider behavior | @obuchowski | feat(fireworks): catalog DeepSeek V4 Pro, MiniMax M2.7, GLM-5.1, GPT-OSS 120B reasoning models |
 | 🔀&nbsp;[#92208](https://github.com/openclaw/openclaw/pull/92208) | 0 | OpenAI-compatible/proxy | @whiteyzy | fix(model-auth): resolve secretref-managed custom provider keys from runtime config snapshot |
@@ -1257,4 +1266,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 767 (377 issues, 390 PRs).
+- Kept open threads: 776 (380 issues, 396 PRs).
