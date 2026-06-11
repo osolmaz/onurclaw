@@ -23,6 +23,7 @@ direct OpenAI-compatible recorder for classification runs.
 
 - dataset repo: `/home/bob/oc/openclaw-classification-dataset`
 - runner: `scripts/batch_localpager_agent_prompt.mjs`
+- Localpager Agent bin: `localpager-agent`
 - prompt: `prompts/2026-06-09-ds4-topic-inventory.hbs`
 - dataset: `ds4.jsonl`
 - output root: `scratch/gemma-12b-quant-smoke-localpager-reasoning/`
@@ -35,6 +36,9 @@ direct OpenAI-compatible recorder for classification runs.
 - Before each command, confirm LM Studio has the matching model loaded.
 - Keep DS4 stopped during the test to reduce memory pressure.
 - Use Localpager Agent batch runner only.
+- Use the installed `localpager-agent` command. Do not pass the
+  `/home/bob/repos/localpager/localpager-agent` source directory as an
+  executable.
 - Use one row per quantization for the quality/speed smoke.
 - Use a small multi-row sample only for concurrency probing.
 - Use high context and high output caps so the test is not distorted by
@@ -58,11 +62,21 @@ cd /home/bob/oc/openclaw-classification-dataset
 systemctl --user stop ds4-server.service || true
 systemctl --user start lm-studio.service
 
+cd /home/bob/repos/localpager/localpager-agent
+npm run build
+npm link
+
+cd /home/bob/oc/openclaw-classification-dataset
+command -v localpager-agent
 node --check scripts/batch_localpager_agent_prompt.mjs
 curl -fsS http://127.0.0.1:1234/v1/models | jq .
+localpager-agent --status
 ```
 
 Confirm the model id returned by LM Studio matches the command being run.
+`localpager-agent --status` must report a loaded model before starting a smoke
+run. If it reports no models, load the target reasoning quant in LM Studio
+first.
 
 ## Commands
 
