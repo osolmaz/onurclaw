@@ -1,12 +1,20 @@
 # Options for maintaining OpenClaw local model configurations
 
+
+tl;dr I propose instead of a binary `localModelLean` toggle, we should either: 
+
+- add to ClawHub an ability for Hugging Face model publishers to set a "model profile" that best matches the model's capabilities (HF is already the de facto "registrar" for open models). Then once we have our own benchmarks, we can do things like automatic prompt optimization for each model, and automatic profile generation, all on Clawhub.
+- or at least have a ladder like approach (tiny, small, medium, large) if we cannot afford.
+
+---
+
 OpenClaw currently has the `localModelLean:true/false` toggle. It is an internally disliked binary toggle which creates a "lite mode" for small models, which e.g. hide the browser and other tools to save context and not confuse the model. It was introduced quickly without grasping the complexity of making OpenClaw work for local models
 
-My goal is to carry OpenClaw configurability beyond the current badly designed `localModelLean` toggle. I believe we should not get deeper and deeper in this mistake, and should deprecate it as soon as possible. It was a useful toggle short term, but we will need more than a single toggle long term. It already overlaps with some other configs like tool profiles.
+My goal is to carry OpenClaw configurability beyond `localModelLean`. I believe we should not get deeper and deeper into this mistake, and should deprecate it as soon as possible. It was useful short term, but we will need more than a single toggle long term. It already overlaps with some other configs like tool profiles.
 
 ## Local-ness is misleading
 
-I want to make a short conceptual point before I begin with the general proposal.
+Short conceptual point before I begin with the general proposal.
 
 Most local models are small because people's hardware is generally not bigger than 128GB. But some might be running Kimi locally which is big enough to handle full OpenClaw. Or a user could be using a small model like Qwen 8B on an inference provider, which would also need a "lite" mode.
 
@@ -14,13 +22,9 @@ A model being local doesn't mean it has to be weak. We need to change the concep
 
 Regardless, we should get rid of "localness" from naming. I think it's irrelevant.
 
-## Existing Settings
+## localModelLean conflicts tool profiles
 
 We already have tool profiles: `minimal`, `coding`, `messaging`, `full`. This is conflicting with current behavior of the toggle.
-
-If we are gonna do it like that, we should configure tools/no tools, memory/no memory separately.
-
-But we already do have that, don't we?
 
 ## Complexity
 
@@ -32,21 +36,14 @@ Because we are trying to handle complexities on 3 fronts:
 - Consumer hardware/GPUs -> Nvidia, Apple, CUDA, MLX.
 - Features and functionality demanded by users on OpenClaw side, e.g. all the different tools, tasks, contexts the agent can run in.
 
-## Current Questions
+## Model profiles as a possible solution
 
-Should we introduce more settings and define something like `modelProfile`s?
+Each model can define a "profile"
 
 Should we then run benchmarks, ShellBench or ClawBench, on each model, and curate the optimum profile?
 
 Peter had previously disagreed with such an idea. But my counter point would be that we already did so much work making the harness work with Claude, and then GPT. Making local models can be equally complicated, so wouldn't we benefit from having more configurability to optimize OpenClaw for each model?
 
-Should we introduce like "model strength tiers" somehow?
-
-If we added, what would the tiers be?
-
-Should we introduce like "model strength tiers"? Like `tiny`, `small`, `medium`, `large`, `xlarge`, `max`? Meaning no binary toggle, but a multi-step toggle?
-
-## Current Thinking
 
 To begin with, we will have benchmarks that define the set of tasks a personal agent should be able to accomplish. That gives us a constraint to optimize against.
 
@@ -81,3 +78,9 @@ Alternatives to this could be a manifest format OpenClaw defines, and model publ
 But the bottom line is, OpenClaw should provide benchmarks to run, those benchmarks should be run automatically, and coming up with the right configuration and publishing it should be possible in an easy, AI-assisted way.
 
 In the meanwhile, I would be interested who from the team might be a good candidate to get feedback about this. Someone who worked with standardization, manifest formats, and such.
+
+## An alternative that I don't like
+
+Introducing like "model strength tiers". Like `tiny`, `small`, `medium`, `large`. Meaning no binary toggle, but a multi-step toggle.
+
+But this still conflicts things like tool profiles.
