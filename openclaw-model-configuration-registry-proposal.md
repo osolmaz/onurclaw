@@ -40,6 +40,10 @@ Some back and forth with my clanker has yielded the following categories that co
 
 These are either already configured different for different models in some way, or could be.
 
+This is not a design doc, so I am intentionally not proposing any configuration shape for the categories above.
+
+I personally predict that tool profiles and the system prompt will be the 2 main things people will want to customize.
+
 ## Complexity
 
 My mental model of the complexity of our main goal is like this: trying to make Linux work with all the hardware, but squared, maybe even cubed.
@@ -54,7 +58,9 @@ Because we are trying to handle complexities on 3 fronts:
 
 Basic idea: Each model can define a "profile", hosted somewhere, editable by community members or the model publishers themselves. + Have default fallback profiles which users can choose from, when there is no profile optimized for a model.
 
-Peter had previously disagreed with the idea of hardcoding local-model specific configurations into the core (not that I had proposed putting them into the core). There is real work needed when trying to make a harness work well with a certain model. And it is I think obvious that every model might need a different system prompt (take the goblin thing in GPT for example).
+Peter had previously rightfully disagreed with the idea of hardcoding local-model specific configurations into the core (not that I had proposed putting them into the core, that was misunderstood).
+
+There is real work needed when trying to make a harness work well with a certain model. And it is I think obvious that every model might need a different system prompt (take the goblin thing in GPT for example).
 
 We already did so much work making the harness work with Claude, and then GPT. Making local models can be equally complicated, so we would benefit from having more configurability to optimize OpenClaw for each model.
 
