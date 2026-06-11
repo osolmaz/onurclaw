@@ -31,7 +31,7 @@ We already have tool profiles: `minimal`, `coding`, `messaging`, `full`. This is
 Some back and forth with my clanker has yielded the following categories that could have a "profile":
 
 > - Tooling: what capabilities the model can access, and how those capabilities are exposed. (already mentioned above)
-> - Context: how much history, bootstrap text, tool output, memory, and files enter the prompt.
+> - Context: system prompt, how much history, bootstrap text, tool output, memory, and files enter the prompt.
 > - Model behavior: context window, thinking/reasoning mode, verbosity, temperature, and provider params.
 > - Memory: whether memory is enabled, what it searches, and how much it returns.
 > - Safety: filesystem limits, exec policy, sandboxing, and approvals.
@@ -42,7 +42,7 @@ These are either already configured different for different models in some way, 
 
 This is not a design doc, so I am intentionally not proposing any configuration shape for the categories above.
 
-I personally predict that tool profiles and the system prompt will be the 2 main things people will want to customize.
+I personally predict that tool profiles and the system prompt will be the 2 primary things people will want to customize.
 
 ## Complexity
 
@@ -83,11 +83,44 @@ On this registry, model publishers will want to publish the right configuration 
 
 My feeling is, since OpenClaw will control its configuration interface, it will also be the one hosting this registry, most likely under ClawHub.
 
-## How This Would Look Tangibly
+## How this would tangibly look
 
-ClawHub would recognize Hugging Face users and organizations by their permanent ID.
+ClawHub would recognize Hugging Face users and organizations by their permanent ID (the internal Hugging Face ID that stays the same across renames)
 
 You would be able to sign into ClawHub, e.g. as Google, and submit a proposed configuration for e.g. how Gemma 4 12B should run. Maybe even per each quantization/GGUF file.
+
+<details>
+<summary>
+
+Models themselves can be identified by their [HF URIs](https://huggingface.co/docs/huggingface_hub/en/package_reference/hf_uris), e.g. `hf://models/unsloth/gemma-4-12b-it-GGUF@v1.0/gemma-4-12b-it-BF16.gguf`.
+
+It is possible to specify exactly which model you mean using a specific revision or tag, click to see more.
+    
+</summary>
+
+```
+# branch
+hf://models/unsloth/gemma-4-12b-it-GGUF@main/gemma-4-12b-it-BF16.gguf
+
+# another branch
+hf://models/unsloth/gemma-4-12b-it-GGUF@dev/gemma-4-12b-it-BF16.gguf
+
+# Git tag
+hf://models/unsloth/gemma-4-12b-it-GGUF@v1.0/gemma-4-12b-it-BF16.gguf
+
+# SemVer-ish Git tag
+hf://models/unsloth/gemma-4-12b-it-GGUF@v1.0.3/gemma-4-12b-it-BF16.gguf
+
+# release/date tag
+hf://models/unsloth/gemma-4-12b-it-GGUF@2025-06-01/gemma-4-12b-it-BF16.gguf
+
+# full commit SHA
+hf://models/unsloth/gemma-4-12b-it-GGUF@4d33b01d79672f27f001f6abade33f22d993b151/gemma-4-12b-it-BF16.gguf
+
+# PR ref
+hf://models/unsloth/gemma-4-12b-it-GGUF@refs/pr/10/gemma-4-12b-it-BF16.gguf
+```
+</details>
 
 Similarly, a community member might want to fill in the void when the model publisher is not willing to do that, and publish 3rd party profiles.
 
