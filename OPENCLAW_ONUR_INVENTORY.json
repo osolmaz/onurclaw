@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 367,
-    "open_prs": 367,
-    "open_threads": 734
+    "open_issues": 373,
+    "open_prs": 371,
+    "open_threads": 744
   },
   "open_threads": [
     {
@@ -4430,6 +4430,97 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@obuchowski",
+      "number": 92127,
+      "title": "fix(plugins): stop derived metadata snapshot rescan storm in /models (regression shipped since v2026.5.18)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92127"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Kambrian",
+      "number": 92124,
+      "title": "Memory search breaks with Requesty/OpenAI embedding model prefix mismatch",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92124"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "assignee": "vincentkoc",
+      "creator": "@xydt-tanshanshan",
+      "number": 92121,
+      "title": "[AI] fix(memory): eliminate absent-window race in index swap + prevent auto-create empty DB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92121"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@pikaqqqqqq",
+      "number": 92118,
+      "title": "isModelNotFoundErrorMessage does not match \"Not supported model\" error format",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92118"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wangwllu",
+      "number": 92117,
+      "title": "Flaky / failing: simple-completion-runtime > can preserve asynchronous provider model discovery (introduced 25ca39e876)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92117"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@TurboTheTurtle",
+      "number": 92114,
+      "title": "fix(memory): report indexed vector store in status",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92114"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 92113,
+      "title": "fix(auth): resolve custom provider secretref-managed apiKey from runtime snapshot",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92113"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@qiaokuan1992",
+      "number": 92105,
+      "title": "[Feature]: Configurable page groups for memory-wiki with custom index directories and recursive scanning",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92105"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@apiluguin",
+      "number": 92104,
+      "title": "image/pdf tool: 'Unknown model' for every provider, while the same models work as agent models (2026.5.28 and 2026.6.5)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92104"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@pepe-hern",
+      "number": 92102,
+      "title": "[Bug]: openclaw memory status shows \"Vector store: unknown\" despite working vectors (sqlite-vec lazy init in CLI fast path)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92102"
     },
     {
       "activity": 0,
@@ -9843,8 +9934,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92100,
-    "pr": 92099
+    "issue": 92129,
+    "pr": 92130
   },
   "schema_version": 1,
   "updated": "2026-06-11"

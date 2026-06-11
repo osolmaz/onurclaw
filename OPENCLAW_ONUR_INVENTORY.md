@@ -4,11 +4,11 @@ Updated: 2026-06-11
 
 Review watermark:
 
-- Last reviewed through issue: #92100.
-- Last reviewed through PR: #92099.
+- Last reviewed through issue: #92129.
+- Last reviewed through PR: #92130.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (734)
+## OPEN THREADS (744)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -150,6 +150,16 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92127](https://github.com/openclaw/openclaw/pull/92127) | 0 | Model routing/config | @obuchowski | fix(plugins): stop derived metadata snapshot rescan storm in /models (regression shipped since v2026.5.18) |
+| 📝&nbsp;[#92124](https://github.com/openclaw/openclaw/issues/92124) | 0 | OpenAI-compatible/proxy | @Kambrian | Memory search breaks with Requesty/OpenAI embedding model prefix mismatch |
+| 🔀&nbsp;[#92121](https://github.com/openclaw/openclaw/pull/92121) | 0 | Local memory/embedding | @xydt-tanshanshan | [AI] fix(memory): eliminate absent-window race in index swap + prevent auto-create empty DB<br>Assignee: vincentkoc |
+| 📝&nbsp;[#92118](https://github.com/openclaw/openclaw/issues/92118) | 0 | OpenAI-compatible/proxy | @pikaqqqqqq | isModelNotFoundErrorMessage does not match "Not supported model" error format |
+| 📝&nbsp;[#92117](https://github.com/openclaw/openclaw/issues/92117) | 0 | Model routing/config | @wangwllu | Flaky / failing: simple-completion-runtime > can preserve asynchronous provider model discovery (introduced 25ca39e876) |
+| 🔀&nbsp;[#92114](https://github.com/openclaw/openclaw/pull/92114) | 0 | Local memory/embedding | @TurboTheTurtle | fix(memory): report indexed vector store in status |
+| 🔀&nbsp;[#92113](https://github.com/openclaw/openclaw/pull/92113) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(auth): resolve custom provider secretref-managed apiKey from runtime snapshot |
+| 📝&nbsp;[#92105](https://github.com/openclaw/openclaw/issues/92105) | 0 | Local memory/embedding | @qiaokuan1992 | [Feature]: Configurable page groups for memory-wiki with custom index directories and recursive scanning |
+| 📝&nbsp;[#92104](https://github.com/openclaw/openclaw/issues/92104) | 0 | Model routing/config | @apiluguin | image/pdf tool: 'Unknown model' for every provider, while the same models work as agent models (2026.5.28 and 2026.6.5) |
+| 📝&nbsp;[#92102](https://github.com/openclaw/openclaw/issues/92102) | 0 | Local memory/embedding | @pepe-hern | [Bug]: openclaw memory status shows "Vector store: unknown" despite working vectors (sqlite-vec lazy init in CLI fast path) |
 | 🔀&nbsp;[#92099](https://github.com/openclaw/openclaw/pull/92099) | 0 | Local memory/embedding | @bladin | feat(active-memory): add messageMaxChars config to cap latest user message in message mode |
 | 📝&nbsp;[#92097](https://github.com/openclaw/openclaw/issues/92097) | 0 | OpenAI-compatible/proxy | @LINSUISHENG034 | [Bug] Custom providers with secretref-managed apiKey fail with 503 auth_unavailable after update to 2026.6.5 |
 | 🔀&nbsp;[#92079](https://github.com/openclaw/openclaw/pull/92079) | 0 | Local memory/embedding | @xydt-tanshanshan | [AI] fix(memory): auto-fix providerKey mismatch from CLI index --force |
@@ -1224,4 +1234,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 734 (367 issues, 367 PRs).
+- Kept open threads: 744 (373 issues, 371 PRs).
