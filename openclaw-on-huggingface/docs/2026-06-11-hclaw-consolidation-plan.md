@@ -44,8 +44,36 @@ The bucket client is implemented in this repo using the Python client
   published WASM packages (`@huggingface/xetchunk-wasm`,
   `@huggingface/splitmix64-wasm`, both on npm). The write-token fetch is
   adapted for `repo_type=bucket` per the Python reference.
+- Call chain: our client calls the vendored `uploadShards(...)`, which
+  orchestrates chunk grouping and storage-server traffic and internally uses
+  the npm WASM packages for chunk boundaries/hashes. Our own code stays small:
+  fetch the bucket write token, hand files to `uploadShards`, register the
+  returned hashes via one `/batch` call.
 - Follow-up (separate track, not blocking): upstream bucket support to
   `huggingface/huggingface.js` so the vendor dir can be deleted.
+
+## Primary Risk and Mitigation
+
+The vendored Xet upload path has never been exercised against buckets from
+JavaScript: `uploadShards` was written for git-commit flows, and the bucket
+combination (`repo_type=bucket` write token + `/batch` registration) has only
+ever run through the Rust bindings in Python. The underlying xet-core already
+accepts `"bucket"` as a repo type, so the adaptation should be mechanical —
+but it is unproven.
+
+Mitigation, in order:
+
+1. Build the risk out FIRST: the very first implementation artifact is the
+   bucket-client parity test against a real test bucket (upload bytes + file,
+   list, metadata, download, delete), with the `hf` CLI performing the same
+   operations as the reference. This proves or falsifies the vendored upload
+   within the first hour of work.
+2. If the vendored upload stalls: ship `hclaw` and the REST half of the client
+   anyway, and keep the `hf` CLI in the Docker image as the interim upload
+   transport. The "remove Python from the image" consequence then lands one
+   commit later instead of blocking the CLI.
+3. Never land both transports: whichever upload path ships, the other is
+   deleted in the same change (one canonical path).
 
 Consequence for the Docker image: the state-syncer switches from shelling out
 to the `hf` CLI to the shared TS bucket client, and Python + the `hf` CLI are
