@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 362,
-    "open_prs": 361,
-    "open_threads": 723
+    "open_issues": 365,
+    "open_prs": 362,
+    "open_threads": 727
   },
   "open_threads": [
     {
@@ -4430,6 +4430,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@xiaopings",
+      "number": 92057,
+      "title": "Gateway becomes slow or times out under multi-session / multi-agent load",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92057"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@arturomagdiel",
+      "number": 92054,
+      "title": "[Bug]: Windows 11 - Claude CLI provider fails with spawn claude ENOENT",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92054"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangwllu",
+      "number": 92053,
+      "title": "fix(thinking): apply Claude profile to anthropic-messages catalog rows",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92053"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@reginaldomarcilon",
+      "number": 92050,
+      "title": "memory-core: short-term-recall.json grows without rotation → permanent dreaming promotion deadlock once it crosses the 16MiB read limit",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92050"
     },
     {
       "activity": 0,
@@ -9744,8 +9780,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92044,
-    "pr": 92040
+    "issue": 92060,
+    "pr": 92056
   },
   "schema_version": 1,
   "updated": "2026-06-11"
