@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 365,
-    "open_prs": 362,
-    "open_threads": 727
+    "open_issues": 366,
+    "open_prs": 365,
+    "open_threads": 731
   },
   "open_threads": [
     {
@@ -4430,6 +4430,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@HaozheZhang6",
+      "number": 92072,
+      "title": "fix(gateway): treat `google-gemini-cli` Gemini models as image-capable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92072"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@fsdwen",
+      "number": 92071,
+      "title": "fix(anthropic): resolve thinking profile for custom Anthropic-compatible providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92071"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@arkyu2077",
+      "number": 92065,
+      "title": "fix(memory): honor configured qmd search timeouts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92065"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@rrriiiccckkk",
+      "number": 92061,
+      "title": "memory-core: CJK text FTS5 search returns textScore=0 with trigram tokenizer",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92061"
     },
     {
       "activity": 0,
@@ -9780,8 +9816,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92060,
-    "pr": 92056
+    "issue": 92078,
+    "pr": 92075
   },
   "schema_version": 1,
   "updated": "2026-06-11"
