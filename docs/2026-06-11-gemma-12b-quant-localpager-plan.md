@@ -92,9 +92,10 @@ only seconds; the time was spent generating a very long reasoning stream. A
 third trial with `--thinking medium` was still generating after many minutes and
 was killed manually.
 
-Use `--thinking low` plus the 4-minute timeout for the next smoke. If `low`
-times out, record that result and either test a lower reasoning level or reject
-the quant/settings pair for this task.
+The follow-up Q4_K_M trial with `--thinking low` and `--timeout-ms 240000` also
+timed out at 240.1 seconds without structured output. LM Studio stopped
+generation on client disconnect and returned to idle. For Q4_K_M, use
+`minimal` or `off` next if the goal is a result under the 4-minute task cap.
 
 ## Commands
 
@@ -118,7 +119,7 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --seed 1234 \
   --presence-penalty 0 \
   --frequency-penalty 0 \
-  --thinking low \
+  --thinking minimal \
   --timeout-ms 240000 \
   --run-dir scratch/gemma-12b-quant-smoke-localpager-reasoning/q4-k-m \
   --quiet
@@ -168,7 +169,7 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --seed 1234 \
   --presence-penalty 0 \
   --frequency-penalty 0 \
-  --thinking low \
+  --thinking minimal \
   --timeout-ms 240000 \
   --concurrency 2 \
   --run-dir scratch/gemma-12b-quant-concurrency-localpager-reasoning/q4-k-m-c2 \
