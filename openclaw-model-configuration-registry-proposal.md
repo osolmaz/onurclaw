@@ -94,7 +94,7 @@ You would be able to sign into ClawHub, e.g. as Google, and submit a proposed co
 
 Models themselves can be identified by their [HF URIs](https://huggingface.co/docs/huggingface_hub/en/package_reference/hf_uris), e.g. `hf://models/unsloth/gemma-4-12b-it-GGUF@v1.0/gemma-4-12b-it-BF16.gguf`.
 
-It is possible to specify exactly which model you mean using a specific revision or tag, click to see more.
+It is possible to specify exactly which model you mean using a specific revision or tag, click on this to see more.
     
 </summary>
 
