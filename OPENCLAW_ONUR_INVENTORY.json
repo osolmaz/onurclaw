@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 374,
-    "open_prs": 376,
-    "open_threads": 750
+    "open_issues": 375,
+    "open_prs": 381,
+    "open_threads": 756
   },
   "open_threads": [
     {
@@ -4430,6 +4430,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@RishiP2006",
+      "number": 92174,
+      "title": "feat(aigateway): add AIgateway as a bundled model provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92174"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wangwllu",
+      "number": 92168,
+      "title": "[Bug]: /btw fails with \"Unknown model\" for anthropic/* aliases routed via agentRuntime: claude-cli (resolver path divergence from main agent loop)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92168"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 92166,
+      "title": "fix(media-understanding): resolve image model input from catalog, preserve explicit text-only (#92104)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92166"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bennewell35",
+      "number": 92165,
+      "title": "fix(memory): show dreaming status without search",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92165"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@draix",
+      "number": 92164,
+      "title": "fix(memory-core): score CJK keyword search instead of textScore=0 with trigram FTS5",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92164"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 92159,
+      "title": "fix(media-understanding): resolve image model input from bundled catalog for inline providers (#92104)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92159"
     },
     {
       "activity": 0,
@@ -9988,8 +10042,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92148,
-    "pr": 92157
+    "issue": 92171,
+    "pr": 92174
   },
   "schema_version": 1,
   "updated": "2026-06-11"
