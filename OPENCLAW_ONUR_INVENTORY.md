@@ -4,11 +4,11 @@ Updated: 2026-06-12
 
 Review watermark:
 
-- Last reviewed through issue: #92260.
-- Last reviewed through PR: #92261.
+- Last reviewed through issue: #92275.
+- Last reviewed through PR: #92269.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (780)
+## OPEN THREADS (785)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -150,6 +150,11 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92273](https://github.com/openclaw/openclaw/issues/92273) | 0 | Local memory/embedding | @poison | Tool Search (mode: "tools") silently breaks the pre-compaction memory flush: model calls tool_call with a guessed name, gets an unrecoverable error, durable memories are lost |
+| 📝&nbsp;[#92271](https://github.com/openclaw/openclaw/issues/92271) | 0 | Model routing/config | @MertBasar0 | Fallback turns can re-execute work already reported as completed (semantic recursive task execution) |
+| 🔀&nbsp;[#92265](https://github.com/openclaw/openclaw/pull/92265) | 0 | OpenAI-compatible/proxy | @joshavant | Fix configured DeepSeek model transport inheritance |
+| 🔀&nbsp;[#92264](https://github.com/openclaw/openclaw/pull/92264) | 0 | Model routing/config | @zenglingbiao | fix(btw): resolve agentRuntime alias models in /btw side questions (fixes #92168) |
+| 🔀&nbsp;[#92263](https://github.com/openclaw/openclaw/pull/92263) | 0 | Model/provider behavior | @harjothkhara | Fix heartbeat reasoning payload selection |
 | 🔀&nbsp;[#92261](https://github.com/openclaw/openclaw/pull/92261) | 0 | Local memory/embedding | @skocher | Fix live orphan session transcript visibility |
 | 📝&nbsp;[#92260](https://github.com/openclaw/openclaw/issues/92260) | 0 | Model/provider behavior | @jmpei | [Bug]: Heartbeat delivers reasoning payload as main reply when includeReasoning is false (resolveHeartbeatReplyPayload ignores isReasoning) |
 | 🔀&nbsp;[#92254](https://github.com/openclaw/openclaw/pull/92254) | 0 | Model routing/config | @jbetala7 | fix(model-picker): preserve auth profile override when selecting a model |
@@ -802,6 +807,7 @@ These were in earlier local-model notes or candidate pools but are not counted a
 
 | Thread | Status checked | Note |
 | --- | --- | --- |
+| [#92266](https://github.com/openclaw/openclaw/pull/92266) | Closed in local gitcrawl 2026-06-12 | fix(memory): report vector store ready when indexed chunks exist but probe was skipped; no longer open. |
 | [#91589](https://github.com/openclaw/openclaw/pull/91589) | Closed in local gitcrawl 2026-06-11 | Harden external CLI auth sync diagnostics; no longer open. |
 | [#91580](https://github.com/openclaw/openclaw/pull/91580) | Closed in local gitcrawl 2026-06-11 | fix(agents): trim dense text delta snapshots; no longer open. |
 | [#91579](https://github.com/openclaw/openclaw/pull/91579) | Closed in local gitcrawl 2026-06-11 | fix(agents): bootstrap OpenClaw auth for codex harness when provider is codex; no longer open. |
@@ -1270,4 +1276,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 780 (381 issues, 399 PRs).
+- Kept open threads: 785 (383 issues, 402 PRs).
