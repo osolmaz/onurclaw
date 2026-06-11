@@ -3,7 +3,7 @@
 
 tl;dr I propose that instead of having a binary `localModelLean` toggle, we should either: 
 
-- add to ClawHub an ability for Hugging Face model publishers or community members to publish a "model profile" that best matches the model's capabilities (HF is already the de facto "registrar" for open models). Then once we have our own benchmarks, we can do things like automatic prompt optimization for each model, and automatic profile generation, all on Clawhub.
+- add to ClawHub an ability for Hugging Face model publishers or community members to publish a "model profile" that best matches the model's capabilities (HF is already the de facto "registrar" for open models). Then once we have our own benchmarks, we can do things like automatic prompt optimization for each model (see [GEPA](https://gepa-ai.github.io/gepa/)), and automatic profile generation, all on Clawhub.
 - or at least have a ladder like approach (tiny, small, medium, large) if we cannot afford.
 
 ---
@@ -60,7 +60,7 @@ Basic idea: Each model can define a "profile", hosted somewhere, editable by com
 
 Peter had previously rightfully disagreed with the idea of hardcoding local-model specific configurations into the core (not that I had proposed putting them into the core, that was misunderstood).
 
-There is real work needed when trying to make a harness work well with a certain model. And it is I think obvious that every model might need a different system prompt (take the goblin thing in GPT for example).
+There is real work needed when trying to make a harness work well with a certain model. And it is I think obvious that every model might need a different system prompt (take the goblin thing in GPT for example). And if there are really good benchmarks, this process and be automated. See [GEPA](https://gepa-ai.github.io/gepa/) for example.
 
 We already did so much work making the harness work with Claude, and then GPT. Making local models can be equally complicated, so we would benefit from having more configurability to optimize OpenClaw for each model.
 
@@ -125,6 +125,21 @@ hf://models/unsloth/gemma-4-12b-it-GGUF@refs/pr/10/gemma-4-12b-it-BF16.gguf
 Similarly, a community member might want to fill in the void when the model publisher is not willing to do that, and publish 3rd party profiles.
 
 Then, when a user specifies in their OpenClaw config that they want to run Gemma 4 12B, that would automatically download the configuration Google optimized for that model, and run in the best way possible. (Or if nonexistent, user might choose from popular community provided ones)
+
+High level flow when a user is searching for an open model or model profile on a future ClawHub dashboard:
+
+- User enters a search query (e.g. "gemma 4 12b it")
+- Dashboard calls out to Hugging Face API and brings back a list of matching models (say `google/gemma-4-12b-it`)
+- User selects an official looking one from the list
+- The model has different quantizations (q4, q6, bf16). Dashboard gives user a list ranked with decreasing popularity and asks user to select one
+- User chooses `hf://models/unsloth/gemma-4-12b-it-GGUF@main/gemma-4-12b-it-BF16.gguf`
+- Dashboard now searches in internal database for profiles that match the selected model (this is a deterministic filter thanks to HF URI and not fuzzy)
+- Dashboard finds "official" an one from `unsloth`, and unofficial community profiles created by users `gemma_fan1`, `gemma_fan2`, `gemma_fan3`.
+- In a hypothetical future where we have model telemetry, we can do this. It turns out the profile from `gemma_fan2` has been downloaded more than the official one, because they are a hardcore user and optimized it a lot more than unsloth did. So `unsloth`'s entry is marked with an official badge, but it is shown under the most popular profile.
+
+Something along those lines. I am not going to go into the social aspects of it like a model having likes on Hugging Face or this future dashboard.
+
+---
 
 (Alternatives to this could be a manifest format OpenClaw defines, and model publishers include in the model repo. But I think it's a long shot to expect that from model publishers.)
 
