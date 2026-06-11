@@ -38,12 +38,11 @@ Because we are trying to handle complexities on 3 fronts:
 
 ## Model profiles as a possible solution
 
-Each model can define a "profile"
+Basic idea: Each model can define a "profile", hosted somewhere, editable by community members or the model publishers themselves. + Have default fallback profiles which users can choose from, when there is no profile optimized for a model.
 
-Should we then run benchmarks, ShellBench or ClawBench, on each model, and curate the optimum profile?
+Peter had previously disagreed with the idea of hardcoding local-model specific configurations into the core (not that I had proposed putting them into the core). There is real work needed when trying to make a harness work well with a certain model. And it is I think obvious that every model might need a different system prompt (take the goblin thing in GPT for example).
 
-Peter had previously disagreed with such an idea. But my counter point would be that we already did so much work making the harness work with Claude, and then GPT. Making local models can be equally complicated, so wouldn't we benefit from having more configurability to optimize OpenClaw for each model?
-
+We already did so much work making the harness work with Claude, and then GPT. Making local models can be equally complicated, so we would benefit from having more configurability to optimize OpenClaw for each model.
 
 To begin with, we will have benchmarks that define the set of tasks a personal agent should be able to accomplish. That gives us a constraint to optimize against.
 
@@ -53,13 +52,12 @@ Hugging Face is the de facto registrar/single source of truth for model ownershi
 
 There will be some system that automatically runs aforementioned benchmarks against each model automatically.
 
-I don't know if this will be done on agent side: OpenClaw foundation running OpenClaw benchmarks, for major models on Hugging Face.
+I don't know if this will be done on agent side: 
+- OpenClaw foundation running OpenClaw benchmarks, for major models on Hugging Face.
+- Or some third party or Hugging Face side: Hugging Face runs benchmarks for each relevant personal agent.
+- Or both.
 
-Or some third party or Hugging Face side: Hugging Face runs benchmarks for each relevant personal agent.
-
-Or both.
-
-Each personal agent framework, say OpenClaw, will need a registry of model configurations, specifically how it runs best on OpenClaw.
+OpenClaw will need a registry of model configurations, specifically how it runs best on OpenClaw.
 
 On this registry, model publishers will want to publish the right configuration for their model on OpenClaw, as informed by the automatically run benchmark I've mentioned above.
 
@@ -71,13 +69,14 @@ ClawHub would recognize Hugging Face users and organizations by their permanent 
 
 You would be able to sign into ClawHub, e.g. as Google, and submit a proposed configuration for e.g. how Gemma 4 12B should run. Maybe even per each quantization/GGUF file.
 
-Then, when a user specifies in their OpenClaw config that they want to run Gemma 4 12B, that would automatically download the configuration Google optimized for that model, and run in the best way possible.
+Similarly, a community member might want to fill in the void when the model publisher is not willing to do that, and publish 3rd party profiles.
 
-Alternatives to this could be a manifest format OpenClaw defines, and model publishers include in the model repo.
+Then, when a user specifies in their OpenClaw config that they want to run Gemma 4 12B, that would automatically download the configuration Google optimized for that model, and run in the best way possible. (Or if nonexistent, user might choose from popular community provided ones)
 
-But the bottom line is, OpenClaw should provide benchmarks to run, those benchmarks should be run automatically, and coming up with the right configuration and publishing it should be possible in an easy, AI-assisted way.
+(Alternatives to this could be a manifest format OpenClaw defines, and model publishers include in the model repo. But I think it's a long shot to expect that from model publishers.)
 
-In the meanwhile, I would be interested who from the team might be a good candidate to get feedback about this. Someone who worked with standardization, manifest formats, and such.
+Bottom line: OpenClaw should provide benchmarks to run, those benchmarks should be run automatically, and coming up with the right configuration and publishing it should be possible in an easy, AI-assisted way.
+
 
 ## An alternative that I don't like
 
