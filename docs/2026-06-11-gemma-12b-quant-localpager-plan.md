@@ -42,6 +42,10 @@ direct OpenAI-compatible recorder for classification runs.
   - `--context-window 262144` when LM Studio loaded the model at 262k context.
   - `--context-window 131072` only if that is the actual loaded context.
   - `--max-tokens 16384` for reasoning-enabled runs.
+- Gemma 4 12B reasoning can take a long time. Treat long reasoning latency as
+  expected, not a failure, unless the run hits timeout, OOM, server restart, or
+  invalid/truncated output.
+- Use `--timeout-ms 3600000` so each row can run for up to 60 minutes.
 - Start concurrency at `1`.
 - Raise concurrency gradually only after the previous level completed without
   OOM, server crash, schema failures caused by truncation, or request timeouts.
@@ -83,6 +87,7 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --presence-penalty 0 \
   --frequency-penalty 0 \
   --thinking on \
+  --timeout-ms 3600000 \
   --run-dir scratch/gemma-12b-quant-smoke-localpager-reasoning/q4-k-m \
   --quiet
 ```
@@ -132,6 +137,7 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --presence-penalty 0 \
   --frequency-penalty 0 \
   --thinking on \
+  --timeout-ms 3600000 \
   --concurrency 2 \
   --run-dir scratch/gemma-12b-quant-concurrency-localpager-reasoning/q4-k-m-c2 \
   --quiet
