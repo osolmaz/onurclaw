@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 375,
-    "open_prs": 381,
-    "open_threads": 756
+    "open_issues": 376,
+    "open_prs": 387,
+    "open_threads": 763
   },
   "open_threads": [
     {
@@ -4430,6 +4430,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yetval",
+      "number": 92196,
+      "title": "fix(memory-search): stop hybrid fusion from discounting vector-only multimodal results",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92196"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@whiteyzy",
+      "number": 92192,
+      "title": "fix(model-auth): resolve secretref-managed custom provider keys from runtime config snapshot",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92192"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@ai-hpc",
+      "number": 92191,
+      "title": "fix(agents): retry thinking-only errored turns",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92191"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yaorenliang",
+      "number": 92187,
+      "title": "Memory Index Repeatedly Broken After Gateway Restart (OOM during Rebuild)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92187"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wangwllu",
+      "number": 92181,
+      "title": "fix(agents): align /btw model resolution with runtime aliases",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92181"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xydigit-sj",
+      "number": 92177,
+      "title": "fix(agents): treat NO_REPLY-only turns as silent regardless of silence flag (#92038)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92177"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 92176,
+      "title": "fix(media-understanding): resolve image model input from catalog, preserve explicit text-only (#92104)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92176"
     },
     {
       "activity": 0,
@@ -10042,8 +10105,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92171,
-    "pr": 92174
+    "issue": 92197,
+    "pr": 92196
   },
   "schema_version": 1,
   "updated": "2026-06-11"
