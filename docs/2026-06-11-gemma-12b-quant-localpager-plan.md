@@ -150,12 +150,60 @@ Record the chosen safe concurrency per quant:
 | Q6_K | TBD | TBD |
 | Q8_0 | TBD | TBD |
 
+## Metrics To Extract
+
+Each smoke and concurrency run must produce a compact metrics record. Do not
+rely only on the Markdown summary.
+
+Record these fields for each run:
+
+- quantization
+- model id
+- loaded context length
+- requested `--context-window`
+- requested `--max-tokens`
+- requested `--thinking`
+- requested concurrency
+- sample mode and row count
+- total wall time
+- per-row elapsed seconds
+- average latency seconds
+- p95 latency seconds
+- rows/min
+- prompt tokens
+- completion tokens
+- total tokens
+- reasoning tokens, when exposed
+- completion tokens/sec
+- total tokens/sec
+- error count
+- schema error count
+- output topics for the one-row smoke
+
+Expected sources:
+
+- `*.outputs.jsonl`: per-row outputs, per-row elapsed seconds, parsed usage when
+  Localpager Agent exposes it.
+- `*.run-stats.json`: aggregate elapsed time, latency, rows/min, errors, and
+  schema errors.
+- `summary.md`: human-readable cross-check only.
+- raw Localpager Agent session artifacts: fallback source for usage fields when
+  the compact output has `usage: null`.
+- LM Studio logs: fallback source for prompt/completion/reasoning token counts
+  and tokens/sec if Localpager artifacts do not expose them.
+
+If any token or speed field cannot be extracted, mark it as `missing` and write
+the reason. Do not treat missing usage as zero.
+
 ## Review Checklist
 
 - [ ] Every one-row smoke has `errors=0` or each error is explained.
 - [ ] Every concurrency probe has `errors=0` or each error is explained.
 - [ ] Every run has `schema_errors=0` or each schema error is inspected.
-- [ ] Compare rows/min, average latency, p95 latency, and completion behavior.
+- [ ] Extract total duration, tokens/sec, token counts, latency, rows/min, and
+      reasoning-token values where available.
+- [ ] Compare rows/min, average latency, p95 latency, token speed, and
+      completion behavior.
 - [ ] Compare label quality manually on the one-row smoke outputs.
 - [ ] Record the highest safe concurrency for each quantization.
 - [ ] Do not commit raw `raw/` Localpager Agent artifacts unless there is a
