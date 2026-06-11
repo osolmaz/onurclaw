@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 376,
-    "open_prs": 387,
-    "open_threads": 763
+    "open_issues": 377,
+    "open_prs": 390,
+    "open_threads": 767
   },
   "open_threads": [
     {
@@ -4430,6 +4430,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zhbcher",
+      "number": 92218,
+      "title": "memory_search tool disabled with QMD backend",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92218"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@obuchowski",
+      "number": 92217,
+      "title": "feat(fireworks): catalog DeepSeek V4 Pro, MiniMax M2.7, GLM-5.1, GPT-OSS 120B reasoning models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92217"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@whiteyzy",
+      "number": 92208,
+      "title": "fix(model-auth): resolve secretref-managed custom provider keys from runtime config snapshot",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92208"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@zenglingbiao",
+      "number": 92200,
+      "title": "fix(openai-completions): fallback to compat.reasoningEffortMap when thinkingLevelMap is unset (fixes #91913)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92200"
     },
     {
       "activity": 0,
@@ -10105,9 +10141,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 92197,
-    "pr": 92196
+    "issue": 92218,
+    "pr": 92223
   },
   "schema_version": 1,
-  "updated": "2026-06-11"
+  "updated": "2026-06-12"
 }
