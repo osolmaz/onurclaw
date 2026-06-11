@@ -12,6 +12,7 @@ This repo contains curated maintainer artifacts that are useful to share openly:
 - `scripts/check_synced_skill.py`: verifies that the sandbox inventory skill copy matches the tools source when that checkout is available.
 - `scripts/run_inventory_job.sh`: constrained cron entrypoint for the inventory automation.
 - `docs/inventory-job.md`: public security contract for the sandboxed inventory job.
+- `docs/2026-06-11-gemma-12b-quant-localpager-plan.md`: plan for rerunning the Gemma 4 12B quantization smoke through Localpager Agent.
 - `skills/openclaw-onur-inventory/SKILL.md`: local sandbox skill copy read by the no-network inventory job.
 - `openclaw-model-configuration-registry-proposal.md`: proposal for moving beyond `localModelLean` toward benchmark-informed model configuration management.
 - `openclaw-*.md` and `active-memory-issue.md`: public OpenClaw implementation plans, repro notes, and findings.
