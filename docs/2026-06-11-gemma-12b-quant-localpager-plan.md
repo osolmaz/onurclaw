@@ -46,10 +46,14 @@ direct OpenAI-compatible recorder for classification runs.
   - `--context-window 262144` when LM Studio loaded the model at 262k context.
   - `--context-window 131072` only if that is the actual loaded context.
   - `--max-tokens 16384` for reasoning-enabled runs.
-- Gemma 4 12B reasoning can take a long time. Treat long reasoning latency as
-  expected, not a failure, unless the run hits timeout, OOM, server restart, or
-  invalid/truncated output.
-- Use `--timeout-ms 3600000` so each row can run for up to 60 minutes.
+- Gemma 4 12B reasoning can take a long time, but this smoke test must not let
+  a single row occupy the machine indefinitely. Use a 4-minute per-row task cap:
+  `--timeout-ms 240000`.
+- Treat a 4-minute timeout as the result for that quantization/settings pair:
+  record it as too slow or failed, then move on. Do not raise the timeout to
+  wait for a slow reasoning trace.
+- Use a valid Localpager/Pi thinking level. Valid levels are `off`, `minimal`,
+  `low`, `medium`, `high`, and `xhigh`; do not use `on`.
 - Start concurrency at `1`.
 - Raise concurrency gradually only after the previous level completed without
   OOM, server crash, schema failures caused by truncation, or request timeouts.
@@ -78,6 +82,20 @@ Confirm the model id returned by LM Studio matches the command being run.
 run. If it reports no models, load the target reasoning quant in LM Studio
 first.
 
+## Current Finding
+
+The first Q4_K_M trial was run with invalid `--thinking on`; Pi recorded the
+effective thinking level as `off`, and the row still took 245.7 seconds. A
+second trial with valid `--thinking high` reached the old one-hour timeout
+without a final structured output. LM Studio logs showed prompt processing took
+only seconds; the time was spent generating a very long reasoning stream. A
+third trial with `--thinking medium` was still generating after many minutes and
+was killed manually.
+
+Use `--thinking low` plus the 4-minute timeout for the next smoke. If `low`
+times out, record that result and either test a lower reasoning level or reject
+the quant/settings pair for this task.
+
 ## Commands
 
 Run each command only after loading the matching reasoning-enabled quant in
@@ -100,8 +118,8 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --seed 1234 \
   --presence-penalty 0 \
   --frequency-penalty 0 \
-  --thinking on \
-  --timeout-ms 3600000 \
+  --thinking low \
+  --timeout-ms 240000 \
   --run-dir scratch/gemma-12b-quant-smoke-localpager-reasoning/q4-k-m \
   --quiet
 ```
@@ -150,8 +168,8 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --seed 1234 \
   --presence-penalty 0 \
   --frequency-penalty 0 \
-  --thinking on \
-  --timeout-ms 3600000 \
+  --thinking low \
+  --timeout-ms 240000 \
   --concurrency 2 \
   --run-dir scratch/gemma-12b-quant-concurrency-localpager-reasoning/q4-k-m-c2 \
   --quiet
