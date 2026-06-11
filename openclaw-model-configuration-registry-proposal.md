@@ -1,7 +1,7 @@
 # Options for maintaining OpenClaw local model configurations
 
 
-tl;dr I propose instead of a binary `localModelLean` toggle, we should either: 
+tl;dr I propose that instead of having a binary `localModelLean` toggle, we should either: 
 
 - add to ClawHub an ability for Hugging Face model publishers or community members to publish a "model profile" that best matches the model's capabilities (HF is already the de facto "registrar" for open models). Then once we have our own benchmarks, we can do things like automatic prompt optimization for each model, and automatic profile generation, all on Clawhub.
 - or at least have a ladder like approach (tiny, small, medium, large) if we cannot afford.
