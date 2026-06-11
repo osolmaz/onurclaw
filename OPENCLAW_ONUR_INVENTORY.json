@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 373,
-    "open_prs": 371,
-    "open_threads": 744
+    "open_issues": 374,
+    "open_prs": 376,
+    "open_threads": 750
   },
   "open_threads": [
     {
@@ -4430,6 +4430,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@marcoraepple-sys",
+      "number": 92148,
+      "title": "[Bug]: 2026.6.5 routes DeepSeek (custom OpenAI-compatible provider) to the OpenAI Responses API → 401, now affecting non-reasoning deepseek-v4-pro",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92148"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@skingford",
+      "number": 92147,
+      "title": "[codex] support Responses system prompts in instructions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92147"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lzyyzznl",
+      "number": 92145,
+      "title": "fix(model-auth): resolve secretref-managed apiKey from runtime config snapshot (#92097)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92145"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xialonglee",
+      "number": 92135,
+      "title": "fix(openai-embedding): preserve openai/ prefix for non-native base URLs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@priyansh19",
+      "number": 92133,
+      "title": "fix(agents): handle \"Not supported model\" error format in isModelNotFoundErrorMessage",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92133"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Pluviobyte",
+      "number": 92131,
+      "title": "[codex] fix(agents): detect not supported model errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92131"
     },
     {
       "activity": 0,
@@ -9934,8 +9988,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92129,
-    "pr": 92130
+    "issue": 92148,
+    "pr": 92157
   },
   "schema_version": 1,
   "updated": "2026-06-11"

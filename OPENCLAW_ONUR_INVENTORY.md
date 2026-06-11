@@ -4,11 +4,11 @@ Updated: 2026-06-11
 
 Review watermark:
 
-- Last reviewed through issue: #92129.
-- Last reviewed through PR: #92130.
+- Last reviewed through issue: #92148.
+- Last reviewed through PR: #92157.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (744)
+## OPEN THREADS (750)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -150,6 +150,12 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92148](https://github.com/openclaw/openclaw/issues/92148) | 0 | OpenAI-compatible/proxy | @marcoraepple-sys | [Bug]: 2026.6.5 routes DeepSeek (custom OpenAI-compatible provider) to the OpenAI Responses API → 401, now affecting non-reasoning deepseek-v4-pro |
+| 🔀&nbsp;[#92147](https://github.com/openclaw/openclaw/pull/92147) | 0 | OpenAI-compatible/proxy | @skingford | [codex] support Responses system prompts in instructions |
+| 🔀&nbsp;[#92145](https://github.com/openclaw/openclaw/pull/92145) | 0 | Model routing/config | @lzyyzznl | fix(model-auth): resolve secretref-managed apiKey from runtime config snapshot (#92097) |
+| 🔀&nbsp;[#92135](https://github.com/openclaw/openclaw/pull/92135) | 0 | Local memory/embedding | @xialonglee | fix(openai-embedding): preserve openai/ prefix for non-native base URLs |
+| 🔀&nbsp;[#92133](https://github.com/openclaw/openclaw/pull/92133) | 0 | OpenAI-compatible/proxy | @priyansh19 | fix(agents): handle "Not supported model" error format in isModelNotFoundErrorMessage |
+| 🔀&nbsp;[#92131](https://github.com/openclaw/openclaw/pull/92131) | 0 | OpenAI-compatible/proxy | @Pluviobyte | [codex] fix(agents): detect not supported model errors |
 | 🔀&nbsp;[#92127](https://github.com/openclaw/openclaw/pull/92127) | 0 | Model routing/config | @obuchowski | fix(plugins): stop derived metadata snapshot rescan storm in /models (regression shipped since v2026.5.18) |
 | 📝&nbsp;[#92124](https://github.com/openclaw/openclaw/issues/92124) | 0 | OpenAI-compatible/proxy | @Kambrian | Memory search breaks with Requesty/OpenAI embedding model prefix mismatch |
 | 🔀&nbsp;[#92121](https://github.com/openclaw/openclaw/pull/92121) | 0 | Local memory/embedding | @xydt-tanshanshan | [AI] fix(memory): eliminate absent-window race in index swap + prevent auto-create empty DB<br>Assignee: vincentkoc |
@@ -1234,4 +1240,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 744 (373 issues, 371 PRs).
+- Kept open threads: 750 (374 issues, 376 PRs).
