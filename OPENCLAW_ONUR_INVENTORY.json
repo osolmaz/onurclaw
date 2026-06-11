@@ -3182,9 +3182,9 @@
   ],
   "counts": {
     "closed_threads": 454,
-    "open_issues": 366,
-    "open_prs": 366,
-    "open_threads": 732
+    "open_issues": 367,
+    "open_prs": 367,
+    "open_threads": 734
   },
   "open_threads": [
     {
@@ -4430,6 +4430,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bladin",
+      "number": 92099,
+      "title": "feat(active-memory): add messageMaxChars config to cap latest user message in message mode",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92099"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@LINSUISHENG034",
+      "number": 92097,
+      "title": "[Bug] Custom providers with secretref-managed apiKey fail with 503 auth_unavailable after update to 2026.6.5",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92097"
     },
     {
       "activity": 0,
@@ -9825,8 +9843,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92088,
-    "pr": 92091
+    "issue": 92100,
+    "pr": 92099
   },
   "schema_version": 1,
   "updated": "2026-06-11"
