@@ -23,7 +23,7 @@ direct OpenAI-compatible recorder for classification runs.
 
 - dataset repo: `/home/bob/oc/openclaw-classification-dataset`
 - runner: `scripts/batch_localpager_agent_prompt.mjs`
-- prompt: `prompts/localpager-openclaw-routing-v8-production.hbs`
+- prompt: `prompts/2026-06-09-ds4-topic-inventory.hbs`
 - dataset: `ds4.jsonl`
 - output root: `scratch/gemma-12b-quant-smoke-localpager-reasoning/`
 - concurrency output root:
@@ -71,8 +71,8 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --model-key gemma-12b-q4km-reason \
   --model-quantization "Q4_K_M (4-bit)" \
   --base-url http://127.0.0.1:1234/v1 \
-  --prompt-id localpager-openclaw-routing-v8-production \
-  --prompt-template prompts/localpager-openclaw-routing-v8-production.hbs \
+  --prompt-id ds4-topic-inventory \
+  --prompt-template prompts/2026-06-09-ds4-topic-inventory.hbs \
   --sample head \
   --limit 1 \
   --context-window 262144 \
@@ -120,8 +120,8 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --model-key gemma-12b-q4km-reason-c2 \
   --model-quantization "Q4_K_M (4-bit)" \
   --base-url http://127.0.0.1:1234/v1 \
-  --prompt-id localpager-openclaw-routing-v8-production \
-  --prompt-template prompts/localpager-openclaw-routing-v8-production.hbs \
+  --prompt-id ds4-topic-inventory \
+  --prompt-template prompts/2026-06-09-ds4-topic-inventory.hbs \
   --sample stratified \
   --limit 6 \
   --context-window 262144 \
