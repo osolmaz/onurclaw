@@ -1,4 +1,4 @@
-# Options for maintaining OpenClaw local model configurations
+# Options for maintaining OpenClaw local model profiles
 
 
 tl;dr I propose that instead of having a binary `localModelLean` toggle, we should either: 
