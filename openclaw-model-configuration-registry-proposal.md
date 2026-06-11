@@ -83,7 +83,7 @@ On this registry, model publishers will want to publish the right configuration 
 
 My feeling is, since OpenClaw will control its configuration interface, it will also be the one hosting this registry, most likely under ClawHub.
 
-## How this would tangibly look
+## Tangible example
 
 ClawHub would recognize Hugging Face users and organizations by their permanent ID (the internal Hugging Face ID that stays the same across renames)
 
