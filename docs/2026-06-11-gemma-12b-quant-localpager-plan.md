@@ -45,7 +45,10 @@ direct OpenAI-compatible recorder for classification runs.
   truncation:
   - `--context-window 262144` when LM Studio loaded the model at 262k context.
   - `--context-window 131072` only if that is the actual loaded context.
-  - `--max-tokens 16384` for reasoning-enabled runs.
+  - Use a bounded `--max-tokens` value that can finish under the 4-minute row
+    timeout. The runner must confirm this reaches LM Studio as request
+    `max_tokens`; otherwise the endpoint can generate until the process timeout
+    kills the run.
 - Gemma 4 12B reasoning can take a long time, but this smoke test must not let
   a single row occupy the machine indefinitely. Use a 4-minute per-row task cap:
   `--timeout-ms 240000`.
@@ -97,6 +100,21 @@ timed out at 240.1 seconds without structured output. LM Studio stopped
 generation on client disconnect and returned to idle. For Q4_K_M, use
 `minimal` or `off` next if the goal is a result under the 4-minute task cap.
 
+Root cause found after inspecting Localpager Agent and LM Studio logs:
+
+- Localpager Agent wrote `--max-tokens` into Pi model metadata, but did not
+  forward it as request `max_tokens` to the OpenAI-compatible backend.
+- The actual LM Studio request therefore had no output-token cap and Gemma kept
+  generating hidden reasoning until either it reached `final_json` or the outer
+  child-process timeout killed it.
+- A Localpager Agent fix was pushed in `osolmaz/localpager` commit `f2950dd`:
+  `--max-tokens` is now forwarded as request `max_tokens` for
+  OpenAI-compatible backends.
+- A proof run with `--max-tokens 768` showed LM Studio receiving
+  `"max_tokens": 768` and stopping after 768 generated tokens in about 30
+  seconds. That run did not classify successfully because Gemma spent the whole
+  768-token budget in hidden reasoning and never called `final_json`.
+
 ## Commands
 
 Run each command only after loading the matching reasoning-enabled quant in
@@ -113,7 +131,7 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --sample head \
   --limit 1 \
   --context-window 262144 \
-  --max-tokens 16384 \
+  --max-tokens 2048 \
   --temperature 0 \
   --top-p 1 \
   --seed 1234 \
@@ -163,7 +181,7 @@ node scripts/batch_localpager_agent_prompt.mjs \
   --sample stratified \
   --limit 6 \
   --context-window 262144 \
-  --max-tokens 16384 \
+  --max-tokens 2048 \
   --temperature 0 \
   --top-p 1 \
   --seed 1234 \
