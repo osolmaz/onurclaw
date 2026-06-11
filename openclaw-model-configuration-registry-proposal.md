@@ -143,7 +143,7 @@ Something along those lines. I am not going to go into the social aspects of it 
 
 (Alternatives to this could be a manifest format OpenClaw defines, and model publishers include in the model repo. But I think it's a long shot to expect that from model publishers.)
 
-Bottom line: OpenClaw should provide benchmarks to run, those benchmarks should be run automatically, and coming up with the right configuration and publishing it should be possible in an easy, AI-assisted way.
+Bottom line: OpenClaw should provide benchmarks to run, those benchmarks should be run automatically, and coming up with the right configuration and publishing it should be possible in an easy, AI-assisted way. We should leverage the community and model publishers to maintain and optimize OpenClaw experience.
 
 
 ## An alternative that I don't like
