@@ -3,7 +3,7 @@
 
 tl;dr I propose instead of a binary `localModelLean` toggle, we should either: 
 
-- add to ClawHub an ability for Hugging Face model publishers to set a "model profile" that best matches the model's capabilities (HF is already the de facto "registrar" for open models). Then once we have our own benchmarks, we can do things like automatic prompt optimization for each model, and automatic profile generation, all on Clawhub.
+- add to ClawHub an ability for Hugging Face model publishers or community members to publish a "model profile" that best matches the model's capabilities (HF is already the de facto "registrar" for open models). Then once we have our own benchmarks, we can do things like automatic prompt optimization for each model, and automatic profile generation, all on Clawhub.
 - or at least have a ladder like approach (tiny, small, medium, large) if we cannot afford.
 
 ---
@@ -25,6 +25,20 @@ Regardless, we should get rid of "localness" from naming. I think it's irrelevan
 ## localModelLean conflicts tool profiles
 
 We already have tool profiles: `minimal`, `coding`, `messaging`, `full`. This is conflicting with current behavior of the toggle.
+
+## Other configuration surfaces
+
+Some back and forth with my clanker has yielded the following categories that could have a "profile":
+
+> - Tooling: what capabilities the model can access, and how those capabilities are exposed. (already mentioned above)
+> - Context: how much history, bootstrap text, tool output, memory, and files enter the prompt.
+> - Model behavior: context window, thinking/reasoning mode, verbosity, temperature, and provider params.
+> - Memory: whether memory is enabled, what it searches, and how much it returns.
+> - Safety: filesystem limits, exec policy, sandboxing, and approvals.
+> - Reliability: timeouts, retries, loop detection, fallbacks, and compaction.
+> - Workflow scope: whether the model can do long-running, background, multi-agent, or channel-facing workflows.
+
+These are either already configured different for different models in some way, or could be.
 
 ## Complexity
 
