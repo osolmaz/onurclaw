@@ -1,14 +1,14 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-12
+Updated: 2026-06-13
 
 Review watermark:
 
-- Last reviewed through issue: #92480.
-- Last reviewed through PR: #92477.
+- Last reviewed through issue: #92494.
+- Last reviewed through PR: #92495.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (758)
+## OPEN THREADS (763)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -149,6 +149,11 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92495](https://github.com/openclaw/openclaw/pull/92495) | 0 | OpenAI-compatible/proxy | @mushuiyu886 | fix(opencode): restore Zen model catalog |
+| 📝&nbsp;[#92494](https://github.com/openclaw/openclaw/issues/92494) | 0 | Local memory/embedding | @KingYiKa | Dreaming narrative timeout on ARM devices with many skills (600+) |
+| 🔀&nbsp;[#92493](https://github.com/openclaw/openclaw/pull/92493) | 0 | Model/provider behavior | @mushuiyu886 | fix(cli): clear provider auth warm state on exit |
+| 🔀&nbsp;[#92488](https://github.com/openclaw/openclaw/pull/92488) | 0 | OpenAI-compatible/proxy | @s554097550 | fix(gateway): accept image-only input on /v1/responses |
+| 📝&nbsp;[#92486](https://github.com/openclaw/openclaw/issues/92486) | 0 | Model routing/config | @PatrickTrent | Subagent model override from agents.defaults.subagents.model is silently discarded (modelOverrideSource:"auto" matches legacy-cleanup heuristic) |
 | 📝&nbsp;[#92479](https://github.com/openclaw/openclaw/issues/92479) | 0 | Model routing/config | @aaajiao | feat(opencode): Zen provider ships no model catalog — every Zen model must be hand-registered (opencode-go discovers, opencode does not) |
 | 📝&nbsp;[#92478](https://github.com/openclaw/openclaw/issues/92478) | 0 | Local/media model provider | @novaagentia-cpu | [Bug]: Native Talk button triggers OpenAI Realtime WebRTC call and fails with 500 when Realtime is not configured |
 | 🔀&nbsp;[#92476](https://github.com/openclaw/openclaw/pull/92476) | 0 | Model routing/config | @yu-xin-c | fix(agents): preserve compatible CLI session runtime pins |
@@ -1321,4 +1326,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 758 (381 issues, 377 PRs).
+- Kept open threads: 763 (383 issues, 380 PRs).

@@ -3693,9 +3693,9 @@
   ],
   "counts": {
     "closed_threads": 527,
-    "open_issues": 381,
-    "open_prs": 377,
-    "open_threads": 758
+    "open_issues": 383,
+    "open_prs": 380,
+    "open_threads": 763
   },
   "open_threads": [
     {
@@ -4932,6 +4932,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@mushuiyu886",
+      "number": 92495,
+      "title": "fix(opencode): restore Zen model catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92495"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@KingYiKa",
+      "number": 92494,
+      "title": "Dreaming narrative timeout on ARM devices with many skills (600+)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92494"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@mushuiyu886",
+      "number": 92493,
+      "title": "fix(cli): clear provider auth warm state on exit",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92493"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@s554097550",
+      "number": 92488,
+      "title": "fix(gateway): accept image-only input on /v1/responses",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92488"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@PatrickTrent",
+      "number": 92486,
+      "title": "Subagent model override from agents.defaults.subagents.model is silently discarded (modelOverrideSource:\"auto\" matches legacy-cleanup heuristic)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92486"
     },
     {
       "activity": 0,
@@ -10569,9 +10614,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 92480,
-    "pr": 92477
+    "issue": 92494,
+    "pr": 92495
   },
   "schema_version": 1,
-  "updated": "2026-06-12"
+  "updated": "2026-06-13"
 }
