@@ -3693,9 +3693,9 @@
   ],
   "counts": {
     "closed_threads": 527,
-    "open_issues": 371,
-    "open_prs": 366,
-    "open_threads": 737
+    "open_issues": 374,
+    "open_prs": 369,
+    "open_threads": 743
   },
   "open_threads": [
     {
@@ -4932,6 +4932,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 92431,
+      "title": "fix(agents): use thinking-level fallback for programmatic spawn instead of hard throw (fixes #92412)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92431"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 92424,
+      "title": "fix(agents): resolve fresh model from registry for post-turn reads after /model switch (fixes #92415)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92424"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@samson910022",
+      "number": 92415,
+      "title": "Session-level AgentSession.this.model snapshot is never refreshed after /model switch (affects contextWindow, reasoning, thinkingLevelMap, branch summary)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92415"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@oiGaDio",
+      "number": 92412,
+      "title": "BUG: sessions_spawn silently half-fails when thinking level is unsupported — fan-out spawns produce non-deterministic survivors, no signal to orchestrator (fix: symmetrize CLI-launch fallback with embedded path)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92412"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@oiGaDio",
+      "number": 92405,
+      "title": "subagent spawn persists raw provider instead of CLI runtime — depth-2 cold spawns silently die with 'lost execution context' (two unpatched #57326 call sites, fix included)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92405"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@liuhao1024",
+      "number": 92404,
+      "title": "fix(openai-responses): use instructions parameter for system prompt instead of input array",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92404"
     },
     {
       "activity": 0,
@@ -10380,8 +10434,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92403,
-    "pr": 92399
+    "issue": 92426,
+    "pr": 92431
   },
   "schema_version": 1,
   "updated": "2026-06-12"

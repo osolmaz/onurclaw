@@ -4,11 +4,11 @@ Updated: 2026-06-12
 
 Review watermark:
 
-- Last reviewed through issue: #92403.
-- Last reviewed through PR: #92399.
+- Last reviewed through issue: #92426.
+- Last reviewed through PR: #92431.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (737)
+## OPEN THREADS (743)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -149,6 +149,12 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92431](https://github.com/openclaw/openclaw/pull/92431) | 0 | Model routing/config | @liuhao1024 | fix(agents): use thinking-level fallback for programmatic spawn instead of hard throw (fixes #92412) |
+| 🔀&nbsp;[#92424](https://github.com/openclaw/openclaw/pull/92424) | 0 | Model routing/config | @liuhao1024 | fix(agents): resolve fresh model from registry for post-turn reads after /model switch (fixes #92415) |
+| 📝&nbsp;[#92415](https://github.com/openclaw/openclaw/issues/92415) | 0 | Model routing/config | @samson910022 | Session-level AgentSession.this.model snapshot is never refreshed after /model switch (affects contextWindow, reasoning, thinkingLevelMap, branch summary) |
+| 📝&nbsp;[#92412](https://github.com/openclaw/openclaw/issues/92412) | 0 | Model routing/config | @oiGaDio | BUG: sessions_spawn silently half-fails when thinking level is unsupported — fan-out spawns produce non-deterministic survivors, no signal to orchestrator (fix: symmetrize CLI-launch fallback with embedded path) |
+| 📝&nbsp;[#92405](https://github.com/openclaw/openclaw/issues/92405) | 0 | Model routing/config | @oiGaDio | subagent spawn persists raw provider instead of CLI runtime — depth-2 cold spawns silently die with 'lost execution context' (two unpatched #57326 call sites, fix included) |
+| 🔀&nbsp;[#92404](https://github.com/openclaw/openclaw/pull/92404) | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(openai-responses): use instructions parameter for system prompt instead of input array |
 | 📝&nbsp;[#92400](https://github.com/openclaw/openclaw/issues/92400) | 0 | OpenAI-compatible/proxy | @chenpeimin2 | [Bug]: `openai-responses` adapter sends system prompt in `input` instead of `instructions` |
 | 🔀&nbsp;[#92399](https://github.com/openclaw/openclaw/pull/92399) | 0 | OpenAI-compatible/proxy | @amersheeny | fix(llm): collapse cumulative openai-responses message snapshots instead of concatenating [AI-assisted] |
 | 🔀&nbsp;[#92396](https://github.com/openclaw/openclaw/pull/92396) | 0 | Open-weight/provider behavior | @xialonglee | fix(moonshot): backfill reasoning_content on assistant tool-call replay messages |
@@ -1300,4 +1306,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 737 (371 issues, 366 PRs).
+- Kept open threads: 743 (374 issues, 369 PRs).
