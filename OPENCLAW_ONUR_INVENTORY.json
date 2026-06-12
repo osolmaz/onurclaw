@@ -3693,9 +3693,9 @@
   ],
   "counts": {
     "closed_threads": 527,
-    "open_issues": 363,
-    "open_prs": 354,
-    "open_threads": 717
+    "open_issues": 366,
+    "open_prs": 356,
+    "open_threads": 722
   },
   "open_threads": [
     {
@@ -4932,6 +4932,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@reallyleelee",
+      "number": 92320,
+      "title": "Provider-level retry configuration for rate-limit errors (403/429)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92320"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 92308,
+      "title": "fix(memory): preserve Windows absolute paths in QMD command resolution (fixes #92302)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92308"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@duanxl7",
+      "number": 92306,
+      "title": "[Bug]: cron jobs fails with \"LLM request failed\"",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92306"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Ardooken",
+      "number": 92302,
+      "title": "memory.qmd.command path mangled on Windows — QMD memory backend unusable despite working CLI (CommonJS path concatenation strips separators)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92302"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@TurboTheTurtle",
+      "number": 92300,
+      "title": "fix(openai-responses): collapse cumulative message snapshots",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92300"
     },
     {
       "activity": 0,
@@ -10200,8 +10245,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92297,
-    "pr": 92298
+    "issue": 92322,
+    "pr": 92321
   },
   "schema_version": 1,
   "updated": "2026-06-12"
