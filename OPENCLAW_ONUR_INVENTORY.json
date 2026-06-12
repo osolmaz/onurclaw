@@ -3693,9 +3693,9 @@
   ],
   "counts": {
     "closed_threads": 527,
-    "open_issues": 374,
-    "open_prs": 369,
-    "open_threads": 743
+    "open_issues": 376,
+    "open_prs": 375,
+    "open_threads": 751
   },
   "open_threads": [
     {
@@ -4932,6 +4932,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@syfvb",
+      "number": 92451,
+      "title": "v2026.6.x system prompt bloat causes instruction following degradation on smaller models",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92451"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@whiteyzy",
+      "number": 92447,
+      "title": "fix(memory-search): increase tool timeout from 15s to 60s",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92447"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@zenglingbiao",
+      "number": 92446,
+      "title": "feat(cli): add --file option to image generate command (fixes #91734)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92446"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xThe-Dude",
+      "number": 92444,
+      "title": "Provider disabled:billing cooldown deadlocks for full 5h after credits restored — no early-clear path",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92444"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@whiteyzy",
+      "number": 92442,
+      "title": "fix(memory-search): increase tool timeout from 15s to 60s",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92442"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@bladin",
+      "number": 92439,
+      "title": "fix/92327 openai responses fix",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92439"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@bladin",
+      "number": 92437,
+      "title": "fix/92327 webchat inter session ui regression final",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92437"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@bladin",
+      "number": 92436,
+      "title": "fix: openai-responses adapter sends system prompt in instructions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92436"
     },
     {
       "activity": 0,
@@ -10434,8 +10506,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92426,
-    "pr": 92431
+    "issue": 92451,
+    "pr": 92447
   },
   "schema_version": 1,
   "updated": "2026-06-12"
