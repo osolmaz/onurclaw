@@ -3693,9 +3693,9 @@
   ],
   "counts": {
     "closed_threads": 527,
-    "open_issues": 366,
-    "open_prs": 356,
-    "open_threads": 722
+    "open_issues": 368,
+    "open_prs": 357,
+    "open_threads": 725
   },
   "open_threads": [
     {
@@ -4932,6 +4932,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@rrriiiccckkk",
+      "number": 92341,
+      "title": "fix(memory-core): remove CJK length threshold for trigram LIKE matching",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92341"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@rrriiiccckkk",
+      "number": 92337,
+      "title": "memory-core: mergeHybridResults ignores textScore when keyword/vector chunk IDs don't overlap",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92337"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hitken",
+      "number": 92333,
+      "title": "Bug: model.fallbacks gets wiped when desktop app switches primary model",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92333"
     },
     {
       "activity": 0,
@@ -10245,8 +10272,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92322,
-    "pr": 92321
+    "issue": 92345,
+    "pr": 92348
   },
   "schema_version": 1,
   "updated": "2026-06-12"

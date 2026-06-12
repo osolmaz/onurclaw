@@ -4,11 +4,11 @@ Updated: 2026-06-12
 
 Review watermark:
 
-- Last reviewed through issue: #92322.
-- Last reviewed through PR: #92321.
+- Last reviewed through issue: #92345.
+- Last reviewed through PR: #92348.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (722)
+## OPEN THREADS (725)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -149,6 +149,9 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92341](https://github.com/openclaw/openclaw/pull/92341) | 0 | Local memory/embedding | @rrriiiccckkk | fix(memory-core): remove CJK length threshold for trigram LIKE matching |
+| 📝&nbsp;[#92337](https://github.com/openclaw/openclaw/issues/92337) | 0 | Local memory/embedding | @rrriiiccckkk | memory-core: mergeHybridResults ignores textScore when keyword/vector chunk IDs don't overlap |
+| 📝&nbsp;[#92333](https://github.com/openclaw/openclaw/issues/92333) | 0 | Model routing/config | @hitken | Bug: model.fallbacks gets wiped when desktop app switches primary model |
 | 📝&nbsp;[#92320](https://github.com/openclaw/openclaw/issues/92320) | 0 | Model routing/config | @reallyleelee | Provider-level retry configuration for rate-limit errors (403/429) |
 | 🔀&nbsp;[#92308](https://github.com/openclaw/openclaw/pull/92308) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): preserve Windows absolute paths in QMD command resolution (fixes #92302) |
 | 📝&nbsp;[#92306](https://github.com/openclaw/openclaw/issues/92306) | 0 | Open-weight/provider behavior | @duanxl7 | [Bug]: cron jobs fails with "LLM request failed" |
@@ -1285,4 +1288,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 722 (366 issues, 356 PRs).
+- Kept open threads: 725 (368 issues, 357 PRs).
