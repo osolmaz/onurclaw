@@ -2,6 +2,62 @@
   "$schema": "schemas/openclaw-onur-inventory.schema.json",
   "closed_threads": [
     {
+      "number": 92536,
+      "status": "0",
+      "title": "Local memory/embedding",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92536"
+    },
+    {
+      "number": 92531,
+      "status": "0",
+      "title": "Local memory/embedding",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92531"
+    },
+    {
+      "number": 92529,
+      "status": "0",
+      "title": "Model routing/config",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92529"
+    },
+    {
+      "number": 92526,
+      "status": "0",
+      "title": "Model routing/config",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92526"
+    },
+    {
+      "number": 92524,
+      "status": "0",
+      "title": "Local memory/embedding",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92524"
+    },
+    {
+      "number": 92515,
+      "status": "0",
+      "title": "Local memory/embedding",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92515"
+    },
+    {
+      "number": 92510,
+      "status": "0",
+      "title": "OpenAI-compatible/proxy",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92510"
+    },
+    {
+      "number": 92509,
+      "status": "0",
+      "title": "Local memory/embedding",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92509"
+    },
+    {
       "number": 92266,
       "status": "Closed in local gitcrawl 2026-06-12",
       "title": "fix(memory): report vector store ready when indexed chunks exist but probe was skipped; no longer open.",
@@ -3692,7 +3748,7 @@
     }
   ],
   "counts": {
-    "closed_threads": 527,
+    "closed_threads": 535,
     "open_issues": 385,
     "open_prs": 385,
     "open_threads": 770
@@ -10677,8 +10733,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92511,
-    "pr": 92508
+    "issue": 92536,
+    "pr": 92532
   },
   "schema_version": 1,
   "updated": "2026-06-13"

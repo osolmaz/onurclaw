@@ -4,8 +4,8 @@ Updated: 2026-06-13
 
 Review watermark:
 
-- Last reviewed through issue: #92511.
-- Last reviewed through PR: #92508.
+- Last reviewed through issue: #92536.
+- Last reviewed through PR: #92532.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## OPEN THREADS (770)
@@ -786,6 +786,15 @@ Review watermark:
 ## RECENTLY CLOSED OR REMOVED FROM OPEN INVENTORY
 
 These were in earlier local-model notes or candidate pools but are not counted as live-open retained threads now.
+
+| 📝&nbsp;[#92536](https://github.com/openclaw/openclaw/issues/92536) | 0 | Local memory/embedding | @resYuto | [Bug]: Dreaming sweeps not working if use Dreaming-compatible memory plugin |
+| 🔀&nbsp;[#92531](https://github.com/openclaw/openclaw/pull/92531) | 0 | Local memory/embedding | @leonmuellerfijucha | feat: implement shadow-logger plugin for memory system |
+| 🔀&nbsp;[#92529](https://github.com/openclaw/openclaw/pull/92529) | 0 | Model routing/config | @jml001 | fix(agents): prevent local exec policy errors from triggering model fallback |
+| 🔀&nbsp;[#92526](https://github.com/openclaw/openclaw/pull/92526) | 0 | Model routing/config | @zenglingbiao | fix(gateway): treat google-gemini-cli Gemini models as image-capable (fixes #91739) |
+| 🔀&nbsp;[#92524](https://github.com/openclaw/openclaw/pull/92524) | 0 | Local memory/embedding | @yu-xin-c | fix(memory-core): preserve overlapping hybrid keyword scores |
+| 🔀&nbsp;[#92515](https://github.com/openclaw/openclaw/pull/92515) | 0 | Local memory/embedding | @EleutheroiEdge | Recover memory search from transient missing metadata |
+| 🔀&nbsp;[#92510](https://github.com/openclaw/openclaw/pull/92510) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | fix(gateway): reject unknown OpenAI agent selectors |
+| 🔀&nbsp;[#92509](https://github.com/openclaw/openclaw/pull/92509) | 0 | Local memory/embedding | @Dazlarus | fix(memory-core): WAL checkpoint after writeMeta + stale index file cleanup |
 
 <details>
 <summary>Recently closed or removed threads (527)</summary>
