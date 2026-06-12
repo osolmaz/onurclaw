@@ -9,6 +9,272 @@
       "url": "https://github.com/openclaw/openclaw/pull/92266"
     },
     {
+      "number": 92228,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(cli): mark local models (Ollama) available in models list without auth; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92228"
+    },
+    {
+      "number": 92192,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(model-auth): resolve secretref-managed custom provider keys from runtime config snapshot; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92192"
+    },
+    {
+      "number": 92166,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(media-understanding): resolve image model input from catalog, preserve explicit text-only (#92104); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92166"
+    },
+    {
+      "number": 92159,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(media-understanding): resolve image model input from bundled catalog for inline providers (#92104); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92159"
+    },
+    {
+      "number": 92145,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(model-auth): resolve secretref-managed apiKey from runtime config snapshot (#92097); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92145"
+    },
+    {
+      "number": 92127,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(plugins): stop derived metadata snapshot rescan storm in /models (regression shipped since v2026.5.18); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92127"
+    },
+    {
+      "number": 92121,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[AI] fix(memory): eliminate absent-window race in index swap + prevent auto-create empty DB; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92121"
+    },
+    {
+      "number": 92071,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(anthropic): resolve thinking profile for custom Anthropic-compatible providers; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92071"
+    },
+    {
+      "number": 92053,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(thinking): apply Claude profile to anthropic-messages catalog rows; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92053"
+    },
+    {
+      "number": 92038,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "NO_REPLY silence reply counted as empty turn - retry + candidate_failed(format) + full fallback cascade on heartbeats (2026.6.5); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92038"
+    },
+    {
+      "number": 92034,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "perf(agents): memoize XML attribute regex in DSML stream parser; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92034"
+    },
+    {
+      "number": 92020,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory-core): check SQLite plugin state for dreaming ingestion audit after JSON migration (fixes #92017); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92020"
+    },
+    {
+      "number": 92018,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: Builtin semantic memory index loses memory_index_meta_v1 after live memory_search; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92018"
+    },
+    {
+      "number": 92017,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: memory status reports \"ingestion state absent\" after dreaming JSON→SQLite migration; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92017"
+    },
+    {
+      "number": 91975,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "Native Anthropic adapter silently drops `thinking` to `off` for custom provider ids (resolveThinkingProfile only matches exact `anthropic`/`claude-cli`); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91975"
+    },
+    {
+      "number": 91911,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(agents): retry same model across short rate-limit windows; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91911"
+    },
+    {
+      "number": 91897,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory): self-heal missing index identity by initializing provider during sync; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91897"
+    },
+    {
+      "number": 91895,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(webchat): finalize provider failure lifecycle; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91895"
+    },
+    {
+      "number": 91884,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory): keep QMD background refreshes armed; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91884"
+    },
+    {
+      "number": 91882,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "feat(anthropic): support Claude Fable 5 adaptive thinking; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91882"
+    },
+    {
+      "number": 91864,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory-core): force exit after memory search --json output; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91864"
+    },
+    {
+      "number": 91837,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory-core): settle json search cleanup; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91837"
+    },
+    {
+      "number": 91830,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "feat: add OpenRouter OAuth to onboarding; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91830"
+    },
+    {
+      "number": 91821,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "memory search --json prints results but does not exit with QMD backend; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91821"
+    },
+    {
+      "number": 91813,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(codex): restore memory recall from plugin tools; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91813"
+    },
+    {
+      "number": 91790,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(gateway): add google-gemini-cli image capability shim (fixes #91739); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91790"
+    },
+    {
+      "number": 91742,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory): abort orphaned embedding work when memory_search times out; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91742"
+    },
+    {
+      "number": 91740,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(auth): verify SQLite auth migration before cleanup; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91740"
+    },
+    {
+      "number": 91730,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: OpenClaw-native provider failure leaves web chat session stuck in progress; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91730"
+    },
+    {
+      "number": 91720,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": ":bug: fix(openai): remove chatgpt-responses transport override from gpt-5.3-codex catalog entry; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91720"
+    },
+    {
+      "number": 91718,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "memory_search tool-level timeout orphans background embedding work; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91718"
+    },
+    {
+      "number": 91711,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": ":bug: fix(agents): classify harness provider mismatch as format error (#91710); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91711"
+    },
+    {
+      "number": 91710,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: v2026.6.1 regression: openai/gpt-5.3-codex silently falls back to Sonnet — Codex harness rejects \"openai\" provider due to stale npm plugin; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91710"
+    },
+    {
+      "number": 91708,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(agents): preserve legacy openai-codex context overrides after provider unification (fixes #90448); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91708"
+    },
+    {
+      "number": 91696,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(agents): preserve reasoning_content replay for Gemma 4 openai-completions models; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91696"
+    },
+    {
+      "number": 91657,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(ollama): use provider thinking default in SDK session factory; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91657"
+    },
+    {
+      "number": 91651,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "bug(tools): web_fetch fails with 'Invalid URL' when LLM generates a space in the protocol scheme; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91651"
+    },
+    {
+      "number": 91645,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: In-turn reasoning dropped on multi-turn tool replay for non-400 openai models (gemma4/vLLM) — silent agentic-quality regression; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91645"
+    },
+    {
       "number": 91589,
       "status": "Closed in local gitcrawl 2026-06-11",
       "title": "Harden external CLI auth sync diagnostics; no longer open.",
@@ -63,6 +329,13 @@
       "title": "fix(openai): honor configured embedding model input limits; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91430"
+    },
+    {
+      "number": 91428,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "Gemma4/Qwen3.6 via local Ollama: only first token/word? rendered, while Ollama streams clean content-only output; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91428"
     },
     {
       "number": 91425,
@@ -135,6 +408,13 @@
       "url": "https://github.com/openclaw/openclaw/pull/91360"
     },
     {
+      "number": 91351,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(opencode-go): add qwen plus tiered pricing; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91351"
+    },
+    {
       "number": 91338,
       "status": "Closed in local gitcrawl 2026-06-11",
       "title": "fix(cron): allow payload.model and other optional fields to be cleared via null in update API; no longer open.",
@@ -184,11 +464,25 @@
       "url": "https://github.com/openclaw/openclaw/pull/91297"
     },
     {
+      "number": 91292,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(models): keep bundled provider catalog when configured base URL is blank (#91270); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91292"
+    },
+    {
       "number": 91275,
       "status": "Closed in local gitcrawl 2026-06-11",
       "title": "fix(memory-qmd): enrich collection list with path from 'qmd collection show' so rebind detects changed roots; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91275"
+    },
+    {
+      "number": 91270,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: Gemini can't resolve on embedded runtime; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91270"
     },
     {
       "number": 91260,
@@ -219,11 +513,25 @@
       "url": "https://github.com/openclaw/openclaw/issues/91251"
     },
     {
+      "number": 91238,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "opencode-go provider: qwen3.7-max, qwen3.7-plus, minimax-m3 missing from static model catalog → \"Unknown model\" (model_not_found); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91238"
+    },
+    {
       "number": 91231,
       "status": "Closed in local gitcrawl 2026-06-11",
       "title": "fix(anthropic): drop reasoning_content replay signatures; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91231"
+    },
+    {
+      "number": 91216,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: gateway opens an empty memory database when main.sqlite is absent during the index swap, leaving memory_search paused with \"index metadata is missing\" until restart; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/91216"
     },
     {
       "number": 91205,
@@ -245,6 +553,20 @@
       "title": "fix(memory-core): write Deep Sleep summary into DREAMS.md after deep dreaming phase (fixes #91051); no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91175"
+    },
+    {
+      "number": 91173,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory): self-heal missing index identity during sync; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91173"
+    },
+    {
+      "number": 91153,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(agents): resolve model aliases in compaction model override (fixes #90340); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91153"
     },
     {
       "number": 91118,
@@ -303,6 +625,13 @@
       "url": "https://github.com/openclaw/openclaw/issues/91084"
     },
     {
+      "number": 91081,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "perf(memory): coalesce + cache session-file listings to cut NFS READDIR load; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91081"
+    },
+    {
       "number": 91073,
       "status": "Closed in local gitcrawl 2026-06-11",
       "title": "fix(openrouter): reconcile streamed generation cost; no longer open.",
@@ -357,6 +686,13 @@
       "title": "[Bug]: microsoft-foundry reasoning models return 400 invalid_encrypted_content when continuing a thread; no longer open.",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/91033"
+    },
+    {
+      "number": 91031,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[codex] Add OpenRouter OAuth login; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/91031"
     },
     {
       "number": 91011,
@@ -420,6 +756,13 @@
       "title": "fix(microsoft-foundry): suppress DeepSeek V4 thinking on alias provider ids (#90520); no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/90830"
+    },
+    {
+      "number": 90825,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(llm): warn on unknown model pricing; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90825"
     },
     {
       "number": 90811,
@@ -576,6 +919,13 @@
       "url": "https://github.com/openclaw/openclaw/issues/90506"
     },
     {
+      "number": 90496,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "Discord channel remains trapped in oversized session after /new; compaction fails provider_error_4xx and model drifts from codex/gpt-5.5 to gpt-5.4; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90496"
+    },
+    {
       "number": 90457,
       "status": "Closed in local gitcrawl 2026-06-11",
       "title": "fix(models): persist agent catalog cache; no longer open.",
@@ -623,6 +973,13 @@
       "title": "fix(openai): accept missing content-type on ChatGPT Responses SSE stream; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/90399"
+    },
+    {
+      "number": 90395,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory-core): write meta after sync when identity is missing with existing chunks; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90395"
     },
     {
       "number": 90382,
@@ -686,6 +1043,13 @@
       "title": "[Bug]: Ollama Cloud live-discovered model loses capability metadata in gateway catalog; no longer open.",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/90315"
+    },
+    {
+      "number": 90310,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(openai-responses): sanitize null content before SDK serialization (#90094); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90310"
     },
     {
       "number": 90304,
@@ -765,11 +1129,32 @@
       "url": "https://github.com/openclaw/openclaw/pull/90137"
     },
     {
+      "number": 90128,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(sessions): preserve user /model override across daily/idle session rollover (#90119); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/90128"
+    },
+    {
       "number": 90124,
       "status": "Closed in local gitcrawl 2026-06-06",
       "title": "fix(agents): harden tool-call handling against A2A/model tool-call poisoning; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/90124"
+    },
+    {
+      "number": 90119,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: User /model override silently dropped on daily/idle session rollover (survives /new but not the 4AM reset); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90119"
+    },
+    {
+      "number": 90083,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "[Bug]: 2026.6.1 OpenAI ChatGPT Responses transport fails with invalid_provider_content_type for gpt-5.4/gpt-5.5; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90083"
     },
     {
       "number": 90075,
@@ -814,11 +1199,25 @@
       "url": "https://github.com/openclaw/openclaw/pull/90028"
     },
     {
+      "number": 90021,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "OpenAI model with agentRuntime.id \"openclaw\" appears to switch to OpenAI Codex runtime after first Telegram message; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/90021"
+    },
+    {
       "number": 89976,
       "status": "Closed in local gitcrawl 2026-06-04",
       "title": "[Bug]: Manual /compact on Codex OAuth sessions resolves to direct openai auth instead of Codex runtime; no longer open.",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/89976"
+    },
+    {
+      "number": 89957,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "docs: add section on extending memory with corpus supplements; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/89957"
     },
     {
       "number": 89952,
@@ -996,6 +1395,13 @@
       "url": "https://github.com/openclaw/openclaw/issues/89540"
     },
     {
+      "number": 89508,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(models): clarify provider model registration hint; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/89508"
+    },
+    {
       "number": 89479,
       "status": "Closed in local gitcrawl 2026-06-03",
       "title": "fix: auto-fix for issue #89431; no longer open.",
@@ -1129,6 +1535,13 @@
       "url": "https://github.com/openclaw/openclaw/pull/89290"
     },
     {
+      "number": 89251,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix: deliver tts tool audio on whatsapp; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/89251"
+    },
+    {
       "number": 89248,
       "status": "Closed in local gitcrawl 2026-06-03",
       "title": "feat(context-engine): context-capsule plugin — 99.3% token reduction with recovery-score gate; no longer open.",
@@ -1148,6 +1561,13 @@
       "title": "Stuck-session recovery discards queued user messages after aborting ghost run; no longer open.",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/89208"
+    },
+    {
+      "number": 89192,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "bug(models): model_not_found remediation message is incomplete — suggests `{ \"id\": ... }` but `name` is required and `api`/`baseUrl` are silently needed (misroutes to OpenAI); no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/89192"
     },
     {
       "number": 89188,
@@ -1218,6 +1638,13 @@
       "title": "refactor(auth): store auth profiles in SQLite; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/89102"
+    },
+    {
+      "number": 89091,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory-core): retry narrative message reads; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/89091"
     },
     {
       "number": 89090,
@@ -1297,6 +1724,20 @@
       "url": "https://github.com/openclaw/openclaw/pull/88964"
     },
     {
+      "number": 88958,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "Fix BTW OAuth side-question routing; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/88958"
+    },
+    {
+      "number": 88956,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "Repair compacted tool-result chains; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/88956"
+    },
+    {
       "number": 88946,
       "status": "Closed in local gitcrawl 2026-06-03",
       "title": "Fix live model inference edge cases; no longer open.",
@@ -1351,6 +1792,13 @@
       "title": "[Bug]: Streaming repairJson injects control chars into unescaped Windows paths in tool-call arguments; no longer open.",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/88918"
+    },
+    {
+      "number": 88917,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix: retry stale Responses reasoning replay safely; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/88917"
     },
     {
       "number": 88896,
@@ -1456,6 +1904,13 @@
       "title": "fix(openai): keep stop-finished tool calls; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/88804"
+    },
+    {
+      "number": 88800,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(models): keep generated secret refs out of plaintext; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/88800"
     },
     {
       "number": 88799,
@@ -1661,11 +2116,25 @@
       "url": "https://github.com/openclaw/openclaw/issues/88654"
     },
     {
+      "number": 88645,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(llm): use JSON5 as intermediate fallback in parseStreamingJson to avoid partial-json key corruption; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/88645"
+    },
+    {
       "number": 88644,
       "status": "Closed in local gitcrawl 2026-06-01",
       "title": "doctor --fix breaks Codex model routing by rewriting openai-codex/ to openai/; no longer open.",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/88644"
+    },
+    {
+      "number": 88630,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(codex): avoid guardian review for local models; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/88630"
     },
     {
       "number": 88615,
@@ -1890,6 +2359,13 @@
       "title": "refactor: extract model catalog core package; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/88266"
+    },
+    {
+      "number": 88263,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(memory-core): use native recursive fs.watch in QMD watcher to prevent per-file FD leak; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/88263"
     },
     {
       "number": 88247,
@@ -2359,6 +2835,13 @@
       "title": "Bug: DeepSeek V4 Flash Free via OpenCode Zen provider fails with 400 on follow-up API calls; no longer open.",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/87575"
+    },
+    {
+      "number": 87562,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "fix(openrouter): reconcile streamed cost with /generation total_cost; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/87562"
     },
     {
       "number": 87558,
@@ -2928,6 +3411,13 @@
       "url": "https://github.com/openclaw/openclaw/issues/80226"
     },
     {
+      "number": 79745,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "Memory/QMD: isolate mcporter sidecars per agent; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/79745"
+    },
+    {
       "number": 79380,
       "status": "Closed in local gitcrawl 2026-06-01",
       "title": "[Bug]: Gateway CPU spin / crash loop on Raspberry Pi 4 (ARM64) — regression from 4.23 to 4.25+; no longer open.",
@@ -3117,6 +3607,13 @@
       "url": "https://github.com/openclaw/openclaw/issues/63685"
     },
     {
+      "number": 62436,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "Feature: Lightweight LLM passthrough mode for /v1/chat/completions — skip session persistence entirely; no longer open.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/62436"
+    },
+    {
       "number": 61834,
       "status": "Closed in local gitcrawl 2026-06-06",
       "title": "[Feature]: expose QMD no-rerank for memory.qmd query mode; no longer open.",
@@ -3143,6 +3640,13 @@
       "title": "fix(status): honor selected usage auth profile; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/59208"
+    },
+    {
+      "number": 58405,
+      "status": "Closed in local gitcrawl 2026-06-12",
+      "title": "feat(openresponses): add per-request skills override to /v1/responses; no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/58405"
     },
     {
       "number": 58012,
@@ -3188,10 +3692,10 @@
     }
   ],
   "counts": {
-    "closed_threads": 455,
-    "open_issues": 383,
-    "open_prs": 402,
-    "open_threads": 785
+    "closed_threads": 527,
+    "open_issues": 363,
+    "open_prs": 354,
+    "open_threads": 717
   },
   "open_threads": [
     {
@@ -3274,15 +3778,6 @@
       "title": "[Feature]: slug-generator: use lightweight model instead of agent primary to prevent lane congestion",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/33962"
-    },
-    {
-      "activity": 14,
-      "area": "Local memory/embedding",
-      "creator": "@SYU8384",
-      "number": 79745,
-      "title": "Memory/QMD: isolate mcporter sidecars per agent",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/79745"
     },
     {
       "activity": 14,
@@ -4440,6 +4935,42 @@
     },
     {
       "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@joshavant",
+      "number": 92293,
+      "title": "Fix provider static model fallback resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92293"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 92292,
+      "title": "fix(doctor): warn when resolved default model is not in the catalog (fixes #92009)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92292"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ai-hpc",
+      "number": 92288,
+      "title": "fix(agents): quiet extra_body tuning-key collisions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92288"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@joshavant",
+      "number": 92280,
+      "title": "fix(agents): classify structured unsupported model errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92280"
+    },
+    {
+      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@poison",
       "number": 92273,
@@ -4575,15 +5106,6 @@
     },
     {
       "activity": 0,
-      "area": "Local model runtime",
-      "creator": "@liuhao1024",
-      "number": 92228,
-      "title": "fix(cli): mark local models (Ollama) available in models list without auth",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92228"
-    },
-    {
-      "activity": 0,
       "area": "Model routing/config",
       "creator": "@joshavant",
       "number": 92226,
@@ -4644,15 +5166,6 @@
       "title": "fix(memory-search): stop hybrid fusion from discounting vector-only multimodal results",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/92196"
-    },
-    {
-      "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@whiteyzy",
-      "number": 92192,
-      "title": "fix(model-auth): resolve secretref-managed custom provider keys from runtime config snapshot",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92192"
     },
     {
       "activity": 0,
@@ -4719,15 +5232,6 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@zhangqueping",
-      "number": 92166,
-      "title": "fix(media-understanding): resolve image model input from catalog, preserve explicit text-only (#92104)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92166"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@bennewell35",
       "number": 92165,
@@ -4746,15 +5250,6 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@zhangqueping",
-      "number": 92159,
-      "title": "fix(media-understanding): resolve image model input from bundled catalog for inline providers (#92104)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92159"
-    },
-    {
-      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@marcoraepple-sys",
       "number": 92148,
@@ -4770,15 +5265,6 @@
       "title": "[codex] support Responses system prompts in instructions",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/92147"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@lzyyzznl",
-      "number": 92145,
-      "title": "fix(model-auth): resolve secretref-managed apiKey from runtime config snapshot (#92097)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92145"
     },
     {
       "activity": 0,
@@ -4809,31 +5295,12 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@obuchowski",
-      "number": 92127,
-      "title": "fix(plugins): stop derived metadata snapshot rescan storm in /models (regression shipped since v2026.5.18)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92127"
-    },
-    {
-      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@Kambrian",
       "number": 92124,
       "title": "Memory search breaks with Requesty/OpenAI embedding model prefix mismatch",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/92124"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "assignee": "vincentkoc",
-      "creator": "@xydt-tanshanshan",
-      "number": 92121,
-      "title": "[AI] fix(memory): eliminate absent-window race in index swap + prevent auto-create empty DB",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92121"
     },
     {
       "activity": 0,
@@ -4936,15 +5403,6 @@
     },
     {
       "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@fsdwen",
-      "number": 92071,
-      "title": "fix(anthropic): resolve thinking profile for custom Anthropic-compatible providers",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92071"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@arkyu2077",
       "number": 92065,
@@ -4981,15 +5439,6 @@
     },
     {
       "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@wangwllu",
-      "number": 92053,
-      "title": "fix(thinking): apply Claude profile to anthropic-messages catalog rows",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92053"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@reginaldomarcilon",
       "number": 92050,
@@ -5017,15 +5466,6 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@vultusv",
-      "number": 92038,
-      "title": "NO_REPLY silence reply counted as empty turn - retry + candidate_failed(format) + full fallback cascade on heartbeats (2026.6.5)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/92038"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@fall4knight",
       "number": 92035,
@@ -5035,48 +5475,12 @@
     },
     {
       "activity": 0,
-      "area": "Open-weight/provider behavior",
-      "creator": "@hansraj316",
-      "number": 92034,
-      "title": "perf(agents): memoize XML attribute regex in DSML stream parser",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92034"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@zenglingbiao",
-      "number": 92020,
-      "title": "fix(memory-core): check SQLite plugin state for dreaming ingestion audit after JSON migration (fixes #92017)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92020"
-    },
-    {
-      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@HangGlidersRule",
       "number": 92019,
       "title": "anthropic-messages replay: preserved thinking-block signatures hard-fail (400 Invalid signature) on proxied endpoints / model-switch",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/92019"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@civiltox",
-      "number": 92018,
-      "title": "[Bug]: Builtin semantic memory index loses memory_index_meta_v1 after live memory_search",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/92018"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@JUMPUNDER",
-      "number": 92017,
-      "title": "[Bug]: memory status reports \"ingestion state absent\" after dreaming JSON→SQLite migration",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/92017"
     },
     {
       "activity": 0,
@@ -5149,15 +5553,6 @@
       "title": "[Bug]: anthropic-vertex-provider adds cache_control to active-memory system block — triggers \"Found 5\" error when active-memory is enabled",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/91982"
-    },
-    {
-      "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@wangwllu",
-      "number": 91975,
-      "title": "Native Anthropic adapter silently drops `thinking` to `off` for custom provider ids (resolveThinkingProfile only matches exact `anthropic`/`claude-cli`)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91975"
     },
     {
       "activity": 0,
@@ -5314,15 +5709,6 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@lanzhi-lee",
-      "number": 91911,
-      "title": "fix(agents): retry same model across short rate-limit windows",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91911"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@charles717-art",
       "number": 91902,
@@ -5332,49 +5718,12 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@xydt-tanshanshan",
-      "number": 91897,
-      "title": "fix(memory): self-heal missing index identity by initializing provider during sync",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91897"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@TurboTheTurtle",
-      "number": 91895,
-      "title": "fix(webchat): finalize provider failure lifecycle",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91895"
-    },
-    {
-      "activity": 0,
       "area": "Open-weight/provider behavior",
       "creator": "@luciaski",
       "number": 91892,
       "title": "Cron jobs stall during AI model calls (model_call:stream_progress never completes)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/91892"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@vincentkoc",
-      "number": 91884,
-      "title": "fix(memory): keep QMD background refreshes armed",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91884"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "assignee": "steipete",
-      "creator": "@steipete",
-      "number": 91882,
-      "title": "feat(anthropic): support Claude Fable 5 adaptive thinking",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91882"
     },
     {
       "activity": 0,
@@ -5415,15 +5764,6 @@
     {
       "activity": 0,
       "area": "Local memory/embedding",
-      "creator": "@bladin",
-      "number": 91864,
-      "title": "fix(memory-core): force exit after memory search --json output",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91864"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
       "creator": "@xydt-tanshanshan",
       "number": 91862,
       "title": "fix(memory): gracefully degrade when embedding provider is unregistered",
@@ -5450,48 +5790,12 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@TurboTheTurtle",
-      "number": 91837,
-      "title": "fix(memory-core): settle json search cleanup",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91837"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@Patrick-Erichsen",
-      "number": 91830,
-      "title": "feat: add OpenRouter OAuth to onboarding",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91830"
-    },
-    {
-      "activity": 0,
       "area": "Open-weight/provider behavior",
       "creator": "@aegis-gh-agent[bot]",
       "number": 91827,
       "title": "[P1] Structural fix: content-based dedup + delivery-mirror model-hiding for kimi-code message loops",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/91827"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@xpysgdhr",
-      "number": 91821,
-      "title": "memory search --json prints results but does not exit with QMD backend",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91821"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@rubencu",
-      "number": 91813,
-      "title": "fix(codex): restore memory recall from plugin tools",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91813"
     },
     {
       "activity": 0,
@@ -5522,15 +5826,6 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@zenglingbiao",
-      "number": 91790,
-      "title": "fix(gateway): add google-gemini-cli image capability shim (fixes #91739)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91790"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@1attila2",
       "number": 91778,
@@ -5558,39 +5853,12 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@dreamhunter2333",
-      "number": 91742,
-      "title": "fix(memory): abort orphaned embedding work when memory_search times out",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91742"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@fuller-stack-dev",
-      "number": 91740,
-      "title": "fix(auth): verify SQLite auth migration before cleanup",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91740"
-    },
-    {
-      "activity": 0,
       "area": "Model routing/config",
       "creator": "@ruben2000de",
       "number": 91739,
       "title": "google-gemini-cli rejects image attachments before CLI image prestage",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/91739"
-    },
-    {
-      "activity": 0,
-      "area": "Model/provider behavior",
-      "creator": "@nikhilmaddirala",
-      "number": 91730,
-      "title": "[Bug]: OpenClaw-native provider failure leaves web chat session stuck in progress",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91730"
     },
     {
       "activity": 0,
@@ -5612,24 +5880,6 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@a-tokyo",
-      "number": 91720,
-      "title": "fix(openai): remove chatgpt-responses transport override from gpt-5.3-codex catalog entry",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91720"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@NOVA-Openclaw",
-      "number": 91718,
-      "title": "memory_search tool-level timeout orphans background embedding work",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91718"
-    },
-    {
-      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@dwc1997",
       "number": 91714,
@@ -5639,48 +5889,12 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@a-tokyo",
-      "number": 91711,
-      "title": ":bug: fix(agents): classify harness provider mismatch as format error (#91710)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91711"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@a-tokyo",
-      "number": 91710,
-      "title": "[Bug]: v2026.6.1 regression: openai/gpt-5.3-codex silently falls back to Sonnet — Codex harness rejects \"openai\" provider due to stale npm plugin",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91710"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@zenglingbiao",
-      "number": 91708,
-      "title": "fix(agents): preserve legacy openai-codex context overrides after provider unification (fixes #90448)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91708"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@tiffanychum",
       "number": 91706,
       "title": "fix(memory): keep local embedding indexes clean when only local.modelPath is set",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91706"
-    },
-    {
-      "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@Coder-Wangyankun",
-      "number": 91696,
-      "title": "fix(agents): preserve reasoning_content replay for Gemma 4 openai-completions models",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91696"
     },
     {
       "activity": 0,
@@ -5708,33 +5922,6 @@
       "title": "[AI] fix(memory): backfill provider.model with resolved model name in…",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91660"
-    },
-    {
-      "activity": 0,
-      "area": "Local model runtime",
-      "creator": "@openperf",
-      "number": 91657,
-      "title": "fix(ollama): use provider thinking default in SDK session factory",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91657"
-    },
-    {
-      "activity": 0,
-      "area": "Open-weight/provider behavior",
-      "creator": "@akang1798",
-      "number": 91651,
-      "title": "bug(tools): web_fetch fails with 'Invalid URL' when LLM generates a space in the protocol scheme",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91651"
-    },
-    {
-      "activity": 0,
-      "area": "Local model runtime",
-      "creator": "@bfox55",
-      "number": 91645,
-      "title": "[Bug]: In-turn reasoning dropped on multi-turn tool replay for non-400 openai models (gemma4/vLLM) — silent agentic-quality regression",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91645"
     },
     {
       "activity": 0,
@@ -5936,15 +6123,6 @@
     },
     {
       "activity": 0,
-      "area": "Local model runtime",
-      "creator": "@anijatsu",
-      "number": 91428,
-      "title": "Gemma4/Qwen3.6 via local Ollama: only first token/word? rendered, while Ollama streams clean content-only output",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91428"
-    },
-    {
-      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@849261680",
       "number": 91427,
@@ -6008,15 +6186,6 @@
     },
     {
       "activity": 0,
-      "area": "Open-weight/provider behavior",
-      "creator": "@849261680",
-      "number": 91351,
-      "title": "fix(opencode-go): add qwen plus tiered pricing",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91351"
-    },
-    {
-      "activity": 0,
       "area": "Local model runtime",
       "creator": "@deepshekhardas",
       "number": 91323,
@@ -6053,30 +6222,12 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@yetval",
-      "number": 91292,
-      "title": "fix(models): keep bundled provider catalog when configured base URL is blank (#91270)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91292"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@sasan1200",
       "number": 91274,
       "title": "refactor(memory): drop redundant agent-id scoping from qmd collection names",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91274"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@resYuto",
-      "number": 91270,
-      "title": "[Bug]: Gemini can't resolve on embedded runtime",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91270"
     },
     {
       "activity": 0,
@@ -6113,15 +6264,6 @@
       "title": "fix(opencode-go): add qwen3.7-max, qwen3.7-plus, minimax-m3 to provider catalog",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91239"
-    },
-    {
-      "activity": 0,
-      "area": "Model/provider behavior",
-      "creator": "@samson910022",
-      "number": 91238,
-      "title": "opencode-go provider: qwen3.7-max, qwen3.7-plus, minimax-m3 missing from static model catalog → \"Unknown model\" (model_not_found)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91238"
     },
     {
       "activity": 0,
@@ -6188,15 +6330,6 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@chrisreddington",
-      "number": 91216,
-      "title": "[Bug]: gateway opens an empty memory database when main.sqlite is absent during the index swap, leaving memory_search paused with \"index metadata is missing\" until restart",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/91216"
-    },
-    {
-      "activity": 0,
       "area": "OpenAI-compatible/proxy",
       "creator": "@Enominera",
       "number": 91214,
@@ -6260,15 +6393,6 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@kiagentkronos-cell",
-      "number": 91173,
-      "title": "fix(memory): self-heal missing index identity during sync",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91173"
-    },
-    {
-      "activity": 0,
       "area": "Model routing/config",
       "creator": "@wolfeee",
       "number": 91171,
@@ -6314,30 +6438,12 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@zenglingbiao",
-      "number": 91153,
-      "title": "fix(agents): resolve model aliases in compaction model override (fixes #90340)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91153"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@amknight",
       "number": 91091,
       "title": "fix(memory): do not prune session index from a failed directory scan",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91091"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@amknight",
-      "number": 91081,
-      "title": "perf(memory): coalesce + cache session-file listings to cut NFS READDIR load",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91081"
     },
     {
       "activity": 0,
@@ -6392,15 +6498,6 @@
       "title": "fix(active-memory): keep a runnable iMessage channel so memory thread key builds",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/91050"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@kenrogers",
-      "number": 91031,
-      "title": "[codex] Add OpenRouter OAuth login",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/91031"
     },
     {
       "activity": 0,
@@ -6653,15 +6750,6 @@
       "title": "fix(tui): render /models loading feedback before listing resolves (#90720)",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/90826"
-    },
-    {
-      "activity": 0,
-      "area": "Model/provider behavior",
-      "creator": "@MonkeyLeeT",
-      "number": 90825,
-      "title": "fix(llm): warn on unknown model pricing",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/90825"
     },
     {
       "activity": 0,
@@ -6954,15 +7042,6 @@
     {
       "activity": 0,
       "area": "Model routing/config",
-      "creator": "@nguyenjustin214-lab",
-      "number": 90496,
-      "title": "Discord channel remains trapped in oversized session after /new; compaction fails provider_error_4xx and model drifts from codex/gpt-5.5 to gpt-5.4",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90496"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
       "creator": "@centralpc",
       "number": 90471,
       "title": "[Bug]: Deleted provider session overrides persist in sessions.json — silent financial damage risk",
@@ -7116,15 +7195,6 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@chengzhichao-xydt",
-      "number": 90395,
-      "title": "fix(memory-core): write meta after sync when identity is missing with existing chunks",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/90395"
-    },
-    {
-      "activity": 0,
       "area": "Local model runtime",
       "assignee": "vincentkoc",
       "creator": "@vincentkoc",
@@ -7258,15 +7328,6 @@
       "title": "Dreaming session-corpus: cron classification doesn't follow subagent parentage; archived (`.deleted`/`.reset`) transcripts re-ingested",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/90313"
-    },
-    {
-      "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@wangmiao0668000666",
-      "number": 90310,
-      "title": "fix(openai-responses): sanitize null content before SDK serialization (#90094)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/90310"
     },
     {
       "activity": 0,
@@ -7496,29 +7557,11 @@
     {
       "activity": 0,
       "area": "Model routing/config",
-      "creator": "@Marvinthebored",
-      "number": 90128,
-      "title": "fix(sessions): preserve user /model override across daily/idle session rollover (#90119)",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/90128"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
       "creator": "@bladin",
       "number": 90125,
       "title": "fix(embedded-runner): distinguish model initialization errors from assistant execution errors",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/90125"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@Marvinthebored",
-      "number": 90119,
-      "title": "[Bug]: User /model override silently dropped on daily/idle session rollover (survives /new but not the 4AM reset)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90119"
     },
     {
       "activity": 0,
@@ -7634,15 +7677,6 @@
     },
     {
       "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@jimmielightner",
-      "number": 90083,
-      "title": "[Bug]: 2026.6.1 OpenAI ChatGPT Responses transport fails with invalid_provider_content_type for gpt-5.4/gpt-5.5",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90083"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@ryswork1993",
       "number": 90082,
@@ -7735,15 +7769,6 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@claw0gang",
-      "number": 90021,
-      "title": "OpenAI model with agentRuntime.id \"openclaw\" appears to switch to OpenAI Codex runtime after first Telegram message",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/90021"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@sahibzada-allahyar",
       "number": 90019,
@@ -7807,15 +7832,6 @@
       "title": "fix(plugins): guard manifest suppression metadata",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/89961"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@kiagentkronos-cell",
-      "number": 89957,
-      "title": "docs: add section on extending memory with corpus supplements",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/89957"
     },
     {
       "activity": 0,
@@ -8234,15 +8250,6 @@
     },
     {
       "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@sweetcornna",
-      "number": 89508,
-      "title": "fix(models): clarify provider model registration hint",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/89508"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@ubehera",
       "number": 89477,
@@ -8527,15 +8534,6 @@
     },
     {
       "activity": 0,
-      "area": "Local/media model provider",
-      "creator": "@mcaxtr",
-      "number": 89251,
-      "title": "fix: deliver tts tool audio on whatsapp",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/89251"
-    },
-    {
-      "activity": 0,
       "area": "Local model runtime",
       "creator": "@CameronWeller",
       "number": 89233,
@@ -8605,15 +8603,6 @@
       "title": "fix: include name field in model_not_found remediation hint",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/89194"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@aaajiao",
-      "number": 89192,
-      "title": "bug(models): model_not_found remediation message is incomplete - suggests `{ \"id\": ... }` but `name` is required and `api`/`baseUrl` are silently needed (misroutes to OpenAI)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/89192"
     },
     {
       "activity": 0,
@@ -8743,15 +8732,6 @@
     },
     {
       "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@bennewell35",
-      "number": 89091,
-      "title": "fix(memory-core): retry narrative message reads",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/89091"
-    },
-    {
-      "activity": 0,
       "area": "Model routing/config",
       "creator": "@charles-openclaw",
       "number": 89088,
@@ -8843,24 +8823,6 @@
     {
       "activity": 0,
       "area": "Model routing/config",
-      "creator": "@TurboTheTurtle",
-      "number": 88958,
-      "title": "Fix BTW OAuth side-question routing",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/88958"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@TurboTheTurtle",
-      "number": 88956,
-      "title": "Repair compacted tool-result chains",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/88956"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
       "creator": "@vincentkoc",
       "number": 88950,
       "title": "fix(plugins): ignore throwing provider policy hooks",
@@ -8875,15 +8837,6 @@
       "title": "fix(agents): cap tool search fanout in lean mode",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/88931"
-    },
-    {
-      "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@physicswolf",
-      "number": 88917,
-      "title": "fix: retry stale Responses reasoning replay safely",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/88917"
     },
     {
       "activity": 0,
@@ -9004,15 +8957,6 @@
     },
     {
       "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@TurboTheTurtle",
-      "number": 88800,
-      "title": "fix(models): keep generated secret refs out of plaintext",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/88800"
-    },
-    {
-      "activity": 0,
       "area": "Local model runtime",
       "creator": "@vincentkoc",
       "number": 88789,
@@ -9077,29 +9021,11 @@
     {
       "activity": 0,
       "area": "Local model runtime",
-      "creator": "@whiteyzy",
-      "number": 88645,
-      "title": "fix(llm): use JSON5 as intermediate fallback in parseStreamingJson to avoid partial-json key corruption",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/88645"
-    },
-    {
-      "activity": 0,
-      "area": "Local model runtime",
       "creator": "@wangwllu",
       "number": 88632,
       "title": "[Bug]: gateway model-run sessions accumulate until session maxEntries cap",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/88632"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@vincentkoc",
-      "number": 88630,
-      "title": "fix(codex): avoid guardian review for local models",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/88630"
     },
     {
       "activity": 0,
@@ -9217,15 +9143,6 @@
       "title": "fix: user-pinned model falls back to global chain on quota exhaustion",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/88329"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@whiteyzy",
-      "number": 88263,
-      "title": "fix(memory-core): use native recursive fs.watch in QMD watcher to prevent per-file FD leak",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/88263"
     },
     {
       "activity": 0,
@@ -9497,15 +9414,6 @@
       "title": "[Feature]: Unixsocket Provider plugin",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/87586"
-    },
-    {
-      "activity": 0,
-      "area": "Open-weight/provider behavior",
-      "creator": "@Pluviobyte",
-      "number": 87562,
-      "title": "fix(openrouter): reconcile streamed cost with /generation total_cost",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/87562"
     },
     {
       "activity": 0,
@@ -10175,15 +10083,6 @@
     },
     {
       "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@gucasbrg",
-      "number": 62436,
-      "title": "Feature: Lightweight LLM passthrough mode for /v1/chat/completions - skip session persistence entirely",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/62436"
-    },
-    {
-      "activity": 0,
       "area": "Open-weight/provider behavior",
       "creator": "@NikolaFC",
       "number": 62432,
@@ -10217,15 +10116,6 @@
       "title": "Feature: Support output dimensionality truncation for local GGUF embedding models",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/58765"
-    },
-    {
-      "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@tonga54",
-      "number": 58405,
-      "title": "feat(openresponses): add per-request skills override to /v1/responses",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/58405"
     },
     {
       "activity": 0,
@@ -10310,8 +10200,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92275,
-    "pr": 92269
+    "issue": 92297,
+    "pr": 92298
   },
   "schema_version": 1,
   "updated": "2026-06-12"
