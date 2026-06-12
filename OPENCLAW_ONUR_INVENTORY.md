@@ -4,11 +4,11 @@ Updated: 2026-06-13
 
 Review watermark:
 
-- Last reviewed through issue: #92536.
-- Last reviewed through PR: #92532.
+- Last reviewed through issue: #92539.
+- Last reviewed through PR: #92540.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (770)
+## OPEN THREADS (772)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -149,6 +149,8 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92539](https://github.com/openclaw/openclaw/issues/92539) | 0 | Model routing/config | @pi-oliver-pionizer | ModelRegistry: a single invalid plugin catalog aborts the entire custom-models load, leaving zero models and an unlogged error |
+| 🔀&nbsp;[#92538](https://github.com/openclaw/openclaw/pull/92538) | 0 | Local memory/embedding | @khalil-omer | fix(memory): persist metadata during safe reindex |
 | 🔀&nbsp;[#92507](https://github.com/openclaw/openclaw/pull/92507) | 0 | Local memory/embedding | @khalil-omer | fix(memory): persist metadata after atomic reindex |
 | 🔀&nbsp;[#92505](https://github.com/openclaw/openclaw/pull/92505) | 0 | OpenAI-compatible/proxy | @zenglingbiao | fix(gateway): validate agent roster in resolveAgentIdForRequest (fixes #92504) |
 | 📝&nbsp;[#92504](https://github.com/openclaw/openclaw/issues/92504) | 0 | OpenAI-compatible/proxy | @ryanhelms | Gateway runs well-formed-but-unknown agent slug under agents.defaults instead of 4xx (no roster validation in resolveAgentIdForRequest; x-openclaw-agent-id header never roster-validated) |
@@ -1342,4 +1344,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 770 (385 issues, 385 PRs).
+- Kept open threads: 772 (386 issues, 386 PRs).
