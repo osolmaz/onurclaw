@@ -3693,9 +3693,9 @@
   ],
   "counts": {
     "closed_threads": 527,
-    "open_issues": 368,
-    "open_prs": 361,
-    "open_threads": 729
+    "open_issues": 371,
+    "open_prs": 366,
+    "open_threads": 737
   },
   "open_threads": [
     {
@@ -4932,6 +4932,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@chenpeimin2",
+      "number": 92400,
+      "title": "[Bug]: `openai-responses` adapter sends system prompt in `input` instead of `instructions`",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92400"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@amersheeny",
+      "number": 92399,
+      "title": "fix(llm): collapse cumulative openai-responses message snapshots instead of concatenating [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92399"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@xialonglee",
+      "number": 92396,
+      "title": "fix(moonshot): backfill reasoning_content on assistant tool-call replay messages",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92396"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kvzsolt",
+      "number": 92391,
+      "title": "[Bug]: ollama-cloud runtime fails DNS lookup for ai.ollama.com, while ollama/&lt;model&gt;:cloud works",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92391"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@sheyanmin",
+      "number": 92388,
+      "title": "#92379: fix(session): refresh stale model before reading contextWindow in checkCompaction",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92388"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@samson910022",
+      "number": 92379,
+      "title": "[Bug]: Session this.model not refreshed after /model switch — auto-compaction uses stale contextWindow",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92379"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xydigit-sj",
+      "number": 92378,
+      "title": "fix(plugins): guard against missing agentIds in memory-wiki public artifacts (#92207)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92378"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zhangqueping",
+      "number": 92375,
+      "title": "#92134: fix(memory-wiki): retry transient path-alias errors during source page write",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92375"
     },
     {
       "activity": 0,
@@ -10308,8 +10380,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92369,
-    "pr": 92370
+    "issue": 92403,
+    "pr": 92399
   },
   "schema_version": 1,
   "updated": "2026-06-12"

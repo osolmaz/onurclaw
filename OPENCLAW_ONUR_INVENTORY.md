@@ -4,11 +4,11 @@ Updated: 2026-06-12
 
 Review watermark:
 
-- Last reviewed through issue: #92369.
-- Last reviewed through PR: #92370.
+- Last reviewed through issue: #92403.
+- Last reviewed through PR: #92399.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (729)
+## OPEN THREADS (737)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -149,6 +149,14 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92400](https://github.com/openclaw/openclaw/issues/92400) | 0 | OpenAI-compatible/proxy | @chenpeimin2 | [Bug]: `openai-responses` adapter sends system prompt in `input` instead of `instructions` |
+| 🔀&nbsp;[#92399](https://github.com/openclaw/openclaw/pull/92399) | 0 | OpenAI-compatible/proxy | @amersheeny | fix(llm): collapse cumulative openai-responses message snapshots instead of concatenating [AI-assisted] |
+| 🔀&nbsp;[#92396](https://github.com/openclaw/openclaw/pull/92396) | 0 | Open-weight/provider behavior | @xialonglee | fix(moonshot): backfill reasoning_content on assistant tool-call replay messages |
+| 📝&nbsp;[#92391](https://github.com/openclaw/openclaw/issues/92391) | 0 | Model routing/config | @kvzsolt | [Bug]: ollama-cloud runtime fails DNS lookup for ai.ollama.com, while ollama/&lt;model&gt;:cloud works |
+| 🔀&nbsp;[#92388](https://github.com/openclaw/openclaw/pull/92388) | 0 | Model routing/config | @sheyanmin | #92379: fix(session): refresh stale model before reading contextWindow in checkCompaction |
+| 📝&nbsp;[#92379](https://github.com/openclaw/openclaw/issues/92379) | 0 | Model routing/config | @samson910022 | [Bug]: Session this.model not refreshed after /model switch — auto-compaction uses stale contextWindow |
+| 🔀&nbsp;[#92378](https://github.com/openclaw/openclaw/pull/92378) | 0 | Local memory/embedding | @xydigit-sj | fix(plugins): guard against missing agentIds in memory-wiki public artifacts (#92207) |
+| 🔀&nbsp;[#92375](https://github.com/openclaw/openclaw/pull/92375) | 0 | Local memory/embedding | @zhangqueping | #92134: fix(memory-wiki): retry transient path-alias errors during source page write |
 | 🔀&nbsp;[#92363](https://github.com/openclaw/openclaw/pull/92363) | 0 | Local model runtime | @zhangqueping | #92224: fix(models): report local models as available in CLI list output |
 | 🔀&nbsp;[#92359](https://github.com/openclaw/openclaw/pull/92359) | 0 | OpenAI-compatible/proxy | @jiewent1-cmyk | fix(config): allow model.compat.sendSessionAffinityHeaders in ModelCompatSchema |
 | 🔀&nbsp;[#92357](https://github.com/openclaw/openclaw/pull/92357) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): preserve keyword-only results in hybrid search when chunk IDs don't overlap (fixes #92337) |
@@ -1292,4 +1300,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 729 (368 issues, 361 PRs).
+- Kept open threads: 737 (371 issues, 366 PRs).
