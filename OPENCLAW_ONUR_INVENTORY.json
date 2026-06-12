@@ -3693,9 +3693,9 @@
   ],
   "counts": {
     "closed_threads": 527,
-    "open_issues": 376,
-    "open_prs": 375,
-    "open_threads": 751
+    "open_issues": 381,
+    "open_prs": 377,
+    "open_threads": 758
   },
   "open_threads": [
     {
@@ -4932,6 +4932,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@aaajiao",
+      "number": 92479,
+      "title": "feat(opencode): Zen provider ships no model catalog — every Zen model must be hand-registered (opencode-go discovers, opencode does not)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92479"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@novaagentia-cpu",
+      "number": 92478,
+      "title": "[Bug]: Native Talk button triggers OpenAI Realtime WebRTC call and fails with 500 when Realtime is not configured",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92478"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yu-xin-c",
+      "number": 92476,
+      "title": "fix(agents): preserve compatible CLI session runtime pins",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92476"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@guscamara",
+      "number": 92473,
+      "title": "Model fallback notice leaks to external user-facing channels",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92473"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@EvoLinkAI",
+      "number": 92466,
+      "title": "Add EvoLink provider integration",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92466"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@BrettHamlin",
+      "number": 92465,
+      "title": "Bulk memory import can hit OpenAI 431; chunked indexing avoids it",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92465"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@oiGaDio",
+      "number": 92458,
+      "title": "2026.6 openai-provider-unification migration removes openai-codex:default profile, breaking every Codex-backed agent at launch (root cause + concrete fix)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92458"
     },
     {
       "activity": 0,
@@ -10506,8 +10569,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92451,
-    "pr": 92447
+    "issue": 92480,
+    "pr": 92477
   },
   "schema_version": 1,
   "updated": "2026-06-12"

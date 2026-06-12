@@ -4,11 +4,11 @@ Updated: 2026-06-12
 
 Review watermark:
 
-- Last reviewed through issue: #92451.
-- Last reviewed through PR: #92447.
+- Last reviewed through issue: #92480.
+- Last reviewed through PR: #92477.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (751)
+## OPEN THREADS (758)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -149,6 +149,13 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92479](https://github.com/openclaw/openclaw/issues/92479) | 0 | Model routing/config | @aaajiao | feat(opencode): Zen provider ships no model catalog — every Zen model must be hand-registered (opencode-go discovers, opencode does not) |
+| 📝&nbsp;[#92478](https://github.com/openclaw/openclaw/issues/92478) | 0 | Local/media model provider | @novaagentia-cpu | [Bug]: Native Talk button triggers OpenAI Realtime WebRTC call and fails with 500 when Realtime is not configured |
+| 🔀&nbsp;[#92476](https://github.com/openclaw/openclaw/pull/92476) | 0 | Model routing/config | @yu-xin-c | fix(agents): preserve compatible CLI session runtime pins |
+| 📝&nbsp;[#92473](https://github.com/openclaw/openclaw/issues/92473) | 0 | Model routing/config | @guscamara | Model fallback notice leaks to external user-facing channels |
+| 🔀&nbsp;[#92466](https://github.com/openclaw/openclaw/pull/92466) | 0 | OpenAI-compatible/proxy | @EvoLinkAI | Add EvoLink provider integration |
+| 📝&nbsp;[#92465](https://github.com/openclaw/openclaw/issues/92465) | 0 | Local memory/embedding | @BrettHamlin | Bulk memory import can hit OpenAI 431; chunked indexing avoids it |
+| 📝&nbsp;[#92458](https://github.com/openclaw/openclaw/issues/92458) | 0 | Model routing/config | @oiGaDio | 2026.6 openai-provider-unification migration removes openai-codex:default profile, breaking every Codex-backed agent at launch (root cause + concrete fix) |
 | 📝&nbsp;[#92451](https://github.com/openclaw/openclaw/issues/92451) | 0 | Open-weight/provider behavior | @syfvb | v2026.6.x system prompt bloat causes instruction following degradation on smaller models |
 | 🔀&nbsp;[#92447](https://github.com/openclaw/openclaw/pull/92447) | 0 | Local memory/embedding | @whiteyzy | fix(memory-search): increase tool timeout from 15s to 60s |
 | 🔀&nbsp;[#92446](https://github.com/openclaw/openclaw/pull/92446) | 0 | Local/media model provider | @zenglingbiao | feat(cli): add --file option to image generate command (fixes #91734) |
@@ -1314,4 +1321,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 751 (376 issues, 375 PRs).
+- Kept open threads: 758 (381 issues, 377 PRs).
