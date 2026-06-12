@@ -3693,9 +3693,9 @@
   ],
   "counts": {
     "closed_threads": 527,
-    "open_issues": 383,
-    "open_prs": 380,
-    "open_threads": 763
+    "open_issues": 385,
+    "open_prs": 385,
+    "open_threads": 770
   },
   "open_threads": [
     {
@@ -4932,6 +4932,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@khalil-omer",
+      "number": 92507,
+      "title": "fix(memory): persist metadata after atomic reindex",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92507"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@zenglingbiao",
+      "number": 92505,
+      "title": "fix(gateway): validate agent roster in resolveAgentIdForRequest (fixes #92504)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92505"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ryanhelms",
+      "number": 92504,
+      "title": "Gateway runs well-formed-but-unknown agent slug under agents.defaults instead of 4xx (no roster validation in resolveAgentIdForRequest; x-openclaw-agent-id header never roster-validated)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92504"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@100yenadmin",
+      "number": 92502,
+      "title": "Add Telegram voice STT telemetry and cron payload audit",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92502"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@100yenadmin",
+      "number": 92500,
+      "title": "Add Telegram voice/STT handoff telemetry into agent context",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92500"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SYU8384",
+      "number": 92499,
+      "title": "Memory/QMD: isolate mcporter sidecars per agent",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92499"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 92496,
+      "title": "fix(agents): set origin fields for config-driven subagent model overrides (fixes #92486)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92496"
     },
     {
       "activity": 0,
@@ -10614,8 +10677,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92494,
-    "pr": 92495
+    "issue": 92511,
+    "pr": 92508
   },
   "schema_version": 1,
   "updated": "2026-06-13"
