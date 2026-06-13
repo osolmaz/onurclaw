@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 SKILL_RELATIVE_PATH = Path("agents/skills/openclaw-onur-inventory/sandbox/SKILL.md")
-LOCAL_SKILL_RELATIVE_PATH = Path("skills/openclaw-onur-inventory/SKILL.md")
+LOCAL_SKILL_RELATIVE_PATH = Path(".agents/skills/openclaw-onur-inventory/SKILL.md")
 
 
 def repo_root() -> Path:

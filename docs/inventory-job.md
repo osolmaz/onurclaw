@@ -41,7 +41,7 @@ private deployment responsibilities.
 ## Skill Copy
 
 The job reads the checked-in local skill at
-`/workspace/skills/openclaw-onur-inventory/SKILL.md`. It must be a real file,
+`/workspace/.agents/skills/openclaw-onur-inventory/SKILL.md`. It must be a real file,
 not a symlink or remote link, because the sandbox has no network or host repo
 access.
 
@@ -63,7 +63,7 @@ repo, the check skips cleanly unless `--require-source` is passed.
 The cron message should make the curation step explicit:
 
 ```text
-Read /workspace/skills/openclaw-onur-inventory/SKILL.md and follow it to
+Read /workspace/.agents/skills/openclaw-onur-inventory/SKILL.md and follow it to
 refresh /workspace/OPENCLAW_ONUR_INVENTORY.md from /gitcrawl/gitcrawl.db.
 First run: git checkout main
 Use scripts/list_inventory_review_candidates.py with --format jsonl --output
