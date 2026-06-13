@@ -3813,8 +3813,8 @@
   "counts": {
     "closed_threads": 544,
     "open_issues": 395,
-    "open_prs": 405,
-    "open_threads": 800
+    "open_prs": 408,
+    "open_threads": 803
   },
   "open_threads": [
     {
@@ -5051,6 +5051,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 92650,
+      "title": "fix #92465: split OpenAI 431 embedding batches",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92650"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@litang9",
+      "number": 92649,
+      "title": "feat(kimi): show code quota in usage status",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92649"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Bartok9",
+      "number": 92647,
+      "title": "fix(memory): attribute corpus=all timeouts to the slow branch instead of the provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92647"
     },
     {
       "activity": 0,
@@ -11066,8 +11093,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92638,
-    "pr": 92645
+    "issue": 92653,
+    "pr": 92654
   },
   "schema_version": 1,
   "updated": "2026-06-13"
