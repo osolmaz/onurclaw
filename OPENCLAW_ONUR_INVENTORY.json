@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 401,
-    "open_prs": 414,
-    "open_threads": 815
+    "open_issues": 402,
+    "open_prs": 416,
+    "open_threads": 818
   },
   "open_threads": [
     {
@@ -5051,6 +5051,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@wangmiao0668000666",
+      "number": 92739,
+      "title": "fix(doctor): probe memory embeddings when --deep flag is used",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92739"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@rrriiiccckkk",
+      "number": 92728,
+      "title": "memory-core: CJK LIKE fallback returns wrong results for multi-character queries",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92728"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@michmill1970",
+      "number": 92725,
+      "title": "External reranker",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92725"
     },
     {
       "activity": 0,
@@ -11201,9 +11228,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 92707,
-    "pr": 92719
+    "issue": 92737,
+    "pr": 92739
   },
   "schema_version": 1,
-  "updated": "2026-06-13"
+  "updated": "2026-06-14"
 }
