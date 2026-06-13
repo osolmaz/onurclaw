@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 388,
-    "open_prs": 392,
-    "open_threads": 780
+    "open_issues": 391,
+    "open_prs": 395,
+    "open_threads": 786
   },
   "open_threads": [
     {
@@ -5051,6 +5051,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@constra",
+      "number": 92599,
+      "title": "Model calls to a stalled provider connection hang to the job timeout — fetch timeout doesn't fire and fallback never triggers",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92599"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@nguyenjustin214-lab",
+      "number": 92598,
+      "title": "Discord compaction still fails with provider_error_4xx after #90496 closure on 2026.6.5",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92598"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@zhangguiping-xydt",
+      "number": 92594,
+      "title": "[Bug]: ollama-cloud runtime fails DNS lookup for ai.ollama.com, while ollama/&lt;model&gt;:cloud works",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92594"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wangmiao0668000666",
+      "number": 92585,
+      "title": "fix(model-registry): skip invalid plugin catalog shards instead of aborting the whole load",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92585"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 92583,
+      "title": "fix(doctor): pass --deep flag to memory embedding probe (fixes #92582)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92583"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@neekolascmd",
+      "number": 92582,
+      "title": "Bug: doctor falsely warns local memory embeddings are not ready",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92582"
     },
     {
       "activity": 0,
@@ -10886,8 +10940,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92572,
-    "pr": 92581
+    "issue": 92600,
+    "pr": 92594
   },
   "schema_version": 1,
   "updated": "2026-06-13"

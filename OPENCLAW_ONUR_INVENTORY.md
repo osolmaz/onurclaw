@@ -4,11 +4,11 @@ Updated: 2026-06-13
 
 Review watermark:
 
-- Last reviewed through issue: #92572.
-- Last reviewed through PR: #92581.
+- Last reviewed through issue: #92600.
+- Last reviewed through PR: #92594.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (780)
+## OPEN THREADS (786)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -149,6 +149,12 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92599](https://github.com/openclaw/openclaw/issues/92599) | 0 | OpenAI-compatible/proxy | @constra | Model calls to a stalled provider connection hang to the job timeout — fetch timeout doesn't fire and fallback never triggers |
+| 📝&nbsp;[#92598](https://github.com/openclaw/openclaw/issues/92598) | 0 | Model routing/config | @nguyenjustin214-lab | Discord compaction still fails with provider_error_4xx after #90496 closure on 2026.6.5 |
+| 🔀&nbsp;[#92594](https://github.com/openclaw/openclaw/pull/92594) | 0 | Local model runtime | @zhangguiping-xydt | [Bug]: ollama-cloud runtime fails DNS lookup for ai.ollama.com, while ollama/&lt;model&gt;:cloud works |
+| 🔀&nbsp;[#92585](https://github.com/openclaw/openclaw/pull/92585) | 0 | Model routing/config | @wangmiao0668000666 | fix(model-registry): skip invalid plugin catalog shards instead of aborting the whole load |
+| 🔀&nbsp;[#92583](https://github.com/openclaw/openclaw/pull/92583) | 0 | Local memory/embedding | @liuhao1024 | fix(doctor): pass --deep flag to memory embedding probe (fixes #92582) |
+| 📝&nbsp;[#92582](https://github.com/openclaw/openclaw/issues/92582) | 0 | Local memory/embedding | @neekolascmd | Bug: doctor falsely warns local memory embeddings are not ready |
 | 🔀&nbsp;[#92560](https://github.com/openclaw/openclaw/pull/92560) | 0 | Local memory/embedding | @XuZehan-iCenter | fix(memory-qmd): preserve Windows absolute paths in QMD command resolution |
 | 📝&nbsp;[#92559](https://github.com/openclaw/openclaw/issues/92559) | 0 | OpenAI-compatible/proxy | @fmsonic | Feature: Session-aware template variables in extra_body (e.g. {{session.channel}}) |
 | 🔀&nbsp;[#92557](https://github.com/openclaw/openclaw/pull/92557) | 0 | Local model runtime | @Patrick-Erichsen | Validate ClawHub plugin metadata in PRs |
@@ -1370,4 +1376,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 780 (388 issues, 392 PRs).
+- Kept open threads: 786 (391 issues, 395 PRs).
