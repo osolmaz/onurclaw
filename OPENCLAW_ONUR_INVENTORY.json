@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 395,
-    "open_prs": 408,
-    "open_threads": 803
+    "open_issues": 399,
+    "open_prs": 410,
+    "open_threads": 809
   },
   "open_threads": [
     {
@@ -5051,6 +5051,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Robin9plus1",
+      "number": 92675,
+      "title": "GitHub Copilot recurring HTTP 401 after 2026.6.6 — incomplete SQLite auth migration leaves stale auth-profiles.json / auth-state.json",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92675"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xxtyyq",
+      "number": 92674,
+      "title": "[Bug] Thinking level fallback to \"adaptive\" silently increases token usage 4-5x when user requests \"medium\" on models that only support [off, adaptive]",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92674"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kumaxs",
+      "number": 92672,
+      "title": "[RFC] Rate-limit fallback: user-visible error + immediate switch notification (message-lifecycle Phase 2 extension)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92672"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@kagura-agent",
+      "number": 92665,
+      "title": "fix(llm): honor cacheRetention for LiteLLM-proxied Anthropic models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92665"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 92663,
+      "title": "fix(dreaming): unwrap message envelope in extractNarrativeText for cron context (fixes #90292)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92663"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@renaudcerrato",
+      "number": 92655,
+      "title": "[Bug]: Telegram: /models provider buttons do nothing when clicked in a forum topic group",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92655"
     },
     {
       "activity": 0,
@@ -11093,8 +11147,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92653,
-    "pr": 92654
+    "issue": 92675,
+    "pr": 92668
   },
   "schema_version": 1,
   "updated": "2026-06-13"
