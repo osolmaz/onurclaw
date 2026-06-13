@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 391,
-    "open_prs": 395,
-    "open_threads": 786
+    "open_issues": 392,
+    "open_prs": 396,
+    "open_threads": 788
   },
   "open_threads": [
     {
@@ -5051,6 +5051,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@liuhao1024",
+      "number": 92614,
+      "title": "fix(openrouter): strip openrouter/ prefix from model ID before API call (fixes #92611)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92614"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lijenhsin",
+      "number": 92611,
+      "title": "[Bug]: OpenRouter: Anthropic models send wrong model ID to API (includes openrouter/ prefix)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92611"
     },
     {
       "activity": 0,
@@ -10940,8 +10958,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92600,
-    "pr": 92594
+    "issue": 92616,
+    "pr": 92617
   },
   "schema_version": 1,
   "updated": "2026-06-13"
