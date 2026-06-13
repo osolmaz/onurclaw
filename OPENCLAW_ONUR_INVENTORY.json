@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 392,
-    "open_prs": 396,
-    "open_threads": 788
+    "open_issues": 395,
+    "open_prs": 405,
+    "open_threads": 800
   },
   "open_threads": [
     {
@@ -5051,6 +5051,114 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Pommelle",
+      "number": 92644,
+      "title": "fix(openrouter): strip openrouter/ prefix from model IDs before API calls",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92644"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 92641,
+      "title": "fix(memory): run memory+supplement searches in parallel for corpus=all (fixes #92633)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92641"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@TurboTheTurtle",
+      "number": 92639,
+      "title": "fix(memory): keep memory_search in transient qmd mode",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92639"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@djtitov-netizen",
+      "number": 92638,
+      "title": "[Bug]: Memory index meta table not populated; index --force and status --index hang",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92638"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@desksk",
+      "number": 92633,
+      "title": "memory_search corpus=all times out while individual corpora succeed",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92633"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@anyech",
+      "number": 92632,
+      "title": "fix(memory-core): clarify memory_search tool timeouts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92632"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@art80",
+      "number": 92629,
+      "title": "[Bug]: Gateway re-reads and deep-clones the entire subagent registry on every transcript-update broadcast, stalling the event loop ~4s per tool call (scales with registry size)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92629"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 92628,
+      "title": "fix #73713: surface nested embedding fetch failures",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92628"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@liuhao1024",
+      "number": 92627,
+      "title": "fix(openrouter): strip openrouter/ prefix from model ID in normalizeResolvedModel hook (fixes #92611)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92627"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yu-xin-c",
+      "number": 92624,
+      "title": "fix(memory-core): honor qmd search timeouts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92624"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 92623,
+      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92623"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 92618,
+      "title": "fix #92218: memory_search tool disabled with QMD backend",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92618"
     },
     {
       "activity": 0,
@@ -10958,8 +11066,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92616,
-    "pr": 92617
+    "issue": 92638,
+    "pr": 92645
   },
   "schema_version": 1,
   "updated": "2026-06-13"

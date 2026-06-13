@@ -4,11 +4,11 @@ Updated: 2026-06-13
 
 Review watermark:
 
-- Last reviewed through issue: #92616.
-- Last reviewed through PR: #92617.
+- Last reviewed through issue: #92638.
+- Last reviewed through PR: #92645.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## OPEN THREADS (788)
+## OPEN THREADS (800)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -149,6 +149,18 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92644](https://github.com/openclaw/openclaw/pull/92644) | 0 | OpenAI-compatible/proxy | @Pommelle | fix(openrouter): strip openrouter/ prefix from model IDs before API calls |
+| 🔀&nbsp;[#92641](https://github.com/openclaw/openclaw/pull/92641) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): run memory+supplement searches in parallel for corpus=all (fixes #92633) |
+| 🔀&nbsp;[#92639](https://github.com/openclaw/openclaw/pull/92639) | 0 | Local memory/embedding | @TurboTheTurtle | fix(memory): keep memory_search in transient qmd mode |
+| 📝&nbsp;[#92638](https://github.com/openclaw/openclaw/issues/92638) | 0 | Local memory/embedding | @djtitov-netizen | [Bug]: Memory index meta table not populated; index --force and status --index hang |
+| 📝&nbsp;[#92633](https://github.com/openclaw/openclaw/issues/92633) | 0 | Local memory/embedding | @desksk | memory_search corpus=all times out while individual corpora succeed |
+| 🔀&nbsp;[#92632](https://github.com/openclaw/openclaw/pull/92632) | 0 | Local memory/embedding | @anyech | fix(memory-core): clarify memory_search tool timeouts |
+| 📝&nbsp;[#92629](https://github.com/openclaw/openclaw/issues/92629) | 0 | Local model runtime | @art80 | [Bug]: Gateway re-reads and deep-clones the entire subagent registry on every transcript-update broadcast, stalling the event loop ~4s per tool call (scales with registry size) |
+| 🔀&nbsp;[#92628](https://github.com/openclaw/openclaw/pull/92628) | 0 | Local memory/embedding | @mushuiyu886 | fix #73713: surface nested embedding fetch failures |
+| 🔀&nbsp;[#92627](https://github.com/openclaw/openclaw/pull/92627) | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(openrouter): strip openrouter/ prefix from model ID in normalizeResolvedModel hook (fixes #92611) |
+| 🔀&nbsp;[#92624](https://github.com/openclaw/openclaw/pull/92624) | 0 | Local memory/embedding | @yu-xin-c | fix(memory-core): honor qmd search timeouts |
+| 🔀&nbsp;[#92623](https://github.com/openclaw/openclaw/pull/92623) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494) |
+| 🔀&nbsp;[#92618](https://github.com/openclaw/openclaw/pull/92618) | 0 | Local memory/embedding | @mushuiyu886 | fix #92218: memory_search tool disabled with QMD backend |
 | 🔀&nbsp;[#92614](https://github.com/openclaw/openclaw/pull/92614) | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(openrouter): strip openrouter/ prefix from model ID before API call (fixes #92611) |
 | 📝&nbsp;[#92611](https://github.com/openclaw/openclaw/issues/92611) | 0 | OpenAI-compatible/proxy | @lijenhsin | [Bug]: OpenRouter: Anthropic models send wrong model ID to API (includes openrouter/ prefix) |
 | 📝&nbsp;[#92599](https://github.com/openclaw/openclaw/issues/92599) | 0 | OpenAI-compatible/proxy | @constra | Model calls to a stalled provider connection hang to the job timeout — fetch timeout doesn't fire and fallback never triggers |
@@ -1378,4 +1390,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The merged open thread table has `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 788 (392 issues, 396 PRs).
+- Kept open threads: 800 (395 issues, 405 PRs).
