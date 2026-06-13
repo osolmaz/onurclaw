@@ -2,6 +2,69 @@
   "$schema": "schemas/openclaw-onur-inventory.schema.json",
   "closed_threads": [
     {
+      "number": 92577,
+      "status": "0",
+      "title": "Local memory/embedding",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92577"
+    },
+    {
+      "number": 92575,
+      "status": "0",
+      "title": "Model routing/config",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92575"
+    },
+    {
+      "number": 92573,
+      "status": "0",
+      "title": "Model routing/config",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92573"
+    },
+    {
+      "number": 92572,
+      "status": "0",
+      "title": "Model routing/config",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92572"
+    },
+    {
+      "number": 92571,
+      "status": "0",
+      "title": "Local memory/embedding",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92571"
+    },
+    {
+      "number": 92565,
+      "status": "0",
+      "title": "OpenAI-compatible/proxy",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92565"
+    },
+    {
+      "number": 92564,
+      "status": "0",
+      "title": "Model routing/config",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92564"
+    },
+    {
+      "number": 92563,
+      "status": "0",
+      "title": "Local memory/embedding",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92563"
+    },
+    {
+      "number": 92562,
+      "status": "0",
+      "title": "Model routing/config",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92562"
+    },
+    {
       "number": 92536,
       "status": "0",
       "title": "Local memory/embedding",
@@ -3748,7 +3811,7 @@
     }
   ],
   "counts": {
-    "closed_threads": 535,
+    "closed_threads": 544,
     "open_issues": 388,
     "open_prs": 392,
     "open_threads": 780
@@ -10823,8 +10886,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92561,
-    "pr": 92560
+    "issue": 92572,
+    "pr": 92581
   },
   "schema_version": 1,
   "updated": "2026-06-13"

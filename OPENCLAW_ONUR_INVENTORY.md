@@ -4,8 +4,8 @@ Updated: 2026-06-13
 
 Review watermark:
 
-- Last reviewed through issue: #92561.
-- Last reviewed through PR: #92560.
+- Last reviewed through issue: #92572.
+- Last reviewed through PR: #92581.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## OPEN THREADS (780)
@@ -797,13 +797,31 @@ Review watermark:
 
 These were in earlier local-model notes or candidate pools but are not counted as live-open retained threads now.
 
+| 🔀&nbsp;[#92577](https://github.com/openclaw/openclaw/pull/92577) | 0 | Local memory/embedding | @xydt-tanshanshan | fix: deduplicate consecutive assistant messages in session-memory hook |
+| 🔀&nbsp;[#92575](https://github.com/openclaw/openclaw/pull/92575) | 0 | Model routing/config | @harjothkhara | fix(sessions): preserve user behavior overrides across daily/idle rollover (#92562) [AI-assisted] |
+| 🔀&nbsp;[#92573](https://github.com/openclaw/openclaw/pull/92573) | 0 | Model routing/config | @arkyu2077 | fix: preserve config-selected subagent model overrides |
+| 📝&nbsp;[#92572](https://github.com/openclaw/openclaw/issues/92572) | 0 | Model routing/config | @sweetrice-stack | [Bug]: Claude Opus 4.6 via `agy` CLI returns 404 in web UI despite working in terminal |
+| 🔀&nbsp;[#92571](https://github.com/openclaw/openclaw/pull/92571) | 0 | Local memory/embedding | @arkyu2077 | fix: dedupe cleaned assistant transcript entries for session-memory |
+| 🔀&nbsp;[#92565](https://github.com/openclaw/openclaw/pull/92565) | 0 | OpenAI-compatible/proxy | @fsdwen | fix(deepseek): enable prompt cache key in model catalog |
+| 🔀&nbsp;[#92564](https://github.com/openclaw/openclaw/pull/92564) | 0 | Model routing/config | @tangtaizong666 | fix(agents): isolate invalid plugin model catalogs [AI-assisted] |
+| 📝&nbsp;[#92563](https://github.com/openclaw/openclaw/issues/92563) | 0 | Local memory/embedding | @redcrowst2-afk | session-memory hook duplicates assistant messages when thinking is stripped |
+
+| 📝&nbsp;[#92562](https://github.com/openclaw/openclaw/issues/92562) | 0 | Model routing/config | @civiltox | [Bug]: Implicit daily/idle session rollover does not preserve user-set behavior overrides |
+
 | 📝&nbsp;[#92536](https://github.com/openclaw/openclaw/issues/92536) | 0 | Local memory/embedding | @resYuto | [Bug]: Dreaming sweeps not working if use Dreaming-compatible memory plugin |
+
 | 🔀&nbsp;[#92531](https://github.com/openclaw/openclaw/pull/92531) | 0 | Local memory/embedding | @leonmuellerfijucha | feat: implement shadow-logger plugin for memory system |
+
 | 🔀&nbsp;[#92529](https://github.com/openclaw/openclaw/pull/92529) | 0 | Model routing/config | @jml001 | fix(agents): prevent local exec policy errors from triggering model fallback |
+
 | 🔀&nbsp;[#92526](https://github.com/openclaw/openclaw/pull/92526) | 0 | Model routing/config | @zenglingbiao | fix(gateway): treat google-gemini-cli Gemini models as image-capable (fixes #91739) |
+
 | 🔀&nbsp;[#92524](https://github.com/openclaw/openclaw/pull/92524) | 0 | Local memory/embedding | @yu-xin-c | fix(memory-core): preserve overlapping hybrid keyword scores |
+
 | 🔀&nbsp;[#92515](https://github.com/openclaw/openclaw/pull/92515) | 0 | Local memory/embedding | @EleutheroiEdge | Recover memory search from transient missing metadata |
+
 | 🔀&nbsp;[#92510](https://github.com/openclaw/openclaw/pull/92510) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | fix(gateway): reject unknown OpenAI agent selectors |
+
 | 🔀&nbsp;[#92509](https://github.com/openclaw/openclaw/pull/92509) | 0 | Local memory/embedding | @Dazlarus | fix(memory-core): WAL checkpoint after writeMeta + stale index file cleanup |
 
 <details>
