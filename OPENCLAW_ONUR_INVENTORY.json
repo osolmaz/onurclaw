@@ -3749,9 +3749,9 @@
   ],
   "counts": {
     "closed_threads": 535,
-    "open_issues": 386,
-    "open_prs": 386,
-    "open_threads": 772
+    "open_issues": 388,
+    "open_prs": 392,
+    "open_threads": 780
   },
   "open_threads": [
     {
@@ -4988,6 +4988,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@XuZehan-iCenter",
+      "number": 92560,
+      "title": "fix(memory-qmd): preserve Windows absolute paths in QMD command resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92560"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@fmsonic",
+      "number": 92559,
+      "title": "Feature: Session-aware template variables in extra_body (e.g. {{session.channel}})",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92559"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Patrick-Erichsen",
+      "number": 92557,
+      "title": "Validate ClawHub plugin metadata in PRs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92557"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@smolskayanastassia",
+      "number": 92556,
+      "title": "feat(llm): add Inworld as built-in llm provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92556"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@steipete",
+      "number": 92554,
+      "title": "feat(moonshot): add Kimi K2.7 Code support",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92554"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@fxstein",
+      "number": 92553,
+      "title": "ModelRegistry: a single invalid plugin catalog aborts the entire custom-models load, leaving zero models and an unlogged error",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92553"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@jperla",
+      "number": 92544,
+      "title": "Add TrustedRouter setup docs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92544"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yxshee",
+      "number": 92541,
+      "title": "fix(plugins): load dreaming engine when memory slot plugin omitted from allowlist",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92541"
     },
     {
       "activity": 0,
@@ -10751,8 +10823,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92539,
-    "pr": 92540
+    "issue": 92561,
+    "pr": 92560
   },
   "schema_version": 1,
   "updated": "2026-06-13"
