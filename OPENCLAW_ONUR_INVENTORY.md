@@ -4,8 +4,8 @@ Updated: 2026-06-14
 
 Review watermark:
 
-- Last reviewed through issue: #92737.
-- Last reviewed through PR: #92739.
+- Last reviewed through issue: #92777.
+- Last reviewed through PR: #92775.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (20)
@@ -15,6 +15,16 @@ Review watermark:
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#92776](https://github.com/openclaw/openclaw/issues/92776) | 2026-06-13 | 0 | Model routing/config | @falonrozfatemi | Session model pinning persists indefinitely: snap-back probe (PR #82676) defeated by origin-field pollution upstream — repros on 2026.5.28 through 2026.6.7-beta.1, byte-identical paths |
+| 🔀&nbsp;[#92775](https://github.com/openclaw/openclaw/pull/92775) | 2026-06-13 | 0 | Model routing/config | @samson910022 | fix(status): delegate CLI status context resolution and fix slash-model 200K bug (closes #92760) |
+| 🔀&nbsp;[#92773](https://github.com/openclaw/openclaw/pull/92773) | 2026-06-13 | 0 | Model routing/config | @NarahariRaghava | fix(tui): show resolved canonical model ref in /model confirmation |
+| 🔀&nbsp;[#92770](https://github.com/openclaw/openclaw/pull/92770) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @XuZehan-iCenter | fix(media-understanding): place Qwen/DashScope image prompts in user content (#92688) |
+| 📝&nbsp;[#92769](https://github.com/openclaw/openclaw/issues/92769) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @Wizongod | [Bug]: Regression of #65533 — reasoning/reasoning_details completely dropped from message history for MiniMax M3 via OpenRouter (both plain-text and tool-call turns) |
+| 🔀&nbsp;[#92763](https://github.com/openclaw/openclaw/pull/92763) | 2026-06-13 | 0 | Model routing/config | @1052326311 | fix(gateway): add google-gemini-cli image capability fallback for stale catalog rows |
+| 📝&nbsp;[#92760](https://github.com/openclaw/openclaw/issues/92760) | 2026-06-13 | 0 | Model routing/config | @samson910022 | CLI openclaw status shows 200K context window due to standalone resolution copy in status.summary.runtime.ts |
+| 🔀&nbsp;[#92759](https://github.com/openclaw/openclaw/pull/92759) | 2026-06-13 | 0 | Local memory/embedding | @1052326311 | fix(memory): guard against missing agentIds in wiki artifact clone and sort |
+| 🔀&nbsp;[#92745](https://github.com/openclaw/openclaw/pull/92745) | 2026-06-13 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): explain skipped short-term recall hits |
+| 📝&nbsp;[#92743](https://github.com/openclaw/openclaw/issues/92743) | 2026-06-13 | 0 | Local memory/embedding | @zhuyankarl | [hy-memory] AutoRecall should use current user request, not full OpenClaw envelope |
 | 🔀&nbsp;[#92739](https://github.com/openclaw/openclaw/pull/92739) | 2026-06-13 | 0 | Local memory/embedding | @wangmiao0668000666 | fix(doctor): probe memory embeddings when --deep flag is used |
 | 📝&nbsp;[#92728](https://github.com/openclaw/openclaw/issues/92728) | 2026-06-13 | 0 | Local memory/embedding | @rrriiiccckkk | memory-core: CJK LIKE fallback returns wrong results for multi-character queries |
 | 🔀&nbsp;[#92725](https://github.com/openclaw/openclaw/pull/92725) | 2026-06-13 | 0 | Local memory/embedding | @michmill1970 | External reranker |
@@ -25,20 +35,10 @@ Review watermark:
 | 📝&nbsp;[#92688](https://github.com/openclaw/openclaw/issues/92688) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @Yachiyo404 | [Bug]: Qwen vision models fail with 400 "Unexpected item type in content" on DashScope |
 | 🔀&nbsp;[#92676](https://github.com/openclaw/openclaw/pull/92676) | 2026-06-13 | 0 | Model routing/config | @kumaxs | feat: Rate-limit fallback user-visible error notification (message-lifecycle Phase 2 extension) |
 | 📝&nbsp;[#92675](https://github.com/openclaw/openclaw/issues/92675) | 2026-06-13 | 0 | Model/provider behavior | @Robin9plus1 | GitHub Copilot recurring HTTP 401 after 2026.6.6 — incomplete SQLite auth migration leaves stale auth-profiles.json / auth-state.json |
-| 📝&nbsp;[#92674](https://github.com/openclaw/openclaw/issues/92674) | 2026-06-13 | 0 | Model routing/config | @xxtyyq | [Bug] Thinking level fallback to "adaptive" silently increases token usage 4-5x when user requests "medium" on models that only support [off, adaptive] |
-| 📝&nbsp;[#92672](https://github.com/openclaw/openclaw/issues/92672) | 2026-06-13 | 0 | Model routing/config | @kumaxs | [RFC] Rate-limit fallback: user-visible error + immediate switch notification (message-lifecycle Phase 2 extension) |
-| 🔀&nbsp;[#92665](https://github.com/openclaw/openclaw/pull/92665) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @kagura-agent | fix(llm): honor cacheRetention for LiteLLM-proxied Anthropic models |
-| 🔀&nbsp;[#92663](https://github.com/openclaw/openclaw/pull/92663) | 2026-06-13 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): unwrap message envelope in extractNarrativeText for cron context (fixes #90292) |
-| 📝&nbsp;[#92655](https://github.com/openclaw/openclaw/issues/92655) | 2026-06-13 | 0 | Model routing/config | @renaudcerrato | [Bug]: Telegram: /models provider buttons do nothing when clicked in a forum topic group |
-| 🔀&nbsp;[#92650](https://github.com/openclaw/openclaw/pull/92650) | 2026-06-13 | 0 | Local memory/embedding | @mushuiyu886 | fix #92465: split OpenAI 431 embedding batches |
-| 🔀&nbsp;[#92649](https://github.com/openclaw/openclaw/pull/92649) | 2026-06-13 | 0 | Open-weight/provider behavior | @litang9 | feat(kimi): show code quota in usage status |
-| 🔀&nbsp;[#92647](https://github.com/openclaw/openclaw/pull/92647) | 2026-06-13 | 0 | Local memory/embedding | @Bartok9 | fix(memory): attribute corpus=all timeouts to the slow branch instead of the provider |
-| 🔀&nbsp;[#92644](https://github.com/openclaw/openclaw/pull/92644) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @Pommelle | fix(openrouter): strip openrouter/ prefix from model IDs before API calls |
-| 🔀&nbsp;[#92641](https://github.com/openclaw/openclaw/pull/92641) | 2026-06-13 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): run memory+supplement searches in parallel for corpus=all (fixes #92633) |
 
 </details>
 
-## OPEN THREADS (818)
+## OPEN THREADS (828)
 
 <details>
 <summary>All open threads, sorted by activity</summary>
@@ -182,6 +182,16 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92776](https://github.com/openclaw/openclaw/issues/92776) | 0 | Model routing/config | @falonrozfatemi | Session model pinning persists indefinitely: snap-back probe (PR #82676) defeated by origin-field pollution upstream — repros on 2026.5.28 through 2026.6.7-beta.1, byte-identical paths |
+| 🔀&nbsp;[#92775](https://github.com/openclaw/openclaw/pull/92775) | 0 | Model routing/config | @samson910022 | fix(status): delegate CLI status context resolution and fix slash-model 200K bug (closes #92760) |
+| 🔀&nbsp;[#92773](https://github.com/openclaw/openclaw/pull/92773) | 0 | Model routing/config | @NarahariRaghava | fix(tui): show resolved canonical model ref in /model confirmation |
+| 🔀&nbsp;[#92770](https://github.com/openclaw/openclaw/pull/92770) | 0 | OpenAI-compatible/proxy | @XuZehan-iCenter | fix(media-understanding): place Qwen/DashScope image prompts in user content (#92688) |
+| 📝&nbsp;[#92769](https://github.com/openclaw/openclaw/issues/92769) | 0 | OpenAI-compatible/proxy | @Wizongod | [Bug]: Regression of #65533 — reasoning/reasoning_details completely dropped from message history for MiniMax M3 via OpenRouter (both plain-text and tool-call turns) |
+| 🔀&nbsp;[#92763](https://github.com/openclaw/openclaw/pull/92763) | 0 | Model routing/config | @1052326311 | fix(gateway): add google-gemini-cli image capability fallback for stale catalog rows |
+| 📝&nbsp;[#92760](https://github.com/openclaw/openclaw/issues/92760) | 0 | Model routing/config | @samson910022 | CLI openclaw status shows 200K context window due to standalone resolution copy in status.summary.runtime.ts |
+| 🔀&nbsp;[#92759](https://github.com/openclaw/openclaw/pull/92759) | 0 | Local memory/embedding | @1052326311 | fix(memory): guard against missing agentIds in wiki artifact clone and sort |
+| 🔀&nbsp;[#92745](https://github.com/openclaw/openclaw/pull/92745) | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): explain skipped short-term recall hits |
+| 📝&nbsp;[#92743](https://github.com/openclaw/openclaw/issues/92743) | 0 | Local memory/embedding | @zhuyankarl | [hy-memory] AutoRecall should use current user request, not full OpenClaw envelope |
 | 🔀&nbsp;[#92739](https://github.com/openclaw/openclaw/pull/92739) | 0 | Local memory/embedding | @wangmiao0668000666 | fix(doctor): probe memory embeddings when --deep flag is used |
 | 📝&nbsp;[#92728](https://github.com/openclaw/openclaw/issues/92728) | 0 | Local memory/embedding | @rrriiiccckkk | memory-core: CJK LIKE fallback returns wrong results for multi-character queries |
 | 🔀&nbsp;[#92725](https://github.com/openclaw/openclaw/pull/92725) | 0 | Local memory/embedding | @michmill1970 | External reranker |
@@ -1443,4 +1453,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 818 (402 issues, 416 PRs).
+- Kept open threads: 828 (406 issues, 422 PRs).
