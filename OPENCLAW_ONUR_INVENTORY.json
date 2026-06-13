@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 399,
-    "open_prs": 410,
-    "open_threads": 809
+    "open_issues": 401,
+    "open_prs": 414,
+    "open_threads": 815
   },
   "open_threads": [
     {
@@ -5051,6 +5051,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@samson910022",
+      "number": 92709,
+      "title": "fix(agents): resolve context window for proxy models with slash in ID",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92709"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@armarinho",
+      "number": 92706,
+      "title": "Dreaming deep-sleep promotes 0 — short-term recall store only populated by session-corpus ingestion (recallCount stays 0); is live memory_search supposed to feed recall?",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92706"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@sheyanmin",
+      "number": 92704,
+      "title": "#92688: fix(qwen): use DashScope native image format for Qwen vision models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92704"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 92698,
+      "title": "fix #80582: Memory: skip markdown placeholder snippets during short-term promotion",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92698"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Yachiyo404",
+      "number": 92688,
+      "title": "[Bug]: Qwen vision models fail with 400 \"Unexpected item type in content\" on DashScope",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92688"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kumaxs",
+      "number": 92676,
+      "title": "feat: Rate-limit fallback user-visible error notification (message-lifecycle Phase 2 extension)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92676"
     },
     {
       "activity": 0,
@@ -11147,8 +11201,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92675,
-    "pr": 92668
+    "issue": 92707,
+    "pr": 92719
   },
   "schema_version": 1,
   "updated": "2026-06-13"
