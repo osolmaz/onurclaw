@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 406,
-    "open_prs": 424,
-    "open_threads": 830
+    "open_issues": 407,
+    "open_prs": 425,
+    "open_threads": 832
   },
   "open_threads": [
     {
@@ -5051,6 +5051,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Alyx-Learbott",
+      "number": 92808,
+      "title": "[Bug]: Title: Local embedding provider breaks on upgrade (two consecutive releases) — no migration path, misleading error",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92808"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@MonkeyLeeT",
+      "number": 92803,
+      "title": "fix(thinking): avoid adaptive fallback for budget requests",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92803"
     },
     {
       "activity": 0,
@@ -11336,8 +11354,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92783,
-    "pr": 92799
+    "issue": 92811,
+    "pr": 92814
   },
   "schema_version": 1,
   "updated": "2026-06-14"

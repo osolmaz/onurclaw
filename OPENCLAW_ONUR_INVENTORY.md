@@ -4,8 +4,8 @@ Updated: 2026-06-14
 
 Review watermark:
 
-- Last reviewed through issue: #92783.
-- Last reviewed through PR: #92799.
+- Last reviewed through issue: #92811.
+- Last reviewed through PR: #92814.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (20)
@@ -15,6 +15,8 @@ Review watermark:
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#92808](https://github.com/openclaw/openclaw/issues/92808) | 2026-06-13 | 0 | Local memory/embedding | @Alyx-Learbott | [Bug]: Title: Local embedding provider breaks on upgrade (two consecutive releases) — no migration path, misleading error |
+| 🔀&nbsp;[#92803](https://github.com/openclaw/openclaw/pull/92803) | 2026-06-13 | 0 | Model/provider behavior | @MonkeyLeeT | fix(thinking): avoid adaptive fallback for budget requests |
 | 🔀&nbsp;[#92790](https://github.com/openclaw/openclaw/pull/92790) | 2026-06-13 | 0 | Model routing/config | @TurboTheTurtle | fix(session): clear stale auto fallback origins |
 | 🔀&nbsp;[#92782](https://github.com/openclaw/openclaw/pull/92782) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | fix #92688: [Bug]: Qwen vision models fail with 400 "Unexpected item type in content" on DashScope |
 | 📝&nbsp;[#92776](https://github.com/openclaw/openclaw/issues/92776) | 2026-06-13 | 0 | Model routing/config | @falonrozfatemi | Session model pinning persists indefinitely: snap-back probe (PR #82676) defeated by origin-field pollution upstream — repros on 2026.5.28 through 2026.6.7-beta.1, byte-identical paths |
@@ -33,12 +35,10 @@ Review watermark:
 | 🔀&nbsp;[#92709](https://github.com/openclaw/openclaw/pull/92709) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @samson910022 | fix(agents): resolve context window for proxy models with slash in ID |
 | 📝&nbsp;[#92706](https://github.com/openclaw/openclaw/issues/92706) | 2026-06-13 | 0 | Local memory/embedding | @armarinho | Dreaming deep-sleep promotes 0 — short-term recall store only populated by session-corpus ingestion (recallCount stays 0); is live memory_search supposed to feed recall? |
 | 🔀&nbsp;[#92704](https://github.com/openclaw/openclaw/pull/92704) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @sheyanmin | #92688: fix(qwen): use DashScope native image format for Qwen vision models |
-| 🔀&nbsp;[#92698](https://github.com/openclaw/openclaw/pull/92698) | 2026-06-13 | 0 | Local memory/embedding | @mushuiyu886 | fix #80582: Memory: skip markdown placeholder snippets during short-term promotion |
-| 📝&nbsp;[#92688](https://github.com/openclaw/openclaw/issues/92688) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @Yachiyo404 | [Bug]: Qwen vision models fail with 400 "Unexpected item type in content" on DashScope |
 
 </details>
 
-## OPEN THREADS (830)
+## OPEN THREADS (832)
 
 <details>
 <summary>All open threads, sorted by activity</summary>
@@ -182,6 +182,8 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#92808](https://github.com/openclaw/openclaw/issues/92808) | 0 | Local memory/embedding | @Alyx-Learbott | [Bug]: Title: Local embedding provider breaks on upgrade (two consecutive releases) — no migration path, misleading error |
+| 🔀&nbsp;[#92803](https://github.com/openclaw/openclaw/pull/92803) | 0 | Model/provider behavior | @MonkeyLeeT | fix(thinking): avoid adaptive fallback for budget requests |
 | 🔀&nbsp;[#92790](https://github.com/openclaw/openclaw/pull/92790) | 0 | Model routing/config | @TurboTheTurtle | fix(session): clear stale auto fallback origins |
 | 🔀&nbsp;[#92782](https://github.com/openclaw/openclaw/pull/92782) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | fix #92688: [Bug]: Qwen vision models fail with 400 "Unexpected item type in content" on DashScope |
 | 📝&nbsp;[#92776](https://github.com/openclaw/openclaw/issues/92776) | 0 | Model routing/config | @falonrozfatemi | Session model pinning persists indefinitely: snap-back probe (PR #82676) defeated by origin-field pollution upstream — repros on 2026.5.28 through 2026.6.7-beta.1, byte-identical paths |
@@ -1455,4 +1457,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 830 (406 issues, 424 PRs).
+- Kept open threads: 832 (407 issues, 425 PRs).
