@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 412,
-    "open_prs": 446,
-    "open_threads": 858
+    "open_issues": 413,
+    "open_prs": 450,
+    "open_threads": 863
   },
   "open_threads": [
     {
@@ -5051,6 +5051,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@openperf",
+      "number": 92914,
+      "title": "fix(agents): clamp unsupported thinking for subagent spawns instead of hard-failing",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92914"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kumaxs",
+      "number": 92913,
+      "title": "fix(opencode-go): register model catalog to fix context window detection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92913"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kumaxs",
+      "number": 92912,
+      "title": "opencode-go plugin: model contextWindow not loaded, all models fall back to 200K",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92912"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@openclaw-clownfish[bot]",
+      "number": 92910,
+      "title": "fix(memory-core): safely refresh qmd index during collection repair",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92910"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@steipete",
+      "number": 92908,
+      "title": "fix(providers): quarantine unreadable Anthropic payload tools",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92908"
     },
     {
       "activity": 0,
@@ -11588,8 +11633,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92903,
-    "pr": 92905
+    "issue": 92925,
+    "pr": 92927
   },
   "schema_version": 1,
   "updated": "2026-06-14"

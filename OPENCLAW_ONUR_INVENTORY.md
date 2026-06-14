@@ -4,14 +4,19 @@ Updated: 2026-06-14
 
 Review watermark:
 
-- Last reviewed through issue: #92903.
-- Last reviewed through PR: #92905.
+- Last reviewed through issue: #92925.
+- Last reviewed through PR: #92927.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#92914](https://github.com/openclaw/openclaw/pull/92914) | 2026-06-14 | 0 | Model routing/config | @openperf | fix(agents): clamp unsupported thinking for subagent spawns instead of hard-failing |
+| 🔀&nbsp;[#92913](https://github.com/openclaw/openclaw/pull/92913) | 2026-06-14 | 0 | Model routing/config | @kumaxs | fix(opencode-go): register model catalog to fix context window detection |
+| 📝&nbsp;[#92912](https://github.com/openclaw/openclaw/issues/92912) | 2026-06-14 | 0 | Model routing/config | @kumaxs | opencode-go plugin: model contextWindow not loaded, all models fall back to 200K |
+| 🔀&nbsp;[#92910](https://github.com/openclaw/openclaw/pull/92910) | 2026-06-14 | 0 | Local memory/embedding | @openclaw-clownfish[bot] | fix(memory-core): safely refresh qmd index during collection repair |
+| 🔀&nbsp;[#92908](https://github.com/openclaw/openclaw/pull/92908) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @steipete | fix(providers): quarantine unreadable Anthropic payload tools |
 | 🔀&nbsp;[#92905](https://github.com/openclaw/openclaw/pull/92905) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(status): warm model context-window cache before /status reads it |
 | 🔀&nbsp;[#92904](https://github.com/openclaw/openclaw/pull/92904) | 2026-06-14 | 0 | Model/provider behavior | @vortexopenclaw | fix(elevenlabs): use current TTS model ids |
 | 🔀&nbsp;[#92900](https://github.com/openclaw/openclaw/pull/92900) | 2026-06-14 | 0 | Model routing/config | @YonganZhang | fix(ui): refresh overview model auth status on demand |
@@ -57,13 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#92725](https://github.com/openclaw/openclaw/pull/92725) | 2026-06-13 | 0 | Local memory/embedding | @michmill1970 | External reranker |
 | 🔀&nbsp;[#92709](https://github.com/openclaw/openclaw/pull/92709) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @samson910022 | fix(agents): resolve context window for proxy models with slash in ID |
 | 📝&nbsp;[#92706](https://github.com/openclaw/openclaw/issues/92706) | 2026-06-13 | 0 | Local memory/embedding | @armarinho | Dreaming deep-sleep promotes 0 — short-term recall store only populated by session-corpus ingestion (recallCount stays 0); is live memory_search supposed to feed recall? |
-| 🔀&nbsp;[#92704](https://github.com/openclaw/openclaw/pull/92704) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @sheyanmin | #92688: fix(qwen): use DashScope native image format for Qwen vision models |
-| 🔀&nbsp;[#92698](https://github.com/openclaw/openclaw/pull/92698) | 2026-06-13 | 0 | Local memory/embedding | @mushuiyu886 | fix #80582: Memory: skip markdown placeholder snippets during short-term promotion |
-| 📝&nbsp;[#92688](https://github.com/openclaw/openclaw/issues/92688) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @Yachiyo404 | [Bug]: Qwen vision models fail with 400 "Unexpected item type in content" on DashScope |
-| 🔀&nbsp;[#92676](https://github.com/openclaw/openclaw/pull/92676) | 2026-06-13 | 0 | Model routing/config | @kumaxs | feat: Rate-limit fallback user-visible error notification (message-lifecycle Phase 2 extension) |
-| 📝&nbsp;[#92675](https://github.com/openclaw/openclaw/issues/92675) | 2026-06-13 | 0 | Model/provider behavior | @Robin9plus1 | GitHub Copilot recurring HTTP 401 after 2026.6.6 — incomplete SQLite auth migration leaves stale auth-profiles.json / auth-state.json |
 
-## OPEN THREADS (858)
+## OPEN THREADS (863)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 📝&nbsp;[#62121](https://github.com/openclaw/openclaw/issues/62121) | 8 | Local model runtime | @tlnini-afk | DeepSeek preamble text leaks to Telegram after 3.13 -> 4.5 upgrade (untagged assistant text bypasses commentary filter) |
 
 <details>
-<summary>Remaining 808 open threads, sorted by activity</summary>
+<summary>Remaining 813 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -210,6 +210,11 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92914](https://github.com/openclaw/openclaw/pull/92914) | 0 | Model routing/config | @openperf | fix(agents): clamp unsupported thinking for subagent spawns instead of hard-failing |
+| 🔀&nbsp;[#92913](https://github.com/openclaw/openclaw/pull/92913) | 0 | Model routing/config | @kumaxs | fix(opencode-go): register model catalog to fix context window detection |
+| 📝&nbsp;[#92912](https://github.com/openclaw/openclaw/issues/92912) | 0 | Model routing/config | @kumaxs | opencode-go plugin: model contextWindow not loaded, all models fall back to 200K |
+| 🔀&nbsp;[#92910](https://github.com/openclaw/openclaw/pull/92910) | 0 | Local memory/embedding | @openclaw-clownfish[bot] | fix(memory-core): safely refresh qmd index during collection repair |
+| 🔀&nbsp;[#92908](https://github.com/openclaw/openclaw/pull/92908) | 0 | OpenAI-compatible/proxy | @steipete | fix(providers): quarantine unreadable Anthropic payload tools |
 | 🔀&nbsp;[#92905](https://github.com/openclaw/openclaw/pull/92905) | 0 | Model routing/config | @samson910022 | fix(status): warm model context-window cache before /status reads it |
 | 🔀&nbsp;[#92904](https://github.com/openclaw/openclaw/pull/92904) | 0 | Model/provider behavior | @vortexopenclaw | fix(elevenlabs): use current TTS model ids |
 | 🔀&nbsp;[#92900](https://github.com/openclaw/openclaw/pull/92900) | 0 | Model routing/config | @YonganZhang | fix(ui): refresh overview model auth status on demand |
@@ -1511,4 +1516,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 858 (412 issues, 446 PRs).
+- Kept open threads: 863 (413 issues, 450 PRs).
