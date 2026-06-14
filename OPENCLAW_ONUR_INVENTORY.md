@@ -4,8 +4,8 @@ Updated: 2026-06-14
 
 Review watermark:
 
-- Last reviewed through issue: #92844.
-- Last reviewed through PR: #92847.
+- Last reviewed through issue: #92870.
+- Last reviewed through PR: #92871.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (20)
@@ -15,6 +15,14 @@ Review watermark:
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#92867](https://github.com/openclaw/openclaw/pull/92867) | 2026-06-14 | 0 | Local memory/embedding | @XuZehan-iCenter | fix(memory-qmd): preserve Windows absolute paths in QMD command resolution |
+| 📝&nbsp;[#92866](https://github.com/openclaw/openclaw/issues/92866) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @Kambrian | Feature: image_generate should support custom/third-party providers, not only built-in ones |
+| 📝&nbsp;[#92864](https://github.com/openclaw/openclaw/issues/92864) | 2026-06-14 | 0 | Model routing/config | @cedricdesgagne-falcon | Session model override (/model) silently survives context compaction — cost $300usd  in one day |
+| 🔀&nbsp;[#92863](https://github.com/openclaw/openclaw/pull/92863) | 2026-06-14 | 0 | Model/provider behavior | @liuhao1024 | docs(logging): document exact model.usage event field names in diagnostic catalog (fixes #49046) |
+| 🔀&nbsp;[#92857](https://github.com/openclaw/openclaw/pull/92857) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(openai): drop encrypted reasoning from history for Responses-family APIs (fixes #90093) |
+| 🔀&nbsp;[#92854](https://github.com/openclaw/openclaw/pull/92854) | 2026-06-14 | 0 | Model/provider behavior | @openclaw-clownfish[bot] | fix(hooks): reject slug-generator error payloads |
+| 🔀&nbsp;[#92850](https://github.com/openclaw/openclaw/pull/92850) | 2026-06-14 | 0 | Local memory/embedding | @yarikv8 | fix(memory-core): reset lastMetaSerialized in runSafeReindex so a byte-identical reindex still writes __meta |
+| 📝&nbsp;[#92848](https://github.com/openclaw/openclaw/issues/92848) | 2026-06-14 | 0 | Local memory/embedding | @garrytan-agents | Memory vector search pauses permanently when legacy index has empty `meta` (no identity backfill) |
 | 🔀&nbsp;[#92839](https://github.com/openclaw/openclaw/pull/92839) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @yetval | fix(doctor): preserve legacy codex OAuth provider when no models are mergeable |
 | 🔀&nbsp;[#92833](https://github.com/openclaw/openclaw/pull/92833) | 2026-06-14 | 0 | Local memory/embedding | @openperf | fix(memory): search memory and wiki concurrently for corpus=all (#92633) |
 | 🔀&nbsp;[#92824](https://github.com/openclaw/openclaw/pull/92824) | 2026-06-14 | 0 | Model routing/config | @bek91 | [codex] Fix OpenAI OAuth media routing |
@@ -27,18 +35,10 @@ Review watermark:
 | 📝&nbsp;[#92776](https://github.com/openclaw/openclaw/issues/92776) | 2026-06-13 | 0 | Model routing/config | @falonrozfatemi | Session model pinning persists indefinitely: snap-back probe (PR #82676) defeated by origin-field pollution upstream — repros on 2026.5.28 through 2026.6.7-beta.1, byte-identical paths |
 | 🔀&nbsp;[#92775](https://github.com/openclaw/openclaw/pull/92775) | 2026-06-13 | 0 | Model routing/config | @samson910022 | fix(status): delegate CLI status context resolution and fix slash-model 200K bug (closes #92760) |
 | 🔀&nbsp;[#92773](https://github.com/openclaw/openclaw/pull/92773) | 2026-06-13 | 0 | Model routing/config | @NarahariRaghava | fix(tui): show resolved canonical model ref in /model confirmation |
-| 🔀&nbsp;[#92770](https://github.com/openclaw/openclaw/pull/92770) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @XuZehan-iCenter | fix(media-understanding): place Qwen/DashScope image prompts in user content (#92688) |
-| 📝&nbsp;[#92769](https://github.com/openclaw/openclaw/issues/92769) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @Wizongod | [Bug]: Regression of #65533 — reasoning/reasoning_details completely dropped from message history for MiniMax M3 via OpenRouter (both plain-text and tool-call turns) |
-| 🔀&nbsp;[#92763](https://github.com/openclaw/openclaw/pull/92763) | 2026-06-13 | 0 | Model routing/config | @1052326311 | fix(gateway): add google-gemini-cli image capability fallback for stale catalog rows |
-| 📝&nbsp;[#92760](https://github.com/openclaw/openclaw/issues/92760) | 2026-06-13 | 0 | Model routing/config | @samson910022 | CLI openclaw status shows 200K context window due to standalone resolution copy in status.summary.runtime.ts |
-| 🔀&nbsp;[#92759](https://github.com/openclaw/openclaw/pull/92759) | 2026-06-13 | 0 | Local memory/embedding | @1052326311 | fix(memory): guard against missing agentIds in wiki artifact clone and sort |
-| 🔀&nbsp;[#92745](https://github.com/openclaw/openclaw/pull/92745) | 2026-06-13 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): explain skipped short-term recall hits |
-| 📝&nbsp;[#92743](https://github.com/openclaw/openclaw/issues/92743) | 2026-06-13 | 0 | Local memory/embedding | @zhuyankarl | [hy-memory] AutoRecall should use current user request, not full OpenClaw envelope |
-| 🔀&nbsp;[#92739](https://github.com/openclaw/openclaw/pull/92739) | 2026-06-13 | 0 | Local memory/embedding | @wangmiao0668000666 | fix(doctor): probe memory embeddings when --deep flag is used |
 
 </details>
 
-## OPEN THREADS (837)
+## OPEN THREADS (845)
 
 <details>
 <summary>All open threads, sorted by activity</summary>
@@ -182,6 +182,14 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92867](https://github.com/openclaw/openclaw/pull/92867) | 0 | Local memory/embedding | @XuZehan-iCenter | fix(memory-qmd): preserve Windows absolute paths in QMD command resolution |
+| 📝&nbsp;[#92866](https://github.com/openclaw/openclaw/issues/92866) | 0 | OpenAI-compatible/proxy | @Kambrian | Feature: image_generate should support custom/third-party providers, not only built-in ones |
+| 📝&nbsp;[#92864](https://github.com/openclaw/openclaw/issues/92864) | 0 | Model routing/config | @cedricdesgagne-falcon | Session model override (/model) silently survives context compaction — cost $300usd  in one day |
+| 🔀&nbsp;[#92863](https://github.com/openclaw/openclaw/pull/92863) | 0 | Model/provider behavior | @liuhao1024 | docs(logging): document exact model.usage event field names in diagnostic catalog (fixes #49046) |
+| 🔀&nbsp;[#92857](https://github.com/openclaw/openclaw/pull/92857) | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(openai): drop encrypted reasoning from history for Responses-family APIs (fixes #90093) |
+| 🔀&nbsp;[#92854](https://github.com/openclaw/openclaw/pull/92854) | 0 | Model/provider behavior | @openclaw-clownfish[bot] | fix(hooks): reject slug-generator error payloads |
+| 🔀&nbsp;[#92850](https://github.com/openclaw/openclaw/pull/92850) | 0 | Local memory/embedding | @yarikv8 | fix(memory-core): reset lastMetaSerialized in runSafeReindex so a byte-identical reindex still writes __meta |
+| 📝&nbsp;[#92848](https://github.com/openclaw/openclaw/issues/92848) | 0 | Local memory/embedding | @garrytan-agents | Memory vector search pauses permanently when legacy index has empty `meta` (no identity backfill) |
 | 🔀&nbsp;[#92839](https://github.com/openclaw/openclaw/pull/92839) | 0 | OpenAI-compatible/proxy | @yetval | fix(doctor): preserve legacy codex OAuth provider when no models are mergeable |
 | 🔀&nbsp;[#92833](https://github.com/openclaw/openclaw/pull/92833) | 0 | Local memory/embedding | @openperf | fix(memory): search memory and wiki concurrently for corpus=all (#92633) |
 | 🔀&nbsp;[#92824](https://github.com/openclaw/openclaw/pull/92824) | 0 | Model routing/config | @bek91 | [codex] Fix OpenAI OAuth media routing |
@@ -1462,4 +1470,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 837 (407 issues, 430 PRs).
+- Kept open threads: 845 (410 issues, 435 PRs).

@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 407,
-    "open_prs": 430,
-    "open_threads": 837
+    "open_issues": 410,
+    "open_prs": 435,
+    "open_threads": 845
   },
   "open_threads": [
     {
@@ -5051,6 +5051,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@XuZehan-iCenter",
+      "number": 92867,
+      "title": "fix(memory-qmd): preserve Windows absolute paths in QMD command resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92867"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Kambrian",
+      "number": 92866,
+      "title": "Feature: image_generate should support custom/third-party providers, not only built-in ones",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92866"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@cedricdesgagne-falcon",
+      "number": 92864,
+      "title": "Session model override (/model) silently survives context compaction — cost $300usd  in one day",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92864"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@liuhao1024",
+      "number": 92863,
+      "title": "docs(logging): document exact model.usage event field names in diagnostic catalog (fixes #49046)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92863"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@liuhao1024",
+      "number": 92857,
+      "title": "fix(openai): drop encrypted reasoning from history for Responses-family APIs (fixes #90093)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92857"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@openclaw-clownfish[bot]",
+      "number": 92854,
+      "title": "fix(hooks): reject slug-generator error payloads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92854"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yarikv8",
+      "number": 92850,
+      "title": "fix(memory-core): reset lastMetaSerialized in runSafeReindex so a byte-identical reindex still writes __meta",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92850"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@garrytan-agents",
+      "number": 92848,
+      "title": "Memory vector search pauses permanently when legacy index has empty `meta` (no identity backfill)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92848"
     },
     {
       "activity": 0,
@@ -11399,8 +11471,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92844,
-    "pr": 92847
+    "issue": 92870,
+    "pr": 92871
   },
   "schema_version": 1,
   "updated": "2026-06-14"
