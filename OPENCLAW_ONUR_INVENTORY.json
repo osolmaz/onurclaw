@@ -3813,8 +3813,8 @@
   "counts": {
     "closed_threads": 544,
     "open_issues": 413,
-    "open_prs": 450,
-    "open_threads": 863
+    "open_prs": 455,
+    "open_threads": 868
   },
   "open_threads": [
     {
@@ -5051,6 +5051,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 92943,
+      "title": "Refresh memory index state after external reindex",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92943"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 92940,
+      "title": "fix(model-fallback): throttle duplicate decision logs to prevent auth expiry spam (fixes #56979)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92940"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangguiping-xydt",
+      "number": 92938,
+      "title": "gateway hangs at `[gateway] starting...` when a declared provider lacks credentials (regression v2026.4.8 → v2026.4.26)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92938"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhiqiang26",
+      "number": 92932,
+      "title": "#92931: Bug: catalog.json caches API key in plaintext after auth migration to encrypted SQLite",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92932"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@samson910022",
+      "number": 92930,
+      "title": "fix(status): warm model context-window cache before /status reads it",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92930"
     },
     {
       "activity": 0,
@@ -11633,8 +11678,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92925,
-    "pr": 92927
+    "issue": 92935,
+    "pr": 92943
   },
   "schema_version": 1,
   "updated": "2026-06-14"
