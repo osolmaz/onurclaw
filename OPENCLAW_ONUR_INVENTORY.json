@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 410,
-    "open_prs": 435,
-    "open_threads": 845
+    "open_issues": 412,
+    "open_prs": 446,
+    "open_threads": 858
   },
   "open_threads": [
     {
@@ -5051,6 +5051,123 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@samson910022",
+      "number": 92905,
+      "title": "fix(status): warm model context-window cache before /status reads it",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92905"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@vortexopenclaw",
+      "number": 92904,
+      "title": "fix(elevenlabs): use current TTS model ids",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92904"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@YonganZhang",
+      "number": 92900,
+      "title": "fix(ui): refresh overview model auth status on demand",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92900"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yu-xin-c",
+      "number": 92897,
+      "title": "fix(memory-wiki): tolerate public artifacts without agent ids",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92897"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@YonganZhang",
+      "number": 92892,
+      "title": "fix(gateway): allow Gemini CLI image-capable models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92892"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ZengWen-DT",
+      "number": 92891,
+      "title": "fix(memory): clean stale reindex temp files",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92891"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@YonganZhang",
+      "number": 92890,
+      "title": "fix(lmstudio): honor binary reasoning maps in completions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92890"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@buyuangtampan",
+      "number": 92888,
+      "title": "Control UI model auth badge still shows expired on 2026.6.6 while runtime auth is usable",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92888"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@YonganZhang",
+      "number": 92887,
+      "title": "fix(memory): sweep stale reindex temp sqlite files",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92887"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Pandah97",
+      "number": 92885,
+      "title": "#92207 fix(memory-wiki): guard against missing agentIds in public artifacts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92885"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@openclaw-clownfish[bot]",
+      "number": 92881,
+      "title": "fix(memory): preserve reindex rollback recovery",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92881"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@openclaw-clownfish[bot]",
+      "number": 92876,
+      "title": "fix(memory-wiki): stop flagging raw source pages as malformed",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92876"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@potterdigital",
+      "number": 92874,
+      "title": "Builtin memory backend leaks orphaned *.sqlite.tmp-<uuid> reindex files on hard restart (no startup sweep)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92874"
     },
     {
       "activity": 0,
@@ -11471,8 +11588,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92870,
-    "pr": 92871
+    "issue": 92903,
+    "pr": 92905
   },
   "schema_version": 1,
   "updated": "2026-06-14"
