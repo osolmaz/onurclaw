@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 353,
-    "open_prs": 407,
-    "open_threads": 760
+    "open_issues": 355,
+    "open_prs": 408,
+    "open_threads": 763
   },
   "open_threads": [
     {
@@ -5853,6 +5853,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ferminquant",
+      "number": 93050,
+      "title": "[Feature]: Add compaction.fallbacks: string[] for ordered model fallback chain on summarization failure",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93050"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93039,
+      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93039"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kumaxs",
+      "number": 93036,
+      "title": "suspendSession locks entire lane, prevents fallback models from running on rate-limit",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93036"
     },
     {
       "activity": 0,
@@ -11616,8 +11643,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93019,
-    "pr": 93028
+    "issue": 93053,
+    "pr": 93055
   },
   "schema_version": 1,
   "updated": "2026-06-15"
