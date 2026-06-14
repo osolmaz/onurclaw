@@ -45,18 +45,12 @@ The job reads the checked-in local skill at
 not a symlink or remote link, because the sandbox has no network or host repo
 access.
 
-That file is synced from the tools repo source:
-`agents/skills/openclaw-onur-inventory/sandbox/SKILL.md`.
-
-When both repos are checked out locally, verify the copy with:
+When this repository copy is mirrored from another checkout, verify it against
+that explicit source path with:
 
 ```bash
-python3 scripts/check_synced_skill.py
+python3 scripts/check_synced_skill.py --source /path/to/source/SKILL.md
 ```
-
-Use `ONURCLAW_TOOLS_REPO=/path/to/tools` or `--tools-repo /path/to/tools` when
-the tools checkout is not a sibling directory. In environments without the tools
-repo, the check skips cleanly unless `--require-source` is passed.
 
 ## Job Flow
 
@@ -116,6 +110,8 @@ From this repo:
 ```bash
 bash -n scripts/run_inventory_job.sh scripts/finalize_inventory_job.sh
 python3 scripts/check_synced_skill.py
+# Optional, when comparing against an external source copy:
+python3 scripts/check_synced_skill.py --source /path/to/source/SKILL.md
 python3 -m py_compile scripts/inventory_data.py scripts/export_inventory_json.py scripts/validate_inventory_json.py scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py scripts/list_inventory_review_candidates.py scripts/check_synced_skill.py
 OPENCLAW_ONUR_INVENTORY_SKIP_ACTIVITY=1 python3 scripts/sort_openclaw_onur_inventory.py --no-activity
 python3 scripts/export_inventory_json.py
