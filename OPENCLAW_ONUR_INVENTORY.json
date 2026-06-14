@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 413,
-    "open_prs": 455,
-    "open_threads": 868
+    "open_issues": 414,
+    "open_prs": 461,
+    "open_threads": 875
   },
   "open_threads": [
     {
@@ -5051,6 +5051,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@samson910022",
+      "number": 92968,
+      "title": "fix(status): warm context-window cache at gateway startup for correct /status on first call",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92968"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@samson910022",
+      "number": 92967,
+      "title": "fix(status): warm context-window cache at gateway startup for correct /status on first call",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92967"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@hnlqt666",
+      "number": 92966,
+      "title": "fix(session-memory): deduplicate consecutive assistant messages with identical text",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92966"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zenglingbiao",
+      "number": 92959,
+      "title": "fix(model-fallback): coalesce repeated auth-class fallback decision logs to prevent auth expiry spam (fixes #56979)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92959"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@NianJiuZst",
+      "number": 92955,
+      "title": "fix(opencode-go): load context windows from bundled catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92955"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 92954,
+      "title": "fix(memory): accept local default model path migration",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92954"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Alix-007",
+      "number": 92952,
+      "title": "fix(memory-core): sweep orphaned sqlite reindex temp files on startup (#92874)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92952"
     },
     {
       "activity": 0,
@@ -11678,8 +11741,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92935,
-    "pr": 92943
+    "issue": 92967,
+    "pr": 92969
   },
   "schema_version": 1,
   "updated": "2026-06-14"
