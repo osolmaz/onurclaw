@@ -4,14 +4,22 @@ Updated: 2026-06-14
 
 Review watermark:
 
-- Last reviewed through issue: #92967.
-- Last reviewed through PR: #92969.
+- Last reviewed through issue: #92997.
+- Last reviewed through PR: #92995.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#92993](https://github.com/openclaw/openclaw/pull/92993) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @luoluo-xue-ops | [codex] openai proxy compat for compatible providers |
+| 🔀&nbsp;[#92991](https://github.com/openclaw/openclaw/pull/92991) | 2026-06-14 | 0 | Model/provider behavior | @samrusani | fix(agents): tolerate missing attribution baseUrl |
+| 🔀&nbsp;[#92988](https://github.com/openclaw/openclaw/pull/92988) | 2026-06-14 | 0 | Local memory/embedding | @chengzhichao-xydt | fix(memory-core): cleanup orphaned *.sqlite.tmp-* reindex files on startup |
+| 📝&nbsp;[#92984](https://github.com/openclaw/openclaw/issues/92984) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @sallyom | Docs: add OpenRouter Fusion model guidance<br>Assignee: sallyom |
+| 🔀&nbsp;[#92979](https://github.com/openclaw/openclaw/pull/92979) | 2026-06-14 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): show per-phase dreaming status when only light phase is enabled (fixes #67868) |
+| 🔀&nbsp;[#92977](https://github.com/openclaw/openclaw/pull/92977) | 2026-06-14 | 0 | Model/provider behavior | @zhiqiang26 | #92974: Bug: v2026.6.6 getAttributionHeaders() crashes on Bedrock models — baseUrl undefined (null-guard missing) |
+| 📝&nbsp;[#92974](https://github.com/openclaw/openclaw/issues/92974) | 2026-06-14 | 0 | Model/provider behavior | @Haderach-Ram | Bug: v2026.6.6 getAttributionHeaders() crashes on Bedrock models — baseUrl undefined (null-guard missing) |
+| 🔀&nbsp;[#92972](https://github.com/openclaw/openclaw/pull/92972) | 2026-06-14 | 0 | Local memory/embedding | @pony-maggie | fix(memory): sweep orphaned reindex temp files |
 | 🔀&nbsp;[#92968](https://github.com/openclaw/openclaw/pull/92968) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(status): warm context-window cache at gateway startup for correct /status on first call |
 | 📝&nbsp;[#92967](https://github.com/openclaw/openclaw/issues/92967) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(status): warm context-window cache at gateway startup for correct /status on first call |
 | 🔀&nbsp;[#92966](https://github.com/openclaw/openclaw/pull/92966) | 2026-06-14 | 0 | Local memory/embedding | @hnlqt666 | fix(session-memory): deduplicate consecutive assistant messages with identical text |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#92833](https://github.com/openclaw/openclaw/pull/92833) | 2026-06-14 | 0 | Local memory/embedding | @openperf | fix(memory): search memory and wiki concurrently for corpus=all (#92633) |
 | 🔀&nbsp;[#92824](https://github.com/openclaw/openclaw/pull/92824) | 2026-06-14 | 0 | Model routing/config | @bek91 | [codex] Fix OpenAI OAuth media routing |
 | 🔀&nbsp;[#92821](https://github.com/openclaw/openclaw/pull/92821) | 2026-06-14 | 0 | Model routing/config | @liuhao1024 | fix(agents): use configured primary as fallback origin to prevent indefinite session pinning (#92776) |
-| 🔀&nbsp;[#92819](https://github.com/openclaw/openclaw/pull/92819) | 2026-06-14 | 0 | Model routing/config | @TurboTheTurtle | Fix stale auto-fallback origin model selection |
-| 📝&nbsp;[#92808](https://github.com/openclaw/openclaw/issues/92808) | 2026-06-13 | 0 | Local memory/embedding | @Alyx-Learbott | [Bug]: Title: Local embedding provider breaks on upgrade (two consecutive releases) — no migration path, misleading error |
-| 🔀&nbsp;[#92803](https://github.com/openclaw/openclaw/pull/92803) | 2026-06-13 | 0 | Model/provider behavior | @MonkeyLeeT | fix(thinking): avoid adaptive fallback for budget requests |
-| 🔀&nbsp;[#92790](https://github.com/openclaw/openclaw/pull/92790) | 2026-06-13 | 0 | Model routing/config | @TurboTheTurtle | fix(session): clear stale auto fallback origins |
-| 🔀&nbsp;[#92782](https://github.com/openclaw/openclaw/pull/92782) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | fix #92688: [Bug]: Qwen vision models fail with 400 "Unexpected item type in content" on DashScope |
-| 📝&nbsp;[#92776](https://github.com/openclaw/openclaw/issues/92776) | 2026-06-13 | 0 | Model routing/config | @falonrozfatemi | Session model pinning persists indefinitely: snap-back probe (PR #82676) defeated by origin-field pollution upstream — repros on 2026.5.28 through 2026.6.7-beta.1, byte-identical paths |
-| 🔀&nbsp;[#92775](https://github.com/openclaw/openclaw/pull/92775) | 2026-06-13 | 0 | Model routing/config | @samson910022 | fix(status): delegate CLI status context resolution and fix slash-model 200K bug (closes #92760) |
-| 🔀&nbsp;[#92773](https://github.com/openclaw/openclaw/pull/92773) | 2026-06-13 | 0 | Model routing/config | @NarahariRaghava | fix(tui): show resolved canonical model ref in /model confirmation |
 
-## OPEN THREADS (875)
+## OPEN THREADS (883)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 📝&nbsp;[#62121](https://github.com/openclaw/openclaw/issues/62121) | 8 | Local model runtime | @tlnini-afk | DeepSeek preamble text leaks to Telegram after 3.13 -> 4.5 upgrade (untagged assistant text bypasses commentary filter) |
 
 <details>
-<summary>Remaining 825 open threads, sorted by activity</summary>
+<summary>Remaining 833 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -210,6 +210,14 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92993](https://github.com/openclaw/openclaw/pull/92993) | 0 | OpenAI-compatible/proxy | @luoluo-xue-ops | [codex] openai proxy compat for compatible providers |
+| 🔀&nbsp;[#92991](https://github.com/openclaw/openclaw/pull/92991) | 0 | Model/provider behavior | @samrusani | fix(agents): tolerate missing attribution baseUrl |
+| 🔀&nbsp;[#92988](https://github.com/openclaw/openclaw/pull/92988) | 0 | Local memory/embedding | @chengzhichao-xydt | fix(memory-core): cleanup orphaned *.sqlite.tmp-* reindex files on startup |
+| 📝&nbsp;[#92984](https://github.com/openclaw/openclaw/issues/92984) | 0 | OpenAI-compatible/proxy | @sallyom | Docs: add OpenRouter Fusion model guidance<br>Assignee: sallyom |
+| 🔀&nbsp;[#92979](https://github.com/openclaw/openclaw/pull/92979) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): show per-phase dreaming status when only light phase is enabled (fixes #67868) |
+| 🔀&nbsp;[#92977](https://github.com/openclaw/openclaw/pull/92977) | 0 | Model/provider behavior | @zhiqiang26 | #92974: Bug: v2026.6.6 getAttributionHeaders() crashes on Bedrock models — baseUrl undefined (null-guard missing) |
+| 📝&nbsp;[#92974](https://github.com/openclaw/openclaw/issues/92974) | 0 | Model/provider behavior | @Haderach-Ram | Bug: v2026.6.6 getAttributionHeaders() crashes on Bedrock models — baseUrl undefined (null-guard missing) |
+| 🔀&nbsp;[#92972](https://github.com/openclaw/openclaw/pull/92972) | 0 | Local memory/embedding | @pony-maggie | fix(memory): sweep orphaned reindex temp files |
 | 🔀&nbsp;[#92968](https://github.com/openclaw/openclaw/pull/92968) | 0 | Model routing/config | @samson910022 | fix(status): warm context-window cache at gateway startup for correct /status on first call |
 | 📝&nbsp;[#92967](https://github.com/openclaw/openclaw/issues/92967) | 0 | Model routing/config | @samson910022 | fix(status): warm context-window cache at gateway startup for correct /status on first call |
 | 🔀&nbsp;[#92966](https://github.com/openclaw/openclaw/pull/92966) | 0 | Local memory/embedding | @hnlqt666 | fix(session-memory): deduplicate consecutive assistant messages with identical text |
@@ -1528,4 +1536,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 875 (414 issues, 461 PRs).
+- Kept open threads: 883 (416 issues, 467 PRs).

@@ -3812,9 +3812,9 @@
   ],
   "counts": {
     "closed_threads": 544,
-    "open_issues": 414,
-    "open_prs": 461,
-    "open_threads": 875
+    "open_issues": 416,
+    "open_prs": 467,
+    "open_threads": 883
   },
   "open_threads": [
     {
@@ -5051,6 +5051,79 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@luoluo-xue-ops",
+      "number": 92993,
+      "title": "[codex] openai proxy compat for compatible providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92993"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@samrusani",
+      "number": 92991,
+      "title": "fix(agents): tolerate missing attribution baseUrl",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92991"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chengzhichao-xydt",
+      "number": 92988,
+      "title": "fix(memory-core): cleanup orphaned *.sqlite.tmp-* reindex files on startup",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92988"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "assignee": "sallyom",
+      "creator": "@sallyom",
+      "number": 92984,
+      "title": "Docs: add OpenRouter Fusion model guidance",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92984"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 92979,
+      "title": "fix(memory): show per-phase dreaming status when only light phase is enabled (fixes #67868)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92979"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@zhiqiang26",
+      "number": 92977,
+      "title": "#92974: Bug: v2026.6.6 getAttributionHeaders() crashes on Bedrock models — baseUrl undefined (null-guard missing)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92977"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Haderach-Ram",
+      "number": 92974,
+      "title": "Bug: v2026.6.6 getAttributionHeaders() crashes on Bedrock models — baseUrl undefined (null-guard missing)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92974"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@pony-maggie",
+      "number": 92972,
+      "title": "fix(memory): sweep orphaned reindex temp files",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92972"
     },
     {
       "activity": 0,
@@ -11741,8 +11814,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92967,
-    "pr": 92969
+    "issue": 92997,
+    "pr": 92995
   },
   "schema_version": 1,
   "updated": "2026-06-14"
