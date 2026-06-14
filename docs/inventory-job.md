@@ -84,7 +84,8 @@ the sandbox command preflight, followed by the sorter/finalizer.
 1. Verifies that it is running from the expected mounted repo.
 2. Verifies the read-only Gitcrawl/notifier inputs and writable state directory.
 3. Sorts `OPENCLAW_ONUR_INVENTORY.md` without live GitHub activity refresh,
-   regenerating the newest-open view and collapsed full open table.
+   regenerating the newest-open view and keeping the first 50 canonical open
+   rows visible while collapsing only overflow rows.
 4. Exports and validates `OPENCLAW_ONUR_INVENTORY.json`, the machine-readable
    mirror used by automation.
 5. Compares the JSON inventory against notifier state. The compare path must

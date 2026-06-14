@@ -8,10 +8,7 @@ Review watermark:
 - Last reviewed through PR: #92905.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
-## NEW OPEN THREADS (20)
-
-<details open>
-<summary>Newest 20 open threads</summary>
+## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
@@ -35,13 +32,38 @@ Review watermark:
 | 🔀&nbsp;[#92857](https://github.com/openclaw/openclaw/pull/92857) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(openai): drop encrypted reasoning from history for Responses-family APIs (fixes #90093) |
 | 🔀&nbsp;[#92854](https://github.com/openclaw/openclaw/pull/92854) | 2026-06-14 | 0 | Model/provider behavior | @openclaw-clownfish[bot] | fix(hooks): reject slug-generator error payloads |
 | 🔀&nbsp;[#92850](https://github.com/openclaw/openclaw/pull/92850) | 2026-06-14 | 0 | Local memory/embedding | @yarikv8 | fix(memory-core): reset lastMetaSerialized in runSafeReindex so a byte-identical reindex still writes __meta |
-
-</details>
+| 📝&nbsp;[#92848](https://github.com/openclaw/openclaw/issues/92848) | 2026-06-14 | 0 | Local memory/embedding | @garrytan-agents | Memory vector search pauses permanently when legacy index has empty `meta` (no identity backfill) |
+| 🔀&nbsp;[#92839](https://github.com/openclaw/openclaw/pull/92839) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @yetval | fix(doctor): preserve legacy codex OAuth provider when no models are mergeable |
+| 🔀&nbsp;[#92833](https://github.com/openclaw/openclaw/pull/92833) | 2026-06-14 | 0 | Local memory/embedding | @openperf | fix(memory): search memory and wiki concurrently for corpus=all (#92633) |
+| 🔀&nbsp;[#92824](https://github.com/openclaw/openclaw/pull/92824) | 2026-06-14 | 0 | Model routing/config | @bek91 | [codex] Fix OpenAI OAuth media routing |
+| 🔀&nbsp;[#92821](https://github.com/openclaw/openclaw/pull/92821) | 2026-06-14 | 0 | Model routing/config | @liuhao1024 | fix(agents): use configured primary as fallback origin to prevent indefinite session pinning (#92776) |
+| 🔀&nbsp;[#92819](https://github.com/openclaw/openclaw/pull/92819) | 2026-06-14 | 0 | Model routing/config | @TurboTheTurtle | Fix stale auto-fallback origin model selection |
+| 📝&nbsp;[#92808](https://github.com/openclaw/openclaw/issues/92808) | 2026-06-13 | 0 | Local memory/embedding | @Alyx-Learbott | [Bug]: Title: Local embedding provider breaks on upgrade (two consecutive releases) — no migration path, misleading error |
+| 🔀&nbsp;[#92803](https://github.com/openclaw/openclaw/pull/92803) | 2026-06-13 | 0 | Model/provider behavior | @MonkeyLeeT | fix(thinking): avoid adaptive fallback for budget requests |
+| 🔀&nbsp;[#92790](https://github.com/openclaw/openclaw/pull/92790) | 2026-06-13 | 0 | Model routing/config | @TurboTheTurtle | fix(session): clear stale auto fallback origins |
+| 🔀&nbsp;[#92782](https://github.com/openclaw/openclaw/pull/92782) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | fix #92688: [Bug]: Qwen vision models fail with 400 "Unexpected item type in content" on DashScope |
+| 📝&nbsp;[#92776](https://github.com/openclaw/openclaw/issues/92776) | 2026-06-13 | 0 | Model routing/config | @falonrozfatemi | Session model pinning persists indefinitely: snap-back probe (PR #82676) defeated by origin-field pollution upstream — repros on 2026.5.28 through 2026.6.7-beta.1, byte-identical paths |
+| 🔀&nbsp;[#92775](https://github.com/openclaw/openclaw/pull/92775) | 2026-06-13 | 0 | Model routing/config | @samson910022 | fix(status): delegate CLI status context resolution and fix slash-model 200K bug (closes #92760) |
+| 🔀&nbsp;[#92773](https://github.com/openclaw/openclaw/pull/92773) | 2026-06-13 | 0 | Model routing/config | @NarahariRaghava | fix(tui): show resolved canonical model ref in /model confirmation |
+| 🔀&nbsp;[#92770](https://github.com/openclaw/openclaw/pull/92770) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @XuZehan-iCenter | fix(media-understanding): place Qwen/DashScope image prompts in user content (#92688) |
+| 📝&nbsp;[#92769](https://github.com/openclaw/openclaw/issues/92769) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @Wizongod | [Bug]: Regression of #65533 — reasoning/reasoning_details completely dropped from message history for MiniMax M3 via OpenRouter (both plain-text and tool-call turns) |
+| 🔀&nbsp;[#92763](https://github.com/openclaw/openclaw/pull/92763) | 2026-06-13 | 0 | Model routing/config | @1052326311 | fix(gateway): add google-gemini-cli image capability fallback for stale catalog rows |
+| 📝&nbsp;[#92760](https://github.com/openclaw/openclaw/issues/92760) | 2026-06-13 | 0 | Model routing/config | @samson910022 | CLI openclaw status shows 200K context window due to standalone resolution copy in status.summary.runtime.ts |
+| 🔀&nbsp;[#92759](https://github.com/openclaw/openclaw/pull/92759) | 2026-06-13 | 0 | Local memory/embedding | @1052326311 | fix(memory): guard against missing agentIds in wiki artifact clone and sort |
+| 🔀&nbsp;[#92745](https://github.com/openclaw/openclaw/pull/92745) | 2026-06-13 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): explain skipped short-term recall hits |
+| 📝&nbsp;[#92743](https://github.com/openclaw/openclaw/issues/92743) | 2026-06-13 | 0 | Local memory/embedding | @zhuyankarl | [hy-memory] AutoRecall should use current user request, not full OpenClaw envelope |
+| 🔀&nbsp;[#92739](https://github.com/openclaw/openclaw/pull/92739) | 2026-06-13 | 0 | Local memory/embedding | @wangmiao0668000666 | fix(doctor): probe memory embeddings when --deep flag is used |
+| 📝&nbsp;[#92728](https://github.com/openclaw/openclaw/issues/92728) | 2026-06-13 | 0 | Local memory/embedding | @rrriiiccckkk | memory-core: CJK LIKE fallback returns wrong results for multi-character queries |
+| 🔀&nbsp;[#92725](https://github.com/openclaw/openclaw/pull/92725) | 2026-06-13 | 0 | Local memory/embedding | @michmill1970 | External reranker |
+| 🔀&nbsp;[#92709](https://github.com/openclaw/openclaw/pull/92709) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @samson910022 | fix(agents): resolve context window for proxy models with slash in ID |
+| 📝&nbsp;[#92706](https://github.com/openclaw/openclaw/issues/92706) | 2026-06-13 | 0 | Local memory/embedding | @armarinho | Dreaming deep-sleep promotes 0 — short-term recall store only populated by session-corpus ingestion (recallCount stays 0); is live memory_search supposed to feed recall? |
+| 🔀&nbsp;[#92704](https://github.com/openclaw/openclaw/pull/92704) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @sheyanmin | #92688: fix(qwen): use DashScope native image format for Qwen vision models |
+| 🔀&nbsp;[#92698](https://github.com/openclaw/openclaw/pull/92698) | 2026-06-13 | 0 | Local memory/embedding | @mushuiyu886 | fix #80582: Memory: skip markdown placeholder snippets during short-term promotion |
+| 📝&nbsp;[#92688](https://github.com/openclaw/openclaw/issues/92688) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @Yachiyo404 | [Bug]: Qwen vision models fail with 400 "Unexpected item type in content" on DashScope |
+| 🔀&nbsp;[#92676](https://github.com/openclaw/openclaw/pull/92676) | 2026-06-13 | 0 | Model routing/config | @kumaxs | feat: Rate-limit fallback user-visible error notification (message-lifecycle Phase 2 extension) |
+| 📝&nbsp;[#92675](https://github.com/openclaw/openclaw/issues/92675) | 2026-06-13 | 0 | Model/provider behavior | @Robin9plus1 | GitHub Copilot recurring HTTP 401 after 2026.6.6 — incomplete SQLite auth migration leaves stale auth-profiles.json / auth-state.json |
 
 ## OPEN THREADS (858)
-
-<details>
-<summary>All open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -95,6 +117,12 @@ Review watermark:
 | 🔀&nbsp;[#67008](https://github.com/openclaw/openclaw/pull/67008) | 8 | Open-weight/provider behavior | @tardigrde | feat(chutes): add zai-org/GLM-5.1-TEE to static model catalog |
 | 📝&nbsp;[#64438](https://github.com/openclaw/openclaw/issues/64438) | 8 | Local memory/embedding | @GravenSm | Feature Request: Remote Reranker Endpoint Support |
 | 📝&nbsp;[#62121](https://github.com/openclaw/openclaw/issues/62121) | 8 | Local model runtime | @tlnini-afk | DeepSeek preamble text leaks to Telegram after 3.13 -> 4.5 upgrade (untagged assistant text bypasses commentary filter) |
+
+<details>
+<summary>Remaining 808 open threads, sorted by activity</summary>
+
+| Thread | Activity | Area | Creator | Title |
+| --- | --- | --- | --- | --- |
 | 📝&nbsp;[#52029](https://github.com/openclaw/openclaw/issues/52029) | 8 | Local model runtime | @andyk-ms | Feature Request: heartbeat.tools option to disable tools during heartbeat |
 | 📝&nbsp;[#45508](https://github.com/openclaw/openclaw/issues/45508) | 8 | OpenAI-compatible/proxy | @mcfex | [Feature]: Self-hosted STT/TTS provider support in webchat (Route webchat TTS through the gateway instead of browser Speech API) |
 | 📝&nbsp;[#41372](https://github.com/openclaw/openclaw/issues/41372) | 8 | Model/provider behavior | @e740554 | Field Report: 25 findings from 4 weeks of self-hosted production use (config crashes, CLI docs, Discord, cron) |
