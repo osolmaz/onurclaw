@@ -3813,8 +3813,8 @@
   "counts": {
     "closed_threads": 544,
     "open_issues": 407,
-    "open_prs": 425,
-    "open_threads": 832
+    "open_prs": 430,
+    "open_threads": 837
   },
   "open_threads": [
     {
@@ -5051,6 +5051,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@yetval",
+      "number": 92839,
+      "title": "fix(doctor): preserve legacy codex OAuth provider when no models are mergeable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92839"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@openperf",
+      "number": 92833,
+      "title": "fix(memory): search memory and wiki concurrently for corpus=all (#92633)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92833"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@bek91",
+      "number": 92824,
+      "title": "[codex] Fix OpenAI OAuth media routing",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92824"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 92821,
+      "title": "fix(agents): use configured primary as fallback origin to prevent indefinite session pinning (#92776)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92821"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@TurboTheTurtle",
+      "number": 92819,
+      "title": "Fix stale auto-fallback origin model selection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92819"
     },
     {
       "activity": 0,
@@ -11354,8 +11399,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 92811,
-    "pr": 92814
+    "issue": 92844,
+    "pr": 92847
   },
   "schema_version": 1,
   "updated": "2026-06-14"

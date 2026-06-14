@@ -4,8 +4,8 @@ Updated: 2026-06-14
 
 Review watermark:
 
-- Last reviewed through issue: #92811.
-- Last reviewed through PR: #92814.
+- Last reviewed through issue: #92844.
+- Last reviewed through PR: #92847.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (20)
@@ -15,6 +15,11 @@ Review watermark:
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#92839](https://github.com/openclaw/openclaw/pull/92839) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @yetval | fix(doctor): preserve legacy codex OAuth provider when no models are mergeable |
+| 🔀&nbsp;[#92833](https://github.com/openclaw/openclaw/pull/92833) | 2026-06-14 | 0 | Local memory/embedding | @openperf | fix(memory): search memory and wiki concurrently for corpus=all (#92633) |
+| 🔀&nbsp;[#92824](https://github.com/openclaw/openclaw/pull/92824) | 2026-06-14 | 0 | Model routing/config | @bek91 | [codex] Fix OpenAI OAuth media routing |
+| 🔀&nbsp;[#92821](https://github.com/openclaw/openclaw/pull/92821) | 2026-06-14 | 0 | Model routing/config | @liuhao1024 | fix(agents): use configured primary as fallback origin to prevent indefinite session pinning (#92776) |
+| 🔀&nbsp;[#92819](https://github.com/openclaw/openclaw/pull/92819) | 2026-06-14 | 0 | Model routing/config | @TurboTheTurtle | Fix stale auto-fallback origin model selection |
 | 📝&nbsp;[#92808](https://github.com/openclaw/openclaw/issues/92808) | 2026-06-13 | 0 | Local memory/embedding | @Alyx-Learbott | [Bug]: Title: Local embedding provider breaks on upgrade (two consecutive releases) — no migration path, misleading error |
 | 🔀&nbsp;[#92803](https://github.com/openclaw/openclaw/pull/92803) | 2026-06-13 | 0 | Model/provider behavior | @MonkeyLeeT | fix(thinking): avoid adaptive fallback for budget requests |
 | 🔀&nbsp;[#92790](https://github.com/openclaw/openclaw/pull/92790) | 2026-06-13 | 0 | Model routing/config | @TurboTheTurtle | fix(session): clear stale auto fallback origins |
@@ -30,15 +35,10 @@ Review watermark:
 | 🔀&nbsp;[#92745](https://github.com/openclaw/openclaw/pull/92745) | 2026-06-13 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): explain skipped short-term recall hits |
 | 📝&nbsp;[#92743](https://github.com/openclaw/openclaw/issues/92743) | 2026-06-13 | 0 | Local memory/embedding | @zhuyankarl | [hy-memory] AutoRecall should use current user request, not full OpenClaw envelope |
 | 🔀&nbsp;[#92739](https://github.com/openclaw/openclaw/pull/92739) | 2026-06-13 | 0 | Local memory/embedding | @wangmiao0668000666 | fix(doctor): probe memory embeddings when --deep flag is used |
-| 📝&nbsp;[#92728](https://github.com/openclaw/openclaw/issues/92728) | 2026-06-13 | 0 | Local memory/embedding | @rrriiiccckkk | memory-core: CJK LIKE fallback returns wrong results for multi-character queries |
-| 🔀&nbsp;[#92725](https://github.com/openclaw/openclaw/pull/92725) | 2026-06-13 | 0 | Local memory/embedding | @michmill1970 | External reranker |
-| 🔀&nbsp;[#92709](https://github.com/openclaw/openclaw/pull/92709) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @samson910022 | fix(agents): resolve context window for proxy models with slash in ID |
-| 📝&nbsp;[#92706](https://github.com/openclaw/openclaw/issues/92706) | 2026-06-13 | 0 | Local memory/embedding | @armarinho | Dreaming deep-sleep promotes 0 — short-term recall store only populated by session-corpus ingestion (recallCount stays 0); is live memory_search supposed to feed recall? |
-| 🔀&nbsp;[#92704](https://github.com/openclaw/openclaw/pull/92704) | 2026-06-13 | 0 | OpenAI-compatible/proxy | @sheyanmin | #92688: fix(qwen): use DashScope native image format for Qwen vision models |
 
 </details>
 
-## OPEN THREADS (832)
+## OPEN THREADS (837)
 
 <details>
 <summary>All open threads, sorted by activity</summary>
@@ -182,6 +182,11 @@ Review watermark:
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#67593](https://github.com/openclaw/openclaw/issues/67593) | 1 | Open-weight/provider behavior | @dario-github | feat: add Kimi/Moonshot provider usage and balance display |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#92839](https://github.com/openclaw/openclaw/pull/92839) | 0 | OpenAI-compatible/proxy | @yetval | fix(doctor): preserve legacy codex OAuth provider when no models are mergeable |
+| 🔀&nbsp;[#92833](https://github.com/openclaw/openclaw/pull/92833) | 0 | Local memory/embedding | @openperf | fix(memory): search memory and wiki concurrently for corpus=all (#92633) |
+| 🔀&nbsp;[#92824](https://github.com/openclaw/openclaw/pull/92824) | 0 | Model routing/config | @bek91 | [codex] Fix OpenAI OAuth media routing |
+| 🔀&nbsp;[#92821](https://github.com/openclaw/openclaw/pull/92821) | 0 | Model routing/config | @liuhao1024 | fix(agents): use configured primary as fallback origin to prevent indefinite session pinning (#92776) |
+| 🔀&nbsp;[#92819](https://github.com/openclaw/openclaw/pull/92819) | 0 | Model routing/config | @TurboTheTurtle | Fix stale auto-fallback origin model selection |
 | 📝&nbsp;[#92808](https://github.com/openclaw/openclaw/issues/92808) | 0 | Local memory/embedding | @Alyx-Learbott | [Bug]: Title: Local embedding provider breaks on upgrade (two consecutive releases) — no migration path, misleading error |
 | 🔀&nbsp;[#92803](https://github.com/openclaw/openclaw/pull/92803) | 0 | Model/provider behavior | @MonkeyLeeT | fix(thinking): avoid adaptive fallback for budget requests |
 | 🔀&nbsp;[#92790](https://github.com/openclaw/openclaw/pull/92790) | 0 | Model routing/config | @TurboTheTurtle | fix(session): clear stale auto fallback origins |
@@ -1457,4 +1462,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 832 (407 issues, 425 PRs).
+- Kept open threads: 837 (407 issues, 430 PRs).
