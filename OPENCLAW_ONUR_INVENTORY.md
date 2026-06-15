@@ -4,14 +4,16 @@ Updated: 2026-06-16
 
 Review watermark:
 
-- Last reviewed through issue: #93414.
-- Last reviewed through PR: #93416.
+- Last reviewed through issue: #93426.
+- Last reviewed through PR: #93424.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#93426](https://github.com/openclaw/openclaw/issues/93426) | 2026-06-15 | 0 | Local memory/embedding | @tcconnally | Feature request: Mimir as persistent memory backend |
+| 📝&nbsp;[#93419](https://github.com/openclaw/openclaw/issues/93419) | 2026-06-15 | 0 | Model routing/config | @danielgerlag | [Bug]: runEmbeddedAgent ignores agents.defaults.model and hardcodes openai/gpt-5.5 |
 | 🔀&nbsp;[#93397](https://github.com/openclaw/openclaw/pull/93397) | 2026-06-15 | 0 | Local/media model provider | @Quratulain-bilal | fix(minimax): correct volume range warning to match inclusive max |
 | 📝&nbsp;[#93396](https://github.com/openclaw/openclaw/issues/93396) | 2026-06-15 | 0 | Local model runtime | @pineapple82 | [Bug]:  Provider name "openai" misleading when using local Ollama – causes fallback to real OpenAI API for embeddings |
 | 🔀&nbsp;[#93394](https://github.com/openclaw/openclaw/pull/93394) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory): abort orphaned qmd search subprocess when memory_search times out |
@@ -60,10 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93192](https://github.com/openclaw/openclaw/pull/93192) | 2026-06-15 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096) |
 | 🔀&nbsp;[#93187](https://github.com/openclaw/openclaw/pull/93187) | 2026-06-15 | 0 | Local memory/embedding | @xialonglee | fix(memory-core): exclude archive transcripts from dreaming corpus and propagate cron parentage to subagents |
 | 🔀&nbsp;[#93183](https://github.com/openclaw/openclaw/pull/93183) | 2026-06-15 | 0 | Model routing/config | @TurboTheTurtle | [codex] Fix /btw Codex runtime side-question routing |
-| 🔀&nbsp;[#93182](https://github.com/openclaw/openclaw/pull/93182) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory): clean rollback-journal reindex temp sidecar on NFS stores |
-| 🔀&nbsp;[#93180](https://github.com/openclaw/openclaw/pull/93180) | 2026-06-15 | 0 | Model routing/config | @ooiuuii | fix(doctor): gate legacy Codex canonicalization on a migration plan |
 
-## OPEN THREADS (831)
+## OPEN THREADS (833)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 781 open threads, sorted by activity</summary>
+<summary>Remaining 783 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,8 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#93426](https://github.com/openclaw/openclaw/issues/93426) | 0 | Local memory/embedding | @tcconnally | Feature request: Mimir as persistent memory backend |
+| 📝&nbsp;[#93419](https://github.com/openclaw/openclaw/issues/93419) | 0 | Model routing/config | @danielgerlag | [Bug]: runEmbeddedAgent ignores agents.defaults.model and hardcodes openai/gpt-5.5 |
 | 🔀&nbsp;[#93397](https://github.com/openclaw/openclaw/pull/93397) | 0 | Local/media model provider | @Quratulain-bilal | fix(minimax): correct volume range warning to match inclusive max |
 | 📝&nbsp;[#93396](https://github.com/openclaw/openclaw/issues/93396) | 0 | Local model runtime | @pineapple82 | [Bug]:  Provider name "openai" misleading when using local Ollama – causes fallback to real OpenAI API for embeddings |
 | 🔀&nbsp;[#93394](https://github.com/openclaw/openclaw/pull/93394) | 0 | Local memory/embedding | @Alix-007 | fix(memory): abort orphaned qmd search subprocess when memory_search times out |
@@ -1614,4 +1616,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 831 (368 issues, 463 PRs).
+- Kept open threads: 833 (370 issues, 463 PRs).

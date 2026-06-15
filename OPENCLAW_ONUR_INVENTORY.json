@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 368,
+    "open_issues": 370,
     "open_prs": 463,
-    "open_threads": 831
+    "open_threads": 833
   },
   "open_threads": [
     {
@@ -5853,6 +5853,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@tcconnally",
+      "number": 93426,
+      "title": "Feature request: Mimir as persistent memory backend",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93426"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@danielgerlag",
+      "number": 93419,
+      "title": "[Bug]: runEmbeddedAgent ignores agents.defaults.model and hardcodes openai/gpt-5.5",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93419"
     },
     {
       "activity": 0,
@@ -12256,8 +12274,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93414,
-    "pr": 93416
+    "issue": 93426,
+    "pr": 93424
   },
   "schema_version": 1,
   "updated": "2026-06-16"
