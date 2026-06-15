@@ -4,14 +4,21 @@ Updated: 2026-06-15
 
 Review watermark:
 
-- Last reviewed through issue: #93120.
-- Last reviewed through PR: #93131.
+- Last reviewed through issue: #93169.
+- Last reviewed through PR: #93172.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93170](https://github.com/openclaw/openclaw/pull/93170) | 2026-06-15 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
+| 🔀&nbsp;[#93168](https://github.com/openclaw/openclaw/pull/93168) | 2026-06-15 | 0 | Local memory/embedding | @xialonglee | fix(active-memory): exclude dreaming-narrative session keys from interactive eligibility gate |
+| 🔀&nbsp;[#93156](https://github.com/openclaw/openclaw/pull/93156) | 2026-06-15 | 0 | Model routing/config | @Pick-cat | fix(doctor): import default-agent auth profiles into sqlite |
+| 📝&nbsp;[#93154](https://github.com/openclaw/openclaw/issues/93154) | 2026-06-15 | 0 | Local memory/embedding | @1818TusculumSt | memory_search tool reports 'index provider settings changed' with OAuth-based OpenAI profile |
+| 📝&nbsp;[#93150](https://github.com/openclaw/openclaw/issues/93150) | 2026-06-15 | 0 | Local memory/embedding | @rrrrrredy | [Feature]: Add keyword fallback for memory_search when node:sqlite is unavailable |
+| 📝&nbsp;[#93145](https://github.com/openclaw/openclaw/issues/93145) | 2026-06-15 | 0 | Model routing/config | @Tazio7 | Agent auth migration to SQLite leaves default agent with empty auth store (v2026.6.6) |
+| 🔀&nbsp;[#93136](https://github.com/openclaw/openclaw/pull/93136) | 2026-06-15 | 0 | OpenAI-compatible/proxy | @patelmm79 | feat(attribution): parameterize OpenRouter `X-OpenRouter-Title` per deployment |
 | 🔀&nbsp;[#93125](https://github.com/openclaw/openclaw/pull/93125) | 2026-06-15 | 0 | Model routing/config | @ferminquant | feat(compaction): add compaction.fallbacks: string[] for ordered model fallback chain |
 | 🔀&nbsp;[#93122](https://github.com/openclaw/openclaw/pull/93122) | 2026-06-15 | 0 | Model routing/config | @zhangqueping | #93120: feat(auth): make maxSameModelRateLimitRetries configurable |
 | 📝&nbsp;[#93120](https://github.com/openclaw/openclaw/issues/93120) | 2026-06-15 | 0 | Model routing/config | @shichuzhu | [Feature]: Expose MAX_SAME_MODEL_RATE_LIMIT_RETRIES as configurable (currently hardcoded to 3) |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#92930](https://github.com/openclaw/openclaw/pull/92930) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(status): warm model context-window cache before /status reads it |
 | 🔀&nbsp;[#92914](https://github.com/openclaw/openclaw/pull/92914) | 2026-06-14 | 0 | Model routing/config | @openperf | fix(agents): clamp unsupported thinking for subagent spawns instead of hard-failing |
 | 🔀&nbsp;[#92913](https://github.com/openclaw/openclaw/pull/92913) | 2026-06-14 | 0 | Model routing/config | @kumaxs | fix(opencode-go): register model catalog to fix context window detection |
-| 📝&nbsp;[#92912](https://github.com/openclaw/openclaw/issues/92912) | 2026-06-14 | 0 | Model routing/config | @kumaxs | opencode-go plugin: model contextWindow not loaded, all models fall back to 200K |
-| 🔀&nbsp;[#92910](https://github.com/openclaw/openclaw/pull/92910) | 2026-06-14 | 0 | Local memory/embedding | @openclaw-clownfish[bot] | fix(memory-core): safely refresh qmd index during collection repair |
-| 🔀&nbsp;[#92908](https://github.com/openclaw/openclaw/pull/92908) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @steipete | fix(providers): quarantine unreadable Anthropic payload tools |
-| 🔀&nbsp;[#92905](https://github.com/openclaw/openclaw/pull/92905) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(status): warm model context-window cache before /status reads it |
-| 🔀&nbsp;[#92904](https://github.com/openclaw/openclaw/pull/92904) | 2026-06-14 | 0 | Model/provider behavior | @vortexopenclaw | fix(elevenlabs): use current TTS model ids |
-| 🔀&nbsp;[#92900](https://github.com/openclaw/openclaw/pull/92900) | 2026-06-14 | 0 | Model routing/config | @YonganZhang | fix(ui): refresh overview model auth status on demand |
-| 🔀&nbsp;[#92897](https://github.com/openclaw/openclaw/pull/92897) | 2026-06-14 | 0 | Local memory/embedding | @yu-xin-c | fix(memory-wiki): tolerate public artifacts without agent ids |
 
-## OPEN THREADS (774)
+## OPEN THREADS (781)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 724 open threads, sorted by activity</summary>
+<summary>Remaining 731 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93170](https://github.com/openclaw/openclaw/pull/93170) | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
+| 🔀&nbsp;[#93168](https://github.com/openclaw/openclaw/pull/93168) | 0 | Local memory/embedding | @xialonglee | fix(active-memory): exclude dreaming-narrative session keys from interactive eligibility gate |
+| 🔀&nbsp;[#93156](https://github.com/openclaw/openclaw/pull/93156) | 0 | Model routing/config | @Pick-cat | fix(doctor): import default-agent auth profiles into sqlite |
+| 📝&nbsp;[#93154](https://github.com/openclaw/openclaw/issues/93154) | 0 | Local memory/embedding | @1818TusculumSt | memory_search tool reports 'index provider settings changed' with OAuth-based OpenAI profile |
+| 📝&nbsp;[#93150](https://github.com/openclaw/openclaw/issues/93150) | 0 | Local memory/embedding | @rrrrrredy | [Feature]: Add keyword fallback for memory_search when node:sqlite is unavailable |
+| 📝&nbsp;[#93145](https://github.com/openclaw/openclaw/issues/93145) | 0 | Model routing/config | @Tazio7 | Agent auth migration to SQLite leaves default agent with empty auth store (v2026.6.6) |
+| 🔀&nbsp;[#93136](https://github.com/openclaw/openclaw/pull/93136) | 0 | OpenAI-compatible/proxy | @patelmm79 | feat(attribution): parameterize OpenRouter `X-OpenRouter-Title` per deployment |
 | 🔀&nbsp;[#93125](https://github.com/openclaw/openclaw/pull/93125) | 0 | Model routing/config | @ferminquant | feat(compaction): add compaction.fallbacks: string[] for ordered model fallback chain |
 | 🔀&nbsp;[#93122](https://github.com/openclaw/openclaw/pull/93122) | 0 | Model routing/config | @zhangqueping | #93120: feat(auth): make maxSameModelRateLimitRetries configurable |
 | 📝&nbsp;[#93120](https://github.com/openclaw/openclaw/issues/93120) | 0 | Model routing/config | @shichuzhu | [Feature]: Expose MAX_SAME_MODEL_RATE_LIMIT_RETRIES as configurable (currently hardcoded to 3) |
@@ -1557,4 +1564,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 774 (356 issues, 418 PRs).
+- Kept open threads: 781 (359 issues, 422 PRs).

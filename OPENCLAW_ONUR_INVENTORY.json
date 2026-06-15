@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 356,
-    "open_prs": 418,
-    "open_threads": 774
+    "open_issues": 359,
+    "open_prs": 422,
+    "open_threads": 781
   },
   "open_threads": [
     {
@@ -5853,6 +5853,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93170,
+      "title": "fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93170"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xialonglee",
+      "number": 93168,
+      "title": "fix(active-memory): exclude dreaming-narrative session keys from interactive eligibility gate",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93168"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Pick-cat",
+      "number": 93156,
+      "title": "fix(doctor): import default-agent auth profiles into sqlite",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93156"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@1818TusculumSt",
+      "number": 93154,
+      "title": "memory_search tool reports 'index provider settings changed' with OAuth-based OpenAI profile",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93154"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@rrrrrredy",
+      "number": 93150,
+      "title": "[Feature]: Add keyword fallback for memory_search when node:sqlite is unavailable",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93150"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Tazio7",
+      "number": 93145,
+      "title": "Agent auth migration to SQLite leaves default agent with empty auth store (v2026.6.6)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93145"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@patelmm79",
+      "number": 93136,
+      "title": "feat(attribution): parameterize OpenRouter `X-OpenRouter-Title` per deployment",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93136"
     },
     {
       "activity": 0,
@@ -11742,8 +11805,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93120,
-    "pr": 93131
+    "issue": 93169,
+    "pr": 93172
   },
   "schema_version": 1,
   "updated": "2026-06-15"
