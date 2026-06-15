@@ -1,17 +1,26 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-15
+Updated: 2026-06-16
 
 Review watermark:
 
-- Last reviewed through issue: #93327.
-- Last reviewed through PR: #93329.
+- Last reviewed through issue: #93366.
+- Last reviewed through PR: #93368.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93365](https://github.com/openclaw/openclaw/pull/93365) | 2026-06-15 | 0 | Local memory/embedding | @xydigit-sj | fix(memory-core): EPERM fallback for atomic reindex on Windows (#78640) |
+| 🔀&nbsp;[#93356](https://github.com/openclaw/openclaw/pull/93356) | 2026-06-15 | 0 | Model routing/config | @obuchowski | fix(plugins): cache plugin setup registry to kill the /models CPU storm |
+| 🔀&nbsp;[#93352](https://github.com/openclaw/openclaw/pull/93352) | 2026-06-15 | 0 | Model routing/config | @jailbirt | fix(auth-profiles): import legacy auth-profiles.json into SQLite store on load |
+| 🔀&nbsp;[#93350](https://github.com/openclaw/openclaw/pull/93350) | 2026-06-15 | 0 | Model routing/config | @mmyzwl | #93346: fix(ui): show effective runtime model in dropdown after fallback |
+| 🔀&nbsp;[#93348](https://github.com/openclaw/openclaw/pull/93348) | 2026-06-15 | 0 | Model routing/config | @MonkeyLeeT | fix(status): use selected model for usage |
+| 📝&nbsp;[#93346](https://github.com/openclaw/openclaw/issues/93346) | 2026-06-15 | 0 | Model routing/config | @davidstoll | [Bug]: Model dropdown does not reflect effective runtime model after fallback/default drift |
+| 🔀&nbsp;[#93342](https://github.com/openclaw/openclaw/pull/93342) | 2026-06-15 | 0 | Model/provider behavior | @Marvinthebored | pipeline: normalized provider→channel stream grammar (core) |
+| 🔀&nbsp;[#93335](https://github.com/openclaw/openclaw/pull/93335) | 2026-06-15 | 0 | Model routing/config | @obuchowski | fix(thinking): clamp below-range requests down to the cheapest level,… |
+| 🔀&nbsp;[#93331](https://github.com/openclaw/openclaw/pull/93331) | 2026-06-15 | 0 | Model routing/config | @ferminquant | feat(compaction): add embedded fallback models |
 | 📝&nbsp;[#93322](https://github.com/openclaw/openclaw/issues/93322) | 2026-06-15 | 0 | Model routing/config | @rollingshmily | [Bug]: /status usage should follow session-selected model after /model switch |
 | 📝&nbsp;[#93312](https://github.com/openclaw/openclaw/issues/93312) | 2026-06-15 | 0 | Local memory/embedding | @doubleji817-lang | [Bug]: memory] openai-compatible embedding batch hangs on "batch start" - never produces "batch completed" |
 | 🔀&nbsp;[#93306](https://github.com/openclaw/openclaw/pull/93306) | 2026-06-15 | 0 | Model routing/config | @hxy91819 | fix(status): ignore stale context after model switch |
@@ -53,17 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93125](https://github.com/openclaw/openclaw/pull/93125) | 2026-06-15 | 0 | Model routing/config | @ferminquant | feat(compaction): add compaction.fallbacks: string[] for ordered model fallback chain |
 | 🔀&nbsp;[#93122](https://github.com/openclaw/openclaw/pull/93122) | 2026-06-15 | 0 | Model routing/config | @zhangqueping | #93120: feat(auth): make maxSameModelRateLimitRetries configurable |
 | 📝&nbsp;[#93120](https://github.com/openclaw/openclaw/issues/93120) | 2026-06-15 | 0 | Model routing/config | @shichuzhu | [Feature]: Expose MAX_SAME_MODEL_RATE_LIMIT_RETRIES as configurable (currently hardcoded to 3) |
-| 🔀&nbsp;[#93116](https://github.com/openclaw/openclaw/pull/93116) | 2026-06-15 | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | fix(xai): respect ssrfPolicy and request.allowPrivateNetwork in image_generate |
-| 🔀&nbsp;[#93113](https://github.com/openclaw/openclaw/pull/93113) | 2026-06-15 | 0 | Local memory/embedding | @AgentArcLab | fix(memory-core): report active dreaming phases in status |
-| 🔀&nbsp;[#93106](https://github.com/openclaw/openclaw/pull/93106) | 2026-06-15 | 0 | Local model runtime | @ZengWen-DT | docs(gateway): add cloud-orchestrator plus local-text-workers pattern |
-| 🔀&nbsp;[#93100](https://github.com/openclaw/openclaw/pull/93100) | 2026-06-15 | 0 | Local memory/embedding | @yetval | fix(compaction): emit after_compaction on no-op and use JSON-safe validator delimiters (#81925) |
-| 🔀&nbsp;[#93097](https://github.com/openclaw/openclaw/pull/93097) | 2026-06-15 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 integration (fixes #79847) |
-| 🔀&nbsp;[#93093](https://github.com/openclaw/openclaw/pull/93093) | 2026-06-14 | 0 | Local memory/embedding | @ZengWen-DT | docs(memory): warn about session memory overlap |
-| 🔀&nbsp;[#93064](https://github.com/openclaw/openclaw/pull/93064) | 2026-06-14 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
-| 🔀&nbsp;[#93056](https://github.com/openclaw/openclaw/pull/93056) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(agents): sync stale this.model snapshot after /model switch |
-| 📝&nbsp;[#93050](https://github.com/openclaw/openclaw/issues/93050) | 2026-06-14 | 0 | Model routing/config | @ferminquant | [Feature]: Add compaction.fallbacks: string[] for ordered model fallback chain on summarization failure |
 
-## OPEN THREADS (812)
+## OPEN THREADS (821)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 762 open threads, sorted by activity</summary>
+<summary>Remaining 771 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,15 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93365](https://github.com/openclaw/openclaw/pull/93365) | 0 | Local memory/embedding | @xydigit-sj | fix(memory-core): EPERM fallback for atomic reindex on Windows (#78640) |
+| 🔀&nbsp;[#93356](https://github.com/openclaw/openclaw/pull/93356) | 0 | Model routing/config | @obuchowski | fix(plugins): cache plugin setup registry to kill the /models CPU storm |
+| 🔀&nbsp;[#93352](https://github.com/openclaw/openclaw/pull/93352) | 0 | Model routing/config | @jailbirt | fix(auth-profiles): import legacy auth-profiles.json into SQLite store on load |
+| 🔀&nbsp;[#93350](https://github.com/openclaw/openclaw/pull/93350) | 0 | Model routing/config | @mmyzwl | #93346: fix(ui): show effective runtime model in dropdown after fallback |
+| 🔀&nbsp;[#93348](https://github.com/openclaw/openclaw/pull/93348) | 0 | Model routing/config | @MonkeyLeeT | fix(status): use selected model for usage |
+| 📝&nbsp;[#93346](https://github.com/openclaw/openclaw/issues/93346) | 0 | Model routing/config | @davidstoll | [Bug]: Model dropdown does not reflect effective runtime model after fallback/default drift |
+| 🔀&nbsp;[#93342](https://github.com/openclaw/openclaw/pull/93342) | 0 | Model/provider behavior | @Marvinthebored | pipeline: normalized provider→channel stream grammar (core) |
+| 🔀&nbsp;[#93335](https://github.com/openclaw/openclaw/pull/93335) | 0 | Model routing/config | @obuchowski | fix(thinking): clamp below-range requests down to the cheapest level,… |
+| 🔀&nbsp;[#93331](https://github.com/openclaw/openclaw/pull/93331) | 0 | Model routing/config | @ferminquant | feat(compaction): add embedded fallback models |
 | 📝&nbsp;[#93322](https://github.com/openclaw/openclaw/issues/93322) | 0 | Model routing/config | @rollingshmily | [Bug]: /status usage should follow session-selected model after /model switch |
 | 📝&nbsp;[#93312](https://github.com/openclaw/openclaw/issues/93312) | 0 | Local memory/embedding | @doubleji817-lang | [Bug]: memory] openai-compatible embedding batch hangs on "batch start" - never produces "batch completed" |
 | 🔀&nbsp;[#93306](https://github.com/openclaw/openclaw/pull/93306) | 0 | Model routing/config | @hxy91819 | fix(status): ignore stale context after model switch |
@@ -1595,4 +1604,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 812 (365 issues, 447 PRs).
+- Kept open threads: 821 (366 issues, 455 PRs).
