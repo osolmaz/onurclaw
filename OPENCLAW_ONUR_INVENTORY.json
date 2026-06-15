@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 360,
-    "open_prs": 429,
-    "open_threads": 789
+    "open_issues": 361,
+    "open_prs": 432,
+    "open_threads": 793
   },
   "open_threads": [
     {
@@ -5853,6 +5853,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xydt-tanshanshan",
+      "number": 93215,
+      "title": "fix(memory): derive agentId from sessionKey fallback in resolveMemoryToolOptions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93215"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mmyzwl",
+      "number": 93212,
+      "title": "fix(failover): classify Zhipu (GLM) error [1305] as overloaded",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93212"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhengli0922",
+      "number": 93211,
+      "title": "Model fallback not triggered for Zhipu (GLM) error code 1305 — overloaded pattern mismatch",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93211"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@extrasmall0",
+      "number": 93206,
+      "title": "fix(minimax): wrap simple completion requests",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93206"
     },
     {
       "activity": 0,
@@ -11877,8 +11913,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93199,
-    "pr": 93198
+    "issue": 93227,
+    "pr": 93215
   },
   "schema_version": 1,
   "updated": "2026-06-15"
