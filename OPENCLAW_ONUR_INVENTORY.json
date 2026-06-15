@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 362,
-    "open_prs": 443,
-    "open_threads": 805
+    "open_issues": 363,
+    "open_prs": 446,
+    "open_threads": 809
   },
   "open_threads": [
     {
@@ -5853,6 +5853,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Alix-007",
+      "number": 93295,
+      "title": "fix(memory): swap rollback-journal sidecar during atomic reindex",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93295"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@medns",
+      "number": 93276,
+      "title": "fix(plugins): stop tool-discovery loads from clearing active providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93276"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhiqiang26",
+      "number": 93275,
+      "title": "#92776: fix(agents): prevent indefinite session model pinning from polluted fallback origin",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93275"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@pandaAIGC",
+      "number": 93272,
+      "title": "Model fallback does not trigger for Codex/OpenAI auth and zero-output assistant failures",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93272"
     },
     {
       "activity": 0,
@@ -12022,8 +12058,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93263,
-    "pr": 93271
+    "issue": 93288,
+    "pr": 93297
   },
   "schema_version": 1,
   "updated": "2026-06-15"
