@@ -4723,8 +4723,8 @@
   "counts": {
     "closed_threads": 674,
     "open_issues": 355,
-    "open_prs": 410,
-    "open_threads": 765
+    "open_prs": 413,
+    "open_threads": 768
   },
   "open_threads": [
     {
@@ -5853,6 +5853,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yetval",
+      "number": 93100,
+      "title": "fix(compaction): emit after_compaction on no-op and use JSON-safe validator delimiters (#81925)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93100"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93097,
+      "title": "fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 integration (fixes #79847)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93097"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ZengWen-DT",
+      "number": 93093,
+      "title": "docs(memory): warn about session memory overlap",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93093"
     },
     {
       "activity": 0,
@@ -11661,8 +11688,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93071,
-    "pr": 93073
+    "issue": 93081,
+    "pr": 93101
   },
   "schema_version": 1,
   "updated": "2026-06-15"
