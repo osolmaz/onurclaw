@@ -4,14 +4,17 @@ Updated: 2026-06-15
 
 Review watermark:
 
-- Last reviewed through issue: #93288.
-- Last reviewed through PR: #93297.
+- Last reviewed through issue: #93327.
+- Last reviewed through PR: #93329.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#93322](https://github.com/openclaw/openclaw/issues/93322) | 2026-06-15 | 0 | Model routing/config | @rollingshmily | [Bug]: /status usage should follow session-selected model after /model switch |
+| 📝&nbsp;[#93312](https://github.com/openclaw/openclaw/issues/93312) | 2026-06-15 | 0 | Local memory/embedding | @doubleji817-lang | [Bug]: memory] openai-compatible embedding batch hangs on "batch start" - never produces "batch completed" |
+| 🔀&nbsp;[#93306](https://github.com/openclaw/openclaw/pull/93306) | 2026-06-15 | 0 | Model routing/config | @hxy91819 | fix(status): ignore stale context after model switch |
 | 🔀&nbsp;[#93295](https://github.com/openclaw/openclaw/pull/93295) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory): swap rollback-journal sidecar during atomic reindex |
 | 🔀&nbsp;[#93276](https://github.com/openclaw/openclaw/pull/93276) | 2026-06-15 | 0 | Model routing/config | @medns | fix(plugins): stop tool-discovery loads from clearing active providers |
 | 🔀&nbsp;[#93275](https://github.com/openclaw/openclaw/pull/93275) | 2026-06-15 | 0 | Model routing/config | @zhiqiang26 | #92776: fix(agents): prevent indefinite session model pinning from polluted fallback origin |
@@ -59,11 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93064](https://github.com/openclaw/openclaw/pull/93064) | 2026-06-14 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
 | 🔀&nbsp;[#93056](https://github.com/openclaw/openclaw/pull/93056) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(agents): sync stale this.model snapshot after /model switch |
 | 📝&nbsp;[#93050](https://github.com/openclaw/openclaw/issues/93050) | 2026-06-14 | 0 | Model routing/config | @ferminquant | [Feature]: Add compaction.fallbacks: string[] for ordered model fallback chain on summarization failure |
-| 🔀&nbsp;[#93039](https://github.com/openclaw/openclaw/pull/93039) | 2026-06-14 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
-| 📝&nbsp;[#93036](https://github.com/openclaw/openclaw/issues/93036) | 2026-06-14 | 0 | Model routing/config | @kumaxs | suspendSession locks entire lane, prevents fallback models from running on rate-limit |
-| 🔀&nbsp;[#93017](https://github.com/openclaw/openclaw/pull/93017) | 2026-06-14 | 0 | Model/provider behavior | @dwc1997 | fix(agents): null-guard baseUrl in getAttributionHeaders |
 
-## OPEN THREADS (809)
+## OPEN THREADS (812)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 759 open threads, sorted by activity</summary>
+<summary>Remaining 762 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#93322](https://github.com/openclaw/openclaw/issues/93322) | 0 | Model routing/config | @rollingshmily | [Bug]: /status usage should follow session-selected model after /model switch |
+| 📝&nbsp;[#93312](https://github.com/openclaw/openclaw/issues/93312) | 0 | Local memory/embedding | @doubleji817-lang | [Bug]: memory] openai-compatible embedding batch hangs on "batch start" - never produces "batch completed" |
+| 🔀&nbsp;[#93306](https://github.com/openclaw/openclaw/pull/93306) | 0 | Model routing/config | @hxy91819 | fix(status): ignore stale context after model switch |
 | 🔀&nbsp;[#93295](https://github.com/openclaw/openclaw/pull/93295) | 0 | Local memory/embedding | @Alix-007 | fix(memory): swap rollback-journal sidecar during atomic reindex |
 | 🔀&nbsp;[#93276](https://github.com/openclaw/openclaw/pull/93276) | 0 | Model routing/config | @medns | fix(plugins): stop tool-discovery loads from clearing active providers |
 | 🔀&nbsp;[#93275](https://github.com/openclaw/openclaw/pull/93275) | 0 | Model routing/config | @zhiqiang26 | #92776: fix(agents): prevent indefinite session model pinning from polluted fallback origin |
@@ -1592,4 +1595,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 809 (363 issues, 446 PRs).
+- Kept open threads: 812 (365 issues, 447 PRs).
