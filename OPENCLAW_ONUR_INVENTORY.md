@@ -4,14 +4,24 @@ Updated: 2026-06-16
 
 Review watermark:
 
-- Last reviewed through issue: #93366.
-- Last reviewed through PR: #93368.
+- Last reviewed through issue: #93403.
+- Last reviewed through PR: #93407.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93397](https://github.com/openclaw/openclaw/pull/93397) | 2026-06-15 | 0 | Local/media model provider | @Quratulain-bilal | fix(minimax): correct volume range warning to match inclusive max |
+| 📝&nbsp;[#93396](https://github.com/openclaw/openclaw/issues/93396) | 2026-06-15 | 0 | Local model runtime | @pineapple82 | [Bug]:  Provider name "openai" misleading when using local Ollama – causes fallback to real OpenAI API for embeddings |
+| 🔀&nbsp;[#93394](https://github.com/openclaw/openclaw/pull/93394) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory): abort orphaned qmd search subprocess when memory_search times out |
+| 📝&nbsp;[#93393](https://github.com/openclaw/openclaw/issues/93393) | 2026-06-15 | 0 | Local model runtime | @turururu | [Feature]: Model-agnostic advisor tool via api.runtime.llm.complete |
+| 🔀&nbsp;[#93389](https://github.com/openclaw/openclaw/pull/93389) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory-core): clear daily-ingestion sqlite namespace on dreaming repair |
+| 🔀&nbsp;[#93388](https://github.com/openclaw/openclaw/pull/93388) | 2026-06-15 | 0 | Model/provider behavior | @vortexopenclaw | fix(google): use stable Gemini image model |
+| 🔀&nbsp;[#93384](https://github.com/openclaw/openclaw/pull/93384) | 2026-06-15 | 0 | Model routing/config | @zhangguiping-xydt | [Bug]: /status usage should follow session-selected model after /model switch |
+| 🔀&nbsp;[#93377](https://github.com/openclaw/openclaw/pull/93377) | 2026-06-15 | 0 | Model routing/config | @pandaAIGC | fix(model-fallback): classify Codex/OpenAI auth failures |
+| 🔀&nbsp;[#93371](https://github.com/openclaw/openclaw/pull/93371) | 2026-06-15 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): keep recalled memory out of user prompts |
+| 🔀&nbsp;[#93369](https://github.com/openclaw/openclaw/pull/93369) | 2026-06-15 | 0 | Model routing/config | @849261680 | fix(cron): expose per-job fallbacks in CLI |
 | 🔀&nbsp;[#93365](https://github.com/openclaw/openclaw/pull/93365) | 2026-06-15 | 0 | Local memory/embedding | @xydigit-sj | fix(memory-core): EPERM fallback for atomic reindex on Windows (#78640) |
 | 🔀&nbsp;[#93356](https://github.com/openclaw/openclaw/pull/93356) | 2026-06-15 | 0 | Model routing/config | @obuchowski | fix(plugins): cache plugin setup registry to kill the /models CPU storm |
 | 🔀&nbsp;[#93352](https://github.com/openclaw/openclaw/pull/93352) | 2026-06-15 | 0 | Model routing/config | @jailbirt | fix(auth-profiles): import legacy auth-profiles.json into SQLite store on load |
@@ -52,18 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93183](https://github.com/openclaw/openclaw/pull/93183) | 2026-06-15 | 0 | Model routing/config | @TurboTheTurtle | [codex] Fix /btw Codex runtime side-question routing |
 | 🔀&nbsp;[#93182](https://github.com/openclaw/openclaw/pull/93182) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory): clean rollback-journal reindex temp sidecar on NFS stores |
 | 🔀&nbsp;[#93180](https://github.com/openclaw/openclaw/pull/93180) | 2026-06-15 | 0 | Model routing/config | @ooiuuii | fix(doctor): gate legacy Codex canonicalization on a migration plan |
-| 🔀&nbsp;[#93170](https://github.com/openclaw/openclaw/pull/93170) | 2026-06-15 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
-| 🔀&nbsp;[#93168](https://github.com/openclaw/openclaw/pull/93168) | 2026-06-15 | 0 | Local memory/embedding | @xialonglee | fix(active-memory): exclude dreaming-narrative session keys from interactive eligibility gate |
-| 🔀&nbsp;[#93156](https://github.com/openclaw/openclaw/pull/93156) | 2026-06-15 | 0 | Model routing/config | @Pick-cat | fix(doctor): import default-agent auth profiles into sqlite |
-| 📝&nbsp;[#93154](https://github.com/openclaw/openclaw/issues/93154) | 2026-06-15 | 0 | Local memory/embedding | @1818TusculumSt | memory_search tool reports 'index provider settings changed' with OAuth-based OpenAI profile |
-| 📝&nbsp;[#93150](https://github.com/openclaw/openclaw/issues/93150) | 2026-06-15 | 0 | Local memory/embedding | @rrrrrredy | [Feature]: Add keyword fallback for memory_search when node:sqlite is unavailable |
-| 📝&nbsp;[#93145](https://github.com/openclaw/openclaw/issues/93145) | 2026-06-15 | 0 | Model routing/config | @Tazio7 | Agent auth migration to SQLite leaves default agent with empty auth store (v2026.6.6) |
-| 🔀&nbsp;[#93136](https://github.com/openclaw/openclaw/pull/93136) | 2026-06-15 | 0 | OpenAI-compatible/proxy | @patelmm79 | feat(attribution): parameterize OpenRouter `X-OpenRouter-Title` per deployment |
-| 🔀&nbsp;[#93125](https://github.com/openclaw/openclaw/pull/93125) | 2026-06-15 | 0 | Model routing/config | @ferminquant | feat(compaction): add compaction.fallbacks: string[] for ordered model fallback chain |
-| 🔀&nbsp;[#93122](https://github.com/openclaw/openclaw/pull/93122) | 2026-06-15 | 0 | Model routing/config | @zhangqueping | #93120: feat(auth): make maxSameModelRateLimitRetries configurable |
-| 📝&nbsp;[#93120](https://github.com/openclaw/openclaw/issues/93120) | 2026-06-15 | 0 | Model routing/config | @shichuzhu | [Feature]: Expose MAX_SAME_MODEL_RATE_LIMIT_RETRIES as configurable (currently hardcoded to 3) |
 
-## OPEN THREADS (821)
+## OPEN THREADS (831)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 771 open threads, sorted by activity</summary>
+<summary>Remaining 781 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,16 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93397](https://github.com/openclaw/openclaw/pull/93397) | 0 | Local/media model provider | @Quratulain-bilal | fix(minimax): correct volume range warning to match inclusive max |
+| 📝&nbsp;[#93396](https://github.com/openclaw/openclaw/issues/93396) | 0 | Local model runtime | @pineapple82 | [Bug]:  Provider name "openai" misleading when using local Ollama – causes fallback to real OpenAI API for embeddings |
+| 🔀&nbsp;[#93394](https://github.com/openclaw/openclaw/pull/93394) | 0 | Local memory/embedding | @Alix-007 | fix(memory): abort orphaned qmd search subprocess when memory_search times out |
+| 📝&nbsp;[#93393](https://github.com/openclaw/openclaw/issues/93393) | 0 | Local model runtime | @turururu | [Feature]: Model-agnostic advisor tool via api.runtime.llm.complete |
+| 🔀&nbsp;[#93389](https://github.com/openclaw/openclaw/pull/93389) | 0 | Local memory/embedding | @Alix-007 | fix(memory-core): clear daily-ingestion sqlite namespace on dreaming repair |
+| 🔀&nbsp;[#93388](https://github.com/openclaw/openclaw/pull/93388) | 0 | Model/provider behavior | @vortexopenclaw | fix(google): use stable Gemini image model |
+| 🔀&nbsp;[#93384](https://github.com/openclaw/openclaw/pull/93384) | 0 | Model routing/config | @zhangguiping-xydt | [Bug]: /status usage should follow session-selected model after /model switch |
+| 🔀&nbsp;[#93377](https://github.com/openclaw/openclaw/pull/93377) | 0 | Model routing/config | @pandaAIGC | fix(model-fallback): classify Codex/OpenAI auth failures |
+| 🔀&nbsp;[#93371](https://github.com/openclaw/openclaw/pull/93371) | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): keep recalled memory out of user prompts |
+| 🔀&nbsp;[#93369](https://github.com/openclaw/openclaw/pull/93369) | 0 | Model routing/config | @849261680 | fix(cron): expose per-job fallbacks in CLI |
 | 🔀&nbsp;[#93365](https://github.com/openclaw/openclaw/pull/93365) | 0 | Local memory/embedding | @xydigit-sj | fix(memory-core): EPERM fallback for atomic reindex on Windows (#78640) |
 | 🔀&nbsp;[#93356](https://github.com/openclaw/openclaw/pull/93356) | 0 | Model routing/config | @obuchowski | fix(plugins): cache plugin setup registry to kill the /models CPU storm |
 | 🔀&nbsp;[#93352](https://github.com/openclaw/openclaw/pull/93352) | 0 | Model routing/config | @jailbirt | fix(auth-profiles): import legacy auth-profiles.json into SQLite store on load |
@@ -1604,4 +1614,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 821 (366 issues, 455 PRs).
+- Kept open threads: 831 (368 issues, 463 PRs).
