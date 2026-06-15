@@ -4,14 +4,22 @@ Updated: 2026-06-15
 
 Review watermark:
 
-- Last reviewed through issue: #93169.
-- Last reviewed through PR: #93172.
+- Last reviewed through issue: #93199.
+- Last reviewed through PR: #93198.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#93199](https://github.com/openclaw/openclaw/issues/93199) | 2026-06-15 | 0 | Local memory/embedding | @chaboncarpentier-blip | memory_search fails in non-default agent session while CLI --agent search works; current session resolves inconsistently |
+| 🔀&nbsp;[#93198](https://github.com/openclaw/openclaw/pull/93198) | 2026-06-15 | 0 | Model routing/config | @mushuiyu886 | fix #80933: honor claude-cli contextTokens |
+| 🔀&nbsp;[#93196](https://github.com/openclaw/openclaw/pull/93196) | 2026-06-15 | 0 | Model routing/config | @mmyzwl | fix(auth): inherit config auth.profiles when default agent store is empty |
+| 🔀&nbsp;[#93192](https://github.com/openclaw/openclaw/pull/93192) | 2026-06-15 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096) |
+| 🔀&nbsp;[#93187](https://github.com/openclaw/openclaw/pull/93187) | 2026-06-15 | 0 | Local memory/embedding | @xialonglee | fix(memory-core): exclude archive transcripts from dreaming corpus and propagate cron parentage to subagents |
+| 🔀&nbsp;[#93183](https://github.com/openclaw/openclaw/pull/93183) | 2026-06-15 | 0 | Model routing/config | @TurboTheTurtle | [codex] Fix /btw Codex runtime side-question routing |
+| 🔀&nbsp;[#93182](https://github.com/openclaw/openclaw/pull/93182) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory): clean rollback-journal reindex temp sidecar on NFS stores |
+| 🔀&nbsp;[#93180](https://github.com/openclaw/openclaw/pull/93180) | 2026-06-15 | 0 | Model routing/config | @ooiuuii | fix(doctor): gate legacy Codex canonicalization on a migration plan |
 | 🔀&nbsp;[#93170](https://github.com/openclaw/openclaw/pull/93170) | 2026-06-15 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
 | 🔀&nbsp;[#93168](https://github.com/openclaw/openclaw/pull/93168) | 2026-06-15 | 0 | Local memory/embedding | @xialonglee | fix(active-memory): exclude dreaming-narrative session keys from interactive eligibility gate |
 | 🔀&nbsp;[#93156](https://github.com/openclaw/openclaw/pull/93156) | 2026-06-15 | 0 | Model routing/config | @Pick-cat | fix(doctor): import default-agent auth profiles into sqlite |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#92959](https://github.com/openclaw/openclaw/pull/92959) | 2026-06-14 | 0 | Model routing/config | @zenglingbiao | fix(model-fallback): coalesce repeated auth-class fallback decision logs to prevent auth expiry spam (fixes #56979) |
 | 🔀&nbsp;[#92955](https://github.com/openclaw/openclaw/pull/92955) | 2026-06-14 | 0 | Model routing/config | @NianJiuZst | fix(opencode-go): load context windows from bundled catalog |
 | 🔀&nbsp;[#92954](https://github.com/openclaw/openclaw/pull/92954) | 2026-06-14 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): accept local default model path migration |
-| 🔀&nbsp;[#92952](https://github.com/openclaw/openclaw/pull/92952) | 2026-06-14 | 0 | Local memory/embedding | @Alix-007 | fix(memory-core): sweep orphaned sqlite reindex temp files on startup (#92874) |
-| 🔀&nbsp;[#92943](https://github.com/openclaw/openclaw/pull/92943) | 2026-06-14 | 0 | Local memory/embedding | @mushuiyu886 | Refresh memory index state after external reindex |
-| 🔀&nbsp;[#92940](https://github.com/openclaw/openclaw/pull/92940) | 2026-06-14 | 0 | Model routing/config | @liuhao1024 | fix(model-fallback): throttle duplicate decision logs to prevent auth expiry spam (fixes #56979) |
-| 🔀&nbsp;[#92938](https://github.com/openclaw/openclaw/pull/92938) | 2026-06-14 | 0 | Model routing/config | @zhangguiping-xydt | gateway hangs at `[gateway] starting...` when a declared provider lacks credentials (regression v2026.4.8 → v2026.4.26) |
-| 🔀&nbsp;[#92932](https://github.com/openclaw/openclaw/pull/92932) | 2026-06-14 | 0 | Model routing/config | @zhiqiang26 | #92931: Bug: catalog.json caches API key in plaintext after auth migration to encrypted SQLite |
-| 🔀&nbsp;[#92930](https://github.com/openclaw/openclaw/pull/92930) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(status): warm model context-window cache before /status reads it |
-| 🔀&nbsp;[#92914](https://github.com/openclaw/openclaw/pull/92914) | 2026-06-14 | 0 | Model routing/config | @openperf | fix(agents): clamp unsupported thinking for subagent spawns instead of hard-failing |
-| 🔀&nbsp;[#92913](https://github.com/openclaw/openclaw/pull/92913) | 2026-06-14 | 0 | Model routing/config | @kumaxs | fix(opencode-go): register model catalog to fix context window detection |
 
-## OPEN THREADS (781)
+## OPEN THREADS (789)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 731 open threads, sorted by activity</summary>
+<summary>Remaining 739 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#93199](https://github.com/openclaw/openclaw/issues/93199) | 0 | Local memory/embedding | @chaboncarpentier-blip | memory_search fails in non-default agent session while CLI --agent search works; current session resolves inconsistently |
+| 🔀&nbsp;[#93198](https://github.com/openclaw/openclaw/pull/93198) | 0 | Model routing/config | @mushuiyu886 | fix #80933: honor claude-cli contextTokens |
+| 🔀&nbsp;[#93196](https://github.com/openclaw/openclaw/pull/93196) | 0 | Model routing/config | @mmyzwl | fix(auth): inherit config auth.profiles when default agent store is empty |
+| 🔀&nbsp;[#93192](https://github.com/openclaw/openclaw/pull/93192) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096) |
+| 🔀&nbsp;[#93187](https://github.com/openclaw/openclaw/pull/93187) | 0 | Local memory/embedding | @xialonglee | fix(memory-core): exclude archive transcripts from dreaming corpus and propagate cron parentage to subagents |
+| 🔀&nbsp;[#93183](https://github.com/openclaw/openclaw/pull/93183) | 0 | Model routing/config | @TurboTheTurtle | [codex] Fix /btw Codex runtime side-question routing |
+| 🔀&nbsp;[#93182](https://github.com/openclaw/openclaw/pull/93182) | 0 | Local memory/embedding | @Alix-007 | fix(memory): clean rollback-journal reindex temp sidecar on NFS stores |
+| 🔀&nbsp;[#93180](https://github.com/openclaw/openclaw/pull/93180) | 0 | Model routing/config | @ooiuuii | fix(doctor): gate legacy Codex canonicalization on a migration plan |
 | 🔀&nbsp;[#93170](https://github.com/openclaw/openclaw/pull/93170) | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
 | 🔀&nbsp;[#93168](https://github.com/openclaw/openclaw/pull/93168) | 0 | Local memory/embedding | @xialonglee | fix(active-memory): exclude dreaming-narrative session keys from interactive eligibility gate |
 | 🔀&nbsp;[#93156](https://github.com/openclaw/openclaw/pull/93156) | 0 | Model routing/config | @Pick-cat | fix(doctor): import default-agent auth profiles into sqlite |
@@ -1564,4 +1572,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 781 (359 issues, 422 PRs).
+- Kept open threads: 789 (360 issues, 429 PRs).
