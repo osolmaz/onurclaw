@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 361,
-    "open_prs": 432,
-    "open_threads": 793
+    "open_issues": 362,
+    "open_prs": 443,
+    "open_threads": 805
   },
   "open_threads": [
     {
@@ -5853,6 +5853,115 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lzyyzznl",
+      "number": 93268,
+      "title": "fix(status): resolve \"Vector store: unknown\" on memory status fast path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93268"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@fsdwen",
+      "number": 93267,
+      "title": "fix(session-memory): skip delivery-mirror entries and dedup consecutive identical assistant messages (#92563)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93267"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@BitmapAsset",
+      "number": 93261,
+      "title": "fix(plugins): resolve provider policy surface for plugin-owned CLI backends",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93261"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 93260,
+      "title": "fix(memory): fall back to keyword search without sqlite",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93260"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@BitmapAsset",
+      "number": 93259,
+      "title": "claude-cli subagents silently cap thinking at \"high\" — provider-policy surface not resolved for plugin CLI backends",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93259"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@XuZehan-iCenter",
+      "number": 93253,
+      "title": "fix(openai-completions): preserve reasoning replay for MiniMax M3 via OpenRouter",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93253"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@0xghost42",
+      "number": 93241,
+      "title": "fix(agents): classify Zhipu GLM overload as overloaded for failover",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93241"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@osolmaz",
+      "number": 93238,
+      "title": "fix(agents): honor disabled envelope timestamps at model boundary",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93238"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93235,
+      "title": "fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93235"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "assignee": "steipete",
+      "creator": "@hxy91819",
+      "number": 93231,
+      "title": "fix(status): correct pinned model clear hint",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93231"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mmyzwl",
+      "number": 93226,
+      "title": "fix(auth-health): prefer usable OAuth over expired inventory in provider status",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93226"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hxy91819",
+      "number": 93220,
+      "title": "fix(status): avoid stale session context windows",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93220"
     },
     {
       "activity": 0,
@@ -11913,8 +12022,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93227,
-    "pr": 93215
+    "issue": 93263,
+    "pr": 93271
   },
   "schema_version": 1,
   "updated": "2026-06-15"

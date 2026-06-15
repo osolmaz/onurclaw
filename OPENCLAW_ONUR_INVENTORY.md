@@ -4,14 +4,26 @@ Updated: 2026-06-15
 
 Review watermark:
 
-- Last reviewed through issue: #93227.
-- Last reviewed through PR: #93215.
+- Last reviewed through issue: #93263.
+- Last reviewed through PR: #93271.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93268](https://github.com/openclaw/openclaw/pull/93268) | 2026-06-15 | 0 | Local memory/embedding | @lzyyzznl | fix(status): resolve "Vector store: unknown" on memory status fast path |
+| 🔀&nbsp;[#93267](https://github.com/openclaw/openclaw/pull/93267) | 2026-06-15 | 0 | Local memory/embedding | @fsdwen | fix(session-memory): skip delivery-mirror entries and dedup consecutive identical assistant messages (#92563) |
+| 🔀&nbsp;[#93261](https://github.com/openclaw/openclaw/pull/93261) | 2026-06-15 | 0 | Model routing/config | @BitmapAsset | fix(plugins): resolve provider policy surface for plugin-owned CLI backends |
+| 🔀&nbsp;[#93260](https://github.com/openclaw/openclaw/pull/93260) | 2026-06-15 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): fall back to keyword search without sqlite |
+| 📝&nbsp;[#93259](https://github.com/openclaw/openclaw/issues/93259) | 2026-06-15 | 0 | Model routing/config | @BitmapAsset | claude-cli subagents silently cap thinking at "high" — provider-policy surface not resolved for plugin CLI backends |
+| 🔀&nbsp;[#93253](https://github.com/openclaw/openclaw/pull/93253) | 2026-06-15 | 0 | OpenAI-compatible/proxy | @XuZehan-iCenter | fix(openai-completions): preserve reasoning replay for MiniMax M3 via OpenRouter |
+| 🔀&nbsp;[#93241](https://github.com/openclaw/openclaw/pull/93241) | 2026-06-15 | 0 | Model routing/config | @0xghost42 | fix(agents): classify Zhipu GLM overload as overloaded for failover |
+| 🔀&nbsp;[#93238](https://github.com/openclaw/openclaw/pull/93238) | 2026-06-15 | 0 | Local model runtime | @osolmaz | fix(agents): honor disabled envelope timestamps at model boundary |
+| 🔀&nbsp;[#93235](https://github.com/openclaw/openclaw/pull/93235) | 2026-06-15 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
+| 🔀&nbsp;[#93231](https://github.com/openclaw/openclaw/pull/93231) | 2026-06-15 | 0 | Model routing/config | @hxy91819 | fix(status): correct pinned model clear hint<br>Assignee: steipete |
+| 🔀&nbsp;[#93226](https://github.com/openclaw/openclaw/pull/93226) | 2026-06-15 | 0 | Model routing/config | @mmyzwl | fix(auth-health): prefer usable OAuth over expired inventory in provider status |
+| 🔀&nbsp;[#93220](https://github.com/openclaw/openclaw/pull/93220) | 2026-06-15 | 0 | Model routing/config | @hxy91819 | fix(status): avoid stale session context windows |
 | 🔀&nbsp;[#93215](https://github.com/openclaw/openclaw/pull/93215) | 2026-06-15 | 0 | Local memory/embedding | @xydt-tanshanshan | fix(memory): derive agentId from sessionKey fallback in resolveMemoryToolOptions |
 | 🔀&nbsp;[#93212](https://github.com/openclaw/openclaw/pull/93212) | 2026-06-15 | 0 | Model routing/config | @mmyzwl | fix(failover): classify Zhipu (GLM) error [1305] as overloaded |
 | 📝&nbsp;[#93211](https://github.com/openclaw/openclaw/issues/93211) | 2026-06-15 | 0 | Model routing/config | @zhengli0922 | Model fallback not triggered for Zhipu (GLM) error code 1305 — overloaded pattern mismatch |
@@ -50,20 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93011](https://github.com/openclaw/openclaw/pull/93011) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @yetval | fix(gateway): accept file-only input on /v1/responses (parity with image-only) |
 | 🔀&nbsp;[#93008](https://github.com/openclaw/openclaw/pull/93008) | 2026-06-14 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096) |
 | 🔀&nbsp;[#93007](https://github.com/openclaw/openclaw/pull/93007) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @Lellansin | feat(gateway): forward web_search_options through OpenAI-compatible chat completions |
-| 🔀&nbsp;[#93005](https://github.com/openclaw/openclaw/pull/93005) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @sallyom | [codex] Add OpenRouter Fusion guidance and prompt context |
-| 🔀&nbsp;[#93003](https://github.com/openclaw/openclaw/pull/93003) | 2026-06-14 | 0 | Model/provider behavior | @whiteyzy | fix(sdk): null-guard model.baseUrl in getAttributionHeaders |
-| 🔀&nbsp;[#92993](https://github.com/openclaw/openclaw/pull/92993) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @luoluo-xue-ops | [codex] openai proxy compat for compatible providers |
-| 🔀&nbsp;[#92991](https://github.com/openclaw/openclaw/pull/92991) | 2026-06-14 | 0 | Model/provider behavior | @samrusani | fix(agents): tolerate missing attribution baseUrl |
-| 🔀&nbsp;[#92988](https://github.com/openclaw/openclaw/pull/92988) | 2026-06-14 | 0 | Local memory/embedding | @chengzhichao-xydt | fix(memory-core): cleanup orphaned *.sqlite.tmp-* reindex files on startup |
-| 📝&nbsp;[#92984](https://github.com/openclaw/openclaw/issues/92984) | 2026-06-14 | 0 | OpenAI-compatible/proxy | @sallyom | Docs: add OpenRouter Fusion model guidance<br>Assignee: sallyom |
-| 🔀&nbsp;[#92979](https://github.com/openclaw/openclaw/pull/92979) | 2026-06-14 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): show per-phase dreaming status when only light phase is enabled (fixes #67868) |
-| 🔀&nbsp;[#92977](https://github.com/openclaw/openclaw/pull/92977) | 2026-06-14 | 0 | Model/provider behavior | @zhiqiang26 | #92974: Bug: v2026.6.6 getAttributionHeaders() crashes on Bedrock models — baseUrl undefined (null-guard missing) |
-| 📝&nbsp;[#92974](https://github.com/openclaw/openclaw/issues/92974) | 2026-06-14 | 0 | Model/provider behavior | @Haderach-Ram | Bug: v2026.6.6 getAttributionHeaders() crashes on Bedrock models — baseUrl undefined (null-guard missing) |
-| 🔀&nbsp;[#92972](https://github.com/openclaw/openclaw/pull/92972) | 2026-06-14 | 0 | Local memory/embedding | @pony-maggie | fix(memory): sweep orphaned reindex temp files |
-| 🔀&nbsp;[#92968](https://github.com/openclaw/openclaw/pull/92968) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(status): warm context-window cache at gateway startup for correct /status on first call |
-| 📝&nbsp;[#92967](https://github.com/openclaw/openclaw/issues/92967) | 2026-06-14 | 0 | Model routing/config | @samson910022 | fix(status): warm context-window cache at gateway startup for correct /status on first call |
 
-## OPEN THREADS (793)
+## OPEN THREADS (805)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 743 open threads, sorted by activity</summary>
+<summary>Remaining 755 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,18 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93268](https://github.com/openclaw/openclaw/pull/93268) | 0 | Local memory/embedding | @lzyyzznl | fix(status): resolve "Vector store: unknown" on memory status fast path |
+| 🔀&nbsp;[#93267](https://github.com/openclaw/openclaw/pull/93267) | 0 | Local memory/embedding | @fsdwen | fix(session-memory): skip delivery-mirror entries and dedup consecutive identical assistant messages (#92563) |
+| 🔀&nbsp;[#93261](https://github.com/openclaw/openclaw/pull/93261) | 0 | Model routing/config | @BitmapAsset | fix(plugins): resolve provider policy surface for plugin-owned CLI backends |
+| 🔀&nbsp;[#93260](https://github.com/openclaw/openclaw/pull/93260) | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): fall back to keyword search without sqlite |
+| 📝&nbsp;[#93259](https://github.com/openclaw/openclaw/issues/93259) | 0 | Model routing/config | @BitmapAsset | claude-cli subagents silently cap thinking at "high" — provider-policy surface not resolved for plugin CLI backends |
+| 🔀&nbsp;[#93253](https://github.com/openclaw/openclaw/pull/93253) | 0 | OpenAI-compatible/proxy | @XuZehan-iCenter | fix(openai-completions): preserve reasoning replay for MiniMax M3 via OpenRouter |
+| 🔀&nbsp;[#93241](https://github.com/openclaw/openclaw/pull/93241) | 0 | Model routing/config | @0xghost42 | fix(agents): classify Zhipu GLM overload as overloaded for failover |
+| 🔀&nbsp;[#93238](https://github.com/openclaw/openclaw/pull/93238) | 0 | Local model runtime | @osolmaz | fix(agents): honor disabled envelope timestamps at model boundary |
+| 🔀&nbsp;[#93235](https://github.com/openclaw/openclaw/pull/93235) | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
+| 🔀&nbsp;[#93231](https://github.com/openclaw/openclaw/pull/93231) | 0 | Model routing/config | @hxy91819 | fix(status): correct pinned model clear hint<br>Assignee: steipete |
+| 🔀&nbsp;[#93226](https://github.com/openclaw/openclaw/pull/93226) | 0 | Model routing/config | @mmyzwl | fix(auth-health): prefer usable OAuth over expired inventory in provider status |
+| 🔀&nbsp;[#93220](https://github.com/openclaw/openclaw/pull/93220) | 0 | Model routing/config | @hxy91819 | fix(status): avoid stale session context windows |
 | 🔀&nbsp;[#93215](https://github.com/openclaw/openclaw/pull/93215) | 0 | Local memory/embedding | @xydt-tanshanshan | fix(memory): derive agentId from sessionKey fallback in resolveMemoryToolOptions |
 | 🔀&nbsp;[#93212](https://github.com/openclaw/openclaw/pull/93212) | 0 | Model routing/config | @mmyzwl | fix(failover): classify Zhipu (GLM) error [1305] as overloaded |
 | 📝&nbsp;[#93211](https://github.com/openclaw/openclaw/issues/93211) | 0 | Model routing/config | @zhengli0922 | Model fallback not triggered for Zhipu (GLM) error code 1305 — overloaded pattern mismatch |
@@ -1576,4 +1588,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 793 (361 issues, 432 PRs).
+- Kept open threads: 805 (362 issues, 443 PRs).
