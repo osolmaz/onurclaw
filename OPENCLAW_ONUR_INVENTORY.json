@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 355,
-    "open_prs": 413,
-    "open_threads": 768
+    "open_issues": 356,
+    "open_prs": 418,
+    "open_threads": 774
   },
   "open_threads": [
     {
@@ -5853,6 +5853,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ferminquant",
+      "number": 93125,
+      "title": "feat(compaction): add compaction.fallbacks: string[] for ordered model fallback chain",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93125"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 93122,
+      "title": "#93120: feat(auth): make maxSameModelRateLimitRetries configurable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93122"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@shichuzhu",
+      "number": 93120,
+      "title": "[Feature]: Expose MAX_SAME_MODEL_RATE_LIMIT_RETRIES as configurable (currently hardcoded to 3)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93120"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@xydt-tanshanshan",
+      "number": 93116,
+      "title": "fix(xai): respect ssrfPolicy and request.allowPrivateNetwork in image_generate",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93116"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@AgentArcLab",
+      "number": 93113,
+      "title": "fix(memory-core): report active dreaming phases in status",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93113"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@ZengWen-DT",
+      "number": 93106,
+      "title": "docs(gateway): add cloud-orchestrator plus local-text-workers pattern",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93106"
     },
     {
       "activity": 0,
@@ -11688,8 +11742,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93081,
-    "pr": 93101
+    "issue": 93120,
+    "pr": 93131
   },
   "schema_version": 1,
   "updated": "2026-06-15"
