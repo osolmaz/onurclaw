@@ -1,17 +1,23 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-16
+Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #93667.
-- Last reviewed through PR: #93673.
+- Last reviewed through issue: #93717.
+- Last reviewed through PR: #93715.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#93710](https://github.com/openclaw/openclaw/issues/93710) | 2026-06-16 | 0 | Local model runtime | @obnoxious2011-cmd | ollama plugin overrides api to native protocol ignoring config api setting |
+| 🔀&nbsp;[#93708](https://github.com/openclaw/openclaw/pull/93708) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
+| 🔀&nbsp;[#93688](https://github.com/openclaw/openclaw/pull/93688) | 2026-06-16 | 0 | Local/media model provider | @dwc1997 | fix(minimax): check base_resp envelope errors in TTS provider |
+| 🔀&nbsp;[#93683](https://github.com/openclaw/openclaw/pull/93683) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
+| 🔀&nbsp;[#93681](https://github.com/openclaw/openclaw/pull/93681) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(llm): handle string assistant content on the OpenAI-compatible completion path |
+| 🔀&nbsp;[#93676](https://github.com/openclaw/openclaw/pull/93676) | 2026-06-16 | 0 | Model routing/config | @Pick-cat | fix(agent-runner): retry same model on Gemini per-minute rate-limit 429s |
 | 🔀&nbsp;[#93669](https://github.com/openclaw/openclaw/pull/93669) | 2026-06-16 | 0 | Open-weight/provider behavior | @lzyyzznl | fix(agents): classify Zhipu GLM error 1305 / 访问量过大 as overloaded for model fallback |
 | 🔀&nbsp;[#93660](https://github.com/openclaw/openclaw/pull/93660) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @lzyyzznl | feat(gateway): 添加 streaming 输出配置块到 HTTP 端点 |
 | 🔀&nbsp;[#93658](https://github.com/openclaw/openclaw/pull/93658) | 2026-06-16 | 0 | Model routing/config | @ml12580 | fix(wizard): preserve existing default model during setup auth choice [AI-assisted] |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93388](https://github.com/openclaw/openclaw/pull/93388) | 2026-06-15 | 0 | Model/provider behavior | @vortexopenclaw | fix(google): use stable Gemini image model |
 | 🔀&nbsp;[#93384](https://github.com/openclaw/openclaw/pull/93384) | 2026-06-15 | 0 | Model routing/config | @zhangguiping-xydt | [Bug]: /status usage should follow session-selected model after /model switch |
 | 🔀&nbsp;[#93377](https://github.com/openclaw/openclaw/pull/93377) | 2026-06-15 | 0 | Model routing/config | @pandaAIGC | fix(model-fallback): classify Codex/OpenAI auth failures |
-| 🔀&nbsp;[#93371](https://github.com/openclaw/openclaw/pull/93371) | 2026-06-15 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): keep recalled memory out of user prompts |
-| 🔀&nbsp;[#93369](https://github.com/openclaw/openclaw/pull/93369) | 2026-06-15 | 0 | Model routing/config | @849261680 | fix(cron): expose per-job fallbacks in CLI |
-| 🔀&nbsp;[#93365](https://github.com/openclaw/openclaw/pull/93365) | 2026-06-15 | 0 | Local memory/embedding | @xydigit-sj | fix(memory-core): EPERM fallback for atomic reindex on Windows (#78640) |
-| 🔀&nbsp;[#93356](https://github.com/openclaw/openclaw/pull/93356) | 2026-06-15 | 0 | Model routing/config | @obuchowski | fix(plugins): cache plugin setup registry to kill the /models CPU storm |
-| 🔀&nbsp;[#93352](https://github.com/openclaw/openclaw/pull/93352) | 2026-06-15 | 0 | Model routing/config | @jailbirt | fix(auth-profiles): import legacy auth-profiles.json into SQLite store on load |
-| 🔀&nbsp;[#93350](https://github.com/openclaw/openclaw/pull/93350) | 2026-06-15 | 0 | Model routing/config | @mmyzwl | #93346: fix(ui): show effective runtime model in dropdown after fallback |
 
-## OPEN THREADS (867)
+## OPEN THREADS (873)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 817 open threads, sorted by activity</summary>
+<summary>Remaining 823 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#93710](https://github.com/openclaw/openclaw/issues/93710) | 0 | Local model runtime | @obnoxious2011-cmd | ollama plugin overrides api to native protocol ignoring config api setting |
+| 🔀&nbsp;[#93708](https://github.com/openclaw/openclaw/pull/93708) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
+| 🔀&nbsp;[#93688](https://github.com/openclaw/openclaw/pull/93688) | 0 | Local/media model provider | @dwc1997 | fix(minimax): check base_resp envelope errors in TTS provider |
+| 🔀&nbsp;[#93683](https://github.com/openclaw/openclaw/pull/93683) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
+| 🔀&nbsp;[#93681](https://github.com/openclaw/openclaw/pull/93681) | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(llm): handle string assistant content on the OpenAI-compatible completion path |
+| 🔀&nbsp;[#93676](https://github.com/openclaw/openclaw/pull/93676) | 0 | Model routing/config | @Pick-cat | fix(agent-runner): retry same model on Gemini per-minute rate-limit 429s |
 | 🔀&nbsp;[#93669](https://github.com/openclaw/openclaw/pull/93669) | 0 | Open-weight/provider behavior | @lzyyzznl | fix(agents): classify Zhipu GLM error 1305 / 访问量过大 as overloaded for model fallback |
 | 🔀&nbsp;[#93660](https://github.com/openclaw/openclaw/pull/93660) | 0 | OpenAI-compatible/proxy | @lzyyzznl | feat(gateway): 添加 streaming 输出配置块到 HTTP 端点 |
 | 🔀&nbsp;[#93658](https://github.com/openclaw/openclaw/pull/93658) | 0 | Model routing/config | @ml12580 | fix(wizard): preserve existing default model during setup auth choice [AI-assisted] |
@@ -1650,4 +1656,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 867 (375 issues, 492 PRs).
+- Kept open threads: 873 (376 issues, 497 PRs).

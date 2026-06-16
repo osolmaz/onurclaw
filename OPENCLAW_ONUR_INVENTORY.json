@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 375,
-    "open_prs": 492,
-    "open_threads": 867
+    "open_issues": 376,
+    "open_prs": 497,
+    "open_threads": 873
   },
   "open_threads": [
     {
@@ -5853,6 +5853,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@obnoxious2011-cmd",
+      "number": 93710,
+      "title": "ollama plugin overrides api to native protocol ignoring config api setting",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93710"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@zhangguiping-xydt",
+      "number": 93708,
+      "title": "[Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93708"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@dwc1997",
+      "number": 93688,
+      "title": "fix(minimax): check base_resp envelope errors in TTS provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93688"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93683,
+      "title": "fix(memory): await search-sync before returning results to prevent stale index (fixes #52115)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93683"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Alix-007",
+      "number": 93681,
+      "title": "fix(llm): handle string assistant content on the OpenAI-compatible completion path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93681"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Pick-cat",
+      "number": 93676,
+      "title": "fix(agent-runner): retry same model on Gemini per-minute rate-limit 429s",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93676"
     },
     {
       "activity": 0,
@@ -12583,9 +12637,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 93667,
-    "pr": 93673
+    "issue": 93717,
+    "pr": 93715
   },
   "schema_version": 1,
-  "updated": "2026-06-16"
+  "updated": "2026-06-17"
 }
