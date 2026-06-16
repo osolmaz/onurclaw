@@ -4,14 +4,20 @@ Updated: 2026-06-16
 
 Review watermark:
 
-- Last reviewed through issue: #93486.
-- Last reviewed through PR: #93495.
+- Last reviewed through issue: #93518.
+- Last reviewed through PR: #93534.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93533](https://github.com/openclaw/openclaw/pull/93533) | 2026-06-16 | 0 | Local memory/embedding | @bowenluo718 | fix: support baseURL config for remote embedding providers |
+| 🔀&nbsp;[#93523](https://github.com/openclaw/openclaw/pull/93523) | 2026-06-16 | 0 | Model routing/config | @lzyyzznl | feat(ui): add model selector to cron quick-create wizard and job list |
+| 🔀&nbsp;[#93508](https://github.com/openclaw/openclaw/pull/93508) | 2026-06-16 | 0 | Local memory/embedding | @lzyyzznl | fix(session-memory): deduplicate assistant messages when thinking is stripped |
+| 📝&nbsp;[#93507](https://github.com/openclaw/openclaw/issues/93507) | 2026-06-16 | 0 | Model routing/config | @psdjc | [Feature]: Allow selecting cron job models and clearly displaying them in the Web UI |
+| 🔀&nbsp;[#93505](https://github.com/openclaw/openclaw/pull/93505) | 2026-06-16 | 0 | Local memory/embedding | @sunlit-deng | fix: support baseURL alias in memory embedding provider config resolution |
+| 🔀&nbsp;[#93503](https://github.com/openclaw/openclaw/pull/93503) | 2026-06-16 | 0 | Model routing/config | @lzyyzznl | fix(cli): resolve 200K context window fallback in status command |
 | 📝&nbsp;[#93485](https://github.com/openclaw/openclaw/issues/93485) | 2026-06-16 | 0 | Local memory/embedding | @A1fred-AI | memory-wiki: Stale Pages report flags intentionally durable references (concepts, syntheses) as aging |
 | 🔀&nbsp;[#93473](https://github.com/openclaw/openclaw/pull/93473) | 2026-06-16 | 0 | Local memory/embedding | @TurboTheTurtle | [codex] Fix QMD lexical memory status |
 | 🔀&nbsp;[#93469](https://github.com/openclaw/openclaw/pull/93469) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @drvoss | fix(agents): drop partialJson streaming artifacts from session history repair |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93260](https://github.com/openclaw/openclaw/pull/93260) | 2026-06-15 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): fall back to keyword search without sqlite |
 | 📝&nbsp;[#93259](https://github.com/openclaw/openclaw/issues/93259) | 2026-06-15 | 0 | Model routing/config | @BitmapAsset | claude-cli subagents silently cap thinking at "high" — provider-policy surface not resolved for plugin CLI backends |
 | 🔀&nbsp;[#93253](https://github.com/openclaw/openclaw/pull/93253) | 2026-06-15 | 0 | OpenAI-compatible/proxy | @XuZehan-iCenter | fix(openai-completions): preserve reasoning replay for MiniMax M3 via OpenRouter |
-| 🔀&nbsp;[#93241](https://github.com/openclaw/openclaw/pull/93241) | 2026-06-15 | 0 | Model routing/config | @0xghost42 | fix(agents): classify Zhipu GLM overload as overloaded for failover |
-| 🔀&nbsp;[#93238](https://github.com/openclaw/openclaw/pull/93238) | 2026-06-15 | 0 | Local model runtime | @osolmaz | fix(agents): honor disabled envelope timestamps at model boundary |
-| 🔀&nbsp;[#93235](https://github.com/openclaw/openclaw/pull/93235) | 2026-06-15 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
-| 🔀&nbsp;[#93231](https://github.com/openclaw/openclaw/pull/93231) | 2026-06-15 | 0 | Model routing/config | @hxy91819 | fix(status): correct pinned model clear hint<br>Assignee: steipete |
-| 🔀&nbsp;[#93226](https://github.com/openclaw/openclaw/pull/93226) | 2026-06-15 | 0 | Model routing/config | @mmyzwl | fix(auth-health): prefer usable OAuth over expired inventory in provider status |
-| 🔀&nbsp;[#93220](https://github.com/openclaw/openclaw/pull/93220) | 2026-06-15 | 0 | Model routing/config | @hxy91819 | fix(status): avoid stale session context windows |
 
-## OPEN THREADS (843)
+## OPEN THREADS (849)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 793 open threads, sorted by activity</summary>
+<summary>Remaining 799 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93533](https://github.com/openclaw/openclaw/pull/93533) | 0 | Local memory/embedding | @bowenluo718 | fix: support baseURL config for remote embedding providers |
+| 🔀&nbsp;[#93523](https://github.com/openclaw/openclaw/pull/93523) | 0 | Model routing/config | @lzyyzznl | feat(ui): add model selector to cron quick-create wizard and job list |
+| 🔀&nbsp;[#93508](https://github.com/openclaw/openclaw/pull/93508) | 0 | Local memory/embedding | @lzyyzznl | fix(session-memory): deduplicate assistant messages when thinking is stripped |
+| 📝&nbsp;[#93507](https://github.com/openclaw/openclaw/issues/93507) | 0 | Model routing/config | @psdjc | [Feature]: Allow selecting cron job models and clearly displaying them in the Web UI |
+| 🔀&nbsp;[#93505](https://github.com/openclaw/openclaw/pull/93505) | 0 | Local memory/embedding | @sunlit-deng | fix: support baseURL alias in memory embedding provider config resolution |
+| 🔀&nbsp;[#93503](https://github.com/openclaw/openclaw/pull/93503) | 0 | Model routing/config | @lzyyzznl | fix(cli): resolve 200K context window fallback in status command |
 | 📝&nbsp;[#93485](https://github.com/openclaw/openclaw/issues/93485) | 0 | Local memory/embedding | @A1fred-AI | memory-wiki: Stale Pages report flags intentionally durable references (concepts, syntheses) as aging |
 | 🔀&nbsp;[#93473](https://github.com/openclaw/openclaw/pull/93473) | 0 | Local memory/embedding | @TurboTheTurtle | [codex] Fix QMD lexical memory status |
 | 🔀&nbsp;[#93469](https://github.com/openclaw/openclaw/pull/93469) | 0 | OpenAI-compatible/proxy | @drvoss | fix(agents): drop partialJson streaming artifacts from session history repair |
@@ -1626,4 +1632,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 843 (372 issues, 471 PRs).
+- Kept open threads: 849 (373 issues, 476 PRs).

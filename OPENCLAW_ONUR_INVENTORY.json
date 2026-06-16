@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 372,
-    "open_prs": 471,
-    "open_threads": 843
+    "open_issues": 373,
+    "open_prs": 476,
+    "open_threads": 849
   },
   "open_threads": [
     {
@@ -5853,6 +5853,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bowenluo718",
+      "number": 93533,
+      "title": "fix: support baseURL config for remote embedding providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93533"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lzyyzznl",
+      "number": 93523,
+      "title": "feat(ui): add model selector to cron quick-create wizard and job list",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93523"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lzyyzznl",
+      "number": 93508,
+      "title": "fix(session-memory): deduplicate assistant messages when thinking is stripped",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93508"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@psdjc",
+      "number": 93507,
+      "title": "[Feature]: Allow selecting cron job models and clearly displaying them in the Web UI",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93507"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@sunlit-deng",
+      "number": 93505,
+      "title": "fix: support baseURL alias in memory embedding provider config resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93505"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lzyyzznl",
+      "number": 93503,
+      "title": "fix(cli): resolve 200K context window fallback in status command",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93503"
     },
     {
       "activity": 0,
@@ -12365,8 +12419,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93486,
-    "pr": 93495
+    "issue": 93518,
+    "pr": 93534
   },
   "schema_version": 1,
   "updated": "2026-06-16"
