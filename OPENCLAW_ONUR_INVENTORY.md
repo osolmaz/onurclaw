@@ -4,14 +4,24 @@ Updated: 2026-06-16
 
 Review watermark:
 
-- Last reviewed through issue: #93568.
-- Last reviewed through PR: #93600.
+- Last reviewed through issue: #93628.
+- Last reviewed through PR: #93639.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93627](https://github.com/openclaw/openclaw/pull/93627) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096)<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#93624](https://github.com/openclaw/openclaw/pull/93624) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(gateway): add configurable streaming chunk size for HTTP endpoints |
+| 🔀&nbsp;[#93623](https://github.com/openclaw/openclaw/pull/93623) | 2026-06-16 | 0 | Model routing/config | @sunlit-deng | fix(chat): prefer server session row over stale cache in model dropdown |
+| 🔀&nbsp;[#93620](https://github.com/openclaw/openclaw/pull/93620) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | [AI] fix(openai-completions): preserve reasoning_content on assistant messages for OpenRouter providers |
+| 🔀&nbsp;[#93613](https://github.com/openclaw/openclaw/pull/93613) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(llm): forward run context to model as opt-in request headers<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#93611](https://github.com/openclaw/openclaw/pull/93611) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096) |
+| 📝&nbsp;[#93610](https://github.com/openclaw/openclaw/issues/93610) | 2026-06-16 | 0 | Model/provider behavior | @ForceConstant | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
+| 🔀&nbsp;[#93608](https://github.com/openclaw/openclaw/pull/93608) | 2026-06-16 | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
+| 🔀&nbsp;[#93602](https://github.com/openclaw/openclaw/pull/93602) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter |
+| 📝&nbsp;[#93598](https://github.com/openclaw/openclaw/issues/93598) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @ikaijian | [Feature]: Can the streaming output increase the size of the configuration control block? |
 | 🔀&nbsp;[#93596](https://github.com/openclaw/openclaw/pull/93596) | 2026-06-16 | 0 | Local memory/embedding | @Alix-007 | fix(plugins): activate dreaming engine sidecar under restrictive allowlist |
 | 🔀&nbsp;[#93586](https://github.com/openclaw/openclaw/pull/93586) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
 | 🔀&nbsp;[#93533](https://github.com/openclaw/openclaw/pull/93533) | 2026-06-16 | 0 | Local memory/embedding | @bowenluo718 | fix: support baseURL config for remote embedding providers |
@@ -52,18 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93335](https://github.com/openclaw/openclaw/pull/93335) | 2026-06-15 | 0 | Model routing/config | @obuchowski | fix(thinking): clamp below-range requests down to the cheapest level,… |
 | 🔀&nbsp;[#93331](https://github.com/openclaw/openclaw/pull/93331) | 2026-06-15 | 0 | Model routing/config | @ferminquant | feat(compaction): add embedded fallback models |
 | 📝&nbsp;[#93322](https://github.com/openclaw/openclaw/issues/93322) | 2026-06-15 | 0 | Model routing/config | @rollingshmily | [Bug]: /status usage should follow session-selected model after /model switch |
-| 📝&nbsp;[#93312](https://github.com/openclaw/openclaw/issues/93312) | 2026-06-15 | 0 | Local memory/embedding | @doubleji817-lang | [Bug]: memory] openai-compatible embedding batch hangs on "batch start" - never produces "batch completed" |
-| 🔀&nbsp;[#93306](https://github.com/openclaw/openclaw/pull/93306) | 2026-06-15 | 0 | Model routing/config | @hxy91819 | fix(status): ignore stale context after model switch |
-| 🔀&nbsp;[#93295](https://github.com/openclaw/openclaw/pull/93295) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory): swap rollback-journal sidecar during atomic reindex |
-| 🔀&nbsp;[#93276](https://github.com/openclaw/openclaw/pull/93276) | 2026-06-15 | 0 | Model routing/config | @medns | fix(plugins): stop tool-discovery loads from clearing active providers |
-| 🔀&nbsp;[#93275](https://github.com/openclaw/openclaw/pull/93275) | 2026-06-15 | 0 | Model routing/config | @zhiqiang26 | #92776: fix(agents): prevent indefinite session model pinning from polluted fallback origin |
-| 📝&nbsp;[#93272](https://github.com/openclaw/openclaw/issues/93272) | 2026-06-15 | 0 | Model routing/config | @pandaAIGC | Model fallback does not trigger for Codex/OpenAI auth and zero-output assistant failures |
-| 🔀&nbsp;[#93268](https://github.com/openclaw/openclaw/pull/93268) | 2026-06-15 | 0 | Local memory/embedding | @lzyyzznl | fix(status): resolve "Vector store: unknown" on memory status fast path |
-| 🔀&nbsp;[#93267](https://github.com/openclaw/openclaw/pull/93267) | 2026-06-15 | 0 | Local memory/embedding | @fsdwen | fix(session-memory): skip delivery-mirror entries and dedup consecutive identical assistant messages (#92563) |
-| 🔀&nbsp;[#93261](https://github.com/openclaw/openclaw/pull/93261) | 2026-06-15 | 0 | Model routing/config | @BitmapAsset | fix(plugins): resolve provider policy surface for plugin-owned CLI backends |
-| 🔀&nbsp;[#93260](https://github.com/openclaw/openclaw/pull/93260) | 2026-06-15 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): fall back to keyword search without sqlite |
 
-## OPEN THREADS (851)
+## OPEN THREADS (861)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 801 open threads, sorted by activity</summary>
+<summary>Remaining 811 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,16 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93627](https://github.com/openclaw/openclaw/pull/93627) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096)<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#93624](https://github.com/openclaw/openclaw/pull/93624) | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(gateway): add configurable streaming chunk size for HTTP endpoints |
+| 🔀&nbsp;[#93623](https://github.com/openclaw/openclaw/pull/93623) | 0 | Model routing/config | @sunlit-deng | fix(chat): prefer server session row over stale cache in model dropdown |
+| 🔀&nbsp;[#93620](https://github.com/openclaw/openclaw/pull/93620) | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | [AI] fix(openai-completions): preserve reasoning_content on assistant messages for OpenRouter providers |
+| 🔀&nbsp;[#93613](https://github.com/openclaw/openclaw/pull/93613) | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(llm): forward run context to model as opt-in request headers<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#93611](https://github.com/openclaw/openclaw/pull/93611) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096) |
+| 📝&nbsp;[#93610](https://github.com/openclaw/openclaw/issues/93610) | 0 | Model/provider behavior | @ForceConstant | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
+| 🔀&nbsp;[#93608](https://github.com/openclaw/openclaw/pull/93608) | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
+| 🔀&nbsp;[#93602](https://github.com/openclaw/openclaw/pull/93602) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter |
+| 📝&nbsp;[#93598](https://github.com/openclaw/openclaw/issues/93598) | 0 | OpenAI-compatible/proxy | @ikaijian | [Feature]: Can the streaming output increase the size of the configuration control block? |
 | 🔀&nbsp;[#93596](https://github.com/openclaw/openclaw/pull/93596) | 0 | Local memory/embedding | @Alix-007 | fix(plugins): activate dreaming engine sidecar under restrictive allowlist |
 | 🔀&nbsp;[#93586](https://github.com/openclaw/openclaw/pull/93586) | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
 | 🔀&nbsp;[#93533](https://github.com/openclaw/openclaw/pull/93533) | 0 | Local memory/embedding | @bowenluo718 | fix: support baseURL config for remote embedding providers |
@@ -1634,4 +1644,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 851 (373 issues, 478 PRs).
+- Kept open threads: 861 (375 issues, 486 PRs).

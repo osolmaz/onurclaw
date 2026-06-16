@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 373,
-    "open_prs": 478,
-    "open_threads": 851
+    "open_issues": 375,
+    "open_prs": 486,
+    "open_threads": 861
   },
   "open_threads": [
     {
@@ -5853,6 +5853,98 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "assignee": "vincentkoc",
+      "creator": "@liuhao1024",
+      "number": 93627,
+      "title": "fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93627"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Jah-xy",
+      "number": 93624,
+      "title": "feat(gateway): add configurable streaming chunk size for HTTP endpoints",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93624"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@sunlit-deng",
+      "number": 93623,
+      "title": "fix(chat): prefer server session row over stale cache in model dropdown",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93623"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@xydt-tanshanshan",
+      "number": 93620,
+      "title": "[AI] fix(openai-completions): preserve reasoning_content on assistant messages for OpenRouter providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93620"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "assignee": "vincentkoc",
+      "creator": "@Jah-xy",
+      "number": 93613,
+      "title": "feat(llm): forward run context to model as opt-in request headers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93613"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93611,
+      "title": "fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93611"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@ForceConstant",
+      "number": 93610,
+      "title": "[Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93610"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@tomsun28",
+      "number": 93608,
+      "title": "chore: update glm-5.2 model cost pricing for input, output, and cache",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93608"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93602,
+      "title": "fix(memory): align session file counter denominator with indexer filter",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93602"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ikaijian",
+      "number": 93598,
+      "title": "[Feature]: Can the streaming output increase the size of the configuration control block?",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93598"
     },
     {
       "activity": 0,
@@ -12437,8 +12529,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93568,
-    "pr": 93600
+    "issue": 93628,
+    "pr": 93639
   },
   "schema_version": 1,
   "updated": "2026-06-16"
