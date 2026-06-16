@@ -4,14 +4,17 @@ Updated: 2026-06-16
 
 Review watermark:
 
-- Last reviewed through issue: #93436.
-- Last reviewed through PR: #93449.
+- Last reviewed through issue: #93465.
+- Last reviewed through PR: #93470.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93469](https://github.com/openclaw/openclaw/pull/93469) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @drvoss | fix(agents): drop partialJson streaming artifacts from session history repair |
+| 🔀&nbsp;[#93452](https://github.com/openclaw/openclaw/pull/93452) | 2026-06-16 | 0 | Local memory/embedding | @LiuwqGit | fix(bedrock): strip inference profile prefix from model ID in embedding adapter |
+| 🔀&nbsp;[#93451](https://github.com/openclaw/openclaw/pull/93451) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @lzyyzznl | #93436: Forward run context to the model as opt-in request headers |
 | 🔀&nbsp;[#93443](https://github.com/openclaw/openclaw/pull/93443) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @openclaw-clownfish[bot] | fix(gateway): block internal HTTP session overrides |
 | 🔀&nbsp;[#93439](https://github.com/openclaw/openclaw/pull/93439) | 2026-06-15 | 0 | Model routing/config | @harjothkhara | fix(agents): honor embedded run default model |
 | 📝&nbsp;[#93436](https://github.com/openclaw/openclaw/issues/93436) | 2026-06-15 | 0 | OpenAI-compatible/proxy | @asupian | [Feature]: Forward run context to the model as opt-in request headers (cost attribution behind a proxy) |
@@ -59,11 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93220](https://github.com/openclaw/openclaw/pull/93220) | 2026-06-15 | 0 | Model routing/config | @hxy91819 | fix(status): avoid stale session context windows |
 | 🔀&nbsp;[#93215](https://github.com/openclaw/openclaw/pull/93215) | 2026-06-15 | 0 | Local memory/embedding | @xydt-tanshanshan | fix(memory): derive agentId from sessionKey fallback in resolveMemoryToolOptions |
 | 🔀&nbsp;[#93212](https://github.com/openclaw/openclaw/pull/93212) | 2026-06-15 | 0 | Model routing/config | @mmyzwl | fix(failover): classify Zhipu (GLM) error [1305] as overloaded |
-| 📝&nbsp;[#93211](https://github.com/openclaw/openclaw/issues/93211) | 2026-06-15 | 0 | Model routing/config | @zhengli0922 | Model fallback not triggered for Zhipu (GLM) error code 1305 — overloaded pattern mismatch |
-| 🔀&nbsp;[#93206](https://github.com/openclaw/openclaw/pull/93206) | 2026-06-15 | 0 | Open-weight/provider behavior | @extrasmall0 | fix(minimax): wrap simple completion requests |
-| 📝&nbsp;[#93199](https://github.com/openclaw/openclaw/issues/93199) | 2026-06-15 | 0 | Local memory/embedding | @chaboncarpentier-blip | memory_search fails in non-default agent session while CLI --agent search works; current session resolves inconsistently |
 
-## OPEN THREADS (838)
+## OPEN THREADS (841)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 788 open threads, sorted by activity</summary>
+<summary>Remaining 791 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93469](https://github.com/openclaw/openclaw/pull/93469) | 0 | OpenAI-compatible/proxy | @drvoss | fix(agents): drop partialJson streaming artifacts from session history repair |
+| 🔀&nbsp;[#93452](https://github.com/openclaw/openclaw/pull/93452) | 0 | Local memory/embedding | @LiuwqGit | fix(bedrock): strip inference profile prefix from model ID in embedding adapter |
+| 🔀&nbsp;[#93451](https://github.com/openclaw/openclaw/pull/93451) | 0 | OpenAI-compatible/proxy | @lzyyzznl | #93436: Forward run context to the model as opt-in request headers |
 | 🔀&nbsp;[#93443](https://github.com/openclaw/openclaw/pull/93443) | 0 | OpenAI-compatible/proxy | @openclaw-clownfish[bot] | fix(gateway): block internal HTTP session overrides |
 | 🔀&nbsp;[#93439](https://github.com/openclaw/openclaw/pull/93439) | 0 | Model routing/config | @harjothkhara | fix(agents): honor embedded run default model |
 | 📝&nbsp;[#93436](https://github.com/openclaw/openclaw/issues/93436) | 0 | OpenAI-compatible/proxy | @asupian | [Feature]: Forward run context to the model as opt-in request headers (cost attribution behind a proxy) |
@@ -1621,4 +1624,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 838 (371 issues, 467 PRs).
+- Kept open threads: 841 (371 issues, 470 PRs).

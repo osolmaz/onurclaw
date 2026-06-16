@@ -4723,8 +4723,8 @@
   "counts": {
     "closed_threads": 674,
     "open_issues": 371,
-    "open_prs": 467,
-    "open_threads": 838
+    "open_prs": 470,
+    "open_threads": 841
   },
   "open_threads": [
     {
@@ -5853,6 +5853,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@drvoss",
+      "number": 93469,
+      "title": "fix(agents): drop partialJson streaming artifacts from session history repair",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93469"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@LiuwqGit",
+      "number": 93452,
+      "title": "fix(bedrock): strip inference profile prefix from model ID in embedding adapter",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93452"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lzyyzznl",
+      "number": 93451,
+      "title": "#93436: Forward run context to the model as opt-in request headers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93451"
     },
     {
       "activity": 0,
@@ -12320,8 +12347,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93436,
-    "pr": 93449
+    "issue": 93465,
+    "pr": 93470
   },
   "schema_version": 1,
   "updated": "2026-06-16"
