@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 371,
-    "open_prs": 470,
-    "open_threads": 841
+    "open_issues": 372,
+    "open_prs": 471,
+    "open_threads": 843
   },
   "open_threads": [
     {
@@ -5853,6 +5853,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@A1fred-AI",
+      "number": 93485,
+      "title": "memory-wiki: Stale Pages report flags intentionally durable references (concepts, syntheses) as aging",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93485"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@TurboTheTurtle",
+      "number": 93473,
+      "title": "[codex] Fix QMD lexical memory status",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93473"
     },
     {
       "activity": 0,
@@ -12347,8 +12365,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93465,
-    "pr": 93470
+    "issue": 93486,
+    "pr": 93495
   },
   "schema_version": 1,
   "updated": "2026-06-16"
