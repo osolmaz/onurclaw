@@ -4,14 +4,20 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #93775.
-- Last reviewed through PR: #93776.
+- Last reviewed through issue: #93794.
+- Last reviewed through PR: #93792.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93791](https://github.com/openclaw/openclaw/pull/93791) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
+| 🔀&nbsp;[#93789](https://github.com/openclaw/openclaw/pull/93789) | 2026-06-16 | 0 | Model routing/config | @joelnishanth | fix(agents): make lane suspension consistent across cooldown-precheck and embedded-runner paths |
+| 🔀&nbsp;[#93786](https://github.com/openclaw/openclaw/pull/93786) | 2026-06-16 | 0 | Model routing/config | @liuhao1024 | fix(plugins): treat refreshable catalogs as requiring runtime discovery (fixes #93775) |
+| 🔀&nbsp;[#93785](https://github.com/openclaw/openclaw/pull/93785) | 2026-06-16 | 0 | Open-weight/provider behavior | @manus-use | fix(reasoning-tags): strip MiniMax `mm:` namespaced reasoning tags |
+| 🔀&nbsp;[#93783](https://github.com/openclaw/openclaw/pull/93783) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip mcporter daemon startup logs from stdout before JSON.parse (fixes #59808) |
+| 📝&nbsp;[#93781](https://github.com/openclaw/openclaw/issues/93781) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @BSG2000 | azure-openai-responses probe/agent route uses OpenAI auth profile instead of Azure credentials |
 | 📝&nbsp;[#93775](https://github.com/openclaw/openclaw/issues/93775) | 2026-06-16 | 0 | Model routing/config | @St0rmz1 | [Bug]: Refreshable provider catalogs can skip runtime discovery |
 | 🔀&nbsp;[#93774](https://github.com/openclaw/openclaw/pull/93774) | 2026-06-16 | 0 | Model routing/config | @TurboTheTurtle | fix(codex): provision app-server model catalog metadata |
 | 🔀&nbsp;[#93768](https://github.com/openclaw/openclaw/pull/93768) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @yu-xin-c | [codex] Forward opt-in run context headers |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93586](https://github.com/openclaw/openclaw/pull/93586) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
 | 🔀&nbsp;[#93533](https://github.com/openclaw/openclaw/pull/93533) | 2026-06-16 | 0 | Local memory/embedding | @bowenluo718 | fix: support baseURL config for remote embedding providers |
 | 🔀&nbsp;[#93523](https://github.com/openclaw/openclaw/pull/93523) | 2026-06-16 | 0 | Model routing/config | @lzyyzznl | feat(ui): add model selector to cron quick-create wizard and job list |
-| 🔀&nbsp;[#93508](https://github.com/openclaw/openclaw/pull/93508) | 2026-06-16 | 0 | Local memory/embedding | @lzyyzznl | fix(session-memory): deduplicate assistant messages when thinking is stripped |
-| 📝&nbsp;[#93507](https://github.com/openclaw/openclaw/issues/93507) | 2026-06-16 | 0 | Model routing/config | @psdjc | [Feature]: Allow selecting cron job models and clearly displaying them in the Web UI |
-| 🔀&nbsp;[#93505](https://github.com/openclaw/openclaw/pull/93505) | 2026-06-16 | 0 | Local memory/embedding | @sunlit-deng | fix: support baseURL alias in memory embedding provider config resolution |
-| 🔀&nbsp;[#93503](https://github.com/openclaw/openclaw/pull/93503) | 2026-06-16 | 0 | Model routing/config | @lzyyzznl | fix(cli): resolve 200K context window fallback in status command |
-| 📝&nbsp;[#93485](https://github.com/openclaw/openclaw/issues/93485) | 2026-06-16 | 0 | Local memory/embedding | @A1fred-AI | memory-wiki: Stale Pages report flags intentionally durable references (concepts, syntheses) as aging |
-| 🔀&nbsp;[#93473](https://github.com/openclaw/openclaw/pull/93473) | 2026-06-16 | 0 | Local memory/embedding | @TurboTheTurtle | [codex] Fix QMD lexical memory status |
 
-## OPEN THREADS (891)
+## OPEN THREADS (897)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 841 open threads, sorted by activity</summary>
+<summary>Remaining 847 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93791](https://github.com/openclaw/openclaw/pull/93791) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
+| 🔀&nbsp;[#93789](https://github.com/openclaw/openclaw/pull/93789) | 0 | Model routing/config | @joelnishanth | fix(agents): make lane suspension consistent across cooldown-precheck and embedded-runner paths |
+| 🔀&nbsp;[#93786](https://github.com/openclaw/openclaw/pull/93786) | 0 | Model routing/config | @liuhao1024 | fix(plugins): treat refreshable catalogs as requiring runtime discovery (fixes #93775) |
+| 🔀&nbsp;[#93785](https://github.com/openclaw/openclaw/pull/93785) | 0 | Open-weight/provider behavior | @manus-use | fix(reasoning-tags): strip MiniMax `mm:` namespaced reasoning tags |
+| 🔀&nbsp;[#93783](https://github.com/openclaw/openclaw/pull/93783) | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip mcporter daemon startup logs from stdout before JSON.parse (fixes #59808) |
+| 📝&nbsp;[#93781](https://github.com/openclaw/openclaw/issues/93781) | 0 | OpenAI-compatible/proxy | @BSG2000 | azure-openai-responses probe/agent route uses OpenAI auth profile instead of Azure credentials |
 | 📝&nbsp;[#93775](https://github.com/openclaw/openclaw/issues/93775) | 0 | Model routing/config | @St0rmz1 | [Bug]: Refreshable provider catalogs can skip runtime discovery |
 | 🔀&nbsp;[#93774](https://github.com/openclaw/openclaw/pull/93774) | 0 | Model routing/config | @TurboTheTurtle | fix(codex): provision app-server model catalog metadata |
 | 🔀&nbsp;[#93768](https://github.com/openclaw/openclaw/pull/93768) | 0 | OpenAI-compatible/proxy | @yu-xin-c | [codex] Forward opt-in run context headers |
@@ -1674,4 +1680,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 891 (381 issues, 510 PRs).
+- Kept open threads: 897 (382 issues, 515 PRs).
