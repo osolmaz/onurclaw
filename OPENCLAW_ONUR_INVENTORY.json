@@ -4723,8 +4723,8 @@
   "counts": {
     "closed_threads": 674,
     "open_issues": 375,
-    "open_prs": 486,
-    "open_threads": 861
+    "open_prs": 492,
+    "open_threads": 867
   },
   "open_threads": [
     {
@@ -5853,6 +5853,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@lzyyzznl",
+      "number": 93669,
+      "title": "fix(agents): classify Zhipu GLM error 1305 / 访问量过大 as overloaded for model fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93669"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lzyyzznl",
+      "number": 93660,
+      "title": "feat(gateway): 添加 streaming 输出配置块到 HTTP 端点",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93660"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ml12580",
+      "number": 93658,
+      "title": "fix(wizard): preserve existing default model during setup auth choice [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93658"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@mushuiyu886",
+      "number": 93655,
+      "title": "fix(agent): classify stuck recovery as idle timeout",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93655"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93651,
+      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93651"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@blindjoy23",
+      "number": 93640,
+      "title": "fix: add stream stall guard for lost stream termination signal (opencode-go)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93640"
     },
     {
       "activity": 0,
@@ -12529,8 +12583,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93628,
-    "pr": 93639
+    "issue": 93667,
+    "pr": 93673
   },
   "schema_version": 1,
   "updated": "2026-06-16"

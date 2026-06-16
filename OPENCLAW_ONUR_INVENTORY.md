@@ -4,14 +4,20 @@ Updated: 2026-06-16
 
 Review watermark:
 
-- Last reviewed through issue: #93628.
-- Last reviewed through PR: #93639.
+- Last reviewed through issue: #93667.
+- Last reviewed through PR: #93673.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93669](https://github.com/openclaw/openclaw/pull/93669) | 2026-06-16 | 0 | Open-weight/provider behavior | @lzyyzznl | fix(agents): classify Zhipu GLM error 1305 / 访问量过大 as overloaded for model fallback |
+| 🔀&nbsp;[#93660](https://github.com/openclaw/openclaw/pull/93660) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @lzyyzznl | feat(gateway): 添加 streaming 输出配置块到 HTTP 端点 |
+| 🔀&nbsp;[#93658](https://github.com/openclaw/openclaw/pull/93658) | 2026-06-16 | 0 | Model routing/config | @ml12580 | fix(wizard): preserve existing default model during setup auth choice [AI-assisted] |
+| 🔀&nbsp;[#93655](https://github.com/openclaw/openclaw/pull/93655) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @mushuiyu886 | fix(agent): classify stuck recovery as idle timeout |
+| 🔀&nbsp;[#93651](https://github.com/openclaw/openclaw/pull/93651) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
+| 🔀&nbsp;[#93640](https://github.com/openclaw/openclaw/pull/93640) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @blindjoy23 | fix: add stream stall guard for lost stream termination signal (opencode-go) |
 | 🔀&nbsp;[#93627](https://github.com/openclaw/openclaw/pull/93627) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096)<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#93624](https://github.com/openclaw/openclaw/pull/93624) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(gateway): add configurable streaming chunk size for HTTP endpoints |
 | 🔀&nbsp;[#93623](https://github.com/openclaw/openclaw/pull/93623) | 2026-06-16 | 0 | Model routing/config | @sunlit-deng | fix(chat): prefer server session row over stale cache in model dropdown |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93356](https://github.com/openclaw/openclaw/pull/93356) | 2026-06-15 | 0 | Model routing/config | @obuchowski | fix(plugins): cache plugin setup registry to kill the /models CPU storm |
 | 🔀&nbsp;[#93352](https://github.com/openclaw/openclaw/pull/93352) | 2026-06-15 | 0 | Model routing/config | @jailbirt | fix(auth-profiles): import legacy auth-profiles.json into SQLite store on load |
 | 🔀&nbsp;[#93350](https://github.com/openclaw/openclaw/pull/93350) | 2026-06-15 | 0 | Model routing/config | @mmyzwl | #93346: fix(ui): show effective runtime model in dropdown after fallback |
-| 🔀&nbsp;[#93348](https://github.com/openclaw/openclaw/pull/93348) | 2026-06-15 | 0 | Model routing/config | @MonkeyLeeT | fix(status): use selected model for usage |
-| 📝&nbsp;[#93346](https://github.com/openclaw/openclaw/issues/93346) | 2026-06-15 | 0 | Model routing/config | @davidstoll | [Bug]: Model dropdown does not reflect effective runtime model after fallback/default drift |
-| 🔀&nbsp;[#93342](https://github.com/openclaw/openclaw/pull/93342) | 2026-06-15 | 0 | Model/provider behavior | @Marvinthebored | pipeline: normalized provider→channel stream grammar (core) |
-| 🔀&nbsp;[#93335](https://github.com/openclaw/openclaw/pull/93335) | 2026-06-15 | 0 | Model routing/config | @obuchowski | fix(thinking): clamp below-range requests down to the cheapest level,… |
-| 🔀&nbsp;[#93331](https://github.com/openclaw/openclaw/pull/93331) | 2026-06-15 | 0 | Model routing/config | @ferminquant | feat(compaction): add embedded fallback models |
-| 📝&nbsp;[#93322](https://github.com/openclaw/openclaw/issues/93322) | 2026-06-15 | 0 | Model routing/config | @rollingshmily | [Bug]: /status usage should follow session-selected model after /model switch |
 
-## OPEN THREADS (861)
+## OPEN THREADS (867)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 811 open threads, sorted by activity</summary>
+<summary>Remaining 817 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93669](https://github.com/openclaw/openclaw/pull/93669) | 0 | Open-weight/provider behavior | @lzyyzznl | fix(agents): classify Zhipu GLM error 1305 / 访问量过大 as overloaded for model fallback |
+| 🔀&nbsp;[#93660](https://github.com/openclaw/openclaw/pull/93660) | 0 | OpenAI-compatible/proxy | @lzyyzznl | feat(gateway): 添加 streaming 输出配置块到 HTTP 端点 |
+| 🔀&nbsp;[#93658](https://github.com/openclaw/openclaw/pull/93658) | 0 | Model routing/config | @ml12580 | fix(wizard): preserve existing default model during setup auth choice [AI-assisted] |
+| 🔀&nbsp;[#93655](https://github.com/openclaw/openclaw/pull/93655) | 0 | OpenAI-compatible/proxy | @mushuiyu886 | fix(agent): classify stuck recovery as idle timeout |
+| 🔀&nbsp;[#93651](https://github.com/openclaw/openclaw/pull/93651) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
+| 🔀&nbsp;[#93640](https://github.com/openclaw/openclaw/pull/93640) | 0 | OpenAI-compatible/proxy | @blindjoy23 | fix: add stream stall guard for lost stream termination signal (opencode-go) |
 | 🔀&nbsp;[#93627](https://github.com/openclaw/openclaw/pull/93627) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096)<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#93624](https://github.com/openclaw/openclaw/pull/93624) | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(gateway): add configurable streaming chunk size for HTTP endpoints |
 | 🔀&nbsp;[#93623](https://github.com/openclaw/openclaw/pull/93623) | 0 | Model routing/config | @sunlit-deng | fix(chat): prefer server session row over stale cache in model dropdown |
@@ -1644,4 +1650,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 861 (375 issues, 486 PRs).
+- Kept open threads: 867 (375 issues, 492 PRs).
