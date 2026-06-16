@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 376,
-    "open_prs": 497,
-    "open_threads": 873
+    "open_issues": 377,
+    "open_prs": 503,
+    "open_threads": 880
   },
   "open_threads": [
     {
@@ -5853,6 +5853,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93747,
+      "title": "fix(memory): await search-sync before returning results to prevent stale index (fixes #52115)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93747"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@shushushv",
+      "number": 93746,
+      "title": "fix(ui): populate realtime talk provider and transport options from talk.catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93746"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@clemenshelm",
+      "number": 93741,
+      "title": "Allow the `agent` RPC to offload images to `imageModel` for text-only models (opt-in)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93741"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@joelnishanth",
+      "number": 93730,
+      "title": "fix: preserve fallback chain when primary model hits rate-limit lane suspension",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93730"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@zhangguiping-xydt",
+      "number": 93729,
+      "title": "Preserve configured Ollama API during discovery",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93729"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93723,
+      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93723"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yu-xin-c",
+      "number": 93721,
+      "title": "fix(agents): notify no-op compaction hooks",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93721"
     },
     {
       "activity": 0,
@@ -12637,8 +12700,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93717,
-    "pr": 93715
+    "issue": 93750,
+    "pr": 93752
   },
   "schema_version": 1,
   "updated": "2026-06-17"

@@ -4,14 +4,21 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #93717.
-- Last reviewed through PR: #93715.
+- Last reviewed through issue: #93750.
+- Last reviewed through PR: #93752.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93747](https://github.com/openclaw/openclaw/pull/93747) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
+| 🔀&nbsp;[#93746](https://github.com/openclaw/openclaw/pull/93746) | 2026-06-16 | 0 | Model routing/config | @shushushv | fix(ui): populate realtime talk provider and transport options from talk.catalog |
+| 📝&nbsp;[#93741](https://github.com/openclaw/openclaw/issues/93741) | 2026-06-16 | 0 | Model routing/config | @clemenshelm | Allow the `agent` RPC to offload images to `imageModel` for text-only models (opt-in) |
+| 🔀&nbsp;[#93730](https://github.com/openclaw/openclaw/pull/93730) | 2026-06-16 | 0 | Model routing/config | @joelnishanth | fix: preserve fallback chain when primary model hits rate-limit lane suspension |
+| 🔀&nbsp;[#93729](https://github.com/openclaw/openclaw/pull/93729) | 2026-06-16 | 0 | Local model runtime | @zhangguiping-xydt | Preserve configured Ollama API during discovery |
+| 🔀&nbsp;[#93723](https://github.com/openclaw/openclaw/pull/93723) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
+| 🔀&nbsp;[#93721](https://github.com/openclaw/openclaw/pull/93721) | 2026-06-16 | 0 | Local memory/embedding | @yu-xin-c | fix(agents): notify no-op compaction hooks |
 | 📝&nbsp;[#93710](https://github.com/openclaw/openclaw/issues/93710) | 2026-06-16 | 0 | Local model runtime | @obnoxious2011-cmd | ollama plugin overrides api to native protocol ignoring config api setting |
 | 🔀&nbsp;[#93708](https://github.com/openclaw/openclaw/pull/93708) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
 | 🔀&nbsp;[#93688](https://github.com/openclaw/openclaw/pull/93688) | 2026-06-16 | 0 | Local/media model provider | @dwc1997 | fix(minimax): check base_resp envelope errors in TTS provider |
@@ -55,15 +62,8 @@ Review watermark:
 | 📝&nbsp;[#93426](https://github.com/openclaw/openclaw/issues/93426) | 2026-06-15 | 0 | Local memory/embedding | @tcconnally | Feature request: Mimir as persistent memory backend |
 | 📝&nbsp;[#93419](https://github.com/openclaw/openclaw/issues/93419) | 2026-06-15 | 0 | Model routing/config | @danielgerlag | [Bug]: runEmbeddedAgent ignores agents.defaults.model and hardcodes openai/gpt-5.5 |
 | 🔀&nbsp;[#93397](https://github.com/openclaw/openclaw/pull/93397) | 2026-06-15 | 0 | Local/media model provider | @Quratulain-bilal | fix(minimax): correct volume range warning to match inclusive max |
-| 📝&nbsp;[#93396](https://github.com/openclaw/openclaw/issues/93396) | 2026-06-15 | 0 | Local model runtime | @pineapple82 | [Bug]:  Provider name "openai" misleading when using local Ollama – causes fallback to real OpenAI API for embeddings |
-| 🔀&nbsp;[#93394](https://github.com/openclaw/openclaw/pull/93394) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory): abort orphaned qmd search subprocess when memory_search times out |
-| 📝&nbsp;[#93393](https://github.com/openclaw/openclaw/issues/93393) | 2026-06-15 | 0 | Local model runtime | @turururu | [Feature]: Model-agnostic advisor tool via api.runtime.llm.complete |
-| 🔀&nbsp;[#93389](https://github.com/openclaw/openclaw/pull/93389) | 2026-06-15 | 0 | Local memory/embedding | @Alix-007 | fix(memory-core): clear daily-ingestion sqlite namespace on dreaming repair |
-| 🔀&nbsp;[#93388](https://github.com/openclaw/openclaw/pull/93388) | 2026-06-15 | 0 | Model/provider behavior | @vortexopenclaw | fix(google): use stable Gemini image model |
-| 🔀&nbsp;[#93384](https://github.com/openclaw/openclaw/pull/93384) | 2026-06-15 | 0 | Model routing/config | @zhangguiping-xydt | [Bug]: /status usage should follow session-selected model after /model switch |
-| 🔀&nbsp;[#93377](https://github.com/openclaw/openclaw/pull/93377) | 2026-06-15 | 0 | Model routing/config | @pandaAIGC | fix(model-fallback): classify Codex/OpenAI auth failures |
 
-## OPEN THREADS (873)
+## OPEN THREADS (880)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 823 open threads, sorted by activity</summary>
+<summary>Remaining 830 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93747](https://github.com/openclaw/openclaw/pull/93747) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
+| 🔀&nbsp;[#93746](https://github.com/openclaw/openclaw/pull/93746) | 0 | Model routing/config | @shushushv | fix(ui): populate realtime talk provider and transport options from talk.catalog |
+| 📝&nbsp;[#93741](https://github.com/openclaw/openclaw/issues/93741) | 0 | Model routing/config | @clemenshelm | Allow the `agent` RPC to offload images to `imageModel` for text-only models (opt-in) |
+| 🔀&nbsp;[#93730](https://github.com/openclaw/openclaw/pull/93730) | 0 | Model routing/config | @joelnishanth | fix: preserve fallback chain when primary model hits rate-limit lane suspension |
+| 🔀&nbsp;[#93729](https://github.com/openclaw/openclaw/pull/93729) | 0 | Local model runtime | @zhangguiping-xydt | Preserve configured Ollama API during discovery |
+| 🔀&nbsp;[#93723](https://github.com/openclaw/openclaw/pull/93723) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
+| 🔀&nbsp;[#93721](https://github.com/openclaw/openclaw/pull/93721) | 0 | Local memory/embedding | @yu-xin-c | fix(agents): notify no-op compaction hooks |
 | 📝&nbsp;[#93710](https://github.com/openclaw/openclaw/issues/93710) | 0 | Local model runtime | @obnoxious2011-cmd | ollama plugin overrides api to native protocol ignoring config api setting |
 | 🔀&nbsp;[#93708](https://github.com/openclaw/openclaw/pull/93708) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
 | 🔀&nbsp;[#93688](https://github.com/openclaw/openclaw/pull/93688) | 0 | Local/media model provider | @dwc1997 | fix(minimax): check base_resp envelope errors in TTS provider |
@@ -1656,4 +1663,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 873 (376 issues, 497 PRs).
+- Kept open threads: 880 (377 issues, 503 PRs).
