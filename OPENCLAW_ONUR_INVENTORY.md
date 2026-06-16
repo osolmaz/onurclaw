@@ -5,13 +5,15 @@ Updated: 2026-06-16
 Review watermark:
 
 - Last reviewed through issue: #93568.
-- Last reviewed through PR: #93571.
+- Last reviewed through PR: #93600.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93596](https://github.com/openclaw/openclaw/pull/93596) | 2026-06-16 | 0 | Local memory/embedding | @Alix-007 | fix(plugins): activate dreaming engine sidecar under restrictive allowlist |
+| 🔀&nbsp;[#93586](https://github.com/openclaw/openclaw/pull/93586) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
 | 🔀&nbsp;[#93533](https://github.com/openclaw/openclaw/pull/93533) | 2026-06-16 | 0 | Local memory/embedding | @bowenluo718 | fix: support baseURL config for remote embedding providers |
 | 🔀&nbsp;[#93523](https://github.com/openclaw/openclaw/pull/93523) | 2026-06-16 | 0 | Model routing/config | @lzyyzznl | feat(ui): add model selector to cron quick-create wizard and job list |
 | 🔀&nbsp;[#93508](https://github.com/openclaw/openclaw/pull/93508) | 2026-06-16 | 0 | Local memory/embedding | @lzyyzznl | fix(session-memory): deduplicate assistant messages when thinking is stripped |
@@ -60,10 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93267](https://github.com/openclaw/openclaw/pull/93267) | 2026-06-15 | 0 | Local memory/embedding | @fsdwen | fix(session-memory): skip delivery-mirror entries and dedup consecutive identical assistant messages (#92563) |
 | 🔀&nbsp;[#93261](https://github.com/openclaw/openclaw/pull/93261) | 2026-06-15 | 0 | Model routing/config | @BitmapAsset | fix(plugins): resolve provider policy surface for plugin-owned CLI backends |
 | 🔀&nbsp;[#93260](https://github.com/openclaw/openclaw/pull/93260) | 2026-06-15 | 0 | Local memory/embedding | @mushuiyu886 | fix(memory): fall back to keyword search without sqlite |
-| 📝&nbsp;[#93259](https://github.com/openclaw/openclaw/issues/93259) | 2026-06-15 | 0 | Model routing/config | @BitmapAsset | claude-cli subagents silently cap thinking at "high" — provider-policy surface not resolved for plugin CLI backends |
-| 🔀&nbsp;[#93253](https://github.com/openclaw/openclaw/pull/93253) | 2026-06-15 | 0 | OpenAI-compatible/proxy | @XuZehan-iCenter | fix(openai-completions): preserve reasoning replay for MiniMax M3 via OpenRouter |
 
-## OPEN THREADS (849)
+## OPEN THREADS (851)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 799 open threads, sorted by activity</summary>
+<summary>Remaining 801 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,8 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93596](https://github.com/openclaw/openclaw/pull/93596) | 0 | Local memory/embedding | @Alix-007 | fix(plugins): activate dreaming engine sidecar under restrictive allowlist |
+| 🔀&nbsp;[#93586](https://github.com/openclaw/openclaw/pull/93586) | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
 | 🔀&nbsp;[#93533](https://github.com/openclaw/openclaw/pull/93533) | 0 | Local memory/embedding | @bowenluo718 | fix: support baseURL config for remote embedding providers |
 | 🔀&nbsp;[#93523](https://github.com/openclaw/openclaw/pull/93523) | 0 | Model routing/config | @lzyyzznl | feat(ui): add model selector to cron quick-create wizard and job list |
 | 🔀&nbsp;[#93508](https://github.com/openclaw/openclaw/pull/93508) | 0 | Local memory/embedding | @lzyyzznl | fix(session-memory): deduplicate assistant messages when thinking is stripped |
@@ -1632,4 +1634,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 849 (373 issues, 476 PRs).
+- Kept open threads: 851 (373 issues, 478 PRs).

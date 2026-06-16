@@ -4723,8 +4723,8 @@
   "counts": {
     "closed_threads": 674,
     "open_issues": 373,
-    "open_prs": 476,
-    "open_threads": 849
+    "open_prs": 478,
+    "open_threads": 851
   },
   "open_threads": [
     {
@@ -5853,6 +5853,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Alix-007",
+      "number": 93596,
+      "title": "fix(plugins): activate dreaming engine sidecar under restrictive allowlist",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93596"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93586,
+      "title": "fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93586"
     },
     {
       "activity": 0,
@@ -12420,7 +12438,7 @@
   ],
   "review_watermark": {
     "issue": 93568,
-    "pr": 93571
+    "pr": 93600
   },
   "schema_version": 1,
   "updated": "2026-06-16"
