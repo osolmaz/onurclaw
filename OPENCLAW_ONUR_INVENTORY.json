@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 370,
-    "open_prs": 463,
-    "open_threads": 833
+    "open_issues": 371,
+    "open_prs": 467,
+    "open_threads": 838
   },
   "open_threads": [
     {
@@ -5853,6 +5853,52 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@openclaw-clownfish[bot]",
+      "number": 93443,
+      "title": "fix(gateway): block internal HTTP session overrides",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93443"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@harjothkhara",
+      "number": 93439,
+      "title": "fix(agents): honor embedded run default model",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93439"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@asupian",
+      "number": 93436,
+      "title": "[Feature]: Forward run context to the model as opt-in request headers (cost attribution behind a proxy)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93436"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kingrubic",
+      "number": 93430,
+      "title": "fix: honor configured default model for embedded agents",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93430"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "assignee": "vincentkoc",
+      "creator": "@zenglingbiao",
+      "number": 93428,
+      "title": "fix(agents): resolve configured default model in runEmbeddedAgent (fixes #93419)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93428"
     },
     {
       "activity": 0,
@@ -12274,8 +12320,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93426,
-    "pr": 93424
+    "issue": 93436,
+    "pr": 93449
   },
   "schema_version": 1,
   "updated": "2026-06-16"
