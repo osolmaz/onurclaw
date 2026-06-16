@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 377,
-    "open_prs": 503,
-    "open_threads": 880
+    "open_issues": 381,
+    "open_prs": 510,
+    "open_threads": 891
   },
   "open_threads": [
     {
@@ -5853,6 +5853,105 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@St0rmz1",
+      "number": 93775,
+      "title": "[Bug]: Refreshable provider catalogs can skip runtime discovery",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93775"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@TurboTheTurtle",
+      "number": 93774,
+      "title": "fix(codex): provision app-server model catalog metadata",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93774"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@yu-xin-c",
+      "number": 93768,
+      "title": "[codex] Forward opt-in run context headers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93768"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@DrHack1",
+      "number": 93767,
+      "title": "fix(reasoning-tags): strip MiniMax `mm:` namespaced reasoning tags",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93767"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@sha367",
+      "number": 93766,
+      "title": "feat: add MegaBrain provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93766"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@hannesrudolph",
+      "number": 93765,
+      "title": "Codex isolated app-server homes do not receive configured custom-model catalog metadata",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93765"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Fuma2013",
+      "number": 93764,
+      "title": "Codex OAuth gpt-5.5: config reports 1M/950k but native runtime caps turns at 258400",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93764"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@harjothkhara",
+      "number": 93759,
+      "title": "fix(minimax): surface TTS envelope errors so fallback fires (#76904) [AI]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93759"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93758,
+      "title": "feat(memory): apply outputDimensionality truncation to local GGUF embeddings (fixes #58765)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93758"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ffluk3",
+      "number": 93757,
+      "title": "v2026.5.28: Bedrock thinking-signature errors surface as unclassified/no-failover (fixed on main)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93757"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 93756,
+      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93756"
     },
     {
       "activity": 0,
@@ -12700,8 +12799,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93750,
-    "pr": 93752
+    "issue": 93775,
+    "pr": 93776
   },
   "schema_version": 1,
   "updated": "2026-06-17"
