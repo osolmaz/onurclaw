@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 388,
-    "open_prs": 547,
-    "open_threads": 935
+    "open_issues": 389,
+    "open_prs": 550,
+    "open_threads": 939
   },
   "open_threads": [
     {
@@ -5853,6 +5853,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@BorClaw",
+      "number": 94136,
+      "title": "fix(zai): expose GLM-5.2 reasoning levels [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94136"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Pick-cat",
+      "number": 94135,
+      "title": "fix(memory-core): index memory path in FTS text for filename queries (fixes #94102)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@thedoctormes-hue",
+      "number": 94125,
+      "title": "[Bug]: Memory search completely broken — FTS-only hangs, embeddings hang, --force corrupts meta (Ollama/bge-m3, Linux, 2026.6.8)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94125"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zhangguiping-xydt",
+      "number": 94114,
+      "title": "fix(memory-core): include path in FTS indexed text so filename tokens are searchable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94114"
     },
     {
       "activity": 0,
@@ -13197,8 +13233,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94102,
-    "pr": 94107
+    "issue": 94146,
+    "pr": 94150
   },
   "schema_version": 1,
   "updated": "2026-06-17"

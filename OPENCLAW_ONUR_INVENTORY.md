@@ -4,14 +4,18 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #94102.
-- Last reviewed through PR: #94107.
+- Last reviewed through issue: #94146.
+- Last reviewed through PR: #94150.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94136](https://github.com/openclaw/openclaw/pull/94136) | 2026-06-17 | 0 | Open-weight/provider behavior | @BorClaw | fix(zai): expose GLM-5.2 reasoning levels [AI-assisted] |
+| 🔀&nbsp;[#94135](https://github.com/openclaw/openclaw/pull/94135) | 2026-06-17 | 0 | Local memory/embedding | @Pick-cat | fix(memory-core): index memory path in FTS text for filename queries (fixes #94102) |
+| 📝&nbsp;[#94125](https://github.com/openclaw/openclaw/issues/94125) | 2026-06-17 | 0 | Local memory/embedding | @thedoctormes-hue | [Bug]: Memory search completely broken — FTS-only hangs, embeddings hang, --force corrupts meta (Ollama/bge-m3, Linux, 2026.6.8) |
+| 🔀&nbsp;[#94114](https://github.com/openclaw/openclaw/pull/94114) | 2026-06-17 | 0 | Local memory/embedding | @zhangguiping-xydt | fix(memory-core): include path in FTS indexed text so filename tokens are searchable |
 | 🔀&nbsp;[#94106](https://github.com/openclaw/openclaw/pull/94106) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @yetval | fix(secrets): scope env scrub to migrated providers' vars |
 | 📝&nbsp;[#94102](https://github.com/openclaw/openclaw/issues/94102) | 2026-06-17 | 0 | Local memory/embedding | @alexph-dev | memory_search ranks filename/date-token queries poorly despite clean index and working content search |
 | 🔀&nbsp;[#94071](https://github.com/openclaw/openclaw/pull/94071) | 2026-06-17 | 0 | Local memory/embedding | @zhanxingxin1998 | fix(memory-lancedb): stop forwarding embedding dimensions upstream |
@@ -58,12 +62,8 @@ Review watermark:
 | 📝&nbsp;[#93781](https://github.com/openclaw/openclaw/issues/93781) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @BSG2000 | azure-openai-responses probe/agent route uses OpenAI auth profile instead of Azure credentials |
 | 📝&nbsp;[#93775](https://github.com/openclaw/openclaw/issues/93775) | 2026-06-16 | 0 | Model routing/config | @St0rmz1 | [Bug]: Refreshable provider catalogs can skip runtime discovery |
 | 🔀&nbsp;[#93774](https://github.com/openclaw/openclaw/pull/93774) | 2026-06-16 | 0 | Model routing/config | @TurboTheTurtle | fix(codex): provision app-server model catalog metadata |
-| 🔀&nbsp;[#93768](https://github.com/openclaw/openclaw/pull/93768) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @yu-xin-c | [codex] Forward opt-in run context headers |
-| 🔀&nbsp;[#93767](https://github.com/openclaw/openclaw/pull/93767) | 2026-06-16 | 0 | Model/provider behavior | @DrHack1 | fix(reasoning-tags): strip MiniMax `mm:` namespaced reasoning tags |
-| 🔀&nbsp;[#93766](https://github.com/openclaw/openclaw/pull/93766) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @sha367 | feat: add MegaBrain provider |
-| 📝&nbsp;[#93765](https://github.com/openclaw/openclaw/issues/93765) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @hannesrudolph | Codex isolated app-server homes do not receive configured custom-model catalog metadata |
 
-## OPEN THREADS (935)
+## OPEN THREADS (939)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 885 open threads, sorted by activity</summary>
+<summary>Remaining 889 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,10 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94136](https://github.com/openclaw/openclaw/pull/94136) | 0 | Open-weight/provider behavior | @BorClaw | fix(zai): expose GLM-5.2 reasoning levels [AI-assisted] |
+| 🔀&nbsp;[#94135](https://github.com/openclaw/openclaw/pull/94135) | 0 | Local memory/embedding | @Pick-cat | fix(memory-core): index memory path in FTS text for filename queries (fixes #94102) |
+| 📝&nbsp;[#94125](https://github.com/openclaw/openclaw/issues/94125) | 0 | Local memory/embedding | @thedoctormes-hue | [Bug]: Memory search completely broken — FTS-only hangs, embeddings hang, --force corrupts meta (Ollama/bge-m3, Linux, 2026.6.8) |
+| 🔀&nbsp;[#94114](https://github.com/openclaw/openclaw/pull/94114) | 0 | Local memory/embedding | @zhangguiping-xydt | fix(memory-core): include path in FTS indexed text so filename tokens are searchable |
 | 🔀&nbsp;[#94106](https://github.com/openclaw/openclaw/pull/94106) | 0 | OpenAI-compatible/proxy | @yetval | fix(secrets): scope env scrub to migrated providers' vars |
 | 📝&nbsp;[#94102](https://github.com/openclaw/openclaw/issues/94102) | 0 | Local memory/embedding | @alexph-dev | memory_search ranks filename/date-token queries poorly despite clean index and working content search |
 | 🔀&nbsp;[#94071](https://github.com/openclaw/openclaw/pull/94071) | 0 | Local memory/embedding | @zhanxingxin1998 | fix(memory-lancedb): stop forwarding embedding dimensions upstream |
@@ -1718,4 +1722,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 935 (388 issues, 547 PRs).
+- Kept open threads: 939 (389 issues, 550 PRs).
