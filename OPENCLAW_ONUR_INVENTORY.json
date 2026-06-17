@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 391,
-    "open_prs": 552,
-    "open_threads": 943
+    "open_issues": 393,
+    "open_prs": 556,
+    "open_threads": 949
   },
   "open_threads": [
     {
@@ -5853,6 +5853,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@adorbistech",
+      "number": 94242,
+      "title": "[Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94242"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lsr911",
+      "number": 94234,
+      "title": "fix(anthropic): allow failover for thinking signature replay errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94234"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@eugkhp",
+      "number": 94228,
+      "title": "Native Anthropic path: replaying historical `thinking` blocks bricks long tool-use threads (`Invalid signature in thinking block` 400)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94228"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Pandah97",
+      "number": 94214,
+      "title": "fix(ollama): resolve thinking profile for live-discovered models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94214"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Pandah97",
+      "number": 94210,
+      "title": "fix(cli): resolve 200K context window fallback in status command",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94210"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lsr911",
+      "number": 94209,
+      "title": "fix(model): cap contextWindow at native runtime catalog limit when user config exceeds it",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94209"
     },
     {
       "activity": 0,
@@ -13269,9 +13323,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 94184,
-    "pr": 94194
+    "issue": 94243,
+    "pr": 94237
   },
   "schema_version": 1,
-  "updated": "2026-06-17"
+  "updated": "2026-06-18"
 }

@@ -1,17 +1,23 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-17
+Updated: 2026-06-18
 
 Review watermark:
 
-- Last reviewed through issue: #94184.
-- Last reviewed through PR: #94194.
+- Last reviewed through issue: #94243.
+- Last reviewed through PR: #94237.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#94242](https://github.com/openclaw/openclaw/issues/94242) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @adorbistech | [Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin |
+| 🔀&nbsp;[#94234](https://github.com/openclaw/openclaw/pull/94234) | 2026-06-17 | 0 | Model routing/config | @lsr911 | fix(anthropic): allow failover for thinking signature replay errors |
+| 📝&nbsp;[#94228](https://github.com/openclaw/openclaw/issues/94228) | 2026-06-17 | 0 | Model routing/config | @eugkhp | Native Anthropic path: replaying historical `thinking` blocks bricks long tool-use threads (`Invalid signature in thinking block` 400) |
+| 🔀&nbsp;[#94214](https://github.com/openclaw/openclaw/pull/94214) | 2026-06-17 | 0 | Local model runtime | @Pandah97 | fix(ollama): resolve thinking profile for live-discovered models |
+| 🔀&nbsp;[#94210](https://github.com/openclaw/openclaw/pull/94210) | 2026-06-17 | 0 | Model routing/config | @Pandah97 | fix(cli): resolve 200K context window fallback in status command |
+| 🔀&nbsp;[#94209](https://github.com/openclaw/openclaw/pull/94209) | 2026-06-17 | 0 | Model routing/config | @lsr911 | fix(model): cap contextWindow at native runtime catalog limit when user config exceeds it |
 | 📝&nbsp;[#94184](https://github.com/openclaw/openclaw/issues/94184) | 2026-06-17 | 0 | Model routing/config | @Sleepyarno | Externalised @openclaw/codex (openai-codex OAuth) provider fails to register catalog on 2026.6.x (works on 2026.5.27) |
 | 🔀&nbsp;[#94180](https://github.com/openclaw/openclaw/pull/94180) | 2026-06-17 | 0 | Local memory/embedding | @SunnyShu0925 | feat(memory-core): allow private network endpoints for memory embeddi… |
 | 📝&nbsp;[#94166](https://github.com/openclaw/openclaw/issues/94166) | 2026-06-17 | 0 | Local memory/embedding | @dmorn | memory-core OpenAI-compatible embeddings cannot use explicitly configured private endpoints |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93829](https://github.com/openclaw/openclaw/pull/93829) | 2026-06-17 | 0 | Model routing/config | @sunlit-deng | fix: /status usage follows session /model override instead of stale runtime provider |
 | 🔀&nbsp;[#93821](https://github.com/openclaw/openclaw/pull/93821) | 2026-06-17 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip mcporter daemon startup logs from stdout before JSON.parse (fixes #59808) |
 | 🔀&nbsp;[#93820](https://github.com/openclaw/openclaw/pull/93820) | 2026-06-17 | 0 | Open-weight/provider behavior | @Alix-007 | fix(imessage): recognize MiniMax mm: reasoning tags in reflection guard (completes #93767) |
-| 🔀&nbsp;[#93806](https://github.com/openclaw/openclaw/pull/93806) | 2026-06-16 | 0 | Open-weight/provider behavior | @Alix-007 | fix(reasoning-tags): strip MiniMax mm: tags on silent-reply and streaming paths missed by #93767 |
-| 📝&nbsp;[#93801](https://github.com/openclaw/openclaw/issues/93801) | 2026-06-16 | 0 | Model routing/config | @anguslogan01 | [Feature]: Per-task model-router hook in agent dispatch (external policy command, fail-open) |
-| 🔀&nbsp;[#93791](https://github.com/openclaw/openclaw/pull/93791) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
-| 🔀&nbsp;[#93789](https://github.com/openclaw/openclaw/pull/93789) | 2026-06-16 | 0 | Model routing/config | @joelnishanth | fix(agents): make lane suspension consistent across cooldown-precheck and embedded-runner paths |
-| 🔀&nbsp;[#93786](https://github.com/openclaw/openclaw/pull/93786) | 2026-06-16 | 0 | Model routing/config | @liuhao1024 | fix(plugins): treat refreshable catalogs as requiring runtime discovery (fixes #93775) |
-| 🔀&nbsp;[#93785](https://github.com/openclaw/openclaw/pull/93785) | 2026-06-16 | 0 | Open-weight/provider behavior | @manus-use | fix(reasoning-tags): strip MiniMax `mm:` namespaced reasoning tags |
 
-## OPEN THREADS (943)
+## OPEN THREADS (949)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 893 open threads, sorted by activity</summary>
+<summary>Remaining 899 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#94242](https://github.com/openclaw/openclaw/issues/94242) | 0 | OpenAI-compatible/proxy | @adorbistech | [Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin |
+| 🔀&nbsp;[#94234](https://github.com/openclaw/openclaw/pull/94234) | 0 | Model routing/config | @lsr911 | fix(anthropic): allow failover for thinking signature replay errors |
+| 📝&nbsp;[#94228](https://github.com/openclaw/openclaw/issues/94228) | 0 | Model routing/config | @eugkhp | Native Anthropic path: replaying historical `thinking` blocks bricks long tool-use threads (`Invalid signature in thinking block` 400) |
+| 🔀&nbsp;[#94214](https://github.com/openclaw/openclaw/pull/94214) | 0 | Local model runtime | @Pandah97 | fix(ollama): resolve thinking profile for live-discovered models |
+| 🔀&nbsp;[#94210](https://github.com/openclaw/openclaw/pull/94210) | 0 | Model routing/config | @Pandah97 | fix(cli): resolve 200K context window fallback in status command |
+| 🔀&nbsp;[#94209](https://github.com/openclaw/openclaw/pull/94209) | 0 | Model routing/config | @lsr911 | fix(model): cap contextWindow at native runtime catalog limit when user config exceeds it |
 | 📝&nbsp;[#94184](https://github.com/openclaw/openclaw/issues/94184) | 0 | Model routing/config | @Sleepyarno | Externalised @openclaw/codex (openai-codex OAuth) provider fails to register catalog on 2026.6.x (works on 2026.5.27) |
 | 🔀&nbsp;[#94180](https://github.com/openclaw/openclaw/pull/94180) | 0 | Local memory/embedding | @SunnyShu0925 | feat(memory-core): allow private network endpoints for memory embeddi… |
 | 📝&nbsp;[#94166](https://github.com/openclaw/openclaw/issues/94166) | 0 | Local memory/embedding | @dmorn | memory-core OpenAI-compatible embeddings cannot use explicitly configured private endpoints |
@@ -1726,4 +1732,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 943 (391 issues, 552 PRs).
+- Kept open threads: 949 (393 issues, 556 PRs).
