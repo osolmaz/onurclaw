@@ -4,14 +4,21 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #93886.
-- Last reviewed through PR: #93874.
+- Last reviewed through issue: #93932.
+- Last reviewed through PR: #93946.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93946](https://github.com/openclaw/openclaw/pull/93946) | 2026-06-17 | 0 | Local model runtime | @Alix-007 | fix(ollama): show full thinking levels for discovered reasoning models |
+| 📝&nbsp;[#93931](https://github.com/openclaw/openclaw/issues/93931) | 2026-06-17 | 0 | Model routing/config | @hyphae-bot | Configured model fallbacks (payload.fallbacks) never engage on generic 'LLM request failed.' errors — fallbackUsed: false on every cron failure |
+| 🔀&nbsp;[#93926](https://github.com/openclaw/openclaw/pull/93926) | 2026-06-17 | 0 | Open-weight/provider behavior | @Alix-007 | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor suppression |
+| 🔀&nbsp;[#93897](https://github.com/openclaw/openclaw/pull/93897) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(doctor): deep-merge openai-codex plugin entry when openai already exists |
+| 📝&nbsp;[#93891](https://github.com/openclaw/openclaw/issues/93891) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @Nas01010101 | Bug: rewritePluginEntries silently drops openai-codex config when openai entry already present |
+| 🔀&nbsp;[#93882](https://github.com/openclaw/openclaw/pull/93882) | 2026-06-17 | 0 | Local model runtime | @xydttsw | fix(telegram): show full think levels for live-discovered Ollama models |
+| 🔀&nbsp;[#93878](https://github.com/openclaw/openclaw/pull/93878) | 2026-06-17 | 0 | Local memory/embedding | @sheyanmin | fix: route memory embeddings to configured baseURL for openai provider |
 | 🔀&nbsp;[#93874](https://github.com/openclaw/openclaw/pull/93874) | 2026-06-17 | 0 | Open-weight/provider behavior | @Alix-007 | fix(slack): recognize MiniMax mm: namespaced reasoning tags in monitor preview |
 | 🔀&nbsp;[#93872](https://github.com/openclaw/openclaw/pull/93872) | 2026-06-17 | 0 | Local model runtime | @lzyyzznl | fix(ollama): show full thinking levels for live-discovered models in /think menu |
 | 🔀&nbsp;[#93868](https://github.com/openclaw/openclaw/pull/93868) | 2026-06-17 | 0 | Local/media model provider | @harjothkhara | fix(gateway): dedupe TTS status provider diagnostics [AI-assisted] |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93688](https://github.com/openclaw/openclaw/pull/93688) | 2026-06-16 | 0 | Local/media model provider | @dwc1997 | fix(minimax): check base_resp envelope errors in TTS provider |
 | 🔀&nbsp;[#93683](https://github.com/openclaw/openclaw/pull/93683) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
 | 🔀&nbsp;[#93681](https://github.com/openclaw/openclaw/pull/93681) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(llm): handle string assistant content on the OpenAI-compatible completion path |
-| 🔀&nbsp;[#93676](https://github.com/openclaw/openclaw/pull/93676) | 2026-06-16 | 0 | Model routing/config | @Pick-cat | fix(agent-runner): retry same model on Gemini per-minute rate-limit 429s |
-| 🔀&nbsp;[#93669](https://github.com/openclaw/openclaw/pull/93669) | 2026-06-16 | 0 | Open-weight/provider behavior | @lzyyzznl | fix(agents): classify Zhipu GLM error 1305 / 访问量过大 as overloaded for model fallback |
-| 🔀&nbsp;[#93660](https://github.com/openclaw/openclaw/pull/93660) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @lzyyzznl | feat(gateway): 添加 streaming 输出配置块到 HTTP 端点 |
-| 🔀&nbsp;[#93658](https://github.com/openclaw/openclaw/pull/93658) | 2026-06-16 | 0 | Model routing/config | @ml12580 | fix(wizard): preserve existing default model during setup auth choice [AI-assisted] |
-| 🔀&nbsp;[#93655](https://github.com/openclaw/openclaw/pull/93655) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @mushuiyu886 | fix(agent): classify stuck recovery as idle timeout |
-| 🔀&nbsp;[#93651](https://github.com/openclaw/openclaw/pull/93651) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
-| 🔀&nbsp;[#93640](https://github.com/openclaw/openclaw/pull/93640) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @blindjoy23 | fix: add stream stall guard for lost stream termination signal (opencode-go) |
 
-## OPEN THREADS (911)
+## OPEN THREADS (918)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 861 open threads, sorted by activity</summary>
+<summary>Remaining 868 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93946](https://github.com/openclaw/openclaw/pull/93946) | 0 | Local model runtime | @Alix-007 | fix(ollama): show full thinking levels for discovered reasoning models |
+| 📝&nbsp;[#93931](https://github.com/openclaw/openclaw/issues/93931) | 0 | Model routing/config | @hyphae-bot | Configured model fallbacks (payload.fallbacks) never engage on generic 'LLM request failed.' errors — fallbackUsed: false on every cron failure |
+| 🔀&nbsp;[#93926](https://github.com/openclaw/openclaw/pull/93926) | 0 | Open-weight/provider behavior | @Alix-007 | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor suppression |
+| 🔀&nbsp;[#93897](https://github.com/openclaw/openclaw/pull/93897) | 0 | OpenAI-compatible/proxy | @lsr911 | fix(doctor): deep-merge openai-codex plugin entry when openai already exists |
+| 📝&nbsp;[#93891](https://github.com/openclaw/openclaw/issues/93891) | 0 | OpenAI-compatible/proxy | @Nas01010101 | Bug: rewritePluginEntries silently drops openai-codex config when openai entry already present |
+| 🔀&nbsp;[#93882](https://github.com/openclaw/openclaw/pull/93882) | 0 | Local model runtime | @xydttsw | fix(telegram): show full think levels for live-discovered Ollama models |
+| 🔀&nbsp;[#93878](https://github.com/openclaw/openclaw/pull/93878) | 0 | Local memory/embedding | @sheyanmin | fix: route memory embeddings to configured baseURL for openai provider |
 | 🔀&nbsp;[#93874](https://github.com/openclaw/openclaw/pull/93874) | 0 | Open-weight/provider behavior | @Alix-007 | fix(slack): recognize MiniMax mm: namespaced reasoning tags in monitor preview |
 | 🔀&nbsp;[#93872](https://github.com/openclaw/openclaw/pull/93872) | 0 | Local model runtime | @lzyyzznl | fix(ollama): show full thinking levels for live-discovered models in /think menu |
 | 🔀&nbsp;[#93868](https://github.com/openclaw/openclaw/pull/93868) | 0 | Local/media model provider | @harjothkhara | fix(gateway): dedupe TTS status provider diagnostics [AI-assisted] |
@@ -1694,4 +1701,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 911 (384 issues, 527 PRs).
+- Kept open threads: 918 (386 issues, 532 PRs).

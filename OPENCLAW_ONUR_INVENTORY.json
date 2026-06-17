@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 384,
-    "open_prs": 527,
-    "open_threads": 911
+    "open_issues": 386,
+    "open_prs": 532,
+    "open_threads": 918
   },
   "open_threads": [
     {
@@ -5853,6 +5853,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Alix-007",
+      "number": 93946,
+      "title": "fix(ollama): show full thinking levels for discovered reasoning models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93946"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hyphae-bot",
+      "number": 93931,
+      "title": "Configured model fallbacks (payload.fallbacks) never engage on generic 'LLM request failed.' errors — fallbackUsed: false on every cron failure",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93931"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Alix-007",
+      "number": 93926,
+      "title": "fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor suppression",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93926"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lsr911",
+      "number": 93897,
+      "title": "fix(doctor): deep-merge openai-codex plugin entry when openai already exists",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93897"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Nas01010101",
+      "number": 93891,
+      "title": "Bug: rewritePluginEntries silently drops openai-codex config when openai entry already present",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93891"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@xydttsw",
+      "number": 93882,
+      "title": "fix(telegram): show full think levels for live-discovered Ollama models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93882"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@sheyanmin",
+      "number": 93878,
+      "title": "fix: route memory embeddings to configured baseURL for openai provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93878"
     },
     {
       "activity": 0,
@@ -12980,8 +13043,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93886,
-    "pr": 93874
+    "issue": 93932,
+    "pr": 93946
   },
   "schema_version": 1,
   "updated": "2026-06-17"
