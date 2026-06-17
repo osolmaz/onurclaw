@@ -4,14 +4,21 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #93794.
-- Last reviewed through PR: #93792.
+- Last reviewed through issue: #93824.
+- Last reviewed through PR: #93834.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93833](https://github.com/openclaw/openclaw/pull/93833) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | Fix Azure Responses model alias routing |
+| 🔀&nbsp;[#93832](https://github.com/openclaw/openclaw/pull/93832) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @vincentkoc | feat(providers): add ClawRouter managed proxy<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#93829](https://github.com/openclaw/openclaw/pull/93829) | 2026-06-17 | 0 | Model routing/config | @sunlit-deng | fix: /status usage follows session /model override instead of stale runtime provider |
+| 🔀&nbsp;[#93821](https://github.com/openclaw/openclaw/pull/93821) | 2026-06-17 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip mcporter daemon startup logs from stdout before JSON.parse (fixes #59808) |
+| 🔀&nbsp;[#93820](https://github.com/openclaw/openclaw/pull/93820) | 2026-06-17 | 0 | Open-weight/provider behavior | @Alix-007 | fix(imessage): recognize MiniMax mm: reasoning tags in reflection guard (completes #93767) |
+| 🔀&nbsp;[#93806](https://github.com/openclaw/openclaw/pull/93806) | 2026-06-16 | 0 | Open-weight/provider behavior | @Alix-007 | fix(reasoning-tags): strip MiniMax mm: tags on silent-reply and streaming paths missed by #93767 |
+| 📝&nbsp;[#93801](https://github.com/openclaw/openclaw/issues/93801) | 2026-06-16 | 0 | Model routing/config | @anguslogan01 | [Feature]: Per-task model-router hook in agent dispatch (external policy command, fail-open) |
 | 🔀&nbsp;[#93791](https://github.com/openclaw/openclaw/pull/93791) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
 | 🔀&nbsp;[#93789](https://github.com/openclaw/openclaw/pull/93789) | 2026-06-16 | 0 | Model routing/config | @joelnishanth | fix(agents): make lane suspension consistent across cooldown-precheck and embedded-runner paths |
 | 🔀&nbsp;[#93786](https://github.com/openclaw/openclaw/pull/93786) | 2026-06-16 | 0 | Model routing/config | @liuhao1024 | fix(plugins): treat refreshable catalogs as requiring runtime discovery (fixes #93775) |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93613](https://github.com/openclaw/openclaw/pull/93613) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(llm): forward run context to model as opt-in request headers<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#93611](https://github.com/openclaw/openclaw/pull/93611) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096) |
 | 📝&nbsp;[#93610](https://github.com/openclaw/openclaw/issues/93610) | 2026-06-16 | 0 | Model/provider behavior | @ForceConstant | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
-| 🔀&nbsp;[#93608](https://github.com/openclaw/openclaw/pull/93608) | 2026-06-16 | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
-| 🔀&nbsp;[#93602](https://github.com/openclaw/openclaw/pull/93602) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter |
-| 📝&nbsp;[#93598](https://github.com/openclaw/openclaw/issues/93598) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @ikaijian | [Feature]: Can the streaming output increase the size of the configuration control block? |
-| 🔀&nbsp;[#93596](https://github.com/openclaw/openclaw/pull/93596) | 2026-06-16 | 0 | Local memory/embedding | @Alix-007 | fix(plugins): activate dreaming engine sidecar under restrictive allowlist |
-| 🔀&nbsp;[#93586](https://github.com/openclaw/openclaw/pull/93586) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip XDG env vars from mcporter spawn env to fix mcporter ≥ 0.10 config resolution (fixes #79847) |
-| 🔀&nbsp;[#93533](https://github.com/openclaw/openclaw/pull/93533) | 2026-06-16 | 0 | Local memory/embedding | @bowenluo718 | fix: support baseURL config for remote embedding providers |
-| 🔀&nbsp;[#93523](https://github.com/openclaw/openclaw/pull/93523) | 2026-06-16 | 0 | Model routing/config | @lzyyzznl | feat(ui): add model selector to cron quick-create wizard and job list |
 
-## OPEN THREADS (897)
+## OPEN THREADS (904)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 847 open threads, sorted by activity</summary>
+<summary>Remaining 854 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93833](https://github.com/openclaw/openclaw/pull/93833) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | Fix Azure Responses model alias routing |
+| 🔀&nbsp;[#93832](https://github.com/openclaw/openclaw/pull/93832) | 0 | OpenAI-compatible/proxy | @vincentkoc | feat(providers): add ClawRouter managed proxy<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#93829](https://github.com/openclaw/openclaw/pull/93829) | 0 | Model routing/config | @sunlit-deng | fix: /status usage follows session /model override instead of stale runtime provider |
+| 🔀&nbsp;[#93821](https://github.com/openclaw/openclaw/pull/93821) | 0 | Local memory/embedding | @liuhao1024 | fix(qmd): strip mcporter daemon startup logs from stdout before JSON.parse (fixes #59808) |
+| 🔀&nbsp;[#93820](https://github.com/openclaw/openclaw/pull/93820) | 0 | Open-weight/provider behavior | @Alix-007 | fix(imessage): recognize MiniMax mm: reasoning tags in reflection guard (completes #93767) |
+| 🔀&nbsp;[#93806](https://github.com/openclaw/openclaw/pull/93806) | 0 | Open-weight/provider behavior | @Alix-007 | fix(reasoning-tags): strip MiniMax mm: tags on silent-reply and streaming paths missed by #93767 |
+| 📝&nbsp;[#93801](https://github.com/openclaw/openclaw/issues/93801) | 0 | Model routing/config | @anguslogan01 | [Feature]: Per-task model-router hook in agent dispatch (external policy command, fail-open) |
 | 🔀&nbsp;[#93791](https://github.com/openclaw/openclaw/pull/93791) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
 | 🔀&nbsp;[#93789](https://github.com/openclaw/openclaw/pull/93789) | 0 | Model routing/config | @joelnishanth | fix(agents): make lane suspension consistent across cooldown-precheck and embedded-runner paths |
 | 🔀&nbsp;[#93786](https://github.com/openclaw/openclaw/pull/93786) | 0 | Model routing/config | @liuhao1024 | fix(plugins): treat refreshable catalogs as requiring runtime discovery (fixes #93775) |
@@ -1680,4 +1687,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 897 (382 issues, 515 PRs).
+- Kept open threads: 904 (383 issues, 521 PRs).
