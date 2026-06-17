@@ -4,14 +4,21 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #94040.
-- Last reviewed through PR: #94051.
+- Last reviewed through issue: #94102.
+- Last reviewed through PR: #94107.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94106](https://github.com/openclaw/openclaw/pull/94106) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @yetval | fix(secrets): scope env scrub to migrated providers' vars |
+| 📝&nbsp;[#94102](https://github.com/openclaw/openclaw/issues/94102) | 2026-06-17 | 0 | Local memory/embedding | @alexph-dev | memory_search ranks filename/date-token queries poorly despite clean index and working content search |
+| 🔀&nbsp;[#94071](https://github.com/openclaw/openclaw/pull/94071) | 2026-06-17 | 0 | Local memory/embedding | @zhanxingxin1998 | fix(memory-lancedb): stop forwarding embedding dimensions upstream |
+| 🔀&nbsp;[#94067](https://github.com/openclaw/openclaw/pull/94067) | 2026-06-17 | 0 | Local model runtime | @openperf | fix(channels): resolve native /think menu levels via runtime catalog for live-discovered models |
+| 🔀&nbsp;[#94066](https://github.com/openclaw/openclaw/pull/94066) | 2026-06-17 | 0 | Open-weight/provider behavior | @zhanxingxin1998 | fix(qwen): enable qwen3.6-plus on Coding Plan CN, correct reasoning flag |
+| 🔀&nbsp;[#94064](https://github.com/openclaw/openclaw/pull/94064) | 2026-06-17 | 0 | Model/provider behavior | @zhanxingxin1998 | feat(huggingface): add text-to-image generation via hf-inference Inference Providers route |
+| 🔀&nbsp;[#94062](https://github.com/openclaw/openclaw/pull/94062) | 2026-06-17 | 0 | Local model runtime | @hugenshen | fix(agents): classify generic "LLM request failed." as transient time… |
 | 🔀&nbsp;[#94038](https://github.com/openclaw/openclaw/pull/94038) | 2026-06-17 | 0 | Open-weight/provider behavior | @zhangguiping-xydt | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor replies |
 | 🔀&nbsp;[#94021](https://github.com/openclaw/openclaw/pull/94021) | 2026-06-17 | 0 | Local model runtime | @lsr911 | fix(agents): classify local model not loaded/ready as overloaded for model fallback |
 | 🔀&nbsp;[#94017](https://github.com/openclaw/openclaw/pull/94017) | 2026-06-17 | 0 | Local model runtime | @mazhuima | fix(think): skip provider profile when model not in catalog |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93767](https://github.com/openclaw/openclaw/pull/93767) | 2026-06-16 | 0 | Model/provider behavior | @DrHack1 | fix(reasoning-tags): strip MiniMax `mm:` namespaced reasoning tags |
 | 🔀&nbsp;[#93766](https://github.com/openclaw/openclaw/pull/93766) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @sha367 | feat: add MegaBrain provider |
 | 📝&nbsp;[#93765](https://github.com/openclaw/openclaw/issues/93765) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @hannesrudolph | Codex isolated app-server homes do not receive configured custom-model catalog metadata |
-| 📝&nbsp;[#93764](https://github.com/openclaw/openclaw/issues/93764) | 2026-06-16 | 0 | Model routing/config | @Fuma2013 | Codex OAuth gpt-5.5: config reports 1M/950k but native runtime caps turns at 258400 |
-| 🔀&nbsp;[#93759](https://github.com/openclaw/openclaw/pull/93759) | 2026-06-16 | 0 | Local/media model provider | @harjothkhara | fix(minimax): surface TTS envelope errors so fallback fires (#76904) [AI] |
-| 🔀&nbsp;[#93758](https://github.com/openclaw/openclaw/pull/93758) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | feat(memory): apply outputDimensionality truncation to local GGUF embeddings (fixes #58765) |
-| 📝&nbsp;[#93757](https://github.com/openclaw/openclaw/issues/93757) | 2026-06-16 | 0 | Model routing/config | @ffluk3 | v2026.5.28: Bedrock thinking-signature errors surface as unclassified/no-failover (fixed on main) |
-| 🔀&nbsp;[#93756](https://github.com/openclaw/openclaw/pull/93756) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
-| 🔀&nbsp;[#93747](https://github.com/openclaw/openclaw/pull/93747) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
-| 🔀&nbsp;[#93746](https://github.com/openclaw/openclaw/pull/93746) | 2026-06-16 | 0 | Model routing/config | @shushushv | fix(ui): populate realtime talk provider and transport options from talk.catalog |
 
-## OPEN THREADS (928)
+## OPEN THREADS (935)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 878 open threads, sorted by activity</summary>
+<summary>Remaining 885 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94106](https://github.com/openclaw/openclaw/pull/94106) | 0 | OpenAI-compatible/proxy | @yetval | fix(secrets): scope env scrub to migrated providers' vars |
+| 📝&nbsp;[#94102](https://github.com/openclaw/openclaw/issues/94102) | 0 | Local memory/embedding | @alexph-dev | memory_search ranks filename/date-token queries poorly despite clean index and working content search |
+| 🔀&nbsp;[#94071](https://github.com/openclaw/openclaw/pull/94071) | 0 | Local memory/embedding | @zhanxingxin1998 | fix(memory-lancedb): stop forwarding embedding dimensions upstream |
+| 🔀&nbsp;[#94067](https://github.com/openclaw/openclaw/pull/94067) | 0 | Local model runtime | @openperf | fix(channels): resolve native /think menu levels via runtime catalog for live-discovered models |
+| 🔀&nbsp;[#94066](https://github.com/openclaw/openclaw/pull/94066) | 0 | Open-weight/provider behavior | @zhanxingxin1998 | fix(qwen): enable qwen3.6-plus on Coding Plan CN, correct reasoning flag |
+| 🔀&nbsp;[#94064](https://github.com/openclaw/openclaw/pull/94064) | 0 | Model/provider behavior | @zhanxingxin1998 | feat(huggingface): add text-to-image generation via hf-inference Inference Providers route |
+| 🔀&nbsp;[#94062](https://github.com/openclaw/openclaw/pull/94062) | 0 | Local model runtime | @hugenshen | fix(agents): classify generic "LLM request failed." as transient time… |
 | 🔀&nbsp;[#94038](https://github.com/openclaw/openclaw/pull/94038) | 0 | Open-weight/provider behavior | @zhangguiping-xydt | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor replies |
 | 🔀&nbsp;[#94021](https://github.com/openclaw/openclaw/pull/94021) | 0 | Local model runtime | @lsr911 | fix(agents): classify local model not loaded/ready as overloaded for model fallback |
 | 🔀&nbsp;[#94017](https://github.com/openclaw/openclaw/pull/94017) | 0 | Local model runtime | @mazhuima | fix(think): skip provider profile when model not in catalog |
@@ -1711,4 +1718,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 928 (387 issues, 541 PRs).
+- Kept open threads: 935 (388 issues, 547 PRs).

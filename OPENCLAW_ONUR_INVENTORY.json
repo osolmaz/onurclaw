@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 387,
-    "open_prs": 541,
-    "open_threads": 928
+    "open_issues": 388,
+    "open_prs": 547,
+    "open_threads": 935
   },
   "open_threads": [
     {
@@ -5853,6 +5853,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@yetval",
+      "number": 94106,
+      "title": "fix(secrets): scope env scrub to migrated providers' vars",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94106"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@alexph-dev",
+      "number": 94102,
+      "title": "memory_search ranks filename/date-token queries poorly despite clean index and working content search",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94102"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@zhanxingxin1998",
+      "number": 94071,
+      "title": "fix(memory-lancedb): stop forwarding embedding dimensions upstream",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94071"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@openperf",
+      "number": 94067,
+      "title": "fix(channels): resolve native /think menu levels via runtime catalog for live-discovered models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94067"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@zhanxingxin1998",
+      "number": 94066,
+      "title": "fix(qwen): enable qwen3.6-plus on Coding Plan CN, correct reasoning flag",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94066"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@zhanxingxin1998",
+      "number": 94064,
+      "title": "feat(huggingface): add text-to-image generation via hf-inference Inference Providers route",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94064"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@hugenshen",
+      "number": 94062,
+      "title": "fix(agents): classify generic \"LLM request failed.\" as transient time…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94062"
     },
     {
       "activity": 0,
@@ -13134,8 +13197,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94040,
-    "pr": 94051
+    "issue": 94102,
+    "pr": 94107
   },
   "schema_version": 1,
   "updated": "2026-06-17"
