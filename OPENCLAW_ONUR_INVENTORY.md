@@ -4,14 +4,20 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #93968.
-- Last reviewed through PR: #93992.
+- Last reviewed through issue: #94040.
+- Last reviewed through PR: #94051.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94038](https://github.com/openclaw/openclaw/pull/94038) | 2026-06-17 | 0 | Open-weight/provider behavior | @zhangguiping-xydt | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor replies |
+| 🔀&nbsp;[#94021](https://github.com/openclaw/openclaw/pull/94021) | 2026-06-17 | 0 | Local model runtime | @lsr911 | fix(agents): classify local model not loaded/ready as overloaded for model fallback |
+| 🔀&nbsp;[#94017](https://github.com/openclaw/openclaw/pull/94017) | 2026-06-17 | 0 | Local model runtime | @mazhuima | fix(think): skip provider profile when model not in catalog |
+| 🔀&nbsp;[#94012](https://github.com/openclaw/openclaw/pull/94012) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @vincentkoc | feat: route canonical provider models through ClawRouter |
+| 🔀&nbsp;[#94011](https://github.com/openclaw/openclaw/pull/94011) | 2026-06-17 | 0 | Model routing/config | @ajwan8998 | fix(cron): treat generic 'LLM request failed' error as transient server_error |
+| 🔀&nbsp;[#94004](https://github.com/openclaw/openclaw/pull/94004) | 2026-06-17 | 0 | Local memory/embedding | @vincentkoc | refactor(sqlite): canonicalize memory and proxy storage<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#93969](https://github.com/openclaw/openclaw/pull/93969) | 2026-06-17 | 0 | Model routing/config | @xialonglee | fix(xai): reject unsupported multi-agent model refs before runtime fallback |
 | 📝&nbsp;[#93968](https://github.com/openclaw/openclaw/issues/93968) | 2026-06-17 | 0 | Local memory/embedding | @edisonxl | [Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker |
 | 🔀&nbsp;[#93965](https://github.com/openclaw/openclaw/pull/93965) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93756](https://github.com/openclaw/openclaw/pull/93756) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
 | 🔀&nbsp;[#93747](https://github.com/openclaw/openclaw/pull/93747) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
 | 🔀&nbsp;[#93746](https://github.com/openclaw/openclaw/pull/93746) | 2026-06-16 | 0 | Model routing/config | @shushushv | fix(ui): populate realtime talk provider and transport options from talk.catalog |
-| 📝&nbsp;[#93741](https://github.com/openclaw/openclaw/issues/93741) | 2026-06-16 | 0 | Model routing/config | @clemenshelm | Allow the `agent` RPC to offload images to `imageModel` for text-only models (opt-in) |
-| 🔀&nbsp;[#93730](https://github.com/openclaw/openclaw/pull/93730) | 2026-06-16 | 0 | Model routing/config | @joelnishanth | fix: preserve fallback chain when primary model hits rate-limit lane suspension |
-| 🔀&nbsp;[#93729](https://github.com/openclaw/openclaw/pull/93729) | 2026-06-16 | 0 | Local model runtime | @zhangguiping-xydt | Preserve configured Ollama API during discovery |
-| 🔀&nbsp;[#93723](https://github.com/openclaw/openclaw/pull/93723) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
-| 🔀&nbsp;[#93721](https://github.com/openclaw/openclaw/pull/93721) | 2026-06-16 | 0 | Local memory/embedding | @yu-xin-c | fix(agents): notify no-op compaction hooks |
-| 📝&nbsp;[#93710](https://github.com/openclaw/openclaw/issues/93710) | 2026-06-16 | 0 | Local model runtime | @obnoxious2011-cmd | ollama plugin overrides api to native protocol ignoring config api setting |
 
-## OPEN THREADS (922)
+## OPEN THREADS (928)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 872 open threads, sorted by activity</summary>
+<summary>Remaining 878 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94038](https://github.com/openclaw/openclaw/pull/94038) | 0 | Open-weight/provider behavior | @zhangguiping-xydt | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor replies |
+| 🔀&nbsp;[#94021](https://github.com/openclaw/openclaw/pull/94021) | 0 | Local model runtime | @lsr911 | fix(agents): classify local model not loaded/ready as overloaded for model fallback |
+| 🔀&nbsp;[#94017](https://github.com/openclaw/openclaw/pull/94017) | 0 | Local model runtime | @mazhuima | fix(think): skip provider profile when model not in catalog |
+| 🔀&nbsp;[#94012](https://github.com/openclaw/openclaw/pull/94012) | 0 | OpenAI-compatible/proxy | @vincentkoc | feat: route canonical provider models through ClawRouter |
+| 🔀&nbsp;[#94011](https://github.com/openclaw/openclaw/pull/94011) | 0 | Model routing/config | @ajwan8998 | fix(cron): treat generic 'LLM request failed' error as transient server_error |
+| 🔀&nbsp;[#94004](https://github.com/openclaw/openclaw/pull/94004) | 0 | Local memory/embedding | @vincentkoc | refactor(sqlite): canonicalize memory and proxy storage<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#93969](https://github.com/openclaw/openclaw/pull/93969) | 0 | Model routing/config | @xialonglee | fix(xai): reject unsupported multi-agent model refs before runtime fallback |
 | 📝&nbsp;[#93968](https://github.com/openclaw/openclaw/issues/93968) | 0 | Local memory/embedding | @edisonxl | [Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker |
 | 🔀&nbsp;[#93965](https://github.com/openclaw/openclaw/pull/93965) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
@@ -1705,4 +1711,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 922 (387 issues, 535 PRs).
+- Kept open threads: 928 (387 issues, 541 PRs).

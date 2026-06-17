@@ -4723,8 +4723,8 @@
   "counts": {
     "closed_threads": 674,
     "open_issues": 387,
-    "open_prs": 535,
-    "open_threads": 922
+    "open_prs": 541,
+    "open_threads": 928
   },
   "open_threads": [
     {
@@ -5853,6 +5853,61 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@zhangguiping-xydt",
+      "number": 94038,
+      "title": "fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor replies",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94038"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lsr911",
+      "number": 94021,
+      "title": "fix(agents): classify local model not loaded/ready as overloaded for model fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94021"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@mazhuima",
+      "number": 94017,
+      "title": "fix(think): skip provider profile when model not in catalog",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94017"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@vincentkoc",
+      "number": 94012,
+      "title": "feat: route canonical provider models through ClawRouter",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94012"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ajwan8998",
+      "number": 94011,
+      "title": "fix(cron): treat generic 'LLM request failed' error as transient server_error",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94011"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 94004,
+      "title": "refactor(sqlite): canonicalize memory and proxy storage",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94004"
     },
     {
       "activity": 0,
@@ -13079,8 +13134,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93968,
-    "pr": 93992
+    "issue": 94040,
+    "pr": 94051
   },
   "schema_version": 1,
   "updated": "2026-06-17"
