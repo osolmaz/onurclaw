@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 386,
-    "open_prs": 532,
-    "open_threads": 918
+    "open_issues": 387,
+    "open_prs": 535,
+    "open_threads": 922
   },
   "open_threads": [
     {
@@ -5853,6 +5853,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xialonglee",
+      "number": 93969,
+      "title": "fix(xai): reject unsupported multi-agent model refs before runtime fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93969"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@edisonxl",
+      "number": 93968,
+      "title": "[Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93968"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@zhangguiping-xydt",
+      "number": 93965,
+      "title": "[Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93965"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@jason-allen-oneal",
+      "number": 93956,
+      "title": "fix(ollama): skip auto-discovery for remote/cloud base URLs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93956"
     },
     {
       "activity": 0,
@@ -13043,8 +13079,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93932,
-    "pr": 93946
+    "issue": 93968,
+    "pr": 93992
   },
   "schema_version": 1,
   "updated": "2026-06-17"

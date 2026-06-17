@@ -4,14 +4,18 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #93932.
-- Last reviewed through PR: #93946.
+- Last reviewed through issue: #93968.
+- Last reviewed through PR: #93992.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93969](https://github.com/openclaw/openclaw/pull/93969) | 2026-06-17 | 0 | Model routing/config | @xialonglee | fix(xai): reject unsupported multi-agent model refs before runtime fallback |
+| 📝&nbsp;[#93968](https://github.com/openclaw/openclaw/issues/93968) | 2026-06-17 | 0 | Local memory/embedding | @edisonxl | [Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker |
+| 🔀&nbsp;[#93965](https://github.com/openclaw/openclaw/pull/93965) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
+| 🔀&nbsp;[#93956](https://github.com/openclaw/openclaw/pull/93956) | 2026-06-17 | 0 | Local model runtime | @jason-allen-oneal | fix(ollama): skip auto-discovery for remote/cloud base URLs |
 | 🔀&nbsp;[#93946](https://github.com/openclaw/openclaw/pull/93946) | 2026-06-17 | 0 | Local model runtime | @Alix-007 | fix(ollama): show full thinking levels for discovered reasoning models |
 | 📝&nbsp;[#93931](https://github.com/openclaw/openclaw/issues/93931) | 2026-06-17 | 0 | Model routing/config | @hyphae-bot | Configured model fallbacks (payload.fallbacks) never engage on generic 'LLM request failed.' errors — fallbackUsed: false on every cron failure |
 | 🔀&nbsp;[#93926](https://github.com/openclaw/openclaw/pull/93926) | 2026-06-17 | 0 | Open-weight/provider behavior | @Alix-007 | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor suppression |
@@ -58,12 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93723](https://github.com/openclaw/openclaw/pull/93723) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
 | 🔀&nbsp;[#93721](https://github.com/openclaw/openclaw/pull/93721) | 2026-06-16 | 0 | Local memory/embedding | @yu-xin-c | fix(agents): notify no-op compaction hooks |
 | 📝&nbsp;[#93710](https://github.com/openclaw/openclaw/issues/93710) | 2026-06-16 | 0 | Local model runtime | @obnoxious2011-cmd | ollama plugin overrides api to native protocol ignoring config api setting |
-| 🔀&nbsp;[#93708](https://github.com/openclaw/openclaw/pull/93708) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
-| 🔀&nbsp;[#93688](https://github.com/openclaw/openclaw/pull/93688) | 2026-06-16 | 0 | Local/media model provider | @dwc1997 | fix(minimax): check base_resp envelope errors in TTS provider |
-| 🔀&nbsp;[#93683](https://github.com/openclaw/openclaw/pull/93683) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): await search-sync before returning results to prevent stale index (fixes #52115) |
-| 🔀&nbsp;[#93681](https://github.com/openclaw/openclaw/pull/93681) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(llm): handle string assistant content on the OpenAI-compatible completion path |
 
-## OPEN THREADS (918)
+## OPEN THREADS (922)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 868 open threads, sorted by activity</summary>
+<summary>Remaining 872 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,10 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93969](https://github.com/openclaw/openclaw/pull/93969) | 0 | Model routing/config | @xialonglee | fix(xai): reject unsupported multi-agent model refs before runtime fallback |
+| 📝&nbsp;[#93968](https://github.com/openclaw/openclaw/issues/93968) | 0 | Local memory/embedding | @edisonxl | [Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker |
+| 🔀&nbsp;[#93965](https://github.com/openclaw/openclaw/pull/93965) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
+| 🔀&nbsp;[#93956](https://github.com/openclaw/openclaw/pull/93956) | 0 | Local model runtime | @jason-allen-oneal | fix(ollama): skip auto-discovery for remote/cloud base URLs |
 | 🔀&nbsp;[#93946](https://github.com/openclaw/openclaw/pull/93946) | 0 | Local model runtime | @Alix-007 | fix(ollama): show full thinking levels for discovered reasoning models |
 | 📝&nbsp;[#93931](https://github.com/openclaw/openclaw/issues/93931) | 0 | Model routing/config | @hyphae-bot | Configured model fallbacks (payload.fallbacks) never engage on generic 'LLM request failed.' errors — fallbackUsed: false on every cron failure |
 | 🔀&nbsp;[#93926](https://github.com/openclaw/openclaw/pull/93926) | 0 | Open-weight/provider behavior | @Alix-007 | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor suppression |
@@ -1701,4 +1705,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 918 (386 issues, 532 PRs).
+- Kept open threads: 922 (387 issues, 535 PRs).
