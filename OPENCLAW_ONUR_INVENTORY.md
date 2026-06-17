@@ -4,14 +4,21 @@ Updated: 2026-06-17
 
 Review watermark:
 
-- Last reviewed through issue: #93824.
-- Last reviewed through PR: #93834.
+- Last reviewed through issue: #93886.
+- Last reviewed through PR: #93874.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#93874](https://github.com/openclaw/openclaw/pull/93874) | 2026-06-17 | 0 | Open-weight/provider behavior | @Alix-007 | fix(slack): recognize MiniMax mm: namespaced reasoning tags in monitor preview |
+| 🔀&nbsp;[#93872](https://github.com/openclaw/openclaw/pull/93872) | 2026-06-17 | 0 | Local model runtime | @lzyyzznl | fix(ollama): show full thinking levels for live-discovered models in /think menu |
+| 🔀&nbsp;[#93868](https://github.com/openclaw/openclaw/pull/93868) | 2026-06-17 | 0 | Local/media model provider | @harjothkhara | fix(gateway): dedupe TTS status provider diagnostics [AI-assisted] |
+| 🔀&nbsp;[#93864](https://github.com/openclaw/openclaw/pull/93864) | 2026-06-17 | 0 | Local model runtime | @Jah-xy | fix(ollama): show all thinking levels in /think menu for dynamically-discovered models |
+| 🔀&nbsp;[#93853](https://github.com/openclaw/openclaw/pull/93853) | 2026-06-17 | 0 | Local memory/embedding | @xydt-tanshanshan | [AI] fix(agents): route memory embedding through generic resolution when provider has custom baseUrl |
+| 🔀&nbsp;[#93844](https://github.com/openclaw/openclaw/pull/93844) | 2026-06-17 | 0 | Local model runtime | @lzyyzznl | fix(ollama): resolve thinking profile for live-discovered models |
+| 📝&nbsp;[#93835](https://github.com/openclaw/openclaw/issues/93835) | 2026-06-17 | 0 | Local model runtime | @civiltox | [Bug]: Telegram /think menu shows only off for live-discovered Ollama thinking models, but /think &lt;level&gt; accepts them |
 | 🔀&nbsp;[#93833](https://github.com/openclaw/openclaw/pull/93833) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | Fix Azure Responses model alias routing |
 | 🔀&nbsp;[#93832](https://github.com/openclaw/openclaw/pull/93832) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @vincentkoc | feat(providers): add ClawRouter managed proxy<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#93829](https://github.com/openclaw/openclaw/pull/93829) | 2026-06-17 | 0 | Model routing/config | @sunlit-deng | fix: /status usage follows session /model override instead of stale runtime provider |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#93655](https://github.com/openclaw/openclaw/pull/93655) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @mushuiyu886 | fix(agent): classify stuck recovery as idle timeout |
 | 🔀&nbsp;[#93651](https://github.com/openclaw/openclaw/pull/93651) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM cold-load (fixes #92494) |
 | 🔀&nbsp;[#93640](https://github.com/openclaw/openclaw/pull/93640) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @blindjoy23 | fix: add stream stall guard for lost stream termination signal (opencode-go) |
-| 🔀&nbsp;[#93627](https://github.com/openclaw/openclaw/pull/93627) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096)<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#93624](https://github.com/openclaw/openclaw/pull/93624) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(gateway): add configurable streaming chunk size for HTTP endpoints |
-| 🔀&nbsp;[#93623](https://github.com/openclaw/openclaw/pull/93623) | 2026-06-16 | 0 | Model routing/config | @sunlit-deng | fix(chat): prefer server session row over stale cache in model dropdown |
-| 🔀&nbsp;[#93620](https://github.com/openclaw/openclaw/pull/93620) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | [AI] fix(openai-completions): preserve reasoning_content on assistant messages for OpenRouter providers |
-| 🔀&nbsp;[#93613](https://github.com/openclaw/openclaw/pull/93613) | 2026-06-16 | 0 | OpenAI-compatible/proxy | @Jah-xy | feat(llm): forward run context to model as opt-in request headers<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#93611](https://github.com/openclaw/openclaw/pull/93611) | 2026-06-16 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): filter already-emitted entries in light phase to prevent verbatim repeats (fixes #72096) |
-| 📝&nbsp;[#93610](https://github.com/openclaw/openclaw/issues/93610) | 2026-06-16 | 0 | Model/provider behavior | @ForceConstant | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
 
-## OPEN THREADS (904)
+## OPEN THREADS (911)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 854 open threads, sorted by activity</summary>
+<summary>Remaining 861 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#93874](https://github.com/openclaw/openclaw/pull/93874) | 0 | Open-weight/provider behavior | @Alix-007 | fix(slack): recognize MiniMax mm: namespaced reasoning tags in monitor preview |
+| 🔀&nbsp;[#93872](https://github.com/openclaw/openclaw/pull/93872) | 0 | Local model runtime | @lzyyzznl | fix(ollama): show full thinking levels for live-discovered models in /think menu |
+| 🔀&nbsp;[#93868](https://github.com/openclaw/openclaw/pull/93868) | 0 | Local/media model provider | @harjothkhara | fix(gateway): dedupe TTS status provider diagnostics [AI-assisted] |
+| 🔀&nbsp;[#93864](https://github.com/openclaw/openclaw/pull/93864) | 0 | Local model runtime | @Jah-xy | fix(ollama): show all thinking levels in /think menu for dynamically-discovered models |
+| 🔀&nbsp;[#93853](https://github.com/openclaw/openclaw/pull/93853) | 0 | Local memory/embedding | @xydt-tanshanshan | [AI] fix(agents): route memory embedding through generic resolution when provider has custom baseUrl |
+| 🔀&nbsp;[#93844](https://github.com/openclaw/openclaw/pull/93844) | 0 | Local model runtime | @lzyyzznl | fix(ollama): resolve thinking profile for live-discovered models |
+| 📝&nbsp;[#93835](https://github.com/openclaw/openclaw/issues/93835) | 0 | Local model runtime | @civiltox | [Bug]: Telegram /think menu shows only off for live-discovered Ollama thinking models, but /think &lt;level&gt; accepts them |
 | 🔀&nbsp;[#93833](https://github.com/openclaw/openclaw/pull/93833) | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | Fix Azure Responses model alias routing |
 | 🔀&nbsp;[#93832](https://github.com/openclaw/openclaw/pull/93832) | 0 | OpenAI-compatible/proxy | @vincentkoc | feat(providers): add ClawRouter managed proxy<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#93829](https://github.com/openclaw/openclaw/pull/93829) | 0 | Model routing/config | @sunlit-deng | fix: /status usage follows session /model override instead of stale runtime provider |
@@ -1687,4 +1694,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 904 (383 issues, 521 PRs).
+- Kept open threads: 911 (384 issues, 527 PRs).

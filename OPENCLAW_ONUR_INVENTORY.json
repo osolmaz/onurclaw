@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 383,
-    "open_prs": 521,
-    "open_threads": 904
+    "open_issues": 384,
+    "open_prs": 527,
+    "open_threads": 911
   },
   "open_threads": [
     {
@@ -5853,6 +5853,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Alix-007",
+      "number": 93874,
+      "title": "fix(slack): recognize MiniMax mm: namespaced reasoning tags in monitor preview",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93874"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lzyyzznl",
+      "number": 93872,
+      "title": "fix(ollama): show full thinking levels for live-discovered models in /think menu",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93872"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@harjothkhara",
+      "number": 93868,
+      "title": "fix(gateway): dedupe TTS status provider diagnostics [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93868"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Jah-xy",
+      "number": 93864,
+      "title": "fix(ollama): show all thinking levels in /think menu for dynamically-discovered models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93864"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xydt-tanshanshan",
+      "number": 93853,
+      "title": "[AI] fix(agents): route memory embedding through generic resolution when provider has custom baseUrl",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93853"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lzyyzznl",
+      "number": 93844,
+      "title": "fix(ollama): resolve thinking profile for live-discovered models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/93844"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@civiltox",
+      "number": 93835,
+      "title": "[Bug]: Telegram /think menu shows only off for live-discovered Ollama thinking models, but /think &lt;level&gt; accepts them",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93835"
     },
     {
       "activity": 0,
@@ -12917,8 +12980,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 93824,
-    "pr": 93834
+    "issue": 93886,
+    "pr": 93874
   },
   "schema_version": 1,
   "updated": "2026-06-17"
