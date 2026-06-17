@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 393,
-    "open_prs": 556,
-    "open_threads": 949
+    "open_issues": 397,
+    "open_prs": 561,
+    "open_threads": 958
   },
   "open_threads": [
     {
@@ -5857,11 +5857,92 @@
     {
       "activity": 0,
       "area": "OpenAI-compatible/proxy",
+      "creator": "@Voltarr",
+      "number": 94275,
+      "title": "Google provider: AQ. format API keys rejected by OpenAI-compatible endpoint (HTTP 401)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94275"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@chrysb",
+      "number": 94269,
+      "title": "Z.ai static catalog models resolve without baseUrl and fall through to OpenAI API",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94269"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@natecl",
+      "number": 94261,
+      "title": "[Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94261"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@GuyMayer",
+      "number": 94258,
+      "title": "Bug: Tier routing not resolving tier-* aliases to actual models in v2026.6.8",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94258"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bennewell35",
+      "number": 94252,
+      "title": "fix(memory): scrub stale dreaming sessions on startup",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94252"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@tborer",
+      "number": 94251,
+      "title": "[Bug]: Ollama remote provider streaming not consumed — model_call:started never progresses in chat sessions",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94251"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Joel-Claw",
+      "number": 94244,
+      "title": "fix: strip plain-text reasoning from GLM-5.x models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94244"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
       "creator": "@adorbistech",
       "number": 94242,
       "title": "[Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/94242"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@SunnyShu0925",
+      "number": 94240,
+      "title": "fix(memory-core): degrade non-local embedding provider on persistent failure",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94240"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 94239,
+      "title": "fix(memory): align session file counter denominator with indexer filter",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94239"
     },
     {
       "activity": 0,
@@ -13323,8 +13404,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94243,
-    "pr": 94237
+    "issue": 94275,
+    "pr": 94283
   },
   "schema_version": 1,
   "updated": "2026-06-18"
