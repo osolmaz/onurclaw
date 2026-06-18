@@ -4,14 +4,17 @@ Updated: 2026-06-18
 
 Review watermark:
 
-- Last reviewed through issue: #94581.
-- Last reviewed through PR: #94580.
+- Last reviewed through issue: #94603.
+- Last reviewed through PR: #94608.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94590](https://github.com/openclaw/openclaw/pull/94590) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @bowenluo718 | feat(config): allow modelIdNormalization in models.providers config |
+| 🔀&nbsp;[#94585](https://github.com/openclaw/openclaw/pull/94585) | 2026-06-18 | 0 | Open-weight/provider behavior | @idootop | feat(xiaomi): add MiMo V2.5 models to the pay-as-you-go provider |
+| 🔀&nbsp;[#94582](https://github.com/openclaw/openclaw/pull/94582) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @bowenluo718 | fix(openai-completions): add disableBoundaryAwareCache compat option for prefix-matching cache providers |
 | 📝&nbsp;[#94581](https://github.com/openclaw/openclaw/issues/94581) | 2026-06-18 | 0 | Local memory/embedding | @junxuku-byte | Feature Request: memsearch agent_id filtering for multi-agent memory isolation |
 | 🔀&nbsp;[#94579](https://github.com/openclaw/openclaw/pull/94579) | 2026-06-18 | 0 | Local memory/embedding | @yunze7373 | feat(xmemo-memory): add bundled XMemo cloud memory plugin |
 | 🔀&nbsp;[#94564](https://github.com/openclaw/openclaw/pull/94564) | 2026-06-18 | 0 | Local memory/embedding | @esqandil | fix(memory-core): bound zero-hit forced sync so memory_search can't hang the whole deadline |
@@ -59,11 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94333](https://github.com/openclaw/openclaw/pull/94333) | 2026-06-18 | 0 | Model routing/config | @zhangqueping | fix(agents): read allowModelOverride from plugin config in context-engine capabilities |
 | 🔀&nbsp;[#94331](https://github.com/openclaw/openclaw/pull/94331) | 2026-06-18 | 0 | Model routing/config | @sheyanmin | fix: merge llm policy into plugin subagent override authorization |
 | 📝&nbsp;[#94330](https://github.com/openclaw/openclaw/issues/94330) | 2026-06-18 | 0 | Model routing/config | @wayrk | replay_invalid (stale thinking-block signature) surfaces a hard error + drops the user message instead of self-recovering |
-| 📝&nbsp;[#94316](https://github.com/openclaw/openclaw/issues/94316) | 2026-06-18 | 0 | Local memory/embedding | @rglover666 | Memory search tool cannot find local embedding provider even though CLI shows it as ready |
-| 🔀&nbsp;[#94311](https://github.com/openclaw/openclaw/pull/94311) | 2026-06-18 | 0 | Model routing/config | @lzyyzznl | fix: #94289 auto-grant lossless-claw model override from summaryModel config |
-| 🔀&nbsp;[#94297](https://github.com/openclaw/openclaw/pull/94297) | 2026-06-17 | 0 | Model routing/config | @zenglingbiao | fix(plugins): propagate llm.allowModelOverride to plugin subagent override policies (fixes #94289) |
 
-## OPEN THREADS (1010)
+## OPEN THREADS (1013)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 960 open threads, sorted by activity</summary>
+<summary>Remaining 963 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94590](https://github.com/openclaw/openclaw/pull/94590) | 0 | OpenAI-compatible/proxy | @bowenluo718 | feat(config): allow modelIdNormalization in models.providers config |
+| 🔀&nbsp;[#94585](https://github.com/openclaw/openclaw/pull/94585) | 0 | Open-weight/provider behavior | @idootop | feat(xiaomi): add MiMo V2.5 models to the pay-as-you-go provider |
+| 🔀&nbsp;[#94582](https://github.com/openclaw/openclaw/pull/94582) | 0 | OpenAI-compatible/proxy | @bowenluo718 | fix(openai-completions): add disableBoundaryAwareCache compat option for prefix-matching cache providers |
 | 📝&nbsp;[#94581](https://github.com/openclaw/openclaw/issues/94581) | 0 | Local memory/embedding | @junxuku-byte | Feature Request: memsearch agent_id filtering for multi-agent memory isolation |
 | 🔀&nbsp;[#94579](https://github.com/openclaw/openclaw/pull/94579) | 0 | Local memory/embedding | @yunze7373 | feat(xmemo-memory): add bundled XMemo cloud memory plugin |
 | 🔀&nbsp;[#94564](https://github.com/openclaw/openclaw/pull/94564) | 0 | Local memory/embedding | @esqandil | fix(memory-core): bound zero-hit forced sync so memory_search can't hang the whole deadline |
@@ -1793,4 +1796,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1010 (412 issues, 598 PRs).
+- Kept open threads: 1013 (412 issues, 601 PRs).
