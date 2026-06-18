@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 402,
-    "open_prs": 577,
-    "open_threads": 979
+    "open_issues": 406,
+    "open_prs": 593,
+    "open_threads": 999
   },
   "open_threads": [
     {
@@ -5856,12 +5856,192 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chenweicong736",
+      "number": 94509,
+      "title": "fix(memory-wiki): honor durable: true frontmatter in stale pages report",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94509"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lsr911",
+      "number": 94503,
+      "title": "fix(compaction): emit after_compaction hook even when compacted:false",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94503"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@garrytan-agents",
+      "number": 94500,
+      "title": "memory_search tool reports \"index metadata is missing\" in-gateway while CLI reads the same store as healthy (identity resolved before provider init, never recomputed)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94500"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@LZY3538",
+      "number": 94495,
+      "title": "fix(ollama): add request timeout fallback for remote hosts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94495"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xialonglee",
+      "number": 94494,
+      "title": "fix(agents): map cacheRetention 'standard' to 'short' for Bedrock Claude models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94494"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@LZY3538",
+      "number": 94493,
+      "title": "fix(anthropic): strip thinking blocks from completed prior assistant turns",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94493"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@LZY3538",
+      "number": 94490,
+      "title": "fix(compaction): wire aggregate retry timeout through compaction.timeoutSeconds",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94490"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhiqiang26",
+      "number": 94487,
+      "title": "fix: #94482 normalize cacheRetention 'standard' to 'short'",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94487"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@aaronedell",
+      "number": 94482,
+      "title": "Bedrock Claude cacheRetention='standard' is silently ignored",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94482"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@lsr911",
+      "number": 94481,
+      "title": "fix(edit): unwrap XML-RPC {item: {oldText, newText}} edit transport shape",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94481"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@TurboTheTurtle",
+      "number": 94478,
+      "title": "fix(codex): restore openai-codex catalog alias",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94478"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xydt-tanshanshan",
+      "number": 94477,
+      "title": "[AI] fix(session): add session.restartContinuation config to preserve sessionId across Gateway restart",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94477"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@LiuwqGit",
+      "number": 94473,
+      "title": "fix(provider-catalog): use apiKey fallback for self-hosted discovery when discoveryApiKey is undefined (fixes #83461)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94473"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Pandah97",
+      "number": 94461,
+      "title": "fix(zai): fall back to manifest baseUrl for synthesized GLM-5 models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94461"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hurtlovewow",
+      "number": 94458,
+      "title": "lossless-claw bootstraps into quarantine after every Gateway restart due to new sessionId generating fresh JSONL file",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94458"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xydttsw",
+      "number": 94446,
+      "title": "fix(context-engine): eagerly resolve plugin LLM policy from config for model override authority",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94446"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ZengWen-DT",
+      "number": 94443,
+      "title": "fix(memory-wiki): retry transient source-page rewrite race instead of aborting wiki_status",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94443"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lzyyzznl",
+      "number": 94440,
+      "title": "fix: #94432 classify Cloudflare challenge 403 as upstream_html instead of auth_html",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94440"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@pbm9z95m6z-hue",
+      "number": 94432,
+      "title": "OpenAI/Codex OAuth provider fails with Cloudflare HTML 403 from chatgpt.com/backend-api",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94432"
+    },
+    {
+      "activity": 0,
       "area": "Model routing/config",
       "creator": "@xiongxiaoyang-cell",
       "number": 94430,
       "title": "fix(errors): recognize content policy / new_sensitive errors as rate_limit for fallback",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/94430"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhiqiang26",
+      "number": 94429,
+      "title": "fix: #94391 将 compaction aggregate timeout 从硬编码 60s 改为读取 compaction.timeoutSeconds 配置",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94429"
     },
     {
       "activity": 0,
@@ -13593,8 +13773,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94426,
-    "pr": 94431
+    "issue": 94504,
+    "pr": 94509
   },
   "schema_version": 1,
   "updated": "2026-06-18"

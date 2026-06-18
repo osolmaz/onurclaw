@@ -4,15 +4,35 @@ Updated: 2026-06-18
 
 Review watermark:
 
-- Last reviewed through issue: #94426.
-- Last reviewed through PR: #94431.
+- Last reviewed through issue: #94504.
+- Last reviewed through PR: #94509.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94509](https://github.com/openclaw/openclaw/pull/94509) | 2026-06-18 | 0 | Local memory/embedding | @chenweicong736 | fix(memory-wiki): honor durable: true frontmatter in stale pages report |
+| 🔀&nbsp;[#94503](https://github.com/openclaw/openclaw/pull/94503) | 2026-06-18 | 0 | Local memory/embedding | @lsr911 | fix(compaction): emit after_compaction hook even when compacted:false |
+| 📝&nbsp;[#94500](https://github.com/openclaw/openclaw/issues/94500) | 2026-06-18 | 0 | Local memory/embedding | @garrytan-agents | memory_search tool reports "index metadata is missing" in-gateway while CLI reads the same store as healthy (identity resolved before provider init, never recomputed) |
+| 🔀&nbsp;[#94495](https://github.com/openclaw/openclaw/pull/94495) | 2026-06-18 | 0 | Local model runtime | @LZY3538 | fix(ollama): add request timeout fallback for remote hosts |
+| 🔀&nbsp;[#94494](https://github.com/openclaw/openclaw/pull/94494) | 2026-06-18 | 0 | Model routing/config | @xialonglee | fix(agents): map cacheRetention 'standard' to 'short' for Bedrock Claude models |
+| 🔀&nbsp;[#94493](https://github.com/openclaw/openclaw/pull/94493) | 2026-06-18 | 0 | Model routing/config | @LZY3538 | fix(anthropic): strip thinking blocks from completed prior assistant turns |
+| 🔀&nbsp;[#94490](https://github.com/openclaw/openclaw/pull/94490) | 2026-06-18 | 0 | Model routing/config | @LZY3538 | fix(compaction): wire aggregate retry timeout through compaction.timeoutSeconds |
+| 🔀&nbsp;[#94487](https://github.com/openclaw/openclaw/pull/94487) | 2026-06-18 | 0 | Model routing/config | @zhiqiang26 | fix: #94482 normalize cacheRetention 'standard' to 'short' |
+| 📝&nbsp;[#94482](https://github.com/openclaw/openclaw/issues/94482) | 2026-06-18 | 0 | Model routing/config | @aaronedell | Bedrock Claude cacheRetention='standard' is silently ignored |
+| 🔀&nbsp;[#94481](https://github.com/openclaw/openclaw/pull/94481) | 2026-06-18 | 0 | Open-weight/provider behavior | @lsr911 | fix(edit): unwrap XML-RPC {item: {oldText, newText}} edit transport shape |
+| 🔀&nbsp;[#94478](https://github.com/openclaw/openclaw/pull/94478) | 2026-06-18 | 0 | Model routing/config | @TurboTheTurtle | fix(codex): restore openai-codex catalog alias |
+| 🔀&nbsp;[#94477](https://github.com/openclaw/openclaw/pull/94477) | 2026-06-18 | 0 | Model routing/config | @xydt-tanshanshan | [AI] fix(session): add session.restartContinuation config to preserve sessionId across Gateway restart |
+| 🔀&nbsp;[#94473](https://github.com/openclaw/openclaw/pull/94473) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @LiuwqGit | fix(provider-catalog): use apiKey fallback for self-hosted discovery when discoveryApiKey is undefined (fixes #83461) |
+| 🔀&nbsp;[#94461](https://github.com/openclaw/openclaw/pull/94461) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @Pandah97 | fix(zai): fall back to manifest baseUrl for synthesized GLM-5 models |
+| 📝&nbsp;[#94458](https://github.com/openclaw/openclaw/issues/94458) | 2026-06-18 | 0 | Model routing/config | @hurtlovewow | lossless-claw bootstraps into quarantine after every Gateway restart due to new sessionId generating fresh JSONL file |
+| 🔀&nbsp;[#94446](https://github.com/openclaw/openclaw/pull/94446) | 2026-06-18 | 0 | Model routing/config | @xydttsw | fix(context-engine): eagerly resolve plugin LLM policy from config for model override authority |
+| 🔀&nbsp;[#94443](https://github.com/openclaw/openclaw/pull/94443) | 2026-06-18 | 0 | Local memory/embedding | @ZengWen-DT | fix(memory-wiki): retry transient source-page rewrite race instead of aborting wiki_status |
+| 🔀&nbsp;[#94440](https://github.com/openclaw/openclaw/pull/94440) | 2026-06-18 | 0 | Model routing/config | @lzyyzznl | fix: #94432 classify Cloudflare challenge 403 as upstream_html instead of auth_html |
+| 📝&nbsp;[#94432](https://github.com/openclaw/openclaw/issues/94432) | 2026-06-18 | 0 | Model routing/config | @pbm9z95m6z-hue | OpenAI/Codex OAuth provider fails with Cloudflare HTML 403 from chatgpt.com/backend-api |
 | 🔀&nbsp;[#94430](https://github.com/openclaw/openclaw/pull/94430) | 2026-06-18 | 0 | Model routing/config | @xiongxiaoyang-cell | fix(errors): recognize content policy / new_sensitive errors as rate_limit for fallback |
+| 🔀&nbsp;[#94429](https://github.com/openclaw/openclaw/pull/94429) | 2026-06-18 | 0 | Model routing/config | @zhiqiang26 | fix: #94391 将 compaction aggregate timeout 从硬编码 60s 改为读取 compaction.timeoutSeconds 配置 |
 | 🔀&nbsp;[#94419](https://github.com/openclaw/openclaw/pull/94419) | 2026-06-18 | 0 | Open-weight/provider behavior | @Omee11 | feat(qwen): add Token Plan (Team Edition) provider |
 | 📝&nbsp;[#94418](https://github.com/openclaw/openclaw/issues/94418) | 2026-06-18 | 0 | Open-weight/provider behavior | @Omee11 | [Feature]: Alibaba Model Studio Token Plan (Team Edition) provider |
 | 🔀&nbsp;[#94404](https://github.com/openclaw/openclaw/pull/94404) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @xydttsw | fix(zai): fall back to default baseUrl when template lacks one for catalog models |
@@ -42,28 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94244](https://github.com/openclaw/openclaw/pull/94244) | 2026-06-17 | 0 | Open-weight/provider behavior | @Joel-Claw | fix: strip plain-text reasoning from GLM-5.x models |
 | 📝&nbsp;[#94242](https://github.com/openclaw/openclaw/issues/94242) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @adorbistech | [Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin |
 | 🔀&nbsp;[#94240](https://github.com/openclaw/openclaw/pull/94240) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @SunnyShu0925 | fix(memory-core): degrade non-local embedding provider on persistent failure |
-| 🔀&nbsp;[#94239](https://github.com/openclaw/openclaw/pull/94239) | 2026-06-17 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter |
-| 🔀&nbsp;[#94234](https://github.com/openclaw/openclaw/pull/94234) | 2026-06-17 | 0 | Model routing/config | @lsr911 | fix(anthropic): allow failover for thinking signature replay errors |
-| 📝&nbsp;[#94228](https://github.com/openclaw/openclaw/issues/94228) | 2026-06-17 | 0 | Model routing/config | @eugkhp | Native Anthropic path: replaying historical `thinking` blocks bricks long tool-use threads (`Invalid signature in thinking block` 400) |
-| 🔀&nbsp;[#94214](https://github.com/openclaw/openclaw/pull/94214) | 2026-06-17 | 0 | Local model runtime | @Pandah97 | fix(ollama): resolve thinking profile for live-discovered models |
-| 🔀&nbsp;[#94210](https://github.com/openclaw/openclaw/pull/94210) | 2026-06-17 | 0 | Model routing/config | @Pandah97 | fix(cli): resolve 200K context window fallback in status command |
-| 🔀&nbsp;[#94209](https://github.com/openclaw/openclaw/pull/94209) | 2026-06-17 | 0 | Model routing/config | @lsr911 | fix(model): cap contextWindow at native runtime catalog limit when user config exceeds it |
-| 📝&nbsp;[#94184](https://github.com/openclaw/openclaw/issues/94184) | 2026-06-17 | 0 | Model routing/config | @Sleepyarno | Externalised @openclaw/codex (openai-codex OAuth) provider fails to register catalog on 2026.6.x (works on 2026.5.27) |
-| 🔀&nbsp;[#94180](https://github.com/openclaw/openclaw/pull/94180) | 2026-06-17 | 0 | Local memory/embedding | @SunnyShu0925 | feat(memory-core): allow private network endpoints for memory embeddi… |
-| 📝&nbsp;[#94166](https://github.com/openclaw/openclaw/issues/94166) | 2026-06-17 | 0 | Local memory/embedding | @dmorn | memory-core OpenAI-compatible embeddings cannot use explicitly configured private endpoints |
-| 🔀&nbsp;[#94165](https://github.com/openclaw/openclaw/pull/94165) | 2026-06-17 | 0 | Open-weight/provider behavior | @Alix-007 | fix(control-ui): recognize namespaced reasoning tags in thinking extraction |
-| 🔀&nbsp;[#94136](https://github.com/openclaw/openclaw/pull/94136) | 2026-06-17 | 0 | Open-weight/provider behavior | @BorClaw | fix(zai): expose GLM-5.2 reasoning levels [AI-assisted] |
-| 🔀&nbsp;[#94135](https://github.com/openclaw/openclaw/pull/94135) | 2026-06-17 | 0 | Local memory/embedding | @Pick-cat | fix(memory-core): index memory path in FTS text for filename queries (fixes #94102) |
-| 📝&nbsp;[#94125](https://github.com/openclaw/openclaw/issues/94125) | 2026-06-17 | 0 | Local memory/embedding | @thedoctormes-hue | [Bug]: Memory search completely broken — FTS-only hangs, embeddings hang, --force corrupts meta (Ollama/bge-m3, Linux, 2026.6.8) |
-| 🔀&nbsp;[#94114](https://github.com/openclaw/openclaw/pull/94114) | 2026-06-17 | 0 | Local memory/embedding | @zhangguiping-xydt | fix(memory-core): include path in FTS indexed text so filename tokens are searchable |
-| 🔀&nbsp;[#94106](https://github.com/openclaw/openclaw/pull/94106) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @yetval | fix(secrets): scope env scrub to migrated providers' vars |
-| 📝&nbsp;[#94102](https://github.com/openclaw/openclaw/issues/94102) | 2026-06-17 | 0 | Local memory/embedding | @alexph-dev | memory_search ranks filename/date-token queries poorly despite clean index and working content search |
-| 🔀&nbsp;[#94071](https://github.com/openclaw/openclaw/pull/94071) | 2026-06-17 | 0 | Local memory/embedding | @zhanxingxin1998 | fix(memory-lancedb): stop forwarding embedding dimensions upstream |
-| 🔀&nbsp;[#94067](https://github.com/openclaw/openclaw/pull/94067) | 2026-06-17 | 0 | Local model runtime | @openperf | fix(channels): resolve native /think menu levels via runtime catalog for live-discovered models |
-| 🔀&nbsp;[#94066](https://github.com/openclaw/openclaw/pull/94066) | 2026-06-17 | 0 | Open-weight/provider behavior | @zhanxingxin1998 | fix(qwen): enable qwen3.6-plus on Coding Plan CN, correct reasoning flag |
-| 🔀&nbsp;[#94064](https://github.com/openclaw/openclaw/pull/94064) | 2026-06-17 | 0 | Model/provider behavior | @zhanxingxin1998 | feat(huggingface): add text-to-image generation via hf-inference Inference Providers route |
 
-## OPEN THREADS (979)
+## OPEN THREADS (999)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 929 open threads, sorted by activity</summary>
+<summary>Remaining 949 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,7 +198,27 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94509](https://github.com/openclaw/openclaw/pull/94509) | 0 | Local memory/embedding | @chenweicong736 | fix(memory-wiki): honor durable: true frontmatter in stale pages report |
+| 🔀&nbsp;[#94503](https://github.com/openclaw/openclaw/pull/94503) | 0 | Local memory/embedding | @lsr911 | fix(compaction): emit after_compaction hook even when compacted:false |
+| 📝&nbsp;[#94500](https://github.com/openclaw/openclaw/issues/94500) | 0 | Local memory/embedding | @garrytan-agents | memory_search tool reports "index metadata is missing" in-gateway while CLI reads the same store as healthy (identity resolved before provider init, never recomputed) |
+| 🔀&nbsp;[#94495](https://github.com/openclaw/openclaw/pull/94495) | 0 | Local model runtime | @LZY3538 | fix(ollama): add request timeout fallback for remote hosts |
+| 🔀&nbsp;[#94494](https://github.com/openclaw/openclaw/pull/94494) | 0 | Model routing/config | @xialonglee | fix(agents): map cacheRetention 'standard' to 'short' for Bedrock Claude models |
+| 🔀&nbsp;[#94493](https://github.com/openclaw/openclaw/pull/94493) | 0 | Model routing/config | @LZY3538 | fix(anthropic): strip thinking blocks from completed prior assistant turns |
+| 🔀&nbsp;[#94490](https://github.com/openclaw/openclaw/pull/94490) | 0 | Model routing/config | @LZY3538 | fix(compaction): wire aggregate retry timeout through compaction.timeoutSeconds |
+| 🔀&nbsp;[#94487](https://github.com/openclaw/openclaw/pull/94487) | 0 | Model routing/config | @zhiqiang26 | fix: #94482 normalize cacheRetention 'standard' to 'short' |
+| 📝&nbsp;[#94482](https://github.com/openclaw/openclaw/issues/94482) | 0 | Model routing/config | @aaronedell | Bedrock Claude cacheRetention='standard' is silently ignored |
+| 🔀&nbsp;[#94481](https://github.com/openclaw/openclaw/pull/94481) | 0 | Open-weight/provider behavior | @lsr911 | fix(edit): unwrap XML-RPC {item: {oldText, newText}} edit transport shape |
+| 🔀&nbsp;[#94478](https://github.com/openclaw/openclaw/pull/94478) | 0 | Model routing/config | @TurboTheTurtle | fix(codex): restore openai-codex catalog alias |
+| 🔀&nbsp;[#94477](https://github.com/openclaw/openclaw/pull/94477) | 0 | Model routing/config | @xydt-tanshanshan | [AI] fix(session): add session.restartContinuation config to preserve sessionId across Gateway restart |
+| 🔀&nbsp;[#94473](https://github.com/openclaw/openclaw/pull/94473) | 0 | OpenAI-compatible/proxy | @LiuwqGit | fix(provider-catalog): use apiKey fallback for self-hosted discovery when discoveryApiKey is undefined (fixes #83461) |
+| 🔀&nbsp;[#94461](https://github.com/openclaw/openclaw/pull/94461) | 0 | OpenAI-compatible/proxy | @Pandah97 | fix(zai): fall back to manifest baseUrl for synthesized GLM-5 models |
+| 📝&nbsp;[#94458](https://github.com/openclaw/openclaw/issues/94458) | 0 | Model routing/config | @hurtlovewow | lossless-claw bootstraps into quarantine after every Gateway restart due to new sessionId generating fresh JSONL file |
+| 🔀&nbsp;[#94446](https://github.com/openclaw/openclaw/pull/94446) | 0 | Model routing/config | @xydttsw | fix(context-engine): eagerly resolve plugin LLM policy from config for model override authority |
+| 🔀&nbsp;[#94443](https://github.com/openclaw/openclaw/pull/94443) | 0 | Local memory/embedding | @ZengWen-DT | fix(memory-wiki): retry transient source-page rewrite race instead of aborting wiki_status |
+| 🔀&nbsp;[#94440](https://github.com/openclaw/openclaw/pull/94440) | 0 | Model routing/config | @lzyyzznl | fix: #94432 classify Cloudflare challenge 403 as upstream_html instead of auth_html |
+| 📝&nbsp;[#94432](https://github.com/openclaw/openclaw/issues/94432) | 0 | Model routing/config | @pbm9z95m6z-hue | OpenAI/Codex OAuth provider fails with Cloudflare HTML 403 from chatgpt.com/backend-api |
 | 🔀&nbsp;[#94430](https://github.com/openclaw/openclaw/pull/94430) | 0 | Model routing/config | @xiongxiaoyang-cell | fix(errors): recognize content policy / new_sensitive errors as rate_limit for fallback |
+| 🔀&nbsp;[#94429](https://github.com/openclaw/openclaw/pull/94429) | 0 | Model routing/config | @zhiqiang26 | fix: #94391 将 compaction aggregate timeout 从硬编码 60s 改为读取 compaction.timeoutSeconds 配置 |
 | 🔀&nbsp;[#94419](https://github.com/openclaw/openclaw/pull/94419) | 0 | Open-weight/provider behavior | @Omee11 | feat(qwen): add Token Plan (Team Edition) provider |
 | 📝&nbsp;[#94418](https://github.com/openclaw/openclaw/issues/94418) | 0 | Open-weight/provider behavior | @Omee11 | [Feature]: Alibaba Model Studio Token Plan (Team Edition) provider |
 | 🔀&nbsp;[#94404](https://github.com/openclaw/openclaw/pull/94404) | 0 | OpenAI-compatible/proxy | @xydttsw | fix(zai): fall back to default baseUrl when template lacks one for catalog models |
@@ -1762,4 +1782,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 979 (402 issues, 577 PRs).
+- Kept open threads: 999 (406 issues, 593 PRs).
