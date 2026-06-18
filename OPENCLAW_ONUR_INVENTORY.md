@@ -4,14 +4,15 @@ Updated: 2026-06-19
 
 Review watermark:
 
-- Last reviewed through issue: #94679.
-- Last reviewed through PR: #94683.
+- Last reviewed through issue: #94692.
+- Last reviewed through PR: #94687.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#94686](https://github.com/openclaw/openclaw/issues/94686) | 2026-06-18 | 0 | Model/provider behavior | @CarotaWealth | Critical Fleet Stability Issues — Multi-Agent Session Crashes (thinking block corruption, session bloat, cron contention) |
 | 🔀&nbsp;[#94671](https://github.com/openclaw/openclaw/pull/94671) | 2026-06-18 | 0 | Local memory/embedding | @vincentkoc | feat(memory): unify agent-scoped memory configuration<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#94665](https://github.com/openclaw/openclaw/pull/94665) | 2026-06-18 | 0 | Local memory/embedding | @lzyyzznl | fix: #92302 preserve Windows absolute paths in QMD command resolution |
 | 🔀&nbsp;[#94662](https://github.com/openclaw/openclaw/pull/94662) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @XSIRIX | fix(xai): allow private self-hosted Responses endpoints |
@@ -61,9 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94429](https://github.com/openclaw/openclaw/pull/94429) | 2026-06-18 | 0 | Model routing/config | @zhiqiang26 | fix: #94391 将 compaction aggregate timeout 从硬编码 60s 改为读取 compaction.timeoutSeconds 配置 |
 | 🔀&nbsp;[#94419](https://github.com/openclaw/openclaw/pull/94419) | 2026-06-18 | 0 | Open-weight/provider behavior | @Omee11 | feat(qwen): add Token Plan (Team Edition) provider |
 | 📝&nbsp;[#94418](https://github.com/openclaw/openclaw/issues/94418) | 2026-06-18 | 0 | Open-weight/provider behavior | @Omee11 | [Feature]: Alibaba Model Studio Token Plan (Team Edition) provider |
-| 🔀&nbsp;[#94404](https://github.com/openclaw/openclaw/pull/94404) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @xydttsw | fix(zai): fall back to default baseUrl when template lacks one for catalog models |
 
-## OPEN THREADS (1025)
+## OPEN THREADS (1026)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 975 open threads, sorted by activity</summary>
+<summary>Remaining 976 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,7 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#94686](https://github.com/openclaw/openclaw/issues/94686) | 0 | Model/provider behavior | @CarotaWealth | Critical Fleet Stability Issues — Multi-Agent Session Crashes (thinking block corruption, session bloat, cron contention) |
 | 🔀&nbsp;[#94671](https://github.com/openclaw/openclaw/pull/94671) | 0 | Local memory/embedding | @vincentkoc | feat(memory): unify agent-scoped memory configuration<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#94665](https://github.com/openclaw/openclaw/pull/94665) | 0 | Local memory/embedding | @lzyyzznl | fix: #92302 preserve Windows absolute paths in QMD command resolution |
 | 🔀&nbsp;[#94662](https://github.com/openclaw/openclaw/pull/94662) | 0 | OpenAI-compatible/proxy | @XSIRIX | fix(xai): allow private self-hosted Responses endpoints |
@@ -1808,4 +1809,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1025 (415 issues, 610 PRs).
+- Kept open threads: 1026 (416 issues, 610 PRs).
