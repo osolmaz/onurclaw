@@ -4,14 +4,21 @@ Updated: 2026-06-18
 
 Review watermark:
 
-- Last reviewed through issue: #94370.
-- Last reviewed through PR: #94374.
+- Last reviewed through issue: #94426.
+- Last reviewed through PR: #94431.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94430](https://github.com/openclaw/openclaw/pull/94430) | 2026-06-18 | 0 | Model routing/config | @xiongxiaoyang-cell | fix(errors): recognize content policy / new_sensitive errors as rate_limit for fallback |
+| 🔀&nbsp;[#94419](https://github.com/openclaw/openclaw/pull/94419) | 2026-06-18 | 0 | Open-weight/provider behavior | @Omee11 | feat(qwen): add Token Plan (Team Edition) provider |
+| 📝&nbsp;[#94418](https://github.com/openclaw/openclaw/issues/94418) | 2026-06-18 | 0 | Open-weight/provider behavior | @Omee11 | [Feature]: Alibaba Model Studio Token Plan (Team Edition) provider |
+| 🔀&nbsp;[#94404](https://github.com/openclaw/openclaw/pull/94404) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @xydttsw | fix(zai): fall back to default baseUrl when template lacks one for catalog models |
+| 🔀&nbsp;[#94402](https://github.com/openclaw/openclaw/pull/94402) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @Jah-xy | fix: handle object-format data and URL-safe base64 from OpenAI-compatible proxy responses |
+| 🔀&nbsp;[#94401](https://github.com/openclaw/openclaw/pull/94401) | 2026-06-18 | 0 | Local memory/embedding | @SunnyShu0925 | fix(session-memory): skip transcript-only assistant messages in getRecentSessionContent |
+| 🔀&nbsp;[#94378](https://github.com/openclaw/openclaw/pull/94378) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @zhiqiang26 | fix(image-gen): skip invalid entries in OpenAI-compatible image response parsing |
 | 🔀&nbsp;[#94372](https://github.com/openclaw/openclaw/pull/94372) | 2026-06-18 | 0 | Model routing/config | @ajwan8998 | fix(cli): resolve context window from context.ts to ensure cache is loaded |
 | 📝&nbsp;[#94367](https://github.com/openclaw/openclaw/issues/94367) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @ff5278 | [Bug]: Image generation "response malformed" when using OpenAI-compatible proxy with valid b64_json response |
 | 🔀&nbsp;[#94362](https://github.com/openclaw/openclaw/pull/94362) | 2026-06-18 | 0 | Local model runtime | @lizanle521 | fix: improve Ollama thinking profile resolution for live-discovered reasoning models using name heuristic |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94067](https://github.com/openclaw/openclaw/pull/94067) | 2026-06-17 | 0 | Local model runtime | @openperf | fix(channels): resolve native /think menu levels via runtime catalog for live-discovered models |
 | 🔀&nbsp;[#94066](https://github.com/openclaw/openclaw/pull/94066) | 2026-06-17 | 0 | Open-weight/provider behavior | @zhanxingxin1998 | fix(qwen): enable qwen3.6-plus on Coding Plan CN, correct reasoning flag |
 | 🔀&nbsp;[#94064](https://github.com/openclaw/openclaw/pull/94064) | 2026-06-17 | 0 | Model/provider behavior | @zhanxingxin1998 | feat(huggingface): add text-to-image generation via hf-inference Inference Providers route |
-| 🔀&nbsp;[#94062](https://github.com/openclaw/openclaw/pull/94062) | 2026-06-17 | 0 | Local model runtime | @hugenshen | fix(agents): classify generic "LLM request failed." as transient time… |
-| 🔀&nbsp;[#94038](https://github.com/openclaw/openclaw/pull/94038) | 2026-06-17 | 0 | Open-weight/provider behavior | @zhangguiping-xydt | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor replies |
-| 🔀&nbsp;[#94021](https://github.com/openclaw/openclaw/pull/94021) | 2026-06-17 | 0 | Local model runtime | @lsr911 | fix(agents): classify local model not loaded/ready as overloaded for model fallback |
-| 🔀&nbsp;[#94017](https://github.com/openclaw/openclaw/pull/94017) | 2026-06-17 | 0 | Local model runtime | @mazhuima | fix(think): skip provider profile when model not in catalog |
-| 🔀&nbsp;[#94012](https://github.com/openclaw/openclaw/pull/94012) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @vincentkoc | feat: route canonical provider models through ClawRouter |
-| 🔀&nbsp;[#94011](https://github.com/openclaw/openclaw/pull/94011) | 2026-06-17 | 0 | Model routing/config | @ajwan8998 | fix(cron): treat generic 'LLM request failed' error as transient server_error |
-| 🔀&nbsp;[#94004](https://github.com/openclaw/openclaw/pull/94004) | 2026-06-17 | 0 | Local memory/embedding | @vincentkoc | refactor(sqlite): canonicalize memory and proxy storage<br>Assignee: vincentkoc |
 
-## OPEN THREADS (972)
+## OPEN THREADS (979)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 922 open threads, sorted by activity</summary>
+<summary>Remaining 929 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94430](https://github.com/openclaw/openclaw/pull/94430) | 0 | Model routing/config | @xiongxiaoyang-cell | fix(errors): recognize content policy / new_sensitive errors as rate_limit for fallback |
+| 🔀&nbsp;[#94419](https://github.com/openclaw/openclaw/pull/94419) | 0 | Open-weight/provider behavior | @Omee11 | feat(qwen): add Token Plan (Team Edition) provider |
+| 📝&nbsp;[#94418](https://github.com/openclaw/openclaw/issues/94418) | 0 | Open-weight/provider behavior | @Omee11 | [Feature]: Alibaba Model Studio Token Plan (Team Edition) provider |
+| 🔀&nbsp;[#94404](https://github.com/openclaw/openclaw/pull/94404) | 0 | OpenAI-compatible/proxy | @xydttsw | fix(zai): fall back to default baseUrl when template lacks one for catalog models |
+| 🔀&nbsp;[#94402](https://github.com/openclaw/openclaw/pull/94402) | 0 | OpenAI-compatible/proxy | @Jah-xy | fix: handle object-format data and URL-safe base64 from OpenAI-compatible proxy responses |
+| 🔀&nbsp;[#94401](https://github.com/openclaw/openclaw/pull/94401) | 0 | Local memory/embedding | @SunnyShu0925 | fix(session-memory): skip transcript-only assistant messages in getRecentSessionContent |
+| 🔀&nbsp;[#94378](https://github.com/openclaw/openclaw/pull/94378) | 0 | OpenAI-compatible/proxy | @zhiqiang26 | fix(image-gen): skip invalid entries in OpenAI-compatible image response parsing |
 | 🔀&nbsp;[#94372](https://github.com/openclaw/openclaw/pull/94372) | 0 | Model routing/config | @ajwan8998 | fix(cli): resolve context window from context.ts to ensure cache is loaded |
 | 📝&nbsp;[#94367](https://github.com/openclaw/openclaw/issues/94367) | 0 | OpenAI-compatible/proxy | @ff5278 | [Bug]: Image generation "response malformed" when using OpenAI-compatible proxy with valid b64_json response |
 | 🔀&nbsp;[#94362](https://github.com/openclaw/openclaw/pull/94362) | 0 | Local model runtime | @lizanle521 | fix: improve Ollama thinking profile resolution for live-discovered reasoning models using name heuristic |
@@ -1755,4 +1762,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 972 (401 issues, 571 PRs).
+- Kept open threads: 979 (402 issues, 577 PRs).

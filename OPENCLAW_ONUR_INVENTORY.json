@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 401,
-    "open_prs": 571,
-    "open_threads": 972
+    "open_issues": 402,
+    "open_prs": 577,
+    "open_threads": 979
   },
   "open_threads": [
     {
@@ -5853,6 +5853,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xiongxiaoyang-cell",
+      "number": 94430,
+      "title": "fix(errors): recognize content policy / new_sensitive errors as rate_limit for fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94430"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Omee11",
+      "number": 94419,
+      "title": "feat(qwen): add Token Plan (Team Edition) provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94419"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Omee11",
+      "number": 94418,
+      "title": "[Feature]: Alibaba Model Studio Token Plan (Team Edition) provider",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94418"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@xydttsw",
+      "number": 94404,
+      "title": "fix(zai): fall back to default baseUrl when template lacks one for catalog models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94404"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Jah-xy",
+      "number": 94402,
+      "title": "fix: handle object-format data and URL-safe base64 from OpenAI-compatible proxy responses",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94402"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SunnyShu0925",
+      "number": 94401,
+      "title": "fix(session-memory): skip transcript-only assistant messages in getRecentSessionContent",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94401"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@zhiqiang26",
+      "number": 94378,
+      "title": "fix(image-gen): skip invalid entries in OpenAI-compatible image response parsing",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94378"
     },
     {
       "activity": 0,
@@ -13530,8 +13593,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94370,
-    "pr": 94374
+    "issue": 94426,
+    "pr": 94431
   },
   "schema_version": 1,
   "updated": "2026-06-18"
