@@ -4,14 +4,20 @@ Updated: 2026-06-18
 
 Review watermark:
 
-- Last reviewed through issue: #94504.
-- Last reviewed through PR: #94509.
+- Last reviewed through issue: #94547.
+- Last reviewed through PR: #94545.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#94547](https://github.com/openclaw/openclaw/issues/94547) | 2026-06-18 | 0 | Model/provider behavior | @TwinsLee | [Bug]: @openclaw/feishu bitable write tools emit invalid JSON Schema (empty patternProperties sub-schema) — breaks Anthropic via AWS Bedrock |
+| 🔀&nbsp;[#94540](https://github.com/openclaw/openclaw/pull/94540) | 2026-06-18 | 0 | Model routing/config | @sunlit-deng | fix: LCM compaction fails: allowModelOverride not propagated to plugin runtime client until config hot-reload |
+| 🔀&nbsp;[#94537](https://github.com/openclaw/openclaw/pull/94537) | 2026-06-18 | 0 | Local memory/embedding | @SunnyShu0925 | fix(memory-core): harden dreaming daily-file writes and drain dangling recall refs |
+| 📝&nbsp;[#94534](https://github.com/openclaw/openclaw/issues/94534) | 2026-06-18 | 0 | Model routing/config | @davidcittadini | Recurring "Invalid signature in thinking block" poisons sessions across agents |
+| 🔀&nbsp;[#94520](https://github.com/openclaw/openclaw/pull/94520) | 2026-06-18 | 0 | Model/provider behavior | @pedrosbraga | fix(xai): normalize grok web search tools |
+| 📝&nbsp;[#94518](https://github.com/openclaw/openclaw/issues/94518) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @xiep-dot | DeepSeek cache hit rate <10% after 6.x upgrade - boundary-aware caching breaks prefix matching |
 | 🔀&nbsp;[#94509](https://github.com/openclaw/openclaw/pull/94509) | 2026-06-18 | 0 | Local memory/embedding | @chenweicong736 | fix(memory-wiki): honor durable: true frontmatter in stale pages report |
 | 🔀&nbsp;[#94503](https://github.com/openclaw/openclaw/pull/94503) | 2026-06-18 | 0 | Local memory/embedding | @lsr911 | fix(compaction): emit after_compaction hook even when compacted:false |
 | 📝&nbsp;[#94500](https://github.com/openclaw/openclaw/issues/94500) | 2026-06-18 | 0 | Local memory/embedding | @garrytan-agents | memory_search tool reports "index metadata is missing" in-gateway while CLI reads the same store as healthy (identity resolved before provider init, never recomputed) |
@@ -56,14 +62,8 @@ Review watermark:
 | 📝&nbsp;[#94275](https://github.com/openclaw/openclaw/issues/94275) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @Voltarr | Google provider: AQ. format API keys rejected by OpenAI-compatible endpoint (HTTP 401) |
 | 📝&nbsp;[#94269](https://github.com/openclaw/openclaw/issues/94269) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @chrysb | Z.ai static catalog models resolve without baseUrl and fall through to OpenAI API |
 | 🔀&nbsp;[#94261](https://github.com/openclaw/openclaw/pull/94261) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @natecl | [Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin |
-| 📝&nbsp;[#94258](https://github.com/openclaw/openclaw/issues/94258) | 2026-06-17 | 0 | Model routing/config | @GuyMayer | Bug: Tier routing not resolving tier-* aliases to actual models in v2026.6.8 |
-| 🔀&nbsp;[#94252](https://github.com/openclaw/openclaw/pull/94252) | 2026-06-17 | 0 | Local memory/embedding | @bennewell35 | fix(memory): scrub stale dreaming sessions on startup |
-| 📝&nbsp;[#94251](https://github.com/openclaw/openclaw/issues/94251) | 2026-06-17 | 0 | Local model runtime | @tborer | [Bug]: Ollama remote provider streaming not consumed — model_call:started never progresses in chat sessions |
-| 🔀&nbsp;[#94244](https://github.com/openclaw/openclaw/pull/94244) | 2026-06-17 | 0 | Open-weight/provider behavior | @Joel-Claw | fix: strip plain-text reasoning from GLM-5.x models |
-| 📝&nbsp;[#94242](https://github.com/openclaw/openclaw/issues/94242) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @adorbistech | [Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin |
-| 🔀&nbsp;[#94240](https://github.com/openclaw/openclaw/pull/94240) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @SunnyShu0925 | fix(memory-core): degrade non-local embedding provider on persistent failure |
 
-## OPEN THREADS (999)
+## OPEN THREADS (1005)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 949 open threads, sorted by activity</summary>
+<summary>Remaining 955 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#94547](https://github.com/openclaw/openclaw/issues/94547) | 0 | Model/provider behavior | @TwinsLee | [Bug]: @openclaw/feishu bitable write tools emit invalid JSON Schema (empty patternProperties sub-schema) — breaks Anthropic via AWS Bedrock |
+| 🔀&nbsp;[#94540](https://github.com/openclaw/openclaw/pull/94540) | 0 | Model routing/config | @sunlit-deng | fix: LCM compaction fails: allowModelOverride not propagated to plugin runtime client until config hot-reload |
+| 🔀&nbsp;[#94537](https://github.com/openclaw/openclaw/pull/94537) | 0 | Local memory/embedding | @SunnyShu0925 | fix(memory-core): harden dreaming daily-file writes and drain dangling recall refs |
+| 📝&nbsp;[#94534](https://github.com/openclaw/openclaw/issues/94534) | 0 | Model routing/config | @davidcittadini | Recurring "Invalid signature in thinking block" poisons sessions across agents |
+| 🔀&nbsp;[#94520](https://github.com/openclaw/openclaw/pull/94520) | 0 | Model/provider behavior | @pedrosbraga | fix(xai): normalize grok web search tools |
+| 📝&nbsp;[#94518](https://github.com/openclaw/openclaw/issues/94518) | 0 | OpenAI-compatible/proxy | @xiep-dot | DeepSeek cache hit rate <10% after 6.x upgrade - boundary-aware caching breaks prefix matching |
 | 🔀&nbsp;[#94509](https://github.com/openclaw/openclaw/pull/94509) | 0 | Local memory/embedding | @chenweicong736 | fix(memory-wiki): honor durable: true frontmatter in stale pages report |
 | 🔀&nbsp;[#94503](https://github.com/openclaw/openclaw/pull/94503) | 0 | Local memory/embedding | @lsr911 | fix(compaction): emit after_compaction hook even when compacted:false |
 | 📝&nbsp;[#94500](https://github.com/openclaw/openclaw/issues/94500) | 0 | Local memory/embedding | @garrytan-agents | memory_search tool reports "index metadata is missing" in-gateway while CLI reads the same store as healthy (identity resolved before provider init, never recomputed) |
@@ -1782,4 +1788,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 999 (406 issues, 593 PRs).
+- Kept open threads: 1005 (409 issues, 596 PRs).

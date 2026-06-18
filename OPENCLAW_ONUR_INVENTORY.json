@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 406,
-    "open_prs": 593,
-    "open_threads": 999
+    "open_issues": 409,
+    "open_prs": 596,
+    "open_threads": 1005
   },
   "open_threads": [
     {
@@ -5853,6 +5853,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@TwinsLee",
+      "number": 94547,
+      "title": "[Bug]: @openclaw/feishu bitable write tools emit invalid JSON Schema (empty patternProperties sub-schema) — breaks Anthropic via AWS Bedrock",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94547"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@sunlit-deng",
+      "number": 94540,
+      "title": "fix: LCM compaction fails: allowModelOverride not propagated to plugin runtime client until config hot-reload",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94540"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SunnyShu0925",
+      "number": 94537,
+      "title": "fix(memory-core): harden dreaming daily-file writes and drain dangling recall refs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94537"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@davidcittadini",
+      "number": 94534,
+      "title": "Recurring \"Invalid signature in thinking block\" poisons sessions across agents",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94534"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@pedrosbraga",
+      "number": 94520,
+      "title": "fix(xai): normalize grok web search tools",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94520"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@xiep-dot",
+      "number": 94518,
+      "title": "DeepSeek cache hit rate <10% after 6.x upgrade - boundary-aware caching breaks prefix matching",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94518"
     },
     {
       "activity": 0,
@@ -13773,8 +13827,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94504,
-    "pr": 94509
+    "issue": 94547,
+    "pr": 94545
   },
   "schema_version": 1,
   "updated": "2026-06-18"
