@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 412,
-    "open_prs": 601,
-    "open_threads": 1013
+    "open_issues": 414,
+    "open_prs": 606,
+    "open_threads": 1020
   },
   "open_threads": [
     {
@@ -5853,6 +5853,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@vincentkoc",
+      "number": 94646,
+      "title": "refactor(sqlite): land database-first memory and proxy alignment",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94646"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@tayoun",
+      "number": 94636,
+      "title": "fix(memory): skip raw snippets during promotion",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94636"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@ZOOWH",
+      "number": 94633,
+      "title": "fix(feishu): replace empty bitable record value schema rejected by strict validators",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94633"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@yu-xin-c",
+      "number": 94628,
+      "title": "[codex] Forward run context request headers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94628"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@googlerest",
+      "number": 94625,
+      "title": "investigate(memory-core): root-cause for #84882 dreaming silent daily-file deletion",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94625"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yancankang",
+      "number": 94623,
+      "title": "[Bug]: Rate-limit quota suspension blocks model fallback — session freezes 30min despite available fallback chain",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94623"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yancankang",
+      "number": 94621,
+      "title": "[Bug]: Rate-limit quota suspension blocks model fallback — session freezes 30min despite available fallback chain",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94621"
     },
     {
       "activity": 0,
@@ -13899,9 +13962,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 94603,
-    "pr": 94608
+    "issue": 94641,
+    "pr": 94647
   },
   "schema_version": 1,
-  "updated": "2026-06-18"
+  "updated": "2026-06-19"
 }
