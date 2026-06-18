@@ -4,14 +4,23 @@ Updated: 2026-06-18
 
 Review watermark:
 
-- Last reviewed through issue: #94318.
-- Last reviewed through PR: #94315.
+- Last reviewed through issue: #94370.
+- Last reviewed through PR: #94374.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94372](https://github.com/openclaw/openclaw/pull/94372) | 2026-06-18 | 0 | Model routing/config | @ajwan8998 | fix(cli): resolve context window from context.ts to ensure cache is loaded |
+| 📝&nbsp;[#94367](https://github.com/openclaw/openclaw/issues/94367) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @ff5278 | [Bug]: Image generation "response malformed" when using OpenAI-compatible proxy with valid b64_json response |
+| 🔀&nbsp;[#94362](https://github.com/openclaw/openclaw/pull/94362) | 2026-06-18 | 0 | Local model runtime | @lizanle521 | fix: improve Ollama thinking profile resolution for live-discovered reasoning models using name heuristic |
+| 🔀&nbsp;[#94355](https://github.com/openclaw/openclaw/pull/94355) | 2026-06-18 | 0 | Local memory/embedding | @SunnyShu0925 | fix(agents): fall back to generic embedding provider registry in memory-search config resolution |
+| 🔀&nbsp;[#94350](https://github.com/openclaw/openclaw/pull/94350) | 2026-06-18 | 0 | Model/provider behavior | @Patrick-Erichsen | feat: externalize GMI provider plugin |
+| 🔀&nbsp;[#94344](https://github.com/openclaw/openclaw/pull/94344) | 2026-06-18 | 0 | Local memory/embedding | @mushuiyu886 | fix #94166: memory-core OpenAI-compatible embeddings: honor provider request.allowPrivateNetwork |
+| 🔀&nbsp;[#94333](https://github.com/openclaw/openclaw/pull/94333) | 2026-06-18 | 0 | Model routing/config | @zhangqueping | fix(agents): read allowModelOverride from plugin config in context-engine capabilities |
+| 🔀&nbsp;[#94331](https://github.com/openclaw/openclaw/pull/94331) | 2026-06-18 | 0 | Model routing/config | @sheyanmin | fix: merge llm policy into plugin subagent override authorization |
+| 📝&nbsp;[#94330](https://github.com/openclaw/openclaw/issues/94330) | 2026-06-18 | 0 | Model routing/config | @wayrk | replay_invalid (stale thinking-block signature) surfaces a hard error + drops the user message instead of self-recovering |
 | 📝&nbsp;[#94316](https://github.com/openclaw/openclaw/issues/94316) | 2026-06-18 | 0 | Local memory/embedding | @rglover666 | Memory search tool cannot find local embedding provider even though CLI shows it as ready |
 | 🔀&nbsp;[#94311](https://github.com/openclaw/openclaw/pull/94311) | 2026-06-18 | 0 | Model routing/config | @lzyyzznl | fix: #94289 auto-grant lossless-claw model override from summaryModel config |
 | 🔀&nbsp;[#94297](https://github.com/openclaw/openclaw/pull/94297) | 2026-06-17 | 0 | Model routing/config | @zenglingbiao | fix(plugins): propagate llm.allowModelOverride to plugin subagent override policies (fixes #94289) |
@@ -53,17 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94012](https://github.com/openclaw/openclaw/pull/94012) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @vincentkoc | feat: route canonical provider models through ClawRouter |
 | 🔀&nbsp;[#94011](https://github.com/openclaw/openclaw/pull/94011) | 2026-06-17 | 0 | Model routing/config | @ajwan8998 | fix(cron): treat generic 'LLM request failed' error as transient server_error |
 | 🔀&nbsp;[#94004](https://github.com/openclaw/openclaw/pull/94004) | 2026-06-17 | 0 | Local memory/embedding | @vincentkoc | refactor(sqlite): canonicalize memory and proxy storage<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#93969](https://github.com/openclaw/openclaw/pull/93969) | 2026-06-17 | 0 | Model routing/config | @xialonglee | fix(xai): reject unsupported multi-agent model refs before runtime fallback |
-| 📝&nbsp;[#93968](https://github.com/openclaw/openclaw/issues/93968) | 2026-06-17 | 0 | Local memory/embedding | @edisonxl | [Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker |
-| 🔀&nbsp;[#93965](https://github.com/openclaw/openclaw/pull/93965) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @zhangguiping-xydt | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal |
-| 🔀&nbsp;[#93956](https://github.com/openclaw/openclaw/pull/93956) | 2026-06-17 | 0 | Local model runtime | @jason-allen-oneal | fix(ollama): skip auto-discovery for remote/cloud base URLs |
-| 🔀&nbsp;[#93946](https://github.com/openclaw/openclaw/pull/93946) | 2026-06-17 | 0 | Local model runtime | @Alix-007 | fix(ollama): show full thinking levels for discovered reasoning models |
-| 📝&nbsp;[#93931](https://github.com/openclaw/openclaw/issues/93931) | 2026-06-17 | 0 | Model routing/config | @hyphae-bot | Configured model fallbacks (payload.fallbacks) never engage on generic 'LLM request failed.' errors — fallbackUsed: false on every cron failure |
-| 🔀&nbsp;[#93926](https://github.com/openclaw/openclaw/pull/93926) | 2026-06-17 | 0 | Open-weight/provider behavior | @Alix-007 | fix(matrix): recognize MiniMax mm: namespaced reasoning tags in monitor suppression |
-| 🔀&nbsp;[#93897](https://github.com/openclaw/openclaw/pull/93897) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(doctor): deep-merge openai-codex plugin entry when openai already exists |
-| 📝&nbsp;[#93891](https://github.com/openclaw/openclaw/issues/93891) | 2026-06-17 | 0 | OpenAI-compatible/proxy | @Nas01010101 | Bug: rewritePluginEntries silently drops openai-codex config when openai entry already present |
 
-## OPEN THREADS (963)
+## OPEN THREADS (972)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 913 open threads, sorted by activity</summary>
+<summary>Remaining 922 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,15 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94372](https://github.com/openclaw/openclaw/pull/94372) | 0 | Model routing/config | @ajwan8998 | fix(cli): resolve context window from context.ts to ensure cache is loaded |
+| 📝&nbsp;[#94367](https://github.com/openclaw/openclaw/issues/94367) | 0 | OpenAI-compatible/proxy | @ff5278 | [Bug]: Image generation "response malformed" when using OpenAI-compatible proxy with valid b64_json response |
+| 🔀&nbsp;[#94362](https://github.com/openclaw/openclaw/pull/94362) | 0 | Local model runtime | @lizanle521 | fix: improve Ollama thinking profile resolution for live-discovered reasoning models using name heuristic |
+| 🔀&nbsp;[#94355](https://github.com/openclaw/openclaw/pull/94355) | 0 | Local memory/embedding | @SunnyShu0925 | fix(agents): fall back to generic embedding provider registry in memory-search config resolution |
+| 🔀&nbsp;[#94350](https://github.com/openclaw/openclaw/pull/94350) | 0 | Model/provider behavior | @Patrick-Erichsen | feat: externalize GMI provider plugin |
+| 🔀&nbsp;[#94344](https://github.com/openclaw/openclaw/pull/94344) | 0 | Local memory/embedding | @mushuiyu886 | fix #94166: memory-core OpenAI-compatible embeddings: honor provider request.allowPrivateNetwork |
+| 🔀&nbsp;[#94333](https://github.com/openclaw/openclaw/pull/94333) | 0 | Model routing/config | @zhangqueping | fix(agents): read allowModelOverride from plugin config in context-engine capabilities |
+| 🔀&nbsp;[#94331](https://github.com/openclaw/openclaw/pull/94331) | 0 | Model routing/config | @sheyanmin | fix: merge llm policy into plugin subagent override authorization |
+| 📝&nbsp;[#94330](https://github.com/openclaw/openclaw/issues/94330) | 0 | Model routing/config | @wayrk | replay_invalid (stale thinking-block signature) surfaces a hard error + drops the user message instead of self-recovering |
 | 📝&nbsp;[#94316](https://github.com/openclaw/openclaw/issues/94316) | 0 | Local memory/embedding | @rglover666 | Memory search tool cannot find local embedding provider even though CLI shows it as ready |
 | 🔀&nbsp;[#94311](https://github.com/openclaw/openclaw/pull/94311) | 0 | Model routing/config | @lzyyzznl | fix: #94289 auto-grant lossless-claw model override from summaryModel config |
 | 🔀&nbsp;[#94297](https://github.com/openclaw/openclaw/pull/94297) | 0 | Model routing/config | @zenglingbiao | fix(plugins): propagate llm.allowModelOverride to plugin subagent override policies (fixes #94289) |
@@ -1746,4 +1755,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 963 (399 issues, 564 PRs).
+- Kept open threads: 972 (401 issues, 571 PRs).

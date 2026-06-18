@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 399,
-    "open_prs": 564,
-    "open_threads": 963
+    "open_issues": 401,
+    "open_prs": 571,
+    "open_threads": 972
   },
   "open_threads": [
     {
@@ -5853,6 +5853,87 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ajwan8998",
+      "number": 94372,
+      "title": "fix(cli): resolve context window from context.ts to ensure cache is loaded",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94372"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ff5278",
+      "number": 94367,
+      "title": "[Bug]: Image generation \"response malformed\" when using OpenAI-compatible proxy with valid b64_json response",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94367"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lizanle521",
+      "number": 94362,
+      "title": "fix: improve Ollama thinking profile resolution for live-discovered reasoning models using name heuristic",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94362"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SunnyShu0925",
+      "number": 94355,
+      "title": "fix(agents): fall back to generic embedding provider registry in memory-search config resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94355"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Patrick-Erichsen",
+      "number": 94350,
+      "title": "feat: externalize GMI provider plugin",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94350"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mushuiyu886",
+      "number": 94344,
+      "title": "fix #94166: memory-core OpenAI-compatible embeddings: honor provider request.allowPrivateNetwork",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94344"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 94333,
+      "title": "fix(agents): read allowModelOverride from plugin config in context-engine capabilities",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94333"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@sheyanmin",
+      "number": 94331,
+      "title": "fix: merge llm policy into plugin subagent override authorization",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94331"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wayrk",
+      "number": 94330,
+      "title": "replay_invalid (stale thinking-block signature) surfaces a hard error + drops the user message instead of self-recovering",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94330"
     },
     {
       "activity": 0,
@@ -13449,8 +13530,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94318,
-    "pr": 94315
+    "issue": 94370,
+    "pr": 94374
   },
   "schema_version": 1,
   "updated": "2026-06-18"
