@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 397,
-    "open_prs": 561,
-    "open_threads": 958
+    "open_issues": 399,
+    "open_prs": 564,
+    "open_threads": 963
   },
   "open_threads": [
     {
@@ -5853,6 +5853,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@rglover666",
+      "number": 94316,
+      "title": "Memory search tool cannot find local embedding provider even though CLI shows it as ready",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94316"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lzyyzznl",
+      "number": 94311,
+      "title": "fix: #94289 auto-grant lossless-claw model override from summaryModel config",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94311"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zenglingbiao",
+      "number": 94297,
+      "title": "fix(plugins): propagate llm.allowModelOverride to plugin subagent override policies (fixes #94289)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94297"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Nardoa375",
+      "number": 94289,
+      "title": "[Bug]: LCM compaction fails: allowModelOverride not propagated to plugin runtime client until config hot-reload",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94289"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@khalil-omer",
+      "number": 94288,
+      "title": "fix(memory): refresh stale index handles after cli reindex",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94288"
     },
     {
       "activity": 0,
@@ -13404,8 +13449,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94275,
-    "pr": 94283
+    "issue": 94318,
+    "pr": 94315
   },
   "schema_version": 1,
   "updated": "2026-06-18"
