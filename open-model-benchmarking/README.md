@@ -69,6 +69,24 @@ By default it requests metadata fields that matter for ranking and benchmark sel
 - router-served status from the local router snapshot
 - tool and structured-output support when exposed by provider metadata
 
+## Manual Curation
+
+`MODEL_MANUAL_CURATION.jsonl` is the single hand-curated decision file for popular models.
+
+Each line has exactly:
+
+```json
+{"id":"Qwen/Qwen3-8B","include":true}
+```
+
+The file intentionally stores only the include/exclude decision. Report fields such as Hugging Face links, downloads, likes, parameter count, license, router status, and tool/structured-output signals are joined from the generated snapshot.
+
+Regenerate the report:
+
+```bash
+python3 open-model-benchmarking/scripts/generate_report.py
+```
+
 ## Current Snapshot
 
 - Router models: 123
@@ -88,6 +106,12 @@ Latest Hub metadata snapshot:
 - Records with discovered parameter count: 2,427
 - Records with license metadata: 3,781
 - Errors: 0
+
+Manual curation status:
+
+- Popular models curated: 430
+- Included OpenClaw candidates: 254
+- Excluded popular models: 176
 
 This Hub snapshot is intentionally creator-wide. It includes all model records under the selected creator namespaces, not only chat/instruct/open-weight LLMs. The final ShellBench queue should filter this broad snapshot by task, license, gating, artifact type, model family, and OpenClaw relevance.
 
