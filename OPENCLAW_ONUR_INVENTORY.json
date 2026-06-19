@@ -4723,8 +4723,8 @@
   "counts": {
     "closed_threads": 674,
     "open_issues": 420,
-    "open_prs": 627,
-    "open_threads": 1047
+    "open_prs": 632,
+    "open_threads": 1052
   },
   "open_threads": [
     {
@@ -5853,6 +5853,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@zhangqueping",
+      "number": 94884,
+      "title": "fix(feishu): replace empty Type.Any() with non-empty FlexibleValue in bitable schemas",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94884"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lzyyzznl",
+      "number": 94882,
+      "title": "fix(ollama): treat undefined reasoning as potentially reasoning-capable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94882"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 94875,
+      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94875"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Pick-cat",
+      "number": 94841,
+      "title": "fix(qmd): preserve Windows absolute paths in command resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94841"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@lzyyzznl",
+      "number": 94839,
+      "title": "fix(feishu): replace Type.Record(Type.String(), Type.Any()) with Type.Object({}, {additionalProperties: true}) in bitable tools",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94839"
     },
     {
       "activity": 0,
@@ -14206,8 +14251,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94829,
-    "pr": 94836
+    "issue": 94885,
+    "pr": 94886
   },
   "schema_version": 1,
   "updated": "2026-06-19"
