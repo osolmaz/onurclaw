@@ -4,14 +4,17 @@ Updated: 2026-06-19
 
 Review watermark:
 
-- Last reviewed through issue: #94787.
-- Last reviewed through PR: #94798.
+- Last reviewed through issue: #94829.
+- Last reviewed through PR: #94836.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94825](https://github.com/openclaw/openclaw/pull/94825) | 2026-06-19 | 0 | Model routing/config | @TUARAN | fix: respect replace mode in default models list |
+| 🔀&nbsp;[#94817](https://github.com/openclaw/openclaw/pull/94817) | 2026-06-19 | 0 | Local model runtime | @lzyyzznl | fix(ollama): treat undefined reasoning as potentially reasoning-capable |
+| 🔀&nbsp;[#94811](https://github.com/openclaw/openclaw/pull/94811) | 2026-06-19 | 0 | Local memory/embedding | @mushuiyu886 | fix(ollama): honor memory embedding output dimensionality |
 | 🔀&nbsp;[#94783](https://github.com/openclaw/openclaw/pull/94783) | 2026-06-19 | 0 | Local memory/embedding | @bowenluo718 | fix(memory-core): lower default promotion minScore for Gemini embedding compatibility |
 | 📝&nbsp;[#94780](https://github.com/openclaw/openclaw/issues/94780) | 2026-06-19 | 0 | Model routing/config | @Haderach-Ram | [Feature]: Per-cron model selection independent of agent default - run cheap/free models on automation jobs while keeping main agent on premium LLM |
 | 🔀&nbsp;[#94773](https://github.com/openclaw/openclaw/pull/94773) | 2026-06-19 | 0 | Local memory/embedding | @bowenluo718 | refactor(memory): add LEARNINGS.md to workspace memory artifact discovery |
@@ -59,11 +62,8 @@ Review watermark:
 | 📝&nbsp;[#94518](https://github.com/openclaw/openclaw/issues/94518) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @xiep-dot | DeepSeek cache hit rate <10% after 6.x upgrade - boundary-aware caching breaks prefix matching |
 | 🔀&nbsp;[#94509](https://github.com/openclaw/openclaw/pull/94509) | 2026-06-18 | 0 | Local memory/embedding | @chenweicong736 | fix(memory-wiki): honor durable: true frontmatter in stale pages report |
 | 🔀&nbsp;[#94503](https://github.com/openclaw/openclaw/pull/94503) | 2026-06-18 | 0 | Local memory/embedding | @lsr911 | fix(compaction): emit after_compaction hook even when compacted:false |
-| 📝&nbsp;[#94500](https://github.com/openclaw/openclaw/issues/94500) | 2026-06-18 | 0 | Local memory/embedding | @garrytan-agents | memory_search tool reports "index metadata is missing" in-gateway while CLI reads the same store as healthy (identity resolved before provider init, never recomputed) |
-| 🔀&nbsp;[#94495](https://github.com/openclaw/openclaw/pull/94495) | 2026-06-18 | 0 | Local model runtime | @LZY3538 | fix(ollama): add request timeout fallback for remote hosts |
-| 🔀&nbsp;[#94494](https://github.com/openclaw/openclaw/pull/94494) | 2026-06-18 | 0 | Model routing/config | @xialonglee | fix(agents): map cacheRetention 'standard' to 'short' for Bedrock Claude models |
 
-## OPEN THREADS (1044)
+## OPEN THREADS (1047)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 994 open threads, sorted by activity</summary>
+<summary>Remaining 997 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94825](https://github.com/openclaw/openclaw/pull/94825) | 0 | Model routing/config | @TUARAN | fix: respect replace mode in default models list |
+| 🔀&nbsp;[#94817](https://github.com/openclaw/openclaw/pull/94817) | 0 | Local model runtime | @lzyyzznl | fix(ollama): treat undefined reasoning as potentially reasoning-capable |
+| 🔀&nbsp;[#94811](https://github.com/openclaw/openclaw/pull/94811) | 0 | Local memory/embedding | @mushuiyu886 | fix(ollama): honor memory embedding output dimensionality |
 | 🔀&nbsp;[#94783](https://github.com/openclaw/openclaw/pull/94783) | 0 | Local memory/embedding | @bowenluo718 | fix(memory-core): lower default promotion minScore for Gemini embedding compatibility |
 | 📝&nbsp;[#94780](https://github.com/openclaw/openclaw/issues/94780) | 0 | Model routing/config | @Haderach-Ram | [Feature]: Per-cron model selection independent of agent default - run cheap/free models on automation jobs while keeping main agent on premium LLM |
 | 🔀&nbsp;[#94773](https://github.com/openclaw/openclaw/pull/94773) | 0 | Local memory/embedding | @bowenluo718 | refactor(memory): add LEARNINGS.md to workspace memory artifact discovery |
@@ -1827,4 +1830,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1044 (420 issues, 624 PRs).
+- Kept open threads: 1047 (420 issues, 627 PRs).
