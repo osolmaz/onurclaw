@@ -8,11 +8,14 @@ import csv
 import json
 import re
 from collections import Counter
+from datetime import date, datetime
 from pathlib import Path
 from urllib.parse import quote
 
 
 ROOT = Path(__file__).resolve().parents[1]
+AS_OF_DATE = date(2026, 6, 19)
+OLDER_THAN_ONE_YEAR_CUTOFF = date(2025, 6, 19)
 
 
 def latest_snapshot_dir() -> Path:
@@ -114,6 +117,23 @@ def fmt_params(value: str) -> str:
     return f"{number:.2f}B"
 
 
+def created_date(row: dict[str, str]) -> date | None:
+    value = row.get("created_at") or ""
+    if not value:
+        return None
+    return datetime.fromisoformat(value.replace("Z", "+00:00")).date()
+
+
+def created_display(row: dict[str, str]) -> str:
+    created = created_date(row)
+    return created.isoformat() if created else "unknown"
+
+
+def older_than_one_year(row: dict[str, str]) -> bool:
+    created = created_date(row)
+    return created is not None and created < OLDER_THAN_ONE_YEAR_CUTOFF
+
+
 def model_link(model_id: str) -> str:
     return f"[{model_id}](https://huggingface.co/{quote(model_id, safe='/')})"
 
@@ -159,6 +179,7 @@ def table_row(row: dict[str, str]) -> str:
         model_link(row["id"]),
         fmt_int(row["downloads"]),
         fmt_int(row["likes"]),
+        created_display(row),
         fmt_params(row["parameter_count_b"]),
         model_class(row),
         row["pipeline_tag"] or "unknown",
@@ -196,6 +217,8 @@ def write_report(
     output_path: Path,
 ) -> None:
     included = [row for row in rows if decisions[row["id"]]]
+    recent_included = [row for row in included if not older_than_one_year(row)]
+    older_included = [row for row in included if older_than_one_year(row)]
     excluded = [row for row in rows if not decisions[row["id"]]]
     included_by_class = Counter(model_class(row) for row in included)
 
@@ -212,11 +235,23 @@ def write_report(
         f"- Metadata: `{metadata_path.relative_to(ROOT)}`",
         f"- Manual curation: `{curation_path.relative_to(ROOT)}`",
         "- Popular threshold: `downloads > 100,000`",
+        f"- As-of date for age split: `{AS_OF_DATE.isoformat()}`",
+        f"- Older-than-one-year cutoff: `created_at < {OLDER_THAN_ONE_YEAR_CUTOFF.isoformat()}`",
+        "",
+        "## Filters Used",
+        "",
+        "This report starts from the creator-wide Hugging Face metadata snapshot, not just router-served models.",
+        "The first filter keeps popular rows with current Hugging Face `downloads > 100,000`.",
+        "The second filter applies `MODEL_MANUAL_CURATION.jsonl`, where `include: true` means the model is a likely OpenClaw/ShellBench backend candidate.",
+        "The age split uses Hugging Face `created_at` as the release-date proxy.",
+        f"Rows with `created_at < {OLDER_THAN_ONE_YEAR_CUTOFF.isoformat()}` are treated as older than one year and moved into the collapsible reference table at the bottom.",
         "",
         "## Summary",
         "",
         f"- Popular models curated: {len(rows):,}",
         f"- Included OpenClaw candidates: {len(included):,}",
+        f"- Current/recent included candidates: {len(recent_included):,}",
+        f"- Older-than-one-year included candidates: {len(older_included):,}",
         f"- Excluded models: {len(excluded):,}",
         f"- Text candidates: {included_by_class['text']:,}",
         f"- Coding candidates: {included_by_class['coding']:,}",
@@ -228,12 +263,14 @@ def write_report(
         "Included models are likely OpenClaw/ShellBench backend candidates: chat, instruct, coding, reasoning, conversational, or agent-like multimodal models.",
         "Excluded models are popular but not primary agent backends: embeddings, rerankers, ASR/TTS/audio utilities, OCR/parser-only models, safety guards, image-only models, base/pretrain-only checkpoints, and narrow domain support models.",
         "",
-        "## Included Candidate Table",
+        "## Current / Recent Included Candidate Table",
         "",
-        "| Model | Downloads | Likes | Params | Class | Pipeline | License | Router | Signals |",
-        "| --- | ---: | ---: | ---: | --- | --- | --- | --- | --- |",
+        f"This table excludes included candidates with `created_at < {OLDER_THAN_ONE_YEAR_CUTOFF.isoformat()}`. Those older candidates are kept in a collapsible reference section at the bottom.",
+        "",
+        "| Model | Downloads | Likes | Created | Params | Class | Pipeline | License | Router | Signals |",
+        "| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |",
     ]
-    lines.extend(table_row(row) for row in included)
+    lines.extend(table_row(row) for row in recent_included)
     lines.append("")
     lines.extend(excluded_summary(excluded))
     lines.extend(
@@ -245,8 +282,17 @@ def write_report(
             "python3 open-model-benchmarking/scripts/generate_report.py",
             "```",
             "",
+            "## Older Included Candidates",
+            "",
+            "<details>",
+            f"<summary>Show {len(older_included):,} included candidates created before {OLDER_THAN_ONE_YEAR_CUTOFF.isoformat()}</summary>",
+            "",
+            "| Model | Downloads | Likes | Created | Params | Class | Pipeline | License | Router | Signals |",
+            "| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |",
         ]
     )
+    lines.extend(table_row(row) for row in older_included)
+    lines.extend(["", "</details>"])
     output_path.write_text("\n".join(lines), encoding="utf-8")
 
 
