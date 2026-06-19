@@ -161,6 +161,10 @@ def slug_dedupe_key(model_id: str) -> str:
     return slug or normalized_repo_slug(model_id)
 
 
+def is_artifact_slug(model_id: str) -> bool:
+    return normalized_repo_slug(model_id) != slug_dedupe_key(model_id)
+
+
 def model_link(model_id: str) -> str:
     return f"[{model_id}](https://huggingface.co/{quote(model_id, safe='/')})"
 
@@ -221,6 +225,10 @@ def slug_dedupe_groups(rows: list[dict[str, str]]) -> list[tuple[str, list[dict[
     groups: dict[str, list[dict[str, str]]] = {}
     for row in rows:
         groups.setdefault(slug_dedupe_key(row["id"]), []).append(row)
+    for slug in list(groups):
+        target = f"{slug}-it"
+        if slug.startswith("gemma-") and target in groups and all(is_artifact_slug(row["id"]) for row in groups[slug]):
+            groups[target].extend(groups.pop(slug))
     return sorted(
         groups.items(),
         key=lambda item: max(as_int(row["downloads"]) for row in item[1]),
@@ -322,6 +330,7 @@ def write_report(
         f"The current/recent table has {len(recent_included):,} included rows and {len(slug_groups):,} slug-deduplicated model groups.",
         "The heuristic is intentionally simple: group by the repo slug after removing artifact suffixes such as `GGUF`, `AWQ`, `GPTQ`, `FP8`, `NVFP4`, `BF16`, `MLX`, `4bit`, `8bit`, `bnb`, and QAT suffixes.",
         "It does not merge semantic variants: instruct/base, chat, coder, vision/VL, thinking/reasoning, distill, and similarly named variants stay separate unless the remaining slug is identical.",
+        "There is one narrow Gemma repair after suffix stripping: if an artifact-only `gemma-*` group has key `x` and an existing canonical group has key `x-it`, the artifact group is merged into `x-it`.",
         "",
         "| Slug key | Representative repo | Rows | Top downloads | Grouped repos |",
         "| --- | --- | ---: | ---: | --- |",

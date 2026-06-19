@@ -83,6 +83,53 @@ class SlugDedupeTests(unittest.TestCase):
         self.assertEqual([item["id"] for item in groups["qwen3-8b-instruct"]], ["Qwen/Qwen3-8B-Instruct"])
         self.assertEqual([item["id"] for item in groups["qwen3-80b"]], ["Qwen/Qwen3-80B-AWQ"])
 
+    def test_repairs_gemma_artifact_slug_that_omits_it(self) -> None:
+        groups = dict(
+            generate_report.slug_dedupe_groups(
+                [
+                    row("google/gemma-4-26B-A4B-it", 100),
+                    row("nvidia/Gemma-4-26B-A4B-NVFP4", 50),
+                    row("google/gemma-4-26B-A4B-it-qat-q4_0-gguf", 25),
+                ]
+            )
+        )
+
+        self.assertNotIn("gemma-4-26b-a4b", groups)
+        self.assertEqual(
+            [item["id"] for item in groups["gemma-4-26b-a4b-it"]],
+            [
+                "google/gemma-4-26B-A4B-it",
+                "google/gemma-4-26B-A4B-it-qat-q4_0-gguf",
+                "nvidia/Gemma-4-26B-A4B-NVFP4",
+            ],
+        )
+
+    def test_gemma_it_repair_does_not_merge_real_base_slug(self) -> None:
+        groups = dict(
+            generate_report.slug_dedupe_groups(
+                [
+                    row("google/gemma-4-26B-A4B", 100),
+                    row("google/gemma-4-26B-A4B-it", 50),
+                ]
+            )
+        )
+
+        self.assertEqual([item["id"] for item in groups["gemma-4-26b-a4b"]], ["google/gemma-4-26B-A4B"])
+        self.assertEqual([item["id"] for item in groups["gemma-4-26b-a4b-it"]], ["google/gemma-4-26B-A4B-it"])
+
+    def test_gemma_it_repair_does_not_apply_to_other_families(self) -> None:
+        groups = dict(
+            generate_report.slug_dedupe_groups(
+                [
+                    row("example/Foo-8B-FP8", 100),
+                    row("example/Foo-8B-it", 50),
+                ]
+            )
+        )
+
+        self.assertEqual([item["id"] for item in groups["foo-8b"]], ["example/Foo-8B-FP8"])
+        self.assertEqual([item["id"] for item in groups["foo-8b-it"]], ["example/Foo-8B-it"])
+
 
 if __name__ == "__main__":
     unittest.main()

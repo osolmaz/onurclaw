@@ -28,7 +28,7 @@ Slug deduplication is slug-only: it normalizes repo names, strips packaging/runt
 - Included OpenClaw candidates: 254
 - Current/recent included candidates: 141
 - Older-than-one-year included candidates: 113
-- Slug-deduped current/recent model groups: 93
+- Slug-deduped current/recent model groups: 92
 - Multi-artifact slug groups: 37
 - Excluded models: 176
 - Text candidates: 140
@@ -38,13 +38,14 @@ Slug deduplication is slug-only: it normalizes repo names, strips packaging/runt
 
 ## Slug Deduplication
 
-The current/recent table has 141 included rows and 93 slug-deduplicated model groups.
+The current/recent table has 141 included rows and 92 slug-deduplicated model groups.
 The heuristic is intentionally simple: group by the repo slug after removing artifact suffixes such as `GGUF`, `AWQ`, `GPTQ`, `FP8`, `NVFP4`, `BF16`, `MLX`, `4bit`, `8bit`, `bnb`, and QAT suffixes.
 It does not merge semantic variants: instruct/base, chat, coder, vision/VL, thinking/reasoning, distill, and similarly named variants stay separate unless the remaining slug is identical.
+There is one narrow Gemma repair after suffix stripping: if an artifact-only `gemma-*` group has key `x` and an existing canonical group has key `x-it`, the artifact group is merged into `x-it`.
 
 | Slug key | Representative repo | Rows | Top downloads | Grouped repos |
 | --- | --- | ---: | ---: | --- |
-| `gemma-4-26b-a4b-it` | [google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it) | 2 | 12,670,159 | [google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it), [google/gemma-4-26B-A4B-it-qat-q4_0-gguf](https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf) |
+| `gemma-4-26b-a4b-it` | [google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it) | 3 | 12,670,159 | [google/gemma-4-26B-A4B-it](https://huggingface.co/google/gemma-4-26B-A4B-it), [nvidia/Gemma-4-26B-A4B-NVFP4](https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4), [google/gemma-4-26B-A4B-it-qat-q4_0-gguf](https://huggingface.co/google/gemma-4-26B-A4B-it-qat-q4_0-gguf) |
 | `gemma-4-31b-it` | [google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it) | 4 | 11,081,369 | [google/gemma-4-31B-it](https://huggingface.co/google/gemma-4-31B-it), [nvidia/Gemma-4-31B-IT-NVFP4](https://huggingface.co/nvidia/Gemma-4-31B-IT-NVFP4), [google/gemma-4-31B-it-qat-w4a16-ct](https://huggingface.co/google/gemma-4-31B-it-qat-w4a16-ct), [google/gemma-4-31B-it-qat-q4_0-gguf](https://huggingface.co/google/gemma-4-31B-it-qat-q4_0-gguf) |
 | `qwen3-5-4b` | [Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) | 1 | 9,599,668 | [Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) |
 | `qwen3-5-9b` | [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B) | 1 | 9,394,272 | [Qwen/Qwen3.5-9B](https://huggingface.co/Qwen/Qwen3.5-9B) |
@@ -77,7 +78,6 @@ It does not merge semantic variants: instruct/base, chat, coder, vision/VL, thin
 | `qwen3-5-2b` | [Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B) | 1 | 1,738,947 | [Qwen/Qwen3.5-2B](https://huggingface.co/Qwen/Qwen3.5-2B) |
 | `nvidia-nemotron-3-nano-4b` | [nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16) | 1 | 1,605,619 | [nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16) |
 | `gemma-4-12b-it` | [google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it) | 3 | 1,590,882 | [google/gemma-4-12B-it](https://huggingface.co/google/gemma-4-12B-it), [google/gemma-4-12B-it-qat-w4a16-ct](https://huggingface.co/google/gemma-4-12B-it-qat-w4a16-ct), [google/gemma-4-12B-it-qat-q4_0-gguf](https://huggingface.co/google/gemma-4-12B-it-qat-q4_0-gguf) |
-| `gemma-4-26b-a4b` | [nvidia/Gemma-4-26B-A4B-NVFP4](https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4) | 1 | 1,590,578 | [nvidia/Gemma-4-26B-A4B-NVFP4](https://huggingface.co/nvidia/Gemma-4-26B-A4B-NVFP4) |
 | `nvidia-nemotron-3-super-120b-a12b` | [nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4) | 3 | 1,576,022 | [nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4), [nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16), [nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8](https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8) |
 | `qwen3-5-122b-a10b` | [Qwen/Qwen3.5-122B-A10B-FP8](https://huggingface.co/Qwen/Qwen3.5-122B-A10B-FP8) | 3 | 1,445,141 | [Qwen/Qwen3.5-122B-A10B-FP8](https://huggingface.co/Qwen/Qwen3.5-122B-A10B-FP8), [Qwen/Qwen3.5-122B-A10B](https://huggingface.co/Qwen/Qwen3.5-122B-A10B), [Qwen/Qwen3.5-122B-A10B-GPTQ-Int4](https://huggingface.co/Qwen/Qwen3.5-122B-A10B-GPTQ-Int4) |
 | `qwen3-coder-next` | [Qwen/Qwen3-Coder-Next-FP8](https://huggingface.co/Qwen/Qwen3-Coder-Next-FP8) | 2 | 1,418,215 | [Qwen/Qwen3-Coder-Next-FP8](https://huggingface.co/Qwen/Qwen3-Coder-Next-FP8), [Qwen/Qwen3-Coder-Next](https://huggingface.co/Qwen/Qwen3-Coder-Next) |
