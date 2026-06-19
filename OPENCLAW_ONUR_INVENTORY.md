@@ -4,14 +4,22 @@ Updated: 2026-06-19
 
 Review watermark:
 
-- Last reviewed through issue: #94716.
-- Last reviewed through PR: #94724.
+- Last reviewed through issue: #94766.
+- Last reviewed through PR: #94767.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94763](https://github.com/openclaw/openclaw/pull/94763) | 2026-06-19 | 0 | Local memory/embedding | @chenyangjun-xy | fix(embedding): restrict openai-compatible dimensions to api.openai.com to prevent connection resets on self-hosted servers |
+| 🔀&nbsp;[#94758](https://github.com/openclaw/openclaw/pull/94758) | 2026-06-19 | 0 | Model routing/config | @mazhuima | fix(gateway): propagate allowModelOverride policies from auto-enabled config at startup |
+| 🔀&nbsp;[#94752](https://github.com/openclaw/openclaw/pull/94752) | 2026-06-19 | 0 | Model routing/config | @snowzlmbot | fix(reply): clarify stale model override resets |
+| 🔀&nbsp;[#94745](https://github.com/openclaw/openclaw/pull/94745) | 2026-06-19 | 0 | Model routing/config | @bowenluo718 | fix(session): avoid misleading rejection message for stale auto overrides in allowlist |
+| 🔀&nbsp;[#94735](https://github.com/openclaw/openclaw/pull/94735) | 2026-06-19 | 0 | Model routing/config | @Monkey-wusky | fix(models): respect models.mode=replace in 'openclaw models list' output |
+| 🔀&nbsp;[#94732](https://github.com/openclaw/openclaw/pull/94732) | 2026-06-19 | 0 | Local memory/embedding | @xydt-tanshanshan | fix(memory): add batch completed log after embedding batch finishes |
+| 🔀&nbsp;[#94728](https://github.com/openclaw/openclaw/pull/94728) | 2026-06-19 | 0 | Model routing/config | @xydt-tanshanshan | fix(sessions): skip inherited modelOverride when parent model is not in allowlist |
+| 🔀&nbsp;[#94726](https://github.com/openclaw/openclaw/pull/94726) | 2026-06-19 | 0 | Model routing/config | @ajwan8998 | fix(google): add gemini-3.5-flash model catalog entry |
 | 🔀&nbsp;[#94722](https://github.com/openclaw/openclaw/pull/94722) | 2026-06-19 | 0 | Model routing/config | @ZOOWH | fix(models): respect models.mode: "replace" in models list output |
 | 📝&nbsp;[#94713](https://github.com/openclaw/openclaw/issues/94713) | 2026-06-19 | 0 | Model routing/config | @Gr4via | [Bug]: Dashboard child-session rollover can reject allowed openai/gpt-5.5 and revert to stale gpt-5.4 |
 | 🔀&nbsp;[#94706](https://github.com/openclaw/openclaw/pull/94706) | 2026-06-18 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM workloads (fixes #92494) |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94487](https://github.com/openclaw/openclaw/pull/94487) | 2026-06-18 | 0 | Model routing/config | @zhiqiang26 | fix: #94482 normalize cacheRetention 'standard' to 'short' |
 | 📝&nbsp;[#94482](https://github.com/openclaw/openclaw/issues/94482) | 2026-06-18 | 0 | Model routing/config | @aaronedell | Bedrock Claude cacheRetention='standard' is silently ignored |
 | 🔀&nbsp;[#94481](https://github.com/openclaw/openclaw/pull/94481) | 2026-06-18 | 0 | Open-weight/provider behavior | @lsr911 | fix(edit): unwrap XML-RPC {item: {oldText, newText}} edit transport shape |
-| 🔀&nbsp;[#94478](https://github.com/openclaw/openclaw/pull/94478) | 2026-06-18 | 0 | Model routing/config | @TurboTheTurtle | fix(codex): restore openai-codex catalog alias |
-| 🔀&nbsp;[#94477](https://github.com/openclaw/openclaw/pull/94477) | 2026-06-18 | 0 | Model routing/config | @xydt-tanshanshan | [AI] fix(session): add session.restartContinuation config to preserve sessionId across Gateway restart |
-| 🔀&nbsp;[#94473](https://github.com/openclaw/openclaw/pull/94473) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @LiuwqGit | fix(provider-catalog): use apiKey fallback for self-hosted discovery when discoveryApiKey is undefined (fixes #83461) |
-| 🔀&nbsp;[#94461](https://github.com/openclaw/openclaw/pull/94461) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @Pandah97 | fix(zai): fall back to manifest baseUrl for synthesized GLM-5 models |
-| 📝&nbsp;[#94458](https://github.com/openclaw/openclaw/issues/94458) | 2026-06-18 | 0 | Model routing/config | @hurtlovewow | lossless-claw bootstraps into quarantine after every Gateway restart due to new sessionId generating fresh JSONL file |
-| 🔀&nbsp;[#94446](https://github.com/openclaw/openclaw/pull/94446) | 2026-06-18 | 0 | Model routing/config | @xydttsw | fix(context-engine): eagerly resolve plugin LLM policy from config for model override authority |
-| 🔀&nbsp;[#94443](https://github.com/openclaw/openclaw/pull/94443) | 2026-06-18 | 0 | Local memory/embedding | @ZengWen-DT | fix(memory-wiki): retry transient source-page rewrite race instead of aborting wiki_status |
-| 🔀&nbsp;[#94440](https://github.com/openclaw/openclaw/pull/94440) | 2026-06-18 | 0 | Model routing/config | @lzyyzznl | fix: #94432 classify Cloudflare challenge 403 as upstream_html instead of auth_html |
 
-## OPEN THREADS (1031)
+## OPEN THREADS (1039)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 981 open threads, sorted by activity</summary>
+<summary>Remaining 989 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94763](https://github.com/openclaw/openclaw/pull/94763) | 0 | Local memory/embedding | @chenyangjun-xy | fix(embedding): restrict openai-compatible dimensions to api.openai.com to prevent connection resets on self-hosted servers |
+| 🔀&nbsp;[#94758](https://github.com/openclaw/openclaw/pull/94758) | 0 | Model routing/config | @mazhuima | fix(gateway): propagate allowModelOverride policies from auto-enabled config at startup |
+| 🔀&nbsp;[#94752](https://github.com/openclaw/openclaw/pull/94752) | 0 | Model routing/config | @snowzlmbot | fix(reply): clarify stale model override resets |
+| 🔀&nbsp;[#94745](https://github.com/openclaw/openclaw/pull/94745) | 0 | Model routing/config | @bowenluo718 | fix(session): avoid misleading rejection message for stale auto overrides in allowlist |
+| 🔀&nbsp;[#94735](https://github.com/openclaw/openclaw/pull/94735) | 0 | Model routing/config | @Monkey-wusky | fix(models): respect models.mode=replace in 'openclaw models list' output |
+| 🔀&nbsp;[#94732](https://github.com/openclaw/openclaw/pull/94732) | 0 | Local memory/embedding | @xydt-tanshanshan | fix(memory): add batch completed log after embedding batch finishes |
+| 🔀&nbsp;[#94728](https://github.com/openclaw/openclaw/pull/94728) | 0 | Model routing/config | @xydt-tanshanshan | fix(sessions): skip inherited modelOverride when parent model is not in allowlist |
+| 🔀&nbsp;[#94726](https://github.com/openclaw/openclaw/pull/94726) | 0 | Model routing/config | @ajwan8998 | fix(google): add gemini-3.5-flash model catalog entry |
 | 🔀&nbsp;[#94722](https://github.com/openclaw/openclaw/pull/94722) | 0 | Model routing/config | @ZOOWH | fix(models): respect models.mode: "replace" in models list output |
 | 📝&nbsp;[#94713](https://github.com/openclaw/openclaw/issues/94713) | 0 | Model routing/config | @Gr4via | [Bug]: Dashboard child-session rollover can reject allowed openai/gpt-5.5 and revert to stale gpt-5.4 |
 | 🔀&nbsp;[#94706](https://github.com/openclaw/openclaw/pull/94706) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM workloads (fixes #92494) |
@@ -1814,4 +1822,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1031 (418 issues, 613 PRs).
+- Kept open threads: 1039 (418 issues, 621 PRs).
