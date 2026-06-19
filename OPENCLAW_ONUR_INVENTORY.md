@@ -4,14 +4,22 @@ Updated: 2026-06-19
 
 Review watermark:
 
-- Last reviewed through issue: #94885.
-- Last reviewed through PR: #94886.
+- Last reviewed through issue: #94922.
+- Last reviewed through PR: #94925.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#94919](https://github.com/openclaw/openclaw/issues/94919) | 2026-06-19 | 0 | Open-weight/provider behavior | @moccassins | [Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs) |
+| 🔀&nbsp;[#94918](https://github.com/openclaw/openclaw/pull/94918) | 2026-06-19 | 0 | Model routing/config | @zhangqueping | feat(cron): expose --fallbacks option on cron create and edit commands |
+| 🔀&nbsp;[#94914](https://github.com/openclaw/openclaw/pull/94914) | 2026-06-19 | 0 | Model routing/config | @aniruddhaadak80 | fix(models): filter models list by configured providers in replace mode [AI-assisted] |
+| 🔀&nbsp;[#94911](https://github.com/openclaw/openclaw/pull/94911) | 2026-06-19 | 0 | Model/provider behavior | @zhangqueping | fix(byteplus): add missing cacheRead/cacheWrite pricing for BytePlus models |
+| 📝&nbsp;[#94908](https://github.com/openclaw/openclaw/issues/94908) | 2026-06-19 | 0 | OpenAI-compatible/proxy | @Naruto2018 | [Bug]: /v1/responses does not retain conversation context when using the same user value |
+| 📝&nbsp;[#94906](https://github.com/openclaw/openclaw/issues/94906) | 2026-06-19 | 0 | Model/provider behavior | @AxelHu | Add recovery path for provider-rejected image blocks in session history |
+| 🔀&nbsp;[#94890](https://github.com/openclaw/openclaw/pull/94890) | 2026-06-19 | 0 | Model/provider behavior | @zhangqueping | fix(diagnostic): lower stall abort threshold and extend model-call recovery to CLI sessions |
+| 📝&nbsp;[#94888](https://github.com/openclaw/openclaw/issues/94888) | 2026-06-19 | 0 | Local memory/embedding | @bizzle12368239 | Memory indexer fails to pick up files in agents that haven't been invoked in the current session |
 | 🔀&nbsp;[#94884](https://github.com/openclaw/openclaw/pull/94884) | 2026-06-19 | 0 | Model/provider behavior | @zhangqueping | fix(feishu): replace empty Type.Any() with non-empty FlexibleValue in bitable schemas |
 | 🔀&nbsp;[#94882](https://github.com/openclaw/openclaw/pull/94882) | 2026-06-19 | 0 | Local model runtime | @lzyyzznl | fix(ollama): treat undefined reasoning as potentially reasoning-capable |
 | 🔀&nbsp;[#94875](https://github.com/openclaw/openclaw/pull/94875) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494) |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94590](https://github.com/openclaw/openclaw/pull/94590) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @bowenluo718 | feat(config): allow modelIdNormalization in models.providers config |
 | 🔀&nbsp;[#94585](https://github.com/openclaw/openclaw/pull/94585) | 2026-06-18 | 0 | Open-weight/provider behavior | @idootop | feat(xiaomi): add MiMo V2.5 models to the pay-as-you-go provider |
 | 🔀&nbsp;[#94582](https://github.com/openclaw/openclaw/pull/94582) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @bowenluo718 | fix(openai-completions): add disableBoundaryAwareCache compat option for prefix-matching cache providers |
-| 📝&nbsp;[#94581](https://github.com/openclaw/openclaw/issues/94581) | 2026-06-18 | 0 | Local memory/embedding | @junxuku-byte | Feature Request: memsearch agent_id filtering for multi-agent memory isolation |
-| 🔀&nbsp;[#94579](https://github.com/openclaw/openclaw/pull/94579) | 2026-06-18 | 0 | Local memory/embedding | @yunze7373 | feat(xmemo-memory): add bundled XMemo cloud memory plugin |
-| 🔀&nbsp;[#94564](https://github.com/openclaw/openclaw/pull/94564) | 2026-06-18 | 0 | Local memory/embedding | @esqandil | fix(memory-core): bound zero-hit forced sync so memory_search can't hang the whole deadline |
-| 📝&nbsp;[#94557](https://github.com/openclaw/openclaw/issues/94557) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @alexminza | [Feature]: Use any native model provider through the Cloudflare AI Gateway by allowing `modelIdNormalization` in `models.providers.<provider>` config |
-| 📝&nbsp;[#94554](https://github.com/openclaw/openclaw/issues/94554) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @alexminza | [Feature]: `cloudflare-ai-gateway` is a single-model Anthropic passthrough, not a bridge to AI Gateway |
-| 📝&nbsp;[#94547](https://github.com/openclaw/openclaw/issues/94547) | 2026-06-18 | 0 | Model/provider behavior | @TwinsLee | [Bug]: @openclaw/feishu bitable write tools emit invalid JSON Schema (empty patternProperties sub-schema) — breaks Anthropic via AWS Bedrock |
-| 🔀&nbsp;[#94540](https://github.com/openclaw/openclaw/pull/94540) | 2026-06-18 | 0 | Model routing/config | @sunlit-deng | fix: LCM compaction fails: allowModelOverride not propagated to plugin runtime client until config hot-reload |
-| 🔀&nbsp;[#94537](https://github.com/openclaw/openclaw/pull/94537) | 2026-06-18 | 0 | Local memory/embedding | @SunnyShu0925 | fix(memory-core): harden dreaming daily-file writes and drain dangling recall refs |
 
-## OPEN THREADS (1052)
+## OPEN THREADS (1060)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1002 open threads, sorted by activity</summary>
+<summary>Remaining 1010 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#94919](https://github.com/openclaw/openclaw/issues/94919) | 0 | Open-weight/provider behavior | @moccassins | [Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs) |
+| 🔀&nbsp;[#94918](https://github.com/openclaw/openclaw/pull/94918) | 0 | Model routing/config | @zhangqueping | feat(cron): expose --fallbacks option on cron create and edit commands |
+| 🔀&nbsp;[#94914](https://github.com/openclaw/openclaw/pull/94914) | 0 | Model routing/config | @aniruddhaadak80 | fix(models): filter models list by configured providers in replace mode [AI-assisted] |
+| 🔀&nbsp;[#94911](https://github.com/openclaw/openclaw/pull/94911) | 0 | Model/provider behavior | @zhangqueping | fix(byteplus): add missing cacheRead/cacheWrite pricing for BytePlus models |
+| 📝&nbsp;[#94908](https://github.com/openclaw/openclaw/issues/94908) | 0 | OpenAI-compatible/proxy | @Naruto2018 | [Bug]: /v1/responses does not retain conversation context when using the same user value |
+| 📝&nbsp;[#94906](https://github.com/openclaw/openclaw/issues/94906) | 0 | Model/provider behavior | @AxelHu | Add recovery path for provider-rejected image blocks in session history |
+| 🔀&nbsp;[#94890](https://github.com/openclaw/openclaw/pull/94890) | 0 | Model/provider behavior | @zhangqueping | fix(diagnostic): lower stall abort threshold and extend model-call recovery to CLI sessions |
+| 📝&nbsp;[#94888](https://github.com/openclaw/openclaw/issues/94888) | 0 | Local memory/embedding | @bizzle12368239 | Memory indexer fails to pick up files in agents that haven't been invoked in the current session |
 | 🔀&nbsp;[#94884](https://github.com/openclaw/openclaw/pull/94884) | 0 | Model/provider behavior | @zhangqueping | fix(feishu): replace empty Type.Any() with non-empty FlexibleValue in bitable schemas |
 | 🔀&nbsp;[#94882](https://github.com/openclaw/openclaw/pull/94882) | 0 | Local model runtime | @lzyyzznl | fix(ollama): treat undefined reasoning as potentially reasoning-capable |
 | 🔀&nbsp;[#94875](https://github.com/openclaw/openclaw/pull/94875) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494) |
@@ -1835,4 +1843,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1052 (420 issues, 632 PRs).
+- Kept open threads: 1060 (424 issues, 636 PRs).

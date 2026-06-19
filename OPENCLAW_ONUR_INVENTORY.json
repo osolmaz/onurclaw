@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 420,
-    "open_prs": 632,
-    "open_threads": 1052
+    "open_issues": 424,
+    "open_prs": 636,
+    "open_threads": 1060
   },
   "open_threads": [
     {
@@ -5853,6 +5853,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@moccassins",
+      "number": 94919,
+      "title": "[Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94919"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 94918,
+      "title": "feat(cron): expose --fallbacks option on cron create and edit commands",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94918"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@aniruddhaadak80",
+      "number": 94914,
+      "title": "fix(models): filter models list by configured providers in replace mode [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94914"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@zhangqueping",
+      "number": 94911,
+      "title": "fix(byteplus): add missing cacheRead/cacheWrite pricing for BytePlus models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94911"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Naruto2018",
+      "number": 94908,
+      "title": "[Bug]: /v1/responses does not retain conversation context when using the same user value",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94908"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@AxelHu",
+      "number": 94906,
+      "title": "Add recovery path for provider-rejected image blocks in session history",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94906"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@zhangqueping",
+      "number": 94890,
+      "title": "fix(diagnostic): lower stall abort threshold and extend model-call recovery to CLI sessions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94890"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bizzle12368239",
+      "number": 94888,
+      "title": "Memory indexer fails to pick up files in agents that haven't been invoked in the current session",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94888"
     },
     {
       "activity": 0,
@@ -14251,8 +14323,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94885,
-    "pr": 94886
+    "issue": 94922,
+    "pr": 94925
   },
   "schema_version": 1,
   "updated": "2026-06-19"
