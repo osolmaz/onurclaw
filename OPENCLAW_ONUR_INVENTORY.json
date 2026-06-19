@@ -2,6 +2,13 @@
   "$schema": "schemas/openclaw-onur-inventory.schema.json",
   "closed_threads": [
     {
+      "number": 95045,
+      "status": "Closed in local gitcrawl 2026-06-20",
+      "title": "fix(utils): handle Windows absolute paths in splitShellArgs (#92302); no longer open.",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95045"
+    },
+    {
       "number": 92773,
       "status": "Closed in local gitcrawl 2026-06-15",
       "title": "fix(tui): show resolved canonical model ref in /model confirmation; no longer open.",
@@ -4721,10 +4728,10 @@
     }
   ],
   "counts": {
-    "closed_threads": 674,
-    "open_issues": 428,
-    "open_prs": 646,
-    "open_threads": 1074
+    "closed_threads": 675,
+    "open_issues": 429,
+    "open_prs": 653,
+    "open_threads": 1082
   },
   "open_threads": [
     {
@@ -5853,6 +5860,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lzyyzznl",
+      "number": 95062,
+      "title": "fix(telegram): fall back to agent default model in /think menu when session model context is empty",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95062"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@MonkeyLeeT",
+      "number": 95050,
+      "title": "fix(auto-reply): surface preserved fallback notices",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95050"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jincheng-xydt",
+      "number": 95049,
+      "title": "fix: respect hook config model override in session-memory slug generation (#89551)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95049"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 95047,
+      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95047"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@1attila2",
+      "number": 95042,
+      "title": "[Bug]: 2026.6.x regression cascade — memory search broken, then sessions lost on every reconnect (multi-agent deployment broken)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95042"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@aniruddhaadak80",
+      "number": 95036,
+      "title": "fix(memory): preserve Windows backslashes in qmd command paths [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95036"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@AxelHu",
+      "number": 95034,
+      "title": "fix(embedded-agent): auto-recover provider-rejected image history (closes #94906)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95034"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ml12580",
+      "number": 95022,
+      "title": "fix(memory-qmd): preserve unquoted Windows absolute paths in qmd command [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95022"
     },
     {
       "activity": 0,
@@ -14449,8 +14528,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95017,
-    "pr": 95020
+    "issue": 95058,
+    "pr": 95063
   },
   "schema_version": 1,
   "updated": "2026-06-20"
