@@ -57,6 +57,7 @@ It contains:
 - 4,301 normalized model records
 - 22 creator namespaces
 - 123 records matched back to the router-served model list
+- 430 records with more than 100,000 current downloads
 - 2,427 records with discovered parameter count
 - 3,781 records with license metadata
 - 98 records with tool support through either Hub provider metadata or the router snapshot

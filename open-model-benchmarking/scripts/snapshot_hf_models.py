@@ -450,6 +450,11 @@ def write_csv(path: Path, rows: list[dict[str, Any]]) -> None:
             writer.writerow({field: row.get(field, "") for field in CSV_FIELDS})
 
 
+def write_ids(path: Path, rows: list[dict[str, Any]]) -> None:
+    ids = [str(row.get("id") or "") for row in rows if row.get("id")]
+    path.write_text("\n".join(ids) + "\n", encoding="utf-8")
+
+
 def build_summary(
     *,
     creators: list[str],
@@ -480,6 +485,9 @@ def build_summary(
         "normalized_model_records": len(normalized_rows),
         "router_snapshot": portable_path(router_snapshot),
         "router_served_records": sum(1 for row in normalized_rows if row.get("router_served") is True),
+        "over_100k_download_records": sum(
+            1 for row in normalized_rows if int(row.get("downloads") or 0) > 100_000
+        ),
         "tool_supported_records": sum(
             1
             for row in normalized_rows
@@ -576,6 +584,10 @@ def sorted_by_downloads(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         ),
         reverse=True,
     )
+
+
+def over_download_threshold(rows: list[dict[str, Any]], threshold: int) -> list[dict[str, Any]]:
+    return [row for row in sorted_by_downloads(rows) if int(row.get("downloads") or 0) > threshold]
 
 
 def sorted_by_likes(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -706,6 +718,9 @@ def main(argv: list[str]) -> int:
     write_jsonl(output_dir / "models.normalized.jsonl", normalized_rows)
     write_csv(output_dir / "models.normalized.csv", normalized_rows)
     write_csv(output_dir / "models.by-downloads.csv", sorted_by_downloads(normalized_rows))
+    over_100k_download_rows = over_download_threshold(normalized_rows, 100_000)
+    write_csv(output_dir / "models.over-100k-downloads.csv", over_100k_download_rows)
+    write_ids(output_dir / "models.over-100k-downloads.ids.txt", over_100k_download_rows)
     write_csv(output_dir / "models.by-likes.csv", sorted_by_likes(normalized_rows))
     write_csv(output_dir / "models.by-params.csv", sorted_by_params(normalized_rows))
     write_csv(output_dir / "creators.summary.csv", build_creator_summary(normalized_rows))

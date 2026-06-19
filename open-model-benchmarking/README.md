@@ -46,6 +46,8 @@ Generated files:
 - `models.normalized.jsonl`: one normalized model record per line.
 - `models.normalized.csv`: sortable normalized table.
 - `models.by-downloads.csv`: normalized table sorted by current download count.
+- `models.over-100k-downloads.csv`: normalized table filtered only to records with more than 100,000 current downloads.
+- `models.over-100k-downloads.ids.txt`: plain model ids from the same unfiltered-by-router over-100k download set.
 - `models.by-likes.csv`: normalized table sorted by likes.
 - `models.by-params.csv`: normalized table sorted by discovered parameter count.
 - `creators.summary.csv`: creator-level aggregate table.
@@ -82,6 +84,7 @@ Latest Hub metadata snapshot:
 - Creator namespaces requested: 22
 - Normalized model records: 4,301
 - Router-served records matched back to the HF router snapshot: 123
+- Records with more than 100,000 current downloads: 430
 - Records with discovered parameter count: 2,427
 - Records with license metadata: 3,781
 - Errors: 0
