@@ -4,14 +4,23 @@ Updated: 2026-06-19
 
 Review watermark:
 
-- Last reviewed through issue: #94947.
-- Last reviewed through PR: #94950.
+- Last reviewed through issue: #94993.
+- Last reviewed through PR: #94991.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#94992](https://github.com/openclaw/openclaw/issues/94992) | 2026-06-19 | 0 | Model/provider behavior | @911erik | [Bug]: Invalid signature in thinking block on every agent — persists on v2026.6.1 |
+| 🔀&nbsp;[#94988](https://github.com/openclaw/openclaw/pull/94988) | 2026-06-19 | 0 | OpenAI-compatible/proxy | @hugenshen | Codex/fix 94979 kimi web search baseurl |
+| 🔀&nbsp;[#94985](https://github.com/openclaw/openclaw/pull/94985) | 2026-06-19 | 0 | Local memory/embedding | @ml12580 | fix(memory-core): skip markdown placeholder snippets in short-term promotion (#80582) [AI-assisted] |
+| 🔀&nbsp;[#94982](https://github.com/openclaw/openclaw/pull/94982) | 2026-06-19 | 0 | Local memory/embedding | @jincheng-xydt | fix: preserve Windows path separators in splitShellArgs (#92302) |
+| 📝&nbsp;[#94979](https://github.com/openclaw/openclaw/issues/94979) | 2026-06-19 | 0 | Open-weight/provider behavior | @bici926434 | [Bug]: web_search (kimi) returns 401 Invalid Authentication despite valid API key |
+| 🔀&nbsp;[#94961](https://github.com/openclaw/openclaw/pull/94961) | 2026-06-19 | 0 | Model routing/config | @jincheng-xydt | fix: propagate lossless-claw allowModelOverride at config normalization (#94289) |
+| 🔀&nbsp;[#94960](https://github.com/openclaw/openclaw/pull/94960) | 2026-06-19 | 0 | Open-weight/provider behavior | @jincheng-xydt | fix: add MiniMax M3/M2.7 to reasoning content replay allowlist (#92769) |
+| 🔀&nbsp;[#94958](https://github.com/openclaw/openclaw/pull/94958) | 2026-06-19 | 0 | Local memory/embedding | @lzyyzznl | fix(memory): preserve Windows backslash paths in QMD command resolution |
+| 🔀&nbsp;[#94954](https://github.com/openclaw/openclaw/pull/94954) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM workloads (fixes #92494) |
 | 🔀&nbsp;[#94945](https://github.com/openclaw/openclaw/pull/94945) | 2026-06-19 | 0 | OpenAI-compatible/proxy | @ai-hpc | fix(openai-completions): keep cache-boundary suffix out of DeepSeek's implicit prefix cache |
 | 🔀&nbsp;[#94941](https://github.com/openclaw/openclaw/pull/94941) | 2026-06-19 | 0 | Local memory/embedding | @lzyyzznl | fix(memory-qmd): preserve Windows absolute paths in memory.qmd.command |
 | 📝&nbsp;[#94919](https://github.com/openclaw/openclaw/issues/94919) | 2026-06-19 | 0 | Open-weight/provider behavior | @moccassins | [Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs) |
@@ -53,17 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94665](https://github.com/openclaw/openclaw/pull/94665) | 2026-06-18 | 0 | Local memory/embedding | @lzyyzznl | fix: #92302 preserve Windows absolute paths in QMD command resolution |
 | 🔀&nbsp;[#94662](https://github.com/openclaw/openclaw/pull/94662) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @XSIRIX | fix(xai): allow private self-hosted Responses endpoints |
 | 🔀&nbsp;[#94653](https://github.com/openclaw/openclaw/pull/94653) | 2026-06-18 | 0 | Model routing/config | @zenglingbiao | feat(cron): expose --fallbacks flag on cron add/create and edit commands (fixes #90302) |
-| 📝&nbsp;[#94650](https://github.com/openclaw/openclaw/issues/94650) | 2026-06-18 | 0 | Open-weight/provider behavior | @ArisMontclair | Gateway watchdog fails to kill stuck model calls; stall recovery is none |
-| 🔀&nbsp;[#94646](https://github.com/openclaw/openclaw/pull/94646) | 2026-06-18 | 0 | Local memory/embedding | @vincentkoc | refactor(sqlite): land database-first memory and proxy alignment |
-| 🔀&nbsp;[#94636](https://github.com/openclaw/openclaw/pull/94636) | 2026-06-18 | 0 | Local memory/embedding | @tayoun | fix(memory): skip raw snippets during promotion |
-| 🔀&nbsp;[#94633](https://github.com/openclaw/openclaw/pull/94633) | 2026-06-18 | 0 | Model/provider behavior | @ZOOWH | fix(feishu): replace empty bitable record value schema rejected by strict validators |
-| 🔀&nbsp;[#94628](https://github.com/openclaw/openclaw/pull/94628) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @yu-xin-c | [codex] Forward run context request headers |
-| 🔀&nbsp;[#94625](https://github.com/openclaw/openclaw/pull/94625) | 2026-06-18 | 0 | Local memory/embedding | @googlerest | investigate(memory-core): root-cause for #84882 dreaming silent daily-file deletion |
-| 📝&nbsp;[#94623](https://github.com/openclaw/openclaw/issues/94623) | 2026-06-18 | 0 | Model routing/config | @yancankang | [Bug]: Rate-limit quota suspension blocks model fallback — session freezes 30min despite available fallback chain |
-| 📝&nbsp;[#94621](https://github.com/openclaw/openclaw/issues/94621) | 2026-06-18 | 0 | Model routing/config | @yancankang | [Bug]: Rate-limit quota suspension blocks model fallback — session freezes 30min despite available fallback chain |
-| 🔀&nbsp;[#94590](https://github.com/openclaw/openclaw/pull/94590) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @bowenluo718 | feat(config): allow modelIdNormalization in models.providers config |
 
-## OPEN THREADS (1062)
+## OPEN THREADS (1071)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1012 open threads, sorted by activity</summary>
+<summary>Remaining 1021 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,15 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#94992](https://github.com/openclaw/openclaw/issues/94992) | 0 | Model/provider behavior | @911erik | [Bug]: Invalid signature in thinking block on every agent — persists on v2026.6.1 |
+| 🔀&nbsp;[#94988](https://github.com/openclaw/openclaw/pull/94988) | 0 | OpenAI-compatible/proxy | @hugenshen | Codex/fix 94979 kimi web search baseurl |
+| 🔀&nbsp;[#94985](https://github.com/openclaw/openclaw/pull/94985) | 0 | Local memory/embedding | @ml12580 | fix(memory-core): skip markdown placeholder snippets in short-term promotion (#80582) [AI-assisted] |
+| 🔀&nbsp;[#94982](https://github.com/openclaw/openclaw/pull/94982) | 0 | Local memory/embedding | @jincheng-xydt | fix: preserve Windows path separators in splitShellArgs (#92302) |
+| 📝&nbsp;[#94979](https://github.com/openclaw/openclaw/issues/94979) | 0 | Open-weight/provider behavior | @bici926434 | [Bug]: web_search (kimi) returns 401 Invalid Authentication despite valid API key |
+| 🔀&nbsp;[#94961](https://github.com/openclaw/openclaw/pull/94961) | 0 | Model routing/config | @jincheng-xydt | fix: propagate lossless-claw allowModelOverride at config normalization (#94289) |
+| 🔀&nbsp;[#94960](https://github.com/openclaw/openclaw/pull/94960) | 0 | Open-weight/provider behavior | @jincheng-xydt | fix: add MiniMax M3/M2.7 to reasoning content replay allowlist (#92769) |
+| 🔀&nbsp;[#94958](https://github.com/openclaw/openclaw/pull/94958) | 0 | Local memory/embedding | @lzyyzznl | fix(memory): preserve Windows backslash paths in QMD command resolution |
+| 🔀&nbsp;[#94954](https://github.com/openclaw/openclaw/pull/94954) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM workloads (fixes #92494) |
 | 🔀&nbsp;[#94945](https://github.com/openclaw/openclaw/pull/94945) | 0 | OpenAI-compatible/proxy | @ai-hpc | fix(openai-completions): keep cache-boundary suffix out of DeepSeek's implicit prefix cache |
 | 🔀&nbsp;[#94941](https://github.com/openclaw/openclaw/pull/94941) | 0 | Local memory/embedding | @lzyyzznl | fix(memory-qmd): preserve Windows absolute paths in memory.qmd.command |
 | 📝&nbsp;[#94919](https://github.com/openclaw/openclaw/issues/94919) | 0 | Open-weight/provider behavior | @moccassins | [Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs) |
@@ -1845,4 +1854,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1062 (424 issues, 638 PRs).
+- Kept open threads: 1071 (426 issues, 645 PRs).
