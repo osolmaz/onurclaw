@@ -1,0 +1,24 @@
+# Hugging Face creator / owner slugs discovered in the 2026-06-19 router snapshot.
+# Blank lines and # comments are ignored by scripts/snapshot_hf_models.py.
+CohereLabs
+EssentialAI
+MiniMaxAI
+Qwen
+Sao10K
+aisingapore
+allenai
+alpindale
+baidu
+deepcogito
+deepseek-ai
+google
+inclusionAI
+meta-llama
+moonshotai
+nvidia
+openai
+pearl-ai
+stepfun-ai
+swiss-ai
+utter-project
+zai-org

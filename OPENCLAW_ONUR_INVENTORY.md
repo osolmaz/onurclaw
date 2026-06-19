@@ -4,14 +4,16 @@ Updated: 2026-06-19
 
 Review watermark:
 
-- Last reviewed through issue: #94922.
-- Last reviewed through PR: #94925.
+- Last reviewed through issue: #94947.
+- Last reviewed through PR: #94950.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94945](https://github.com/openclaw/openclaw/pull/94945) | 2026-06-19 | 0 | OpenAI-compatible/proxy | @ai-hpc | fix(openai-completions): keep cache-boundary suffix out of DeepSeek's implicit prefix cache |
+| 🔀&nbsp;[#94941](https://github.com/openclaw/openclaw/pull/94941) | 2026-06-19 | 0 | Local memory/embedding | @lzyyzznl | fix(memory-qmd): preserve Windows absolute paths in memory.qmd.command |
 | 📝&nbsp;[#94919](https://github.com/openclaw/openclaw/issues/94919) | 2026-06-19 | 0 | Open-weight/provider behavior | @moccassins | [Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs) |
 | 🔀&nbsp;[#94918](https://github.com/openclaw/openclaw/pull/94918) | 2026-06-19 | 0 | Model routing/config | @zhangqueping | feat(cron): expose --fallbacks option on cron create and edit commands |
 | 🔀&nbsp;[#94914](https://github.com/openclaw/openclaw/pull/94914) | 2026-06-19 | 0 | Model routing/config | @aniruddhaadak80 | fix(models): filter models list by configured providers in replace mode [AI-assisted] |
@@ -60,10 +62,8 @@ Review watermark:
 | 📝&nbsp;[#94623](https://github.com/openclaw/openclaw/issues/94623) | 2026-06-18 | 0 | Model routing/config | @yancankang | [Bug]: Rate-limit quota suspension blocks model fallback — session freezes 30min despite available fallback chain |
 | 📝&nbsp;[#94621](https://github.com/openclaw/openclaw/issues/94621) | 2026-06-18 | 0 | Model routing/config | @yancankang | [Bug]: Rate-limit quota suspension blocks model fallback — session freezes 30min despite available fallback chain |
 | 🔀&nbsp;[#94590](https://github.com/openclaw/openclaw/pull/94590) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @bowenluo718 | feat(config): allow modelIdNormalization in models.providers config |
-| 🔀&nbsp;[#94585](https://github.com/openclaw/openclaw/pull/94585) | 2026-06-18 | 0 | Open-weight/provider behavior | @idootop | feat(xiaomi): add MiMo V2.5 models to the pay-as-you-go provider |
-| 🔀&nbsp;[#94582](https://github.com/openclaw/openclaw/pull/94582) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @bowenluo718 | fix(openai-completions): add disableBoundaryAwareCache compat option for prefix-matching cache providers |
 
-## OPEN THREADS (1060)
+## OPEN THREADS (1062)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1010 open threads, sorted by activity</summary>
+<summary>Remaining 1012 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,8 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94945](https://github.com/openclaw/openclaw/pull/94945) | 0 | OpenAI-compatible/proxy | @ai-hpc | fix(openai-completions): keep cache-boundary suffix out of DeepSeek's implicit prefix cache |
+| 🔀&nbsp;[#94941](https://github.com/openclaw/openclaw/pull/94941) | 0 | Local memory/embedding | @lzyyzznl | fix(memory-qmd): preserve Windows absolute paths in memory.qmd.command |
 | 📝&nbsp;[#94919](https://github.com/openclaw/openclaw/issues/94919) | 0 | Open-weight/provider behavior | @moccassins | [Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs) |
 | 🔀&nbsp;[#94918](https://github.com/openclaw/openclaw/pull/94918) | 0 | Model routing/config | @zhangqueping | feat(cron): expose --fallbacks option on cron create and edit commands |
 | 🔀&nbsp;[#94914](https://github.com/openclaw/openclaw/pull/94914) | 0 | Model routing/config | @aniruddhaadak80 | fix(models): filter models list by configured providers in replace mode [AI-assisted] |
@@ -1843,4 +1845,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1060 (424 issues, 636 PRs).
+- Kept open threads: 1062 (424 issues, 638 PRs).
