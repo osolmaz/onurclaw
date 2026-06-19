@@ -4,14 +4,19 @@ Updated: 2026-06-19
 
 Review watermark:
 
-- Last reviewed through issue: #94692.
-- Last reviewed through PR: #94687.
+- Last reviewed through issue: #94716.
+- Last reviewed through PR: #94724.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#94722](https://github.com/openclaw/openclaw/pull/94722) | 2026-06-19 | 0 | Model routing/config | @ZOOWH | fix(models): respect models.mode: "replace" in models list output |
+| 📝&nbsp;[#94713](https://github.com/openclaw/openclaw/issues/94713) | 2026-06-19 | 0 | Model routing/config | @Gr4via | [Bug]: Dashboard child-session rollover can reject allowed openai/gpt-5.5 and revert to stale gpt-5.4 |
+| 🔀&nbsp;[#94706](https://github.com/openclaw/openclaw/pull/94706) | 2026-06-18 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM workloads (fixes #92494) |
+| 📝&nbsp;[#94705](https://github.com/openclaw/openclaw/issues/94705) | 2026-06-18 | 0 | Model routing/config | @apoapostolov | models.mode: "replace" does not filter openclaw models list output |
+| 🔀&nbsp;[#94700](https://github.com/openclaw/openclaw/pull/94700) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @RomneyDa | test: fold HTTP API script proof into QA Lab |
 | 📝&nbsp;[#94686](https://github.com/openclaw/openclaw/issues/94686) | 2026-06-18 | 0 | Model/provider behavior | @CarotaWealth | Critical Fleet Stability Issues — Multi-Agent Session Crashes (thinking block corruption, session bloat, cron contention) |
 | 🔀&nbsp;[#94671](https://github.com/openclaw/openclaw/pull/94671) | 2026-06-18 | 0 | Local memory/embedding | @vincentkoc | feat(memory): unify agent-scoped memory configuration<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#94665](https://github.com/openclaw/openclaw/pull/94665) | 2026-06-18 | 0 | Local memory/embedding | @lzyyzznl | fix: #92302 preserve Windows absolute paths in QMD command resolution |
@@ -57,13 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94446](https://github.com/openclaw/openclaw/pull/94446) | 2026-06-18 | 0 | Model routing/config | @xydttsw | fix(context-engine): eagerly resolve plugin LLM policy from config for model override authority |
 | 🔀&nbsp;[#94443](https://github.com/openclaw/openclaw/pull/94443) | 2026-06-18 | 0 | Local memory/embedding | @ZengWen-DT | fix(memory-wiki): retry transient source-page rewrite race instead of aborting wiki_status |
 | 🔀&nbsp;[#94440](https://github.com/openclaw/openclaw/pull/94440) | 2026-06-18 | 0 | Model routing/config | @lzyyzznl | fix: #94432 classify Cloudflare challenge 403 as upstream_html instead of auth_html |
-| 📝&nbsp;[#94432](https://github.com/openclaw/openclaw/issues/94432) | 2026-06-18 | 0 | Model routing/config | @pbm9z95m6z-hue | OpenAI/Codex OAuth provider fails with Cloudflare HTML 403 from chatgpt.com/backend-api |
-| 🔀&nbsp;[#94430](https://github.com/openclaw/openclaw/pull/94430) | 2026-06-18 | 0 | Model routing/config | @xiongxiaoyang-cell | fix(errors): recognize content policy / new_sensitive errors as rate_limit for fallback |
-| 🔀&nbsp;[#94429](https://github.com/openclaw/openclaw/pull/94429) | 2026-06-18 | 0 | Model routing/config | @zhiqiang26 | fix: #94391 将 compaction aggregate timeout 从硬编码 60s 改为读取 compaction.timeoutSeconds 配置 |
-| 🔀&nbsp;[#94419](https://github.com/openclaw/openclaw/pull/94419) | 2026-06-18 | 0 | Open-weight/provider behavior | @Omee11 | feat(qwen): add Token Plan (Team Edition) provider |
-| 📝&nbsp;[#94418](https://github.com/openclaw/openclaw/issues/94418) | 2026-06-18 | 0 | Open-weight/provider behavior | @Omee11 | [Feature]: Alibaba Model Studio Token Plan (Team Edition) provider |
 
-## OPEN THREADS (1026)
+## OPEN THREADS (1031)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 976 open threads, sorted by activity</summary>
+<summary>Remaining 981 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,11 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#94722](https://github.com/openclaw/openclaw/pull/94722) | 0 | Model routing/config | @ZOOWH | fix(models): respect models.mode: "replace" in models list output |
+| 📝&nbsp;[#94713](https://github.com/openclaw/openclaw/issues/94713) | 0 | Model routing/config | @Gr4via | [Bug]: Dashboard child-session rollover can reject allowed openai/gpt-5.5 and revert to stale gpt-5.4 |
+| 🔀&nbsp;[#94706](https://github.com/openclaw/openclaw/pull/94706) | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM workloads (fixes #92494) |
+| 📝&nbsp;[#94705](https://github.com/openclaw/openclaw/issues/94705) | 0 | Model routing/config | @apoapostolov | models.mode: "replace" does not filter openclaw models list output |
+| 🔀&nbsp;[#94700](https://github.com/openclaw/openclaw/pull/94700) | 0 | OpenAI-compatible/proxy | @RomneyDa | test: fold HTTP API script proof into QA Lab |
 | 📝&nbsp;[#94686](https://github.com/openclaw/openclaw/issues/94686) | 0 | Model/provider behavior | @CarotaWealth | Critical Fleet Stability Issues — Multi-Agent Session Crashes (thinking block corruption, session bloat, cron contention) |
 | 🔀&nbsp;[#94671](https://github.com/openclaw/openclaw/pull/94671) | 0 | Local memory/embedding | @vincentkoc | feat(memory): unify agent-scoped memory configuration<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#94665](https://github.com/openclaw/openclaw/pull/94665) | 0 | Local memory/embedding | @lzyyzznl | fix: #92302 preserve Windows absolute paths in QMD command resolution |
@@ -1809,4 +1814,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1026 (416 issues, 610 PRs).
+- Kept open threads: 1031 (418 issues, 613 PRs).

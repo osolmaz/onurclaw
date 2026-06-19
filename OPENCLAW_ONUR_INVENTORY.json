@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 416,
-    "open_prs": 610,
-    "open_threads": 1026
+    "open_issues": 418,
+    "open_prs": 613,
+    "open_threads": 1031
   },
   "open_threads": [
     {
@@ -5853,6 +5853,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ZOOWH",
+      "number": 94722,
+      "title": "fix(models): respect models.mode: \"replace\" in models list output",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94722"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Gr4via",
+      "number": 94713,
+      "title": "[Bug]: Dashboard child-session rollover can reject allowed openai/gpt-5.5 and revert to stale gpt-5.4",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94713"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 94706,
+      "title": "fix(dreaming): increase narrative timeout from 60s to 120s for ARM workloads (fixes #92494)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94706"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@apoapostolov",
+      "number": 94705,
+      "title": "models.mode: \"replace\" does not filter openclaw models list output",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94705"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@RomneyDa",
+      "number": 94700,
+      "title": "test: fold HTTP API script proof into QA Lab",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94700"
     },
     {
       "activity": 0,
@@ -14017,8 +14062,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94692,
-    "pr": 94687
+    "issue": 94716,
+    "pr": 94724
   },
   "schema_version": 1,
   "updated": "2026-06-19"
