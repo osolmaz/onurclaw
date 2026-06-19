@@ -4,14 +4,20 @@ Updated: 2026-06-20
 
 Review watermark:
 
-- Last reviewed through issue: #95058.
-- Last reviewed through PR: #95063.
+- Last reviewed through issue: #95089.
+- Last reviewed through PR: #95095.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95091](https://github.com/openclaw/openclaw/pull/95091) | 2026-06-19 | 0 | Local memory/embedding | @lzyyzznl | fix(doctor): probe memory embeddings on --deep and skip false warning on local provider |
+| 🔀&nbsp;[#95088](https://github.com/openclaw/openclaw/pull/95088) | 2026-06-19 | 0 | Local memory/embedding | @aniruddhaadak80 | [AI-assisted] fix(memory): close cached agent and state databases in test teardowns |
+| 🔀&nbsp;[#95087](https://github.com/openclaw/openclaw/pull/95087) | 2026-06-19 | 0 | Local memory/embedding | @jalehman | refactor: add memory and QMD session identity mapping |
+| 🔀&nbsp;[#95070](https://github.com/openclaw/openclaw/pull/95070) | 2026-06-19 | 0 | Local memory/embedding | @Nas01010101 | perf(memory-core): store embedding cache as Float32 BLOB instead of JSON TEXT [AI] |
+| 🔀&nbsp;[#95067](https://github.com/openclaw/openclaw/pull/95067) | 2026-06-19 | 0 | Local memory/embedding | @zenglingbiao | fix(doctor): suppress false-positive local embedding warning when probe is skipped (fixes #92582) |
+| 🔀&nbsp;[#95064](https://github.com/openclaw/openclaw/pull/95064) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(doctor): suppress false-positive local embedding warning when probe was skipped (fixes #92582) |
 | 🔀&nbsp;[#95062](https://github.com/openclaw/openclaw/pull/95062) | 2026-06-19 | 0 | Local model runtime | @lzyyzznl | fix(telegram): fall back to agent default model in /think menu when session model context is empty |
 | 🔀&nbsp;[#95050](https://github.com/openclaw/openclaw/pull/95050) | 2026-06-19 | 0 | Model routing/config | @MonkeyLeeT | fix(auto-reply): surface preserved fallback notices |
 | 🔀&nbsp;[#95049](https://github.com/openclaw/openclaw/pull/95049) | 2026-06-19 | 0 | Model routing/config | @jincheng-xydt | fix: respect hook config model override in session-memory slug generation (#89551) |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94770](https://github.com/openclaw/openclaw/pull/94770) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
 | 📝&nbsp;[#94769](https://github.com/openclaw/openclaw/issues/94769) | 2026-06-19 | 0 | Local memory/embedding | @ITHACAJASON | Memory dreaming promotion: short-term recall signals collected but never promote with Gemini embeddings (structural threshold mismatch + read/exec signal gap) |
 | 🔀&nbsp;[#94763](https://github.com/openclaw/openclaw/pull/94763) | 2026-06-19 | 0 | Local memory/embedding | @chenyangjun-xy | fix(embedding): restrict openai-compatible dimensions to api.openai.com to prevent connection resets on self-hosted servers |
-| 🔀&nbsp;[#94758](https://github.com/openclaw/openclaw/pull/94758) | 2026-06-19 | 0 | Model routing/config | @mazhuima | fix(gateway): propagate allowModelOverride policies from auto-enabled config at startup |
-| 🔀&nbsp;[#94752](https://github.com/openclaw/openclaw/pull/94752) | 2026-06-19 | 0 | Model routing/config | @snowzlmbot | fix(reply): clarify stale model override resets |
-| 🔀&nbsp;[#94745](https://github.com/openclaw/openclaw/pull/94745) | 2026-06-19 | 0 | Model routing/config | @bowenluo718 | fix(session): avoid misleading rejection message for stale auto overrides in allowlist |
-| 🔀&nbsp;[#94735](https://github.com/openclaw/openclaw/pull/94735) | 2026-06-19 | 0 | Model routing/config | @Monkey-wusky | fix(models): respect models.mode=replace in 'openclaw models list' output |
-| 🔀&nbsp;[#94732](https://github.com/openclaw/openclaw/pull/94732) | 2026-06-19 | 0 | Local memory/embedding | @xydt-tanshanshan | fix(memory): add batch completed log after embedding batch finishes |
-| 🔀&nbsp;[#94728](https://github.com/openclaw/openclaw/pull/94728) | 2026-06-19 | 0 | Model routing/config | @xydt-tanshanshan | fix(sessions): skip inherited modelOverride when parent model is not in allowlist |
 
-## OPEN THREADS (1082)
+## OPEN THREADS (1088)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1032 open threads, sorted by activity</summary>
+<summary>Remaining 1038 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95091](https://github.com/openclaw/openclaw/pull/95091) | 0 | Local memory/embedding | @lzyyzznl | fix(doctor): probe memory embeddings on --deep and skip false warning on local provider |
+| 🔀&nbsp;[#95088](https://github.com/openclaw/openclaw/pull/95088) | 0 | Local memory/embedding | @aniruddhaadak80 | [AI-assisted] fix(memory): close cached agent and state databases in test teardowns |
+| 🔀&nbsp;[#95087](https://github.com/openclaw/openclaw/pull/95087) | 0 | Local memory/embedding | @jalehman | refactor: add memory and QMD session identity mapping |
+| 🔀&nbsp;[#95070](https://github.com/openclaw/openclaw/pull/95070) | 0 | Local memory/embedding | @Nas01010101 | perf(memory-core): store embedding cache as Float32 BLOB instead of JSON TEXT [AI] |
+| 🔀&nbsp;[#95067](https://github.com/openclaw/openclaw/pull/95067) | 0 | Local memory/embedding | @zenglingbiao | fix(doctor): suppress false-positive local embedding warning when probe is skipped (fixes #92582) |
+| 🔀&nbsp;[#95064](https://github.com/openclaw/openclaw/pull/95064) | 0 | Local memory/embedding | @liuhao1024 | fix(doctor): suppress false-positive local embedding warning when probe was skipped (fixes #92582) |
 | 🔀&nbsp;[#95062](https://github.com/openclaw/openclaw/pull/95062) | 0 | Local model runtime | @lzyyzznl | fix(telegram): fall back to agent default model in /think menu when session model context is empty |
 | 🔀&nbsp;[#95050](https://github.com/openclaw/openclaw/pull/95050) | 0 | Model routing/config | @MonkeyLeeT | fix(auto-reply): surface preserved fallback notices |
 | 🔀&nbsp;[#95049](https://github.com/openclaw/openclaw/pull/95049) | 0 | Model routing/config | @jincheng-xydt | fix: respect hook config model override in session-memory slug generation (#89551) |
@@ -1866,4 +1872,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1082 (429 issues, 653 PRs).
+- Kept open threads: 1088 (429 issues, 659 PRs).
