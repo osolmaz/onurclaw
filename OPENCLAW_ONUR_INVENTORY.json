@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 429,
-    "open_prs": 659,
-    "open_threads": 1088
+    "open_prs": 662,
+    "open_threads": 1091
   },
   "open_threads": [
     {
@@ -5860,6 +5860,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@849261680",
+      "number": 95113,
+      "title": "fix(memory): keep cleaning reindex sidecars after lock errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95113"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Nas01010101",
+      "number": 95101,
+      "title": "perf(memory-lancedb): cache query embeddings per embeddings instance",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95101"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 95099,
+      "title": "fix(memory): align session file counter denominator with indexer filter (fixes #77338)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95099"
     },
     {
       "activity": 0,
@@ -14582,8 +14609,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95089,
-    "pr": 95095
+    "issue": 95109,
+    "pr": 95113
   },
   "schema_version": 1,
   "updated": "2026-06-20"
