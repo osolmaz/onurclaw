@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 418,
-    "open_prs": 621,
-    "open_threads": 1039
+    "open_issues": 420,
+    "open_prs": 624,
+    "open_threads": 1044
   },
   "open_threads": [
     {
@@ -5853,6 +5853,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bowenluo718",
+      "number": 94783,
+      "title": "fix(memory-core): lower default promotion minScore for Gemini embedding compatibility",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94783"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Haderach-Ram",
+      "number": 94780,
+      "title": "[Feature]: Per-cron model selection independent of agent default - run cheap/free models on automation jobs while keeping main agent on premium LLM",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94780"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bowenluo718",
+      "number": 94773,
+      "title": "refactor(memory): add LEARNINGS.md to workspace memory artifact discovery",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94773"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 94770,
+      "title": "fix(memory): align session file counter denominator with indexer filter (fixes #77338)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94770"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ITHACAJASON",
+      "number": 94769,
+      "title": "Memory dreaming promotion: short-term recall signals collected but never promote with Gemini embeddings (structural threshold mismatch + read/exec signal gap)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94769"
     },
     {
       "activity": 0,
@@ -14134,8 +14179,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94766,
-    "pr": 94767
+    "issue": 94787,
+    "pr": 94798
   },
   "schema_version": 1,
   "updated": "2026-06-19"
