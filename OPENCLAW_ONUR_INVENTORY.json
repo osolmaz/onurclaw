@@ -4723,8 +4723,8 @@
   "counts": {
     "closed_threads": 674,
     "open_issues": 424,
-    "open_prs": 636,
-    "open_threads": 1060
+    "open_prs": 638,
+    "open_threads": 1062
   },
   "open_threads": [
     {
@@ -5853,6 +5853,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ai-hpc",
+      "number": 94945,
+      "title": "fix(openai-completions): keep cache-boundary suffix out of DeepSeek's implicit prefix cache",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94945"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lzyyzznl",
+      "number": 94941,
+      "title": "fix(memory-qmd): preserve Windows absolute paths in memory.qmd.command",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/94941"
     },
     {
       "activity": 0,
@@ -14323,8 +14341,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 94922,
-    "pr": 94925
+    "issue": 94947,
+    "pr": 94950
   },
   "schema_version": 1,
   "updated": "2026-06-19"
