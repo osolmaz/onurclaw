@@ -4722,9 +4722,9 @@
   ],
   "counts": {
     "closed_threads": 674,
-    "open_issues": 426,
-    "open_prs": 645,
-    "open_threads": 1071
+    "open_issues": 428,
+    "open_prs": 646,
+    "open_threads": 1074
   },
   "open_threads": [
     {
@@ -5853,6 +5853,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mmyzwl",
+      "number": 95006,
+      "title": "fix(memory): default memorySearch provider to \"auto\" instead of \"openai\"",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95006"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Wagregg",
+      "number": 95003,
+      "title": "[Bug]: [Regression] [LOCALLY HOTFIXED] Memory search fails with \"index metadata is missing\" after Node.js 22.22.2 → 22.22.3 upgrade (apt)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95003"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@cls3389",
+      "number": 94998,
+      "title": "AbortError timeout not detected — fallback not triggered on provider transport timeout",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94998"
     },
     {
       "activity": 0,
@@ -14422,9 +14449,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 94993,
-    "pr": 94991
+    "issue": 95017,
+    "pr": 95020
   },
   "schema_version": 1,
-  "updated": "2026-06-19"
+  "updated": "2026-06-20"
 }

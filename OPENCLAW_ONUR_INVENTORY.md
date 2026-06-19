@@ -1,17 +1,20 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-19
+Updated: 2026-06-20
 
 Review watermark:
 
-- Last reviewed through issue: #94993.
-- Last reviewed through PR: #94991.
+- Last reviewed through issue: #95017.
+- Last reviewed through PR: #95020.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95006](https://github.com/openclaw/openclaw/pull/95006) | 2026-06-19 | 0 | Local memory/embedding | @mmyzwl | fix(memory): default memorySearch provider to "auto" instead of "openai" |
+| 📝&nbsp;[#95003](https://github.com/openclaw/openclaw/issues/95003) | 2026-06-19 | 0 | Local memory/embedding | @Wagregg | [Bug]: [Regression] [LOCALLY HOTFIXED] Memory search fails with "index metadata is missing" after Node.js 22.22.2 → 22.22.3 upgrade (apt) |
+| 📝&nbsp;[#94998](https://github.com/openclaw/openclaw/issues/94998) | 2026-06-19 | 0 | Model routing/config | @cls3389 | AbortError timeout not detected — fallback not triggered on provider transport timeout |
 | 📝&nbsp;[#94992](https://github.com/openclaw/openclaw/issues/94992) | 2026-06-19 | 0 | Model/provider behavior | @911erik | [Bug]: Invalid signature in thinking block on every agent — persists on v2026.6.1 |
 | 🔀&nbsp;[#94988](https://github.com/openclaw/openclaw/pull/94988) | 2026-06-19 | 0 | OpenAI-compatible/proxy | @hugenshen | Codex/fix 94979 kimi web search baseurl |
 | 🔀&nbsp;[#94985](https://github.com/openclaw/openclaw/pull/94985) | 2026-06-19 | 0 | Local memory/embedding | @ml12580 | fix(memory-core): skip markdown placeholder snippets in short-term promotion (#80582) [AI-assisted] |
@@ -59,11 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94700](https://github.com/openclaw/openclaw/pull/94700) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @RomneyDa | test: fold HTTP API script proof into QA Lab |
 | 📝&nbsp;[#94686](https://github.com/openclaw/openclaw/issues/94686) | 2026-06-18 | 0 | Model/provider behavior | @CarotaWealth | Critical Fleet Stability Issues — Multi-Agent Session Crashes (thinking block corruption, session bloat, cron contention) |
 | 🔀&nbsp;[#94671](https://github.com/openclaw/openclaw/pull/94671) | 2026-06-18 | 0 | Local memory/embedding | @vincentkoc | feat(memory): unify agent-scoped memory configuration<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#94665](https://github.com/openclaw/openclaw/pull/94665) | 2026-06-18 | 0 | Local memory/embedding | @lzyyzznl | fix: #92302 preserve Windows absolute paths in QMD command resolution |
-| 🔀&nbsp;[#94662](https://github.com/openclaw/openclaw/pull/94662) | 2026-06-18 | 0 | OpenAI-compatible/proxy | @XSIRIX | fix(xai): allow private self-hosted Responses endpoints |
-| 🔀&nbsp;[#94653](https://github.com/openclaw/openclaw/pull/94653) | 2026-06-18 | 0 | Model routing/config | @zenglingbiao | feat(cron): expose --fallbacks flag on cron add/create and edit commands (fixes #90302) |
 
-## OPEN THREADS (1071)
+## OPEN THREADS (1074)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1021 open threads, sorted by activity</summary>
+<summary>Remaining 1024 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95006](https://github.com/openclaw/openclaw/pull/95006) | 0 | Local memory/embedding | @mmyzwl | fix(memory): default memorySearch provider to "auto" instead of "openai" |
+| 📝&nbsp;[#95003](https://github.com/openclaw/openclaw/issues/95003) | 0 | Local memory/embedding | @Wagregg | [Bug]: [Regression] [LOCALLY HOTFIXED] Memory search fails with "index metadata is missing" after Node.js 22.22.2 → 22.22.3 upgrade (apt) |
+| 📝&nbsp;[#94998](https://github.com/openclaw/openclaw/issues/94998) | 0 | Model routing/config | @cls3389 | AbortError timeout not detected — fallback not triggered on provider transport timeout |
 | 📝&nbsp;[#94992](https://github.com/openclaw/openclaw/issues/94992) | 0 | Model/provider behavior | @911erik | [Bug]: Invalid signature in thinking block on every agent — persists on v2026.6.1 |
 | 🔀&nbsp;[#94988](https://github.com/openclaw/openclaw/pull/94988) | 0 | OpenAI-compatible/proxy | @hugenshen | Codex/fix 94979 kimi web search baseurl |
 | 🔀&nbsp;[#94985](https://github.com/openclaw/openclaw/pull/94985) | 0 | Local memory/embedding | @ml12580 | fix(memory-core): skip markdown placeholder snippets in short-term promotion (#80582) [AI-assisted] |
@@ -1854,4 +1857,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1071 (426 issues, 645 PRs).
+- Kept open threads: 1074 (428 issues, 646 PRs).
