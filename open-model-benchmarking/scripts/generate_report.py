@@ -16,6 +16,16 @@ from urllib.parse import quote
 ROOT = Path(__file__).resolve().parents[1]
 AS_OF_DATE = date(2026, 6, 19)
 OLDER_THAN_ONE_YEAR_CUTOFF = date(2025, 6, 19)
+ARTIFACT_REVISION_SUFFIX_RE = re.compile(r"-(?:gguf|awq|gptq|fp8|fp4|mxfp8|nvfp4)-v[0-9]+$")
+ARTIFACT_SUFFIX_RE = re.compile(
+    r"-(?:"
+    r"gguf|awq|gptq|fp8|fp4|mxfp8|nvfp4|bf16|fp16|int2|int3|int4|int8|"
+    r"q[2-8](?:-(?:0|1|k|m|s|l))*|"
+    r"4bit|8bit|bnb|bitsandbytes|mlx|exl2|onnx|openvino|tensorrt|"
+    r"modelopt|qat|quantized|quant|compressed|safetensors|hf"
+    r")$"
+)
+QAT_SUFFIX_RE = re.compile(r"-qat-w[0-9]+a[0-9]+-ct$")
 
 
 def latest_snapshot_dir() -> Path:
@@ -134,6 +144,23 @@ def older_than_one_year(row: dict[str, str]) -> bool:
     return created is not None and created < OLDER_THAN_ONE_YEAR_CUTOFF
 
 
+def normalized_repo_slug(model_id: str) -> str:
+    slug = model_id.rsplit("/", 1)[-1].lower()
+    slug = re.sub(r"[^a-z0-9]+", "-", slug)
+    return slug.strip("-")
+
+
+def slug_dedupe_key(model_id: str) -> str:
+    slug = normalized_repo_slug(model_id)
+    previous = None
+    while slug and slug != previous:
+        previous = slug
+        slug = QAT_SUFFIX_RE.sub("", slug)
+        slug = ARTIFACT_REVISION_SUFFIX_RE.sub("", slug)
+        slug = ARTIFACT_SUFFIX_RE.sub("", slug)
+    return slug or normalized_repo_slug(model_id)
+
+
 def model_link(model_id: str) -> str:
     return f"[{model_id}](https://huggingface.co/{quote(model_id, safe='/')})"
 
@@ -190,6 +217,33 @@ def table_row(row: dict[str, str]) -> str:
     return "| " + " | ".join(values) + " |"
 
 
+def slug_dedupe_groups(rows: list[dict[str, str]]) -> list[tuple[str, list[dict[str, str]]]]:
+    groups: dict[str, list[dict[str, str]]] = {}
+    for row in rows:
+        groups.setdefault(slug_dedupe_key(row["id"]), []).append(row)
+    return sorted(
+        groups.items(),
+        key=lambda item: max(as_int(row["downloads"]) for row in item[1]),
+        reverse=True,
+    )
+
+
+def slug_dedupe_table_row(slug: str, rows: list[dict[str, str]]) -> str:
+    ordered = sorted(rows, key=lambda row: as_int(row["downloads"]), reverse=True)
+    representative = ordered[0]
+    examples = [model_link(row["id"]) for row in ordered[:4]]
+    if len(ordered) > 4:
+        examples.append(f"+ {len(ordered) - 4} more")
+    values = [
+        f"`{slug}`",
+        model_link(representative["id"]),
+        str(len(rows)),
+        fmt_int(representative["downloads"]),
+        ", ".join(examples),
+    ]
+    return "| " + " | ".join(values) + " |"
+
+
 def excluded_summary(rows: list[dict[str, str]]) -> list[str]:
     pipelines = Counter(row["pipeline_tag"] or "unknown" for row in rows)
     authors = Counter(row["author"] or "unknown" for row in rows)
@@ -220,6 +274,8 @@ def write_report(
     recent_included = [row for row in included if not older_than_one_year(row)]
     older_included = [row for row in included if older_than_one_year(row)]
     excluded = [row for row in rows if not decisions[row["id"]]]
+    slug_groups = slug_dedupe_groups(recent_included)
+    duplicate_slug_groups = [group_rows for _, group_rows in slug_groups if len(group_rows) > 1]
     included_by_class = Counter(model_class(row) for row in included)
 
     lines: list[str] = [
@@ -245,6 +301,7 @@ def write_report(
         "The second filter applies `MODEL_MANUAL_CURATION.jsonl`, where `include: true` means the model is a likely OpenClaw/ShellBench backend candidate.",
         "The age split uses Hugging Face `created_at` as the release-date proxy.",
         f"Rows with `created_at < {OLDER_THAN_ONE_YEAR_CUTOFF.isoformat()}` are treated as older than one year and moved into the collapsible reference table at the bottom.",
+        "Slug deduplication is slug-only: it normalizes repo names, strips packaging/runtime/quantization suffixes, and keeps semantic suffixes like `instruct`, `chat`, `coder`, `vl`, `vision`, `thinking`, `reasoning`, `base`, and `distill`.",
         "",
         "## Summary",
         "",
@@ -252,24 +309,40 @@ def write_report(
         f"- Included OpenClaw candidates: {len(included):,}",
         f"- Current/recent included candidates: {len(recent_included):,}",
         f"- Older-than-one-year included candidates: {len(older_included):,}",
+        f"- Slug-deduped current/recent model groups: {len(slug_groups):,}",
+        f"- Multi-artifact slug groups: {len(duplicate_slug_groups):,}",
         f"- Excluded models: {len(excluded):,}",
         f"- Text candidates: {included_by_class['text']:,}",
         f"- Coding candidates: {included_by_class['coding']:,}",
         f"- Multimodal candidates: {included_by_class['multimodal']:,}",
         f"- Special-architecture candidates: {included_by_class['special-architecture']:,}",
         "",
-        "## Curation Policy",
+        "## Slug Deduplication",
         "",
-        "Included models are likely OpenClaw/ShellBench backend candidates: chat, instruct, coding, reasoning, conversational, or agent-like multimodal models.",
-        "Excluded models are popular but not primary agent backends: embeddings, rerankers, ASR/TTS/audio utilities, OCR/parser-only models, safety guards, image-only models, base/pretrain-only checkpoints, and narrow domain support models.",
+        f"The current/recent table has {len(recent_included):,} included rows and {len(slug_groups):,} slug-deduplicated model groups.",
+        "The heuristic is intentionally simple: group by the repo slug after removing artifact suffixes such as `GGUF`, `AWQ`, `GPTQ`, `FP8`, `NVFP4`, `BF16`, `MLX`, `4bit`, `8bit`, `bnb`, and QAT suffixes.",
+        "It does not merge semantic variants: instruct/base, chat, coder, vision/VL, thinking/reasoning, distill, and similarly named variants stay separate unless the remaining slug is identical.",
         "",
-        "## Current / Recent Included Candidate Table",
-        "",
-        f"This table excludes included candidates with `created_at < {OLDER_THAN_ONE_YEAR_CUTOFF.isoformat()}`. Those older candidates are kept in a collapsible reference section at the bottom.",
-        "",
-        "| Model | Downloads | Likes | Created | Params | Class | Pipeline | License | Router | Signals |",
-        "| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |",
+        "| Slug key | Representative repo | Rows | Top downloads | Grouped repos |",
+        "| --- | --- | ---: | ---: | --- |",
     ]
+    lines.extend(slug_dedupe_table_row(slug, group_rows) for slug, group_rows in slug_groups)
+    lines.extend(
+        [
+            "",
+            "## Curation Policy",
+            "",
+            "Included models are likely OpenClaw/ShellBench backend candidates: chat, instruct, coding, reasoning, conversational, or agent-like multimodal models.",
+            "Excluded models are popular but not primary agent backends: embeddings, rerankers, ASR/TTS/audio utilities, OCR/parser-only models, safety guards, image-only models, base/pretrain-only checkpoints, and narrow domain support models.",
+            "",
+            "## Current / Recent Included Candidate Table",
+            "",
+            f"This table excludes included candidates with `created_at < {OLDER_THAN_ONE_YEAR_CUTOFF.isoformat()}`. Those older candidates are kept in a collapsible reference section at the bottom.",
+            "",
+            "| Model | Downloads | Likes | Created | Params | Class | Pipeline | License | Router | Signals |",
+            "| --- | ---: | ---: | ---: | ---: | --- | --- | --- | --- | --- |",
+        ]
+    )
     lines.extend(table_row(row) for row in recent_included)
     lines.append("")
     lines.extend(excluded_summary(excluded))
