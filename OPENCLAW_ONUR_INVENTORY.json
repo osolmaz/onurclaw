@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 438,
-    "open_prs": 705,
-    "open_threads": 1143
+    "open_issues": 439,
+    "open_prs": 711,
+    "open_threads": 1150
   },
   "open_threads": [
     {
@@ -5860,6 +5860,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@ly-wang19",
+      "number": 95372,
+      "title": "fix(cli): sync infer capability inspect metadata flags with registered options",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95372"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@mikasa0818",
+      "number": 95370,
+      "title": "fix #94919: [Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95370"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@NianJiuZst",
+      "number": 95365,
+      "title": "fix: preserve user text that looks like inbound metadata",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95365"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@krpr",
+      "number": 95358,
+      "title": "fix(streaming): flush visible text immediately after reasoning close tag",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95358"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jrluis",
+      "number": 95351,
+      "title": "[Feature]: Generic JSONL line-parsing hook for CliBackendPlugin (native tool-card support beyond claude-stream-json)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95351"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@jason-allen-oneal",
+      "number": 95347,
+      "title": "fix(memory): honor qmd search timeout for memory_search",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95347"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@zhangqueping",
+      "number": 95345,
+      "title": "fix(telegram): deliver reasoning as durable block when /reasoning on",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95345"
     },
     {
       "activity": 0,
@@ -15077,9 +15140,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 95325,
-    "pr": 95344
+    "issue": 95367,
+    "pr": 95374
   },
   "schema_version": 1,
-  "updated": "2026-06-20"
+  "updated": "2026-06-21"
 }
