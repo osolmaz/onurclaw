@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 438,
-    "open_prs": 701,
-    "open_threads": 1139
+    "open_prs": 705,
+    "open_threads": 1143
   },
   "open_threads": [
     {
@@ -5860,6 +5860,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mpz4life",
+      "number": 95342,
+      "title": "fix(agents): skip pre-prompt precheck when context engine owns compaction [AI]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95342"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ly85206559",
+      "number": 95341,
+      "title": "fix(ui): show cron job model selection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95341"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mikasa0818",
+      "number": 95333,
+      "title": "fix #95279: Provide a trusted inbound-decoration contract so consumers can strip/dedup without forgeable text heuristics",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95333"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mpz4life",
+      "number": 95327,
+      "title": "fix(agents): use context engine token estimate for precheck overflow detection [AI]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95327"
     },
     {
       "activity": 0,
@@ -15041,8 +15077,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95323,
-    "pr": 95324
+    "issue": 95325,
+    "pr": 95344
   },
   "schema_version": 1,
   "updated": "2026-06-20"
