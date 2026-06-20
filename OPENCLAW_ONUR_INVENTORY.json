@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 439,
-    "open_prs": 711,
-    "open_threads": 1150
+    "open_prs": 716,
+    "open_threads": 1155
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mikasa0818",
+      "number": 95393,
+      "title": "fix #92582: Bug: doctor falsely warns local memory embeddings are not ready",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95393"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@1052326311",
+      "number": 95392,
+      "title": "fix(doctor): suppress local memory embedding warning when probe was skipped",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95392"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 95391,
+      "title": "fix(active-memory): filter assistant chitchat from recall summary (fixes #84034)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95391"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mikasa0818",
+      "number": 95386,
+      "title": "fix #95351: [Feature]: Generic JSONL line-parsing hook for CliBackendPlugin (native tool-card support beyond claude-stream-json)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95386"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Thibaultjaigu",
+      "number": 95375,
+      "title": "feat(requesty): add Requesty as a bundled provider plugin",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95375"
     },
     {
       "activity": 0,
@@ -15140,8 +15185,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95367,
-    "pr": 95374
+    "issue": 95379,
+    "pr": 95393
   },
   "schema_version": 1,
   "updated": "2026-06-21"
