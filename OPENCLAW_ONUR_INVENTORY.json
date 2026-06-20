@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 435,
-    "open_prs": 678,
-    "open_threads": 1113
+    "open_prs": 683,
+    "open_threads": 1118
   },
   "open_threads": [
     {
@@ -5863,12 +5863,57 @@
     },
     {
       "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Pandah97",
+      "number": 95252,
+      "title": "fix(memory-host-sdk): preserve Windows backslash paths in QMD command resolution (#92302)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95252"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@crh-code",
+      "number": 95247,
+      "title": "fix(context-engine): read allowModelOverride from plugin config instead of hardcoding false",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95247"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Alix-007",
+      "number": 95246,
+      "title": "fix(plugin-sdk): bound live model catalog success body",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95246"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Alix-007",
+      "number": 95244,
+      "title": "fix(providers): bound self-hosted provider discovery JSON reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95244"
+    },
+    {
+      "activity": 0,
       "area": "Model routing/config",
       "creator": "@guifav",
       "number": 95224,
       "title": "OpenAI Codex gpt-5.5 catalog reports 272k context while OpenClaw can run 1M via override",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/95224"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Alix-007",
+      "number": 95223,
+      "title": "fix(openai): bound ChatGPT Responses error body reads to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95223"
     },
     {
       "activity": 0,
@@ -14807,8 +14852,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95224,
-    "pr": 95221
+    "issue": 95251,
+    "pr": 95255
   },
   "schema_version": 1,
   "updated": "2026-06-20"

@@ -4,15 +4,20 @@ Updated: 2026-06-20
 
 Review watermark:
 
-- Last reviewed through issue: #95224.
-- Last reviewed through PR: #95221.
+- Last reviewed through issue: #95251.
+- Last reviewed through PR: #95255.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95252](https://github.com/openclaw/openclaw/pull/95252) | 2026-06-20 | 0 | Local memory/embedding | @Pandah97 | fix(memory-host-sdk): preserve Windows backslash paths in QMD command resolution (#92302) |
+| 🔀&nbsp;[#95247](https://github.com/openclaw/openclaw/pull/95247) | 2026-06-20 | 0 | Model routing/config | @crh-code | fix(context-engine): read allowModelOverride from plugin config instead of hardcoding false |
+| 🔀&nbsp;[#95246](https://github.com/openclaw/openclaw/pull/95246) | 2026-06-20 | 0 | Model routing/config | @Alix-007 | fix(plugin-sdk): bound live model catalog success body |
+| 🔀&nbsp;[#95244](https://github.com/openclaw/openclaw/pull/95244) | 2026-06-20 | 0 | Local model runtime | @Alix-007 | fix(providers): bound self-hosted provider discovery JSON reads |
 | 📝&nbsp;[#95224](https://github.com/openclaw/openclaw/issues/95224) | 2026-06-20 | 0 | Model routing/config | @guifav | OpenAI Codex gpt-5.5 catalog reports 272k context while OpenClaw can run 1M via override |
+| 🔀&nbsp;[#95223](https://github.com/openclaw/openclaw/pull/95223) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(openai): bound ChatGPT Responses error body reads to prevent OOM |
 | 🔀&nbsp;[#95214](https://github.com/openclaw/openclaw/pull/95214) | 2026-06-20 | 0 | Model routing/config | @mmyzwl | fix(openrouter): expand short DeepSeek V4 aliases in API model normalizer |
 | 🔀&nbsp;[#95213](https://github.com/openclaw/openclaw/pull/95213) | 2026-06-20 | 0 | Model routing/config | @lzyyzznl | fix(plugins): infer LLM override policy from config.summaryModel at runtime |
 | 🔀&nbsp;[#95212](https://github.com/openclaw/openclaw/pull/95212) | 2026-06-20 | 0 | Local memory/embedding | @Pandah97 | fix(memory): preserve Windows absolute paths in QMD command parsing (#92302) |
@@ -57,13 +62,8 @@ Review watermark:
 | 📝&nbsp;[#94992](https://github.com/openclaw/openclaw/issues/94992) | 2026-06-19 | 0 | Model/provider behavior | @911erik | [Bug]: Invalid signature in thinking block on every agent — persists on v2026.6.1 |
 | 🔀&nbsp;[#94988](https://github.com/openclaw/openclaw/pull/94988) | 2026-06-19 | 0 | OpenAI-compatible/proxy | @hugenshen | Codex/fix 94979 kimi web search baseurl |
 | 🔀&nbsp;[#94985](https://github.com/openclaw/openclaw/pull/94985) | 2026-06-19 | 0 | Local memory/embedding | @ml12580 | fix(memory-core): skip markdown placeholder snippets in short-term promotion (#80582) [AI-assisted] |
-| 🔀&nbsp;[#94982](https://github.com/openclaw/openclaw/pull/94982) | 2026-06-19 | 0 | Local memory/embedding | @jincheng-xydt | fix: preserve Windows path separators in splitShellArgs (#92302) |
-| 📝&nbsp;[#94979](https://github.com/openclaw/openclaw/issues/94979) | 2026-06-19 | 0 | Open-weight/provider behavior | @bici926434 | [Bug]: web_search (kimi) returns 401 Invalid Authentication despite valid API key |
-| 🔀&nbsp;[#94961](https://github.com/openclaw/openclaw/pull/94961) | 2026-06-19 | 0 | Model routing/config | @jincheng-xydt | fix: propagate lossless-claw allowModelOverride at config normalization (#94289) |
-| 🔀&nbsp;[#94960](https://github.com/openclaw/openclaw/pull/94960) | 2026-06-19 | 0 | Open-weight/provider behavior | @jincheng-xydt | fix: add MiniMax M3/M2.7 to reasoning content replay allowlist (#92769) |
-| 🔀&nbsp;[#94958](https://github.com/openclaw/openclaw/pull/94958) | 2026-06-19 | 0 | Local memory/embedding | @lzyyzznl | fix(memory): preserve Windows backslash paths in QMD command resolution |
 
-## OPEN THREADS (1113)
+## OPEN THREADS (1118)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1063 open threads, sorted by activity</summary>
+<summary>Remaining 1068 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,7 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95252](https://github.com/openclaw/openclaw/pull/95252) | 0 | Local memory/embedding | @Pandah97 | fix(memory-host-sdk): preserve Windows backslash paths in QMD command resolution (#92302) |
+| 🔀&nbsp;[#95247](https://github.com/openclaw/openclaw/pull/95247) | 0 | Model routing/config | @crh-code | fix(context-engine): read allowModelOverride from plugin config instead of hardcoding false |
+| 🔀&nbsp;[#95246](https://github.com/openclaw/openclaw/pull/95246) | 0 | Model routing/config | @Alix-007 | fix(plugin-sdk): bound live model catalog success body |
+| 🔀&nbsp;[#95244](https://github.com/openclaw/openclaw/pull/95244) | 0 | Local model runtime | @Alix-007 | fix(providers): bound self-hosted provider discovery JSON reads |
 | 📝&nbsp;[#95224](https://github.com/openclaw/openclaw/issues/95224) | 0 | Model routing/config | @guifav | OpenAI Codex gpt-5.5 catalog reports 272k context while OpenClaw can run 1M via override |
+| 🔀&nbsp;[#95223](https://github.com/openclaw/openclaw/pull/95223) | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(openai): bound ChatGPT Responses error body reads to prevent OOM |
 | 🔀&nbsp;[#95214](https://github.com/openclaw/openclaw/pull/95214) | 0 | Model routing/config | @mmyzwl | fix(openrouter): expand short DeepSeek V4 aliases in API model normalizer |
 | 🔀&nbsp;[#95213](https://github.com/openclaw/openclaw/pull/95213) | 0 | Model routing/config | @lzyyzznl | fix(plugins): infer LLM override policy from config.summaryModel at runtime |
 | 🔀&nbsp;[#95212](https://github.com/openclaw/openclaw/pull/95212) | 0 | Local memory/embedding | @Pandah97 | fix(memory): preserve Windows absolute paths in QMD command parsing (#92302) |
@@ -1897,4 +1902,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1113 (435 issues, 678 PRs).
+- Kept open threads: 1118 (435 issues, 683 PRs).
