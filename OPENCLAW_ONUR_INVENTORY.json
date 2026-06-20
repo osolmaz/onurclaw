@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 437,
-    "open_prs": 700,
-    "open_threads": 1137
+    "open_issues": 438,
+    "open_prs": 701,
+    "open_threads": 1139
   },
   "open_threads": [
     {
@@ -5860,6 +5860,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@krpr",
+      "number": 95314,
+      "title": "Bug: reasoning→content transition text buffered until stream flush; leading newlines swallowed",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95314"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@sunlit-deng",
+      "number": 95311,
+      "title": "feat: add disableBoundaryAwareCache compat option for prefix-matching prompt cache providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95311"
     },
     {
       "activity": 0,
@@ -15023,8 +15041,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95295,
-    "pr": 95307
+    "issue": 95323,
+    "pr": 95324
   },
   "schema_version": 1,
   "updated": "2026-06-20"
