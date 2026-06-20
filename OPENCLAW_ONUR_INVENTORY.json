@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 432,
-    "open_prs": 666,
-    "open_threads": 1098
+    "open_issues": 433,
+    "open_prs": 673,
+    "open_threads": 1106
   },
   "open_threads": [
     {
@@ -5860,6 +5860,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ml12580",
+      "number": 95177,
+      "title": "fix(doctor): suppress false-positive local embedding warning when gateway probe skipped [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95177"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jincheng-xydt",
+      "number": 95176,
+      "title": "fix(anthropic): retry on UND_ERR_SOCKET keep-alive failures (#87407)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95176"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@moguangyu5-design",
+      "number": 95167,
+      "title": "fix(config): allow Nix-mode doctor --fix and auth login for non-config writes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95167"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ArturoArktad",
+      "number": 95165,
+      "title": "embedded_run watchdog kills sessions during slow Anthropic responses (no progress signal before first token)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95165"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 95162,
+      "title": "fix(memory): align session file counter denominator with indexer filter (fixes #77338)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95162"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@bowenluo718",
+      "number": 95151,
+      "title": "fix(ollama): support remote Ollama hosts with extended timeouts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95151"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SunnyShu0925",
+      "number": 95149,
+      "title": "fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95149"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@sunlit-deng",
+      "number": 95140,
+      "title": "fix: auto-populate lossless-claw llm policy from summaryModel at config load",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95140"
     },
     {
       "activity": 0,
@@ -14672,8 +14744,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95136,
-    "pr": 95139
+    "issue": 95186,
+    "pr": 95188
   },
   "schema_version": 1,
   "updated": "2026-06-20"

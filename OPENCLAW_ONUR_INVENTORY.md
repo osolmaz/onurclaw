@@ -4,14 +4,22 @@ Updated: 2026-06-20
 
 Review watermark:
 
-- Last reviewed through issue: #95136.
-- Last reviewed through PR: #95139.
+- Last reviewed through issue: #95186.
+- Last reviewed through PR: #95188.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95177](https://github.com/openclaw/openclaw/pull/95177) | 2026-06-20 | 0 | Local memory/embedding | @ml12580 | fix(doctor): suppress false-positive local embedding warning when gateway probe skipped [AI-assisted] |
+| 🔀&nbsp;[#95176](https://github.com/openclaw/openclaw/pull/95176) | 2026-06-20 | 0 | Model routing/config | @jincheng-xydt | fix(anthropic): retry on UND_ERR_SOCKET keep-alive failures (#87407) |
+| 🔀&nbsp;[#95167](https://github.com/openclaw/openclaw/pull/95167) | 2026-06-20 | 0 | Model routing/config | @moguangyu5-design | fix(config): allow Nix-mode doctor --fix and auth login for non-config writes |
+| 📝&nbsp;[#95165](https://github.com/openclaw/openclaw/issues/95165) | 2026-06-20 | 0 | Model routing/config | @ArturoArktad | embedded_run watchdog kills sessions during slow Anthropic responses (no progress signal before first token) |
+| 🔀&nbsp;[#95162](https://github.com/openclaw/openclaw/pull/95162) | 2026-06-20 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
+| 🔀&nbsp;[#95151](https://github.com/openclaw/openclaw/pull/95151) | 2026-06-20 | 0 | Local model runtime | @bowenluo718 | fix(ollama): support remote Ollama hosts with extended timeouts |
+| 🔀&nbsp;[#95149](https://github.com/openclaw/openclaw/pull/95149) | 2026-06-20 | 0 | Local memory/embedding | @SunnyShu0925 | fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode |
+| 🔀&nbsp;[#95140](https://github.com/openclaw/openclaw/pull/95140) | 2026-06-20 | 0 | Model routing/config | @sunlit-deng | fix: auto-populate lossless-claw llm policy from summaryModel at config load |
 | 🔀&nbsp;[#95139](https://github.com/openclaw/openclaw/pull/95139) | 2026-06-20 | 0 | Local model runtime | @lzyyzznl | fix(ollama): show full thinking levels for live-discovered models in /think menu |
 | 🔀&nbsp;[#95138](https://github.com/openclaw/openclaw/pull/95138) | 2026-06-20 | 0 | Model routing/config | @LiLan0125 | fix(doctor): add OAuth re-auth hint to openai-codex provider migration |
 | 📝&nbsp;[#95136](https://github.com/openclaw/openclaw/issues/95136) | 2026-06-20 | 0 | Model routing/config | @cattyclaw-bot | No migration path or warning when a model provider id is removed/renamed (openai-codex -> openai): OAuth profiles silently orphaned |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94918](https://github.com/openclaw/openclaw/pull/94918) | 2026-06-19 | 0 | Model routing/config | @zhangqueping | feat(cron): expose --fallbacks option on cron create and edit commands |
 | 🔀&nbsp;[#94914](https://github.com/openclaw/openclaw/pull/94914) | 2026-06-19 | 0 | Model routing/config | @aniruddhaadak80 | fix(models): filter models list by configured providers in replace mode [AI-assisted] |
 | 🔀&nbsp;[#94911](https://github.com/openclaw/openclaw/pull/94911) | 2026-06-19 | 0 | Model/provider behavior | @zhangqueping | fix(byteplus): add missing cacheRead/cacheWrite pricing for BytePlus models |
-| 📝&nbsp;[#94908](https://github.com/openclaw/openclaw/issues/94908) | 2026-06-19 | 0 | OpenAI-compatible/proxy | @Naruto2018 | [Bug]: /v1/responses does not retain conversation context when using the same user value |
-| 📝&nbsp;[#94906](https://github.com/openclaw/openclaw/issues/94906) | 2026-06-19 | 0 | Model/provider behavior | @AxelHu | Add recovery path for provider-rejected image blocks in session history |
-| 🔀&nbsp;[#94890](https://github.com/openclaw/openclaw/pull/94890) | 2026-06-19 | 0 | Model/provider behavior | @zhangqueping | fix(diagnostic): lower stall abort threshold and extend model-call recovery to CLI sessions |
-| 📝&nbsp;[#94888](https://github.com/openclaw/openclaw/issues/94888) | 2026-06-19 | 0 | Local memory/embedding | @bizzle12368239 | Memory indexer fails to pick up files in agents that haven't been invoked in the current session |
-| 🔀&nbsp;[#94884](https://github.com/openclaw/openclaw/pull/94884) | 2026-06-19 | 0 | Model/provider behavior | @zhangqueping | fix(feishu): replace empty Type.Any() with non-empty FlexibleValue in bitable schemas |
-| 🔀&nbsp;[#94882](https://github.com/openclaw/openclaw/pull/94882) | 2026-06-19 | 0 | Local model runtime | @lzyyzznl | fix(ollama): treat undefined reasoning as potentially reasoning-capable |
-| 🔀&nbsp;[#94875](https://github.com/openclaw/openclaw/pull/94875) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494) |
-| 🔀&nbsp;[#94841](https://github.com/openclaw/openclaw/pull/94841) | 2026-06-19 | 0 | Local memory/embedding | @Pick-cat | fix(qmd): preserve Windows absolute paths in command resolution |
 
-## OPEN THREADS (1098)
+## OPEN THREADS (1106)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1048 open threads, sorted by activity</summary>
+<summary>Remaining 1056 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95177](https://github.com/openclaw/openclaw/pull/95177) | 0 | Local memory/embedding | @ml12580 | fix(doctor): suppress false-positive local embedding warning when gateway probe skipped [AI-assisted] |
+| 🔀&nbsp;[#95176](https://github.com/openclaw/openclaw/pull/95176) | 0 | Model routing/config | @jincheng-xydt | fix(anthropic): retry on UND_ERR_SOCKET keep-alive failures (#87407) |
+| 🔀&nbsp;[#95167](https://github.com/openclaw/openclaw/pull/95167) | 0 | Model routing/config | @moguangyu5-design | fix(config): allow Nix-mode doctor --fix and auth login for non-config writes |
+| 📝&nbsp;[#95165](https://github.com/openclaw/openclaw/issues/95165) | 0 | Model routing/config | @ArturoArktad | embedded_run watchdog kills sessions during slow Anthropic responses (no progress signal before first token) |
+| 🔀&nbsp;[#95162](https://github.com/openclaw/openclaw/pull/95162) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
+| 🔀&nbsp;[#95151](https://github.com/openclaw/openclaw/pull/95151) | 0 | Local model runtime | @bowenluo718 | fix(ollama): support remote Ollama hosts with extended timeouts |
+| 🔀&nbsp;[#95149](https://github.com/openclaw/openclaw/pull/95149) | 0 | Local memory/embedding | @SunnyShu0925 | fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode |
+| 🔀&nbsp;[#95140](https://github.com/openclaw/openclaw/pull/95140) | 0 | Model routing/config | @sunlit-deng | fix: auto-populate lossless-claw llm policy from summaryModel at config load |
 | 🔀&nbsp;[#95139](https://github.com/openclaw/openclaw/pull/95139) | 0 | Local model runtime | @lzyyzznl | fix(ollama): show full thinking levels for live-discovered models in /think menu |
 | 🔀&nbsp;[#95138](https://github.com/openclaw/openclaw/pull/95138) | 0 | Model routing/config | @LiLan0125 | fix(doctor): add OAuth re-auth hint to openai-codex provider migration |
 | 📝&nbsp;[#95136](https://github.com/openclaw/openclaw/issues/95136) | 0 | Model routing/config | @cattyclaw-bot | No migration path or warning when a model provider id is removed/renamed (openai-codex -> openai): OAuth profiles silently orphaned |
@@ -1882,4 +1890,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1098 (432 issues, 666 PRs).
+- Kept open threads: 1106 (433 issues, 673 PRs).
