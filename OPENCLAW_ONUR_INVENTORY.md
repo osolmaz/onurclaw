@@ -4,14 +4,17 @@ Updated: 2026-06-21
 
 Review watermark:
 
-- Last reviewed through issue: #95379.
-- Last reviewed through PR: #95393.
+- Last reviewed through issue: #95399.
+- Last reviewed through PR: #95401.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95401](https://github.com/openclaw/openclaw/pull/95401) | 2026-06-20 | 0 | Local model runtime | @MonkeyLeeT | fix(lmstudio): canonicalize variant model keys |
+| 🔀&nbsp;[#95400](https://github.com/openclaw/openclaw/pull/95400) | 2026-06-20 | 0 | Model routing/config | @jason-allen-oneal | fix(model-fallback): classify Codex usage-limit payloads |
+| 📝&nbsp;[#95394](https://github.com/openclaw/openclaw/issues/95394) | 2026-06-20 | 0 | Local model runtime | @spacenet-Pop-OS | [Bug]: LM Studio model identifier gets @q4_k_m/@q8_0 quant suffix appended on retry path — assistant turn falsely marked as error |
 | 🔀&nbsp;[#95393](https://github.com/openclaw/openclaw/pull/95393) | 2026-06-20 | 0 | Local memory/embedding | @mikasa0818 | fix #92582: Bug: doctor falsely warns local memory embeddings are not ready |
 | 🔀&nbsp;[#95392](https://github.com/openclaw/openclaw/pull/95392) | 2026-06-20 | 0 | Local memory/embedding | @1052326311 | fix(doctor): suppress local memory embedding warning when probe was skipped |
 | 🔀&nbsp;[#95391](https://github.com/openclaw/openclaw/pull/95391) | 2026-06-20 | 0 | Local memory/embedding | @liuhao1024 | fix(active-memory): filter assistant chitchat from recall summary (fixes #84034) |
@@ -59,11 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95213](https://github.com/openclaw/openclaw/pull/95213) | 2026-06-20 | 0 | Model routing/config | @lzyyzznl | fix(plugins): infer LLM override policy from config.summaryModel at runtime |
 | 🔀&nbsp;[#95212](https://github.com/openclaw/openclaw/pull/95212) | 2026-06-20 | 0 | Local memory/embedding | @Pandah97 | fix(memory): preserve Windows absolute paths in QMD command parsing (#92302) |
 | 🔀&nbsp;[#95208](https://github.com/openclaw/openclaw/pull/95208) | 2026-06-20 | 0 | Model routing/config | @maweibin | fix(openrouter): strip provider prefix from short model refs in API model ID normalization |
-| 🔀&nbsp;[#95202](https://github.com/openclaw/openclaw/pull/95202) | 2026-06-20 | 0 | Model routing/config | @Sanjays2402 | fix(openrouter): expand short DeepSeek V4 aliases to upstream slug in API normalizer (#95198) |
-| 📝&nbsp;[#95198](https://github.com/openclaw/openclaw/issues/95198) | 2026-06-20 | 0 | Model routing/config | @daniel-alejandro-t | Bug: OpenRouter model prefix duplicated when using short model IDs (openrouter/deepseek-v4-flash → openrouter/openrouter/deepseek-v4-flash) |
-| 🔀&nbsp;[#95177](https://github.com/openclaw/openclaw/pull/95177) | 2026-06-20 | 0 | Local memory/embedding | @ml12580 | fix(doctor): suppress false-positive local embedding warning when gateway probe skipped [AI-assisted] |
 
-## OPEN THREADS (1155)
+## OPEN THREADS (1158)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1105 open threads, sorted by activity</summary>
+<summary>Remaining 1108 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95401](https://github.com/openclaw/openclaw/pull/95401) | 0 | Local model runtime | @MonkeyLeeT | fix(lmstudio): canonicalize variant model keys |
+| 🔀&nbsp;[#95400](https://github.com/openclaw/openclaw/pull/95400) | 0 | Model routing/config | @jason-allen-oneal | fix(model-fallback): classify Codex usage-limit payloads |
+| 📝&nbsp;[#95394](https://github.com/openclaw/openclaw/issues/95394) | 0 | Local model runtime | @spacenet-Pop-OS | [Bug]: LM Studio model identifier gets @q4_k_m/@q8_0 quant suffix appended on retry path — assistant turn falsely marked as error |
 | 🔀&nbsp;[#95393](https://github.com/openclaw/openclaw/pull/95393) | 0 | Local memory/embedding | @mikasa0818 | fix #92582: Bug: doctor falsely warns local memory embeddings are not ready |
 | 🔀&nbsp;[#95392](https://github.com/openclaw/openclaw/pull/95392) | 0 | Local memory/embedding | @1052326311 | fix(doctor): suppress local memory embedding warning when probe was skipped |
 | 🔀&nbsp;[#95391](https://github.com/openclaw/openclaw/pull/95391) | 0 | Local memory/embedding | @liuhao1024 | fix(active-memory): filter assistant chitchat from recall summary (fixes #84034) |
@@ -1939,4 +1942,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1155 (439 issues, 716 PRs).
+- Kept open threads: 1158 (440 issues, 718 PRs).

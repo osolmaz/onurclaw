@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 439,
-    "open_prs": 716,
-    "open_threads": 1155
+    "open_issues": 440,
+    "open_prs": 718,
+    "open_threads": 1158
   },
   "open_threads": [
     {
@@ -5860,6 +5860,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@MonkeyLeeT",
+      "number": 95401,
+      "title": "fix(lmstudio): canonicalize variant model keys",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95401"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jason-allen-oneal",
+      "number": 95400,
+      "title": "fix(model-fallback): classify Codex usage-limit payloads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95400"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@spacenet-Pop-OS",
+      "number": 95394,
+      "title": "[Bug]: LM Studio model identifier gets @q4_k_m/@q8_0 quant suffix appended on retry path — assistant turn falsely marked as error",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95394"
     },
     {
       "activity": 0,
@@ -15185,8 +15212,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95379,
-    "pr": 95393
+    "issue": 95399,
+    "pr": 95401
   },
   "schema_version": 1,
   "updated": "2026-06-21"
