@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 433,
-    "open_prs": 673,
-    "open_threads": 1106
+    "open_issues": 435,
+    "open_prs": 678,
+    "open_threads": 1113
   },
   "open_threads": [
     {
@@ -5860,6 +5860,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@guifav",
+      "number": 95224,
+      "title": "OpenAI Codex gpt-5.5 catalog reports 272k context while OpenClaw can run 1M via override",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95224"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mmyzwl",
+      "number": 95214,
+      "title": "fix(openrouter): expand short DeepSeek V4 aliases in API model normalizer",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95214"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lzyyzznl",
+      "number": 95213,
+      "title": "fix(plugins): infer LLM override policy from config.summaryModel at runtime",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95213"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Pandah97",
+      "number": 95212,
+      "title": "fix(memory): preserve Windows absolute paths in QMD command parsing (#92302)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95212"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@maweibin",
+      "number": 95208,
+      "title": "fix(openrouter): strip provider prefix from short model refs in API model ID normalization",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95208"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Sanjays2402",
+      "number": 95202,
+      "title": "fix(openrouter): expand short DeepSeek V4 aliases to upstream slug in API normalizer (#95198)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95202"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@daniel-alejandro-t",
+      "number": 95198,
+      "title": "Bug: OpenRouter model prefix duplicated when using short model IDs (openrouter/deepseek-v4-flash → openrouter/openrouter/deepseek-v4-flash)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95198"
     },
     {
       "activity": 0,
@@ -14744,8 +14807,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95186,
-    "pr": 95188
+    "issue": 95224,
+    "pr": 95221
   },
   "schema_version": 1,
   "updated": "2026-06-20"
