@@ -4,14 +4,21 @@ Updated: 2026-06-20
 
 Review watermark:
 
-- Last reviewed through issue: #95109.
-- Last reviewed through PR: #95113.
+- Last reviewed through issue: #95136.
+- Last reviewed through PR: #95139.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95139](https://github.com/openclaw/openclaw/pull/95139) | 2026-06-20 | 0 | Local model runtime | @lzyyzznl | fix(ollama): show full thinking levels for live-discovered models in /think menu |
+| 🔀&nbsp;[#95138](https://github.com/openclaw/openclaw/pull/95138) | 2026-06-20 | 0 | Model routing/config | @LiLan0125 | fix(doctor): add OAuth re-auth hint to openai-codex provider migration |
+| 📝&nbsp;[#95136](https://github.com/openclaw/openclaw/issues/95136) | 2026-06-20 | 0 | Model routing/config | @cattyclaw-bot | No migration path or warning when a model provider id is removed/renamed (openai-codex -> openai): OAuth profiles silently orphaned |
+| 📝&nbsp;[#95135](https://github.com/openclaw/openclaw/issues/95135) | 2026-06-20 | 0 | Model routing/config | @cattyclaw-bot | Nix-mode write guard blocks auth-profile and session-state writes that never touch openclaw.json |
+| 📝&nbsp;[#95131](https://github.com/openclaw/openclaw/issues/95131) | 2026-06-19 | 0 | Model routing/config | @a-m-a-r-a | Official openai/* model selection auto-enables Codex plugin despite disabled/opt-out intent |
+| 🔀&nbsp;[#95127](https://github.com/openclaw/openclaw/pull/95127) | 2026-06-19 | 0 | Local memory/embedding | @Nas01010101 | perf(memory-lancedb): cache query embeddings per embeddings instance |
+| 🔀&nbsp;[#95120](https://github.com/openclaw/openclaw/pull/95120) | 2026-06-19 | 0 | Model routing/config | @xydigit-zt | feat(channels): add directUserId support for per-DM model override |
 | 🔀&nbsp;[#95113](https://github.com/openclaw/openclaw/pull/95113) | 2026-06-19 | 0 | Local memory/embedding | @849261680 | fix(memory): keep cleaning reindex sidecars after lock errors |
 | 🔀&nbsp;[#95101](https://github.com/openclaw/openclaw/pull/95101) | 2026-06-19 | 0 | Local memory/embedding | @Nas01010101 | perf(memory-lancedb): cache query embeddings per embeddings instance |
 | 🔀&nbsp;[#95099](https://github.com/openclaw/openclaw/pull/95099) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#94882](https://github.com/openclaw/openclaw/pull/94882) | 2026-06-19 | 0 | Local model runtime | @lzyyzznl | fix(ollama): treat undefined reasoning as potentially reasoning-capable |
 | 🔀&nbsp;[#94875](https://github.com/openclaw/openclaw/pull/94875) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494) |
 | 🔀&nbsp;[#94841](https://github.com/openclaw/openclaw/pull/94841) | 2026-06-19 | 0 | Local memory/embedding | @Pick-cat | fix(qmd): preserve Windows absolute paths in command resolution |
-| 🔀&nbsp;[#94839](https://github.com/openclaw/openclaw/pull/94839) | 2026-06-19 | 0 | Model/provider behavior | @lzyyzznl | fix(feishu): replace Type.Record(Type.String(), Type.Any()) with Type.Object({}, {additionalProperties: true}) in bitable tools |
-| 🔀&nbsp;[#94825](https://github.com/openclaw/openclaw/pull/94825) | 2026-06-19 | 0 | Model routing/config | @TUARAN | fix: respect replace mode in default models list |
-| 🔀&nbsp;[#94817](https://github.com/openclaw/openclaw/pull/94817) | 2026-06-19 | 0 | Local model runtime | @lzyyzznl | fix(ollama): treat undefined reasoning as potentially reasoning-capable |
-| 🔀&nbsp;[#94811](https://github.com/openclaw/openclaw/pull/94811) | 2026-06-19 | 0 | Local memory/embedding | @mushuiyu886 | fix(ollama): honor memory embedding output dimensionality |
-| 🔀&nbsp;[#94783](https://github.com/openclaw/openclaw/pull/94783) | 2026-06-19 | 0 | Local memory/embedding | @bowenluo718 | fix(memory-core): lower default promotion minScore for Gemini embedding compatibility |
-| 📝&nbsp;[#94780](https://github.com/openclaw/openclaw/issues/94780) | 2026-06-19 | 0 | Model routing/config | @Haderach-Ram | [Feature]: Per-cron model selection independent of agent default - run cheap/free models on automation jobs while keeping main agent on premium LLM |
-| 🔀&nbsp;[#94773](https://github.com/openclaw/openclaw/pull/94773) | 2026-06-19 | 0 | Local memory/embedding | @bowenluo718 | refactor(memory): add LEARNINGS.md to workspace memory artifact discovery |
 
-## OPEN THREADS (1091)
+## OPEN THREADS (1098)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1041 open threads, sorted by activity</summary>
+<summary>Remaining 1048 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95139](https://github.com/openclaw/openclaw/pull/95139) | 0 | Local model runtime | @lzyyzznl | fix(ollama): show full thinking levels for live-discovered models in /think menu |
+| 🔀&nbsp;[#95138](https://github.com/openclaw/openclaw/pull/95138) | 0 | Model routing/config | @LiLan0125 | fix(doctor): add OAuth re-auth hint to openai-codex provider migration |
+| 📝&nbsp;[#95136](https://github.com/openclaw/openclaw/issues/95136) | 0 | Model routing/config | @cattyclaw-bot | No migration path or warning when a model provider id is removed/renamed (openai-codex -> openai): OAuth profiles silently orphaned |
+| 📝&nbsp;[#95135](https://github.com/openclaw/openclaw/issues/95135) | 0 | Model routing/config | @cattyclaw-bot | Nix-mode write guard blocks auth-profile and session-state writes that never touch openclaw.json |
+| 📝&nbsp;[#95131](https://github.com/openclaw/openclaw/issues/95131) | 0 | Model routing/config | @a-m-a-r-a | Official openai/* model selection auto-enables Codex plugin despite disabled/opt-out intent |
+| 🔀&nbsp;[#95127](https://github.com/openclaw/openclaw/pull/95127) | 0 | Local memory/embedding | @Nas01010101 | perf(memory-lancedb): cache query embeddings per embeddings instance |
+| 🔀&nbsp;[#95120](https://github.com/openclaw/openclaw/pull/95120) | 0 | Model routing/config | @xydigit-zt | feat(channels): add directUserId support for per-DM model override |
 | 🔀&nbsp;[#95113](https://github.com/openclaw/openclaw/pull/95113) | 0 | Local memory/embedding | @849261680 | fix(memory): keep cleaning reindex sidecars after lock errors |
 | 🔀&nbsp;[#95101](https://github.com/openclaw/openclaw/pull/95101) | 0 | Local memory/embedding | @Nas01010101 | perf(memory-lancedb): cache query embeddings per embeddings instance |
 | 🔀&nbsp;[#95099](https://github.com/openclaw/openclaw/pull/95099) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
@@ -1875,4 +1882,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1091 (429 issues, 662 PRs).
+- Kept open threads: 1098 (432 issues, 666 PRs).

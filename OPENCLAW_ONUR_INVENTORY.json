@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 429,
-    "open_prs": 662,
-    "open_threads": 1091
+    "open_issues": 432,
+    "open_prs": 666,
+    "open_threads": 1098
   },
   "open_threads": [
     {
@@ -5860,6 +5860,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lzyyzznl",
+      "number": 95139,
+      "title": "fix(ollama): show full thinking levels for live-discovered models in /think menu",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95139"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@LiLan0125",
+      "number": 95138,
+      "title": "fix(doctor): add OAuth re-auth hint to openai-codex provider migration",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95138"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@cattyclaw-bot",
+      "number": 95136,
+      "title": "No migration path or warning when a model provider id is removed/renamed (openai-codex -> openai): OAuth profiles silently orphaned",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95136"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@cattyclaw-bot",
+      "number": 95135,
+      "title": "Nix-mode write guard blocks auth-profile and session-state writes that never touch openclaw.json",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@a-m-a-r-a",
+      "number": 95131,
+      "title": "Official openai/* model selection auto-enables Codex plugin despite disabled/opt-out intent",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95131"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Nas01010101",
+      "number": 95127,
+      "title": "perf(memory-lancedb): cache query embeddings per embeddings instance",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95127"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xydigit-zt",
+      "number": 95120,
+      "title": "feat(channels): add directUserId support for per-DM model override",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95120"
     },
     {
       "activity": 0,
@@ -14609,8 +14672,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95109,
-    "pr": 95113
+    "issue": 95136,
+    "pr": 95139
   },
   "schema_version": 1,
   "updated": "2026-06-20"
