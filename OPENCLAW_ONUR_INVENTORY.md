@@ -4,14 +4,26 @@ Updated: 2026-06-20
 
 Review watermark:
 
-- Last reviewed through issue: #95251.
-- Last reviewed through PR: #95255.
+- Last reviewed through issue: #95288.
+- Last reviewed through PR: #95287.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95287](https://github.com/openclaw/openclaw/pull/95287) | 2026-06-20 | 0 | Model routing/config | @crh-code | fix(failover): detect provider transport timeout in AbortError with 'This operation was aborted' message |
+| 🔀&nbsp;[#95286](https://github.com/openclaw/openclaw/pull/95286) | 2026-06-20 | 0 | Model routing/config | @zhangqueping | fix(agents): forward resolved model to sub-agent gateway agent call |
+| 🔀&nbsp;[#95285](https://github.com/openclaw/openclaw/pull/95285) | 2026-06-20 | 0 | Local memory/embedding | @mmyzwl | fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode |
+| 🔀&nbsp;[#95284](https://github.com/openclaw/openclaw/pull/95284) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @lzyyzznl | fix(openai-completions): close thinking block at reasoning→content transition for providers without discrete thinking_end |
+| 🔀&nbsp;[#95283](https://github.com/openclaw/openclaw/pull/95283) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @ZengWen-DT | fix(openai-completions): seal native reasoning before the answer under /reasoning on |
+| 🔀&nbsp;[#95281](https://github.com/openclaw/openclaw/pull/95281) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(llm): close reasoning stream on text-lane transition for DeepSeek (fixes #95280) |
+| 📝&nbsp;[#95280](https://github.com/openclaw/openclaw/issues/95280) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @Marvinthebored | deepseek reasoning: final answer merges into the thinking block under /reasoning on (no discrete thinking_end at the reasoning→content transition) |
+| 📝&nbsp;[#95279](https://github.com/openclaw/openclaw/issues/95279) | 2026-06-20 | 0 | Local memory/embedding | @gorkem2020 | Provide a trusted inbound-decoration contract so consumers can strip/dedup without forgeable text heuristics |
+| 🔀&nbsp;[#95274](https://github.com/openclaw/openclaw/pull/95274) | 2026-06-20 | 0 | Local memory/embedding | @ly85206559 | fix(memory): preserve Windows QMD command paths |
+| 🔀&nbsp;[#95268](https://github.com/openclaw/openclaw/pull/95268) | 2026-06-20 | 0 | Model routing/config | @Darren2030 | fix(openrouter): expand short canonical model IDs to upstream API slugs (fixes #95198) |
+| 🔀&nbsp;[#95267](https://github.com/openclaw/openclaw/pull/95267) | 2026-06-20 | 0 | Local memory/embedding | @zhangqueping | fix(memory): repair Windows QMD paths whose backslashes were stripped by JSON parsing |
+| 🔀&nbsp;[#95258](https://github.com/openclaw/openclaw/pull/95258) | 2026-06-20 | 0 | Model routing/config | @dwc1997 | fix(openrouter): prevent model prefix duplication for short canonical IDs |
 | 🔀&nbsp;[#95252](https://github.com/openclaw/openclaw/pull/95252) | 2026-06-20 | 0 | Local memory/embedding | @Pandah97 | fix(memory-host-sdk): preserve Windows backslash paths in QMD command resolution (#92302) |
 | 🔀&nbsp;[#95247](https://github.com/openclaw/openclaw/pull/95247) | 2026-06-20 | 0 | Model routing/config | @crh-code | fix(context-engine): read allowModelOverride from plugin config instead of hardcoding false |
 | 🔀&nbsp;[#95246](https://github.com/openclaw/openclaw/pull/95246) | 2026-06-20 | 0 | Model routing/config | @Alix-007 | fix(plugin-sdk): bound live model catalog success body |
@@ -50,20 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95064](https://github.com/openclaw/openclaw/pull/95064) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(doctor): suppress false-positive local embedding warning when probe was skipped (fixes #92582) |
 | 🔀&nbsp;[#95062](https://github.com/openclaw/openclaw/pull/95062) | 2026-06-19 | 0 | Local model runtime | @lzyyzznl | fix(telegram): fall back to agent default model in /think menu when session model context is empty |
 | 🔀&nbsp;[#95050](https://github.com/openclaw/openclaw/pull/95050) | 2026-06-19 | 0 | Model routing/config | @MonkeyLeeT | fix(auto-reply): surface preserved fallback notices |
-| 🔀&nbsp;[#95049](https://github.com/openclaw/openclaw/pull/95049) | 2026-06-19 | 0 | Model routing/config | @jincheng-xydt | fix: respect hook config model override in session-memory slug generation (#89551) |
-| 🔀&nbsp;[#95047](https://github.com/openclaw/openclaw/pull/95047) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(dreaming): increase narrative timeout from 60s to 120s for ARM devices (fixes #92494) |
-| 📝&nbsp;[#95042](https://github.com/openclaw/openclaw/issues/95042) | 2026-06-19 | 0 | Local memory/embedding | @1attila2 | [Bug]: 2026.6.x regression cascade — memory search broken, then sessions lost on every reconnect (multi-agent deployment broken) |
-| 🔀&nbsp;[#95036](https://github.com/openclaw/openclaw/pull/95036) | 2026-06-19 | 0 | Local memory/embedding | @aniruddhaadak80 | fix(memory): preserve Windows backslashes in qmd command paths [AI-assisted] |
-| 🔀&nbsp;[#95034](https://github.com/openclaw/openclaw/pull/95034) | 2026-06-19 | 0 | Model/provider behavior | @AxelHu | fix(embedded-agent): auto-recover provider-rejected image history (closes #94906) |
-| 🔀&nbsp;[#95022](https://github.com/openclaw/openclaw/pull/95022) | 2026-06-19 | 0 | Local memory/embedding | @ml12580 | fix(memory-qmd): preserve unquoted Windows absolute paths in qmd command [AI-assisted] |
-| 🔀&nbsp;[#95006](https://github.com/openclaw/openclaw/pull/95006) | 2026-06-19 | 0 | Local memory/embedding | @mmyzwl | fix(memory): default memorySearch provider to "auto" instead of "openai" |
-| 📝&nbsp;[#95003](https://github.com/openclaw/openclaw/issues/95003) | 2026-06-19 | 0 | Local memory/embedding | @Wagregg | [Bug]: [Regression] [LOCALLY HOTFIXED] Memory search fails with "index metadata is missing" after Node.js 22.22.2 → 22.22.3 upgrade (apt) |
-| 📝&nbsp;[#94998](https://github.com/openclaw/openclaw/issues/94998) | 2026-06-19 | 0 | Model routing/config | @cls3389 | AbortError timeout not detected — fallback not triggered on provider transport timeout |
-| 📝&nbsp;[#94992](https://github.com/openclaw/openclaw/issues/94992) | 2026-06-19 | 0 | Model/provider behavior | @911erik | [Bug]: Invalid signature in thinking block on every agent — persists on v2026.6.1 |
-| 🔀&nbsp;[#94988](https://github.com/openclaw/openclaw/pull/94988) | 2026-06-19 | 0 | OpenAI-compatible/proxy | @hugenshen | Codex/fix 94979 kimi web search baseurl |
-| 🔀&nbsp;[#94985](https://github.com/openclaw/openclaw/pull/94985) | 2026-06-19 | 0 | Local memory/embedding | @ml12580 | fix(memory-core): skip markdown placeholder snippets in short-term promotion (#80582) [AI-assisted] |
 
-## OPEN THREADS (1118)
+## OPEN THREADS (1130)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1068 open threads, sorted by activity</summary>
+<summary>Remaining 1080 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,18 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95287](https://github.com/openclaw/openclaw/pull/95287) | 0 | Model routing/config | @crh-code | fix(failover): detect provider transport timeout in AbortError with 'This operation was aborted' message |
+| 🔀&nbsp;[#95286](https://github.com/openclaw/openclaw/pull/95286) | 0 | Model routing/config | @zhangqueping | fix(agents): forward resolved model to sub-agent gateway agent call |
+| 🔀&nbsp;[#95285](https://github.com/openclaw/openclaw/pull/95285) | 0 | Local memory/embedding | @mmyzwl | fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode |
+| 🔀&nbsp;[#95284](https://github.com/openclaw/openclaw/pull/95284) | 0 | OpenAI-compatible/proxy | @lzyyzznl | fix(openai-completions): close thinking block at reasoning→content transition for providers without discrete thinking_end |
+| 🔀&nbsp;[#95283](https://github.com/openclaw/openclaw/pull/95283) | 0 | OpenAI-compatible/proxy | @ZengWen-DT | fix(openai-completions): seal native reasoning before the answer under /reasoning on |
+| 🔀&nbsp;[#95281](https://github.com/openclaw/openclaw/pull/95281) | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(llm): close reasoning stream on text-lane transition for DeepSeek (fixes #95280) |
+| 📝&nbsp;[#95280](https://github.com/openclaw/openclaw/issues/95280) | 0 | OpenAI-compatible/proxy | @Marvinthebored | deepseek reasoning: final answer merges into the thinking block under /reasoning on (no discrete thinking_end at the reasoning→content transition) |
+| 📝&nbsp;[#95279](https://github.com/openclaw/openclaw/issues/95279) | 0 | Local memory/embedding | @gorkem2020 | Provide a trusted inbound-decoration contract so consumers can strip/dedup without forgeable text heuristics |
+| 🔀&nbsp;[#95274](https://github.com/openclaw/openclaw/pull/95274) | 0 | Local memory/embedding | @ly85206559 | fix(memory): preserve Windows QMD command paths |
+| 🔀&nbsp;[#95268](https://github.com/openclaw/openclaw/pull/95268) | 0 | Model routing/config | @Darren2030 | fix(openrouter): expand short canonical model IDs to upstream API slugs (fixes #95198) |
+| 🔀&nbsp;[#95267](https://github.com/openclaw/openclaw/pull/95267) | 0 | Local memory/embedding | @zhangqueping | fix(memory): repair Windows QMD paths whose backslashes were stripped by JSON parsing |
+| 🔀&nbsp;[#95258](https://github.com/openclaw/openclaw/pull/95258) | 0 | Model routing/config | @dwc1997 | fix(openrouter): prevent model prefix duplication for short canonical IDs |
 | 🔀&nbsp;[#95252](https://github.com/openclaw/openclaw/pull/95252) | 0 | Local memory/embedding | @Pandah97 | fix(memory-host-sdk): preserve Windows backslash paths in QMD command resolution (#92302) |
 | 🔀&nbsp;[#95247](https://github.com/openclaw/openclaw/pull/95247) | 0 | Model routing/config | @crh-code | fix(context-engine): read allowModelOverride from plugin config instead of hardcoding false |
 | 🔀&nbsp;[#95246](https://github.com/openclaw/openclaw/pull/95246) | 0 | Model routing/config | @Alix-007 | fix(plugin-sdk): bound live model catalog success body |
@@ -1902,4 +1914,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1118 (435 issues, 683 PRs).
+- Kept open threads: 1130 (437 issues, 693 PRs).
