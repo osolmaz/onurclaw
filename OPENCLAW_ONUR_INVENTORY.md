@@ -4,14 +4,19 @@ Updated: 2026-06-21
 
 Review watermark:
 
-- Last reviewed through issue: #95399.
-- Last reviewed through PR: #95401.
+- Last reviewed through issue: #95409.
+- Last reviewed through PR: #95418.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95418](https://github.com/openclaw/openclaw/pull/95418) | 2026-06-20 | 0 | Model routing/config | @Alix-007 | fix(agents): bound OpenRouter model-scan catalog success body |
+| 🔀&nbsp;[#95416](https://github.com/openclaw/openclaw/pull/95416) | 2026-06-20 | 0 | Local/media model provider | @Alix-007 | fix(inworld): bound TTS audio and error response body reads to prevent OOM |
+| 🔀&nbsp;[#95414](https://github.com/openclaw/openclaw/pull/95414) | 2026-06-20 | 0 | Local model runtime | @liuhao1024 | fix(llm): strip trailing spaces from JSON keys in tool-call parsing (fixes #95407) |
+| 📝&nbsp;[#95408](https://github.com/openclaw/openclaw/issues/95408) | 2026-06-20 | 0 | Model routing/config | @aegis-gh-agent[bot] | [Feature]: Per-agent model.requestTimeoutSeconds to handle complex cron payloads in fallback chain |
+| 📝&nbsp;[#95407](https://github.com/openclaw/openclaw/issues/95407) | 2026-06-20 | 0 | Local model runtime | @Nassiel | [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter |
 | 🔀&nbsp;[#95401](https://github.com/openclaw/openclaw/pull/95401) | 2026-06-20 | 0 | Local model runtime | @MonkeyLeeT | fix(lmstudio): canonicalize variant model keys |
 | 🔀&nbsp;[#95400](https://github.com/openclaw/openclaw/pull/95400) | 2026-06-20 | 0 | Model routing/config | @jason-allen-oneal | fix(model-fallback): classify Codex usage-limit payloads |
 | 📝&nbsp;[#95394](https://github.com/openclaw/openclaw/issues/95394) | 2026-06-20 | 0 | Local model runtime | @spacenet-Pop-OS | [Bug]: LM Studio model identifier gets @q4_k_m/@q8_0 quant suffix appended on retry path — assistant turn falsely marked as error |
@@ -57,13 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95246](https://github.com/openclaw/openclaw/pull/95246) | 2026-06-20 | 0 | Model routing/config | @Alix-007 | fix(plugin-sdk): bound live model catalog success body |
 | 🔀&nbsp;[#95244](https://github.com/openclaw/openclaw/pull/95244) | 2026-06-20 | 0 | Local model runtime | @Alix-007 | fix(providers): bound self-hosted provider discovery JSON reads |
 | 📝&nbsp;[#95224](https://github.com/openclaw/openclaw/issues/95224) | 2026-06-20 | 0 | Model routing/config | @guifav | OpenAI Codex gpt-5.5 catalog reports 272k context while OpenClaw can run 1M via override |
-| 🔀&nbsp;[#95223](https://github.com/openclaw/openclaw/pull/95223) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(openai): bound ChatGPT Responses error body reads to prevent OOM |
-| 🔀&nbsp;[#95214](https://github.com/openclaw/openclaw/pull/95214) | 2026-06-20 | 0 | Model routing/config | @mmyzwl | fix(openrouter): expand short DeepSeek V4 aliases in API model normalizer |
-| 🔀&nbsp;[#95213](https://github.com/openclaw/openclaw/pull/95213) | 2026-06-20 | 0 | Model routing/config | @lzyyzznl | fix(plugins): infer LLM override policy from config.summaryModel at runtime |
-| 🔀&nbsp;[#95212](https://github.com/openclaw/openclaw/pull/95212) | 2026-06-20 | 0 | Local memory/embedding | @Pandah97 | fix(memory): preserve Windows absolute paths in QMD command parsing (#92302) |
-| 🔀&nbsp;[#95208](https://github.com/openclaw/openclaw/pull/95208) | 2026-06-20 | 0 | Model routing/config | @maweibin | fix(openrouter): strip provider prefix from short model refs in API model ID normalization |
 
-## OPEN THREADS (1158)
+## OPEN THREADS (1163)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1108 open threads, sorted by activity</summary>
+<summary>Remaining 1113 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,11 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95418](https://github.com/openclaw/openclaw/pull/95418) | 0 | Model routing/config | @Alix-007 | fix(agents): bound OpenRouter model-scan catalog success body |
+| 🔀&nbsp;[#95416](https://github.com/openclaw/openclaw/pull/95416) | 0 | Local/media model provider | @Alix-007 | fix(inworld): bound TTS audio and error response body reads to prevent OOM |
+| 🔀&nbsp;[#95414](https://github.com/openclaw/openclaw/pull/95414) | 0 | Local model runtime | @liuhao1024 | fix(llm): strip trailing spaces from JSON keys in tool-call parsing (fixes #95407) |
+| 📝&nbsp;[#95408](https://github.com/openclaw/openclaw/issues/95408) | 0 | Model routing/config | @aegis-gh-agent[bot] | [Feature]: Per-agent model.requestTimeoutSeconds to handle complex cron payloads in fallback chain |
+| 📝&nbsp;[#95407](https://github.com/openclaw/openclaw/issues/95407) | 0 | Local model runtime | @Nassiel | [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter |
 | 🔀&nbsp;[#95401](https://github.com/openclaw/openclaw/pull/95401) | 0 | Local model runtime | @MonkeyLeeT | fix(lmstudio): canonicalize variant model keys |
 | 🔀&nbsp;[#95400](https://github.com/openclaw/openclaw/pull/95400) | 0 | Model routing/config | @jason-allen-oneal | fix(model-fallback): classify Codex usage-limit payloads |
 | 📝&nbsp;[#95394](https://github.com/openclaw/openclaw/issues/95394) | 0 | Local model runtime | @spacenet-Pop-OS | [Bug]: LM Studio model identifier gets @q4_k_m/@q8_0 quant suffix appended on retry path — assistant turn falsely marked as error |
@@ -1942,4 +1947,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1158 (440 issues, 718 PRs).
+- Kept open threads: 1163 (442 issues, 721 PRs).
