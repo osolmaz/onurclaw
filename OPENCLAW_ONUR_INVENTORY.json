@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 437,
-    "open_prs": 693,
-    "open_threads": 1130
+    "open_prs": 700,
+    "open_threads": 1137
   },
   "open_threads": [
     {
@@ -5860,6 +5860,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@mikasa0818",
+      "number": 95305,
+      "title": "fix #95219: [Bug]: Historical tool results are re-truncated between turns, breaking prompt cache prefix stability",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95305"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liaoyl830",
+      "number": 95303,
+      "title": "[codex] fix security audit request headers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95303"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@ly-wang19",
+      "number": 95300,
+      "title": "fix(cli): expose --count on infer image edit, matching image generate",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95300"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Marvinthebored",
+      "number": 95298,
+      "title": "fix(agents): seal deepseek reasoning before the answer (no discrete thinking_end)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95298"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Pick-cat",
+      "number": 95296,
+      "title": "fix(anthropic): send current claude-cli user-agent on OAuth path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95296"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 95294,
+      "title": "feat(ui): add model selector to cron quick-create wizard (fixes #93507)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95294"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@summerview1997",
+      "number": 95289,
+      "title": "fix: bound Codex Telegram turns fail after /codex bind on OAuth refresh",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95289"
     },
     {
       "activity": 0,
@@ -14960,8 +15023,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95288,
-    "pr": 95287
+    "issue": 95295,
+    "pr": 95307
   },
   "schema_version": 1,
   "updated": "2026-06-20"

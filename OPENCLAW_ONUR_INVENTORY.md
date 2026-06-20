@@ -4,14 +4,21 @@ Updated: 2026-06-20
 
 Review watermark:
 
-- Last reviewed through issue: #95288.
-- Last reviewed through PR: #95287.
+- Last reviewed through issue: #95295.
+- Last reviewed through PR: #95307.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95305](https://github.com/openclaw/openclaw/pull/95305) | 2026-06-20 | 0 | Model/provider behavior | @mikasa0818 | fix #95219: [Bug]: Historical tool results are re-truncated between turns, breaking prompt cache prefix stability |
+| 🔀&nbsp;[#95303](https://github.com/openclaw/openclaw/pull/95303) | 2026-06-20 | 0 | Model routing/config | @liaoyl830 | [codex] fix security audit request headers |
+| 🔀&nbsp;[#95300](https://github.com/openclaw/openclaw/pull/95300) | 2026-06-20 | 0 | Local/media model provider | @ly-wang19 | fix(cli): expose --count on infer image edit, matching image generate |
+| 🔀&nbsp;[#95298](https://github.com/openclaw/openclaw/pull/95298) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @Marvinthebored | fix(agents): seal deepseek reasoning before the answer (no discrete thinking_end) |
+| 🔀&nbsp;[#95296](https://github.com/openclaw/openclaw/pull/95296) | 2026-06-20 | 0 | Model routing/config | @Pick-cat | fix(anthropic): send current claude-cli user-agent on OAuth path |
+| 🔀&nbsp;[#95294](https://github.com/openclaw/openclaw/pull/95294) | 2026-06-20 | 0 | Model routing/config | @liuhao1024 | feat(ui): add model selector to cron quick-create wizard (fixes #93507) |
+| 🔀&nbsp;[#95289](https://github.com/openclaw/openclaw/pull/95289) | 2026-06-20 | 0 | Model routing/config | @summerview1997 | fix: bound Codex Telegram turns fail after /codex bind on OAuth refresh |
 | 🔀&nbsp;[#95287](https://github.com/openclaw/openclaw/pull/95287) | 2026-06-20 | 0 | Model routing/config | @crh-code | fix(failover): detect provider transport timeout in AbortError with 'This operation was aborted' message |
 | 🔀&nbsp;[#95286](https://github.com/openclaw/openclaw/pull/95286) | 2026-06-20 | 0 | Model routing/config | @zhangqueping | fix(agents): forward resolved model to sub-agent gateway agent call |
 | 🔀&nbsp;[#95285](https://github.com/openclaw/openclaw/pull/95285) | 2026-06-20 | 0 | Local memory/embedding | @mmyzwl | fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95101](https://github.com/openclaw/openclaw/pull/95101) | 2026-06-19 | 0 | Local memory/embedding | @Nas01010101 | perf(memory-lancedb): cache query embeddings per embeddings instance |
 | 🔀&nbsp;[#95099](https://github.com/openclaw/openclaw/pull/95099) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
 | 🔀&nbsp;[#95091](https://github.com/openclaw/openclaw/pull/95091) | 2026-06-19 | 0 | Local memory/embedding | @lzyyzznl | fix(doctor): probe memory embeddings on --deep and skip false warning on local provider |
-| 🔀&nbsp;[#95088](https://github.com/openclaw/openclaw/pull/95088) | 2026-06-19 | 0 | Local memory/embedding | @aniruddhaadak80 | [AI-assisted] fix(memory): close cached agent and state databases in test teardowns |
-| 🔀&nbsp;[#95087](https://github.com/openclaw/openclaw/pull/95087) | 2026-06-19 | 0 | Local memory/embedding | @jalehman | refactor: add memory and QMD session identity mapping |
-| 🔀&nbsp;[#95070](https://github.com/openclaw/openclaw/pull/95070) | 2026-06-19 | 0 | Local memory/embedding | @Nas01010101 | perf(memory-core): store embedding cache as Float32 BLOB instead of JSON TEXT [AI] |
-| 🔀&nbsp;[#95067](https://github.com/openclaw/openclaw/pull/95067) | 2026-06-19 | 0 | Local memory/embedding | @zenglingbiao | fix(doctor): suppress false-positive local embedding warning when probe is skipped (fixes #92582) |
-| 🔀&nbsp;[#95064](https://github.com/openclaw/openclaw/pull/95064) | 2026-06-19 | 0 | Local memory/embedding | @liuhao1024 | fix(doctor): suppress false-positive local embedding warning when probe was skipped (fixes #92582) |
-| 🔀&nbsp;[#95062](https://github.com/openclaw/openclaw/pull/95062) | 2026-06-19 | 0 | Local model runtime | @lzyyzznl | fix(telegram): fall back to agent default model in /think menu when session model context is empty |
-| 🔀&nbsp;[#95050](https://github.com/openclaw/openclaw/pull/95050) | 2026-06-19 | 0 | Model routing/config | @MonkeyLeeT | fix(auto-reply): surface preserved fallback notices |
 
-## OPEN THREADS (1130)
+## OPEN THREADS (1137)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1080 open threads, sorted by activity</summary>
+<summary>Remaining 1087 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95305](https://github.com/openclaw/openclaw/pull/95305) | 0 | Model/provider behavior | @mikasa0818 | fix #95219: [Bug]: Historical tool results are re-truncated between turns, breaking prompt cache prefix stability |
+| 🔀&nbsp;[#95303](https://github.com/openclaw/openclaw/pull/95303) | 0 | Model routing/config | @liaoyl830 | [codex] fix security audit request headers |
+| 🔀&nbsp;[#95300](https://github.com/openclaw/openclaw/pull/95300) | 0 | Local/media model provider | @ly-wang19 | fix(cli): expose --count on infer image edit, matching image generate |
+| 🔀&nbsp;[#95298](https://github.com/openclaw/openclaw/pull/95298) | 0 | OpenAI-compatible/proxy | @Marvinthebored | fix(agents): seal deepseek reasoning before the answer (no discrete thinking_end) |
+| 🔀&nbsp;[#95296](https://github.com/openclaw/openclaw/pull/95296) | 0 | Model routing/config | @Pick-cat | fix(anthropic): send current claude-cli user-agent on OAuth path |
+| 🔀&nbsp;[#95294](https://github.com/openclaw/openclaw/pull/95294) | 0 | Model routing/config | @liuhao1024 | feat(ui): add model selector to cron quick-create wizard (fixes #93507) |
+| 🔀&nbsp;[#95289](https://github.com/openclaw/openclaw/pull/95289) | 0 | Model routing/config | @summerview1997 | fix: bound Codex Telegram turns fail after /codex bind on OAuth refresh |
 | 🔀&nbsp;[#95287](https://github.com/openclaw/openclaw/pull/95287) | 0 | Model routing/config | @crh-code | fix(failover): detect provider transport timeout in AbortError with 'This operation was aborted' message |
 | 🔀&nbsp;[#95286](https://github.com/openclaw/openclaw/pull/95286) | 0 | Model routing/config | @zhangqueping | fix(agents): forward resolved model to sub-agent gateway agent call |
 | 🔀&nbsp;[#95285](https://github.com/openclaw/openclaw/pull/95285) | 0 | Local memory/embedding | @mmyzwl | fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode |
@@ -1914,4 +1921,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1130 (437 issues, 693 PRs).
+- Kept open threads: 1137 (437 issues, 700 PRs).
