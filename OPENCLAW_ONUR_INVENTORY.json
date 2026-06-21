@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 450,
-    "open_prs": 750,
-    "open_threads": 1200
+    "open_issues": 451,
+    "open_prs": 752,
+    "open_threads": 1203
   },
   "open_threads": [
     {
@@ -5860,6 +5860,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@oliver-arti",
+      "number": 95544,
+      "title": "Feature: Voice Wake should optionally start a realtime Talk session instead of STT→chat→TTS",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95544"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mikasa0818",
+      "number": 95543,
+      "title": "fix #95474: [Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95543"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mikasa0818",
+      "number": 95542,
+      "title": "fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95542"
     },
     {
       "activity": 0,
@@ -15590,8 +15617,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95539,
-    "pr": 95537
+    "issue": 95551,
+    "pr": 95550
   },
   "schema_version": 1,
   "updated": "2026-06-21"

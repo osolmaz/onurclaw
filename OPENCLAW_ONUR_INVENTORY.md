@@ -4,14 +4,17 @@ Updated: 2026-06-21
 
 Review watermark:
 
-- Last reviewed through issue: #95539.
-- Last reviewed through PR: #95537.
+- Last reviewed through issue: #95551.
+- Last reviewed through PR: #95550.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#95544](https://github.com/openclaw/openclaw/issues/95544) | 2026-06-21 | 0 | Local/media model provider | @oliver-arti | Feature: Voice Wake should optionally start a realtime Talk session instead of STT→chat→TTS |
+| 🔀&nbsp;[#95543](https://github.com/openclaw/openclaw/pull/95543) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #95474: [Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback |
+| 🔀&nbsp;[#95542](https://github.com/openclaw/openclaw/pull/95542) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed |
 | 🔀&nbsp;[#95537](https://github.com/openclaw/openclaw/pull/95537) | 2026-06-21 | 0 | Model routing/config | @bowenluo718 | fix(agents): expand embedded fallback classifier to accept transient provider errors |
 | 📝&nbsp;[#95530](https://github.com/openclaw/openclaw/issues/95530) | 2026-06-21 | 0 | Model routing/config | @kumaxs | opencode-go streaming hangs in isolated cron sessions (model_call:stream_progress stalls) |
 | 🔀&nbsp;[#95524](https://github.com/openclaw/openclaw/pull/95524) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(agents): classify upstream_error errorType as server_error for model fallback (fixes #95519) (AI-assisted) |
@@ -59,11 +62,8 @@ Review watermark:
 | 📝&nbsp;[#95394](https://github.com/openclaw/openclaw/issues/95394) | 2026-06-20 | 0 | Local model runtime | @spacenet-Pop-OS | [Bug]: LM Studio model identifier gets @q4_k_m/@q8_0 quant suffix appended on retry path — assistant turn falsely marked as error |
 | 🔀&nbsp;[#95393](https://github.com/openclaw/openclaw/pull/95393) | 2026-06-20 | 0 | Local memory/embedding | @mikasa0818 | fix #92582: Bug: doctor falsely warns local memory embeddings are not ready |
 | 🔀&nbsp;[#95392](https://github.com/openclaw/openclaw/pull/95392) | 2026-06-20 | 0 | Local memory/embedding | @1052326311 | fix(doctor): suppress local memory embedding warning when probe was skipped |
-| 🔀&nbsp;[#95391](https://github.com/openclaw/openclaw/pull/95391) | 2026-06-20 | 0 | Local memory/embedding | @liuhao1024 | fix(active-memory): filter assistant chitchat from recall summary (fixes #84034) |
-| 🔀&nbsp;[#95386](https://github.com/openclaw/openclaw/pull/95386) | 2026-06-20 | 0 | Model routing/config | @mikasa0818 | fix #95351: [Feature]: Generic JSONL line-parsing hook for CliBackendPlugin (native tool-card support beyond claude-stream-json) |
-| 🔀&nbsp;[#95375](https://github.com/openclaw/openclaw/pull/95375) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @Thibaultjaigu | feat(requesty): add Requesty as a bundled provider plugin |
 
-## OPEN THREADS (1200)
+## OPEN THREADS (1203)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1150 open threads, sorted by activity</summary>
+<summary>Remaining 1153 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#95544](https://github.com/openclaw/openclaw/issues/95544) | 0 | Local/media model provider | @oliver-arti | Feature: Voice Wake should optionally start a realtime Talk session instead of STT→chat→TTS |
+| 🔀&nbsp;[#95543](https://github.com/openclaw/openclaw/pull/95543) | 0 | Model routing/config | @mikasa0818 | fix #95474: [Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback |
+| 🔀&nbsp;[#95542](https://github.com/openclaw/openclaw/pull/95542) | 0 | Model routing/config | @mikasa0818 | fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed |
 | 🔀&nbsp;[#95537](https://github.com/openclaw/openclaw/pull/95537) | 0 | Model routing/config | @bowenluo718 | fix(agents): expand embedded fallback classifier to accept transient provider errors |
 | 📝&nbsp;[#95530](https://github.com/openclaw/openclaw/issues/95530) | 0 | Model routing/config | @kumaxs | opencode-go streaming hangs in isolated cron sessions (model_call:stream_progress stalls) |
 | 🔀&nbsp;[#95524](https://github.com/openclaw/openclaw/pull/95524) | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(agents): classify upstream_error errorType as server_error for model fallback (fixes #95519) (AI-assisted) |
@@ -1984,4 +1987,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1200 (450 issues, 750 PRs).
+- Kept open threads: 1203 (451 issues, 752 PRs).
