@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 451,
-    "open_prs": 752,
-    "open_threads": 1203
+    "open_issues": 453,
+    "open_prs": 755,
+    "open_threads": 1208
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@reatang",
+      "number": 95564,
+      "title": "fix(openai): Codex OAuth token refresh bypasses proxy in restricted regions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95564"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@yu-xin-c",
+      "number": 95563,
+      "title": "[codex] feat(mcp): share bundled runtime scope and fix preflight compaction abort",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95563"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@tpanda09",
+      "number": 95562,
+      "title": "[Bug]: DeepSeek token cost spikes 15-37x after upgrading from 2026.5.27 → 2026.6.x",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95562"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@maweibin",
+      "number": 95561,
+      "title": "fix: preflight compaction uses reply abort signal (~60s) instead of configurable compaction timeout (#95553)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95561"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@kiagentkronos-cell",
+      "number": 95553,
+      "title": "Bug: preflight (budget-triggered) compaction hard-capped at ~60s, ignores compaction.timeoutSeconds",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95553"
     },
     {
       "activity": 0,
@@ -15617,8 +15662,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95551,
-    "pr": 95550
+    "issue": 95568,
+    "pr": 95573
   },
   "schema_version": 1,
   "updated": "2026-06-21"
