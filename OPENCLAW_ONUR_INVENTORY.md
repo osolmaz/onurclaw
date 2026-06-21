@@ -1,17 +1,25 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-21
+Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95568.
-- Last reviewed through PR: #95573.
+- Last reviewed through issue: #95586.
+- Last reviewed through PR: #95591.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95590](https://github.com/openclaw/openclaw/pull/95590) | 2026-06-21 | 0 | Local model runtime | @yu-xin-c | [codex] fix(reply): let preflight compaction use compaction timeout |
+| 🔀&nbsp;[#95587](https://github.com/openclaw/openclaw/pull/95587) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @fanyangCS | fix(openai-responses): recover streamed invalid_encrypted_content via drain-level retry (#95441) |
+| 📝&nbsp;[#95586](https://github.com/openclaw/openclaw/issues/95586) | 2026-06-21 | 0 | Open-weight/provider behavior | @jwong-art | [Bug]: Kimi Coding auth fallback in systemd Gateway when config env is not injected |
+| 🔀&nbsp;[#95584](https://github.com/openclaw/openclaw/pull/95584) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @425072024 | fix(agents): null-guard baseUrl in getAttributionHeaders (fixes #92974) |
+| 🔀&nbsp;[#95580](https://github.com/openclaw/openclaw/pull/95580) | 2026-06-21 | 0 | Local model runtime | @xydt-tanshanshan | fix(compaction): preflight compaction uses configured compaction timeout instead of reply operation abort signal |
+| 🔀&nbsp;[#95579](https://github.com/openclaw/openclaw/pull/95579) | 2026-06-21 | 0 | Local model runtime | @ruomuxydt | fix(agents): allow model fallback on harness-owned prompt timeout |
+| 🔀&nbsp;[#95576](https://github.com/openclaw/openclaw/pull/95576) | 2026-06-21 | 0 | Local model runtime | @lsr911 | fix(failover): allow model fallback on harness transport timeout |
+| 📝&nbsp;[#95574](https://github.com/openclaw/openclaw/issues/95574) | 2026-06-21 | 0 | Local model runtime | @riazrahaman | [Bug]: Behavior bug (incorrect output/state without crash) |
 | 🔀&nbsp;[#95564](https://github.com/openclaw/openclaw/pull/95564) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @reatang | fix(openai): Codex OAuth token refresh bypasses proxy in restricted regions |
 | 🔀&nbsp;[#95563](https://github.com/openclaw/openclaw/pull/95563) | 2026-06-21 | 0 | Local model runtime | @yu-xin-c | [codex] feat(mcp): share bundled runtime scope and fix preflight compaction abort |
 | 📝&nbsp;[#95562](https://github.com/openclaw/openclaw/issues/95562) | 2026-06-21 | 0 | Open-weight/provider behavior | @tpanda09 | [Bug]: DeepSeek token cost spikes 15-37x after upgrading from 2026.5.27 → 2026.6.x |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95436](https://github.com/openclaw/openclaw/pull/95436) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #91171: [Bug]: Sub-agent model routing ignores model parameter, silently falls back to deepseek |
 | 🔀&nbsp;[#95434](https://github.com/openclaw/openclaw/pull/95434) | 2026-06-21 | 0 | Model routing/config | @jincheng-xydt | fix: persist modelOverride/providerOverride in subagent spawn (#91171) |
 | 🔀&nbsp;[#95427](https://github.com/openclaw/openclaw/pull/95427) | 2026-06-20 | 0 | Local model runtime | @ZengWen-DT | fix(cron): recover whitespace-padded tool keys before validation |
-| 🔀&nbsp;[#95424](https://github.com/openclaw/openclaw/pull/95424) | 2026-06-20 | 0 | Local model runtime | @zhangqueping | fix(cron): trim whitespace-padded keys in job canonicalization |
-| 🔀&nbsp;[#95421](https://github.com/openclaw/openclaw/pull/95421) | 2026-06-20 | 0 | Local model runtime | @zenglingbiao | fix(cron): trim trailing whitespace from cron tool job keys in canonicalization (fixes #95407) |
-| 🔀&nbsp;[#95420](https://github.com/openclaw/openclaw/pull/95420) | 2026-06-20 | 0 | Model routing/config | @Alix-007 | fix(agents): bound OpenRouter model catalog response reads |
-| 🔀&nbsp;[#95418](https://github.com/openclaw/openclaw/pull/95418) | 2026-06-20 | 0 | Model routing/config | @Alix-007 | fix(agents): bound OpenRouter model-scan catalog success body |
-| 🔀&nbsp;[#95416](https://github.com/openclaw/openclaw/pull/95416) | 2026-06-20 | 0 | Local/media model provider | @Alix-007 | fix(inworld): bound TTS audio and error response body reads to prevent OOM |
-| 🔀&nbsp;[#95414](https://github.com/openclaw/openclaw/pull/95414) | 2026-06-20 | 0 | Local model runtime | @liuhao1024 | fix(llm): strip trailing spaces from JSON keys in tool-call parsing (fixes #95407) |
-| 📝&nbsp;[#95408](https://github.com/openclaw/openclaw/issues/95408) | 2026-06-20 | 0 | Model routing/config | @aegis-gh-agent[bot] | [Feature]: Per-agent model.requestTimeoutSeconds to handle complex cron payloads in fallback chain |
-| 📝&nbsp;[#95407](https://github.com/openclaw/openclaw/issues/95407) | 2026-06-20 | 0 | Local model runtime | @Nassiel | [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter |
 
-## OPEN THREADS (1208)
+## OPEN THREADS (1216)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1158 open threads, sorted by activity</summary>
+<summary>Remaining 1166 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95590](https://github.com/openclaw/openclaw/pull/95590) | 0 | Local model runtime | @yu-xin-c | [codex] fix(reply): let preflight compaction use compaction timeout |
+| 🔀&nbsp;[#95587](https://github.com/openclaw/openclaw/pull/95587) | 0 | OpenAI-compatible/proxy | @fanyangCS | fix(openai-responses): recover streamed invalid_encrypted_content via drain-level retry (#95441) |
+| 📝&nbsp;[#95586](https://github.com/openclaw/openclaw/issues/95586) | 0 | Open-weight/provider behavior | @jwong-art | [Bug]: Kimi Coding auth fallback in systemd Gateway when config env is not injected |
+| 🔀&nbsp;[#95584](https://github.com/openclaw/openclaw/pull/95584) | 0 | OpenAI-compatible/proxy | @425072024 | fix(agents): null-guard baseUrl in getAttributionHeaders (fixes #92974) |
+| 🔀&nbsp;[#95580](https://github.com/openclaw/openclaw/pull/95580) | 0 | Local model runtime | @xydt-tanshanshan | fix(compaction): preflight compaction uses configured compaction timeout instead of reply operation abort signal |
+| 🔀&nbsp;[#95579](https://github.com/openclaw/openclaw/pull/95579) | 0 | Local model runtime | @ruomuxydt | fix(agents): allow model fallback on harness-owned prompt timeout |
+| 🔀&nbsp;[#95576](https://github.com/openclaw/openclaw/pull/95576) | 0 | Local model runtime | @lsr911 | fix(failover): allow model fallback on harness transport timeout |
+| 📝&nbsp;[#95574](https://github.com/openclaw/openclaw/issues/95574) | 0 | Local model runtime | @riazrahaman | [Bug]: Behavior bug (incorrect output/state without crash) |
 | 🔀&nbsp;[#95564](https://github.com/openclaw/openclaw/pull/95564) | 0 | OpenAI-compatible/proxy | @reatang | fix(openai): Codex OAuth token refresh bypasses proxy in restricted regions |
 | 🔀&nbsp;[#95563](https://github.com/openclaw/openclaw/pull/95563) | 0 | Local model runtime | @yu-xin-c | [codex] feat(mcp): share bundled runtime scope and fix preflight compaction abort |
 | 📝&nbsp;[#95562](https://github.com/openclaw/openclaw/issues/95562) | 0 | Open-weight/provider behavior | @tpanda09 | [Bug]: DeepSeek token cost spikes 15-37x after upgrading from 2026.5.27 → 2026.6.x |
@@ -1992,4 +2000,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1208 (453 issues, 755 PRs).
+- Kept open threads: 1216 (455 issues, 761 PRs).
