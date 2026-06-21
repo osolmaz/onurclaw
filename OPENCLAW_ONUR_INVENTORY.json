@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 442,
-    "open_prs": 721,
-    "open_threads": 1163
+    "open_prs": 726,
+    "open_threads": 1168
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jincheng-xydt",
+      "number": 95434,
+      "title": "fix: persist modelOverride/providerOverride in subagent spawn (#91171)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95434"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@ZengWen-DT",
+      "number": 95427,
+      "title": "fix(cron): recover whitespace-padded tool keys before validation",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95427"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@zhangqueping",
+      "number": 95424,
+      "title": "fix(cron): trim whitespace-padded keys in job canonicalization",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95424"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@zenglingbiao",
+      "number": 95421,
+      "title": "fix(cron): trim trailing whitespace from cron tool job keys in canonicalization (fixes #95407)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95421"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Alix-007",
+      "number": 95420,
+      "title": "fix(agents): bound OpenRouter model catalog response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95420"
     },
     {
       "activity": 0,
@@ -15257,8 +15302,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95409,
-    "pr": 95418
+    "issue": 95429,
+    "pr": 95435
   },
   "schema_version": 1,
   "updated": "2026-06-21"
