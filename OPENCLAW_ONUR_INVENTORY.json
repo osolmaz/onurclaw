@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 455,
-    "open_prs": 766,
-    "open_threads": 1221
+    "open_issues": 456,
+    "open_prs": 767,
+    "open_threads": 1223
   },
   "open_threads": [
     {
@@ -5860,6 +5860,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@muskfeel",
+      "number": 95606,
+      "title": "Memory system: Cannot delete stale memories, conflicting entries persist",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95606"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bobrenze-bot",
+      "number": 95605,
+      "title": "fix(agents): skip empty allowlist guard for modelRun shapes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95605"
     },
     {
       "activity": 0,
@@ -15779,8 +15797,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95601,
-    "pr": 95603
+    "issue": 95607,
+    "pr": 95605
   },
   "schema_version": 1,
   "updated": "2026-06-22"
