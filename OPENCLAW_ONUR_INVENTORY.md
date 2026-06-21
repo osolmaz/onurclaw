@@ -4,14 +4,23 @@ Updated: 2026-06-21
 
 Review watermark:
 
-- Last reviewed through issue: #95500.
-- Last reviewed through PR: #95501.
+- Last reviewed through issue: #95519.
+- Last reviewed through PR: #95524.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95524](https://github.com/openclaw/openclaw/pull/95524) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(agents): classify upstream_error errorType as server_error for model fallback (fixes #95519) (AI-assisted) |
+| 🔀&nbsp;[#95523](https://github.com/openclaw/openclaw/pull/95523) | 2026-06-21 | 0 | Model routing/config | @Bartok9 | fix(agents): classify provider upstream_error as fallbackable transient failure |
+| 🔀&nbsp;[#95521](https://github.com/openclaw/openclaw/pull/95521) | 2026-06-21 | 0 | Model routing/config | @zhiqiang26 | fix(agents): classify 'upstream request failed' as server_error for failover |
+| 🔀&nbsp;[#95520](https://github.com/openclaw/openclaw/pull/95520) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(agents): prevent Codex missing_tool_result from triggering cross-provider model fallback |
+| 📝&nbsp;[#95519](https://github.com/openclaw/openclaw/issues/95519) | 2026-06-21 | 0 | Model routing/config | @zjx111234 | [Bug]: Fallback should trigger on provider upstream_error / LLM request failed |
+| 🔀&nbsp;[#95513](https://github.com/openclaw/openclaw/pull/95513) | 2026-06-21 | 0 | Model routing/config | @jincheng-xydt | fix: treat claude-cli out-of-credits error as fallback-triggering failure (#95489) |
+| 🔀&nbsp;[#95512](https://github.com/openclaw/openclaw/pull/95512) | 2026-06-21 | 0 | Model routing/config | @bowenluo718 | fix(agents): detect CLI generic failure text in fallback classifier (#95489) |
+| 🔀&nbsp;[#95509](https://github.com/openclaw/openclaw/pull/95509) | 2026-06-21 | 0 | Local/media model provider | @CG-Intelligence-Agent-Cole | feat(ui): per-agent ElevenLabs Voice/TTS settings in control-ui |
+| 🔀&nbsp;[#95508](https://github.com/openclaw/openclaw/pull/95508) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #95489: [Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response |
 | 🔀&nbsp;[#95501](https://github.com/openclaw/openclaw/pull/95501) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(agents): classify CLI generic failure text as fallback-worthy |
 | 📝&nbsp;[#95500](https://github.com/openclaw/openclaw/issues/95500) | 2026-06-21 | 0 | Model routing/config | @hpfan | [Bug]: Plugin model provider (opencode-go) cannot be resolved by isolated cron sessions, even though openclaw models lists it correctly and session_status model=default resolves it for existing sessions. |
 | 🔀&nbsp;[#95496](https://github.com/openclaw/openclaw/pull/95496) | 2026-06-21 | 0 | Model routing/config | @liuhao1024 | fix(agents): classify generic external run failure text as fallback-eligible (fixes #95489) |
@@ -53,17 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95375](https://github.com/openclaw/openclaw/pull/95375) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @Thibaultjaigu | feat(requesty): add Requesty as a bundled provider plugin |
 | 🔀&nbsp;[#95372](https://github.com/openclaw/openclaw/pull/95372) | 2026-06-20 | 0 | Local/media model provider | @ly-wang19 | fix(cli): sync infer capability inspect metadata flags with registered options |
 | 🔀&nbsp;[#95370](https://github.com/openclaw/openclaw/pull/95370) | 2026-06-20 | 0 | Open-weight/provider behavior | @mikasa0818 | fix #94919: [Bug]: Z.AI Coding-Plan: ECONNRESET triggers model fallback — fallback notice is invisible to the user in async contexts (cron jobs, sub-agents, isolated runs) |
-| 🔀&nbsp;[#95365](https://github.com/openclaw/openclaw/pull/95365) | 2026-06-20 | 0 | Local memory/embedding | @NianJiuZst | fix: preserve user text that looks like inbound metadata |
-| 🔀&nbsp;[#95358](https://github.com/openclaw/openclaw/pull/95358) | 2026-06-20 | 0 | Open-weight/provider behavior | @krpr | fix(streaming): flush visible text immediately after reasoning close tag |
-| 📝&nbsp;[#95351](https://github.com/openclaw/openclaw/issues/95351) | 2026-06-20 | 0 | Model routing/config | @jrluis | [Feature]: Generic JSONL line-parsing hook for CliBackendPlugin (native tool-card support beyond claude-stream-json) |
-| 🔀&nbsp;[#95347](https://github.com/openclaw/openclaw/pull/95347) | 2026-06-20 | 0 | Local memory/embedding | @jason-allen-oneal | fix(memory): honor qmd search timeout for memory_search |
-| 🔀&nbsp;[#95345](https://github.com/openclaw/openclaw/pull/95345) | 2026-06-20 | 0 | Model/provider behavior | @zhangqueping | fix(telegram): deliver reasoning as durable block when /reasoning on |
-| 🔀&nbsp;[#95342](https://github.com/openclaw/openclaw/pull/95342) | 2026-06-20 | 0 | Model routing/config | @mpz4life | fix(agents): skip pre-prompt precheck when context engine owns compaction [AI] |
-| 🔀&nbsp;[#95341](https://github.com/openclaw/openclaw/pull/95341) | 2026-06-20 | 0 | Model routing/config | @ly85206559 | fix(ui): show cron job model selection |
-| 🔀&nbsp;[#95333](https://github.com/openclaw/openclaw/pull/95333) | 2026-06-20 | 0 | Local memory/embedding | @mikasa0818 | fix #95279: Provide a trusted inbound-decoration contract so consumers can strip/dedup without forgeable text heuristics |
-| 🔀&nbsp;[#95327](https://github.com/openclaw/openclaw/pull/95327) | 2026-06-20 | 0 | Model routing/config | @mpz4life | fix(agents): use context engine token estimate for precheck overflow detection [AI] |
 
-## OPEN THREADS (1189)
+## OPEN THREADS (1198)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1139 open threads, sorted by activity</summary>
+<summary>Remaining 1148 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,15 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95524](https://github.com/openclaw/openclaw/pull/95524) | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(agents): classify upstream_error errorType as server_error for model fallback (fixes #95519) (AI-assisted) |
+| 🔀&nbsp;[#95523](https://github.com/openclaw/openclaw/pull/95523) | 0 | Model routing/config | @Bartok9 | fix(agents): classify provider upstream_error as fallbackable transient failure |
+| 🔀&nbsp;[#95521](https://github.com/openclaw/openclaw/pull/95521) | 0 | Model routing/config | @zhiqiang26 | fix(agents): classify 'upstream request failed' as server_error for failover |
+| 🔀&nbsp;[#95520](https://github.com/openclaw/openclaw/pull/95520) | 0 | Model routing/config | @zhangqueping | fix(agents): prevent Codex missing_tool_result from triggering cross-provider model fallback |
+| 📝&nbsp;[#95519](https://github.com/openclaw/openclaw/issues/95519) | 0 | Model routing/config | @zjx111234 | [Bug]: Fallback should trigger on provider upstream_error / LLM request failed |
+| 🔀&nbsp;[#95513](https://github.com/openclaw/openclaw/pull/95513) | 0 | Model routing/config | @jincheng-xydt | fix: treat claude-cli out-of-credits error as fallback-triggering failure (#95489) |
+| 🔀&nbsp;[#95512](https://github.com/openclaw/openclaw/pull/95512) | 0 | Model routing/config | @bowenluo718 | fix(agents): detect CLI generic failure text in fallback classifier (#95489) |
+| 🔀&nbsp;[#95509](https://github.com/openclaw/openclaw/pull/95509) | 0 | Local/media model provider | @CG-Intelligence-Agent-Cole | feat(ui): per-agent ElevenLabs Voice/TTS settings in control-ui |
+| 🔀&nbsp;[#95508](https://github.com/openclaw/openclaw/pull/95508) | 0 | Model routing/config | @mikasa0818 | fix #95489: [Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response |
 | 🔀&nbsp;[#95501](https://github.com/openclaw/openclaw/pull/95501) | 0 | Model routing/config | @zhangqueping | fix(agents): classify CLI generic failure text as fallback-worthy |
 | 📝&nbsp;[#95500](https://github.com/openclaw/openclaw/issues/95500) | 0 | Model routing/config | @hpfan | [Bug]: Plugin model provider (opencode-go) cannot be resolved by isolated cron sessions, even though openclaw models lists it correctly and session_status model=default resolves it for existing sessions. |
 | 🔀&nbsp;[#95496](https://github.com/openclaw/openclaw/pull/95496) | 0 | Model routing/config | @liuhao1024 | fix(agents): classify generic external run failure text as fallback-eligible (fixes #95489) |
@@ -1973,4 +1982,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1189 (448 issues, 741 PRs).
+- Kept open threads: 1198 (449 issues, 749 PRs).

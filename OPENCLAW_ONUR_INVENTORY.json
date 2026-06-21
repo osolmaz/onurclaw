@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 448,
-    "open_prs": 741,
-    "open_threads": 1189
+    "open_issues": 449,
+    "open_prs": 749,
+    "open_threads": 1198
   },
   "open_threads": [
     {
@@ -5860,6 +5860,87 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@liuhao1024",
+      "number": 95524,
+      "title": "fix(agents): classify upstream_error errorType as server_error for model fallback (fixes #95519) (AI-assisted)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95524"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Bartok9",
+      "number": 95523,
+      "title": "fix(agents): classify provider upstream_error as fallbackable transient failure",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95523"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhiqiang26",
+      "number": 95521,
+      "title": "fix(agents): classify 'upstream request failed' as server_error for failover",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95521"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 95520,
+      "title": "fix(agents): prevent Codex missing_tool_result from triggering cross-provider model fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95520"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zjx111234",
+      "number": 95519,
+      "title": "[Bug]: Fallback should trigger on provider upstream_error / LLM request failed",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95519"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jincheng-xydt",
+      "number": 95513,
+      "title": "fix: treat claude-cli out-of-credits error as fallback-triggering failure (#95489)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95513"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@bowenluo718",
+      "number": 95512,
+      "title": "fix(agents): detect CLI generic failure text in fallback classifier (#95489)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95512"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@CG-Intelligence-Agent-Cole",
+      "number": 95509,
+      "title": "feat(ui): per-agent ElevenLabs Voice/TTS settings in control-ui",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95509"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mikasa0818",
+      "number": 95508,
+      "title": "fix #95489: [Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95508"
     },
     {
       "activity": 0,
@@ -15491,8 +15572,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95500,
-    "pr": 95501
+    "issue": 95519,
+    "pr": 95524
   },
   "schema_version": 1,
   "updated": "2026-06-21"
