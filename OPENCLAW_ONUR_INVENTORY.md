@@ -4,14 +4,27 @@ Updated: 2026-06-21
 
 Review watermark:
 
-- Last reviewed through issue: #95443.
-- Last reviewed through PR: #95462.
+- Last reviewed through issue: #95500.
+- Last reviewed through PR: #95501.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95501](https://github.com/openclaw/openclaw/pull/95501) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(agents): classify CLI generic failure text as fallback-worthy |
+| 📝&nbsp;[#95500](https://github.com/openclaw/openclaw/issues/95500) | 2026-06-21 | 0 | Model routing/config | @hpfan | [Bug]: Plugin model provider (opencode-go) cannot be resolved by isolated cron sessions, even though openclaw models lists it correctly and session_status model=default resolves it for existing sessions. |
+| 🔀&nbsp;[#95496](https://github.com/openclaw/openclaw/pull/95496) | 2026-06-21 | 0 | Model routing/config | @liuhao1024 | fix(agents): classify generic external run failure text as fallback-eligible (fixes #95489) |
+| 📝&nbsp;[#95495](https://github.com/openclaw/openclaw/issues/95495) | 2026-06-21 | 0 | Local memory/embedding | @fenglanhua | [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
+| 🔀&nbsp;[#95494](https://github.com/openclaw/openclaw/pull/95494) | 2026-06-21 | 0 | Model routing/config | @Pandah97 | fix(agents): prevent missing_tool_result from triggering cross-provider model fallback (#95474) |
+| 🔀&nbsp;[#95493](https://github.com/openclaw/openclaw/pull/95493) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @openperf | fix(github-copilot): strip encrypted_content from reasoning replay items |
+| 🔀&nbsp;[#95491](https://github.com/openclaw/openclaw/pull/95491) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(ui): reconcile model dropdown cache with server-resolved model after sessions.patch |
+| 📝&nbsp;[#95489](https://github.com/openclaw/openclaw/issues/95489) | 2026-06-21 | 0 | Model routing/config | @riazrahaman | [Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response |
+| 🔀&nbsp;[#95488](https://github.com/openclaw/openclaw/pull/95488) | 2026-06-21 | 0 | Model routing/config | @zhiqiang26 | fix(agents): classify missing_tool_result as tool_error to prevent cross-provider failover |
+| 🔀&nbsp;[#95487](https://github.com/openclaw/openclaw/pull/95487) | 2026-06-21 | 0 | Local/media model provider | @liuhao1024 | feat(tts): strip emoji characters before speech synthesis (fixes #95478) |
+| 🔀&nbsp;[#95486](https://github.com/openclaw/openclaw/pull/95486) | 2026-06-21 | 0 | Local/media model provider | @Pandah97 | feat(speech-core): filter emoji before TTS synthesis |
+| 📝&nbsp;[#95478](https://github.com/openclaw/openclaw/issues/95478) | 2026-06-21 | 0 | Local/media model provider | @lewiswu1209 | [Feature]: 希望在文本转语音前将表情符号过滤掉 |
+| 📝&nbsp;[#95474](https://github.com/openclaw/openclaw/issues/95474) | 2026-06-21 | 0 | Model routing/config | @ElliotDrel | [Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback |
 | 🔀&nbsp;[#95458](https://github.com/openclaw/openclaw/pull/95458) | 2026-06-21 | 0 | Local model runtime | @Linux2010 | fix(cron): trim whitespace from object keys to handle malformed model outputs |
 | 🔀&nbsp;[#95455](https://github.com/openclaw/openclaw/pull/95455) | 2026-06-21 | 0 | Model routing/config | @LiuwqGit | fix(agents): forward resolved sub-agent model to gateway call (#91171) |
 | 🔀&nbsp;[#95453](https://github.com/openclaw/openclaw/pull/95453) | 2026-06-21 | 0 | Local model runtime | @mikasa0818 | fix #95407: [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter |
@@ -49,21 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95341](https://github.com/openclaw/openclaw/pull/95341) | 2026-06-20 | 0 | Model routing/config | @ly85206559 | fix(ui): show cron job model selection |
 | 🔀&nbsp;[#95333](https://github.com/openclaw/openclaw/pull/95333) | 2026-06-20 | 0 | Local memory/embedding | @mikasa0818 | fix #95279: Provide a trusted inbound-decoration contract so consumers can strip/dedup without forgeable text heuristics |
 | 🔀&nbsp;[#95327](https://github.com/openclaw/openclaw/pull/95327) | 2026-06-20 | 0 | Model routing/config | @mpz4life | fix(agents): use context engine token estimate for precheck overflow detection [AI] |
-| 📝&nbsp;[#95314](https://github.com/openclaw/openclaw/issues/95314) | 2026-06-20 | 0 | Local model runtime | @krpr | Bug: reasoning→content transition text buffered until stream flush; leading newlines swallowed |
-| 🔀&nbsp;[#95311](https://github.com/openclaw/openclaw/pull/95311) | 2026-06-20 | 0 | Open-weight/provider behavior | @sunlit-deng | feat: add disableBoundaryAwareCache compat option for prefix-matching prompt cache providers |
-| 🔀&nbsp;[#95305](https://github.com/openclaw/openclaw/pull/95305) | 2026-06-20 | 0 | Model/provider behavior | @mikasa0818 | fix #95219: [Bug]: Historical tool results are re-truncated between turns, breaking prompt cache prefix stability |
-| 🔀&nbsp;[#95303](https://github.com/openclaw/openclaw/pull/95303) | 2026-06-20 | 0 | Model routing/config | @liaoyl830 | [codex] fix security audit request headers |
-| 🔀&nbsp;[#95300](https://github.com/openclaw/openclaw/pull/95300) | 2026-06-20 | 0 | Local/media model provider | @ly-wang19 | fix(cli): expose --count on infer image edit, matching image generate |
-| 🔀&nbsp;[#95298](https://github.com/openclaw/openclaw/pull/95298) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @Marvinthebored | fix(agents): seal deepseek reasoning before the answer (no discrete thinking_end) |
-| 🔀&nbsp;[#95296](https://github.com/openclaw/openclaw/pull/95296) | 2026-06-20 | 0 | Model routing/config | @Pick-cat | fix(anthropic): send current claude-cli user-agent on OAuth path |
-| 🔀&nbsp;[#95294](https://github.com/openclaw/openclaw/pull/95294) | 2026-06-20 | 0 | Model routing/config | @liuhao1024 | feat(ui): add model selector to cron quick-create wizard (fixes #93507) |
-| 🔀&nbsp;[#95289](https://github.com/openclaw/openclaw/pull/95289) | 2026-06-20 | 0 | Model routing/config | @summerview1997 | fix: bound Codex Telegram turns fail after /codex bind on OAuth refresh |
-| 🔀&nbsp;[#95287](https://github.com/openclaw/openclaw/pull/95287) | 2026-06-20 | 0 | Model routing/config | @crh-code | fix(failover): detect provider transport timeout in AbortError with 'This operation was aborted' message |
-| 🔀&nbsp;[#95286](https://github.com/openclaw/openclaw/pull/95286) | 2026-06-20 | 0 | Model routing/config | @zhangqueping | fix(agents): forward resolved model to sub-agent gateway agent call |
-| 🔀&nbsp;[#95285](https://github.com/openclaw/openclaw/pull/95285) | 2026-06-20 | 0 | Local memory/embedding | @mmyzwl | fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode |
-| 🔀&nbsp;[#95284](https://github.com/openclaw/openclaw/pull/95284) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @lzyyzznl | fix(openai-completions): close thinking block at reasoning→content transition for providers without discrete thinking_end |
 
-## OPEN THREADS (1176)
+## OPEN THREADS (1189)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1126 open threads, sorted by activity</summary>
+<summary>Remaining 1139 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,19 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95501](https://github.com/openclaw/openclaw/pull/95501) | 0 | Model routing/config | @zhangqueping | fix(agents): classify CLI generic failure text as fallback-worthy |
+| 📝&nbsp;[#95500](https://github.com/openclaw/openclaw/issues/95500) | 0 | Model routing/config | @hpfan | [Bug]: Plugin model provider (opencode-go) cannot be resolved by isolated cron sessions, even though openclaw models lists it correctly and session_status model=default resolves it for existing sessions. |
+| 🔀&nbsp;[#95496](https://github.com/openclaw/openclaw/pull/95496) | 0 | Model routing/config | @liuhao1024 | fix(agents): classify generic external run failure text as fallback-eligible (fixes #95489) |
+| 📝&nbsp;[#95495](https://github.com/openclaw/openclaw/issues/95495) | 0 | Local memory/embedding | @fenglanhua | [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
+| 🔀&nbsp;[#95494](https://github.com/openclaw/openclaw/pull/95494) | 0 | Model routing/config | @Pandah97 | fix(agents): prevent missing_tool_result from triggering cross-provider model fallback (#95474) |
+| 🔀&nbsp;[#95493](https://github.com/openclaw/openclaw/pull/95493) | 0 | OpenAI-compatible/proxy | @openperf | fix(github-copilot): strip encrypted_content from reasoning replay items |
+| 🔀&nbsp;[#95491](https://github.com/openclaw/openclaw/pull/95491) | 0 | Model routing/config | @zhangqueping | fix(ui): reconcile model dropdown cache with server-resolved model after sessions.patch |
+| 📝&nbsp;[#95489](https://github.com/openclaw/openclaw/issues/95489) | 0 | Model routing/config | @riazrahaman | [Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response |
+| 🔀&nbsp;[#95488](https://github.com/openclaw/openclaw/pull/95488) | 0 | Model routing/config | @zhiqiang26 | fix(agents): classify missing_tool_result as tool_error to prevent cross-provider failover |
+| 🔀&nbsp;[#95487](https://github.com/openclaw/openclaw/pull/95487) | 0 | Local/media model provider | @liuhao1024 | feat(tts): strip emoji characters before speech synthesis (fixes #95478) |
+| 🔀&nbsp;[#95486](https://github.com/openclaw/openclaw/pull/95486) | 0 | Local/media model provider | @Pandah97 | feat(speech-core): filter emoji before TTS synthesis |
+| 📝&nbsp;[#95478](https://github.com/openclaw/openclaw/issues/95478) | 0 | Local/media model provider | @lewiswu1209 | [Feature]: 希望在文本转语音前将表情符号过滤掉 |
+| 📝&nbsp;[#95474](https://github.com/openclaw/openclaw/issues/95474) | 0 | Model routing/config | @ElliotDrel | [Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback |
 | 🔀&nbsp;[#95458](https://github.com/openclaw/openclaw/pull/95458) | 0 | Local model runtime | @Linux2010 | fix(cron): trim whitespace from object keys to handle malformed model outputs |
 | 🔀&nbsp;[#95455](https://github.com/openclaw/openclaw/pull/95455) | 0 | Model routing/config | @LiuwqGit | fix(agents): forward resolved sub-agent model to gateway call (#91171) |
 | 🔀&nbsp;[#95453](https://github.com/openclaw/openclaw/pull/95453) | 0 | Local model runtime | @mikasa0818 | fix #95407: [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter |
@@ -1960,4 +1973,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1176 (443 issues, 733 PRs).
+- Kept open threads: 1189 (448 issues, 741 PRs).

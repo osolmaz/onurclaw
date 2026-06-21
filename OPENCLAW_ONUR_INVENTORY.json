@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 443,
-    "open_prs": 733,
-    "open_threads": 1176
+    "open_issues": 448,
+    "open_prs": 741,
+    "open_threads": 1189
   },
   "open_threads": [
     {
@@ -5860,6 +5860,123 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 95501,
+      "title": "fix(agents): classify CLI generic failure text as fallback-worthy",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95501"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hpfan",
+      "number": 95500,
+      "title": "[Bug]: Plugin model provider (opencode-go) cannot be resolved by isolated cron sessions, even though openclaw models lists it correctly and session_status model=default resolves it for existing sessions.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95500"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 95496,
+      "title": "fix(agents): classify generic external run failure text as fallback-eligible (fixes #95489)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95496"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@fenglanhua",
+      "number": 95495,
+      "title": "[Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95495"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Pandah97",
+      "number": 95494,
+      "title": "fix(agents): prevent missing_tool_result from triggering cross-provider model fallback (#95474)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95494"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@openperf",
+      "number": 95493,
+      "title": "fix(github-copilot): strip encrypted_content from reasoning replay items",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95493"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 95491,
+      "title": "fix(ui): reconcile model dropdown cache with server-resolved model after sessions.patch",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95491"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@riazrahaman",
+      "number": 95489,
+      "title": "[Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95489"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhiqiang26",
+      "number": 95488,
+      "title": "fix(agents): classify missing_tool_result as tool_error to prevent cross-provider failover",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95488"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@liuhao1024",
+      "number": 95487,
+      "title": "feat(tts): strip emoji characters before speech synthesis (fixes #95478)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95487"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Pandah97",
+      "number": 95486,
+      "title": "feat(speech-core): filter emoji before TTS synthesis",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95486"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@lewiswu1209",
+      "number": 95478,
+      "title": "[Feature]: 希望在文本转语音前将表情符号过滤掉",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95478"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ElliotDrel",
+      "number": 95474,
+      "title": "[Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95474"
     },
     {
       "activity": 0,
@@ -15374,8 +15491,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95443,
-    "pr": 95462
+    "issue": 95500,
+    "pr": 95501
   },
   "schema_version": 1,
   "updated": "2026-06-21"
