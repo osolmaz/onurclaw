@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 449,
-    "open_prs": 749,
-    "open_threads": 1198
+    "open_issues": 450,
+    "open_prs": 750,
+    "open_threads": 1200
   },
   "open_threads": [
     {
@@ -5860,6 +5860,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@bowenluo718",
+      "number": 95537,
+      "title": "fix(agents): expand embedded fallback classifier to accept transient provider errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95537"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kumaxs",
+      "number": 95530,
+      "title": "opencode-go streaming hangs in isolated cron sessions (model_call:stream_progress stalls)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95530"
     },
     {
       "activity": 0,
@@ -15572,8 +15590,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95519,
-    "pr": 95524
+    "issue": 95539,
+    "pr": 95537
   },
   "schema_version": 1,
   "updated": "2026-06-21"
