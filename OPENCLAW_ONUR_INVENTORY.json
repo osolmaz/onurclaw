@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 442,
-    "open_prs": 726,
-    "open_threads": 1168
+    "open_issues": 443,
+    "open_prs": 733,
+    "open_threads": 1176
   },
   "open_threads": [
     {
@@ -5860,6 +5860,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Linux2010",
+      "number": 95458,
+      "title": "fix(cron): trim whitespace from object keys to handle malformed model outputs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95458"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@LiuwqGit",
+      "number": 95455,
+      "title": "fix(agents): forward resolved sub-agent model to gateway call (#91171)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95455"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@mikasa0818",
+      "number": 95453,
+      "title": "fix #95407: [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95453"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 95452,
+      "title": "fix(memory): align session file counter denominator with indexer filter (fixes #77338)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95452"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@moguangyu5-design",
+      "number": 95447,
+      "title": "fix(agents): use CJK-aware token estimation for tool results",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95447"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lzyyzznl",
+      "number": 95442,
+      "title": "fix(cron): recover whitespace-padded job keys from local model parsers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95442"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@fanyangCS",
+      "number": 95441,
+      "title": "github-copilot/gpt-5.5 still persists/replays thinkingSignature encrypted_content after #84367/#90682/#92941, causing channel/direct LLM request failed",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95441"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mikasa0818",
+      "number": 95436,
+      "title": "fix #91171: [Bug]: Sub-agent model routing ignores model parameter, silently falls back to deepseek",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95436"
     },
     {
       "activity": 0,
@@ -15302,8 +15374,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95429,
-    "pr": 95435
+    "issue": 95443,
+    "pr": 95462
   },
   "schema_version": 1,
   "updated": "2026-06-21"

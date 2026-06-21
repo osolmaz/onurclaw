@@ -4,14 +4,22 @@ Updated: 2026-06-21
 
 Review watermark:
 
-- Last reviewed through issue: #95429.
-- Last reviewed through PR: #95435.
+- Last reviewed through issue: #95443.
+- Last reviewed through PR: #95462.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95458](https://github.com/openclaw/openclaw/pull/95458) | 2026-06-21 | 0 | Local model runtime | @Linux2010 | fix(cron): trim whitespace from object keys to handle malformed model outputs |
+| 🔀&nbsp;[#95455](https://github.com/openclaw/openclaw/pull/95455) | 2026-06-21 | 0 | Model routing/config | @LiuwqGit | fix(agents): forward resolved sub-agent model to gateway call (#91171) |
+| 🔀&nbsp;[#95453](https://github.com/openclaw/openclaw/pull/95453) | 2026-06-21 | 0 | Local model runtime | @mikasa0818 | fix #95407: [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter |
+| 🔀&nbsp;[#95452](https://github.com/openclaw/openclaw/pull/95452) | 2026-06-21 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
+| 🔀&nbsp;[#95447](https://github.com/openclaw/openclaw/pull/95447) | 2026-06-21 | 0 | Model routing/config | @moguangyu5-design | fix(agents): use CJK-aware token estimation for tool results |
+| 🔀&nbsp;[#95442](https://github.com/openclaw/openclaw/pull/95442) | 2026-06-21 | 0 | Local model runtime | @lzyyzznl | fix(cron): recover whitespace-padded job keys from local model parsers |
+| 📝&nbsp;[#95441](https://github.com/openclaw/openclaw/issues/95441) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @fanyangCS | github-copilot/gpt-5.5 still persists/replays thinkingSignature encrypted_content after #84367/#90682/#92941, causing channel/direct LLM request failed |
+| 🔀&nbsp;[#95436](https://github.com/openclaw/openclaw/pull/95436) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #91171: [Bug]: Sub-agent model routing ignores model parameter, silently falls back to deepseek |
 | 🔀&nbsp;[#95434](https://github.com/openclaw/openclaw/pull/95434) | 2026-06-21 | 0 | Model routing/config | @jincheng-xydt | fix: persist modelOverride/providerOverride in subagent spawn (#91171) |
 | 🔀&nbsp;[#95427](https://github.com/openclaw/openclaw/pull/95427) | 2026-06-20 | 0 | Local model runtime | @ZengWen-DT | fix(cron): recover whitespace-padded tool keys before validation |
 | 🔀&nbsp;[#95424](https://github.com/openclaw/openclaw/pull/95424) | 2026-06-20 | 0 | Local model runtime | @zhangqueping | fix(cron): trim whitespace-padded keys in job canonicalization |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95286](https://github.com/openclaw/openclaw/pull/95286) | 2026-06-20 | 0 | Model routing/config | @zhangqueping | fix(agents): forward resolved model to sub-agent gateway agent call |
 | 🔀&nbsp;[#95285](https://github.com/openclaw/openclaw/pull/95285) | 2026-06-20 | 0 | Local memory/embedding | @mmyzwl | fix(memory-wiki): resolve bridge zero-artifact report in CLI snapshot mode |
 | 🔀&nbsp;[#95284](https://github.com/openclaw/openclaw/pull/95284) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @lzyyzznl | fix(openai-completions): close thinking block at reasoning→content transition for providers without discrete thinking_end |
-| 🔀&nbsp;[#95283](https://github.com/openclaw/openclaw/pull/95283) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @ZengWen-DT | fix(openai-completions): seal native reasoning before the answer under /reasoning on |
-| 🔀&nbsp;[#95281](https://github.com/openclaw/openclaw/pull/95281) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(llm): close reasoning stream on text-lane transition for DeepSeek (fixes #95280) |
-| 📝&nbsp;[#95280](https://github.com/openclaw/openclaw/issues/95280) | 2026-06-20 | 0 | OpenAI-compatible/proxy | @Marvinthebored | deepseek reasoning: final answer merges into the thinking block under /reasoning on (no discrete thinking_end at the reasoning→content transition) |
-| 📝&nbsp;[#95279](https://github.com/openclaw/openclaw/issues/95279) | 2026-06-20 | 0 | Local memory/embedding | @gorkem2020 | Provide a trusted inbound-decoration contract so consumers can strip/dedup without forgeable text heuristics |
-| 🔀&nbsp;[#95274](https://github.com/openclaw/openclaw/pull/95274) | 2026-06-20 | 0 | Local memory/embedding | @ly85206559 | fix(memory): preserve Windows QMD command paths |
-| 🔀&nbsp;[#95268](https://github.com/openclaw/openclaw/pull/95268) | 2026-06-20 | 0 | Model routing/config | @Darren2030 | fix(openrouter): expand short canonical model IDs to upstream API slugs (fixes #95198) |
-| 🔀&nbsp;[#95267](https://github.com/openclaw/openclaw/pull/95267) | 2026-06-20 | 0 | Local memory/embedding | @zhangqueping | fix(memory): repair Windows QMD paths whose backslashes were stripped by JSON parsing |
-| 🔀&nbsp;[#95258](https://github.com/openclaw/openclaw/pull/95258) | 2026-06-20 | 0 | Model routing/config | @dwc1997 | fix(openrouter): prevent model prefix duplication for short canonical IDs |
 
-## OPEN THREADS (1168)
+## OPEN THREADS (1176)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1118 open threads, sorted by activity</summary>
+<summary>Remaining 1126 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95458](https://github.com/openclaw/openclaw/pull/95458) | 0 | Local model runtime | @Linux2010 | fix(cron): trim whitespace from object keys to handle malformed model outputs |
+| 🔀&nbsp;[#95455](https://github.com/openclaw/openclaw/pull/95455) | 0 | Model routing/config | @LiuwqGit | fix(agents): forward resolved sub-agent model to gateway call (#91171) |
+| 🔀&nbsp;[#95453](https://github.com/openclaw/openclaw/pull/95453) | 0 | Local model runtime | @mikasa0818 | fix #95407: [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter |
+| 🔀&nbsp;[#95452](https://github.com/openclaw/openclaw/pull/95452) | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
+| 🔀&nbsp;[#95447](https://github.com/openclaw/openclaw/pull/95447) | 0 | Model routing/config | @moguangyu5-design | fix(agents): use CJK-aware token estimation for tool results |
+| 🔀&nbsp;[#95442](https://github.com/openclaw/openclaw/pull/95442) | 0 | Local model runtime | @lzyyzznl | fix(cron): recover whitespace-padded job keys from local model parsers |
+| 📝&nbsp;[#95441](https://github.com/openclaw/openclaw/issues/95441) | 0 | OpenAI-compatible/proxy | @fanyangCS | github-copilot/gpt-5.5 still persists/replays thinkingSignature encrypted_content after #84367/#90682/#92941, causing channel/direct LLM request failed |
+| 🔀&nbsp;[#95436](https://github.com/openclaw/openclaw/pull/95436) | 0 | Model routing/config | @mikasa0818 | fix #91171: [Bug]: Sub-agent model routing ignores model parameter, silently falls back to deepseek |
 | 🔀&nbsp;[#95434](https://github.com/openclaw/openclaw/pull/95434) | 0 | Model routing/config | @jincheng-xydt | fix: persist modelOverride/providerOverride in subagent spawn (#91171) |
 | 🔀&nbsp;[#95427](https://github.com/openclaw/openclaw/pull/95427) | 0 | Local model runtime | @ZengWen-DT | fix(cron): recover whitespace-padded tool keys before validation |
 | 🔀&nbsp;[#95424](https://github.com/openclaw/openclaw/pull/95424) | 0 | Local model runtime | @zhangqueping | fix(cron): trim whitespace-padded keys in job canonicalization |
@@ -1952,4 +1960,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1168 (442 issues, 726 PRs).
+- Kept open threads: 1176 (443 issues, 733 PRs).
