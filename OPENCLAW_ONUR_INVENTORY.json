@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 455,
-    "open_prs": 761,
-    "open_threads": 1216
+    "open_prs": 766,
+    "open_threads": 1221
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lsr911",
+      "number": 95599,
+      "title": "fix(memory): backfill provider.model in createWithAdapter when adapter returns empty string",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95599"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@harjothkhara",
+      "number": 95598,
+      "title": "fix(memory): skip placeholder short-term promotions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95598"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@mcaxtr",
+      "number": 95596,
+      "title": "fix: preserve steered audio for inbound TTS",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95596"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Lestat569769",
+      "number": 95595,
+      "title": "fix(memory-core): skip forced sync for healthy zero-hit search",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95595"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mmyzwl",
+      "number": 95594,
+      "title": "fix(agent-runner): classify transient provider errors as fallback-worthy",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95594"
     },
     {
       "activity": 0,
@@ -15734,8 +15779,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95586,
-    "pr": 95591
+    "issue": 95601,
+    "pr": 95603
   },
   "schema_version": 1,
   "updated": "2026-06-22"

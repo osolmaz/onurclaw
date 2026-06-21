@@ -4,14 +4,19 @@ Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95586.
-- Last reviewed through PR: #95591.
+- Last reviewed through issue: #95601.
+- Last reviewed through PR: #95603.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95599](https://github.com/openclaw/openclaw/pull/95599) | 2026-06-21 | 0 | Local memory/embedding | @lsr911 | fix(memory): backfill provider.model in createWithAdapter when adapter returns empty string |
+| 🔀&nbsp;[#95598](https://github.com/openclaw/openclaw/pull/95598) | 2026-06-21 | 0 | Local memory/embedding | @harjothkhara | fix(memory): skip placeholder short-term promotions |
+| 🔀&nbsp;[#95596](https://github.com/openclaw/openclaw/pull/95596) | 2026-06-21 | 0 | Local/media model provider | @mcaxtr | fix: preserve steered audio for inbound TTS |
+| 🔀&nbsp;[#95595](https://github.com/openclaw/openclaw/pull/95595) | 2026-06-21 | 0 | Local memory/embedding | @Lestat569769 | fix(memory-core): skip forced sync for healthy zero-hit search |
+| 🔀&nbsp;[#95594](https://github.com/openclaw/openclaw/pull/95594) | 2026-06-21 | 0 | Model routing/config | @mmyzwl | fix(agent-runner): classify transient provider errors as fallback-worthy |
 | 🔀&nbsp;[#95590](https://github.com/openclaw/openclaw/pull/95590) | 2026-06-21 | 0 | Local model runtime | @yu-xin-c | [codex] fix(reply): let preflight compaction use compaction timeout |
 | 🔀&nbsp;[#95587](https://github.com/openclaw/openclaw/pull/95587) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @fanyangCS | fix(openai-responses): recover streamed invalid_encrypted_content via drain-level retry (#95441) |
 | 📝&nbsp;[#95586](https://github.com/openclaw/openclaw/issues/95586) | 2026-06-21 | 0 | Open-weight/provider behavior | @jwong-art | [Bug]: Kimi Coding auth fallback in systemd Gateway when config env is not injected |
@@ -57,13 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95453](https://github.com/openclaw/openclaw/pull/95453) | 2026-06-21 | 0 | Local model runtime | @mikasa0818 | fix #95407: [Bug]: `cron` tool `add` action mangles certain key names in `job` parameter |
 | 🔀&nbsp;[#95452](https://github.com/openclaw/openclaw/pull/95452) | 2026-06-21 | 0 | Local memory/embedding | @liuhao1024 | fix(memory): align session file counter denominator with indexer filter (fixes #77338) |
 | 🔀&nbsp;[#95447](https://github.com/openclaw/openclaw/pull/95447) | 2026-06-21 | 0 | Model routing/config | @moguangyu5-design | fix(agents): use CJK-aware token estimation for tool results |
-| 🔀&nbsp;[#95442](https://github.com/openclaw/openclaw/pull/95442) | 2026-06-21 | 0 | Local model runtime | @lzyyzznl | fix(cron): recover whitespace-padded job keys from local model parsers |
-| 📝&nbsp;[#95441](https://github.com/openclaw/openclaw/issues/95441) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @fanyangCS | github-copilot/gpt-5.5 still persists/replays thinkingSignature encrypted_content after #84367/#90682/#92941, causing channel/direct LLM request failed |
-| 🔀&nbsp;[#95436](https://github.com/openclaw/openclaw/pull/95436) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #91171: [Bug]: Sub-agent model routing ignores model parameter, silently falls back to deepseek |
-| 🔀&nbsp;[#95434](https://github.com/openclaw/openclaw/pull/95434) | 2026-06-21 | 0 | Model routing/config | @jincheng-xydt | fix: persist modelOverride/providerOverride in subagent spawn (#91171) |
-| 🔀&nbsp;[#95427](https://github.com/openclaw/openclaw/pull/95427) | 2026-06-20 | 0 | Local model runtime | @ZengWen-DT | fix(cron): recover whitespace-padded tool keys before validation |
 
-## OPEN THREADS (1216)
+## OPEN THREADS (1221)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1166 open threads, sorted by activity</summary>
+<summary>Remaining 1171 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,11 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95599](https://github.com/openclaw/openclaw/pull/95599) | 0 | Local memory/embedding | @lsr911 | fix(memory): backfill provider.model in createWithAdapter when adapter returns empty string |
+| 🔀&nbsp;[#95598](https://github.com/openclaw/openclaw/pull/95598) | 0 | Local memory/embedding | @harjothkhara | fix(memory): skip placeholder short-term promotions |
+| 🔀&nbsp;[#95596](https://github.com/openclaw/openclaw/pull/95596) | 0 | Local/media model provider | @mcaxtr | fix: preserve steered audio for inbound TTS |
+| 🔀&nbsp;[#95595](https://github.com/openclaw/openclaw/pull/95595) | 0 | Local memory/embedding | @Lestat569769 | fix(memory-core): skip forced sync for healthy zero-hit search |
+| 🔀&nbsp;[#95594](https://github.com/openclaw/openclaw/pull/95594) | 0 | Model routing/config | @mmyzwl | fix(agent-runner): classify transient provider errors as fallback-worthy |
 | 🔀&nbsp;[#95590](https://github.com/openclaw/openclaw/pull/95590) | 0 | Local model runtime | @yu-xin-c | [codex] fix(reply): let preflight compaction use compaction timeout |
 | 🔀&nbsp;[#95587](https://github.com/openclaw/openclaw/pull/95587) | 0 | OpenAI-compatible/proxy | @fanyangCS | fix(openai-responses): recover streamed invalid_encrypted_content via drain-level retry (#95441) |
 | 📝&nbsp;[#95586](https://github.com/openclaw/openclaw/issues/95586) | 0 | Open-weight/provider behavior | @jwong-art | [Bug]: Kimi Coding auth fallback in systemd Gateway when config env is not injected |
@@ -2000,4 +2005,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1216 (455 issues, 761 PRs).
+- Kept open threads: 1221 (455 issues, 766 PRs).
