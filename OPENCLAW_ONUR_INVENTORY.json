@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 462,
-    "open_prs": 782,
-    "open_threads": 1244
+    "open_issues": 464,
+    "open_prs": 785,
+    "open_threads": 1249
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@hanZeng-08",
+      "number": 95702,
+      "title": "fix(gateway): apply config env vars during startup for systemd-manage…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95702"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@hanZeng-08",
+      "number": 95698,
+      "title": "fix(cron): prevent model-pin bypass, empty compaction, and fence self…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95698"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@davidxu00",
+      "number": 95696,
+      "title": "[Bug]: Compaction resets session model override to previous provider",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95696"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@YUI-TIEN",
+      "number": 95693,
+      "title": "Compaction (/compact) fails with 'No API key found' when model uses codex/claude-cli OAuth runtime",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95693"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@vinitasher",
+      "number": 95692,
+      "title": "feat(openrouter): support models fallback array for automatic failover",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95692"
     },
     {
       "activity": 0,
@@ -15986,8 +16031,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95678,
-    "pr": 95680
+    "issue": 95701,
+    "pr": 95705
   },
   "schema_version": 1,
   "updated": "2026-06-22"

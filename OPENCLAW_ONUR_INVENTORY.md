@@ -4,14 +4,19 @@ Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95678.
-- Last reviewed through PR: #95680.
+- Last reviewed through issue: #95701.
+- Last reviewed through PR: #95705.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95702](https://github.com/openclaw/openclaw/pull/95702) | 2026-06-22 | 0 | Open-weight/provider behavior | @hanZeng-08 | fix(gateway): apply config env vars during startup for systemd-manage… |
+| 🔀&nbsp;[#95698](https://github.com/openclaw/openclaw/pull/95698) | 2026-06-22 | 0 | Local model runtime | @hanZeng-08 | fix(cron): prevent model-pin bypass, empty compaction, and fence self… |
+| 📝&nbsp;[#95696](https://github.com/openclaw/openclaw/issues/95696) | 2026-06-22 | 0 | Model routing/config | @davidxu00 | [Bug]: Compaction resets session model override to previous provider |
+| 📝&nbsp;[#95693](https://github.com/openclaw/openclaw/issues/95693) | 2026-06-22 | 0 | Model routing/config | @YUI-TIEN | Compaction (/compact) fails with 'No API key found' when model uses codex/claude-cli OAuth runtime |
+| 🔀&nbsp;[#95692](https://github.com/openclaw/openclaw/pull/95692) | 2026-06-22 | 0 | Model routing/config | @vinitasher | feat(openrouter): support models fallback array for automatic failover |
 | 🔀&nbsp;[#95676](https://github.com/openclaw/openclaw/pull/95676) | 2026-06-22 | 0 | Model routing/config | @anyech | fix(agents): retry same profile before timeout auth rotation |
 | 🔀&nbsp;[#95675](https://github.com/openclaw/openclaw/pull/95675) | 2026-06-22 | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
 | 📝&nbsp;[#95672](https://github.com/openclaw/openclaw/issues/95672) | 2026-06-22 | 0 | Local model runtime | @KanopiAndPetra | [Bug]: C++ Practice cron trips EmbeddedAttemptSessionTakeoverError after provider overloaded_error + model-pin bypass (regression on Jun 9 12:48 fix) |
@@ -57,13 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95543](https://github.com/openclaw/openclaw/pull/95543) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #95474: [Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback |
 | 🔀&nbsp;[#95542](https://github.com/openclaw/openclaw/pull/95542) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed |
 | 🔀&nbsp;[#95537](https://github.com/openclaw/openclaw/pull/95537) | 2026-06-21 | 0 | Model routing/config | @bowenluo718 | fix(agents): expand embedded fallback classifier to accept transient provider errors |
-| 📝&nbsp;[#95530](https://github.com/openclaw/openclaw/issues/95530) | 2026-06-21 | 0 | Model routing/config | @kumaxs | opencode-go streaming hangs in isolated cron sessions (model_call:stream_progress stalls) |
-| 🔀&nbsp;[#95524](https://github.com/openclaw/openclaw/pull/95524) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @liuhao1024 | fix(agents): classify upstream_error errorType as server_error for model fallback (fixes #95519) (AI-assisted) |
-| 🔀&nbsp;[#95523](https://github.com/openclaw/openclaw/pull/95523) | 2026-06-21 | 0 | Model routing/config | @Bartok9 | fix(agents): classify provider upstream_error as fallbackable transient failure |
-| 🔀&nbsp;[#95521](https://github.com/openclaw/openclaw/pull/95521) | 2026-06-21 | 0 | Model routing/config | @zhiqiang26 | fix(agents): classify 'upstream request failed' as server_error for failover |
-| 🔀&nbsp;[#95520](https://github.com/openclaw/openclaw/pull/95520) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(agents): prevent Codex missing_tool_result from triggering cross-provider model fallback |
 
-## OPEN THREADS (1244)
+## OPEN THREADS (1249)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1194 open threads, sorted by activity</summary>
+<summary>Remaining 1199 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,11 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95702](https://github.com/openclaw/openclaw/pull/95702) | 0 | Open-weight/provider behavior | @hanZeng-08 | fix(gateway): apply config env vars during startup for systemd-manage… |
+| 🔀&nbsp;[#95698](https://github.com/openclaw/openclaw/pull/95698) | 0 | Local model runtime | @hanZeng-08 | fix(cron): prevent model-pin bypass, empty compaction, and fence self… |
+| 📝&nbsp;[#95696](https://github.com/openclaw/openclaw/issues/95696) | 0 | Model routing/config | @davidxu00 | [Bug]: Compaction resets session model override to previous provider |
+| 📝&nbsp;[#95693](https://github.com/openclaw/openclaw/issues/95693) | 0 | Model routing/config | @YUI-TIEN | Compaction (/compact) fails with 'No API key found' when model uses codex/claude-cli OAuth runtime |
+| 🔀&nbsp;[#95692](https://github.com/openclaw/openclaw/pull/95692) | 0 | Model routing/config | @vinitasher | feat(openrouter): support models fallback array for automatic failover |
 | 🔀&nbsp;[#95676](https://github.com/openclaw/openclaw/pull/95676) | 0 | Model routing/config | @anyech | fix(agents): retry same profile before timeout auth rotation |
 | 🔀&nbsp;[#95675](https://github.com/openclaw/openclaw/pull/95675) | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
 | 📝&nbsp;[#95672](https://github.com/openclaw/openclaw/issues/95672) | 0 | Local model runtime | @KanopiAndPetra | [Bug]: C++ Practice cron trips EmbeddedAttemptSessionTakeoverError after provider overloaded_error + model-pin bypass (regression on Jun 9 12:48 fix) |
@@ -2028,4 +2033,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1244 (462 issues, 782 PRs).
+- Kept open threads: 1249 (464 issues, 785 PRs).
