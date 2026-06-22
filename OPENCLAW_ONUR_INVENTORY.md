@@ -4,14 +4,20 @@ Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95612.
-- Last reviewed through PR: #95618.
+- Last reviewed through issue: #95630.
+- Last reviewed through PR: #95638.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95634](https://github.com/openclaw/openclaw/pull/95634) | 2026-06-22 | 0 | Model routing/config | @maweibin | fix(agents): recognize snake_case tool_use types in id sanitizer for cross-provider failover (#95623) |
+| 🔀&nbsp;[#95632](https://github.com/openclaw/openclaw/pull/95632) | 2026-06-22 | 0 | Model routing/config | @ruomuxydt | fix(agents): classify stream abort errors as transient for fallback rotation |
+| 🔀&nbsp;[#95631](https://github.com/openclaw/openclaw/pull/95631) | 2026-06-22 | 0 | Local memory/embedding | @mushuiyu886 | fix #95495: [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
+| 🔀&nbsp;[#95629](https://github.com/openclaw/openclaw/pull/95629) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @arkyu2077 | fix(replay): sanitize raw OpenAI Responses tool ids for strict-target replay |
+| 📝&nbsp;[#95627](https://github.com/openclaw/openclaw/issues/95627) | 2026-06-22 | 0 | Model routing/config | @jrex-jooni | Preserved Claude thinking signatures (opus-4/sonnet-4) fail unrecoverably on prefix-reconstruction replay; strip-and-retry recovery not reached |
+| 📝&nbsp;[#95623](https://github.com/openclaw/openclaw/issues/95623) | 2026-06-22 | 0 | Model routing/config | @jrex-jooni | tool_use.id sanitizer (#61254) misses OpenAI-responses composite id on cross-provider failover replay → Anthropic 400 bricks session |
 | 🔀&nbsp;[#95614](https://github.com/openclaw/openclaw/pull/95614) | 2026-06-21 | 0 | Local memory/embedding | @yetval | fix(memory-wiki): preserve human notes block on source re-ingest |
 | 📝&nbsp;[#95606](https://github.com/openclaw/openclaw/issues/95606) | 2026-06-21 | 0 | Local memory/embedding | @muskfeel | Memory system: Cannot delete stale memories, conflicting entries persist |
 | 🔀&nbsp;[#95605](https://github.com/openclaw/openclaw/pull/95605) | 2026-06-21 | 0 | Local memory/embedding | @bobrenze-bot | fix(agents): skip empty allowlist guard for modelRun shapes |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95491](https://github.com/openclaw/openclaw/pull/95491) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(ui): reconcile model dropdown cache with server-resolved model after sessions.patch |
 | 📝&nbsp;[#95489](https://github.com/openclaw/openclaw/issues/95489) | 2026-06-21 | 0 | Model routing/config | @riazrahaman | [Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response |
 | 🔀&nbsp;[#95488](https://github.com/openclaw/openclaw/pull/95488) | 2026-06-21 | 0 | Model routing/config | @zhiqiang26 | fix(agents): classify missing_tool_result as tool_error to prevent cross-provider failover |
-| 🔀&nbsp;[#95487](https://github.com/openclaw/openclaw/pull/95487) | 2026-06-21 | 0 | Local/media model provider | @liuhao1024 | feat(tts): strip emoji characters before speech synthesis (fixes #95478) |
-| 🔀&nbsp;[#95486](https://github.com/openclaw/openclaw/pull/95486) | 2026-06-21 | 0 | Local/media model provider | @Pandah97 | feat(speech-core): filter emoji before TTS synthesis |
-| 📝&nbsp;[#95478](https://github.com/openclaw/openclaw/issues/95478) | 2026-06-21 | 0 | Local/media model provider | @lewiswu1209 | [Feature]: 希望在文本转语音前将表情符号过滤掉 |
-| 📝&nbsp;[#95474](https://github.com/openclaw/openclaw/issues/95474) | 2026-06-21 | 0 | Model routing/config | @ElliotDrel | [Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback |
-| 🔀&nbsp;[#95458](https://github.com/openclaw/openclaw/pull/95458) | 2026-06-21 | 0 | Local model runtime | @Linux2010 | fix(cron): trim whitespace from object keys to handle malformed model outputs |
-| 🔀&nbsp;[#95455](https://github.com/openclaw/openclaw/pull/95455) | 2026-06-21 | 0 | Model routing/config | @LiuwqGit | fix(agents): forward resolved sub-agent model to gateway call (#91171) |
 
-## OPEN THREADS (1224)
+## OPEN THREADS (1230)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1174 open threads, sorted by activity</summary>
+<summary>Remaining 1180 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95634](https://github.com/openclaw/openclaw/pull/95634) | 0 | Model routing/config | @maweibin | fix(agents): recognize snake_case tool_use types in id sanitizer for cross-provider failover (#95623) |
+| 🔀&nbsp;[#95632](https://github.com/openclaw/openclaw/pull/95632) | 0 | Model routing/config | @ruomuxydt | fix(agents): classify stream abort errors as transient for fallback rotation |
+| 🔀&nbsp;[#95631](https://github.com/openclaw/openclaw/pull/95631) | 0 | Local memory/embedding | @mushuiyu886 | fix #95495: [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
+| 🔀&nbsp;[#95629](https://github.com/openclaw/openclaw/pull/95629) | 0 | OpenAI-compatible/proxy | @arkyu2077 | fix(replay): sanitize raw OpenAI Responses tool ids for strict-target replay |
+| 📝&nbsp;[#95627](https://github.com/openclaw/openclaw/issues/95627) | 0 | Model routing/config | @jrex-jooni | Preserved Claude thinking signatures (opus-4/sonnet-4) fail unrecoverably on prefix-reconstruction replay; strip-and-retry recovery not reached |
+| 📝&nbsp;[#95623](https://github.com/openclaw/openclaw/issues/95623) | 0 | Model routing/config | @jrex-jooni | tool_use.id sanitizer (#61254) misses OpenAI-responses composite id on cross-provider failover replay → Anthropic 400 bricks session |
 | 🔀&nbsp;[#95614](https://github.com/openclaw/openclaw/pull/95614) | 0 | Local memory/embedding | @yetval | fix(memory-wiki): preserve human notes block on source re-ingest |
 | 📝&nbsp;[#95606](https://github.com/openclaw/openclaw/issues/95606) | 0 | Local memory/embedding | @muskfeel | Memory system: Cannot delete stale memories, conflicting entries persist |
 | 🔀&nbsp;[#95605](https://github.com/openclaw/openclaw/pull/95605) | 0 | Local memory/embedding | @bobrenze-bot | fix(agents): skip empty allowlist guard for modelRun shapes |
@@ -2008,4 +2014,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1224 (456 issues, 768 PRs).
+- Kept open threads: 1230 (458 issues, 772 PRs).
