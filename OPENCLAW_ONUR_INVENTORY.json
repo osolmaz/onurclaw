@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 478,
-    "open_prs": 818,
-    "open_threads": 1296
+    "open_prs": 819,
+    "open_threads": 1297
   },
   "open_threads": [
     {
@@ -5860,6 +5860,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@sallyom",
+      "number": 95831,
+      "title": "fix: compact Codex OAuth OpenAI sessions without API keys",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95831"
     },
     {
       "activity": 0,
@@ -16456,8 +16465,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95825,
-    "pr": 95826
+    "issue": 95834,
+    "pr": 95832
   },
   "schema_version": 1,
   "updated": "2026-06-23"
