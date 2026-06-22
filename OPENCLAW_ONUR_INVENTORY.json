@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 478,
-    "open_prs": 819,
-    "open_threads": 1297
+    "open_issues": 479,
+    "open_prs": 821,
+    "open_threads": 1300
   },
   "open_threads": [
     {
@@ -5860,6 +5860,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yetval",
+      "number": 95852,
+      "title": "fix(acpx): keep leaked non-openai model out of the Codex ACP thinking slot",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95852"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@aleps001",
+      "number": 95840,
+      "title": "contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95840"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@DinoMC",
+      "number": 95838,
+      "title": "feat(heartbeat): add configurable transcriptArtifactMode for history filtering",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95838"
     },
     {
       "activity": 0,
@@ -16465,8 +16492,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95834,
-    "pr": 95832
+    "issue": 95853,
+    "pr": 95855
   },
   "schema_version": 1,
   "updated": "2026-06-23"
