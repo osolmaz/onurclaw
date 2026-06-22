@@ -4,14 +4,20 @@ Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #95853.
-- Last reviewed through PR: #95855.
+- Last reviewed through issue: #95875.
+- Last reviewed through PR: #95876.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#95875](https://github.com/openclaw/openclaw/issues/95875) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | Codex-backed cron runs can appear as canonical openai/openai-chatgpt-responses in transcript metadata, obscuring actual harness selection |
+| 📝&nbsp;[#95874](https://github.com/openclaw/openclaw/issues/95874) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | openclaw cron edit has --model but no --clear-model, so payload.model cannot be removed via the supported CLI |
+| 📝&nbsp;[#95873](https://github.com/openclaw/openclaw/issues/95873) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | cron_run_logs can drop session_id, provider, and model on early agent failure |
+| 📝&nbsp;[#95869](https://github.com/openclaw/openclaw/issues/95869) | 2026-06-22 | 0 | Model routing/config | @SabaTech-dev | sessions_spawn ACP runtime always passes model even when harness lacks session/set_model capability |
+| 🔀&nbsp;[#95868](https://github.com/openclaw/openclaw/pull/95868) | 2026-06-22 | 0 | Model routing/config | @giodl73-repo | Add hosted external catalog feed loader |
+| 🔀&nbsp;[#95859](https://github.com/openclaw/openclaw/pull/95859) | 2026-06-22 | 0 | Model/provider behavior | @solodmd | fix(#95840): contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
 | 🔀&nbsp;[#95852](https://github.com/openclaw/openclaw/pull/95852) | 2026-06-22 | 0 | Model routing/config | @yetval | fix(acpx): keep leaked non-openai model out of the Codex ACP thinking slot |
 | 📝&nbsp;[#95840](https://github.com/openclaw/openclaw/issues/95840) | 2026-06-22 | 0 | Model/provider behavior | @aleps001 | contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
 | 🔀&nbsp;[#95838](https://github.com/openclaw/openclaw/pull/95838) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | feat(heartbeat): add configurable transcriptArtifactMode for history filtering |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95729](https://github.com/openclaw/openclaw/pull/95729) | 2026-06-22 | 0 | Model routing/config | @Pick-cat | fix: classify provider code-only failover errors |
 | 🔀&nbsp;[#95727](https://github.com/openclaw/openclaw/pull/95727) | 2026-06-22 | 0 | Model/provider behavior | @moguangyu5-design | fix(agents): ensure wrapAnthropicStreamWithRecovery works with async streamFn |
 | 🔀&nbsp;[#95726](https://github.com/openclaw/openclaw/pull/95726) | 2026-06-22 | 0 | Local memory/embedding | @moguangyu5-design | fix(state): migrate legacy memory store to per-agent database on upgrade |
-| 📝&nbsp;[#95724](https://github.com/openclaw/openclaw/issues/95724) | 2026-06-22 | 0 | Local memory/embedding | @xmoxmo | feat(memory): index by source directory, not by agent - eliminate duplicate vector stores for same-workspace agents |
-| 🔀&nbsp;[#95722](https://github.com/openclaw/openclaw/pull/95722) | 2026-06-22 | 0 | Model routing/config | @Pick-cat | fix: normalize provider keys during model config merge |
-| 🔀&nbsp;[#95721](https://github.com/openclaw/openclaw/pull/95721) | 2026-06-22 | 0 | Local memory/embedding | @vincentkoc | fix(active-memory): exclude dreaming-narrative session keys from eligibility gate<br>Assignee: vincentkoc |
-| 🔀&nbsp;[#95719](https://github.com/openclaw/openclaw/pull/95719) | 2026-06-22 | 0 | Local model runtime | @vincentkoc | fix(cli): sync capability inspect metadata flags with registered options |
-| 🔀&nbsp;[#95715](https://github.com/openclaw/openclaw/pull/95715) | 2026-06-22 | 0 | Model routing/config | @RichChen01 | fix: preserve user model override during compaction |
-| 🔀&nbsp;[#95713](https://github.com/openclaw/openclaw/pull/95713) | 2026-06-22 | 0 | Model routing/config | @0xghost42 | fix(agents): keep auto-compaction on the live session model (#95696) |
 
-## OPEN THREADS (1300)
+## OPEN THREADS (1306)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1250 open threads, sorted by activity</summary>
+<summary>Remaining 1256 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#95875](https://github.com/openclaw/openclaw/issues/95875) | 0 | Model routing/config | @luke-renjoy | Codex-backed cron runs can appear as canonical openai/openai-chatgpt-responses in transcript metadata, obscuring actual harness selection |
+| 📝&nbsp;[#95874](https://github.com/openclaw/openclaw/issues/95874) | 0 | Model routing/config | @luke-renjoy | openclaw cron edit has --model but no --clear-model, so payload.model cannot be removed via the supported CLI |
+| 📝&nbsp;[#95873](https://github.com/openclaw/openclaw/issues/95873) | 0 | Model routing/config | @luke-renjoy | cron_run_logs can drop session_id, provider, and model on early agent failure |
+| 📝&nbsp;[#95869](https://github.com/openclaw/openclaw/issues/95869) | 0 | Model routing/config | @SabaTech-dev | sessions_spawn ACP runtime always passes model even when harness lacks session/set_model capability |
+| 🔀&nbsp;[#95868](https://github.com/openclaw/openclaw/pull/95868) | 0 | Model routing/config | @giodl73-repo | Add hosted external catalog feed loader |
+| 🔀&nbsp;[#95859](https://github.com/openclaw/openclaw/pull/95859) | 0 | Model/provider behavior | @solodmd | fix(#95840): contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
 | 🔀&nbsp;[#95852](https://github.com/openclaw/openclaw/pull/95852) | 0 | Model routing/config | @yetval | fix(acpx): keep leaked non-openai model out of the Codex ACP thinking slot |
 | 📝&nbsp;[#95840](https://github.com/openclaw/openclaw/issues/95840) | 0 | Model/provider behavior | @aleps001 | contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
 | 🔀&nbsp;[#95838](https://github.com/openclaw/openclaw/pull/95838) | 0 | Model/provider behavior | @DinoMC | feat(heartbeat): add configurable transcriptArtifactMode for history filtering |
@@ -2084,4 +2090,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1300 (479 issues, 821 PRs).
+- Kept open threads: 1306 (483 issues, 823 PRs).

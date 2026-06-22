@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 479,
-    "open_prs": 821,
-    "open_threads": 1300
+    "open_issues": 483,
+    "open_prs": 823,
+    "open_threads": 1306
   },
   "open_threads": [
     {
@@ -5860,6 +5860,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@luke-renjoy",
+      "number": 95875,
+      "title": "Codex-backed cron runs can appear as canonical openai/openai-chatgpt-responses in transcript metadata, obscuring actual harness selection",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95875"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@luke-renjoy",
+      "number": 95874,
+      "title": "openclaw cron edit has --model but no --clear-model, so payload.model cannot be removed via the supported CLI",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95874"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@luke-renjoy",
+      "number": 95873,
+      "title": "cron_run_logs can drop session_id, provider, and model on early agent failure",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95873"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@SabaTech-dev",
+      "number": 95869,
+      "title": "sessions_spawn ACP runtime always passes model even when harness lacks session/set_model capability",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95869"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@giodl73-repo",
+      "number": 95868,
+      "title": "Add hosted external catalog feed loader",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95868"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@solodmd",
+      "number": 95859,
+      "title": "fix(#95840): contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95859"
     },
     {
       "activity": 0,
@@ -16492,8 +16546,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95853,
-    "pr": 95855
+    "issue": 95875,
+    "pr": 95876
   },
   "schema_version": 1,
   "updated": "2026-06-23"
