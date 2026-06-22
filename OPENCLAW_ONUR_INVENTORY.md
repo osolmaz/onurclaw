@@ -4,14 +4,23 @@ Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95657.
-- Last reviewed through PR: #95650.
+- Last reviewed through issue: #95678.
+- Last reviewed through PR: #95680.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95676](https://github.com/openclaw/openclaw/pull/95676) | 2026-06-22 | 0 | Model routing/config | @anyech | fix(agents): retry same profile before timeout auth rotation |
+| 🔀&nbsp;[#95675](https://github.com/openclaw/openclaw/pull/95675) | 2026-06-22 | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
+| 📝&nbsp;[#95672](https://github.com/openclaw/openclaw/issues/95672) | 2026-06-22 | 0 | Local model runtime | @KanopiAndPetra | [Bug]: C++ Practice cron trips EmbeddedAttemptSessionTakeoverError after provider overloaded_error + model-pin bypass (regression on Jun 9 12:48 fix) |
+| 🔀&nbsp;[#95671](https://github.com/openclaw/openclaw/pull/95671) | 2026-06-22 | 0 | Model routing/config | @hansraj316 | fix(agents): scrub non-conforming tool-call ids at the Anthropic wire (#95623) |
+| 🔀&nbsp;[#95670](https://github.com/openclaw/openclaw/pull/95670) | 2026-06-22 | 0 | Local memory/embedding | @hansraj316 | fix(memory): skip memory-wiki vault subtree in workspace memory scan (#95657) |
+| 🔀&nbsp;[#95666](https://github.com/openclaw/openclaw/pull/95666) | 2026-06-22 | 0 | Local memory/embedding | @TurboTheTurtle | Fix memory-wiki bridge self-import loop |
+| 🔀&nbsp;[#95665](https://github.com/openclaw/openclaw/pull/95665) | 2026-06-22 | 0 | Model routing/config | @amknight | Configure heartbeat model fallback policy |
+| 🔀&nbsp;[#95663](https://github.com/openclaw/openclaw/pull/95663) | 2026-06-22 | 0 | Local memory/embedding | @liuhao1024 | fix(memory-wiki): filter self-referential artifacts from bridge import to prevent recursive loop (fixes #95657) (AI-assisted) |
+| 📝&nbsp;[#95658](https://github.com/openclaw/openclaw/issues/95658) | 2026-06-22 | 0 | Local/media model provider | @Ros-ua | [Bug]: 2026.6.9 breaks Groq voice transcription — "Media provider not available: groq" (externalized provider plugin not auto-installed) |
 | 📝&nbsp;[#95657](https://github.com/openclaw/openclaw/issues/95657) | 2026-06-22 | 0 | Local memory/embedding | @Johannes0402 | [Bug]: memory-wiki bridge mode creates recursive self-import loop — wiki sources indexed by memory indexer and re-imported as bridge artifacts |
 | 🔀&nbsp;[#95650](https://github.com/openclaw/openclaw/pull/95650) | 2026-06-22 | 0 | Model routing/config | @WOLIKIMCHENG | fix(agents): retry compaction with backup auth profiles |
 | 🔀&nbsp;[#95648](https://github.com/openclaw/openclaw/pull/95648) | 2026-06-22 | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
@@ -53,17 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95523](https://github.com/openclaw/openclaw/pull/95523) | 2026-06-21 | 0 | Model routing/config | @Bartok9 | fix(agents): classify provider upstream_error as fallbackable transient failure |
 | 🔀&nbsp;[#95521](https://github.com/openclaw/openclaw/pull/95521) | 2026-06-21 | 0 | Model routing/config | @zhiqiang26 | fix(agents): classify 'upstream request failed' as server_error for failover |
 | 🔀&nbsp;[#95520](https://github.com/openclaw/openclaw/pull/95520) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(agents): prevent Codex missing_tool_result from triggering cross-provider model fallback |
-| 📝&nbsp;[#95519](https://github.com/openclaw/openclaw/issues/95519) | 2026-06-21 | 0 | Model routing/config | @zjx111234 | [Bug]: Fallback should trigger on provider upstream_error / LLM request failed |
-| 🔀&nbsp;[#95513](https://github.com/openclaw/openclaw/pull/95513) | 2026-06-21 | 0 | Model routing/config | @jincheng-xydt | fix: treat claude-cli out-of-credits error as fallback-triggering failure (#95489) |
-| 🔀&nbsp;[#95512](https://github.com/openclaw/openclaw/pull/95512) | 2026-06-21 | 0 | Model routing/config | @bowenluo718 | fix(agents): detect CLI generic failure text in fallback classifier (#95489) |
-| 🔀&nbsp;[#95509](https://github.com/openclaw/openclaw/pull/95509) | 2026-06-21 | 0 | Local/media model provider | @CG-Intelligence-Agent-Cole | feat(ui): per-agent ElevenLabs Voice/TTS settings in control-ui |
-| 🔀&nbsp;[#95508](https://github.com/openclaw/openclaw/pull/95508) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #95489: [Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response |
-| 🔀&nbsp;[#95501](https://github.com/openclaw/openclaw/pull/95501) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(agents): classify CLI generic failure text as fallback-worthy |
-| 📝&nbsp;[#95500](https://github.com/openclaw/openclaw/issues/95500) | 2026-06-21 | 0 | Model routing/config | @hpfan | [Bug]: Plugin model provider (opencode-go) cannot be resolved by isolated cron sessions, even though openclaw models lists it correctly and session_status model=default resolves it for existing sessions. |
-| 🔀&nbsp;[#95496](https://github.com/openclaw/openclaw/pull/95496) | 2026-06-21 | 0 | Model routing/config | @liuhao1024 | fix(agents): classify generic external run failure text as fallback-eligible (fixes #95489) |
-| 📝&nbsp;[#95495](https://github.com/openclaw/openclaw/issues/95495) | 2026-06-21 | 0 | Local memory/embedding | @fenglanhua | [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
 
-## OPEN THREADS (1235)
+## OPEN THREADS (1244)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1185 open threads, sorted by activity</summary>
+<summary>Remaining 1194 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,15 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95676](https://github.com/openclaw/openclaw/pull/95676) | 0 | Model routing/config | @anyech | fix(agents): retry same profile before timeout auth rotation |
+| 🔀&nbsp;[#95675](https://github.com/openclaw/openclaw/pull/95675) | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
+| 📝&nbsp;[#95672](https://github.com/openclaw/openclaw/issues/95672) | 0 | Local model runtime | @KanopiAndPetra | [Bug]: C++ Practice cron trips EmbeddedAttemptSessionTakeoverError after provider overloaded_error + model-pin bypass (regression on Jun 9 12:48 fix) |
+| 🔀&nbsp;[#95671](https://github.com/openclaw/openclaw/pull/95671) | 0 | Model routing/config | @hansraj316 | fix(agents): scrub non-conforming tool-call ids at the Anthropic wire (#95623) |
+| 🔀&nbsp;[#95670](https://github.com/openclaw/openclaw/pull/95670) | 0 | Local memory/embedding | @hansraj316 | fix(memory): skip memory-wiki vault subtree in workspace memory scan (#95657) |
+| 🔀&nbsp;[#95666](https://github.com/openclaw/openclaw/pull/95666) | 0 | Local memory/embedding | @TurboTheTurtle | Fix memory-wiki bridge self-import loop |
+| 🔀&nbsp;[#95665](https://github.com/openclaw/openclaw/pull/95665) | 0 | Model routing/config | @amknight | Configure heartbeat model fallback policy |
+| 🔀&nbsp;[#95663](https://github.com/openclaw/openclaw/pull/95663) | 0 | Local memory/embedding | @liuhao1024 | fix(memory-wiki): filter self-referential artifacts from bridge import to prevent recursive loop (fixes #95657) (AI-assisted) |
+| 📝&nbsp;[#95658](https://github.com/openclaw/openclaw/issues/95658) | 0 | Local/media model provider | @Ros-ua | [Bug]: 2026.6.9 breaks Groq voice transcription — "Media provider not available: groq" (externalized provider plugin not auto-installed) |
 | 📝&nbsp;[#95657](https://github.com/openclaw/openclaw/issues/95657) | 0 | Local memory/embedding | @Johannes0402 | [Bug]: memory-wiki bridge mode creates recursive self-import loop — wiki sources indexed by memory indexer and re-imported as bridge artifacts |
 | 🔀&nbsp;[#95650](https://github.com/openclaw/openclaw/pull/95650) | 0 | Model routing/config | @WOLIKIMCHENG | fix(agents): retry compaction with backup auth profiles |
 | 🔀&nbsp;[#95648](https://github.com/openclaw/openclaw/pull/95648) | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
@@ -2019,4 +2028,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1235 (460 issues, 775 PRs).
+- Kept open threads: 1244 (462 issues, 782 PRs).

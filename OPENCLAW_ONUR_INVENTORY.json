@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 460,
-    "open_prs": 775,
-    "open_threads": 1235
+    "open_issues": 462,
+    "open_prs": 782,
+    "open_threads": 1244
   },
   "open_threads": [
     {
@@ -5860,6 +5860,87 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@anyech",
+      "number": 95676,
+      "title": "fix(agents): retry same profile before timeout auth rotation",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95676"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@wangmiao0668000666",
+      "number": 95675,
+      "title": "feat(compaction): add compaction.preflight.enabled config gate (#95553)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95675"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@KanopiAndPetra",
+      "number": 95672,
+      "title": "[Bug]: C++ Practice cron trips EmbeddedAttemptSessionTakeoverError after provider overloaded_error + model-pin bypass (regression on Jun 9 12:48 fix)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95672"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hansraj316",
+      "number": 95671,
+      "title": "fix(agents): scrub non-conforming tool-call ids at the Anthropic wire (#95623)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95671"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@hansraj316",
+      "number": 95670,
+      "title": "fix(memory): skip memory-wiki vault subtree in workspace memory scan (#95657)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95670"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@TurboTheTurtle",
+      "number": 95666,
+      "title": "Fix memory-wiki bridge self-import loop",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95666"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@amknight",
+      "number": 95665,
+      "title": "Configure heartbeat model fallback policy",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95665"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@liuhao1024",
+      "number": 95663,
+      "title": "fix(memory-wiki): filter self-referential artifacts from bridge import to prevent recursive loop (fixes #95657) (AI-assisted)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95663"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Ros-ua",
+      "number": 95658,
+      "title": "[Bug]: 2026.6.9 breaks Groq voice transcription — \"Media provider not available: groq\" (externalized provider plugin not auto-installed)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95658"
     },
     {
       "activity": 0,
@@ -15905,8 +15986,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95657,
-    "pr": 95650
+    "issue": 95678,
+    "pr": 95680
   },
   "schema_version": 1,
   "updated": "2026-06-22"
