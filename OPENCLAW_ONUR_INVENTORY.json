@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 458,
-    "open_prs": 772,
-    "open_threads": 1230
+    "open_issues": 460,
+    "open_prs": 775,
+    "open_threads": 1235
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Johannes0402",
+      "number": 95657,
+      "title": "[Bug]: memory-wiki bridge mode creates recursive self-import loop — wiki sources indexed by memory indexer and re-imported as bridge artifacts",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95657"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@WOLIKIMCHENG",
+      "number": 95650,
+      "title": "fix(agents): retry compaction with backup auth profiles",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95650"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@wangmiao0668000666",
+      "number": 95648,
+      "title": "feat(compaction): add compaction.preflight.enabled config gate (#95553)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95648"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@wzgrx",
+      "number": 95647,
+      "title": "DeepSeek prompt cache broken since 6.1 - v2026.6.9 still has <10% hit rate, burning money",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95647"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jincheng-xydt",
+      "number": 95641,
+      "title": "fix(bedrock): retry Converse Streaming on transient connection drops (#87876)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95641"
     },
     {
       "activity": 0,
@@ -15860,8 +15905,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95630,
-    "pr": 95638
+    "issue": 95657,
+    "pr": 95650
   },
   "schema_version": 1,
   "updated": "2026-06-22"

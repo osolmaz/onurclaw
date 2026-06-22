@@ -4,14 +4,19 @@ Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95630.
-- Last reviewed through PR: #95638.
+- Last reviewed through issue: #95657.
+- Last reviewed through PR: #95650.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#95657](https://github.com/openclaw/openclaw/issues/95657) | 2026-06-22 | 0 | Local memory/embedding | @Johannes0402 | [Bug]: memory-wiki bridge mode creates recursive self-import loop — wiki sources indexed by memory indexer and re-imported as bridge artifacts |
+| 🔀&nbsp;[#95650](https://github.com/openclaw/openclaw/pull/95650) | 2026-06-22 | 0 | Model routing/config | @WOLIKIMCHENG | fix(agents): retry compaction with backup auth profiles |
+| 🔀&nbsp;[#95648](https://github.com/openclaw/openclaw/pull/95648) | 2026-06-22 | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
+| 📝&nbsp;[#95647](https://github.com/openclaw/openclaw/issues/95647) | 2026-06-22 | 0 | Open-weight/provider behavior | @wzgrx | DeepSeek prompt cache broken since 6.1 - v2026.6.9 still has <10% hit rate, burning money |
+| 🔀&nbsp;[#95641](https://github.com/openclaw/openclaw/pull/95641) | 2026-06-22 | 0 | Model routing/config | @jincheng-xydt | fix(bedrock): retry Converse Streaming on transient connection drops (#87876) |
 | 🔀&nbsp;[#95634](https://github.com/openclaw/openclaw/pull/95634) | 2026-06-22 | 0 | Model routing/config | @maweibin | fix(agents): recognize snake_case tool_use types in id sanitizer for cross-provider failover (#95623) |
 | 🔀&nbsp;[#95632](https://github.com/openclaw/openclaw/pull/95632) | 2026-06-22 | 0 | Model routing/config | @ruomuxydt | fix(agents): classify stream abort errors as transient for fallback rotation |
 | 🔀&nbsp;[#95631](https://github.com/openclaw/openclaw/pull/95631) | 2026-06-22 | 0 | Local memory/embedding | @mushuiyu886 | fix #95495: [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
@@ -57,13 +62,8 @@ Review watermark:
 | 📝&nbsp;[#95500](https://github.com/openclaw/openclaw/issues/95500) | 2026-06-21 | 0 | Model routing/config | @hpfan | [Bug]: Plugin model provider (opencode-go) cannot be resolved by isolated cron sessions, even though openclaw models lists it correctly and session_status model=default resolves it for existing sessions. |
 | 🔀&nbsp;[#95496](https://github.com/openclaw/openclaw/pull/95496) | 2026-06-21 | 0 | Model routing/config | @liuhao1024 | fix(agents): classify generic external run failure text as fallback-eligible (fixes #95489) |
 | 📝&nbsp;[#95495](https://github.com/openclaw/openclaw/issues/95495) | 2026-06-21 | 0 | Local memory/embedding | @fenglanhua | [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
-| 🔀&nbsp;[#95494](https://github.com/openclaw/openclaw/pull/95494) | 2026-06-21 | 0 | Model routing/config | @Pandah97 | fix(agents): prevent missing_tool_result from triggering cross-provider model fallback (#95474) |
-| 🔀&nbsp;[#95493](https://github.com/openclaw/openclaw/pull/95493) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @openperf | fix(github-copilot): strip encrypted_content from reasoning replay items |
-| 🔀&nbsp;[#95491](https://github.com/openclaw/openclaw/pull/95491) | 2026-06-21 | 0 | Model routing/config | @zhangqueping | fix(ui): reconcile model dropdown cache with server-resolved model after sessions.patch |
-| 📝&nbsp;[#95489](https://github.com/openclaw/openclaw/issues/95489) | 2026-06-21 | 0 | Model routing/config | @riazrahaman | [Bug]: claude-cli out-of-credits error bypasses model fallback chain — error text delivered as final response |
-| 🔀&nbsp;[#95488](https://github.com/openclaw/openclaw/pull/95488) | 2026-06-21 | 0 | Model routing/config | @zhiqiang26 | fix(agents): classify missing_tool_result as tool_error to prevent cross-provider failover |
 
-## OPEN THREADS (1230)
+## OPEN THREADS (1235)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1180 open threads, sorted by activity</summary>
+<summary>Remaining 1185 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,11 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#95657](https://github.com/openclaw/openclaw/issues/95657) | 0 | Local memory/embedding | @Johannes0402 | [Bug]: memory-wiki bridge mode creates recursive self-import loop — wiki sources indexed by memory indexer and re-imported as bridge artifacts |
+| 🔀&nbsp;[#95650](https://github.com/openclaw/openclaw/pull/95650) | 0 | Model routing/config | @WOLIKIMCHENG | fix(agents): retry compaction with backup auth profiles |
+| 🔀&nbsp;[#95648](https://github.com/openclaw/openclaw/pull/95648) | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
+| 📝&nbsp;[#95647](https://github.com/openclaw/openclaw/issues/95647) | 0 | Open-weight/provider behavior | @wzgrx | DeepSeek prompt cache broken since 6.1 - v2026.6.9 still has <10% hit rate, burning money |
+| 🔀&nbsp;[#95641](https://github.com/openclaw/openclaw/pull/95641) | 0 | Model routing/config | @jincheng-xydt | fix(bedrock): retry Converse Streaming on transient connection drops (#87876) |
 | 🔀&nbsp;[#95634](https://github.com/openclaw/openclaw/pull/95634) | 0 | Model routing/config | @maweibin | fix(agents): recognize snake_case tool_use types in id sanitizer for cross-provider failover (#95623) |
 | 🔀&nbsp;[#95632](https://github.com/openclaw/openclaw/pull/95632) | 0 | Model routing/config | @ruomuxydt | fix(agents): classify stream abort errors as transient for fallback rotation |
 | 🔀&nbsp;[#95631](https://github.com/openclaw/openclaw/pull/95631) | 0 | Local memory/embedding | @mushuiyu886 | fix #95495: [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
@@ -2014,4 +2019,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1230 (458 issues, 772 PRs).
+- Kept open threads: 1235 (460 issues, 775 PRs).
