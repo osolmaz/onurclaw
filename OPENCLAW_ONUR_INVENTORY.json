@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 464,
-    "open_prs": 785,
-    "open_threads": 1249
+    "open_issues": 465,
+    "open_prs": 795,
+    "open_threads": 1260
   },
   "open_threads": [
     {
@@ -5860,6 +5860,107 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@mazhuima",
+      "number": 95731,
+      "title": "fix(cron): pass manifestPlugins through cron model selection for plugin provider resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95731"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Pick-cat",
+      "number": 95729,
+      "title": "fix: classify provider code-only failover errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95729"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@moguangyu5-design",
+      "number": 95727,
+      "title": "fix(agents): ensure wrapAnthropicStreamWithRecovery works with async streamFn",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95727"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@moguangyu5-design",
+      "number": 95726,
+      "title": "fix(state): migrate legacy memory store to per-agent database on upgrade",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95726"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xmoxmo",
+      "number": 95724,
+      "title": "feat(memory): index by source directory, not by agent - eliminate duplicate vector stores for same-workspace agents",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95724"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Pick-cat",
+      "number": 95722,
+      "title": "fix: normalize provider keys during model config merge",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95722"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 95721,
+      "title": "fix(active-memory): exclude dreaming-narrative session keys from eligibility gate",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95721"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@vincentkoc",
+      "number": 95719,
+      "title": "fix(cli): sync capability inspect metadata flags with registered options",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95719"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@RichChen01",
+      "number": 95715,
+      "title": "fix: preserve user model override during compaction",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95715"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@0xghost42",
+      "number": 95713,
+      "title": "fix(agents): keep auto-compaction on the live session model (#95696)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95713"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 95710,
+      "title": "fix(vercel-ai-gateway): resolve dynamic model selections",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95710"
     },
     {
       "activity": 0,
@@ -16031,8 +16132,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95701,
-    "pr": 95705
+    "issue": 95737,
+    "pr": 95738
   },
   "schema_version": 1,
   "updated": "2026-06-22"

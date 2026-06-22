@@ -4,14 +4,25 @@ Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95701.
-- Last reviewed through PR: #95705.
+- Last reviewed through issue: #95737.
+- Last reviewed through PR: #95738.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95731](https://github.com/openclaw/openclaw/pull/95731) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @mazhuima | fix(cron): pass manifestPlugins through cron model selection for plugin provider resolution |
+| 🔀&nbsp;[#95729](https://github.com/openclaw/openclaw/pull/95729) | 2026-06-22 | 0 | Model routing/config | @Pick-cat | fix: classify provider code-only failover errors |
+| 🔀&nbsp;[#95727](https://github.com/openclaw/openclaw/pull/95727) | 2026-06-22 | 0 | Model/provider behavior | @moguangyu5-design | fix(agents): ensure wrapAnthropicStreamWithRecovery works with async streamFn |
+| 🔀&nbsp;[#95726](https://github.com/openclaw/openclaw/pull/95726) | 2026-06-22 | 0 | Local memory/embedding | @moguangyu5-design | fix(state): migrate legacy memory store to per-agent database on upgrade |
+| 📝&nbsp;[#95724](https://github.com/openclaw/openclaw/issues/95724) | 2026-06-22 | 0 | Local memory/embedding | @xmoxmo | feat(memory): index by source directory, not by agent - eliminate duplicate vector stores for same-workspace agents |
+| 🔀&nbsp;[#95722](https://github.com/openclaw/openclaw/pull/95722) | 2026-06-22 | 0 | Model routing/config | @Pick-cat | fix: normalize provider keys during model config merge |
+| 🔀&nbsp;[#95721](https://github.com/openclaw/openclaw/pull/95721) | 2026-06-22 | 0 | Local memory/embedding | @vincentkoc | fix(active-memory): exclude dreaming-narrative session keys from eligibility gate<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#95719](https://github.com/openclaw/openclaw/pull/95719) | 2026-06-22 | 0 | Local model runtime | @vincentkoc | fix(cli): sync capability inspect metadata flags with registered options |
+| 🔀&nbsp;[#95715](https://github.com/openclaw/openclaw/pull/95715) | 2026-06-22 | 0 | Model routing/config | @RichChen01 | fix: preserve user model override during compaction |
+| 🔀&nbsp;[#95713](https://github.com/openclaw/openclaw/pull/95713) | 2026-06-22 | 0 | Model routing/config | @0xghost42 | fix(agents): keep auto-compaction on the live session model (#95696) |
+| 🔀&nbsp;[#95710](https://github.com/openclaw/openclaw/pull/95710) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(vercel-ai-gateway): resolve dynamic model selections<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#95702](https://github.com/openclaw/openclaw/pull/95702) | 2026-06-22 | 0 | Open-weight/provider behavior | @hanZeng-08 | fix(gateway): apply config env vars during startup for systemd-manage… |
 | 🔀&nbsp;[#95698](https://github.com/openclaw/openclaw/pull/95698) | 2026-06-22 | 0 | Local model runtime | @hanZeng-08 | fix(cron): prevent model-pin bypass, empty compaction, and fence self… |
 | 📝&nbsp;[#95696](https://github.com/openclaw/openclaw/issues/95696) | 2026-06-22 | 0 | Model routing/config | @davidxu00 | [Bug]: Compaction resets session model override to previous provider |
@@ -51,19 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95584](https://github.com/openclaw/openclaw/pull/95584) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @425072024 | fix(agents): null-guard baseUrl in getAttributionHeaders (fixes #92974) |
 | 🔀&nbsp;[#95580](https://github.com/openclaw/openclaw/pull/95580) | 2026-06-21 | 0 | Local model runtime | @xydt-tanshanshan | fix(compaction): preflight compaction uses configured compaction timeout instead of reply operation abort signal |
 | 🔀&nbsp;[#95579](https://github.com/openclaw/openclaw/pull/95579) | 2026-06-21 | 0 | Local model runtime | @ruomuxydt | fix(agents): allow model fallback on harness-owned prompt timeout |
-| 🔀&nbsp;[#95576](https://github.com/openclaw/openclaw/pull/95576) | 2026-06-21 | 0 | Local model runtime | @lsr911 | fix(failover): allow model fallback on harness transport timeout |
-| 📝&nbsp;[#95574](https://github.com/openclaw/openclaw/issues/95574) | 2026-06-21 | 0 | Local model runtime | @riazrahaman | [Bug]: Behavior bug (incorrect output/state without crash) |
-| 🔀&nbsp;[#95564](https://github.com/openclaw/openclaw/pull/95564) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @reatang | fix(openai): Codex OAuth token refresh bypasses proxy in restricted regions |
-| 🔀&nbsp;[#95563](https://github.com/openclaw/openclaw/pull/95563) | 2026-06-21 | 0 | Local model runtime | @yu-xin-c | [codex] feat(mcp): share bundled runtime scope and fix preflight compaction abort |
-| 📝&nbsp;[#95562](https://github.com/openclaw/openclaw/issues/95562) | 2026-06-21 | 0 | Open-weight/provider behavior | @tpanda09 | [Bug]: DeepSeek token cost spikes 15-37x after upgrading from 2026.5.27 → 2026.6.x |
-| 🔀&nbsp;[#95561](https://github.com/openclaw/openclaw/pull/95561) | 2026-06-21 | 0 | Local model runtime | @maweibin | fix: preflight compaction uses reply abort signal (~60s) instead of configurable compaction timeout (#95553) |
-| 📝&nbsp;[#95553](https://github.com/openclaw/openclaw/issues/95553) | 2026-06-21 | 0 | Local model runtime | @kiagentkronos-cell | Bug: preflight (budget-triggered) compaction hard-capped at ~60s, ignores compaction.timeoutSeconds |
-| 📝&nbsp;[#95544](https://github.com/openclaw/openclaw/issues/95544) | 2026-06-21 | 0 | Local/media model provider | @oliver-arti | Feature: Voice Wake should optionally start a realtime Talk session instead of STT→chat→TTS |
-| 🔀&nbsp;[#95543](https://github.com/openclaw/openclaw/pull/95543) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #95474: [Bug]: missing_tool_result (local tool-execution failure) is classified unclassified and triggers cross-provider model fallback |
-| 🔀&nbsp;[#95542](https://github.com/openclaw/openclaw/pull/95542) | 2026-06-21 | 0 | Model routing/config | @mikasa0818 | fix #95519: [Bug]: Fallback should trigger on provider upstream_error / LLM request failed |
-| 🔀&nbsp;[#95537](https://github.com/openclaw/openclaw/pull/95537) | 2026-06-21 | 0 | Model routing/config | @bowenluo718 | fix(agents): expand embedded fallback classifier to accept transient provider errors |
 
-## OPEN THREADS (1249)
+## OPEN THREADS (1260)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1199 open threads, sorted by activity</summary>
+<summary>Remaining 1210 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,17 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95731](https://github.com/openclaw/openclaw/pull/95731) | 0 | OpenAI-compatible/proxy | @mazhuima | fix(cron): pass manifestPlugins through cron model selection for plugin provider resolution |
+| 🔀&nbsp;[#95729](https://github.com/openclaw/openclaw/pull/95729) | 0 | Model routing/config | @Pick-cat | fix: classify provider code-only failover errors |
+| 🔀&nbsp;[#95727](https://github.com/openclaw/openclaw/pull/95727) | 0 | Model/provider behavior | @moguangyu5-design | fix(agents): ensure wrapAnthropicStreamWithRecovery works with async streamFn |
+| 🔀&nbsp;[#95726](https://github.com/openclaw/openclaw/pull/95726) | 0 | Local memory/embedding | @moguangyu5-design | fix(state): migrate legacy memory store to per-agent database on upgrade |
+| 📝&nbsp;[#95724](https://github.com/openclaw/openclaw/issues/95724) | 0 | Local memory/embedding | @xmoxmo | feat(memory): index by source directory, not by agent - eliminate duplicate vector stores for same-workspace agents |
+| 🔀&nbsp;[#95722](https://github.com/openclaw/openclaw/pull/95722) | 0 | Model routing/config | @Pick-cat | fix: normalize provider keys during model config merge |
+| 🔀&nbsp;[#95721](https://github.com/openclaw/openclaw/pull/95721) | 0 | Local memory/embedding | @vincentkoc | fix(active-memory): exclude dreaming-narrative session keys from eligibility gate<br>Assignee: vincentkoc |
+| 🔀&nbsp;[#95719](https://github.com/openclaw/openclaw/pull/95719) | 0 | Local model runtime | @vincentkoc | fix(cli): sync capability inspect metadata flags with registered options |
+| 🔀&nbsp;[#95715](https://github.com/openclaw/openclaw/pull/95715) | 0 | Model routing/config | @RichChen01 | fix: preserve user model override during compaction |
+| 🔀&nbsp;[#95713](https://github.com/openclaw/openclaw/pull/95713) | 0 | Model routing/config | @0xghost42 | fix(agents): keep auto-compaction on the live session model (#95696) |
+| 🔀&nbsp;[#95710](https://github.com/openclaw/openclaw/pull/95710) | 0 | OpenAI-compatible/proxy | @vincentkoc | fix(vercel-ai-gateway): resolve dynamic model selections<br>Assignee: vincentkoc |
 | 🔀&nbsp;[#95702](https://github.com/openclaw/openclaw/pull/95702) | 0 | Open-weight/provider behavior | @hanZeng-08 | fix(gateway): apply config env vars during startup for systemd-manage… |
 | 🔀&nbsp;[#95698](https://github.com/openclaw/openclaw/pull/95698) | 0 | Local model runtime | @hanZeng-08 | fix(cron): prevent model-pin bypass, empty compaction, and fence self… |
 | 📝&nbsp;[#95696](https://github.com/openclaw/openclaw/issues/95696) | 0 | Model routing/config | @davidxu00 | [Bug]: Compaction resets session model override to previous provider |
@@ -2033,4 +2044,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1249 (464 issues, 785 PRs).
+- Kept open threads: 1260 (465 issues, 795 PRs).
