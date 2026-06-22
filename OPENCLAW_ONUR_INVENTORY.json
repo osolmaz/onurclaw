@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 456,
-    "open_prs": 767,
-    "open_threads": 1223
+    "open_prs": 768,
+    "open_threads": 1224
   },
   "open_threads": [
     {
@@ -5860,6 +5860,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yetval",
+      "number": 95614,
+      "title": "fix(memory-wiki): preserve human notes block on source re-ingest",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95614"
     },
     {
       "activity": 0,
@@ -15798,7 +15807,7 @@
   ],
   "review_watermark": {
     "issue": 95612,
-    "pr": 95613
+    "pr": 95618
   },
   "schema_version": 1,
   "updated": "2026-06-22"
