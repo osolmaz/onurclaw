@@ -1,17 +1,28 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-22
+Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #95796.
-- Last reviewed through PR: #95797.
+- Last reviewed through issue: #95825.
+- Last reviewed through PR: #95826.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95824](https://github.com/openclaw/openclaw/pull/95824) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @ats3v | fix(deepinfra): use OpenAI video end point and tag DeepSeek thinking format |
+| 📝&nbsp;[#95821](https://github.com/openclaw/openclaw/issues/95821) | 2026-06-22 | 0 | Local model runtime | @BryceMurray | [Feature]: log memory-core-local-embedding-worker.js spawn/exit + per-call CPU time at INFO level for CPU-forensics traceability (2026.6.9) |
+| 🔀&nbsp;[#95820](https://github.com/openclaw/openclaw/pull/95820) | 2026-06-22 | 0 | Local memory/embedding | @moeedahmed | fix(session-memory): skip transcript-only assistant rows |
+| 🔀&nbsp;[#95819](https://github.com/openclaw/openclaw/pull/95819) | 2026-06-22 | 0 | Model/provider behavior | @CrypticDriver | fix(bedrock): stop replaying stale signed thinking from completed turns |
+| 🔀&nbsp;[#95816](https://github.com/openclaw/openclaw/pull/95816) | 2026-06-22 | 0 | Model routing/config | @itxaiohanglover | fix(model-ref): use normalized prefix length for stripPrefixes |
+| 🔀&nbsp;[#95813](https://github.com/openclaw/openclaw/pull/95813) | 2026-06-22 | 0 | Local model runtime | @hanZeng-08 | Fix/95784 cron setup timeout no restart |
+| 📝&nbsp;[#95811](https://github.com/openclaw/openclaw/issues/95811) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | [Feature]: decouple heartbeat delivery suppression from transcript/context stripping |
+| 🔀&nbsp;[#95806](https://github.com/openclaw/openclaw/pull/95806) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @crh-code | fix(gateway): replace buggy isPrivateOrLoopbackHost with canonical net.ts import |
+| 🔀&nbsp;[#95804](https://github.com/openclaw/openclaw/pull/95804) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @hanZeng-08 | fix(agent): emit context_management for openai-chatgpt-responses when… |
+| 🔀&nbsp;[#95802](https://github.com/openclaw/openclaw/pull/95802) | 2026-06-22 | 0 | Open-weight/provider behavior | @jzakirov | feat(minimax): opt M3 into MiniMax priority lane via fastMode |
+| 🔀&nbsp;[#95798](https://github.com/openclaw/openclaw/pull/95798) | 2026-06-22 | 0 | Model/provider behavior | @hanZeng-08 | fix(heartbeat): allow reasoning/thinking blocks in heartbeat ack filt… |
 | 📝&nbsp;[#95796](https://github.com/openclaw/openclaw/issues/95796) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | [Bug]: Heartbeat transcript filtering ignores HEARTBEAT_OK when assistant message contains reasoning/thinking block |
 | 🔀&nbsp;[#95792](https://github.com/openclaw/openclaw/pull/95792) | 2026-06-22 | 0 | Open-weight/provider behavior | @snowzlmbot | fix(onboard): refresh provider plugin registry after setup installs |
 | 🔀&nbsp;[#95791](https://github.com/openclaw/openclaw/pull/95791) | 2026-06-22 | 0 | Local memory/embedding | @vincentkoc | fix(session-memory): sanitize model artifacts before saving memory |
@@ -51,19 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95702](https://github.com/openclaw/openclaw/pull/95702) | 2026-06-22 | 0 | Open-weight/provider behavior | @hanZeng-08 | fix(gateway): apply config env vars during startup for systemd-manage… |
 | 🔀&nbsp;[#95698](https://github.com/openclaw/openclaw/pull/95698) | 2026-06-22 | 0 | Local model runtime | @hanZeng-08 | fix(cron): prevent model-pin bypass, empty compaction, and fence self… |
 | 📝&nbsp;[#95696](https://github.com/openclaw/openclaw/issues/95696) | 2026-06-22 | 0 | Model routing/config | @davidxu00 | [Bug]: Compaction resets session model override to previous provider |
-| 📝&nbsp;[#95693](https://github.com/openclaw/openclaw/issues/95693) | 2026-06-22 | 0 | Model routing/config | @YUI-TIEN | Compaction (/compact) fails with 'No API key found' when model uses codex/claude-cli OAuth runtime |
-| 🔀&nbsp;[#95692](https://github.com/openclaw/openclaw/pull/95692) | 2026-06-22 | 0 | Model routing/config | @vinitasher | feat(openrouter): support models fallback array for automatic failover |
-| 🔀&nbsp;[#95676](https://github.com/openclaw/openclaw/pull/95676) | 2026-06-22 | 0 | Model routing/config | @anyech | fix(agents): retry same profile before timeout auth rotation |
-| 🔀&nbsp;[#95675](https://github.com/openclaw/openclaw/pull/95675) | 2026-06-22 | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
-| 📝&nbsp;[#95672](https://github.com/openclaw/openclaw/issues/95672) | 2026-06-22 | 0 | Local model runtime | @KanopiAndPetra | [Bug]: C++ Practice cron trips EmbeddedAttemptSessionTakeoverError after provider overloaded_error + model-pin bypass (regression on Jun 9 12:48 fix) |
-| 🔀&nbsp;[#95671](https://github.com/openclaw/openclaw/pull/95671) | 2026-06-22 | 0 | Model routing/config | @hansraj316 | fix(agents): scrub non-conforming tool-call ids at the Anthropic wire (#95623) |
-| 🔀&nbsp;[#95670](https://github.com/openclaw/openclaw/pull/95670) | 2026-06-22 | 0 | Local memory/embedding | @hansraj316 | fix(memory): skip memory-wiki vault subtree in workspace memory scan (#95657) |
-| 🔀&nbsp;[#95666](https://github.com/openclaw/openclaw/pull/95666) | 2026-06-22 | 0 | Local memory/embedding | @TurboTheTurtle | Fix memory-wiki bridge self-import loop |
-| 🔀&nbsp;[#95665](https://github.com/openclaw/openclaw/pull/95665) | 2026-06-22 | 0 | Model routing/config | @amknight | Configure heartbeat model fallback policy |
-| 🔀&nbsp;[#95663](https://github.com/openclaw/openclaw/pull/95663) | 2026-06-22 | 0 | Local memory/embedding | @liuhao1024 | fix(memory-wiki): filter self-referential artifacts from bridge import to prevent recursive loop (fixes #95657) (AI-assisted) |
-| 📝&nbsp;[#95658](https://github.com/openclaw/openclaw/issues/95658) | 2026-06-22 | 0 | Local/media model provider | @Ros-ua | [Bug]: 2026.6.9 breaks Groq voice transcription — "Media provider not available: groq" (externalized provider plugin not auto-installed) |
 
-## OPEN THREADS (1285)
+## OPEN THREADS (1296)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1235 open threads, sorted by activity</summary>
+<summary>Remaining 1246 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,17 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95824](https://github.com/openclaw/openclaw/pull/95824) | 0 | OpenAI-compatible/proxy | @ats3v | fix(deepinfra): use OpenAI video end point and tag DeepSeek thinking format |
+| 📝&nbsp;[#95821](https://github.com/openclaw/openclaw/issues/95821) | 0 | Local model runtime | @BryceMurray | [Feature]: log memory-core-local-embedding-worker.js spawn/exit + per-call CPU time at INFO level for CPU-forensics traceability (2026.6.9) |
+| 🔀&nbsp;[#95820](https://github.com/openclaw/openclaw/pull/95820) | 0 | Local memory/embedding | @moeedahmed | fix(session-memory): skip transcript-only assistant rows |
+| 🔀&nbsp;[#95819](https://github.com/openclaw/openclaw/pull/95819) | 0 | Model/provider behavior | @CrypticDriver | fix(bedrock): stop replaying stale signed thinking from completed turns |
+| 🔀&nbsp;[#95816](https://github.com/openclaw/openclaw/pull/95816) | 0 | Model routing/config | @itxaiohanglover | fix(model-ref): use normalized prefix length for stripPrefixes |
+| 🔀&nbsp;[#95813](https://github.com/openclaw/openclaw/pull/95813) | 0 | Local model runtime | @hanZeng-08 | Fix/95784 cron setup timeout no restart |
+| 📝&nbsp;[#95811](https://github.com/openclaw/openclaw/issues/95811) | 0 | Model/provider behavior | @DinoMC | [Feature]: decouple heartbeat delivery suppression from transcript/context stripping |
+| 🔀&nbsp;[#95806](https://github.com/openclaw/openclaw/pull/95806) | 0 | OpenAI-compatible/proxy | @crh-code | fix(gateway): replace buggy isPrivateOrLoopbackHost with canonical net.ts import |
+| 🔀&nbsp;[#95804](https://github.com/openclaw/openclaw/pull/95804) | 0 | OpenAI-compatible/proxy | @hanZeng-08 | fix(agent): emit context_management for openai-chatgpt-responses when… |
+| 🔀&nbsp;[#95802](https://github.com/openclaw/openclaw/pull/95802) | 0 | Open-weight/provider behavior | @jzakirov | feat(minimax): opt M3 into MiniMax priority lane via fastMode |
+| 🔀&nbsp;[#95798](https://github.com/openclaw/openclaw/pull/95798) | 0 | Model/provider behavior | @hanZeng-08 | fix(heartbeat): allow reasoning/thinking blocks in heartbeat ack filt… |
 | 📝&nbsp;[#95796](https://github.com/openclaw/openclaw/issues/95796) | 0 | Model/provider behavior | @DinoMC | [Bug]: Heartbeat transcript filtering ignores HEARTBEAT_OK when assistant message contains reasoning/thinking block |
 | 🔀&nbsp;[#95792](https://github.com/openclaw/openclaw/pull/95792) | 0 | Open-weight/provider behavior | @snowzlmbot | fix(onboard): refresh provider plugin registry after setup installs |
 | 🔀&nbsp;[#95791](https://github.com/openclaw/openclaw/pull/95791) | 0 | Local memory/embedding | @vincentkoc | fix(session-memory): sanitize model artifacts before saving memory |
@@ -2069,4 +2080,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1285 (476 issues, 809 PRs).
+- Kept open threads: 1296 (478 issues, 818 PRs).

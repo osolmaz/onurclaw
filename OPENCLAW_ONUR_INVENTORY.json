@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 476,
-    "open_prs": 809,
-    "open_threads": 1285
+    "open_issues": 478,
+    "open_prs": 818,
+    "open_threads": 1296
   },
   "open_threads": [
     {
@@ -5860,6 +5860,105 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ats3v",
+      "number": 95824,
+      "title": "fix(deepinfra): use OpenAI video end point and tag DeepSeek thinking format",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95824"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@BryceMurray",
+      "number": 95821,
+      "title": "[Feature]: log memory-core-local-embedding-worker.js spawn/exit + per-call CPU time at INFO level for CPU-forensics traceability (2026.6.9)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95821"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@moeedahmed",
+      "number": 95820,
+      "title": "fix(session-memory): skip transcript-only assistant rows",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95820"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@CrypticDriver",
+      "number": 95819,
+      "title": "fix(bedrock): stop replaying stale signed thinking from completed turns",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95819"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@itxaiohanglover",
+      "number": 95816,
+      "title": "fix(model-ref): use normalized prefix length for stripPrefixes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95816"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@hanZeng-08",
+      "number": 95813,
+      "title": "Fix/95784 cron setup timeout no restart",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95813"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@DinoMC",
+      "number": 95811,
+      "title": "[Feature]: decouple heartbeat delivery suppression from transcript/context stripping",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95811"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@crh-code",
+      "number": 95806,
+      "title": "fix(gateway): replace buggy isPrivateOrLoopbackHost with canonical net.ts import",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95806"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@hanZeng-08",
+      "number": 95804,
+      "title": "fix(agent): emit context_management for openai-chatgpt-responses when…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95804"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@jzakirov",
+      "number": 95802,
+      "title": "feat(minimax): opt M3 into MiniMax priority lane via fastMode",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95802"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@hanZeng-08",
+      "number": 95798,
+      "title": "fix(heartbeat): allow reasoning/thinking blocks in heartbeat ack filt…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95798"
     },
     {
       "activity": 0,
@@ -16357,9 +16456,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 95796,
-    "pr": 95797
+    "issue": 95825,
+    "pr": 95826
   },
   "schema_version": 1,
-  "updated": "2026-06-22"
+  "updated": "2026-06-23"
 }
