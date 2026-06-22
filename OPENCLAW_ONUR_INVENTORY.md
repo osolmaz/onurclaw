@@ -4,15 +4,27 @@ Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95773.
-- Last reviewed through PR: #95766.
+- Last reviewed through issue: #95796.
+- Last reviewed through PR: #95797.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#95796](https://github.com/openclaw/openclaw/issues/95796) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | [Bug]: Heartbeat transcript filtering ignores HEARTBEAT_OK when assistant message contains reasoning/thinking block |
+| 🔀&nbsp;[#95792](https://github.com/openclaw/openclaw/pull/95792) | 2026-06-22 | 0 | Open-weight/provider behavior | @snowzlmbot | fix(onboard): refresh provider plugin registry after setup installs |
+| 🔀&nbsp;[#95791](https://github.com/openclaw/openclaw/pull/95791) | 2026-06-22 | 0 | Local memory/embedding | @vincentkoc | fix(session-memory): sanitize model artifacts before saving memory |
+| 📝&nbsp;[#95789](https://github.com/openclaw/openclaw/issues/95789) | 2026-06-22 | 0 | Model routing/config | @neo-megacity | 2026.6.8: subagent spawn helper export change and stale cron model migration gap |
+| 📝&nbsp;[#95788](https://github.com/openclaw/openclaw/issues/95788) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @FLAT-HAT | [Bug]: OpenAI Responses server compaction config is read but not emitted on chatgpt-responses request path |
+| 🔀&nbsp;[#95786](https://github.com/openclaw/openclaw/pull/95786) | 2026-06-22 | 0 | Local memory/embedding | @esqandil | feat(memory-core): make memory_search tool timeout configurable |
+| 📝&nbsp;[#95784](https://github.com/openclaw/openclaw/issues/95784) | 2026-06-22 | 0 | Local model runtime | @BryceMurray | [Bug]: onIsolatedAgentSetupTimeout triggers full-process gateway restart on event-loop saturation — destroys in-flight work and re-enters the same saturation on next tick (2026.6.9) |
+| 📝&nbsp;[#95780](https://github.com/openclaw/openclaw/issues/95780) | 2026-06-22 | 0 | Model routing/config | @jpplaisted | [Bug]: ACP spawn of `codex` injects default model id (`gemini-3.1-flash-lite`) into the thinking-level slot |
+| 🔀&nbsp;[#95779](https://github.com/openclaw/openclaw/pull/95779) | 2026-06-22 | 0 | Model routing/config | @Pick-cat | fix(auth): suppress recovery hint for format failures |
+| 🔀&nbsp;[#95777](https://github.com/openclaw/openclaw/pull/95777) | 2026-06-22 | 0 | Open-weight/provider behavior | @ZengWen-DT | fix(onboard): external provider plugin install skips selected auth flow |
+| 🔀&nbsp;[#95775](https://github.com/openclaw/openclaw/pull/95775) | 2026-06-22 | 0 | Local model runtime | @ruomuxydt | fix(memory): bound dreaming narrative concurrency for heartbeat triggers |
 | 📝&nbsp;[#95773](https://github.com/openclaw/openclaw/issues/95773) | 2026-06-22 | 0 | Open-weight/provider behavior | @pikaqqqqqq | task-guard: silence mandate has no exit condition, causes 6902 on ALLOW with instruction-literal models |
+| 🔀&nbsp;[#95769](https://github.com/openclaw/openclaw/pull/95769) | 2026-06-22 | 0 | Local memory/embedding | @chenweicong736 | fix(memory-lancedb): surface memory ID in memory_recall content |
 | 📝&nbsp;[#95765](https://github.com/openclaw/openclaw/issues/95765) | 2026-06-22 | 0 | Open-weight/provider behavior | @snowzlmbot | bug(onboard): external provider plugin install skips selected auth flow after DeepSeek install |
 | 📝&nbsp;[#95760](https://github.com/openclaw/openclaw/issues/95760) | 2026-06-22 | 0 | Open-weight/provider behavior | @Noquetoo | [Bug]: Incomplete turn / stream cut mid-tool-calls with NVIDIA Build provider (GLM 5.1, MiniMax M2.7) |
 | 🔀&nbsp;[#95757](https://github.com/openclaw/openclaw/pull/95757) | 2026-06-22 | 0 | Local memory/embedding | @bdjben | fix(memory): respect QMD timeout for memory_search |
@@ -50,20 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95665](https://github.com/openclaw/openclaw/pull/95665) | 2026-06-22 | 0 | Model routing/config | @amknight | Configure heartbeat model fallback policy |
 | 🔀&nbsp;[#95663](https://github.com/openclaw/openclaw/pull/95663) | 2026-06-22 | 0 | Local memory/embedding | @liuhao1024 | fix(memory-wiki): filter self-referential artifacts from bridge import to prevent recursive loop (fixes #95657) (AI-assisted) |
 | 📝&nbsp;[#95658](https://github.com/openclaw/openclaw/issues/95658) | 2026-06-22 | 0 | Local/media model provider | @Ros-ua | [Bug]: 2026.6.9 breaks Groq voice transcription — "Media provider not available: groq" (externalized provider plugin not auto-installed) |
-| 📝&nbsp;[#95657](https://github.com/openclaw/openclaw/issues/95657) | 2026-06-22 | 0 | Local memory/embedding | @Johannes0402 | [Bug]: memory-wiki bridge mode creates recursive self-import loop — wiki sources indexed by memory indexer and re-imported as bridge artifacts |
-| 🔀&nbsp;[#95650](https://github.com/openclaw/openclaw/pull/95650) | 2026-06-22 | 0 | Model routing/config | @WOLIKIMCHENG | fix(agents): retry compaction with backup auth profiles |
-| 🔀&nbsp;[#95648](https://github.com/openclaw/openclaw/pull/95648) | 2026-06-22 | 0 | Local model runtime | @wangmiao0668000666 | feat(compaction): add compaction.preflight.enabled config gate (#95553) |
-| 📝&nbsp;[#95647](https://github.com/openclaw/openclaw/issues/95647) | 2026-06-22 | 0 | Open-weight/provider behavior | @wzgrx | DeepSeek prompt cache broken since 6.1 - v2026.6.9 still has <10% hit rate, burning money |
-| 🔀&nbsp;[#95641](https://github.com/openclaw/openclaw/pull/95641) | 2026-06-22 | 0 | Model routing/config | @jincheng-xydt | fix(bedrock): retry Converse Streaming on transient connection drops (#87876) |
-| 🔀&nbsp;[#95634](https://github.com/openclaw/openclaw/pull/95634) | 2026-06-22 | 0 | Model routing/config | @maweibin | fix(agents): recognize snake_case tool_use types in id sanitizer for cross-provider failover (#95623) |
-| 🔀&nbsp;[#95632](https://github.com/openclaw/openclaw/pull/95632) | 2026-06-22 | 0 | Model routing/config | @ruomuxydt | fix(agents): classify stream abort errors as transient for fallback rotation |
-| 🔀&nbsp;[#95631](https://github.com/openclaw/openclaw/pull/95631) | 2026-06-22 | 0 | Local memory/embedding | @mushuiyu886 | fix #95495: [Bug]: 2026.6.9 silently relocates memory store with no migration, forcing a full re-embed (1499 files) with zero upgrade-time warning |
-| 🔀&nbsp;[#95629](https://github.com/openclaw/openclaw/pull/95629) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @arkyu2077 | fix(replay): sanitize raw OpenAI Responses tool ids for strict-target replay |
-| 📝&nbsp;[#95627](https://github.com/openclaw/openclaw/issues/95627) | 2026-06-22 | 0 | Model routing/config | @jrex-jooni | Preserved Claude thinking signatures (opus-4/sonnet-4) fail unrecoverably on prefix-reconstruction replay; strip-and-retry recovery not reached |
-| 📝&nbsp;[#95623](https://github.com/openclaw/openclaw/issues/95623) | 2026-06-22 | 0 | Model routing/config | @jrex-jooni | tool_use.id sanitizer (#61254) misses OpenAI-responses composite id on cross-provider failover replay → Anthropic 400 bricks session |
-| 🔀&nbsp;[#95614](https://github.com/openclaw/openclaw/pull/95614) | 2026-06-21 | 0 | Local memory/embedding | @yetval | fix(memory-wiki): preserve human notes block on source re-ingest |
 
-## OPEN THREADS (1273)
+## OPEN THREADS (1285)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1223 open threads, sorted by activity</summary>
+<summary>Remaining 1235 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,7 +198,19 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#95796](https://github.com/openclaw/openclaw/issues/95796) | 0 | Model/provider behavior | @DinoMC | [Bug]: Heartbeat transcript filtering ignores HEARTBEAT_OK when assistant message contains reasoning/thinking block |
+| 🔀&nbsp;[#95792](https://github.com/openclaw/openclaw/pull/95792) | 0 | Open-weight/provider behavior | @snowzlmbot | fix(onboard): refresh provider plugin registry after setup installs |
+| 🔀&nbsp;[#95791](https://github.com/openclaw/openclaw/pull/95791) | 0 | Local memory/embedding | @vincentkoc | fix(session-memory): sanitize model artifacts before saving memory |
+| 📝&nbsp;[#95789](https://github.com/openclaw/openclaw/issues/95789) | 0 | Model routing/config | @neo-megacity | 2026.6.8: subagent spawn helper export change and stale cron model migration gap |
+| 📝&nbsp;[#95788](https://github.com/openclaw/openclaw/issues/95788) | 0 | OpenAI-compatible/proxy | @FLAT-HAT | [Bug]: OpenAI Responses server compaction config is read but not emitted on chatgpt-responses request path |
+| 🔀&nbsp;[#95786](https://github.com/openclaw/openclaw/pull/95786) | 0 | Local memory/embedding | @esqandil | feat(memory-core): make memory_search tool timeout configurable |
+| 📝&nbsp;[#95784](https://github.com/openclaw/openclaw/issues/95784) | 0 | Local model runtime | @BryceMurray | [Bug]: onIsolatedAgentSetupTimeout triggers full-process gateway restart on event-loop saturation — destroys in-flight work and re-enters the same saturation on next tick (2026.6.9) |
+| 📝&nbsp;[#95780](https://github.com/openclaw/openclaw/issues/95780) | 0 | Model routing/config | @jpplaisted | [Bug]: ACP spawn of `codex` injects default model id (`gemini-3.1-flash-lite`) into the thinking-level slot |
+| 🔀&nbsp;[#95779](https://github.com/openclaw/openclaw/pull/95779) | 0 | Model routing/config | @Pick-cat | fix(auth): suppress recovery hint for format failures |
+| 🔀&nbsp;[#95777](https://github.com/openclaw/openclaw/pull/95777) | 0 | Open-weight/provider behavior | @ZengWen-DT | fix(onboard): external provider plugin install skips selected auth flow |
+| 🔀&nbsp;[#95775](https://github.com/openclaw/openclaw/pull/95775) | 0 | Local model runtime | @ruomuxydt | fix(memory): bound dreaming narrative concurrency for heartbeat triggers |
 | 📝&nbsp;[#95773](https://github.com/openclaw/openclaw/issues/95773) | 0 | Open-weight/provider behavior | @pikaqqqqqq | task-guard: silence mandate has no exit condition, causes 6902 on ALLOW with instruction-literal models |
+| 🔀&nbsp;[#95769](https://github.com/openclaw/openclaw/pull/95769) | 0 | Local memory/embedding | @chenweicong736 | fix(memory-lancedb): surface memory ID in memory_recall content |
 | 📝&nbsp;[#95765](https://github.com/openclaw/openclaw/issues/95765) | 0 | Open-weight/provider behavior | @snowzlmbot | bug(onboard): external provider plugin install skips selected auth flow after DeepSeek install |
 | 📝&nbsp;[#95760](https://github.com/openclaw/openclaw/issues/95760) | 0 | Open-weight/provider behavior | @Noquetoo | [Bug]: Incomplete turn / stream cut mid-tool-calls with NVIDIA Build provider (GLM 5.1, MiniMax M2.7) |
 | 🔀&nbsp;[#95757](https://github.com/openclaw/openclaw/pull/95757) | 0 | Local memory/embedding | @bdjben | fix(memory): respect QMD timeout for memory_search |
@@ -2057,4 +2069,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1273 (471 issues, 802 PRs).
+- Kept open threads: 1285 (476 issues, 809 PRs).

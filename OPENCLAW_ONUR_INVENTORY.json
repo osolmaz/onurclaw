@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 471,
-    "open_prs": 802,
-    "open_threads": 1273
+    "open_issues": 476,
+    "open_prs": 809,
+    "open_threads": 1285
   },
   "open_threads": [
     {
@@ -5863,12 +5863,120 @@
     },
     {
       "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@DinoMC",
+      "number": 95796,
+      "title": "[Bug]: Heartbeat transcript filtering ignores HEARTBEAT_OK when assistant message contains reasoning/thinking block",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95796"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@snowzlmbot",
+      "number": 95792,
+      "title": "fix(onboard): refresh provider plugin registry after setup installs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95792"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@vincentkoc",
+      "number": 95791,
+      "title": "fix(session-memory): sanitize model artifacts before saving memory",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95791"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@neo-megacity",
+      "number": 95789,
+      "title": "2026.6.8: subagent spawn helper export change and stale cron model migration gap",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95789"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@FLAT-HAT",
+      "number": 95788,
+      "title": "[Bug]: OpenAI Responses server compaction config is read but not emitted on chatgpt-responses request path",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95788"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@esqandil",
+      "number": 95786,
+      "title": "feat(memory-core): make memory_search tool timeout configurable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95786"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@BryceMurray",
+      "number": 95784,
+      "title": "[Bug]: onIsolatedAgentSetupTimeout triggers full-process gateway restart on event-loop saturation — destroys in-flight work and re-enters the same saturation on next tick (2026.6.9)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95784"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jpplaisted",
+      "number": 95780,
+      "title": "[Bug]: ACP spawn of `codex` injects default model id (`gemini-3.1-flash-lite`) into the thinking-level slot",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95780"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Pick-cat",
+      "number": 95779,
+      "title": "fix(auth): suppress recovery hint for format failures",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95779"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@ZengWen-DT",
+      "number": 95777,
+      "title": "fix(onboard): external provider plugin install skips selected auth flow",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95777"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@ruomuxydt",
+      "number": 95775,
+      "title": "fix(memory): bound dreaming narrative concurrency for heartbeat triggers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95775"
+    },
+    {
+      "activity": 0,
       "area": "Open-weight/provider behavior",
       "creator": "@pikaqqqqqq",
       "number": 95773,
       "title": "task-guard: silence mandate has no exit condition, causes 6902 on ALLOW with instruction-literal models",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/95773"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chenweicong736",
+      "number": 95769,
+      "title": "fix(memory-lancedb): surface memory ID in memory_recall content",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95769"
     },
     {
       "activity": 0,
@@ -16249,8 +16357,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95773,
-    "pr": 95766
+    "issue": 95796,
+    "pr": 95797
   },
   "schema_version": 1,
   "updated": "2026-06-22"
