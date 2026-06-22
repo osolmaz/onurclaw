@@ -4,14 +4,27 @@ Updated: 2026-06-22
 
 Review watermark:
 
-- Last reviewed through issue: #95737.
-- Last reviewed through PR: #95738.
+- Last reviewed through issue: #95773.
+- Last reviewed through PR: #95766.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#95773](https://github.com/openclaw/openclaw/issues/95773) | 2026-06-22 | 0 | Open-weight/provider behavior | @pikaqqqqqq | task-guard: silence mandate has no exit condition, causes 6902 on ALLOW with instruction-literal models |
+| 📝&nbsp;[#95765](https://github.com/openclaw/openclaw/issues/95765) | 2026-06-22 | 0 | Open-weight/provider behavior | @snowzlmbot | bug(onboard): external provider plugin install skips selected auth flow after DeepSeek install |
+| 📝&nbsp;[#95760](https://github.com/openclaw/openclaw/issues/95760) | 2026-06-22 | 0 | Open-weight/provider behavior | @Noquetoo | [Bug]: Incomplete turn / stream cut mid-tool-calls with NVIDIA Build provider (GLM 5.1, MiniMax M2.7) |
+| 🔀&nbsp;[#95757](https://github.com/openclaw/openclaw/pull/95757) | 2026-06-22 | 0 | Local memory/embedding | @bdjben | fix(memory): respect QMD timeout for memory_search |
+| 🔀&nbsp;[#95756](https://github.com/openclaw/openclaw/pull/95756) | 2026-06-22 | 0 | Model routing/config | @RichChen01 | fix(model-catalog): use normalizedPrefix.length when stripping stripPrefixes |
+| 🔀&nbsp;[#95755](https://github.com/openclaw/openclaw/pull/95755) | 2026-06-22 | 0 | Model routing/config | @zw-xysk | fix(model-catalog): use normalized prefix length in stripPrefixes instead of raw length |
+| 🔀&nbsp;[#95753](https://github.com/openclaw/openclaw/pull/95753) | 2026-06-22 | 0 | Model routing/config | @hanZeng-08 | fix(run): apply live model switch before each attempt iteration |
+| 🔀&nbsp;[#95748](https://github.com/openclaw/openclaw/pull/95748) | 2026-06-22 | 0 | Local model runtime | @maweibin | fix(agents): skip empty-conversation compaction boundary, tolerate fence takeover in cron |
+| 📝&nbsp;[#95746](https://github.com/openclaw/openclaw/issues/95746) | 2026-06-22 | 0 | Local model runtime | @rogerallen1 | [Bug]: memory-core dreaming can exhaust local model context due to parallel/internal Dream Diary subagent runs |
+| 🔀&nbsp;[#95744](https://github.com/openclaw/openclaw/pull/95744) | 2026-06-22 | 0 | Model routing/config | @parveshsaini | fix(model-catalog): strip manifest model-id prefixes by the matched length |
+| 📝&nbsp;[#95743](https://github.com/openclaw/openclaw/issues/95743) | 2026-06-22 | 0 | Model routing/config | @parveshsaini | [Bug]: Manifest stripPrefixes over-strips the model id - slices by raw prefix length after matching the trimmed/lowercased prefix |
+| 📝&nbsp;[#95740](https://github.com/openclaw/openclaw/issues/95740) | 2026-06-22 | 0 | Model routing/config | @paulogogs | [Bug]: google-vertex model_not_found at runtime with authorized_user ADC — regression persists after #90609 |
+| 🔀&nbsp;[#95739](https://github.com/openclaw/openclaw/pull/95739) | 2026-06-22 | 0 | Local memory/embedding | @ralf003 | feat(memory): add excludePaths option to memorySearch config |
 | 🔀&nbsp;[#95731](https://github.com/openclaw/openclaw/pull/95731) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @mazhuima | fix(cron): pass manifestPlugins through cron model selection for plugin provider resolution |
 | 🔀&nbsp;[#95729](https://github.com/openclaw/openclaw/pull/95729) | 2026-06-22 | 0 | Model routing/config | @Pick-cat | fix: classify provider code-only failover errors |
 | 🔀&nbsp;[#95727](https://github.com/openclaw/openclaw/pull/95727) | 2026-06-22 | 0 | Model/provider behavior | @moguangyu5-design | fix(agents): ensure wrapAnthropicStreamWithRecovery works with async streamFn |
@@ -49,21 +62,8 @@ Review watermark:
 | 📝&nbsp;[#95627](https://github.com/openclaw/openclaw/issues/95627) | 2026-06-22 | 0 | Model routing/config | @jrex-jooni | Preserved Claude thinking signatures (opus-4/sonnet-4) fail unrecoverably on prefix-reconstruction replay; strip-and-retry recovery not reached |
 | 📝&nbsp;[#95623](https://github.com/openclaw/openclaw/issues/95623) | 2026-06-22 | 0 | Model routing/config | @jrex-jooni | tool_use.id sanitizer (#61254) misses OpenAI-responses composite id on cross-provider failover replay → Anthropic 400 bricks session |
 | 🔀&nbsp;[#95614](https://github.com/openclaw/openclaw/pull/95614) | 2026-06-21 | 0 | Local memory/embedding | @yetval | fix(memory-wiki): preserve human notes block on source re-ingest |
-| 📝&nbsp;[#95606](https://github.com/openclaw/openclaw/issues/95606) | 2026-06-21 | 0 | Local memory/embedding | @muskfeel | Memory system: Cannot delete stale memories, conflicting entries persist |
-| 🔀&nbsp;[#95605](https://github.com/openclaw/openclaw/pull/95605) | 2026-06-21 | 0 | Local memory/embedding | @bobrenze-bot | fix(agents): skip empty allowlist guard for modelRun shapes |
-| 🔀&nbsp;[#95599](https://github.com/openclaw/openclaw/pull/95599) | 2026-06-21 | 0 | Local memory/embedding | @lsr911 | fix(memory): backfill provider.model in createWithAdapter when adapter returns empty string |
-| 🔀&nbsp;[#95598](https://github.com/openclaw/openclaw/pull/95598) | 2026-06-21 | 0 | Local memory/embedding | @harjothkhara | fix(memory): skip placeholder short-term promotions |
-| 🔀&nbsp;[#95596](https://github.com/openclaw/openclaw/pull/95596) | 2026-06-21 | 0 | Local/media model provider | @mcaxtr | fix: preserve steered audio for inbound TTS |
-| 🔀&nbsp;[#95595](https://github.com/openclaw/openclaw/pull/95595) | 2026-06-21 | 0 | Local memory/embedding | @Lestat569769 | fix(memory-core): skip forced sync for healthy zero-hit search |
-| 🔀&nbsp;[#95594](https://github.com/openclaw/openclaw/pull/95594) | 2026-06-21 | 0 | Model routing/config | @mmyzwl | fix(agent-runner): classify transient provider errors as fallback-worthy |
-| 🔀&nbsp;[#95590](https://github.com/openclaw/openclaw/pull/95590) | 2026-06-21 | 0 | Local model runtime | @yu-xin-c | [codex] fix(reply): let preflight compaction use compaction timeout |
-| 🔀&nbsp;[#95587](https://github.com/openclaw/openclaw/pull/95587) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @fanyangCS | fix(openai-responses): recover streamed invalid_encrypted_content via drain-level retry (#95441) |
-| 📝&nbsp;[#95586](https://github.com/openclaw/openclaw/issues/95586) | 2026-06-21 | 0 | Open-weight/provider behavior | @jwong-art | [Bug]: Kimi Coding auth fallback in systemd Gateway when config env is not injected |
-| 🔀&nbsp;[#95584](https://github.com/openclaw/openclaw/pull/95584) | 2026-06-21 | 0 | OpenAI-compatible/proxy | @425072024 | fix(agents): null-guard baseUrl in getAttributionHeaders (fixes #92974) |
-| 🔀&nbsp;[#95580](https://github.com/openclaw/openclaw/pull/95580) | 2026-06-21 | 0 | Local model runtime | @xydt-tanshanshan | fix(compaction): preflight compaction uses configured compaction timeout instead of reply operation abort signal |
-| 🔀&nbsp;[#95579](https://github.com/openclaw/openclaw/pull/95579) | 2026-06-21 | 0 | Local model runtime | @ruomuxydt | fix(agents): allow model fallback on harness-owned prompt timeout |
 
-## OPEN THREADS (1260)
+## OPEN THREADS (1273)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1210 open threads, sorted by activity</summary>
+<summary>Remaining 1223 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,19 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#95773](https://github.com/openclaw/openclaw/issues/95773) | 0 | Open-weight/provider behavior | @pikaqqqqqq | task-guard: silence mandate has no exit condition, causes 6902 on ALLOW with instruction-literal models |
+| 📝&nbsp;[#95765](https://github.com/openclaw/openclaw/issues/95765) | 0 | Open-weight/provider behavior | @snowzlmbot | bug(onboard): external provider plugin install skips selected auth flow after DeepSeek install |
+| 📝&nbsp;[#95760](https://github.com/openclaw/openclaw/issues/95760) | 0 | Open-weight/provider behavior | @Noquetoo | [Bug]: Incomplete turn / stream cut mid-tool-calls with NVIDIA Build provider (GLM 5.1, MiniMax M2.7) |
+| 🔀&nbsp;[#95757](https://github.com/openclaw/openclaw/pull/95757) | 0 | Local memory/embedding | @bdjben | fix(memory): respect QMD timeout for memory_search |
+| 🔀&nbsp;[#95756](https://github.com/openclaw/openclaw/pull/95756) | 0 | Model routing/config | @RichChen01 | fix(model-catalog): use normalizedPrefix.length when stripping stripPrefixes |
+| 🔀&nbsp;[#95755](https://github.com/openclaw/openclaw/pull/95755) | 0 | Model routing/config | @zw-xysk | fix(model-catalog): use normalized prefix length in stripPrefixes instead of raw length |
+| 🔀&nbsp;[#95753](https://github.com/openclaw/openclaw/pull/95753) | 0 | Model routing/config | @hanZeng-08 | fix(run): apply live model switch before each attempt iteration |
+| 🔀&nbsp;[#95748](https://github.com/openclaw/openclaw/pull/95748) | 0 | Local model runtime | @maweibin | fix(agents): skip empty-conversation compaction boundary, tolerate fence takeover in cron |
+| 📝&nbsp;[#95746](https://github.com/openclaw/openclaw/issues/95746) | 0 | Local model runtime | @rogerallen1 | [Bug]: memory-core dreaming can exhaust local model context due to parallel/internal Dream Diary subagent runs |
+| 🔀&nbsp;[#95744](https://github.com/openclaw/openclaw/pull/95744) | 0 | Model routing/config | @parveshsaini | fix(model-catalog): strip manifest model-id prefixes by the matched length |
+| 📝&nbsp;[#95743](https://github.com/openclaw/openclaw/issues/95743) | 0 | Model routing/config | @parveshsaini | [Bug]: Manifest stripPrefixes over-strips the model id - slices by raw prefix length after matching the trimmed/lowercased prefix |
+| 📝&nbsp;[#95740](https://github.com/openclaw/openclaw/issues/95740) | 0 | Model routing/config | @paulogogs | [Bug]: google-vertex model_not_found at runtime with authorized_user ADC — regression persists after #90609 |
+| 🔀&nbsp;[#95739](https://github.com/openclaw/openclaw/pull/95739) | 0 | Local memory/embedding | @ralf003 | feat(memory): add excludePaths option to memorySearch config |
 | 🔀&nbsp;[#95731](https://github.com/openclaw/openclaw/pull/95731) | 0 | OpenAI-compatible/proxy | @mazhuima | fix(cron): pass manifestPlugins through cron model selection for plugin provider resolution |
 | 🔀&nbsp;[#95729](https://github.com/openclaw/openclaw/pull/95729) | 0 | Model routing/config | @Pick-cat | fix: classify provider code-only failover errors |
 | 🔀&nbsp;[#95727](https://github.com/openclaw/openclaw/pull/95727) | 0 | Model/provider behavior | @moguangyu5-design | fix(agents): ensure wrapAnthropicStreamWithRecovery works with async streamFn |
@@ -2044,4 +2057,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1260 (465 issues, 795 PRs).
+- Kept open threads: 1273 (471 issues, 802 PRs).

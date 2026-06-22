@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 465,
-    "open_prs": 795,
-    "open_threads": 1260
+    "open_issues": 471,
+    "open_prs": 802,
+    "open_threads": 1273
   },
   "open_threads": [
     {
@@ -5860,6 +5860,123 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@pikaqqqqqq",
+      "number": 95773,
+      "title": "task-guard: silence mandate has no exit condition, causes 6902 on ALLOW with instruction-literal models",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95773"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@snowzlmbot",
+      "number": 95765,
+      "title": "bug(onboard): external provider plugin install skips selected auth flow after DeepSeek install",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95765"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Noquetoo",
+      "number": 95760,
+      "title": "[Bug]: Incomplete turn / stream cut mid-tool-calls with NVIDIA Build provider (GLM 5.1, MiniMax M2.7)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95760"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bdjben",
+      "number": 95757,
+      "title": "fix(memory): respect QMD timeout for memory_search",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95757"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@RichChen01",
+      "number": 95756,
+      "title": "fix(model-catalog): use normalizedPrefix.length when stripping stripPrefixes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95756"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zw-xysk",
+      "number": 95755,
+      "title": "fix(model-catalog): use normalized prefix length in stripPrefixes instead of raw length",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95755"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hanZeng-08",
+      "number": 95753,
+      "title": "fix(run): apply live model switch before each attempt iteration",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95753"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@maweibin",
+      "number": 95748,
+      "title": "fix(agents): skip empty-conversation compaction boundary, tolerate fence takeover in cron",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95748"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@rogerallen1",
+      "number": 95746,
+      "title": "[Bug]: memory-core dreaming can exhaust local model context due to parallel/internal Dream Diary subagent runs",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95746"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@parveshsaini",
+      "number": 95744,
+      "title": "fix(model-catalog): strip manifest model-id prefixes by the matched length",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95744"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@parveshsaini",
+      "number": 95743,
+      "title": "[Bug]: Manifest stripPrefixes over-strips the model id - slices by raw prefix length after matching the trimmed/lowercased prefix",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95743"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@paulogogs",
+      "number": 95740,
+      "title": "[Bug]: google-vertex model_not_found at runtime with authorized_user ADC — regression persists after #90609",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95740"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ralf003",
+      "number": 95739,
+      "title": "feat(memory): add excludePaths option to memorySearch config",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95739"
     },
     {
       "activity": 0,
@@ -16132,8 +16249,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95737,
-    "pr": 95738
+    "issue": 95773,
+    "pr": 95766
   },
   "schema_version": 1,
   "updated": "2026-06-22"
