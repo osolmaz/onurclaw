@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 486,
-    "open_prs": 839,
-    "open_threads": 1325
+    "open_prs": 841,
+    "open_threads": 1327
   },
   "open_threads": [
     {
@@ -5860,6 +5860,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@giodl73-repo",
+      "number": 95981,
+      "title": "Add hosted catalog config profiles",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95981"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@giodl73-repo",
+      "number": 95969,
+      "title": "Add hosted catalog source profile validation",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95969"
     },
     {
       "activity": 0,
@@ -16717,8 +16735,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95963,
-    "pr": 95965
+    "issue": 95985,
+    "pr": 95996
   },
   "schema_version": 1,
   "updated": "2026-06-23"
