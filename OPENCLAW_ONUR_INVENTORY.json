@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 484,
-    "open_prs": 825,
-    "open_threads": 1309
+    "open_issues": 486,
+    "open_prs": 831,
+    "open_threads": 1317
   },
   "open_threads": [
     {
@@ -5860,6 +5860,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Papilionidae",
+      "number": 95929,
+      "title": "[AI] fix(memory-lancedb): expose memory ID in recall and add text-fal…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95929"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wangmiao0668000666",
+      "number": 95926,
+      "title": "fix(media-understanding): append actionable install hint when a media provider is missing (#95658)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95926"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@vincentkoc",
+      "number": 95916,
+      "title": "fix(memory): improve node:sqlite unavailable guidance",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95916"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@arkyu2077",
+      "number": 95912,
+      "title": "fix: ignore reasoning-only heartbeat ack blocks",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95912"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wangwllu",
+      "number": 95910,
+      "title": "follow-up to #86034: wake-false path bypasses direct media fallback (Hypothesis B)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95910"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ZengWen-DT",
+      "number": 95906,
+      "title": "fix(code-mode): surface QuickJS error name and message to the model",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95906"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@buyuangtampan",
+      "number": 95904,
+      "title": "[Bug]: Non-Codex fallback models fail code-mode tool calls with internal_error in 2026.6.9",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95904"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@HHanWu",
+      "number": 95897,
+      "title": "fix(heartbeat-filter): preserve HEARTBEAT_OK detection with reasoning/thinking blocks",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95897"
     },
     {
       "activity": 0,
@@ -16573,8 +16645,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95895,
-    "pr": 95896
+    "issue": 95927,
+    "pr": 95931
   },
   "schema_version": 1,
   "updated": "2026-06-23"

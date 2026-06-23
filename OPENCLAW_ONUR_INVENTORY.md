@@ -4,14 +4,22 @@ Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #95895.
-- Last reviewed through PR: #95896.
+- Last reviewed through issue: #95927.
+- Last reviewed through PR: #95931.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95929](https://github.com/openclaw/openclaw/pull/95929) | 2026-06-23 | 0 | Local memory/embedding | @Papilionidae | [AI] fix(memory-lancedb): expose memory ID in recall and add text-fal… |
+| 🔀&nbsp;[#95926](https://github.com/openclaw/openclaw/pull/95926) | 2026-06-23 | 0 | Local/media model provider | @wangmiao0668000666 | fix(media-understanding): append actionable install hint when a media provider is missing (#95658) |
+| 🔀&nbsp;[#95916](https://github.com/openclaw/openclaw/pull/95916) | 2026-06-23 | 0 | Local memory/embedding | @vincentkoc | fix(memory): improve node:sqlite unavailable guidance |
+| 🔀&nbsp;[#95912](https://github.com/openclaw/openclaw/pull/95912) | 2026-06-23 | 0 | Model/provider behavior | @arkyu2077 | fix: ignore reasoning-only heartbeat ack blocks |
+| 📝&nbsp;[#95910](https://github.com/openclaw/openclaw/issues/95910) | 2026-06-23 | 0 | Model routing/config | @wangwllu | follow-up to #86034: wake-false path bypasses direct media fallback (Hypothesis B) |
+| 🔀&nbsp;[#95906](https://github.com/openclaw/openclaw/pull/95906) | 2026-06-23 | 0 | Model routing/config | @ZengWen-DT | fix(code-mode): surface QuickJS error name and message to the model |
+| 📝&nbsp;[#95904](https://github.com/openclaw/openclaw/issues/95904) | 2026-06-23 | 0 | Model routing/config | @buyuangtampan | [Bug]: Non-Codex fallback models fail code-mode tool calls with internal_error in 2026.6.9 |
+| 🔀&nbsp;[#95897](https://github.com/openclaw/openclaw/pull/95897) | 2026-06-23 | 0 | Model/provider behavior | @HHanWu | fix(heartbeat-filter): preserve HEARTBEAT_OK detection with reasoning/thinking blocks |
 | 🔀&nbsp;[#95896](https://github.com/openclaw/openclaw/pull/95896) | 2026-06-23 | 0 | Model routing/config | @HHanWu | fix(model-catalog): stripPrefixes over-strips when prefix has whitespace |
 | 📝&nbsp;[#95891](https://github.com/openclaw/openclaw/issues/95891) | 2026-06-23 | 0 | Open-weight/provider behavior | @DemonGiggle | [Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path |
 | 🔀&nbsp;[#95877](https://github.com/openclaw/openclaw/pull/95877) | 2026-06-22 | 0 | Model routing/config | @giodl73-repo | Add hosted catalog snapshot fallback |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95757](https://github.com/openclaw/openclaw/pull/95757) | 2026-06-22 | 0 | Local memory/embedding | @bdjben | fix(memory): respect QMD timeout for memory_search |
 | 🔀&nbsp;[#95756](https://github.com/openclaw/openclaw/pull/95756) | 2026-06-22 | 0 | Model routing/config | @RichChen01 | fix(model-catalog): use normalizedPrefix.length when stripping stripPrefixes |
 | 🔀&nbsp;[#95755](https://github.com/openclaw/openclaw/pull/95755) | 2026-06-22 | 0 | Model routing/config | @zw-xysk | fix(model-catalog): use normalized prefix length in stripPrefixes instead of raw length |
-| 🔀&nbsp;[#95753](https://github.com/openclaw/openclaw/pull/95753) | 2026-06-22 | 0 | Model routing/config | @hanZeng-08 | fix(run): apply live model switch before each attempt iteration |
-| 🔀&nbsp;[#95748](https://github.com/openclaw/openclaw/pull/95748) | 2026-06-22 | 0 | Local model runtime | @maweibin | fix(agents): skip empty-conversation compaction boundary, tolerate fence takeover in cron |
-| 📝&nbsp;[#95746](https://github.com/openclaw/openclaw/issues/95746) | 2026-06-22 | 0 | Local model runtime | @rogerallen1 | [Bug]: memory-core dreaming can exhaust local model context due to parallel/internal Dream Diary subagent runs |
-| 🔀&nbsp;[#95744](https://github.com/openclaw/openclaw/pull/95744) | 2026-06-22 | 0 | Model routing/config | @parveshsaini | fix(model-catalog): strip manifest model-id prefixes by the matched length |
-| 📝&nbsp;[#95743](https://github.com/openclaw/openclaw/issues/95743) | 2026-06-22 | 0 | Model routing/config | @parveshsaini | [Bug]: Manifest stripPrefixes over-strips the model id - slices by raw prefix length after matching the trimmed/lowercased prefix |
-| 📝&nbsp;[#95740](https://github.com/openclaw/openclaw/issues/95740) | 2026-06-22 | 0 | Model routing/config | @paulogogs | [Bug]: google-vertex model_not_found at runtime with authorized_user ADC — regression persists after #90609 |
-| 🔀&nbsp;[#95739](https://github.com/openclaw/openclaw/pull/95739) | 2026-06-22 | 0 | Local memory/embedding | @ralf003 | feat(memory): add excludePaths option to memorySearch config |
-| 🔀&nbsp;[#95731](https://github.com/openclaw/openclaw/pull/95731) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @mazhuima | fix(cron): pass manifestPlugins through cron model selection for plugin provider resolution |
 
-## OPEN THREADS (1309)
+## OPEN THREADS (1317)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1259 open threads, sorted by activity</summary>
+<summary>Remaining 1267 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95929](https://github.com/openclaw/openclaw/pull/95929) | 0 | Local memory/embedding | @Papilionidae | [AI] fix(memory-lancedb): expose memory ID in recall and add text-fal… |
+| 🔀&nbsp;[#95926](https://github.com/openclaw/openclaw/pull/95926) | 0 | Local/media model provider | @wangmiao0668000666 | fix(media-understanding): append actionable install hint when a media provider is missing (#95658) |
+| 🔀&nbsp;[#95916](https://github.com/openclaw/openclaw/pull/95916) | 0 | Local memory/embedding | @vincentkoc | fix(memory): improve node:sqlite unavailable guidance |
+| 🔀&nbsp;[#95912](https://github.com/openclaw/openclaw/pull/95912) | 0 | Model/provider behavior | @arkyu2077 | fix: ignore reasoning-only heartbeat ack blocks |
+| 📝&nbsp;[#95910](https://github.com/openclaw/openclaw/issues/95910) | 0 | Model routing/config | @wangwllu | follow-up to #86034: wake-false path bypasses direct media fallback (Hypothesis B) |
+| 🔀&nbsp;[#95906](https://github.com/openclaw/openclaw/pull/95906) | 0 | Model routing/config | @ZengWen-DT | fix(code-mode): surface QuickJS error name and message to the model |
+| 📝&nbsp;[#95904](https://github.com/openclaw/openclaw/issues/95904) | 0 | Model routing/config | @buyuangtampan | [Bug]: Non-Codex fallback models fail code-mode tool calls with internal_error in 2026.6.9 |
+| 🔀&nbsp;[#95897](https://github.com/openclaw/openclaw/pull/95897) | 0 | Model/provider behavior | @HHanWu | fix(heartbeat-filter): preserve HEARTBEAT_OK detection with reasoning/thinking blocks |
 | 🔀&nbsp;[#95896](https://github.com/openclaw/openclaw/pull/95896) | 0 | Model routing/config | @HHanWu | fix(model-catalog): stripPrefixes over-strips when prefix has whitespace |
 | 📝&nbsp;[#95891](https://github.com/openclaw/openclaw/issues/95891) | 0 | Open-weight/provider behavior | @DemonGiggle | [Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path |
 | 🔀&nbsp;[#95877](https://github.com/openclaw/openclaw/pull/95877) | 0 | Model routing/config | @giodl73-repo | Add hosted catalog snapshot fallback |
@@ -2093,4 +2101,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1309 (484 issues, 825 PRs).
+- Kept open threads: 1317 (486 issues, 831 PRs).
