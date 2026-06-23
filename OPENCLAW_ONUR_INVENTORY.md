@@ -4,14 +4,22 @@ Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #96064.
-- Last reviewed through PR: #96069.
+- Last reviewed through issue: #96098.
+- Last reviewed through PR: #96100.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96097](https://github.com/openclaw/openclaw/pull/96097) | 2026-06-23 | 0 | Local model runtime | @muhamedfazalps | fix: allow fallback on harness-owned timeouts when fallback is configured |
+| 🔀&nbsp;[#96096](https://github.com/openclaw/openclaw/pull/96096) | 2026-06-23 | 0 | Model routing/config | @849261680 | fix: cron stream stalls fail over before job timeout |
+| 🔀&nbsp;[#96094](https://github.com/openclaw/openclaw/pull/96094) | 2026-06-23 | 0 | Local memory/embedding | @849261680 | fix(memory): prove live manager recovery after CLI reindex |
+| 📝&nbsp;[#96093](https://github.com/openclaw/openclaw/issues/96093) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @rocke2020 | Diagnostics: no model.usage emitted for HTTP ingress (/v1/responses, /v1/chat/completions) — exporters blind to API traffic |
+| 🔀&nbsp;[#96092](https://github.com/openclaw/openclaw/pull/96092) | 2026-06-23 | 0 | Local memory/embedding | @SunnyShu0925 | fix(memory): schedule qmd embed when embedInterval is explicitly configured in lexical search mode |
+| 🔀&nbsp;[#96074](https://github.com/openclaw/openclaw/pull/96074) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @WSC741606 | fix(memory): pass request.proxy to embedding HTTP client for explicit… |
+| 🔀&nbsp;[#96073](https://github.com/openclaw/openclaw/pull/96073) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @wm0018 | feat(openshell): add non-secret env config for sandbox creation |
+| 🔀&nbsp;[#96070](https://github.com/openclaw/openclaw/pull/96070) | 2026-06-23 | 0 | Model routing/config | @SunnyShu0925 | fix(agents): enable bundled static catalog fallback for cron Attempt 2 |
 | 🔀&nbsp;[#96068](https://github.com/openclaw/openclaw/pull/96068) | 2026-06-23 | 0 | Model routing/config | @vincentkoc | fix(acpx): consume acpx 0.11.1 model capability errors |
 | 🔀&nbsp;[#96065](https://github.com/openclaw/openclaw/pull/96065) | 2026-06-23 | 0 | Model routing/config | @Darren2030 | fix(install): manage config-secretref env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
 | 🔀&nbsp;[#96059](https://github.com/openclaw/openclaw/pull/96059) | 2026-06-23 | 0 | Model routing/config | @Darren2030 | fix(install): manage auth-profile env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95852](https://github.com/openclaw/openclaw/pull/95852) | 2026-06-22 | 0 | Model routing/config | @yetval | fix(acpx): keep leaked non-openai model out of the Codex ACP thinking slot |
 | 📝&nbsp;[#95840](https://github.com/openclaw/openclaw/issues/95840) | 2026-06-22 | 0 | Model/provider behavior | @aleps001 | contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
 | 🔀&nbsp;[#95838](https://github.com/openclaw/openclaw/pull/95838) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | feat(heartbeat): add configurable transcriptArtifactMode for history filtering |
-| 🔀&nbsp;[#95831](https://github.com/openclaw/openclaw/pull/95831) | 2026-06-22 | 0 | Model routing/config | @sallyom | fix: compact Codex OAuth OpenAI sessions without API keys |
-| 🔀&nbsp;[#95824](https://github.com/openclaw/openclaw/pull/95824) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @ats3v | fix(deepinfra): use OpenAI video end point and tag DeepSeek thinking format |
-| 📝&nbsp;[#95821](https://github.com/openclaw/openclaw/issues/95821) | 2026-06-22 | 0 | Local model runtime | @BryceMurray | [Feature]: log memory-core-local-embedding-worker.js spawn/exit + per-call CPU time at INFO level for CPU-forensics traceability (2026.6.9) |
-| 🔀&nbsp;[#95820](https://github.com/openclaw/openclaw/pull/95820) | 2026-06-22 | 0 | Local memory/embedding | @moeedahmed | fix(session-memory): skip transcript-only assistant rows |
-| 🔀&nbsp;[#95819](https://github.com/openclaw/openclaw/pull/95819) | 2026-06-22 | 0 | Model/provider behavior | @CrypticDriver | fix(bedrock): stop replaying stale signed thinking from completed turns |
-| 🔀&nbsp;[#95816](https://github.com/openclaw/openclaw/pull/95816) | 2026-06-22 | 0 | Model routing/config | @itxaiohanglover | fix(model-ref): use normalized prefix length for stripPrefixes |
-| 🔀&nbsp;[#95813](https://github.com/openclaw/openclaw/pull/95813) | 2026-06-22 | 0 | Local model runtime | @hanZeng-08 | Fix/95784 cron setup timeout no restart |
-| 📝&nbsp;[#95811](https://github.com/openclaw/openclaw/issues/95811) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | [Feature]: decouple heartbeat delivery suppression from transcript/context stripping |
 
-## OPEN THREADS (1339)
+## OPEN THREADS (1347)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1289 open threads, sorted by activity</summary>
+<summary>Remaining 1297 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96097](https://github.com/openclaw/openclaw/pull/96097) | 0 | Local model runtime | @muhamedfazalps | fix: allow fallback on harness-owned timeouts when fallback is configured |
+| 🔀&nbsp;[#96096](https://github.com/openclaw/openclaw/pull/96096) | 0 | Model routing/config | @849261680 | fix: cron stream stalls fail over before job timeout |
+| 🔀&nbsp;[#96094](https://github.com/openclaw/openclaw/pull/96094) | 0 | Local memory/embedding | @849261680 | fix(memory): prove live manager recovery after CLI reindex |
+| 📝&nbsp;[#96093](https://github.com/openclaw/openclaw/issues/96093) | 0 | OpenAI-compatible/proxy | @rocke2020 | Diagnostics: no model.usage emitted for HTTP ingress (/v1/responses, /v1/chat/completions) — exporters blind to API traffic |
+| 🔀&nbsp;[#96092](https://github.com/openclaw/openclaw/pull/96092) | 0 | Local memory/embedding | @SunnyShu0925 | fix(memory): schedule qmd embed when embedInterval is explicitly configured in lexical search mode |
+| 🔀&nbsp;[#96074](https://github.com/openclaw/openclaw/pull/96074) | 0 | OpenAI-compatible/proxy | @WSC741606 | fix(memory): pass request.proxy to embedding HTTP client for explicit… |
+| 🔀&nbsp;[#96073](https://github.com/openclaw/openclaw/pull/96073) | 0 | OpenAI-compatible/proxy | @wm0018 | feat(openshell): add non-secret env config for sandbox creation |
+| 🔀&nbsp;[#96070](https://github.com/openclaw/openclaw/pull/96070) | 0 | Model routing/config | @SunnyShu0925 | fix(agents): enable bundled static catalog fallback for cron Attempt 2 |
 | 🔀&nbsp;[#96068](https://github.com/openclaw/openclaw/pull/96068) | 0 | Model routing/config | @vincentkoc | fix(acpx): consume acpx 0.11.1 model capability errors |
 | 🔀&nbsp;[#96065](https://github.com/openclaw/openclaw/pull/96065) | 0 | Model routing/config | @Darren2030 | fix(install): manage config-secretref env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
 | 🔀&nbsp;[#96059](https://github.com/openclaw/openclaw/pull/96059) | 0 | Model routing/config | @Darren2030 | fix(install): manage auth-profile env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
@@ -2123,4 +2131,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1339 (487 issues, 852 PRs).
+- Kept open threads: 1347 (488 issues, 859 PRs).

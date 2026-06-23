@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 487,
-    "open_prs": 852,
-    "open_threads": 1339
+    "open_issues": 488,
+    "open_prs": 859,
+    "open_threads": 1347
   },
   "open_threads": [
     {
@@ -5860,6 +5860,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@muhamedfazalps",
+      "number": 96097,
+      "title": "fix: allow fallback on harness-owned timeouts when fallback is configured",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96097"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@849261680",
+      "number": 96096,
+      "title": "fix: cron stream stalls fail over before job timeout",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96096"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@849261680",
+      "number": 96094,
+      "title": "fix(memory): prove live manager recovery after CLI reindex",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96094"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@rocke2020",
+      "number": 96093,
+      "title": "Diagnostics: no model.usage emitted for HTTP ingress (/v1/responses, /v1/chat/completions) — exporters blind to API traffic",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96093"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SunnyShu0925",
+      "number": 96092,
+      "title": "fix(memory): schedule qmd embed when embedInterval is explicitly configured in lexical search mode",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96092"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@WSC741606",
+      "number": 96074,
+      "title": "fix(memory): pass request.proxy to embedding HTTP client for explicit…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96074"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wm0018",
+      "number": 96073,
+      "title": "feat(openshell): add non-secret env config for sandbox creation",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96073"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@SunnyShu0925",
+      "number": 96070,
+      "title": "fix(agents): enable bundled static catalog fallback for cron Attempt 2",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96070"
     },
     {
       "activity": 0,
@@ -16843,8 +16915,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96064,
-    "pr": 96069
+    "issue": 96098,
+    "pr": 96100
   },
   "schema_version": 1,
   "updated": "2026-06-23"
