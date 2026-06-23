@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 486,
-    "open_prs": 847,
-    "open_threads": 1333
+    "open_issues": 487,
+    "open_prs": 852,
+    "open_threads": 1339
   },
   "open_threads": [
     {
@@ -5860,6 +5860,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@vincentkoc",
+      "number": 96068,
+      "title": "fix(acpx): consume acpx 0.11.1 model capability errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96068"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Darren2030",
+      "number": 96065,
+      "title": "fix(install): manage config-secretref env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96065"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Darren2030",
+      "number": 96059,
+      "title": "fix(install): manage auth-profile env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96059"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Pick-cat",
+      "number": 96052,
+      "title": "fix(memory-core): index memory path in FTS text for filename queries (fixes #94102)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96052"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@lsr911",
+      "number": 96047,
+      "title": "fix(opencode-go): disable thinking for minimax-m3 anthropic-messages path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96047"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@hearace1",
+      "number": 96046,
+      "title": "Gateway 'plugins.slots.memory: plugin not found' for an extensions/ plugin present in plugins list — 2026.6.9 regression",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96046"
     },
     {
       "activity": 0,
@@ -16789,8 +16843,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96023,
-    "pr": 96045
+    "issue": 96064,
+    "pr": 96069
   },
   "schema_version": 1,
   "updated": "2026-06-23"

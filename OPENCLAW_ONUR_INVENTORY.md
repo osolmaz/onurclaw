@@ -4,14 +4,20 @@ Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #96023.
-- Last reviewed through PR: #96045.
+- Last reviewed through issue: #96064.
+- Last reviewed through PR: #96069.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96068](https://github.com/openclaw/openclaw/pull/96068) | 2026-06-23 | 0 | Model routing/config | @vincentkoc | fix(acpx): consume acpx 0.11.1 model capability errors |
+| 🔀&nbsp;[#96065](https://github.com/openclaw/openclaw/pull/96065) | 2026-06-23 | 0 | Model routing/config | @Darren2030 | fix(install): manage config-secretref env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
+| 🔀&nbsp;[#96059](https://github.com/openclaw/openclaw/pull/96059) | 2026-06-23 | 0 | Model routing/config | @Darren2030 | fix(install): manage auth-profile env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
+| 🔀&nbsp;[#96052](https://github.com/openclaw/openclaw/pull/96052) | 2026-06-23 | 0 | Local memory/embedding | @Pick-cat | fix(memory-core): index memory path in FTS text for filename queries (fixes #94102) |
+| 🔀&nbsp;[#96047](https://github.com/openclaw/openclaw/pull/96047) | 2026-06-23 | 0 | Open-weight/provider behavior | @lsr911 | fix(opencode-go): disable thinking for minimax-m3 anthropic-messages path |
+| 📝&nbsp;[#96046](https://github.com/openclaw/openclaw/issues/96046) | 2026-06-23 | 0 | Local memory/embedding | @hearace1 | Gateway 'plugins.slots.memory: plugin not found' for an extensions/ plugin present in plugins list — 2026.6.9 regression |
 | 🔀&nbsp;[#96042](https://github.com/openclaw/openclaw/pull/96042) | 2026-06-23 | 0 | Local model runtime | @Alix-007 | fix(lmstudio): bound model load success response body to prevent OOM |
 | 🔀&nbsp;[#96041](https://github.com/openclaw/openclaw/pull/96041) | 2026-06-23 | 0 | Model routing/config | @krissding | fix: classify upstream provider errors as server_error to enable fallback |
 | 🔀&nbsp;[#96036](https://github.com/openclaw/openclaw/pull/96036) | 2026-06-23 | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound dashscope task response reads |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95816](https://github.com/openclaw/openclaw/pull/95816) | 2026-06-22 | 0 | Model routing/config | @itxaiohanglover | fix(model-ref): use normalized prefix length for stripPrefixes |
 | 🔀&nbsp;[#95813](https://github.com/openclaw/openclaw/pull/95813) | 2026-06-22 | 0 | Local model runtime | @hanZeng-08 | Fix/95784 cron setup timeout no restart |
 | 📝&nbsp;[#95811](https://github.com/openclaw/openclaw/issues/95811) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | [Feature]: decouple heartbeat delivery suppression from transcript/context stripping |
-| 🔀&nbsp;[#95806](https://github.com/openclaw/openclaw/pull/95806) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @crh-code | fix(gateway): replace buggy isPrivateOrLoopbackHost with canonical net.ts import |
-| 🔀&nbsp;[#95804](https://github.com/openclaw/openclaw/pull/95804) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @hanZeng-08 | fix(agent): emit context_management for openai-chatgpt-responses when… |
-| 🔀&nbsp;[#95802](https://github.com/openclaw/openclaw/pull/95802) | 2026-06-22 | 0 | Open-weight/provider behavior | @jzakirov | feat(minimax): opt M3 into MiniMax priority lane via fastMode |
-| 🔀&nbsp;[#95798](https://github.com/openclaw/openclaw/pull/95798) | 2026-06-22 | 0 | Model/provider behavior | @hanZeng-08 | fix(heartbeat): allow reasoning/thinking blocks in heartbeat ack filt… |
-| 📝&nbsp;[#95796](https://github.com/openclaw/openclaw/issues/95796) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | [Bug]: Heartbeat transcript filtering ignores HEARTBEAT_OK when assistant message contains reasoning/thinking block |
-| 🔀&nbsp;[#95792](https://github.com/openclaw/openclaw/pull/95792) | 2026-06-22 | 0 | Open-weight/provider behavior | @snowzlmbot | fix(onboard): refresh provider plugin registry after setup installs |
 
-## OPEN THREADS (1333)
+## OPEN THREADS (1339)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1283 open threads, sorted by activity</summary>
+<summary>Remaining 1289 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96068](https://github.com/openclaw/openclaw/pull/96068) | 0 | Model routing/config | @vincentkoc | fix(acpx): consume acpx 0.11.1 model capability errors |
+| 🔀&nbsp;[#96065](https://github.com/openclaw/openclaw/pull/96065) | 0 | Model routing/config | @Darren2030 | fix(install): manage config-secretref env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
+| 🔀&nbsp;[#96059](https://github.com/openclaw/openclaw/pull/96059) | 0 | Model routing/config | @Darren2030 | fix(install): manage auth-profile env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
+| 🔀&nbsp;[#96052](https://github.com/openclaw/openclaw/pull/96052) | 0 | Local memory/embedding | @Pick-cat | fix(memory-core): index memory path in FTS text for filename queries (fixes #94102) |
+| 🔀&nbsp;[#96047](https://github.com/openclaw/openclaw/pull/96047) | 0 | Open-weight/provider behavior | @lsr911 | fix(opencode-go): disable thinking for minimax-m3 anthropic-messages path |
+| 📝&nbsp;[#96046](https://github.com/openclaw/openclaw/issues/96046) | 0 | Local memory/embedding | @hearace1 | Gateway 'plugins.slots.memory: plugin not found' for an extensions/ plugin present in plugins list — 2026.6.9 regression |
 | 🔀&nbsp;[#96042](https://github.com/openclaw/openclaw/pull/96042) | 0 | Local model runtime | @Alix-007 | fix(lmstudio): bound model load success response body to prevent OOM |
 | 🔀&nbsp;[#96041](https://github.com/openclaw/openclaw/pull/96041) | 0 | Model routing/config | @krissding | fix: classify upstream provider errors as server_error to enable fallback |
 | 🔀&nbsp;[#96036](https://github.com/openclaw/openclaw/pull/96036) | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound dashscope task response reads |
@@ -2117,4 +2123,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1333 (486 issues, 847 PRs).
+- Kept open threads: 1339 (487 issues, 852 PRs).
