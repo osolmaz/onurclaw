@@ -4,14 +4,22 @@ Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #95927.
-- Last reviewed through PR: #95931.
+- Last reviewed through issue: #95963.
+- Last reviewed through PR: #95965.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95964](https://github.com/openclaw/openclaw/pull/95964) | 2026-06-23 | 0 | Model routing/config | @giodl73-repo | Persist hosted catalog snapshots in state |
+| 🔀&nbsp;[#95962](https://github.com/openclaw/openclaw/pull/95962) | 2026-06-23 | 0 | Model routing/config | @ZacharyYW | fix(acpx): sessions_spawn fails for harnesses lacking model support |
+| 🔀&nbsp;[#95957](https://github.com/openclaw/openclaw/pull/95957) | 2026-06-23 | 0 | Model/provider behavior | @vincentkoc | improve: speed up provider tool-call streaming |
+| 🔀&nbsp;[#95951](https://github.com/openclaw/openclaw/pull/95951) | 2026-06-23 | 0 | Model routing/config | @chenyangjun-xy | fix(google): add google-gemini-cli auth alias and expand model runtime bindings |
+| 🔀&nbsp;[#95945](https://github.com/openclaw/openclaw/pull/95945) | 2026-06-23 | 0 | Model routing/config | @Papilionidae | fix(media): retry direct delivery when wake returns false after successful generation |
+| 🔀&nbsp;[#95943](https://github.com/openclaw/openclaw/pull/95943) | 2026-06-23 | 0 | Model routing/config | @ZengWen-DT | fix(cron): preserve provider/model on isolated-run timeout row |
+| 🔀&nbsp;[#95936](https://github.com/openclaw/openclaw/pull/95936) | 2026-06-23 | 0 | Local memory/embedding | @xmoxmo | feat(memory): shared memory store by directory binding |
+| 🔀&nbsp;[#95934](https://github.com/openclaw/openclaw/pull/95934) | 2026-06-23 | 0 | Open-weight/provider behavior | @idootop | fix(xiaomi): correct mimo-v2.5 and mimo-v2.5-pro max output tokens to 128K |
 | 🔀&nbsp;[#95929](https://github.com/openclaw/openclaw/pull/95929) | 2026-06-23 | 0 | Local memory/embedding | @Papilionidae | [AI] fix(memory-lancedb): expose memory ID in recall and add text-fal… |
 | 🔀&nbsp;[#95926](https://github.com/openclaw/openclaw/pull/95926) | 2026-06-23 | 0 | Local/media model provider | @wangmiao0668000666 | fix(media-understanding): append actionable install hint when a media provider is missing (#95658) |
 | 🔀&nbsp;[#95916](https://github.com/openclaw/openclaw/pull/95916) | 2026-06-23 | 0 | Local memory/embedding | @vincentkoc | fix(memory): improve node:sqlite unavailable guidance |
@@ -54,16 +62,8 @@ Review watermark:
 | 📝&nbsp;[#95780](https://github.com/openclaw/openclaw/issues/95780) | 2026-06-22 | 0 | Model routing/config | @jpplaisted | [Bug]: ACP spawn of `codex` injects default model id (`gemini-3.1-flash-lite`) into the thinking-level slot |
 | 🔀&nbsp;[#95779](https://github.com/openclaw/openclaw/pull/95779) | 2026-06-22 | 0 | Model routing/config | @Pick-cat | fix(auth): suppress recovery hint for format failures |
 | 🔀&nbsp;[#95777](https://github.com/openclaw/openclaw/pull/95777) | 2026-06-22 | 0 | Open-weight/provider behavior | @ZengWen-DT | fix(onboard): external provider plugin install skips selected auth flow |
-| 🔀&nbsp;[#95775](https://github.com/openclaw/openclaw/pull/95775) | 2026-06-22 | 0 | Local model runtime | @ruomuxydt | fix(memory): bound dreaming narrative concurrency for heartbeat triggers |
-| 📝&nbsp;[#95773](https://github.com/openclaw/openclaw/issues/95773) | 2026-06-22 | 0 | Open-weight/provider behavior | @pikaqqqqqq | task-guard: silence mandate has no exit condition, causes 6902 on ALLOW with instruction-literal models |
-| 🔀&nbsp;[#95769](https://github.com/openclaw/openclaw/pull/95769) | 2026-06-22 | 0 | Local memory/embedding | @chenweicong736 | fix(memory-lancedb): surface memory ID in memory_recall content |
-| 📝&nbsp;[#95765](https://github.com/openclaw/openclaw/issues/95765) | 2026-06-22 | 0 | Open-weight/provider behavior | @snowzlmbot | bug(onboard): external provider plugin install skips selected auth flow after DeepSeek install |
-| 📝&nbsp;[#95760](https://github.com/openclaw/openclaw/issues/95760) | 2026-06-22 | 0 | Open-weight/provider behavior | @Noquetoo | [Bug]: Incomplete turn / stream cut mid-tool-calls with NVIDIA Build provider (GLM 5.1, MiniMax M2.7) |
-| 🔀&nbsp;[#95757](https://github.com/openclaw/openclaw/pull/95757) | 2026-06-22 | 0 | Local memory/embedding | @bdjben | fix(memory): respect QMD timeout for memory_search |
-| 🔀&nbsp;[#95756](https://github.com/openclaw/openclaw/pull/95756) | 2026-06-22 | 0 | Model routing/config | @RichChen01 | fix(model-catalog): use normalizedPrefix.length when stripping stripPrefixes |
-| 🔀&nbsp;[#95755](https://github.com/openclaw/openclaw/pull/95755) | 2026-06-22 | 0 | Model routing/config | @zw-xysk | fix(model-catalog): use normalized prefix length in stripPrefixes instead of raw length |
 
-## OPEN THREADS (1317)
+## OPEN THREADS (1325)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1267 open threads, sorted by activity</summary>
+<summary>Remaining 1275 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95964](https://github.com/openclaw/openclaw/pull/95964) | 0 | Model routing/config | @giodl73-repo | Persist hosted catalog snapshots in state |
+| 🔀&nbsp;[#95962](https://github.com/openclaw/openclaw/pull/95962) | 0 | Model routing/config | @ZacharyYW | fix(acpx): sessions_spawn fails for harnesses lacking model support |
+| 🔀&nbsp;[#95957](https://github.com/openclaw/openclaw/pull/95957) | 0 | Model/provider behavior | @vincentkoc | improve: speed up provider tool-call streaming |
+| 🔀&nbsp;[#95951](https://github.com/openclaw/openclaw/pull/95951) | 0 | Model routing/config | @chenyangjun-xy | fix(google): add google-gemini-cli auth alias and expand model runtime bindings |
+| 🔀&nbsp;[#95945](https://github.com/openclaw/openclaw/pull/95945) | 0 | Model routing/config | @Papilionidae | fix(media): retry direct delivery when wake returns false after successful generation |
+| 🔀&nbsp;[#95943](https://github.com/openclaw/openclaw/pull/95943) | 0 | Model routing/config | @ZengWen-DT | fix(cron): preserve provider/model on isolated-run timeout row |
+| 🔀&nbsp;[#95936](https://github.com/openclaw/openclaw/pull/95936) | 0 | Local memory/embedding | @xmoxmo | feat(memory): shared memory store by directory binding |
+| 🔀&nbsp;[#95934](https://github.com/openclaw/openclaw/pull/95934) | 0 | Open-weight/provider behavior | @idootop | fix(xiaomi): correct mimo-v2.5 and mimo-v2.5-pro max output tokens to 128K |
 | 🔀&nbsp;[#95929](https://github.com/openclaw/openclaw/pull/95929) | 0 | Local memory/embedding | @Papilionidae | [AI] fix(memory-lancedb): expose memory ID in recall and add text-fal… |
 | 🔀&nbsp;[#95926](https://github.com/openclaw/openclaw/pull/95926) | 0 | Local/media model provider | @wangmiao0668000666 | fix(media-understanding): append actionable install hint when a media provider is missing (#95658) |
 | 🔀&nbsp;[#95916](https://github.com/openclaw/openclaw/pull/95916) | 0 | Local memory/embedding | @vincentkoc | fix(memory): improve node:sqlite unavailable guidance |
@@ -2101,4 +2109,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1317 (486 issues, 831 PRs).
+- Kept open threads: 1325 (486 issues, 839 PRs).

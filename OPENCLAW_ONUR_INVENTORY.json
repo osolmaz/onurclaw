@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 486,
-    "open_prs": 831,
-    "open_threads": 1317
+    "open_prs": 839,
+    "open_threads": 1325
   },
   "open_threads": [
     {
@@ -5860,6 +5860,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@giodl73-repo",
+      "number": 95964,
+      "title": "Persist hosted catalog snapshots in state",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95964"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ZacharyYW",
+      "number": 95962,
+      "title": "fix(acpx): sessions_spawn fails for harnesses lacking model support",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95962"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@vincentkoc",
+      "number": 95957,
+      "title": "improve: speed up provider tool-call streaming",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95957"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@chenyangjun-xy",
+      "number": 95951,
+      "title": "fix(google): add google-gemini-cli auth alias and expand model runtime bindings",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95951"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Papilionidae",
+      "number": 95945,
+      "title": "fix(media): retry direct delivery when wake returns false after successful generation",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95945"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ZengWen-DT",
+      "number": 95943,
+      "title": "fix(cron): preserve provider/model on isolated-run timeout row",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95943"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@xmoxmo",
+      "number": 95936,
+      "title": "feat(memory): shared memory store by directory binding",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95936"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@idootop",
+      "number": 95934,
+      "title": "fix(xiaomi): correct mimo-v2.5 and mimo-v2.5-pro max output tokens to 128K",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95934"
     },
     {
       "activity": 0,
@@ -16645,8 +16717,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95927,
-    "pr": 95931
+    "issue": 95963,
+    "pr": 95965
   },
   "schema_version": 1,
   "updated": "2026-06-23"
