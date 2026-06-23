@@ -4,14 +4,21 @@ Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #96098.
-- Last reviewed through PR: #96100.
+- Last reviewed through issue: #96118.
+- Last reviewed through PR: #96124.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96122](https://github.com/openclaw/openclaw/pull/96122) | 2026-06-23 | 0 | Local model runtime | @qingminglong | docs(gateway): document high-memory local Ollama compaction tuning |
+| 📝&nbsp;[#96118](https://github.com/openclaw/openclaw/issues/96118) | 2026-06-23 | 0 | Local memory/embedding | @olveww-dot | [6.9 Regression] Dreaming runs but memory never promotes + Dreams UI shows dash |
+| 📝&nbsp;[#96116](https://github.com/openclaw/openclaw/issues/96116) | 2026-06-23 | 0 | Local memory/embedding | @lucassosatidre | memory index: openclaw memory index --force exits early without processing full backlog, no error logged |
+| 📝&nbsp;[#96115](https://github.com/openclaw/openclaw/issues/96115) | 2026-06-23 | 0 | Local model runtime | @cbertucci33 | [Bug]: localModelLean compact tool_call drops flattened target args, causing sticky missing-parameter failures |
+| 🔀&nbsp;[#96114](https://github.com/openclaw/openclaw/pull/96114) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @sha367 | docs: add MegaBrain Gateway (OpenAI-compatible) to model providers |
+| 📝&nbsp;[#96111](https://github.com/openclaw/openclaw/issues/96111) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @q719563786 | Improve custom provider configuration experience on Windows (4 issues: dual-registration docs, api field reference, schtasks ghost, gateway.cmd path) |
+| 🔀&nbsp;[#96110](https://github.com/openclaw/openclaw/pull/96110) | 2026-06-23 | 0 | Model routing/config | @whiteyzy | fix(failover): classify upstream_error as server_error to trigger model fallback |
 | 🔀&nbsp;[#96097](https://github.com/openclaw/openclaw/pull/96097) | 2026-06-23 | 0 | Local model runtime | @muhamedfazalps | fix: allow fallback on harness-owned timeouts when fallback is configured |
 | 🔀&nbsp;[#96096](https://github.com/openclaw/openclaw/pull/96096) | 2026-06-23 | 0 | Model routing/config | @849261680 | fix: cron stream stalls fail over before job timeout |
 | 🔀&nbsp;[#96094](https://github.com/openclaw/openclaw/pull/96094) | 2026-06-23 | 0 | Local memory/embedding | @849261680 | fix(memory): prove live manager recovery after CLI reindex |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95877](https://github.com/openclaw/openclaw/pull/95877) | 2026-06-22 | 0 | Model routing/config | @giodl73-repo | Add hosted catalog snapshot fallback |
 | 📝&nbsp;[#95875](https://github.com/openclaw/openclaw/issues/95875) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | Codex-backed cron runs can appear as canonical openai/openai-chatgpt-responses in transcript metadata, obscuring actual harness selection |
 | 📝&nbsp;[#95874](https://github.com/openclaw/openclaw/issues/95874) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | openclaw cron edit has --model but no --clear-model, so payload.model cannot be removed via the supported CLI |
-| 📝&nbsp;[#95873](https://github.com/openclaw/openclaw/issues/95873) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | cron_run_logs can drop session_id, provider, and model on early agent failure |
-| 📝&nbsp;[#95869](https://github.com/openclaw/openclaw/issues/95869) | 2026-06-22 | 0 | Model routing/config | @SabaTech-dev | sessions_spawn ACP runtime always passes model even when harness lacks session/set_model capability |
-| 🔀&nbsp;[#95868](https://github.com/openclaw/openclaw/pull/95868) | 2026-06-22 | 0 | Model routing/config | @giodl73-repo | Add hosted external catalog feed loader |
-| 🔀&nbsp;[#95859](https://github.com/openclaw/openclaw/pull/95859) | 2026-06-22 | 0 | Model/provider behavior | @solodmd | fix(#95840): contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
-| 🔀&nbsp;[#95852](https://github.com/openclaw/openclaw/pull/95852) | 2026-06-22 | 0 | Model routing/config | @yetval | fix(acpx): keep leaked non-openai model out of the Codex ACP thinking slot |
-| 📝&nbsp;[#95840](https://github.com/openclaw/openclaw/issues/95840) | 2026-06-22 | 0 | Model/provider behavior | @aleps001 | contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
-| 🔀&nbsp;[#95838](https://github.com/openclaw/openclaw/pull/95838) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | feat(heartbeat): add configurable transcriptArtifactMode for history filtering |
 
-## OPEN THREADS (1347)
+## OPEN THREADS (1354)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1297 open threads, sorted by activity</summary>
+<summary>Remaining 1304 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96122](https://github.com/openclaw/openclaw/pull/96122) | 0 | Local model runtime | @qingminglong | docs(gateway): document high-memory local Ollama compaction tuning |
+| 📝&nbsp;[#96118](https://github.com/openclaw/openclaw/issues/96118) | 0 | Local memory/embedding | @olveww-dot | [6.9 Regression] Dreaming runs but memory never promotes + Dreams UI shows dash |
+| 📝&nbsp;[#96116](https://github.com/openclaw/openclaw/issues/96116) | 0 | Local memory/embedding | @lucassosatidre | memory index: openclaw memory index --force exits early without processing full backlog, no error logged |
+| 📝&nbsp;[#96115](https://github.com/openclaw/openclaw/issues/96115) | 0 | Local model runtime | @cbertucci33 | [Bug]: localModelLean compact tool_call drops flattened target args, causing sticky missing-parameter failures |
+| 🔀&nbsp;[#96114](https://github.com/openclaw/openclaw/pull/96114) | 0 | OpenAI-compatible/proxy | @sha367 | docs: add MegaBrain Gateway (OpenAI-compatible) to model providers |
+| 📝&nbsp;[#96111](https://github.com/openclaw/openclaw/issues/96111) | 0 | OpenAI-compatible/proxy | @q719563786 | Improve custom provider configuration experience on Windows (4 issues: dual-registration docs, api field reference, schtasks ghost, gateway.cmd path) |
+| 🔀&nbsp;[#96110](https://github.com/openclaw/openclaw/pull/96110) | 0 | Model routing/config | @whiteyzy | fix(failover): classify upstream_error as server_error to trigger model fallback |
 | 🔀&nbsp;[#96097](https://github.com/openclaw/openclaw/pull/96097) | 0 | Local model runtime | @muhamedfazalps | fix: allow fallback on harness-owned timeouts when fallback is configured |
 | 🔀&nbsp;[#96096](https://github.com/openclaw/openclaw/pull/96096) | 0 | Model routing/config | @849261680 | fix: cron stream stalls fail over before job timeout |
 | 🔀&nbsp;[#96094](https://github.com/openclaw/openclaw/pull/96094) | 0 | Local memory/embedding | @849261680 | fix(memory): prove live manager recovery after CLI reindex |
@@ -2131,4 +2138,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1347 (488 issues, 859 PRs).
+- Kept open threads: 1354 (492 issues, 862 PRs).

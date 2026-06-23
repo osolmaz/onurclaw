@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 488,
-    "open_prs": 859,
-    "open_threads": 1347
+    "open_issues": 492,
+    "open_prs": 862,
+    "open_threads": 1354
   },
   "open_threads": [
     {
@@ -5860,6 +5860,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@qingminglong",
+      "number": 96122,
+      "title": "docs(gateway): document high-memory local Ollama compaction tuning",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96122"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@olveww-dot",
+      "number": 96118,
+      "title": "[6.9 Regression] Dreaming runs but memory never promotes + Dreams UI shows dash",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96118"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lucassosatidre",
+      "number": 96116,
+      "title": "memory index: openclaw memory index --force exits early without processing full backlog, no error logged",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96116"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@cbertucci33",
+      "number": 96115,
+      "title": "[Bug]: localModelLean compact tool_call drops flattened target args, causing sticky missing-parameter failures",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96115"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@sha367",
+      "number": 96114,
+      "title": "docs: add MegaBrain Gateway (OpenAI-compatible) to model providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96114"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@q719563786",
+      "number": 96111,
+      "title": "Improve custom provider configuration experience on Windows (4 issues: dual-registration docs, api field reference, schtasks ghost, gateway.cmd path)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96111"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@whiteyzy",
+      "number": 96110,
+      "title": "fix(failover): classify upstream_error as server_error to trigger model fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96110"
     },
     {
       "activity": 0,
@@ -16915,8 +16978,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96098,
-    "pr": 96100
+    "issue": 96118,
+    "pr": 96124
   },
   "schema_version": 1,
   "updated": "2026-06-23"
