@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 483,
-    "open_prs": 823,
-    "open_threads": 1306
+    "open_issues": 484,
+    "open_prs": 825,
+    "open_threads": 1309
   },
   "open_threads": [
     {
@@ -5860,6 +5860,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@HHanWu",
+      "number": 95896,
+      "title": "fix(model-catalog): stripPrefixes over-strips when prefix has whitespace",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95896"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@DemonGiggle",
+      "number": 95891,
+      "title": "[Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95891"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@giodl73-repo",
+      "number": 95877,
+      "title": "Add hosted catalog snapshot fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/95877"
     },
     {
       "activity": 0,
@@ -16546,8 +16573,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95875,
-    "pr": 95876
+    "issue": 95895,
+    "pr": 95896
   },
   "schema_version": 1,
   "updated": "2026-06-23"

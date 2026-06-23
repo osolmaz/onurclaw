@@ -4,14 +4,17 @@ Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #95875.
-- Last reviewed through PR: #95876.
+- Last reviewed through issue: #95895.
+- Last reviewed through PR: #95896.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#95896](https://github.com/openclaw/openclaw/pull/95896) | 2026-06-23 | 0 | Model routing/config | @HHanWu | fix(model-catalog): stripPrefixes over-strips when prefix has whitespace |
+| 📝&nbsp;[#95891](https://github.com/openclaw/openclaw/issues/95891) | 2026-06-23 | 0 | Open-weight/provider behavior | @DemonGiggle | [Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path |
+| 🔀&nbsp;[#95877](https://github.com/openclaw/openclaw/pull/95877) | 2026-06-22 | 0 | Model routing/config | @giodl73-repo | Add hosted catalog snapshot fallback |
 | 📝&nbsp;[#95875](https://github.com/openclaw/openclaw/issues/95875) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | Codex-backed cron runs can appear as canonical openai/openai-chatgpt-responses in transcript metadata, obscuring actual harness selection |
 | 📝&nbsp;[#95874](https://github.com/openclaw/openclaw/issues/95874) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | openclaw cron edit has --model but no --clear-model, so payload.model cannot be removed via the supported CLI |
 | 📝&nbsp;[#95873](https://github.com/openclaw/openclaw/issues/95873) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | cron_run_logs can drop session_id, provider, and model on early agent failure |
@@ -59,11 +62,8 @@ Review watermark:
 | 📝&nbsp;[#95740](https://github.com/openclaw/openclaw/issues/95740) | 2026-06-22 | 0 | Model routing/config | @paulogogs | [Bug]: google-vertex model_not_found at runtime with authorized_user ADC — regression persists after #90609 |
 | 🔀&nbsp;[#95739](https://github.com/openclaw/openclaw/pull/95739) | 2026-06-22 | 0 | Local memory/embedding | @ralf003 | feat(memory): add excludePaths option to memorySearch config |
 | 🔀&nbsp;[#95731](https://github.com/openclaw/openclaw/pull/95731) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @mazhuima | fix(cron): pass manifestPlugins through cron model selection for plugin provider resolution |
-| 🔀&nbsp;[#95729](https://github.com/openclaw/openclaw/pull/95729) | 2026-06-22 | 0 | Model routing/config | @Pick-cat | fix: classify provider code-only failover errors |
-| 🔀&nbsp;[#95727](https://github.com/openclaw/openclaw/pull/95727) | 2026-06-22 | 0 | Model/provider behavior | @moguangyu5-design | fix(agents): ensure wrapAnthropicStreamWithRecovery works with async streamFn |
-| 🔀&nbsp;[#95726](https://github.com/openclaw/openclaw/pull/95726) | 2026-06-22 | 0 | Local memory/embedding | @moguangyu5-design | fix(state): migrate legacy memory store to per-agent database on upgrade |
 
-## OPEN THREADS (1306)
+## OPEN THREADS (1309)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1256 open threads, sorted by activity</summary>
+<summary>Remaining 1259 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#95896](https://github.com/openclaw/openclaw/pull/95896) | 0 | Model routing/config | @HHanWu | fix(model-catalog): stripPrefixes over-strips when prefix has whitespace |
+| 📝&nbsp;[#95891](https://github.com/openclaw/openclaw/issues/95891) | 0 | Open-weight/provider behavior | @DemonGiggle | [Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path |
+| 🔀&nbsp;[#95877](https://github.com/openclaw/openclaw/pull/95877) | 0 | Model routing/config | @giodl73-repo | Add hosted catalog snapshot fallback |
 | 📝&nbsp;[#95875](https://github.com/openclaw/openclaw/issues/95875) | 0 | Model routing/config | @luke-renjoy | Codex-backed cron runs can appear as canonical openai/openai-chatgpt-responses in transcript metadata, obscuring actual harness selection |
 | 📝&nbsp;[#95874](https://github.com/openclaw/openclaw/issues/95874) | 0 | Model routing/config | @luke-renjoy | openclaw cron edit has --model but no --clear-model, so payload.model cannot be removed via the supported CLI |
 | 📝&nbsp;[#95873](https://github.com/openclaw/openclaw/issues/95873) | 0 | Model routing/config | @luke-renjoy | cron_run_logs can drop session_id, provider, and model on early agent failure |
@@ -2090,4 +2093,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1306 (483 issues, 823 PRs).
+- Kept open threads: 1309 (484 issues, 825 PRs).
