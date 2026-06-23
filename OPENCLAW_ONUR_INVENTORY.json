@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 496,
-    "open_prs": 870,
-    "open_threads": 1366
+    "open_issues": 497,
+    "open_prs": 874,
+    "open_threads": 1371
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@SnoutFirst",
+      "number": 96173,
+      "title": "Add local-realtime-voice extension (gateway-relay realtime voice/dictation)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96173"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@natannobre",
+      "number": 96167,
+      "title": "Guard overflow recovery retries",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96167"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@jalehman",
+      "number": 96162,
+      "title": "refactor: use accessor-backed transcript corpus for memory",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96162"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@boa901012-droid",
+      "number": 96160,
+      "title": "[Bug]: Cron agentTurn jobs hang at model-call-started — isolated and persistent sessions, all providers, all settings",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96160"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@itsuzef",
+      "number": 96157,
+      "title": "fix(memory-core): clamp widen-fallback kNN k to sqlite-vec 4096 limit",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96157"
     },
     {
       "activity": 0,
@@ -17086,8 +17131,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96156,
-    "pr": 96155
+    "issue": 96168,
+    "pr": 96173
   },
   "schema_version": 1,
   "updated": "2026-06-24"

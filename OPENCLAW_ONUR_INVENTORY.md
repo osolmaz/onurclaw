@@ -4,14 +4,19 @@ Updated: 2026-06-24
 
 Review watermark:
 
-- Last reviewed through issue: #96156.
-- Last reviewed through PR: #96155.
+- Last reviewed through issue: #96168.
+- Last reviewed through PR: #96173.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96173](https://github.com/openclaw/openclaw/pull/96173) | 2026-06-23 | 0 | Local model runtime | @SnoutFirst | Add local-realtime-voice extension (gateway-relay realtime voice/dictation) |
+| 🔀&nbsp;[#96167](https://github.com/openclaw/openclaw/pull/96167) | 2026-06-23 | 0 | Model routing/config | @natannobre | Guard overflow recovery retries |
+| 🔀&nbsp;[#96162](https://github.com/openclaw/openclaw/pull/96162) | 2026-06-23 | 0 | Local memory/embedding | @jalehman | refactor: use accessor-backed transcript corpus for memory |
+| 📝&nbsp;[#96160](https://github.com/openclaw/openclaw/issues/96160) | 2026-06-23 | 0 | Open-weight/provider behavior | @boa901012-droid | [Bug]: Cron agentTurn jobs hang at model-call-started — isolated and persistent sessions, all providers, all settings |
+| 🔀&nbsp;[#96157](https://github.com/openclaw/openclaw/pull/96157) | 2026-06-23 | 0 | Local memory/embedding | @itsuzef | fix(memory-core): clamp widen-fallback kNN k to sqlite-vec 4096 limit |
 | 🔀&nbsp;[#96152](https://github.com/openclaw/openclaw/pull/96152) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @xialonglee | fix(agent): emit model.usage diagnostic for HTTP ingress traffic |
 | 🔀&nbsp;[#96151](https://github.com/openclaw/openclaw/pull/96151) | 2026-06-23 | 0 | Model routing/config | @LZY3538 | fix(status): surface fallback model selections in status mismatch detection |
 | 📝&nbsp;[#96150](https://github.com/openclaw/openclaw/issues/96150) | 2026-06-23 | 0 | Model routing/config | @jimkuo2026-bit | [Feature Request] Auto-failover on invalid model selection |
@@ -57,13 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95962](https://github.com/openclaw/openclaw/pull/95962) | 2026-06-23 | 0 | Model routing/config | @ZacharyYW | fix(acpx): sessions_spawn fails for harnesses lacking model support |
 | 🔀&nbsp;[#95957](https://github.com/openclaw/openclaw/pull/95957) | 2026-06-23 | 0 | Model/provider behavior | @vincentkoc | improve: speed up provider tool-call streaming |
 | 🔀&nbsp;[#95951](https://github.com/openclaw/openclaw/pull/95951) | 2026-06-23 | 0 | Model routing/config | @chenyangjun-xy | fix(google): add google-gemini-cli auth alias and expand model runtime bindings |
-| 🔀&nbsp;[#95945](https://github.com/openclaw/openclaw/pull/95945) | 2026-06-23 | 0 | Model routing/config | @Papilionidae | fix(media): retry direct delivery when wake returns false after successful generation |
-| 🔀&nbsp;[#95943](https://github.com/openclaw/openclaw/pull/95943) | 2026-06-23 | 0 | Model routing/config | @ZengWen-DT | fix(cron): preserve provider/model on isolated-run timeout row |
-| 🔀&nbsp;[#95936](https://github.com/openclaw/openclaw/pull/95936) | 2026-06-23 | 0 | Local memory/embedding | @xmoxmo | feat(memory): shared memory store by directory binding |
-| 🔀&nbsp;[#95934](https://github.com/openclaw/openclaw/pull/95934) | 2026-06-23 | 0 | Open-weight/provider behavior | @idootop | fix(xiaomi): correct mimo-v2.5 and mimo-v2.5-pro max output tokens to 128K |
-| 🔀&nbsp;[#95929](https://github.com/openclaw/openclaw/pull/95929) | 2026-06-23 | 0 | Local memory/embedding | @Papilionidae | [AI] fix(memory-lancedb): expose memory ID in recall and add text-fal… |
 
-## OPEN THREADS (1366)
+## OPEN THREADS (1371)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1316 open threads, sorted by activity</summary>
+<summary>Remaining 1321 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,11 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96173](https://github.com/openclaw/openclaw/pull/96173) | 0 | Local model runtime | @SnoutFirst | Add local-realtime-voice extension (gateway-relay realtime voice/dictation) |
+| 🔀&nbsp;[#96167](https://github.com/openclaw/openclaw/pull/96167) | 0 | Model routing/config | @natannobre | Guard overflow recovery retries |
+| 🔀&nbsp;[#96162](https://github.com/openclaw/openclaw/pull/96162) | 0 | Local memory/embedding | @jalehman | refactor: use accessor-backed transcript corpus for memory |
+| 📝&nbsp;[#96160](https://github.com/openclaw/openclaw/issues/96160) | 0 | Open-weight/provider behavior | @boa901012-droid | [Bug]: Cron agentTurn jobs hang at model-call-started — isolated and persistent sessions, all providers, all settings |
+| 🔀&nbsp;[#96157](https://github.com/openclaw/openclaw/pull/96157) | 0 | Local memory/embedding | @itsuzef | fix(memory-core): clamp widen-fallback kNN k to sqlite-vec 4096 limit |
 | 🔀&nbsp;[#96152](https://github.com/openclaw/openclaw/pull/96152) | 0 | OpenAI-compatible/proxy | @xialonglee | fix(agent): emit model.usage diagnostic for HTTP ingress traffic |
 | 🔀&nbsp;[#96151](https://github.com/openclaw/openclaw/pull/96151) | 0 | Model routing/config | @LZY3538 | fix(status): surface fallback model selections in status mismatch detection |
 | 📝&nbsp;[#96150](https://github.com/openclaw/openclaw/issues/96150) | 0 | Model routing/config | @jimkuo2026-bit | [Feature Request] Auto-failover on invalid model selection |
@@ -2150,4 +2155,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1366 (496 issues, 870 PRs).
+- Kept open threads: 1371 (497 issues, 874 PRs).
