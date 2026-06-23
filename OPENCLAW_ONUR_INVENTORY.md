@@ -1,17 +1,29 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-23
+Updated: 2026-06-24
 
 Review watermark:
 
-- Last reviewed through issue: #96118.
-- Last reviewed through PR: #96124.
+- Last reviewed through issue: #96156.
+- Last reviewed through PR: #96155.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96152](https://github.com/openclaw/openclaw/pull/96152) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @xialonglee | fix(agent): emit model.usage diagnostic for HTTP ingress traffic |
+| 🔀&nbsp;[#96151](https://github.com/openclaw/openclaw/pull/96151) | 2026-06-23 | 0 | Model routing/config | @LZY3538 | fix(status): surface fallback model selections in status mismatch detection |
+| 📝&nbsp;[#96150](https://github.com/openclaw/openclaw/issues/96150) | 2026-06-23 | 0 | Model routing/config | @jimkuo2026-bit | [Feature Request] Auto-failover on invalid model selection |
+| 🔀&nbsp;[#96144](https://github.com/openclaw/openclaw/pull/96144) | 2026-06-23 | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound OpenAI video submitted response reads |
+| 🔀&nbsp;[#96142](https://github.com/openclaw/openclaw/pull/96142) | 2026-06-23 | 0 | Model routing/config | @brokemac79 | fix(failover): fallback on replay-safe prompt timeouts |
+| 🔀&nbsp;[#96136](https://github.com/openclaw/openclaw/pull/96136) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(image-generation): bound OpenAI-compatible image response reads |
+| 📝&nbsp;[#96135](https://github.com/openclaw/openclaw/issues/96135) | 2026-06-23 | 0 | Local/media model provider | @kAIborg24 | [Bug]: OAuth-backed OpenAI batch audio transcription no longer works after provider migration |
+| 🔀&nbsp;[#96132](https://github.com/openclaw/openclaw/pull/96132) | 2026-06-23 | 0 | Local memory/embedding | @yetval | fix(memory-core): keep live reindex of reset/deleted session archives |
+| 📝&nbsp;[#96131](https://github.com/openclaw/openclaw/issues/96131) | 2026-06-23 | 0 | Model routing/config | @thank-you9527 | [Bug]: OpenClaw 2026.6.9 Discord + OpenAI Route Regression Report |
+| 🔀&nbsp;[#96129](https://github.com/openclaw/openclaw/pull/96129) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @crh-code | fix: correct loopback address detection across multiple subsystems |
+| 🔀&nbsp;[#96127](https://github.com/openclaw/openclaw/pull/96127) | 2026-06-23 | 0 | Local model runtime | @hanZeng-08 | fix(tool-search): normalize flattened target-tool args for tool_call |
+| 📝&nbsp;[#96126](https://github.com/openclaw/openclaw/issues/96126) | 2026-06-23 | 0 | Model routing/config | @nblue1-ui | [openclaw status] Model field should distinguish base model from active fallback |
 | 🔀&nbsp;[#96122](https://github.com/openclaw/openclaw/pull/96122) | 2026-06-23 | 0 | Local model runtime | @qingminglong | docs(gateway): document high-memory local Ollama compaction tuning |
 | 📝&nbsp;[#96118](https://github.com/openclaw/openclaw/issues/96118) | 2026-06-23 | 0 | Local memory/embedding | @olveww-dot | [6.9 Regression] Dreaming runs but memory never promotes + Dreams UI shows dash |
 | 📝&nbsp;[#96116](https://github.com/openclaw/openclaw/issues/96116) | 2026-06-23 | 0 | Local memory/embedding | @lucassosatidre | memory index: openclaw memory index --force exits early without processing full backlog, no error logged |
@@ -50,20 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95936](https://github.com/openclaw/openclaw/pull/95936) | 2026-06-23 | 0 | Local memory/embedding | @xmoxmo | feat(memory): shared memory store by directory binding |
 | 🔀&nbsp;[#95934](https://github.com/openclaw/openclaw/pull/95934) | 2026-06-23 | 0 | Open-weight/provider behavior | @idootop | fix(xiaomi): correct mimo-v2.5 and mimo-v2.5-pro max output tokens to 128K |
 | 🔀&nbsp;[#95929](https://github.com/openclaw/openclaw/pull/95929) | 2026-06-23 | 0 | Local memory/embedding | @Papilionidae | [AI] fix(memory-lancedb): expose memory ID in recall and add text-fal… |
-| 🔀&nbsp;[#95926](https://github.com/openclaw/openclaw/pull/95926) | 2026-06-23 | 0 | Local/media model provider | @wangmiao0668000666 | fix(media-understanding): append actionable install hint when a media provider is missing (#95658) |
-| 🔀&nbsp;[#95916](https://github.com/openclaw/openclaw/pull/95916) | 2026-06-23 | 0 | Local memory/embedding | @vincentkoc | fix(memory): improve node:sqlite unavailable guidance |
-| 🔀&nbsp;[#95912](https://github.com/openclaw/openclaw/pull/95912) | 2026-06-23 | 0 | Model/provider behavior | @arkyu2077 | fix: ignore reasoning-only heartbeat ack blocks |
-| 📝&nbsp;[#95910](https://github.com/openclaw/openclaw/issues/95910) | 2026-06-23 | 0 | Model routing/config | @wangwllu | follow-up to #86034: wake-false path bypasses direct media fallback (Hypothesis B) |
-| 🔀&nbsp;[#95906](https://github.com/openclaw/openclaw/pull/95906) | 2026-06-23 | 0 | Model routing/config | @ZengWen-DT | fix(code-mode): surface QuickJS error name and message to the model |
-| 📝&nbsp;[#95904](https://github.com/openclaw/openclaw/issues/95904) | 2026-06-23 | 0 | Model routing/config | @buyuangtampan | [Bug]: Non-Codex fallback models fail code-mode tool calls with internal_error in 2026.6.9 |
-| 🔀&nbsp;[#95897](https://github.com/openclaw/openclaw/pull/95897) | 2026-06-23 | 0 | Model/provider behavior | @HHanWu | fix(heartbeat-filter): preserve HEARTBEAT_OK detection with reasoning/thinking blocks |
-| 🔀&nbsp;[#95896](https://github.com/openclaw/openclaw/pull/95896) | 2026-06-23 | 0 | Model routing/config | @HHanWu | fix(model-catalog): stripPrefixes over-strips when prefix has whitespace |
-| 📝&nbsp;[#95891](https://github.com/openclaw/openclaw/issues/95891) | 2026-06-23 | 0 | Open-weight/provider behavior | @DemonGiggle | [Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path |
-| 🔀&nbsp;[#95877](https://github.com/openclaw/openclaw/pull/95877) | 2026-06-22 | 0 | Model routing/config | @giodl73-repo | Add hosted catalog snapshot fallback |
-| 📝&nbsp;[#95875](https://github.com/openclaw/openclaw/issues/95875) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | Codex-backed cron runs can appear as canonical openai/openai-chatgpt-responses in transcript metadata, obscuring actual harness selection |
-| 📝&nbsp;[#95874](https://github.com/openclaw/openclaw/issues/95874) | 2026-06-22 | 0 | Model routing/config | @luke-renjoy | openclaw cron edit has --model but no --clear-model, so payload.model cannot be removed via the supported CLI |
 
-## OPEN THREADS (1354)
+## OPEN THREADS (1366)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1304 open threads, sorted by activity</summary>
+<summary>Remaining 1316 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,18 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96152](https://github.com/openclaw/openclaw/pull/96152) | 0 | OpenAI-compatible/proxy | @xialonglee | fix(agent): emit model.usage diagnostic for HTTP ingress traffic |
+| 🔀&nbsp;[#96151](https://github.com/openclaw/openclaw/pull/96151) | 0 | Model routing/config | @LZY3538 | fix(status): surface fallback model selections in status mismatch detection |
+| 📝&nbsp;[#96150](https://github.com/openclaw/openclaw/issues/96150) | 0 | Model routing/config | @jimkuo2026-bit | [Feature Request] Auto-failover on invalid model selection |
+| 🔀&nbsp;[#96144](https://github.com/openclaw/openclaw/pull/96144) | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound OpenAI video submitted response reads |
+| 🔀&nbsp;[#96142](https://github.com/openclaw/openclaw/pull/96142) | 0 | Model routing/config | @brokemac79 | fix(failover): fallback on replay-safe prompt timeouts |
+| 🔀&nbsp;[#96136](https://github.com/openclaw/openclaw/pull/96136) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(image-generation): bound OpenAI-compatible image response reads |
+| 📝&nbsp;[#96135](https://github.com/openclaw/openclaw/issues/96135) | 0 | Local/media model provider | @kAIborg24 | [Bug]: OAuth-backed OpenAI batch audio transcription no longer works after provider migration |
+| 🔀&nbsp;[#96132](https://github.com/openclaw/openclaw/pull/96132) | 0 | Local memory/embedding | @yetval | fix(memory-core): keep live reindex of reset/deleted session archives |
+| 📝&nbsp;[#96131](https://github.com/openclaw/openclaw/issues/96131) | 0 | Model routing/config | @thank-you9527 | [Bug]: OpenClaw 2026.6.9 Discord + OpenAI Route Regression Report |
+| 🔀&nbsp;[#96129](https://github.com/openclaw/openclaw/pull/96129) | 0 | OpenAI-compatible/proxy | @crh-code | fix: correct loopback address detection across multiple subsystems |
+| 🔀&nbsp;[#96127](https://github.com/openclaw/openclaw/pull/96127) | 0 | Local model runtime | @hanZeng-08 | fix(tool-search): normalize flattened target-tool args for tool_call |
+| 📝&nbsp;[#96126](https://github.com/openclaw/openclaw/issues/96126) | 0 | Model routing/config | @nblue1-ui | [openclaw status] Model field should distinguish base model from active fallback |
 | 🔀&nbsp;[#96122](https://github.com/openclaw/openclaw/pull/96122) | 0 | Local model runtime | @qingminglong | docs(gateway): document high-memory local Ollama compaction tuning |
 | 📝&nbsp;[#96118](https://github.com/openclaw/openclaw/issues/96118) | 0 | Local memory/embedding | @olveww-dot | [6.9 Regression] Dreaming runs but memory never promotes + Dreams UI shows dash |
 | 📝&nbsp;[#96116](https://github.com/openclaw/openclaw/issues/96116) | 0 | Local memory/embedding | @lucassosatidre | memory index: openclaw memory index --force exits early without processing full backlog, no error logged |
@@ -2138,4 +2150,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1354 (492 issues, 862 PRs).
+- Kept open threads: 1366 (496 issues, 870 PRs).

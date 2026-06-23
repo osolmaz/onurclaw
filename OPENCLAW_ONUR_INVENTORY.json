@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 492,
-    "open_prs": 862,
-    "open_threads": 1354
+    "open_issues": 496,
+    "open_prs": 870,
+    "open_threads": 1366
   },
   "open_threads": [
     {
@@ -5860,6 +5860,114 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@xialonglee",
+      "number": 96152,
+      "title": "fix(agent): emit model.usage diagnostic for HTTP ingress traffic",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96152"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@LZY3538",
+      "number": 96151,
+      "title": "fix(status): surface fallback model selections in status mismatch detection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96151"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jimkuo2026-bit",
+      "number": 96150,
+      "title": "[Feature Request] Auto-failover on invalid model selection",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96150"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wangmiao0668000666",
+      "number": 96144,
+      "title": "fix(video-generation): bound OpenAI video submitted response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96144"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@brokemac79",
+      "number": 96142,
+      "title": "fix(failover): fallback on replay-safe prompt timeouts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96142"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 96136,
+      "title": "fix(image-generation): bound OpenAI-compatible image response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96136"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@kAIborg24",
+      "number": 96135,
+      "title": "[Bug]: OAuth-backed OpenAI batch audio transcription no longer works after provider migration",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yetval",
+      "number": 96132,
+      "title": "fix(memory-core): keep live reindex of reset/deleted session archives",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96132"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@thank-you9527",
+      "number": 96131,
+      "title": "[Bug]: OpenClaw 2026.6.9 Discord + OpenAI Route Regression Report",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96131"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@crh-code",
+      "number": 96129,
+      "title": "fix: correct loopback address detection across multiple subsystems",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96129"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@hanZeng-08",
+      "number": 96127,
+      "title": "fix(tool-search): normalize flattened target-tool args for tool_call",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96127"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@nblue1-ui",
+      "number": 96126,
+      "title": "[openclaw status] Model field should distinguish base model from active fallback",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96126"
     },
     {
       "activity": 0,
@@ -16978,9 +17086,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 96118,
-    "pr": 96124
+    "issue": 96156,
+    "pr": 96155
   },
   "schema_version": 1,
-  "updated": "2026-06-23"
+  "updated": "2026-06-24"
 }
