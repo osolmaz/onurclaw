@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 486,
-    "open_prs": 841,
-    "open_threads": 1327
+    "open_prs": 847,
+    "open_threads": 1333
   },
   "open_threads": [
     {
@@ -5860,6 +5860,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Alix-007",
+      "number": 96042,
+      "title": "fix(lmstudio): bound model load success response body to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96042"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@krissding",
+      "number": 96041,
+      "title": "fix: classify upstream provider errors as server_error to enable fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96041"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wangmiao0668000666",
+      "number": 96036,
+      "title": "fix(video-generation): bound dashscope task response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96036"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Alix-007",
+      "number": 96027,
+      "title": "fix(ollama): bound model-discovery JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96027"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@pengxuewu-lab",
+      "number": 96021,
+      "title": "fix: heartbeat filter ignores reasoning/thinking blocks in HEARTBEAT_OK detection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96021"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Darren2030",
+      "number": 96010,
+      "title": "fix(codex): stamp transcript messages with explicit harness field (#95875)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96010"
     },
     {
       "activity": 0,
@@ -16735,8 +16789,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 95985,
-    "pr": 95996
+    "issue": 96023,
+    "pr": 96045
   },
   "schema_version": 1,
   "updated": "2026-06-23"

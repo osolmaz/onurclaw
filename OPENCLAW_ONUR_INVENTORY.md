@@ -4,14 +4,20 @@ Updated: 2026-06-23
 
 Review watermark:
 
-- Last reviewed through issue: #95985.
-- Last reviewed through PR: #95996.
+- Last reviewed through issue: #96023.
+- Last reviewed through PR: #96045.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96042](https://github.com/openclaw/openclaw/pull/96042) | 2026-06-23 | 0 | Local model runtime | @Alix-007 | fix(lmstudio): bound model load success response body to prevent OOM |
+| 🔀&nbsp;[#96041](https://github.com/openclaw/openclaw/pull/96041) | 2026-06-23 | 0 | Model routing/config | @krissding | fix: classify upstream provider errors as server_error to enable fallback |
+| 🔀&nbsp;[#96036](https://github.com/openclaw/openclaw/pull/96036) | 2026-06-23 | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound dashscope task response reads |
+| 🔀&nbsp;[#96027](https://github.com/openclaw/openclaw/pull/96027) | 2026-06-23 | 0 | Local model runtime | @Alix-007 | fix(ollama): bound model-discovery JSON response reads |
+| 🔀&nbsp;[#96021](https://github.com/openclaw/openclaw/pull/96021) | 2026-06-23 | 0 | Model/provider behavior | @pengxuewu-lab | fix: heartbeat filter ignores reasoning/thinking blocks in HEARTBEAT_OK detection |
+| 🔀&nbsp;[#96010](https://github.com/openclaw/openclaw/pull/96010) | 2026-06-23 | 0 | Model routing/config | @Darren2030 | fix(codex): stamp transcript messages with explicit harness field (#95875) |
 | 🔀&nbsp;[#95981](https://github.com/openclaw/openclaw/pull/95981) | 2026-06-23 | 0 | Model routing/config | @giodl73-repo | Add hosted catalog config profiles |
 | 🔀&nbsp;[#95969](https://github.com/openclaw/openclaw/pull/95969) | 2026-06-23 | 0 | Model routing/config | @giodl73-repo | Add hosted catalog source profile validation |
 | 🔀&nbsp;[#95964](https://github.com/openclaw/openclaw/pull/95964) | 2026-06-23 | 0 | Model routing/config | @giodl73-repo | Persist hosted catalog snapshots in state |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#95798](https://github.com/openclaw/openclaw/pull/95798) | 2026-06-22 | 0 | Model/provider behavior | @hanZeng-08 | fix(heartbeat): allow reasoning/thinking blocks in heartbeat ack filt… |
 | 📝&nbsp;[#95796](https://github.com/openclaw/openclaw/issues/95796) | 2026-06-22 | 0 | Model/provider behavior | @DinoMC | [Bug]: Heartbeat transcript filtering ignores HEARTBEAT_OK when assistant message contains reasoning/thinking block |
 | 🔀&nbsp;[#95792](https://github.com/openclaw/openclaw/pull/95792) | 2026-06-22 | 0 | Open-weight/provider behavior | @snowzlmbot | fix(onboard): refresh provider plugin registry after setup installs |
-| 🔀&nbsp;[#95791](https://github.com/openclaw/openclaw/pull/95791) | 2026-06-22 | 0 | Local memory/embedding | @vincentkoc | fix(session-memory): sanitize model artifacts before saving memory |
-| 📝&nbsp;[#95789](https://github.com/openclaw/openclaw/issues/95789) | 2026-06-22 | 0 | Model routing/config | @neo-megacity | 2026.6.8: subagent spawn helper export change and stale cron model migration gap |
-| 📝&nbsp;[#95788](https://github.com/openclaw/openclaw/issues/95788) | 2026-06-22 | 0 | OpenAI-compatible/proxy | @FLAT-HAT | [Bug]: OpenAI Responses server compaction config is read but not emitted on chatgpt-responses request path |
-| 🔀&nbsp;[#95786](https://github.com/openclaw/openclaw/pull/95786) | 2026-06-22 | 0 | Local memory/embedding | @esqandil | feat(memory-core): make memory_search tool timeout configurable |
-| 📝&nbsp;[#95784](https://github.com/openclaw/openclaw/issues/95784) | 2026-06-22 | 0 | Local model runtime | @BryceMurray | [Bug]: onIsolatedAgentSetupTimeout triggers full-process gateway restart on event-loop saturation — destroys in-flight work and re-enters the same saturation on next tick (2026.6.9) |
-| 📝&nbsp;[#95780](https://github.com/openclaw/openclaw/issues/95780) | 2026-06-22 | 0 | Model routing/config | @jpplaisted | [Bug]: ACP spawn of `codex` injects default model id (`gemini-3.1-flash-lite`) into the thinking-level slot |
 
-## OPEN THREADS (1327)
+## OPEN THREADS (1333)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1277 open threads, sorted by activity</summary>
+<summary>Remaining 1283 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96042](https://github.com/openclaw/openclaw/pull/96042) | 0 | Local model runtime | @Alix-007 | fix(lmstudio): bound model load success response body to prevent OOM |
+| 🔀&nbsp;[#96041](https://github.com/openclaw/openclaw/pull/96041) | 0 | Model routing/config | @krissding | fix: classify upstream provider errors as server_error to enable fallback |
+| 🔀&nbsp;[#96036](https://github.com/openclaw/openclaw/pull/96036) | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound dashscope task response reads |
+| 🔀&nbsp;[#96027](https://github.com/openclaw/openclaw/pull/96027) | 0 | Local model runtime | @Alix-007 | fix(ollama): bound model-discovery JSON response reads |
+| 🔀&nbsp;[#96021](https://github.com/openclaw/openclaw/pull/96021) | 0 | Model/provider behavior | @pengxuewu-lab | fix: heartbeat filter ignores reasoning/thinking blocks in HEARTBEAT_OK detection |
+| 🔀&nbsp;[#96010](https://github.com/openclaw/openclaw/pull/96010) | 0 | Model routing/config | @Darren2030 | fix(codex): stamp transcript messages with explicit harness field (#95875) |
 | 🔀&nbsp;[#95981](https://github.com/openclaw/openclaw/pull/95981) | 0 | Model routing/config | @giodl73-repo | Add hosted catalog config profiles |
 | 🔀&nbsp;[#95969](https://github.com/openclaw/openclaw/pull/95969) | 0 | Model routing/config | @giodl73-repo | Add hosted catalog source profile validation |
 | 🔀&nbsp;[#95964](https://github.com/openclaw/openclaw/pull/95964) | 0 | Model routing/config | @giodl73-repo | Persist hosted catalog snapshots in state |
@@ -2111,4 +2117,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1327 (486 issues, 841 PRs).
+- Kept open threads: 1333 (486 issues, 847 PRs).
