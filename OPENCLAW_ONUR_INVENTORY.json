@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 514,
-    "open_prs": 933,
-    "open_threads": 1447
+    "open_issues": 515,
+    "open_prs": 934,
+    "open_threads": 1449
   },
   "open_threads": [
     {
@@ -5860,6 +5860,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@harjothkhara",
+      "number": 96568,
+      "title": "fix(media): forward scanned PDF page images in chat turns",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96568"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bek91",
+      "number": 96561,
+      "title": "Reduce QMD memory search wrapper overhead in CLI and tool paths",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96561"
     },
     {
       "activity": 0,
@@ -17816,8 +17834,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96553,
-    "pr": 96554
+    "issue": 96564,
+    "pr": 96578
   },
   "schema_version": 1,
   "updated": "2026-06-25"

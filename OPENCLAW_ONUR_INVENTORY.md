@@ -4,14 +4,16 @@ Updated: 2026-06-25
 
 Review watermark:
 
-- Last reviewed through issue: #96553.
-- Last reviewed through PR: #96554.
+- Last reviewed through issue: #96564.
+- Last reviewed through PR: #96578.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96568](https://github.com/openclaw/openclaw/pull/96568) | 2026-06-24 | 0 | Local/media model provider | @harjothkhara | fix(media): forward scanned PDF page images in chat turns |
+| 📝&nbsp;[#96561](https://github.com/openclaw/openclaw/issues/96561) | 2026-06-24 | 0 | Local memory/embedding | @bek91 | Reduce QMD memory search wrapper overhead in CLI and tool paths |
 | 🔀&nbsp;[#96544](https://github.com/openclaw/openclaw/pull/96544) | 2026-06-24 | 0 | Model routing/config | @yetval | fix(doctor): merge colliding model-ref map keys instead of dropping |
 | 📝&nbsp;[#96541](https://github.com/openclaw/openclaw/issues/96541) | 2026-06-24 | 0 | Local/media model provider | @yetval | [Bug]: scanned / image-only PDFs are silently dropped on chat channels (rendered page images extracted then discarded) |
 | 📝&nbsp;[#96534](https://github.com/openclaw/openclaw/issues/96534) | 2026-06-24 | 0 | Local memory/embedding | @cknzraposo | memory_search latches fallback embedding model after provider outage; only full restart recovers (soft reload insufficient) |
@@ -60,10 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96325](https://github.com/openclaw/openclaw/pull/96325) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @Kambrian | Add custom image provider plugin |
 | 🔀&nbsp;[#96324](https://github.com/openclaw/openclaw/pull/96324) | 2026-06-24 | 0 | Local/media model provider | @lsr911 | fix(google): bound JSON response reads to prevent OOM |
 | 🔀&nbsp;[#96323](https://github.com/openclaw/openclaw/pull/96323) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(openai): bound JSON/text response reads to prevent OOM |
-| 🔀&nbsp;[#96322](https://github.com/openclaw/openclaw/pull/96322) | 2026-06-24 | 0 | Local/media model provider | @lsr911 | fix(minimax): bound JSON response reads to prevent OOM |
-| 🔀&nbsp;[#96321](https://github.com/openclaw/openclaw/pull/96321) | 2026-06-24 | 0 | Local/media model provider | @lsr911 | fix(fal): bound JSON response reads to prevent OOM |
 
-## OPEN THREADS (1447)
+## OPEN THREADS (1449)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1397 open threads, sorted by activity</summary>
+<summary>Remaining 1399 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,8 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96568](https://github.com/openclaw/openclaw/pull/96568) | 0 | Local/media model provider | @harjothkhara | fix(media): forward scanned PDF page images in chat turns |
+| 📝&nbsp;[#96561](https://github.com/openclaw/openclaw/issues/96561) | 0 | Local memory/embedding | @bek91 | Reduce QMD memory search wrapper overhead in CLI and tool paths |
 | 🔀&nbsp;[#96544](https://github.com/openclaw/openclaw/pull/96544) | 0 | Model routing/config | @yetval | fix(doctor): merge colliding model-ref map keys instead of dropping |
 | 📝&nbsp;[#96541](https://github.com/openclaw/openclaw/issues/96541) | 0 | Local/media model provider | @yetval | [Bug]: scanned / image-only PDFs are silently dropped on chat channels (rendered page images extracted then discarded) |
 | 📝&nbsp;[#96534](https://github.com/openclaw/openclaw/issues/96534) | 0 | Local memory/embedding | @cknzraposo | memory_search latches fallback embedding model after provider outage; only full restart recovers (soft reload insufficient) |
@@ -2231,4 +2233,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1447 (514 issues, 933 PRs).
+- Kept open threads: 1449 (515 issues, 934 PRs).
