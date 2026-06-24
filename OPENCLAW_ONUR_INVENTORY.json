@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 502,
-    "open_prs": 903,
-    "open_threads": 1405
+    "open_issues": 503,
+    "open_prs": 907,
+    "open_threads": 1410
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hugenshen",
+      "number": 96372,
+      "title": "fix(agents): classify upstream_error as fallbackable to harden model fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96372"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xydt-tanshanshan",
+      "number": 96368,
+      "title": "[AI] fix(model): /model &lt;default&gt; writes override when session runs non-default model",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96368"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@SushantGautam",
+      "number": 96364,
+      "title": "Treat HTTP 530 as transient failover timeout",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96364"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yyc-git",
+      "number": 96355,
+      "title": "[Bug]: memory_search tool fails on subsequent queries after cold start (index metadata is missing)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96355"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@lsr911",
+      "number": 96354,
+      "title": "fix(vydra,xai,runway,pixverse,deepinfra,together,elevenlabs,microsoft): bound JSON response reads to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96354"
     },
     {
       "activity": 0,
@@ -17438,8 +17483,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96343,
-    "pr": 96345
+    "issue": 96363,
+    "pr": 96372
   },
   "schema_version": 1,
   "updated": "2026-06-24"
