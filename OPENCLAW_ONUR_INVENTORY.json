@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 507,
-    "open_prs": 916,
-    "open_threads": 1423
+    "open_issues": 510,
+    "open_prs": 922,
+    "open_threads": 1432
   },
   "open_threads": [
     {
@@ -5860,6 +5860,87 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@googlerest",
+      "number": 96498,
+      "title": "fix(ollama): stop forcing tool_calls.arguments back to an object on the openai-completions path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96498"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@54meteor",
+      "number": 96497,
+      "title": "[Bug]: openai-completions SSE parser double-prefixes data: causing JSON parse failures",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96497"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@hugenshen",
+      "number": 96496,
+      "title": "fix(speech): bound TTS/STT voice-list and transcription JSON responses",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96496"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@hugenshen",
+      "number": 96495,
+      "title": "fix(image-gen): bound image generation provider JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96495"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hugenshen",
+      "number": 96480,
+      "title": "fix(agents): bound model catalog JSON response reads for bedrock-mantle and huggingface",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96480"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@849261680",
+      "number": 96474,
+      "title": "fix: Ollama Cloud tool calls fail on second turn",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96474"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@harjothkhara",
+      "number": 96473,
+      "title": "fix(ollama): Ollama Cloud tool calls fail after first turn",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96473"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@Azz1",
+      "number": 96472,
+      "title": "Bug: Ollama tool_calls.function.arguments sent as object instead of string (regression in 2026.6.10)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96472"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jackmtl71",
+      "number": 96467,
+      "title": "openclaw models status --probe: wallclock dominated by /v1/messages completion call; --probe-timeout not honored",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96467"
     },
     {
       "activity": 0,
@@ -17600,9 +17681,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 96463,
-    "pr": 96466
+    "issue": 96497,
+    "pr": 96498
   },
   "schema_version": 1,
-  "updated": "2026-06-24"
+  "updated": "2026-06-25"
 }

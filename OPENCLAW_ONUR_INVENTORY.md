@@ -1,17 +1,26 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-24
+Updated: 2026-06-25
 
 Review watermark:
 
-- Last reviewed through issue: #96463.
-- Last reviewed through PR: #96466.
+- Last reviewed through issue: #96497.
+- Last reviewed through PR: #96498.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96498](https://github.com/openclaw/openclaw/pull/96498) | 2026-06-24 | 0 | Local model runtime | @googlerest | fix(ollama): stop forcing tool_calls.arguments back to an object on the openai-completions path |
+| 📝&nbsp;[#96497](https://github.com/openclaw/openclaw/issues/96497) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @54meteor | [Bug]: openai-completions SSE parser double-prefixes data: causing JSON parse failures |
+| 🔀&nbsp;[#96496](https://github.com/openclaw/openclaw/pull/96496) | 2026-06-24 | 0 | Local/media model provider | @hugenshen | fix(speech): bound TTS/STT voice-list and transcription JSON responses |
+| 🔀&nbsp;[#96495](https://github.com/openclaw/openclaw/pull/96495) | 2026-06-24 | 0 | Local/media model provider | @hugenshen | fix(image-gen): bound image generation provider JSON response reads |
+| 🔀&nbsp;[#96480](https://github.com/openclaw/openclaw/pull/96480) | 2026-06-24 | 0 | Model routing/config | @hugenshen | fix(agents): bound model catalog JSON response reads for bedrock-mantle and huggingface |
+| 🔀&nbsp;[#96474](https://github.com/openclaw/openclaw/pull/96474) | 2026-06-24 | 0 | Local model runtime | @849261680 | fix: Ollama Cloud tool calls fail on second turn |
+| 🔀&nbsp;[#96473](https://github.com/openclaw/openclaw/pull/96473) | 2026-06-24 | 0 | Local model runtime | @harjothkhara | fix(ollama): Ollama Cloud tool calls fail after first turn |
+| 📝&nbsp;[#96472](https://github.com/openclaw/openclaw/issues/96472) | 2026-06-24 | 0 | Local model runtime | @Azz1 | Bug: Ollama tool_calls.function.arguments sent as object instead of string (regression in 2026.6.10) |
+| 📝&nbsp;[#96467](https://github.com/openclaw/openclaw/issues/96467) | 2026-06-24 | 0 | Model routing/config | @jackmtl71 | openclaw models status --probe: wallclock dominated by /v1/messages completion call; --probe-timeout not honored |
 | 🔀&nbsp;[#96465](https://github.com/openclaw/openclaw/pull/96465) | 2026-06-24 | 0 | Local memory/embedding | @ShibukiZero | fix(memory): separate active-memory resource release from manager close |
 | 📝&nbsp;[#96463](https://github.com/openclaw/openclaw/issues/96463) | 2026-06-24 | 0 | Local model runtime | @bazhang1618 | [Bug]: Usage always 0 for custom OpenAI-compatible provider when using embedded runner (--local) |
 | 🔀&nbsp;[#96461](https://github.com/openclaw/openclaw/pull/96461) | 2026-06-24 | 0 | Local model runtime | @ly85206559 | fix: preserve flattened tool call arguments |
@@ -53,17 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96257](https://github.com/openclaw/openclaw/pull/96257) | 2026-06-24 | 0 | Model routing/config | @yetval | fix(config): name openai-chatgpt-responses for the removed openai-codex-responses api id |
 | 📝&nbsp;[#96254](https://github.com/openclaw/openclaw/issues/96254) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @TZJ12 | [Bug]: openclaw内部tool的toolcall信息返回 |
 | 🔀&nbsp;[#96253](https://github.com/openclaw/openclaw/pull/96253) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @cxbAsDev | fix(plugins): bound OpenAI-compatible embeddings JSON response reads |
-| 🔀&nbsp;[#96249](https://github.com/openclaw/openclaw/pull/96249) | 2026-06-24 | 0 | Open-weight/provider behavior | @wangmiao0668000666 | fix(chutes-oauth): bound Chutes OAuth JSON response reads |
-| 🔀&nbsp;[#96248](https://github.com/openclaw/openclaw/pull/96248) | 2026-06-24 | 0 | Local/media model provider | @cxbAsDev | fix(video-generation): bound DashScope JSON response reads |
-| 🔀&nbsp;[#96245](https://github.com/openclaw/openclaw/pull/96245) | 2026-06-24 | 0 | Model routing/config | @arkyu2077 | fix(fallback): treat upstream_error as fallbackable |
-| 🔀&nbsp;[#96238](https://github.com/openclaw/openclaw/pull/96238) | 2026-06-24 | 0 | Model routing/config | @hanZeng-08 | fix(auth): restore OAuth-backed OpenAI batch audio transcription |
-| 🔀&nbsp;[#96227](https://github.com/openclaw/openclaw/pull/96227) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @zw-xysk | fix(diagnostics): emit model.usage for HTTP ingress traffic |
-| 🔀&nbsp;[#96196](https://github.com/openclaw/openclaw/pull/96196) | 2026-06-23 | 0 | Model routing/config | @markoub | fix: run fallback models on upstream provider errors |
-| 🔀&nbsp;[#96193](https://github.com/openclaw/openclaw/pull/96193) | 2026-06-23 | 0 | Local memory/embedding | @jalehman | fix(memory-core): migrate dreaming cleanup lifecycle |
-| 🔀&nbsp;[#96184](https://github.com/openclaw/openclaw/pull/96184) | 2026-06-23 | 0 | Local memory/embedding | @rm0nroe | fix(memory): large legacy memory index stalls and restarts instead of finishing |
-| 🔀&nbsp;[#96180](https://github.com/openclaw/openclaw/pull/96180) | 2026-06-23 | 0 | Model routing/config | @Kenmege | fix: models status auth, browser local-file nav, codex workspace app-server, tui empty sessions |
 
-## OPEN THREADS (1423)
+## OPEN THREADS (1432)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1373 open threads, sorted by activity</summary>
+<summary>Remaining 1382 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,15 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96498](https://github.com/openclaw/openclaw/pull/96498) | 0 | Local model runtime | @googlerest | fix(ollama): stop forcing tool_calls.arguments back to an object on the openai-completions path |
+| 📝&nbsp;[#96497](https://github.com/openclaw/openclaw/issues/96497) | 0 | OpenAI-compatible/proxy | @54meteor | [Bug]: openai-completions SSE parser double-prefixes data: causing JSON parse failures |
+| 🔀&nbsp;[#96496](https://github.com/openclaw/openclaw/pull/96496) | 0 | Local/media model provider | @hugenshen | fix(speech): bound TTS/STT voice-list and transcription JSON responses |
+| 🔀&nbsp;[#96495](https://github.com/openclaw/openclaw/pull/96495) | 0 | Local/media model provider | @hugenshen | fix(image-gen): bound image generation provider JSON response reads |
+| 🔀&nbsp;[#96480](https://github.com/openclaw/openclaw/pull/96480) | 0 | Model routing/config | @hugenshen | fix(agents): bound model catalog JSON response reads for bedrock-mantle and huggingface |
+| 🔀&nbsp;[#96474](https://github.com/openclaw/openclaw/pull/96474) | 0 | Local model runtime | @849261680 | fix: Ollama Cloud tool calls fail on second turn |
+| 🔀&nbsp;[#96473](https://github.com/openclaw/openclaw/pull/96473) | 0 | Local model runtime | @harjothkhara | fix(ollama): Ollama Cloud tool calls fail after first turn |
+| 📝&nbsp;[#96472](https://github.com/openclaw/openclaw/issues/96472) | 0 | Local model runtime | @Azz1 | Bug: Ollama tool_calls.function.arguments sent as object instead of string (regression in 2026.6.10) |
+| 📝&nbsp;[#96467](https://github.com/openclaw/openclaw/issues/96467) | 0 | Model routing/config | @jackmtl71 | openclaw models status --probe: wallclock dominated by /v1/messages completion call; --probe-timeout not honored |
 | 🔀&nbsp;[#96465](https://github.com/openclaw/openclaw/pull/96465) | 0 | Local memory/embedding | @ShibukiZero | fix(memory): separate active-memory resource release from manager close |
 | 📝&nbsp;[#96463](https://github.com/openclaw/openclaw/issues/96463) | 0 | Local model runtime | @bazhang1618 | [Bug]: Usage always 0 for custom OpenAI-compatible provider when using embedded runner (--local) |
 | 🔀&nbsp;[#96461](https://github.com/openclaw/openclaw/pull/96461) | 0 | Local model runtime | @ly85206559 | fix: preserve flattened tool call arguments |
@@ -2207,4 +2216,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1423 (507 issues, 916 PRs).
+- Kept open threads: 1432 (510 issues, 922 PRs).
