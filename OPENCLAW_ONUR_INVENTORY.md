@@ -4,14 +4,17 @@ Updated: 2026-06-25
 
 Review watermark:
 
-- Last reviewed through issue: #96525.
-- Last reviewed through PR: #96532.
+- Last reviewed through issue: #96553.
+- Last reviewed through PR: #96554.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96544](https://github.com/openclaw/openclaw/pull/96544) | 2026-06-24 | 0 | Model routing/config | @yetval | fix(doctor): merge colliding model-ref map keys instead of dropping |
+| 📝&nbsp;[#96541](https://github.com/openclaw/openclaw/issues/96541) | 2026-06-24 | 0 | Local/media model provider | @yetval | [Bug]: scanned / image-only PDFs are silently dropped on chat channels (rendered page images extracted then discarded) |
+| 📝&nbsp;[#96534](https://github.com/openclaw/openclaw/issues/96534) | 2026-06-24 | 0 | Local memory/embedding | @cknzraposo | memory_search latches fallback embedding model after provider outage; only full restart recovers (soft reload insufficient) |
 | 🔀&nbsp;[#96529](https://github.com/openclaw/openclaw/pull/96529) | 2026-06-24 | 0 | Model routing/config | @ZengWen-DT | fix(cron): engage model fallback on embedded result-level failures (reasoning-only / empty / incomplete_turn) |
 | 🔀&nbsp;[#96526](https://github.com/openclaw/openclaw/pull/96526) | 2026-06-24 | 0 | Model/provider behavior | @lin-hongkuan | fix(opencode-go): treat stream block boundaries as liveness |
 | 📝&nbsp;[#96525](https://github.com/openclaw/openclaw/issues/96525) | 2026-06-24 | 0 | Model routing/config | @yetval | [Bug]: isolated cron model-fallback chain never engages on result-level failures (reasoning-only / empty / incomplete_turn), silently dropping the answer |
@@ -59,11 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96323](https://github.com/openclaw/openclaw/pull/96323) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(openai): bound JSON/text response reads to prevent OOM |
 | 🔀&nbsp;[#96322](https://github.com/openclaw/openclaw/pull/96322) | 2026-06-24 | 0 | Local/media model provider | @lsr911 | fix(minimax): bound JSON response reads to prevent OOM |
 | 🔀&nbsp;[#96321](https://github.com/openclaw/openclaw/pull/96321) | 2026-06-24 | 0 | Local/media model provider | @lsr911 | fix(fal): bound JSON response reads to prevent OOM |
-| 🔀&nbsp;[#96318](https://github.com/openclaw/openclaw/pull/96318) | 2026-06-24 | 0 | Model routing/config | @SunnyShu0925 | fix(model-overrides): set liveModelSwitchPending when switching to default model with runtime fields mismatch |
-| 🔀&nbsp;[#96304](https://github.com/openclaw/openclaw/pull/96304) | 2026-06-24 | 0 | Local memory/embedding | @ly-wang19 | fix(memory-core): keep short protected-glossary terms past the min-length gate |
-| 🔀&nbsp;[#96293](https://github.com/openclaw/openclaw/pull/96293) | 2026-06-24 | 0 | Model routing/config | @ZengWen-DT | fix(cron): clear agentTurn thinking override by blanking the field |
 
-## OPEN THREADS (1444)
+## OPEN THREADS (1447)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1394 open threads, sorted by activity</summary>
+<summary>Remaining 1397 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96544](https://github.com/openclaw/openclaw/pull/96544) | 0 | Model routing/config | @yetval | fix(doctor): merge colliding model-ref map keys instead of dropping |
+| 📝&nbsp;[#96541](https://github.com/openclaw/openclaw/issues/96541) | 0 | Local/media model provider | @yetval | [Bug]: scanned / image-only PDFs are silently dropped on chat channels (rendered page images extracted then discarded) |
+| 📝&nbsp;[#96534](https://github.com/openclaw/openclaw/issues/96534) | 0 | Local memory/embedding | @cknzraposo | memory_search latches fallback embedding model after provider outage; only full restart recovers (soft reload insufficient) |
 | 🔀&nbsp;[#96529](https://github.com/openclaw/openclaw/pull/96529) | 0 | Model routing/config | @ZengWen-DT | fix(cron): engage model fallback on embedded result-level failures (reasoning-only / empty / incomplete_turn) |
 | 🔀&nbsp;[#96526](https://github.com/openclaw/openclaw/pull/96526) | 0 | Model/provider behavior | @lin-hongkuan | fix(opencode-go): treat stream block boundaries as liveness |
 | 📝&nbsp;[#96525](https://github.com/openclaw/openclaw/issues/96525) | 0 | Model routing/config | @yetval | [Bug]: isolated cron model-fallback chain never engages on result-level failures (reasoning-only / empty / incomplete_turn), silently dropping the answer |
@@ -2228,4 +2231,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1444 (512 issues, 932 PRs).
+- Kept open threads: 1447 (514 issues, 933 PRs).

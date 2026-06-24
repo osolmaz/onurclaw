@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 512,
-    "open_prs": 932,
-    "open_threads": 1444
+    "open_issues": 514,
+    "open_prs": 933,
+    "open_threads": 1447
   },
   "open_threads": [
     {
@@ -5860,6 +5860,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yetval",
+      "number": 96544,
+      "title": "fix(doctor): merge colliding model-ref map keys instead of dropping",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96544"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@yetval",
+      "number": 96541,
+      "title": "[Bug]: scanned / image-only PDFs are silently dropped on chat channels (rendered page images extracted then discarded)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96541"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@cknzraposo",
+      "number": 96534,
+      "title": "memory_search latches fallback embedding model after provider outage; only full restart recovers (soft reload insufficient)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96534"
     },
     {
       "activity": 0,
@@ -17789,8 +17816,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96525,
-    "pr": 96532
+    "issue": 96553,
+    "pr": 96554
   },
   "schema_version": 1,
   "updated": "2026-06-25"
