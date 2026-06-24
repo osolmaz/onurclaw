@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 503,
-    "open_prs": 907,
-    "open_threads": 1410
+    "open_issues": 504,
+    "open_prs": 911,
+    "open_threads": 1415
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lin-hongkuan",
+      "number": 96426,
+      "title": "fix(model-catalog): normalize manifest alias keys",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96426"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@outdog-hwh",
+      "number": 96425,
+      "title": "feat(bedrock): enable prompt caching for Nova models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96425"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@ZengWen-DT",
+      "number": 96390,
+      "title": "fix(document-extract): render PDF image fallback per page so multi-page scans don't starve later pages",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96390"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@cls3389",
+      "number": 96389,
+      "title": "document-extract fallback mode: \"images\" renders multi-page scanned PDFs to 1x1 pixels due to clawpdf 4M pixel budget",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96389"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@SebConejo",
+      "number": 96388,
+      "title": "feat: add Manifest LLM router provider plugin",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96388"
     },
     {
       "activity": 0,
@@ -17483,8 +17528,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96363,
-    "pr": 96372
+    "issue": 96389,
+    "pr": 96426
   },
   "schema_version": 1,
   "updated": "2026-06-24"

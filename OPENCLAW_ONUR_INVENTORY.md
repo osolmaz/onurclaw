@@ -4,14 +4,19 @@ Updated: 2026-06-24
 
 Review watermark:
 
-- Last reviewed through issue: #96363.
-- Last reviewed through PR: #96372.
+- Last reviewed through issue: #96389.
+- Last reviewed through PR: #96426.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96426](https://github.com/openclaw/openclaw/pull/96426) | 2026-06-24 | 0 | Model routing/config | @lin-hongkuan | fix(model-catalog): normalize manifest alias keys |
+| 🔀&nbsp;[#96425](https://github.com/openclaw/openclaw/pull/96425) | 2026-06-24 | 0 | Model/provider behavior | @outdog-hwh | feat(bedrock): enable prompt caching for Nova models |
+| 🔀&nbsp;[#96390](https://github.com/openclaw/openclaw/pull/96390) | 2026-06-24 | 0 | Local/media model provider | @ZengWen-DT | fix(document-extract): render PDF image fallback per page so multi-page scans don't starve later pages |
+| 📝&nbsp;[#96389](https://github.com/openclaw/openclaw/issues/96389) | 2026-06-24 | 0 | Local/media model provider | @cls3389 | document-extract fallback mode: "images" renders multi-page scanned PDFs to 1x1 pixels due to clawpdf 4M pixel budget |
+| 🔀&nbsp;[#96388](https://github.com/openclaw/openclaw/pull/96388) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @SebConejo | feat: add Manifest LLM router provider plugin |
 | 🔀&nbsp;[#96372](https://github.com/openclaw/openclaw/pull/96372) | 2026-06-24 | 0 | Model routing/config | @hugenshen | fix(agents): classify upstream_error as fallbackable to harden model fallback |
 | 🔀&nbsp;[#96368](https://github.com/openclaw/openclaw/pull/96368) | 2026-06-24 | 0 | Model routing/config | @xydt-tanshanshan | [AI] fix(model): /model &lt;default&gt; writes override when session runs non-default model |
 | 🔀&nbsp;[#96364](https://github.com/openclaw/openclaw/pull/96364) | 2026-06-24 | 0 | Model routing/config | @SushantGautam | Treat HTTP 530 as transient failover timeout |
@@ -57,13 +62,8 @@ Review watermark:
 | 📝&nbsp;[#96160](https://github.com/openclaw/openclaw/issues/96160) | 2026-06-23 | 0 | Open-weight/provider behavior | @boa901012-droid | [Bug]: Cron agentTurn jobs hang at model-call-started — isolated and persistent sessions, all providers, all settings |
 | 🔀&nbsp;[#96157](https://github.com/openclaw/openclaw/pull/96157) | 2026-06-23 | 0 | Local memory/embedding | @itsuzef | fix(memory-core): clamp widen-fallback kNN k to sqlite-vec 4096 limit |
 | 🔀&nbsp;[#96152](https://github.com/openclaw/openclaw/pull/96152) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @xialonglee | fix(agent): emit model.usage diagnostic for HTTP ingress traffic |
-| 🔀&nbsp;[#96151](https://github.com/openclaw/openclaw/pull/96151) | 2026-06-23 | 0 | Model routing/config | @LZY3538 | fix(status): surface fallback model selections in status mismatch detection |
-| 📝&nbsp;[#96150](https://github.com/openclaw/openclaw/issues/96150) | 2026-06-23 | 0 | Model routing/config | @jimkuo2026-bit | [Feature Request] Auto-failover on invalid model selection |
-| 🔀&nbsp;[#96144](https://github.com/openclaw/openclaw/pull/96144) | 2026-06-23 | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound OpenAI video submitted response reads |
-| 🔀&nbsp;[#96142](https://github.com/openclaw/openclaw/pull/96142) | 2026-06-23 | 0 | Model routing/config | @brokemac79 | fix(failover): fallback on replay-safe prompt timeouts |
-| 🔀&nbsp;[#96136](https://github.com/openclaw/openclaw/pull/96136) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(image-generation): bound OpenAI-compatible image response reads |
 
-## OPEN THREADS (1410)
+## OPEN THREADS (1415)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1360 open threads, sorted by activity</summary>
+<summary>Remaining 1365 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,11 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96426](https://github.com/openclaw/openclaw/pull/96426) | 0 | Model routing/config | @lin-hongkuan | fix(model-catalog): normalize manifest alias keys |
+| 🔀&nbsp;[#96425](https://github.com/openclaw/openclaw/pull/96425) | 0 | Model/provider behavior | @outdog-hwh | feat(bedrock): enable prompt caching for Nova models |
+| 🔀&nbsp;[#96390](https://github.com/openclaw/openclaw/pull/96390) | 0 | Local/media model provider | @ZengWen-DT | fix(document-extract): render PDF image fallback per page so multi-page scans don't starve later pages |
+| 📝&nbsp;[#96389](https://github.com/openclaw/openclaw/issues/96389) | 0 | Local/media model provider | @cls3389 | document-extract fallback mode: "images" renders multi-page scanned PDFs to 1x1 pixels due to clawpdf 4M pixel budget |
+| 🔀&nbsp;[#96388](https://github.com/openclaw/openclaw/pull/96388) | 0 | OpenAI-compatible/proxy | @SebConejo | feat: add Manifest LLM router provider plugin |
 | 🔀&nbsp;[#96372](https://github.com/openclaw/openclaw/pull/96372) | 0 | Model routing/config | @hugenshen | fix(agents): classify upstream_error as fallbackable to harden model fallback |
 | 🔀&nbsp;[#96368](https://github.com/openclaw/openclaw/pull/96368) | 0 | Model routing/config | @xydt-tanshanshan | [AI] fix(model): /model &lt;default&gt; writes override when session runs non-default model |
 | 🔀&nbsp;[#96364](https://github.com/openclaw/openclaw/pull/96364) | 0 | Model routing/config | @SushantGautam | Treat HTTP 530 as transient failover timeout |
@@ -2194,4 +2199,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1410 (503 issues, 907 PRs).
+- Kept open threads: 1415 (504 issues, 911 PRs).
