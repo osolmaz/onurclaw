@@ -4,14 +4,24 @@ Updated: 2026-06-24
 
 Review watermark:
 
-- Last reviewed through issue: #96254.
-- Last reviewed through PR: #96258.
+- Last reviewed through issue: #96292.
+- Last reviewed through PR: #96293.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96293](https://github.com/openclaw/openclaw/pull/96293) | 2026-06-24 | 0 | Model routing/config | @ZengWen-DT | fix(cron): clear agentTurn thinking override by blanking the field |
+| 🔀&nbsp;[#96291](https://github.com/openclaw/openclaw/pull/96291) | 2026-06-24 | 0 | Local memory/embedding | @AdrianIp0204 | [codex] Bound memory flush append payloads |
+| 🔀&nbsp;[#96288](https://github.com/openclaw/openclaw/pull/96288) | 2026-06-24 | 0 | Model/provider behavior | @ly-wang19 | fix(model-param-b): match both adjacent &lt;num&gt;b tokens sharing one delimiter |
+| 📝&nbsp;[#96287](https://github.com/openclaw/openclaw/issues/96287) | 2026-06-24 | 0 | Model routing/config | @takamasa-aiso | Bug: Cron Control UI cannot clear saved agentTurn model/thinking overrides by blanking fields |
+| 🔀&nbsp;[#96285](https://github.com/openclaw/openclaw/pull/96285) | 2026-06-24 | 0 | Open-weight/provider behavior | @idootop | feat(xiaomi): expose MiMo V2.5 on pay-as-you-go and default to mimo-v2.5-pro |
+| 📝&nbsp;[#96269](https://github.com/openclaw/openclaw/issues/96269) | 2026-06-24 | 0 | Model routing/config | @zuoshaoye | Bug: /model silently fails when switching to default model while running a different model |
+| 🔀&nbsp;[#96264](https://github.com/openclaw/openclaw/pull/96264) | 2026-06-24 | 0 | Local/media model provider | @cxbAsDev | fix(minimax-vlm): bound VLM API response reads |
+| 🔀&nbsp;[#96262](https://github.com/openclaw/openclaw/pull/96262) | 2026-06-24 | 0 | Open-weight/provider behavior | @cxbAsDev | fix(chutes): bound OAuth token exchange and userinfo JSON response reads |
+| 🔀&nbsp;[#96261](https://github.com/openclaw/openclaw/pull/96261) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @cxbAsDev | fix(image-generation): bound OpenAI-compatible image API response reads |
+| 🔀&nbsp;[#96260](https://github.com/openclaw/openclaw/pull/96260) | 2026-06-24 | 0 | Model routing/config | @harjothkhara | fix(agents): fallback on embedded upstream errors |
 | 🔀&nbsp;[#96257](https://github.com/openclaw/openclaw/pull/96257) | 2026-06-24 | 0 | Model routing/config | @yetval | fix(config): name openai-chatgpt-responses for the removed openai-codex-responses api id |
 | 📝&nbsp;[#96254](https://github.com/openclaw/openclaw/issues/96254) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @TZJ12 | [Bug]: openclaw内部tool的toolcall信息返回 |
 | 🔀&nbsp;[#96253](https://github.com/openclaw/openclaw/pull/96253) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @cxbAsDev | fix(plugins): bound OpenAI-compatible embeddings JSON response reads |
@@ -52,18 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96110](https://github.com/openclaw/openclaw/pull/96110) | 2026-06-23 | 0 | Model routing/config | @whiteyzy | fix(failover): classify upstream_error as server_error to trigger model fallback |
 | 🔀&nbsp;[#96097](https://github.com/openclaw/openclaw/pull/96097) | 2026-06-23 | 0 | Local model runtime | @muhamedfazalps | fix: allow fallback on harness-owned timeouts when fallback is configured |
 | 🔀&nbsp;[#96096](https://github.com/openclaw/openclaw/pull/96096) | 2026-06-23 | 0 | Model routing/config | @849261680 | fix: cron stream stalls fail over before job timeout |
-| 🔀&nbsp;[#96094](https://github.com/openclaw/openclaw/pull/96094) | 2026-06-23 | 0 | Local memory/embedding | @849261680 | fix(memory): prove live manager recovery after CLI reindex |
-| 📝&nbsp;[#96093](https://github.com/openclaw/openclaw/issues/96093) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @rocke2020 | Diagnostics: no model.usage emitted for HTTP ingress (/v1/responses, /v1/chat/completions) — exporters blind to API traffic |
-| 🔀&nbsp;[#96092](https://github.com/openclaw/openclaw/pull/96092) | 2026-06-23 | 0 | Local memory/embedding | @SunnyShu0925 | fix(memory): schedule qmd embed when embedInterval is explicitly configured in lexical search mode |
-| 🔀&nbsp;[#96074](https://github.com/openclaw/openclaw/pull/96074) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @WSC741606 | fix(memory): pass request.proxy to embedding HTTP client for explicit… |
-| 🔀&nbsp;[#96073](https://github.com/openclaw/openclaw/pull/96073) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @wm0018 | feat(openshell): add non-secret env config for sandbox creation |
-| 🔀&nbsp;[#96070](https://github.com/openclaw/openclaw/pull/96070) | 2026-06-23 | 0 | Model routing/config | @SunnyShu0925 | fix(agents): enable bundled static catalog fallback for cron Attempt 2 |
-| 🔀&nbsp;[#96068](https://github.com/openclaw/openclaw/pull/96068) | 2026-06-23 | 0 | Model routing/config | @vincentkoc | fix(acpx): consume acpx 0.11.1 model capability errors |
-| 🔀&nbsp;[#96065](https://github.com/openclaw/openclaw/pull/96065) | 2026-06-23 | 0 | Model routing/config | @Darren2030 | fix(install): manage config-secretref env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
-| 🔀&nbsp;[#96059](https://github.com/openclaw/openclaw/pull/96059) | 2026-06-23 | 0 | Model routing/config | @Darren2030 | fix(install): manage auth-profile env refs via OPENCLAW_SERVICE_MANAGED_ENV_KEYS |
-| 🔀&nbsp;[#96052](https://github.com/openclaw/openclaw/pull/96052) | 2026-06-23 | 0 | Local memory/embedding | @Pick-cat | fix(memory-core): index memory path in FTS text for filename queries (fixes #94102) |
 
-## OPEN THREADS (1385)
+## OPEN THREADS (1395)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1335 open threads, sorted by activity</summary>
+<summary>Remaining 1345 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,16 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96293](https://github.com/openclaw/openclaw/pull/96293) | 0 | Model routing/config | @ZengWen-DT | fix(cron): clear agentTurn thinking override by blanking the field |
+| 🔀&nbsp;[#96291](https://github.com/openclaw/openclaw/pull/96291) | 0 | Local memory/embedding | @AdrianIp0204 | [codex] Bound memory flush append payloads |
+| 🔀&nbsp;[#96288](https://github.com/openclaw/openclaw/pull/96288) | 0 | Model/provider behavior | @ly-wang19 | fix(model-param-b): match both adjacent &lt;num&gt;b tokens sharing one delimiter |
+| 📝&nbsp;[#96287](https://github.com/openclaw/openclaw/issues/96287) | 0 | Model routing/config | @takamasa-aiso | Bug: Cron Control UI cannot clear saved agentTurn model/thinking overrides by blanking fields |
+| 🔀&nbsp;[#96285](https://github.com/openclaw/openclaw/pull/96285) | 0 | Open-weight/provider behavior | @idootop | feat(xiaomi): expose MiMo V2.5 on pay-as-you-go and default to mimo-v2.5-pro |
+| 📝&nbsp;[#96269](https://github.com/openclaw/openclaw/issues/96269) | 0 | Model routing/config | @zuoshaoye | Bug: /model silently fails when switching to default model while running a different model |
+| 🔀&nbsp;[#96264](https://github.com/openclaw/openclaw/pull/96264) | 0 | Local/media model provider | @cxbAsDev | fix(minimax-vlm): bound VLM API response reads |
+| 🔀&nbsp;[#96262](https://github.com/openclaw/openclaw/pull/96262) | 0 | Open-weight/provider behavior | @cxbAsDev | fix(chutes): bound OAuth token exchange and userinfo JSON response reads |
+| 🔀&nbsp;[#96261](https://github.com/openclaw/openclaw/pull/96261) | 0 | OpenAI-compatible/proxy | @cxbAsDev | fix(image-generation): bound OpenAI-compatible image API response reads |
+| 🔀&nbsp;[#96260](https://github.com/openclaw/openclaw/pull/96260) | 0 | Model routing/config | @harjothkhara | fix(agents): fallback on embedded upstream errors |
 | 🔀&nbsp;[#96257](https://github.com/openclaw/openclaw/pull/96257) | 0 | Model routing/config | @yetval | fix(config): name openai-chatgpt-responses for the removed openai-codex-responses api id |
 | 📝&nbsp;[#96254](https://github.com/openclaw/openclaw/issues/96254) | 0 | OpenAI-compatible/proxy | @TZJ12 | [Bug]: openclaw内部tool的toolcall信息返回 |
 | 🔀&nbsp;[#96253](https://github.com/openclaw/openclaw/pull/96253) | 0 | OpenAI-compatible/proxy | @cxbAsDev | fix(plugins): bound OpenAI-compatible embeddings JSON response reads |
@@ -2169,4 +2179,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1385 (498 issues, 887 PRs).
+- Kept open threads: 1395 (500 issues, 895 PRs).

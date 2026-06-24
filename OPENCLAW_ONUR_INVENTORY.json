@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 498,
-    "open_prs": 887,
-    "open_threads": 1385
+    "open_issues": 500,
+    "open_prs": 895,
+    "open_threads": 1395
   },
   "open_threads": [
     {
@@ -5860,6 +5860,96 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ZengWen-DT",
+      "number": 96293,
+      "title": "fix(cron): clear agentTurn thinking override by blanking the field",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96293"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@AdrianIp0204",
+      "number": 96291,
+      "title": "[codex] Bound memory flush append payloads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96291"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@ly-wang19",
+      "number": 96288,
+      "title": "fix(model-param-b): match both adjacent &lt;num&gt;b tokens sharing one delimiter",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96288"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@takamasa-aiso",
+      "number": 96287,
+      "title": "Bug: Cron Control UI cannot clear saved agentTurn model/thinking overrides by blanking fields",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96287"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@idootop",
+      "number": 96285,
+      "title": "feat(xiaomi): expose MiMo V2.5 on pay-as-you-go and default to mimo-v2.5-pro",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96285"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zuoshaoye",
+      "number": 96269,
+      "title": "Bug: /model silently fails when switching to default model while running a different model",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96269"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@cxbAsDev",
+      "number": 96264,
+      "title": "fix(minimax-vlm): bound VLM API response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96264"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@cxbAsDev",
+      "number": 96262,
+      "title": "fix(chutes): bound OAuth token exchange and userinfo JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96262"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@cxbAsDev",
+      "number": 96261,
+      "title": "fix(image-generation): bound OpenAI-compatible image API response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96261"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@harjothkhara",
+      "number": 96260,
+      "title": "fix(agents): fallback on embedded upstream errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96260"
     },
     {
       "activity": 0,
@@ -17257,8 +17347,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96254,
-    "pr": 96258
+    "issue": 96292,
+    "pr": 96293
   },
   "schema_version": 1,
   "updated": "2026-06-24"
