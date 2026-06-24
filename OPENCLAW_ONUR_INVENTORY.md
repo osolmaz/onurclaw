@@ -4,14 +4,15 @@ Updated: 2026-06-24
 
 Review watermark:
 
-- Last reviewed through issue: #96209.
-- Last reviewed through PR: #96208.
+- Last reviewed through issue: #96228.
+- Last reviewed through PR: #96234.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96227](https://github.com/openclaw/openclaw/pull/96227) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @zw-xysk | fix(diagnostics): emit model.usage for HTTP ingress traffic |
 | 🔀&nbsp;[#96196](https://github.com/openclaw/openclaw/pull/96196) | 2026-06-23 | 0 | Model routing/config | @markoub | fix: run fallback models on upstream provider errors |
 | 🔀&nbsp;[#96193](https://github.com/openclaw/openclaw/pull/96193) | 2026-06-23 | 0 | Local memory/embedding | @jalehman | fix(memory-core): migrate dreaming cleanup lifecycle |
 | 🔀&nbsp;[#96184](https://github.com/openclaw/openclaw/pull/96184) | 2026-06-23 | 0 | Local memory/embedding | @rm0nroe | fix(memory): large legacy memory index stalls and restarts instead of finishing |
@@ -61,9 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96036](https://github.com/openclaw/openclaw/pull/96036) | 2026-06-23 | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound dashscope task response reads |
 | 🔀&nbsp;[#96027](https://github.com/openclaw/openclaw/pull/96027) | 2026-06-23 | 0 | Local model runtime | @Alix-007 | fix(ollama): bound model-discovery JSON response reads |
 | 🔀&nbsp;[#96021](https://github.com/openclaw/openclaw/pull/96021) | 2026-06-23 | 0 | Model/provider behavior | @pengxuewu-lab | fix: heartbeat filter ignores reasoning/thinking blocks in HEARTBEAT_OK detection |
-| 🔀&nbsp;[#96010](https://github.com/openclaw/openclaw/pull/96010) | 2026-06-23 | 0 | Model routing/config | @Darren2030 | fix(codex): stamp transcript messages with explicit harness field (#95875) |
 
-## OPEN THREADS (1377)
+## OPEN THREADS (1378)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1327 open threads, sorted by activity</summary>
+<summary>Remaining 1328 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,7 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96227](https://github.com/openclaw/openclaw/pull/96227) | 0 | OpenAI-compatible/proxy | @zw-xysk | fix(diagnostics): emit model.usage for HTTP ingress traffic |
 | 🔀&nbsp;[#96196](https://github.com/openclaw/openclaw/pull/96196) | 0 | Model routing/config | @markoub | fix: run fallback models on upstream provider errors |
 | 🔀&nbsp;[#96193](https://github.com/openclaw/openclaw/pull/96193) | 0 | Local memory/embedding | @jalehman | fix(memory-core): migrate dreaming cleanup lifecycle |
 | 🔀&nbsp;[#96184](https://github.com/openclaw/openclaw/pull/96184) | 0 | Local memory/embedding | @rm0nroe | fix(memory): large legacy memory index stalls and restarts instead of finishing |
@@ -2161,4 +2162,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1377 (497 issues, 880 PRs).
+- Kept open threads: 1378 (497 issues, 881 PRs).

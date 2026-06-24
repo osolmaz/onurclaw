@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 497,
-    "open_prs": 880,
-    "open_threads": 1377
+    "open_prs": 881,
+    "open_threads": 1378
   },
   "open_threads": [
     {
@@ -5860,6 +5860,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@zw-xysk",
+      "number": 96227,
+      "title": "fix(diagnostics): emit model.usage for HTTP ingress traffic",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96227"
     },
     {
       "activity": 0,
@@ -17185,8 +17194,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96209,
-    "pr": 96208
+    "issue": 96228,
+    "pr": 96234
   },
   "schema_version": 1,
   "updated": "2026-06-24"
