@@ -4,14 +4,15 @@ Updated: 2026-06-24
 
 Review watermark:
 
-- Last reviewed through issue: #96292.
-- Last reviewed through PR: #96293.
+- Last reviewed through issue: #96313.
+- Last reviewed through PR: #96315.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96304](https://github.com/openclaw/openclaw/pull/96304) | 2026-06-24 | 0 | Local memory/embedding | @ly-wang19 | fix(memory-core): keep short protected-glossary terms past the min-length gate |
 | 🔀&nbsp;[#96293](https://github.com/openclaw/openclaw/pull/96293) | 2026-06-24 | 0 | Model routing/config | @ZengWen-DT | fix(cron): clear agentTurn thinking override by blanking the field |
 | 🔀&nbsp;[#96291](https://github.com/openclaw/openclaw/pull/96291) | 2026-06-24 | 0 | Local memory/embedding | @AdrianIp0204 | [codex] Bound memory flush append payloads |
 | 🔀&nbsp;[#96288](https://github.com/openclaw/openclaw/pull/96288) | 2026-06-24 | 0 | Model/provider behavior | @ly-wang19 | fix(model-param-b): match both adjacent &lt;num&gt;b tokens sharing one delimiter |
@@ -61,9 +62,8 @@ Review watermark:
 | 📝&nbsp;[#96111](https://github.com/openclaw/openclaw/issues/96111) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @q719563786 | Improve custom provider configuration experience on Windows (4 issues: dual-registration docs, api field reference, schtasks ghost, gateway.cmd path) |
 | 🔀&nbsp;[#96110](https://github.com/openclaw/openclaw/pull/96110) | 2026-06-23 | 0 | Model routing/config | @whiteyzy | fix(failover): classify upstream_error as server_error to trigger model fallback |
 | 🔀&nbsp;[#96097](https://github.com/openclaw/openclaw/pull/96097) | 2026-06-23 | 0 | Local model runtime | @muhamedfazalps | fix: allow fallback on harness-owned timeouts when fallback is configured |
-| 🔀&nbsp;[#96096](https://github.com/openclaw/openclaw/pull/96096) | 2026-06-23 | 0 | Model routing/config | @849261680 | fix: cron stream stalls fail over before job timeout |
 
-## OPEN THREADS (1395)
+## OPEN THREADS (1396)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1345 open threads, sorted by activity</summary>
+<summary>Remaining 1346 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,7 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96304](https://github.com/openclaw/openclaw/pull/96304) | 0 | Local memory/embedding | @ly-wang19 | fix(memory-core): keep short protected-glossary terms past the min-length gate |
 | 🔀&nbsp;[#96293](https://github.com/openclaw/openclaw/pull/96293) | 0 | Model routing/config | @ZengWen-DT | fix(cron): clear agentTurn thinking override by blanking the field |
 | 🔀&nbsp;[#96291](https://github.com/openclaw/openclaw/pull/96291) | 0 | Local memory/embedding | @AdrianIp0204 | [codex] Bound memory flush append payloads |
 | 🔀&nbsp;[#96288](https://github.com/openclaw/openclaw/pull/96288) | 0 | Model/provider behavior | @ly-wang19 | fix(model-param-b): match both adjacent &lt;num&gt;b tokens sharing one delimiter |
@@ -2179,4 +2180,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1395 (500 issues, 895 PRs).
+- Kept open threads: 1396 (500 issues, 896 PRs).

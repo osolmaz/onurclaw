@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 500,
-    "open_prs": 895,
-    "open_threads": 1395
+    "open_prs": 896,
+    "open_threads": 1396
   },
   "open_threads": [
     {
@@ -5860,6 +5860,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ly-wang19",
+      "number": 96304,
+      "title": "fix(memory-core): keep short protected-glossary terms past the min-length gate",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96304"
     },
     {
       "activity": 0,
@@ -17347,8 +17356,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96292,
-    "pr": 96293
+    "issue": 96313,
+    "pr": 96315
   },
   "schema_version": 1,
   "updated": "2026-06-24"
