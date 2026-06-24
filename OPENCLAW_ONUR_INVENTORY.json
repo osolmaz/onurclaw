@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 497,
-    "open_prs": 881,
-    "open_threads": 1378
+    "open_issues": 498,
+    "open_prs": 887,
+    "open_threads": 1385
   },
   "open_threads": [
     {
@@ -5860,6 +5860,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yetval",
+      "number": 96257,
+      "title": "fix(config): name openai-chatgpt-responses for the removed openai-codex-responses api id",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96257"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@TZJ12",
+      "number": 96254,
+      "title": "[Bug]: openclaw内部tool的toolcall信息返回",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96254"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@cxbAsDev",
+      "number": 96253,
+      "title": "fix(plugins): bound OpenAI-compatible embeddings JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96253"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@wangmiao0668000666",
+      "number": 96249,
+      "title": "fix(chutes-oauth): bound Chutes OAuth JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96249"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@cxbAsDev",
+      "number": 96248,
+      "title": "fix(video-generation): bound DashScope JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96248"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@arkyu2077",
+      "number": 96245,
+      "title": "fix(fallback): treat upstream_error as fallbackable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96245"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hanZeng-08",
+      "number": 96238,
+      "title": "fix(auth): restore OAuth-backed OpenAI batch audio transcription",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96238"
     },
     {
       "activity": 0,
@@ -17194,8 +17257,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96228,
-    "pr": 96234
+    "issue": 96254,
+    "pr": 96258
   },
   "schema_version": 1,
   "updated": "2026-06-24"
