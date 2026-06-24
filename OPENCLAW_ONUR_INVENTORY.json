@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 510,
-    "open_prs": 922,
-    "open_threads": 1432
+    "open_issues": 512,
+    "open_prs": 932,
+    "open_threads": 1444
   },
   "open_threads": [
     {
@@ -5860,6 +5860,114 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ZengWen-DT",
+      "number": 96529,
+      "title": "fix(cron): engage model fallback on embedded result-level failures (reasoning-only / empty / incomplete_turn)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96529"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@lin-hongkuan",
+      "number": 96526,
+      "title": "fix(opencode-go): treat stream block boundaries as liveness",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96526"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yetval",
+      "number": 96525,
+      "title": "[Bug]: isolated cron model-fallback chain never engages on result-level failures (reasoning-only / empty / incomplete_turn), silently dropping the answer",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96525"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ly85206559",
+      "number": 96523,
+      "title": "fix(agents): preserve embedded OpenAI completions usage",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96523"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@yetval",
+      "number": 96518,
+      "title": "[Bug]: opencode-go stalled-stream watchdog aborts a live stream and drops the completed answer (idle timer re-arms only on token deltas, not block-boundary events)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96518"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@jalehman",
+      "number": 96517,
+      "title": "fix(memory-core): route dreaming corpus through session metadata",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96517"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@googlerest",
+      "number": 96509,
+      "title": "fix(agents): classify upstream_error provider transport failures as fallbackable",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96509"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mushuiyu886",
+      "number": 96505,
+      "title": "fix(openrouter): bound video catalog JSON reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96505"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ZengWen-DT",
+      "number": 96503,
+      "title": "fix(openai): stop double-prefixing SSE bodies mislabeled as JSON",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96503"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@hugenshen",
+      "number": 96502,
+      "title": "fix(moonshot): bound video description JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96502"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@hugenshen",
+      "number": 96500,
+      "title": "fix(openrouter): bound video model catalog JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96500"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@hugenshen",
+      "number": 96499,
+      "title": "fix(github-copilot): bound model discovery and embeddings JSON response",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96499"
     },
     {
       "activity": 0,
@@ -17681,8 +17789,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96497,
-    "pr": 96498
+    "issue": 96525,
+    "pr": 96532
   },
   "schema_version": 1,
   "updated": "2026-06-25"
