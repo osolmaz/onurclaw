@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 500,
-    "open_prs": 896,
-    "open_threads": 1396
+    "open_issues": 502,
+    "open_prs": 903,
+    "open_threads": 1405
   },
   "open_threads": [
     {
@@ -5860,6 +5860,88 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "assignee": "vincentkoc",
+      "creator": "@vincentkoc",
+      "number": 96345,
+      "title": "feat(copilot): add BYOK provider parity",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96345"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@danieljimz",
+      "number": 96337,
+      "title": "[anthropic-vertex] route=native in 2026.6.10 causes non-visible-output for pure text responses (regression from proxy-like in 2026.6.8)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96337"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@krkln",
+      "number": 96328,
+      "title": "[Bug] openai-compatible embeddings: CLI and runtime compute different providerKey -> permanent \"index metadata is missing\"",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96328"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Kambrian",
+      "number": 96325,
+      "title": "Add custom image provider plugin",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96325"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@lsr911",
+      "number": 96324,
+      "title": "fix(google): bound JSON response reads to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96324"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lsr911",
+      "number": 96323,
+      "title": "fix(openai): bound JSON/text response reads to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96323"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@lsr911",
+      "number": 96322,
+      "title": "fix(minimax): bound JSON response reads to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96322"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@lsr911",
+      "number": 96321,
+      "title": "fix(fal): bound JSON response reads to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96321"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@SunnyShu0925",
+      "number": 96318,
+      "title": "fix(model-overrides): set liveModelSwitchPending when switching to default model with runtime fields mismatch",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96318"
     },
     {
       "activity": 0,
@@ -17356,8 +17438,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96313,
-    "pr": 96315
+    "issue": 96343,
+    "pr": 96345
   },
   "schema_version": 1,
   "updated": "2026-06-24"
