@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 504,
-    "open_prs": 911,
-    "open_threads": 1415
+    "open_issues": 507,
+    "open_prs": 916,
+    "open_threads": 1423
   },
   "open_threads": [
     {
@@ -5860,6 +5860,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ShibukiZero",
+      "number": 96465,
+      "title": "fix(memory): separate active-memory resource release from manager close",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96465"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@bazhang1618",
+      "number": 96463,
+      "title": "[Bug]: Usage always 0 for custom OpenAI-compatible provider when using embedded runner (--local)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96463"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@ly85206559",
+      "number": 96461,
+      "title": "fix: preserve flattened tool call arguments",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96461"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ZengWen-DT",
+      "number": 96459,
+      "title": "fix(memory): keep shared QMD manager alive on active-memory recall timeout",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96459"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Katerhong",
+      "number": 96457,
+      "title": "fix(auth): allow OpenAI OAuth tokens for audio transcription API",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96457"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ShibukiZero",
+      "number": 96455,
+      "title": "[Bug]: active-memory timeout closes shared QMD memory_search manager",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96455"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@EugeneClaw",
+      "number": 96441,
+      "title": "[Bug]: Ollama Cloud tool_calls fail on 2nd turn — arguments sent as JSON object instead of string (400 from Go server) — regression in 2026.6.9",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96441"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@lin-hongkuan",
+      "number": 96430,
+      "title": "fix(media-generation): preserve trimmed default model flag",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96430"
     },
     {
       "activity": 0,
@@ -17528,8 +17600,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96389,
-    "pr": 96426
+    "issue": 96463,
+    "pr": 96466
   },
   "schema_version": 1,
   "updated": "2026-06-24"

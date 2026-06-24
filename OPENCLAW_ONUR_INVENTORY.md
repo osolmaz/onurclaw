@@ -4,14 +4,22 @@ Updated: 2026-06-24
 
 Review watermark:
 
-- Last reviewed through issue: #96389.
-- Last reviewed through PR: #96426.
+- Last reviewed through issue: #96463.
+- Last reviewed through PR: #96466.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96465](https://github.com/openclaw/openclaw/pull/96465) | 2026-06-24 | 0 | Local memory/embedding | @ShibukiZero | fix(memory): separate active-memory resource release from manager close |
+| 📝&nbsp;[#96463](https://github.com/openclaw/openclaw/issues/96463) | 2026-06-24 | 0 | Local model runtime | @bazhang1618 | [Bug]: Usage always 0 for custom OpenAI-compatible provider when using embedded runner (--local) |
+| 🔀&nbsp;[#96461](https://github.com/openclaw/openclaw/pull/96461) | 2026-06-24 | 0 | Local model runtime | @ly85206559 | fix: preserve flattened tool call arguments |
+| 🔀&nbsp;[#96459](https://github.com/openclaw/openclaw/pull/96459) | 2026-06-24 | 0 | Local memory/embedding | @ZengWen-DT | fix(memory): keep shared QMD manager alive on active-memory recall timeout |
+| 🔀&nbsp;[#96457](https://github.com/openclaw/openclaw/pull/96457) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @Katerhong | fix(auth): allow OpenAI OAuth tokens for audio transcription API |
+| 📝&nbsp;[#96455](https://github.com/openclaw/openclaw/issues/96455) | 2026-06-24 | 0 | Local memory/embedding | @ShibukiZero | [Bug]: active-memory timeout closes shared QMD memory_search manager |
+| 📝&nbsp;[#96441](https://github.com/openclaw/openclaw/issues/96441) | 2026-06-24 | 0 | Open-weight/provider behavior | @EugeneClaw | [Bug]: Ollama Cloud tool_calls fail on 2nd turn — arguments sent as JSON object instead of string (400 from Go server) — regression in 2026.6.9 |
+| 🔀&nbsp;[#96430](https://github.com/openclaw/openclaw/pull/96430) | 2026-06-24 | 0 | Model/provider behavior | @lin-hongkuan | fix(media-generation): preserve trimmed default model flag |
 | 🔀&nbsp;[#96426](https://github.com/openclaw/openclaw/pull/96426) | 2026-06-24 | 0 | Model routing/config | @lin-hongkuan | fix(model-catalog): normalize manifest alias keys |
 | 🔀&nbsp;[#96425](https://github.com/openclaw/openclaw/pull/96425) | 2026-06-24 | 0 | Model/provider behavior | @outdog-hwh | feat(bedrock): enable prompt caching for Nova models |
 | 🔀&nbsp;[#96390](https://github.com/openclaw/openclaw/pull/96390) | 2026-06-24 | 0 | Local/media model provider | @ZengWen-DT | fix(document-extract): render PDF image fallback per page so multi-page scans don't starve later pages |
@@ -54,16 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96193](https://github.com/openclaw/openclaw/pull/96193) | 2026-06-23 | 0 | Local memory/embedding | @jalehman | fix(memory-core): migrate dreaming cleanup lifecycle |
 | 🔀&nbsp;[#96184](https://github.com/openclaw/openclaw/pull/96184) | 2026-06-23 | 0 | Local memory/embedding | @rm0nroe | fix(memory): large legacy memory index stalls and restarts instead of finishing |
 | 🔀&nbsp;[#96180](https://github.com/openclaw/openclaw/pull/96180) | 2026-06-23 | 0 | Model routing/config | @Kenmege | fix: models status auth, browser local-file nav, codex workspace app-server, tui empty sessions |
-| 🔀&nbsp;[#96177](https://github.com/openclaw/openclaw/pull/96177) | 2026-06-23 | 0 | Local memory/embedding | @ZacharyYW | fix(memory-wiki): wiki_apply errors when another page has bad frontmatter |
-| 🔀&nbsp;[#96175](https://github.com/openclaw/openclaw/pull/96175) | 2026-06-23 | 0 | Local memory/embedding | @mushuiyu886 | fix #96116: memory index: openclaw memory index --force exits early without processing full backlog, no error logged |
-| 🔀&nbsp;[#96173](https://github.com/openclaw/openclaw/pull/96173) | 2026-06-23 | 0 | Local model runtime | @SnoutFirst | Add local-realtime-voice extension (gateway-relay realtime voice/dictation) |
-| 🔀&nbsp;[#96167](https://github.com/openclaw/openclaw/pull/96167) | 2026-06-23 | 0 | Model routing/config | @natannobre | Guard overflow recovery retries |
-| 🔀&nbsp;[#96162](https://github.com/openclaw/openclaw/pull/96162) | 2026-06-23 | 0 | Local memory/embedding | @jalehman | refactor: use accessor-backed transcript corpus for memory |
-| 📝&nbsp;[#96160](https://github.com/openclaw/openclaw/issues/96160) | 2026-06-23 | 0 | Open-weight/provider behavior | @boa901012-droid | [Bug]: Cron agentTurn jobs hang at model-call-started — isolated and persistent sessions, all providers, all settings |
-| 🔀&nbsp;[#96157](https://github.com/openclaw/openclaw/pull/96157) | 2026-06-23 | 0 | Local memory/embedding | @itsuzef | fix(memory-core): clamp widen-fallback kNN k to sqlite-vec 4096 limit |
-| 🔀&nbsp;[#96152](https://github.com/openclaw/openclaw/pull/96152) | 2026-06-23 | 0 | OpenAI-compatible/proxy | @xialonglee | fix(agent): emit model.usage diagnostic for HTTP ingress traffic |
 
-## OPEN THREADS (1415)
+## OPEN THREADS (1423)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1365 open threads, sorted by activity</summary>
+<summary>Remaining 1373 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96465](https://github.com/openclaw/openclaw/pull/96465) | 0 | Local memory/embedding | @ShibukiZero | fix(memory): separate active-memory resource release from manager close |
+| 📝&nbsp;[#96463](https://github.com/openclaw/openclaw/issues/96463) | 0 | Local model runtime | @bazhang1618 | [Bug]: Usage always 0 for custom OpenAI-compatible provider when using embedded runner (--local) |
+| 🔀&nbsp;[#96461](https://github.com/openclaw/openclaw/pull/96461) | 0 | Local model runtime | @ly85206559 | fix: preserve flattened tool call arguments |
+| 🔀&nbsp;[#96459](https://github.com/openclaw/openclaw/pull/96459) | 0 | Local memory/embedding | @ZengWen-DT | fix(memory): keep shared QMD manager alive on active-memory recall timeout |
+| 🔀&nbsp;[#96457](https://github.com/openclaw/openclaw/pull/96457) | 0 | OpenAI-compatible/proxy | @Katerhong | fix(auth): allow OpenAI OAuth tokens for audio transcription API |
+| 📝&nbsp;[#96455](https://github.com/openclaw/openclaw/issues/96455) | 0 | Local memory/embedding | @ShibukiZero | [Bug]: active-memory timeout closes shared QMD memory_search manager |
+| 📝&nbsp;[#96441](https://github.com/openclaw/openclaw/issues/96441) | 0 | Open-weight/provider behavior | @EugeneClaw | [Bug]: Ollama Cloud tool_calls fail on 2nd turn — arguments sent as JSON object instead of string (400 from Go server) — regression in 2026.6.9 |
+| 🔀&nbsp;[#96430](https://github.com/openclaw/openclaw/pull/96430) | 0 | Model/provider behavior | @lin-hongkuan | fix(media-generation): preserve trimmed default model flag |
 | 🔀&nbsp;[#96426](https://github.com/openclaw/openclaw/pull/96426) | 0 | Model routing/config | @lin-hongkuan | fix(model-catalog): normalize manifest alias keys |
 | 🔀&nbsp;[#96425](https://github.com/openclaw/openclaw/pull/96425) | 0 | Model/provider behavior | @outdog-hwh | feat(bedrock): enable prompt caching for Nova models |
 | 🔀&nbsp;[#96390](https://github.com/openclaw/openclaw/pull/96390) | 0 | Local/media model provider | @ZengWen-DT | fix(document-extract): render PDF image fallback per page so multi-page scans don't starve later pages |
@@ -2199,4 +2207,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1415 (504 issues, 911 PRs).
+- Kept open threads: 1423 (507 issues, 916 PRs).
