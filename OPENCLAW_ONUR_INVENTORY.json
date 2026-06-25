@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 524,
-    "open_prs": 961,
-    "open_threads": 1485
+    "open_prs": 967,
+    "open_threads": 1491
   },
   "open_threads": [
     {
@@ -5860,6 +5860,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ajwan8998",
+      "number": 96717,
+      "title": "fix(openai-completions): avoid double-stringifying tool call arguments",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96717"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wanyongstar",
+      "number": 96706,
+      "title": "fix(media): forward scanned PDF page images as current-turn images",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96706"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@wangmiao0668000666",
+      "number": 96701,
+      "title": "fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96701"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@0xghost42",
+      "number": 96695,
+      "title": "fix(cron): classify result-level failures so the model fallback chain engages (#96525)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96695"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@TurboTheTurtle",
+      "number": 96690,
+      "title": "fix(media): forward scanned PDF page images",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96690"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@wangmiao0668000666",
+      "number": 96688,
+      "title": "fix(sdk): promote streaming-byte-guard to plugin-sdk + bound 4 core streaming reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96688"
     },
     {
       "activity": 0,
@@ -18158,8 +18212,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96681,
-    "pr": 96686
+    "issue": 96716,
+    "pr": 96719
   },
   "schema_version": 1,
   "updated": "2026-06-25"

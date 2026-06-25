@@ -4,14 +4,20 @@ Updated: 2026-06-25
 
 Review watermark:
 
-- Last reviewed through issue: #96681.
-- Last reviewed through PR: #96686.
+- Last reviewed through issue: #96716.
+- Last reviewed through PR: #96719.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96717](https://github.com/openclaw/openclaw/pull/96717) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @ajwan8998 | fix(openai-completions): avoid double-stringifying tool call arguments |
+| 🔀&nbsp;[#96706](https://github.com/openclaw/openclaw/pull/96706) | 2026-06-25 | 0 | Local/media model provider | @wanyongstar | fix(media): forward scanned PDF page images as current-turn images |
+| 🔀&nbsp;[#96701](https://github.com/openclaw/openclaw/pull/96701) | 2026-06-25 | 0 | Model/provider behavior | @wangmiao0668000666 | fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB |
+| 🔀&nbsp;[#96695](https://github.com/openclaw/openclaw/pull/96695) | 2026-06-25 | 0 | Model routing/config | @0xghost42 | fix(cron): classify result-level failures so the model fallback chain engages (#96525) |
+| 🔀&nbsp;[#96690](https://github.com/openclaw/openclaw/pull/96690) | 2026-06-25 | 0 | Local/media model provider | @TurboTheTurtle | fix(media): forward scanned PDF page images |
+| 🔀&nbsp;[#96688](https://github.com/openclaw/openclaw/pull/96688) | 2026-06-25 | 0 | Local model runtime | @wangmiao0668000666 | fix(sdk): promote streaming-byte-guard to plugin-sdk + bound 4 core streaming reads |
 | 🔀&nbsp;[#96686](https://github.com/openclaw/openclaw/pull/96686) | 2026-06-25 | 0 | Model routing/config | @openperf | fix(agents): isolated cron busts prompt prefix cache via per-run session id |
 | 🔀&nbsp;[#96683](https://github.com/openclaw/openclaw/pull/96683) | 2026-06-25 | 0 | Model routing/config | @zhangqueping | fix(model-resolver): use numeric-aware collation for alias/version sort |
 | 🔀&nbsp;[#96682](https://github.com/openclaw/openclaw/pull/96682) | 2026-06-25 | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
@@ -56,14 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96529](https://github.com/openclaw/openclaw/pull/96529) | 2026-06-24 | 0 | Model routing/config | @ZengWen-DT | fix(cron): engage model fallback on embedded result-level failures (reasoning-only / empty / incomplete_turn) |
 | 🔀&nbsp;[#96526](https://github.com/openclaw/openclaw/pull/96526) | 2026-06-24 | 0 | Model/provider behavior | @lin-hongkuan | fix(opencode-go): treat stream block boundaries as liveness |
 | 📝&nbsp;[#96525](https://github.com/openclaw/openclaw/issues/96525) | 2026-06-24 | 0 | Model routing/config | @yetval | [Bug]: isolated cron model-fallback chain never engages on result-level failures (reasoning-only / empty / incomplete_turn), silently dropping the answer |
-| 🔀&nbsp;[#96523](https://github.com/openclaw/openclaw/pull/96523) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @ly85206559 | fix(agents): preserve embedded OpenAI completions usage |
-| 📝&nbsp;[#96518](https://github.com/openclaw/openclaw/issues/96518) | 2026-06-24 | 0 | Model/provider behavior | @yetval | [Bug]: opencode-go stalled-stream watchdog aborts a live stream and drops the completed answer (idle timer re-arms only on token deltas, not block-boundary events) |
-| 🔀&nbsp;[#96517](https://github.com/openclaw/openclaw/pull/96517) | 2026-06-24 | 0 | Local memory/embedding | @jalehman | fix(memory-core): route dreaming corpus through session metadata |
-| 🔀&nbsp;[#96509](https://github.com/openclaw/openclaw/pull/96509) | 2026-06-24 | 0 | Model routing/config | @googlerest | fix(agents): classify upstream_error provider transport failures as fallbackable |
-| 🔀&nbsp;[#96505](https://github.com/openclaw/openclaw/pull/96505) | 2026-06-24 | 0 | Model routing/config | @mushuiyu886 | fix(openrouter): bound video catalog JSON reads |
-| 🔀&nbsp;[#96503](https://github.com/openclaw/openclaw/pull/96503) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @ZengWen-DT | fix(openai): stop double-prefixing SSE bodies mislabeled as JSON |
 
-## OPEN THREADS (1485)
+## OPEN THREADS (1491)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1435 open threads, sorted by activity</summary>
+<summary>Remaining 1441 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96717](https://github.com/openclaw/openclaw/pull/96717) | 0 | OpenAI-compatible/proxy | @ajwan8998 | fix(openai-completions): avoid double-stringifying tool call arguments |
+| 🔀&nbsp;[#96706](https://github.com/openclaw/openclaw/pull/96706) | 0 | Local/media model provider | @wanyongstar | fix(media): forward scanned PDF page images as current-turn images |
+| 🔀&nbsp;[#96701](https://github.com/openclaw/openclaw/pull/96701) | 0 | Model/provider behavior | @wangmiao0668000666 | fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB |
+| 🔀&nbsp;[#96695](https://github.com/openclaw/openclaw/pull/96695) | 0 | Model routing/config | @0xghost42 | fix(cron): classify result-level failures so the model fallback chain engages (#96525) |
+| 🔀&nbsp;[#96690](https://github.com/openclaw/openclaw/pull/96690) | 0 | Local/media model provider | @TurboTheTurtle | fix(media): forward scanned PDF page images |
+| 🔀&nbsp;[#96688](https://github.com/openclaw/openclaw/pull/96688) | 0 | Local model runtime | @wangmiao0668000666 | fix(sdk): promote streaming-byte-guard to plugin-sdk + bound 4 core streaming reads |
 | 🔀&nbsp;[#96686](https://github.com/openclaw/openclaw/pull/96686) | 0 | Model routing/config | @openperf | fix(agents): isolated cron busts prompt prefix cache via per-run session id |
 | 🔀&nbsp;[#96683](https://github.com/openclaw/openclaw/pull/96683) | 0 | Model routing/config | @zhangqueping | fix(model-resolver): use numeric-aware collation for alias/version sort |
 | 🔀&nbsp;[#96682](https://github.com/openclaw/openclaw/pull/96682) | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
@@ -2269,4 +2275,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1485 (524 issues, 961 PRs).
+- Kept open threads: 1491 (524 issues, 967 PRs).
