@@ -4,8 +4,8 @@ Updated: 2026-06-26
 
 Review watermark:
 
-- Last reviewed through issue: #96849.
-- Last reviewed through PR: #96856.
+- Last reviewed through issue: #96858.
+- Last reviewed through PR: #96860.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
