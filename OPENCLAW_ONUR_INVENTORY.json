@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 522,
-    "open_prs": 956,
-    "open_threads": 1478
+    "open_issues": 524,
+    "open_prs": 961,
+    "open_threads": 1485
   },
   "open_threads": [
     {
@@ -5863,12 +5863,75 @@
     },
     {
       "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@openperf",
+      "number": 96686,
+      "title": "fix(agents): isolated cron busts prompt prefix cache via per-run session id",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96686"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangqueping",
+      "number": 96683,
+      "title": "fix(model-resolver): use numeric-aware collation for alias/version sort",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96683"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@tomsun28",
+      "number": 96682,
+      "title": "chore: update glm-5.2 model cost pricing for input, output, and cache",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96682"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lujiaweichn",
+      "number": 96677,
+      "title": "[Bug]: 2026.6.9 re-busts prompt prefix caching — per-run :run:<UUID> injected into the system-prompt \"Runtime:\" line (regression of #43148)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96677"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Colin243",
+      "number": 96673,
+      "title": "Harden embedded memory flush isolation",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96673"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@harjothkhara",
+      "number": 96669,
+      "title": "fix(agents): keep lightContext cron prompts within small-context budget",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96669"
+    },
+    {
+      "activity": 0,
       "area": "Local model runtime",
       "creator": "@MonkeyLeeT",
       "number": 96668,
       "title": "fix(agents): keep lightweight cron prompts out of no-op compaction",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/96668"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@kagura-agent",
+      "number": 96667,
+      "title": "Context trimming corrupts thinking blocks, causing Claude API rejection",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96667"
     },
     {
       "activity": 0,
@@ -18095,8 +18158,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96664,
-    "pr": 96668
+    "issue": 96681,
+    "pr": 96686
   },
   "schema_version": 1,
   "updated": "2026-06-25"

@@ -4,15 +4,22 @@ Updated: 2026-06-25
 
 Review watermark:
 
-- Last reviewed through issue: #96664.
-- Last reviewed through PR: #96668.
+- Last reviewed through issue: #96681.
+- Last reviewed through PR: #96686.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96686](https://github.com/openclaw/openclaw/pull/96686) | 2026-06-25 | 0 | Model routing/config | @openperf | fix(agents): isolated cron busts prompt prefix cache via per-run session id |
+| 🔀&nbsp;[#96683](https://github.com/openclaw/openclaw/pull/96683) | 2026-06-25 | 0 | Model routing/config | @zhangqueping | fix(model-resolver): use numeric-aware collation for alias/version sort |
+| 🔀&nbsp;[#96682](https://github.com/openclaw/openclaw/pull/96682) | 2026-06-25 | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
+| 📝&nbsp;[#96677](https://github.com/openclaw/openclaw/issues/96677) | 2026-06-25 | 0 | Model routing/config | @lujiaweichn | [Bug]: 2026.6.9 re-busts prompt prefix caching — per-run :run:<UUID> injected into the system-prompt "Runtime:" line (regression of #43148) |
+| 🔀&nbsp;[#96673](https://github.com/openclaw/openclaw/pull/96673) | 2026-06-25 | 0 | Local memory/embedding | @Colin243 | Harden embedded memory flush isolation |
+| 🔀&nbsp;[#96669](https://github.com/openclaw/openclaw/pull/96669) | 2026-06-25 | 0 | Local model runtime | @harjothkhara | fix(agents): keep lightContext cron prompts within small-context budget |
 | 🔀&nbsp;[#96668](https://github.com/openclaw/openclaw/pull/96668) | 2026-06-25 | 0 | Local model runtime | @MonkeyLeeT | fix(agents): keep lightweight cron prompts out of no-op compaction |
+| 📝&nbsp;[#96667](https://github.com/openclaw/openclaw/issues/96667) | 2026-06-25 | 0 | Model/provider behavior | @kagura-agent | Context trimming corrupts thinking blocks, causing Claude API rejection |
 | 🔀&nbsp;[#96666](https://github.com/openclaw/openclaw/pull/96666) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai,proxy): bound streaming 200 success-body SSE reads via shared internal guard |
 | 📝&nbsp;[#96664](https://github.com/openclaw/openclaw/issues/96664) | 2026-06-25 | 0 | Model routing/config | @jw8957 | Cross-model thinking-signature blocks persist in transcript and permanently brick sessions on replay (Anthropic) |
 | 🔀&nbsp;[#96661](https://github.com/openclaw/openclaw/pull/96661) | 2026-06-25 | 0 | Model routing/config | @SunnyShu0925 | fix(gateway): skip secrets.resolve when target SecretRefs use exec providers |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96509](https://github.com/openclaw/openclaw/pull/96509) | 2026-06-24 | 0 | Model routing/config | @googlerest | fix(agents): classify upstream_error provider transport failures as fallbackable |
 | 🔀&nbsp;[#96505](https://github.com/openclaw/openclaw/pull/96505) | 2026-06-24 | 0 | Model routing/config | @mushuiyu886 | fix(openrouter): bound video catalog JSON reads |
 | 🔀&nbsp;[#96503](https://github.com/openclaw/openclaw/pull/96503) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @ZengWen-DT | fix(openai): stop double-prefixing SSE bodies mislabeled as JSON |
-| 🔀&nbsp;[#96502](https://github.com/openclaw/openclaw/pull/96502) | 2026-06-24 | 0 | Open-weight/provider behavior | @hugenshen | fix(moonshot): bound video description JSON response reads |
-| 🔀&nbsp;[#96500](https://github.com/openclaw/openclaw/pull/96500) | 2026-06-24 | 0 | Model routing/config | @hugenshen | fix(openrouter): bound video model catalog JSON response reads |
-| 🔀&nbsp;[#96499](https://github.com/openclaw/openclaw/pull/96499) | 2026-06-24 | 0 | Local memory/embedding | @hugenshen | fix(github-copilot): bound model discovery and embeddings JSON response |
-| 🔀&nbsp;[#96498](https://github.com/openclaw/openclaw/pull/96498) | 2026-06-24 | 0 | Local model runtime | @googlerest | fix(ollama): stop forcing tool_calls.arguments back to an object on the openai-completions path |
-| 📝&nbsp;[#96497](https://github.com/openclaw/openclaw/issues/96497) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @54meteor | [Bug]: openai-completions SSE parser double-prefixes data: causing JSON parse failures |
-| 🔀&nbsp;[#96496](https://github.com/openclaw/openclaw/pull/96496) | 2026-06-24 | 0 | Local/media model provider | @hugenshen | fix(speech): bound TTS/STT voice-list and transcription JSON responses |
-| 🔀&nbsp;[#96495](https://github.com/openclaw/openclaw/pull/96495) | 2026-06-24 | 0 | Local/media model provider | @hugenshen | fix(image-gen): bound image generation provider JSON response reads |
 
-## OPEN THREADS (1478)
+## OPEN THREADS (1485)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1428 open threads, sorted by activity</summary>
+<summary>Remaining 1435 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,7 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96686](https://github.com/openclaw/openclaw/pull/96686) | 0 | Model routing/config | @openperf | fix(agents): isolated cron busts prompt prefix cache via per-run session id |
+| 🔀&nbsp;[#96683](https://github.com/openclaw/openclaw/pull/96683) | 0 | Model routing/config | @zhangqueping | fix(model-resolver): use numeric-aware collation for alias/version sort |
+| 🔀&nbsp;[#96682](https://github.com/openclaw/openclaw/pull/96682) | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
+| 📝&nbsp;[#96677](https://github.com/openclaw/openclaw/issues/96677) | 0 | Model routing/config | @lujiaweichn | [Bug]: 2026.6.9 re-busts prompt prefix caching — per-run :run:<UUID> injected into the system-prompt "Runtime:" line (regression of #43148) |
+| 🔀&nbsp;[#96673](https://github.com/openclaw/openclaw/pull/96673) | 0 | Local memory/embedding | @Colin243 | Harden embedded memory flush isolation |
+| 🔀&nbsp;[#96669](https://github.com/openclaw/openclaw/pull/96669) | 0 | Local model runtime | @harjothkhara | fix(agents): keep lightContext cron prompts within small-context budget |
 | 🔀&nbsp;[#96668](https://github.com/openclaw/openclaw/pull/96668) | 0 | Local model runtime | @MonkeyLeeT | fix(agents): keep lightweight cron prompts out of no-op compaction |
+| 📝&nbsp;[#96667](https://github.com/openclaw/openclaw/issues/96667) | 0 | Model/provider behavior | @kagura-agent | Context trimming corrupts thinking blocks, causing Claude API rejection |
 | 🔀&nbsp;[#96666](https://github.com/openclaw/openclaw/pull/96666) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai,proxy): bound streaming 200 success-body SSE reads via shared internal guard |
 | 📝&nbsp;[#96664](https://github.com/openclaw/openclaw/issues/96664) | 0 | Model routing/config | @jw8957 | Cross-model thinking-signature blocks persist in transcript and permanently brick sessions on replay (Anthropic) |
 | 🔀&nbsp;[#96661](https://github.com/openclaw/openclaw/pull/96661) | 0 | Model routing/config | @SunnyShu0925 | fix(gateway): skip secrets.resolve when target SecretRefs use exec providers |
@@ -2262,4 +2269,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1478 (522 issues, 956 PRs).
+- Kept open threads: 1485 (524 issues, 961 PRs).
