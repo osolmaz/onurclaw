@@ -1,17 +1,19 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-25
+Updated: 2026-06-26
 
 Review watermark:
 
-- Last reviewed through issue: #96815.
-- Last reviewed through PR: #96816.
+- Last reviewed through issue: #96835.
+- Last reviewed through PR: #96832.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96829](https://github.com/openclaw/openclaw/pull/96829) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @jiahjian | fix: detect already-SSE-formatted body to avoid double data: prefix (#96497) |
+| 🔀&nbsp;[#96819](https://github.com/openclaw/openclaw/pull/96819) | 2026-06-25 | 0 | Open-weight/provider behavior | @andreacasini | fix: allow bailian provider in resolveThinkingProfile |
 | 🔀&nbsp;[#96812](https://github.com/openclaw/openclaw/pull/96812) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
 | 🔀&nbsp;[#96799](https://github.com/openclaw/openclaw/pull/96799) | 2026-06-25 | 0 | Local memory/embedding | @Neomail2 | fix(memory): distinguish QMD search outcomes |
 | 📝&nbsp;[#96796](https://github.com/openclaw/openclaw/issues/96796) | 2026-06-25 | 0 | Local memory/embedding | @Neomail2 | QMD memory_search can force blocking sync after non-result outcomes |
@@ -60,10 +62,8 @@ Review watermark:
 | 📝&nbsp;[#96658](https://github.com/openclaw/openclaw/issues/96658) | 2026-06-25 | 0 | Local model runtime | @RedEye1605 | Context overflow in isolated cron sessions with lightweight bootstrap (lightContext: true) |
 | 🔀&nbsp;[#96655](https://github.com/openclaw/openclaw/pull/96655) | 2026-06-25 | 0 | Local memory/embedding | @bek91 | [codex] perf(memory): add QMD search diagnostics and runtime cache |
 | 📝&nbsp;[#96653](https://github.com/openclaw/openclaw/issues/96653) | 2026-06-25 | 0 | Model routing/config | @willfivestar | [Bug]: reply-path secrets.resolve floods gateway log with UNAVAILABLE for model-provider exec SecretRefs (degrades correctly, ~1 line/turn) |
-| 🔀&nbsp;[#96651](https://github.com/openclaw/openclaw/pull/96651) | 2026-06-25 | 0 | Local memory/embedding | @kagura-agent | fix(memory-core): recover primary embedding provider after transient outage |
-| 🔀&nbsp;[#96643](https://github.com/openclaw/openclaw/pull/96643) | 2026-06-25 | 0 | Local/media model provider | @xydigit-sj | fix(line): forward FileMessage fileName to media store for audio MIME detection |
 
-## OPEN THREADS (1519)
+## OPEN THREADS (1521)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1469 open threads, sorted by activity</summary>
+<summary>Remaining 1471 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,8 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96829](https://github.com/openclaw/openclaw/pull/96829) | 0 | OpenAI-compatible/proxy | @jiahjian | fix: detect already-SSE-formatted body to avoid double data: prefix (#96497) |
+| 🔀&nbsp;[#96819](https://github.com/openclaw/openclaw/pull/96819) | 0 | Open-weight/provider behavior | @andreacasini | fix: allow bailian provider in resolveThinkingProfile |
 | 🔀&nbsp;[#96812](https://github.com/openclaw/openclaw/pull/96812) | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
 | 🔀&nbsp;[#96799](https://github.com/openclaw/openclaw/pull/96799) | 0 | Local memory/embedding | @Neomail2 | fix(memory): distinguish QMD search outcomes |
 | 📝&nbsp;[#96796](https://github.com/openclaw/openclaw/issues/96796) | 0 | Local memory/embedding | @Neomail2 | QMD memory_search can force blocking sync after non-result outcomes |
@@ -2303,4 +2305,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1519 (530 issues, 989 PRs).
+- Kept open threads: 1521 (530 issues, 991 PRs).

@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 530,
-    "open_prs": 989,
-    "open_threads": 1519
+    "open_prs": 991,
+    "open_threads": 1521
   },
   "open_threads": [
     {
@@ -5860,6 +5860,24 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@jiahjian",
+      "number": 96829,
+      "title": "fix: detect already-SSE-formatted body to avoid double data: prefix (#96497)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96829"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@andreacasini",
+      "number": 96819,
+      "title": "fix: allow bailian provider in resolveThinkingProfile",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96819"
     },
     {
       "activity": 0,
@@ -18464,9 +18482,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 96815,
-    "pr": 96816
+    "issue": 96835,
+    "pr": 96832
   },
   "schema_version": 1,
-  "updated": "2026-06-25"
+  "updated": "2026-06-26"
 }
