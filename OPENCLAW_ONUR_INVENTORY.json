@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 525,
-    "open_prs": 972,
-    "open_threads": 1497
+    "open_issues": 529,
+    "open_prs": 986,
+    "open_threads": 1515
   },
   "open_threads": [
     {
@@ -5860,6 +5860,168 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bennewell35",
+      "number": 96787,
+      "title": "fix(memory-core): report pending close work errors",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96787"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wangmiao0668000666",
+      "number": 96786,
+      "title": "fix(openai-video-gen): bound video submit response JSON read at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96786"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@darealgege",
+      "number": 96785,
+      "title": "Model Switch (gpt-5.5 → kimi/k2p6) Triggers Context Overflow Without Proper Compaction",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96785"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wangmiao0668000666",
+      "number": 96782,
+      "title": "fix(video-generation): bound dashscope JSON response reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96782"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@MaHaoHao-ch",
+      "number": 96781,
+      "title": "fix: log pending sync and provider init errors on manager close",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96781"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@wangmiao0668000666",
+      "number": 96779,
+      "title": "fix(chutes-oauth-plugin): bound plugin JSON response reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96779"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@wangmiao0668000666",
+      "number": 96777,
+      "title": "fix(chutes-oauth): bound core helper JSON response reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96777"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wangmiao0668000666",
+      "number": 96776,
+      "title": "fix(image-generation): replace unbounded response.json() with readProviderJsonResponse",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96776"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@StewartXiang",
+      "number": 96773,
+      "title": "[Bug]: Turn-scoped developer instructions (SOUL.md/IDENTITY.md/USER.md) create different message prefixes between full-turn and tool-continuation calls, breaking DeepSeek KV cache (20%/99% oscillation)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96773"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@FreddieM-engpai",
+      "number": 96771,
+      "title": "OpenClaw 2026.6.10 provider-unification gotcha: openai/gpt-5.5 requires provider openai to route to the subscription backend",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96771"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 96768,
+      "title": "fix(runtime/proxy): bound streaming success-body SSE reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96768"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@LK-BLOG",
+      "number": 96766,
+      "title": "awaitPendingManagerWork silently swallows all errors from pending sync/provider init on close",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96766"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@maweibin",
+      "number": 96764,
+      "title": "fix(ollama): preserve custom provider id through memory embedding adapter (#96742)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96764"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 96762,
+      "title": "fix(openai-chatgpt-responses): bound streaming success-body SSE reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96762"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@krissding",
+      "number": 96753,
+      "title": "fix(moonshot): prevent reasoning_content leak when reasoning is disabled",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96753"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ly-wang19",
+      "number": 96748,
+      "title": "fix(llm): trust control escapes in JSON strings that escape backslashes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96748"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ly-wang19",
+      "number": 96747,
+      "title": "fix(memory): stop chunkMarkdown injecting newlines into single-line chunks",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96747"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ly-wang19",
+      "number": 96745,
+      "title": "fix(markdown): a fenced-code line with trailing text is content, not a closing fence",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96745"
     },
     {
       "activity": 0,
@@ -18266,8 +18428,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96732,
-    "pr": 96741
+    "issue": 96785,
+    "pr": 96787
   },
   "schema_version": 1,
   "updated": "2026-06-25"
