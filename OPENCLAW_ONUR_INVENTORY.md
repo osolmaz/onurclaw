@@ -4,14 +4,23 @@ Updated: 2026-06-25
 
 Review watermark:
 
-- Last reviewed through issue: #96564.
-- Last reviewed through PR: #96578.
+- Last reviewed through issue: #96611.
+- Last reviewed through PR: #96612.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96609](https://github.com/openclaw/openclaw/pull/96609) | 2026-06-25 | 0 | Model routing/config | @zw-xysk | fix(model-resolver): use numeric-aware version comparison for model alias resolution |
+| 🔀&nbsp;[#96608](https://github.com/openclaw/openclaw/pull/96608) | 2026-06-25 | 0 | Local memory/embedding | @Alix-007 | fix(voyage): bound embedding-batch status and error reads |
+| 🔀&nbsp;[#96606](https://github.com/openclaw/openclaw/pull/96606) | 2026-06-25 | 0 | Local/media model provider | @Alix-007 | fix(byteplus): bound video-generation success response reads |
+| 🔀&nbsp;[#96605](https://github.com/openclaw/openclaw/pull/96605) | 2026-06-25 | 0 | Local/media model provider | @Alix-007 | fix(google): bound Veo video operation response reads |
+| 🔀&nbsp;[#96604](https://github.com/openclaw/openclaw/pull/96604) | 2026-06-25 | 0 | Open-weight/provider behavior | @Alix-007 | fix(qwen): bound video description success response reads |
+| 📝&nbsp;[#96600](https://github.com/openclaw/openclaw/issues/96600) | 2026-06-24 | 0 | Model routing/config | @randompup | [Bug]: Google vertex models cannot be overriden via openclaw.json |
+| 📝&nbsp;[#96597](https://github.com/openclaw/openclaw/issues/96597) | 2026-06-24 | 0 | Model routing/config | @randompup | [Feature]: Update google-vertex models dynamically and also provide an override option |
+| 🔀&nbsp;[#96596](https://github.com/openclaw/openclaw/pull/96596) | 2026-06-24 | 0 | Model routing/config | @liuhao1024 | fix(sessions): use numeric-aware collation in model alias resolution (fixes #96588) (AI-assisted) |
+| 📝&nbsp;[#96588](https://github.com/openclaw/openclaw/issues/96588) | 2026-06-24 | 0 | Model routing/config | @yetval | model resolution: alias selects older version via lexicographic ordering once a family reaches double-digit minor versions |
 | 🔀&nbsp;[#96568](https://github.com/openclaw/openclaw/pull/96568) | 2026-06-24 | 0 | Local/media model provider | @harjothkhara | fix(media): forward scanned PDF page images in chat turns |
 | 📝&nbsp;[#96561](https://github.com/openclaw/openclaw/issues/96561) | 2026-06-24 | 0 | Local memory/embedding | @bek91 | Reduce QMD memory search wrapper overhead in CLI and tool paths |
 | 🔀&nbsp;[#96544](https://github.com/openclaw/openclaw/pull/96544) | 2026-06-24 | 0 | Model routing/config | @yetval | fix(doctor): merge colliding model-ref map keys instead of dropping |
@@ -53,17 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96388](https://github.com/openclaw/openclaw/pull/96388) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @SebConejo | feat: add Manifest LLM router provider plugin |
 | 🔀&nbsp;[#96372](https://github.com/openclaw/openclaw/pull/96372) | 2026-06-24 | 0 | Model routing/config | @hugenshen | fix(agents): classify upstream_error as fallbackable to harden model fallback |
 | 🔀&nbsp;[#96368](https://github.com/openclaw/openclaw/pull/96368) | 2026-06-24 | 0 | Model routing/config | @xydt-tanshanshan | [AI] fix(model): /model &lt;default&gt; writes override when session runs non-default model |
-| 🔀&nbsp;[#96364](https://github.com/openclaw/openclaw/pull/96364) | 2026-06-24 | 0 | Model routing/config | @SushantGautam | Treat HTTP 530 as transient failover timeout |
-| 📝&nbsp;[#96355](https://github.com/openclaw/openclaw/issues/96355) | 2026-06-24 | 0 | Local memory/embedding | @yyc-git | [Bug]: memory_search tool fails on subsequent queries after cold start (index metadata is missing) |
-| 🔀&nbsp;[#96354](https://github.com/openclaw/openclaw/pull/96354) | 2026-06-24 | 0 | Open-weight/provider behavior | @lsr911 | fix(vydra,xai,runway,pixverse,deepinfra,together,elevenlabs,microsoft): bound JSON response reads to prevent OOM |
-| 🔀&nbsp;[#96345](https://github.com/openclaw/openclaw/pull/96345) | 2026-06-24 | 0 | Model routing/config | @vincentkoc | feat(copilot): add BYOK provider parity<br>Assignee: vincentkoc |
-| 📝&nbsp;[#96337](https://github.com/openclaw/openclaw/issues/96337) | 2026-06-24 | 0 | Model/provider behavior | @danieljimz | [anthropic-vertex] route=native in 2026.6.10 causes non-visible-output for pure text responses (regression from proxy-like in 2026.6.8) |
-| 📝&nbsp;[#96328](https://github.com/openclaw/openclaw/issues/96328) | 2026-06-24 | 0 | Local memory/embedding | @krkln | [Bug] openai-compatible embeddings: CLI and runtime compute different providerKey -> permanent "index metadata is missing" |
-| 🔀&nbsp;[#96325](https://github.com/openclaw/openclaw/pull/96325) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @Kambrian | Add custom image provider plugin |
-| 🔀&nbsp;[#96324](https://github.com/openclaw/openclaw/pull/96324) | 2026-06-24 | 0 | Local/media model provider | @lsr911 | fix(google): bound JSON response reads to prevent OOM |
-| 🔀&nbsp;[#96323](https://github.com/openclaw/openclaw/pull/96323) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(openai): bound JSON/text response reads to prevent OOM |
 
-## OPEN THREADS (1449)
+## OPEN THREADS (1458)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1399 open threads, sorted by activity</summary>
+<summary>Remaining 1408 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,15 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96609](https://github.com/openclaw/openclaw/pull/96609) | 0 | Model routing/config | @zw-xysk | fix(model-resolver): use numeric-aware version comparison for model alias resolution |
+| 🔀&nbsp;[#96608](https://github.com/openclaw/openclaw/pull/96608) | 0 | Local memory/embedding | @Alix-007 | fix(voyage): bound embedding-batch status and error reads |
+| 🔀&nbsp;[#96606](https://github.com/openclaw/openclaw/pull/96606) | 0 | Local/media model provider | @Alix-007 | fix(byteplus): bound video-generation success response reads |
+| 🔀&nbsp;[#96605](https://github.com/openclaw/openclaw/pull/96605) | 0 | Local/media model provider | @Alix-007 | fix(google): bound Veo video operation response reads |
+| 🔀&nbsp;[#96604](https://github.com/openclaw/openclaw/pull/96604) | 0 | Open-weight/provider behavior | @Alix-007 | fix(qwen): bound video description success response reads |
+| 📝&nbsp;[#96600](https://github.com/openclaw/openclaw/issues/96600) | 0 | Model routing/config | @randompup | [Bug]: Google vertex models cannot be overriden via openclaw.json |
+| 📝&nbsp;[#96597](https://github.com/openclaw/openclaw/issues/96597) | 0 | Model routing/config | @randompup | [Feature]: Update google-vertex models dynamically and also provide an override option |
+| 🔀&nbsp;[#96596](https://github.com/openclaw/openclaw/pull/96596) | 0 | Model routing/config | @liuhao1024 | fix(sessions): use numeric-aware collation in model alias resolution (fixes #96588) (AI-assisted) |
+| 📝&nbsp;[#96588](https://github.com/openclaw/openclaw/issues/96588) | 0 | Model routing/config | @yetval | model resolution: alias selects older version via lexicographic ordering once a family reaches double-digit minor versions |
 | 🔀&nbsp;[#96568](https://github.com/openclaw/openclaw/pull/96568) | 0 | Local/media model provider | @harjothkhara | fix(media): forward scanned PDF page images in chat turns |
 | 📝&nbsp;[#96561](https://github.com/openclaw/openclaw/issues/96561) | 0 | Local memory/embedding | @bek91 | Reduce QMD memory search wrapper overhead in CLI and tool paths |
 | 🔀&nbsp;[#96544](https://github.com/openclaw/openclaw/pull/96544) | 0 | Model routing/config | @yetval | fix(doctor): merge colliding model-ref map keys instead of dropping |
@@ -2233,4 +2242,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1449 (515 issues, 934 PRs).
+- Kept open threads: 1458 (518 issues, 940 PRs).

@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 515,
-    "open_prs": 934,
-    "open_threads": 1449
+    "open_issues": 518,
+    "open_prs": 940,
+    "open_threads": 1458
   },
   "open_threads": [
     {
@@ -5860,6 +5860,87 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zw-xysk",
+      "number": 96609,
+      "title": "fix(model-resolver): use numeric-aware version comparison for model alias resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96609"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Alix-007",
+      "number": 96608,
+      "title": "fix(voyage): bound embedding-batch status and error reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96608"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96606,
+      "title": "fix(byteplus): bound video-generation success response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96606"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96605,
+      "title": "fix(google): bound Veo video operation response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96605"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Alix-007",
+      "number": 96604,
+      "title": "fix(qwen): bound video description success response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96604"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@randompup",
+      "number": 96600,
+      "title": "[Bug]: Google vertex models cannot be overriden via openclaw.json",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96600"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@randompup",
+      "number": 96597,
+      "title": "[Feature]: Update google-vertex models dynamically and also provide an override option",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96597"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@liuhao1024",
+      "number": 96596,
+      "title": "fix(sessions): use numeric-aware collation in model alias resolution (fixes #96588) (AI-assisted)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96596"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yetval",
+      "number": 96588,
+      "title": "model resolution: alias selects older version via lexicographic ordering once a family reaches double-digit minor versions",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96588"
     },
     {
       "activity": 0,
@@ -17834,8 +17915,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96564,
-    "pr": 96578
+    "issue": 96611,
+    "pr": 96612
   },
   "schema_version": 1,
   "updated": "2026-06-25"
