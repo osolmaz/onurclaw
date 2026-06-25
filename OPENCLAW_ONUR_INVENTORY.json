@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 518,
-    "open_prs": 940,
-    "open_threads": 1458
+    "open_issues": 519,
+    "open_prs": 951,
+    "open_threads": 1470
   },
   "open_threads": [
     {
@@ -5860,6 +5860,114 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@xydigit-sj",
+      "number": 96643,
+      "title": "fix(line): forward FileMessage fileName to media store for audio MIME detection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96643"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@HonorVanEr",
+      "number": 96641,
+      "title": "fix(media-understanding): forward scanned PDF page images to vision models on chat channels",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96641"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@mralonsocorona",
+      "number": 96640,
+      "title": "fix: use numeric sort for model alias resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96640"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@rizwan-saddal",
+      "number": 96638,
+      "title": "fix(openai-completions): relocate dynamic cache-boundary suffix for implicit prefix-cache providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96638"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@henrybrewer00-dotcom",
+      "number": 96635,
+      "title": "fix(ollama): remote Ollama streaming stalls at model_call:started on slow hosts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96635"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 96632,
+      "title": "fix(anthropic): bound streaming 200 success-body SSE reads via shared plugin-sdk guard",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96632"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@lsr911",
+      "number": 96627,
+      "title": "fix(failover): allow model fallback on harness transport timeout",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96627"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@igorvagun",
+      "number": 96622,
+      "title": "Gateway event-loop starvation delays/drops WS response delivery to the CLI",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96622"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@lsr911",
+      "number": 96620,
+      "title": "fix(feishu,browser,msteams,azure-speech,bedrock-mantle,googlechat,huggingface,perplexity): bound JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96620"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@maweibin",
+      "number": 96619,
+      "title": "fix(agents): classify upstream transport errors as fallback-worthy",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96619"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@lsr911",
+      "number": 96618,
+      "title": "fix(discord,telegram,github-copilot,google-meet): bound JSON response reads to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96618"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@xydigit-sj",
+      "number": 96616,
+      "title": "fix(line): forward FileMessage fileName to media store for audio MIME detection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96616"
     },
     {
       "activity": 0,
@@ -17915,8 +18023,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96611,
-    "pr": 96612
+    "issue": 96639,
+    "pr": 96646
   },
   "schema_version": 1,
   "updated": "2026-06-25"
