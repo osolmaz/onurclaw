@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 524,
-    "open_prs": 967,
-    "open_threads": 1491
+    "open_issues": 525,
+    "open_prs": 972,
+    "open_threads": 1497
   },
   "open_threads": [
     {
@@ -5860,6 +5860,60 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SunnyShu0925",
+      "number": 96734,
+      "title": "refactor(memory-core): use replaceFileAtomic for dreaming file writes",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96734"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@BaichouRiver",
+      "number": 96732,
+      "title": "[Bug]: reasoning_content leaks into chat output with moonshot/kimi-k2.6, frontend reasoning status out of sync",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96732"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@lsr911",
+      "number": 96731,
+      "title": "fix(cron): wire result classifier into isolated cron model fallback chain",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96731"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SunnyShu0925",
+      "number": 96724,
+      "title": "fix(agents): fall back to generic embedding provider registry in memory-search config resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96724"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@wangmiao0668000666",
+      "number": 96723,
+      "title": "fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB (provider path)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96723"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@yangxiansheng",
+      "number": 96721,
+      "title": "fix(moonshot): inherit custom baseUrl for kimi web search",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96721"
     },
     {
       "activity": 0,
@@ -18212,8 +18266,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96716,
-    "pr": 96719
+    "issue": 96732,
+    "pr": 96741
   },
   "schema_version": 1,
   "updated": "2026-06-25"

@@ -4,14 +4,20 @@ Updated: 2026-06-25
 
 Review watermark:
 
-- Last reviewed through issue: #96716.
-- Last reviewed through PR: #96719.
+- Last reviewed through issue: #96732.
+- Last reviewed through PR: #96741.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96734](https://github.com/openclaw/openclaw/pull/96734) | 2026-06-25 | 0 | Local memory/embedding | @SunnyShu0925 | refactor(memory-core): use replaceFileAtomic for dreaming file writes |
+| 📝&nbsp;[#96732](https://github.com/openclaw/openclaw/issues/96732) | 2026-06-25 | 0 | Open-weight/provider behavior | @BaichouRiver | [Bug]: reasoning_content leaks into chat output with moonshot/kimi-k2.6, frontend reasoning status out of sync |
+| 🔀&nbsp;[#96731](https://github.com/openclaw/openclaw/pull/96731) | 2026-06-25 | 0 | Model routing/config | @lsr911 | fix(cron): wire result classifier into isolated cron model fallback chain |
+| 🔀&nbsp;[#96724](https://github.com/openclaw/openclaw/pull/96724) | 2026-06-25 | 0 | Local memory/embedding | @SunnyShu0925 | fix(agents): fall back to generic embedding provider registry in memory-search config resolution |
+| 🔀&nbsp;[#96723](https://github.com/openclaw/openclaw/pull/96723) | 2026-06-25 | 0 | Model/provider behavior | @wangmiao0668000666 | fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB (provider path) |
+| 🔀&nbsp;[#96721](https://github.com/openclaw/openclaw/pull/96721) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @yangxiansheng | fix(moonshot): inherit custom baseUrl for kimi web search |
 | 🔀&nbsp;[#96717](https://github.com/openclaw/openclaw/pull/96717) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @ajwan8998 | fix(openai-completions): avoid double-stringifying tool call arguments |
 | 🔀&nbsp;[#96706](https://github.com/openclaw/openclaw/pull/96706) | 2026-06-25 | 0 | Local/media model provider | @wanyongstar | fix(media): forward scanned PDF page images as current-turn images |
 | 🔀&nbsp;[#96701](https://github.com/openclaw/openclaw/pull/96701) | 2026-06-25 | 0 | Model/provider behavior | @wangmiao0668000666 | fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB |
@@ -56,14 +62,8 @@ Review watermark:
 | 📝&nbsp;[#96588](https://github.com/openclaw/openclaw/issues/96588) | 2026-06-24 | 0 | Model routing/config | @yetval | model resolution: alias selects older version via lexicographic ordering once a family reaches double-digit minor versions |
 | 🔀&nbsp;[#96568](https://github.com/openclaw/openclaw/pull/96568) | 2026-06-24 | 0 | Local/media model provider | @harjothkhara | fix(media): forward scanned PDF page images in chat turns |
 | 📝&nbsp;[#96561](https://github.com/openclaw/openclaw/issues/96561) | 2026-06-24 | 0 | Local memory/embedding | @bek91 | Reduce QMD memory search wrapper overhead in CLI and tool paths |
-| 🔀&nbsp;[#96544](https://github.com/openclaw/openclaw/pull/96544) | 2026-06-24 | 0 | Model routing/config | @yetval | fix(doctor): merge colliding model-ref map keys instead of dropping |
-| 📝&nbsp;[#96541](https://github.com/openclaw/openclaw/issues/96541) | 2026-06-24 | 0 | Local/media model provider | @yetval | [Bug]: scanned / image-only PDFs are silently dropped on chat channels (rendered page images extracted then discarded) |
-| 📝&nbsp;[#96534](https://github.com/openclaw/openclaw/issues/96534) | 2026-06-24 | 0 | Local memory/embedding | @cknzraposo | memory_search latches fallback embedding model after provider outage; only full restart recovers (soft reload insufficient) |
-| 🔀&nbsp;[#96529](https://github.com/openclaw/openclaw/pull/96529) | 2026-06-24 | 0 | Model routing/config | @ZengWen-DT | fix(cron): engage model fallback on embedded result-level failures (reasoning-only / empty / incomplete_turn) |
-| 🔀&nbsp;[#96526](https://github.com/openclaw/openclaw/pull/96526) | 2026-06-24 | 0 | Model/provider behavior | @lin-hongkuan | fix(opencode-go): treat stream block boundaries as liveness |
-| 📝&nbsp;[#96525](https://github.com/openclaw/openclaw/issues/96525) | 2026-06-24 | 0 | Model routing/config | @yetval | [Bug]: isolated cron model-fallback chain never engages on result-level failures (reasoning-only / empty / incomplete_turn), silently dropping the answer |
 
-## OPEN THREADS (1491)
+## OPEN THREADS (1497)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1441 open threads, sorted by activity</summary>
+<summary>Remaining 1447 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,12 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96734](https://github.com/openclaw/openclaw/pull/96734) | 0 | Local memory/embedding | @SunnyShu0925 | refactor(memory-core): use replaceFileAtomic for dreaming file writes |
+| 📝&nbsp;[#96732](https://github.com/openclaw/openclaw/issues/96732) | 0 | Open-weight/provider behavior | @BaichouRiver | [Bug]: reasoning_content leaks into chat output with moonshot/kimi-k2.6, frontend reasoning status out of sync |
+| 🔀&nbsp;[#96731](https://github.com/openclaw/openclaw/pull/96731) | 0 | Model routing/config | @lsr911 | fix(cron): wire result classifier into isolated cron model fallback chain |
+| 🔀&nbsp;[#96724](https://github.com/openclaw/openclaw/pull/96724) | 0 | Local memory/embedding | @SunnyShu0925 | fix(agents): fall back to generic embedding provider registry in memory-search config resolution |
+| 🔀&nbsp;[#96723](https://github.com/openclaw/openclaw/pull/96723) | 0 | Model/provider behavior | @wangmiao0668000666 | fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB (provider path) |
+| 🔀&nbsp;[#96721](https://github.com/openclaw/openclaw/pull/96721) | 0 | OpenAI-compatible/proxy | @yangxiansheng | fix(moonshot): inherit custom baseUrl for kimi web search |
 | 🔀&nbsp;[#96717](https://github.com/openclaw/openclaw/pull/96717) | 0 | OpenAI-compatible/proxy | @ajwan8998 | fix(openai-completions): avoid double-stringifying tool call arguments |
 | 🔀&nbsp;[#96706](https://github.com/openclaw/openclaw/pull/96706) | 0 | Local/media model provider | @wanyongstar | fix(media): forward scanned PDF page images as current-turn images |
 | 🔀&nbsp;[#96701](https://github.com/openclaw/openclaw/pull/96701) | 0 | Model/provider behavior | @wangmiao0668000666 | fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB |
@@ -2275,4 +2281,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1491 (524 issues, 967 PRs).
+- Kept open threads: 1497 (525 issues, 972 PRs).
