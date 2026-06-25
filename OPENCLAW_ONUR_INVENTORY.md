@@ -4,14 +4,22 @@ Updated: 2026-06-25
 
 Review watermark:
 
-- Last reviewed through issue: #96639.
-- Last reviewed through PR: #96646.
+- Last reviewed through issue: #96664.
+- Last reviewed through PR: #96668.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96668](https://github.com/openclaw/openclaw/pull/96668) | 2026-06-25 | 0 | Local model runtime | @MonkeyLeeT | fix(agents): keep lightweight cron prompts out of no-op compaction |
+| 🔀&nbsp;[#96666](https://github.com/openclaw/openclaw/pull/96666) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai,proxy): bound streaming 200 success-body SSE reads via shared internal guard |
+| 📝&nbsp;[#96664](https://github.com/openclaw/openclaw/issues/96664) | 2026-06-25 | 0 | Model routing/config | @jw8957 | Cross-model thinking-signature blocks persist in transcript and permanently brick sessions on replay (Anthropic) |
+| 🔀&nbsp;[#96661](https://github.com/openclaw/openclaw/pull/96661) | 2026-06-25 | 0 | Model routing/config | @SunnyShu0925 | fix(gateway): skip secrets.resolve when target SecretRefs use exec providers |
+| 📝&nbsp;[#96658](https://github.com/openclaw/openclaw/issues/96658) | 2026-06-25 | 0 | Local model runtime | @RedEye1605 | Context overflow in isolated cron sessions with lightweight bootstrap (lightContext: true) |
+| 🔀&nbsp;[#96655](https://github.com/openclaw/openclaw/pull/96655) | 2026-06-25 | 0 | Local memory/embedding | @bek91 | [codex] perf(memory): add QMD search diagnostics and runtime cache |
+| 📝&nbsp;[#96653](https://github.com/openclaw/openclaw/issues/96653) | 2026-06-25 | 0 | Model routing/config | @willfivestar | [Bug]: reply-path secrets.resolve floods gateway log with UNAVAILABLE for model-provider exec SecretRefs (degrades correctly, ~1 line/turn) |
+| 🔀&nbsp;[#96651](https://github.com/openclaw/openclaw/pull/96651) | 2026-06-25 | 0 | Local memory/embedding | @kagura-agent | fix(memory-core): recover primary embedding provider after transient outage |
 | 🔀&nbsp;[#96643](https://github.com/openclaw/openclaw/pull/96643) | 2026-06-25 | 0 | Local/media model provider | @xydigit-sj | fix(line): forward FileMessage fileName to media store for audio MIME detection |
 | 🔀&nbsp;[#96641](https://github.com/openclaw/openclaw/pull/96641) | 2026-06-25 | 0 | Local/media model provider | @HonorVanEr | fix(media-understanding): forward scanned PDF page images to vision models on chat channels |
 | 🔀&nbsp;[#96640](https://github.com/openclaw/openclaw/pull/96640) | 2026-06-25 | 0 | Model routing/config | @mralonsocorona | fix: use numeric sort for model alias resolution |
@@ -54,16 +62,8 @@ Review watermark:
 | 📝&nbsp;[#96497](https://github.com/openclaw/openclaw/issues/96497) | 2026-06-24 | 0 | OpenAI-compatible/proxy | @54meteor | [Bug]: openai-completions SSE parser double-prefixes data: causing JSON parse failures |
 | 🔀&nbsp;[#96496](https://github.com/openclaw/openclaw/pull/96496) | 2026-06-24 | 0 | Local/media model provider | @hugenshen | fix(speech): bound TTS/STT voice-list and transcription JSON responses |
 | 🔀&nbsp;[#96495](https://github.com/openclaw/openclaw/pull/96495) | 2026-06-24 | 0 | Local/media model provider | @hugenshen | fix(image-gen): bound image generation provider JSON response reads |
-| 🔀&nbsp;[#96480](https://github.com/openclaw/openclaw/pull/96480) | 2026-06-24 | 0 | Model routing/config | @hugenshen | fix(agents): bound model catalog JSON response reads for bedrock-mantle and huggingface |
-| 🔀&nbsp;[#96474](https://github.com/openclaw/openclaw/pull/96474) | 2026-06-24 | 0 | Local model runtime | @849261680 | fix: Ollama Cloud tool calls fail on second turn |
-| 🔀&nbsp;[#96473](https://github.com/openclaw/openclaw/pull/96473) | 2026-06-24 | 0 | Local model runtime | @harjothkhara | fix(ollama): Ollama Cloud tool calls fail after first turn |
-| 📝&nbsp;[#96472](https://github.com/openclaw/openclaw/issues/96472) | 2026-06-24 | 0 | Local model runtime | @Azz1 | Bug: Ollama tool_calls.function.arguments sent as object instead of string (regression in 2026.6.10) |
-| 📝&nbsp;[#96467](https://github.com/openclaw/openclaw/issues/96467) | 2026-06-24 | 0 | Model routing/config | @jackmtl71 | openclaw models status --probe: wallclock dominated by /v1/messages completion call; --probe-timeout not honored |
-| 🔀&nbsp;[#96465](https://github.com/openclaw/openclaw/pull/96465) | 2026-06-24 | 0 | Local memory/embedding | @ShibukiZero | fix(memory): separate active-memory resource release from manager close |
-| 📝&nbsp;[#96463](https://github.com/openclaw/openclaw/issues/96463) | 2026-06-24 | 0 | Local model runtime | @bazhang1618 | [Bug]: Usage always 0 for custom OpenAI-compatible provider when using embedded runner (--local) |
-| 🔀&nbsp;[#96461](https://github.com/openclaw/openclaw/pull/96461) | 2026-06-24 | 0 | Local model runtime | @ly85206559 | fix: preserve flattened tool call arguments |
 
-## OPEN THREADS (1470)
+## OPEN THREADS (1478)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1420 open threads, sorted by activity</summary>
+<summary>Remaining 1428 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,14 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96668](https://github.com/openclaw/openclaw/pull/96668) | 0 | Local model runtime | @MonkeyLeeT | fix(agents): keep lightweight cron prompts out of no-op compaction |
+| 🔀&nbsp;[#96666](https://github.com/openclaw/openclaw/pull/96666) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai,proxy): bound streaming 200 success-body SSE reads via shared internal guard |
+| 📝&nbsp;[#96664](https://github.com/openclaw/openclaw/issues/96664) | 0 | Model routing/config | @jw8957 | Cross-model thinking-signature blocks persist in transcript and permanently brick sessions on replay (Anthropic) |
+| 🔀&nbsp;[#96661](https://github.com/openclaw/openclaw/pull/96661) | 0 | Model routing/config | @SunnyShu0925 | fix(gateway): skip secrets.resolve when target SecretRefs use exec providers |
+| 📝&nbsp;[#96658](https://github.com/openclaw/openclaw/issues/96658) | 0 | Local model runtime | @RedEye1605 | Context overflow in isolated cron sessions with lightweight bootstrap (lightContext: true) |
+| 🔀&nbsp;[#96655](https://github.com/openclaw/openclaw/pull/96655) | 0 | Local memory/embedding | @bek91 | [codex] perf(memory): add QMD search diagnostics and runtime cache |
+| 📝&nbsp;[#96653](https://github.com/openclaw/openclaw/issues/96653) | 0 | Model routing/config | @willfivestar | [Bug]: reply-path secrets.resolve floods gateway log with UNAVAILABLE for model-provider exec SecretRefs (degrades correctly, ~1 line/turn) |
+| 🔀&nbsp;[#96651](https://github.com/openclaw/openclaw/pull/96651) | 0 | Local memory/embedding | @kagura-agent | fix(memory-core): recover primary embedding provider after transient outage |
 | 🔀&nbsp;[#96643](https://github.com/openclaw/openclaw/pull/96643) | 0 | Local/media model provider | @xydigit-sj | fix(line): forward FileMessage fileName to media store for audio MIME detection |
 | 🔀&nbsp;[#96641](https://github.com/openclaw/openclaw/pull/96641) | 0 | Local/media model provider | @HonorVanEr | fix(media-understanding): forward scanned PDF page images to vision models on chat channels |
 | 🔀&nbsp;[#96640](https://github.com/openclaw/openclaw/pull/96640) | 0 | Model routing/config | @mralonsocorona | fix: use numeric sort for model alias resolution |
@@ -2254,4 +2262,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1470 (519 issues, 951 PRs).
+- Kept open threads: 1478 (522 issues, 956 PRs).

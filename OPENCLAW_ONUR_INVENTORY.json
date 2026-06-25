@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 519,
-    "open_prs": 951,
-    "open_threads": 1470
+    "open_issues": 522,
+    "open_prs": 956,
+    "open_threads": 1478
   },
   "open_threads": [
     {
@@ -5860,6 +5860,78 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@MonkeyLeeT",
+      "number": 96668,
+      "title": "fix(agents): keep lightweight cron prompts out of no-op compaction",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96668"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 96666,
+      "title": "fix(openai,proxy): bound streaming 200 success-body SSE reads via shared internal guard",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96666"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jw8957",
+      "number": 96664,
+      "title": "Cross-model thinking-signature blocks persist in transcript and permanently brick sessions on replay (Anthropic)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96664"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@SunnyShu0925",
+      "number": 96661,
+      "title": "fix(gateway): skip secrets.resolve when target SecretRefs use exec providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96661"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@RedEye1605",
+      "number": 96658,
+      "title": "Context overflow in isolated cron sessions with lightweight bootstrap (lightContext: true)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96658"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@bek91",
+      "number": 96655,
+      "title": "[codex] perf(memory): add QMD search diagnostics and runtime cache",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96655"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@willfivestar",
+      "number": 96653,
+      "title": "[Bug]: reply-path secrets.resolve floods gateway log with UNAVAILABLE for model-provider exec SecretRefs (degrades correctly, ~1 line/turn)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96653"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@kagura-agent",
+      "number": 96651,
+      "title": "fix(memory-core): recover primary embedding provider after transient outage",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96651"
     },
     {
       "activity": 0,
@@ -18023,8 +18095,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96639,
-    "pr": 96646
+    "issue": 96664,
+    "pr": 96668
   },
   "schema_version": 1,
   "updated": "2026-06-25"
