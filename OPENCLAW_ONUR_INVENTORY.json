@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 534,
+    "open_issues": 535,
     "open_prs": 1016,
-    "open_threads": 1550
+    "open_threads": 1551
   },
   "open_threads": [
     {
@@ -5860,6 +5860,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@FriendofTob",
+      "number": 96947,
+      "title": "Bug: OpenRouter Anthropic cacheWrite drops to zero after v2026.6.10 upgrade (conversation cache regression)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96947"
     },
     {
       "activity": 0,
@@ -18743,7 +18752,7 @@
     }
   ],
   "review_watermark": {
-    "issue": 96934,
+    "issue": 96967,
     "pr": 96938
   },
   "schema_version": 1,
