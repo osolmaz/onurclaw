@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 541,
-    "open_prs": 1041,
-    "open_threads": 1582
+    "open_issues": 543,
+    "open_prs": 1044,
+    "open_threads": 1587
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zackchiutw",
+      "number": 97048,
+      "title": "Model catalog validation rejects audio/video input modalities produced by OpenClaw's own catalog fetch (MiniMax-M3, phi-4-multimodal dropped)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/97048"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Yachiyo1680",
+      "number": 97047,
+      "title": "[Bug]: DeepSeek V4 API returns usage.cost total as 0, causing Control UI Spend to show zero",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/97047"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@prasanthmaran",
+      "number": 97037,
+      "title": "fix(llm-core): coerce JSON-stringified array/object tool arguments",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97037"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@SunnyShu0925",
+      "number": 97034,
+      "title": "fix(session-memory): strip orphan plain-text role lines from session-memory transcripts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97034"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@ZOOWH",
+      "number": 97033,
+      "title": "fix(lmstudio): pass configured contextWindow to embedding model preload",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97033"
     },
     {
       "activity": 0,
@@ -19031,8 +19076,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 97032,
-    "pr": 97024
+    "issue": 97048,
+    "pr": 97046
   },
   "schema_version": 1,
   "updated": "2026-06-26"
