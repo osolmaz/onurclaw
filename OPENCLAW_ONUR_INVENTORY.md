@@ -4,14 +4,17 @@ Updated: 2026-06-27
 
 Review watermark:
 
-- Last reviewed through issue: #97074.
-- Last reviewed through PR: #97087.
+- Last reviewed through issue: #97091.
+- Last reviewed through PR: #97104.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#97102](https://github.com/openclaw/openclaw/pull/97102) | 2026-06-26 | 0 | Local model runtime | @hannesrudolph | feat(onboarding): add browser Gemma setup assistant |
+| 🔀&nbsp;[#97095](https://github.com/openclaw/openclaw/pull/97095) | 2026-06-26 | 0 | Local memory/embedding | @849261680 | fix: memory_search honors generic embedding providers |
+| 🔀&nbsp;[#97094](https://github.com/openclaw/openclaw/pull/97094) | 2026-06-26 | 0 | Local model runtime | @849261680 | fix(ollama): strip markerless Kimi reasoning preambles |
 | 🔀&nbsp;[#97083](https://github.com/openclaw/openclaw/pull/97083) | 2026-06-26 | 0 | Open-weight/provider behavior | @zw-xysk | fix(cost): estimate cost when API returns cost.total=0 but pricing is known (fixes #97047) |
 | 🔀&nbsp;[#97082](https://github.com/openclaw/openclaw/pull/97082) | 2026-06-26 | 0 | Open-weight/provider behavior | @zak-li | fix(cost): recalculate usage cost if api returns confident zero (DeepSeek V4) |
 | 🔀&nbsp;[#97071](https://github.com/openclaw/openclaw/pull/97071) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-completions): bound SSE response body reads at 16 MiB |
@@ -59,11 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96968](https://github.com/openclaw/openclaw/pull/96968) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(qqbot): bound STT transcription JSON response |
 | 🔀&nbsp;[#96960](https://github.com/openclaw/openclaw/pull/96960) | 2026-06-26 | 0 | Model routing/config | @maweibin | fix(auth): resolve alias provider profiles when explicit profileId fails |
 | 🔀&nbsp;[#96952](https://github.com/openclaw/openclaw/pull/96952) | 2026-06-26 | 0 | Local memory/embedding | @ly-wang19 | perf(memory): copy only requested embedding dimensions |
-| 📝&nbsp;[#96947](https://github.com/openclaw/openclaw/issues/96947) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @FriendofTob | Bug: OpenRouter Anthropic cacheWrite drops to zero after v2026.6.10 upgrade (conversation cache regression) |
-| 🔀&nbsp;[#96927](https://github.com/openclaw/openclaw/pull/96927) | 2026-06-26 | 0 | Local/media model provider | @wangmiao0668000666 | fix(comfy): bound JSON response reads via readProviderJsonResponse |
-| 🔀&nbsp;[#96922](https://github.com/openclaw/openclaw/pull/96922) | 2026-06-26 | 0 | Local model runtime | @liuhao1024 | fix(llm): coerce stringified JSON arrays/objects in tool argument validation (fixes #96916) (AI-assisted) |
 
-## OPEN THREADS (1598)
+## OPEN THREADS (1601)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1548 open threads, sorted by activity</summary>
+<summary>Remaining 1551 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,9 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#97102](https://github.com/openclaw/openclaw/pull/97102) | 0 | Local model runtime | @hannesrudolph | feat(onboarding): add browser Gemma setup assistant |
+| 🔀&nbsp;[#97095](https://github.com/openclaw/openclaw/pull/97095) | 0 | Local memory/embedding | @849261680 | fix: memory_search honors generic embedding providers |
+| 🔀&nbsp;[#97094](https://github.com/openclaw/openclaw/pull/97094) | 0 | Local model runtime | @849261680 | fix(ollama): strip markerless Kimi reasoning preambles |
 | 🔀&nbsp;[#97083](https://github.com/openclaw/openclaw/pull/97083) | 0 | Open-weight/provider behavior | @zw-xysk | fix(cost): estimate cost when API returns cost.total=0 but pricing is known (fixes #97047) |
 | 🔀&nbsp;[#97082](https://github.com/openclaw/openclaw/pull/97082) | 0 | Open-weight/provider behavior | @zak-li | fix(cost): recalculate usage cost if api returns confident zero (DeepSeek V4) |
 | 🔀&nbsp;[#97071](https://github.com/openclaw/openclaw/pull/97071) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-completions): bound SSE response body reads at 16 MiB |
@@ -2382,4 +2385,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1598 (544 issues, 1054 PRs).
+- Kept open threads: 1601 (544 issues, 1057 PRs).

@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 544,
-    "open_prs": 1054,
-    "open_threads": 1598
+    "open_prs": 1057,
+    "open_threads": 1601
   },
   "open_threads": [
     {
@@ -5860,6 +5860,33 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@hannesrudolph",
+      "number": 97102,
+      "title": "feat(onboarding): add browser Gemma setup assistant",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97102"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@849261680",
+      "number": 97095,
+      "title": "fix: memory_search honors generic embedding providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97095"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@849261680",
+      "number": 97094,
+      "title": "fix(ollama): strip markerless Kimi reasoning preambles",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97094"
     },
     {
       "activity": 0,
@@ -19175,8 +19202,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 97074,
-    "pr": 97087
+    "issue": 97091,
+    "pr": 97104
   },
   "schema_version": 1,
   "updated": "2026-06-27"
