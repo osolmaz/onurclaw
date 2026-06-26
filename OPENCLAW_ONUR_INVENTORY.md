@@ -4,14 +4,29 @@ Updated: 2026-06-26
 
 Review watermark:
 
-- Last reviewed through issue: #96879.
-- Last reviewed through PR: #96881.
+- Last reviewed through issue: #96910.
+- Last reviewed through PR: #96914.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96913](https://github.com/openclaw/openclaw/pull/96913) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | [AI] fix(ollama): preserve tool_calls.arguments as JSON string for OpenAI-compatible payloads |
+| 🔀&nbsp;[#96907](https://github.com/openclaw/openclaw/pull/96907) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(runway): bound video create/poll response reads |
+| 🔀&nbsp;[#96905](https://github.com/openclaw/openclaw/pull/96905) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(openai): bound video create-submit response reads |
+| 🔀&nbsp;[#96904](https://github.com/openclaw/openclaw/pull/96904) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(together, pixverse): bound video response reads |
+| 🔀&nbsp;[#96903](https://github.com/openclaw/openclaw/pull/96903) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(xai): bound video response reads |
+| 🔀&nbsp;[#96899](https://github.com/openclaw/openclaw/pull/96899) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(runway-video): bound JSON response reads |
+| 🔀&nbsp;[#96897](https://github.com/openclaw/openclaw/pull/96897) | 2026-06-26 | 0 | Model routing/config | @krissding | Fix #96588: Use numeric collation for model alias version sorting |
+| 🔀&nbsp;[#96896](https://github.com/openclaw/openclaw/pull/96896) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @ml12580 | fix: streaming chat fails when gateway mislabels SSE as JSON [AI-assisted] |
+| 🔀&nbsp;[#96895](https://github.com/openclaw/openclaw/pull/96895) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @arkyu2077 | fix(llm): preserve structured tool results as text across providers |
+| 🔀&nbsp;[#96893](https://github.com/openclaw/openclaw/pull/96893) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(image): bound image-generation provider response reads |
+| 🔀&nbsp;[#96890](https://github.com/openclaw/openclaw/pull/96890) | 2026-06-26 | 0 | Model routing/config | @krissding | Fix #96525: Engage model fallback chain on cron result-level failures |
+| 🔀&nbsp;[#96889](https://github.com/openclaw/openclaw/pull/96889) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(minimax): bound image/video success response reads |
+| 🔀&nbsp;[#96886](https://github.com/openclaw/openclaw/pull/96886) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(fal): bound image/music/video generation response reads |
+| 🔀&nbsp;[#96885](https://github.com/openclaw/openclaw/pull/96885) | 2026-06-26 | 0 | Local/media model provider | @wangmiao0668000666 | fix(pixverse): bound video-generation success JSON response reads at 16 MiB |
+| 📝&nbsp;[#96882](https://github.com/openclaw/openclaw/issues/96882) | 2026-06-26 | 0 | Model routing/config | @YaxiuElm | Feature Request: Group model dropdown by provider |
 | 📝&nbsp;[#96879](https://github.com/openclaw/openclaw/issues/96879) | 2026-06-26 | 0 | Model/provider behavior | @fenglanhua | [Feature]:  Add Interactions API transport for Gemini provider |
 | 🔀&nbsp;[#96877](https://github.com/openclaw/openclaw/pull/96877) | 2026-06-26 | 0 | Model/provider behavior | @solodmd | fix(copilot-oauth): bound OAuth and API endpoint response reads |
 | 🔀&nbsp;[#96876](https://github.com/openclaw/openclaw/pull/96876) | 2026-06-26 | 0 | Local model runtime | @SnoutFirst | feat(local-realtime-voice): route voice turns through main OpenClaw agent loop |
@@ -47,23 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96747](https://github.com/openclaw/openclaw/pull/96747) | 2026-06-25 | 0 | Local memory/embedding | @ly-wang19 | fix(memory): stop chunkMarkdown injecting newlines into single-line chunks |
 | 🔀&nbsp;[#96745](https://github.com/openclaw/openclaw/pull/96745) | 2026-06-25 | 0 | Local memory/embedding | @ly-wang19 | fix(markdown): a fenced-code line with trailing text is content, not a closing fence |
 | 🔀&nbsp;[#96734](https://github.com/openclaw/openclaw/pull/96734) | 2026-06-25 | 0 | Local memory/embedding | @SunnyShu0925 | refactor(memory-core): use replaceFileAtomic for dreaming file writes |
-| 📝&nbsp;[#96732](https://github.com/openclaw/openclaw/issues/96732) | 2026-06-25 | 0 | Open-weight/provider behavior | @BaichouRiver | [Bug]: reasoning_content leaks into chat output with moonshot/kimi-k2.6, frontend reasoning status out of sync |
-| 🔀&nbsp;[#96731](https://github.com/openclaw/openclaw/pull/96731) | 2026-06-25 | 0 | Model routing/config | @lsr911 | fix(cron): wire result classifier into isolated cron model fallback chain |
-| 🔀&nbsp;[#96724](https://github.com/openclaw/openclaw/pull/96724) | 2026-06-25 | 0 | Local memory/embedding | @SunnyShu0925 | fix(agents): fall back to generic embedding provider registry in memory-search config resolution |
-| 🔀&nbsp;[#96723](https://github.com/openclaw/openclaw/pull/96723) | 2026-06-25 | 0 | Model/provider behavior | @wangmiao0668000666 | fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB (provider path) |
-| 🔀&nbsp;[#96721](https://github.com/openclaw/openclaw/pull/96721) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @yangxiansheng | fix(moonshot): inherit custom baseUrl for kimi web search |
-| 🔀&nbsp;[#96717](https://github.com/openclaw/openclaw/pull/96717) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @ajwan8998 | fix(openai-completions): avoid double-stringifying tool call arguments |
-| 🔀&nbsp;[#96706](https://github.com/openclaw/openclaw/pull/96706) | 2026-06-25 | 0 | Local/media model provider | @wanyongstar | fix(media): forward scanned PDF page images as current-turn images |
-| 🔀&nbsp;[#96701](https://github.com/openclaw/openclaw/pull/96701) | 2026-06-25 | 0 | Model/provider behavior | @wangmiao0668000666 | fix(anthropic): bound streaming 200 success-body SSE reads at 16 MiB |
-| 🔀&nbsp;[#96695](https://github.com/openclaw/openclaw/pull/96695) | 2026-06-25 | 0 | Model routing/config | @0xghost42 | fix(cron): classify result-level failures so the model fallback chain engages (#96525) |
-| 🔀&nbsp;[#96690](https://github.com/openclaw/openclaw/pull/96690) | 2026-06-25 | 0 | Local/media model provider | @TurboTheTurtle | fix(media): forward scanned PDF page images |
-| 🔀&nbsp;[#96688](https://github.com/openclaw/openclaw/pull/96688) | 2026-06-25 | 0 | Local model runtime | @wangmiao0668000666 | fix(sdk): promote streaming-byte-guard to plugin-sdk + bound 4 core streaming reads |
-| 🔀&nbsp;[#96686](https://github.com/openclaw/openclaw/pull/96686) | 2026-06-25 | 0 | Model routing/config | @openperf | fix(agents): isolated cron busts prompt prefix cache via per-run session id |
-| 🔀&nbsp;[#96683](https://github.com/openclaw/openclaw/pull/96683) | 2026-06-25 | 0 | Model routing/config | @zhangqueping | fix(model-resolver): use numeric-aware collation for alias/version sort |
-| 🔀&nbsp;[#96682](https://github.com/openclaw/openclaw/pull/96682) | 2026-06-25 | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
-| 📝&nbsp;[#96677](https://github.com/openclaw/openclaw/issues/96677) | 2026-06-25 | 0 | Model routing/config | @lujiaweichn | [Bug]: 2026.6.9 re-busts prompt prefix caching — per-run :run:<UUID> injected into the system-prompt "Runtime:" line (regression of #43148) |
 
-## OPEN THREADS (1531)
+## OPEN THREADS (1546)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1481 open threads, sorted by activity</summary>
+<summary>Remaining 1496 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,21 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96913](https://github.com/openclaw/openclaw/pull/96913) | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | [AI] fix(ollama): preserve tool_calls.arguments as JSON string for OpenAI-compatible payloads |
+| 🔀&nbsp;[#96907](https://github.com/openclaw/openclaw/pull/96907) | 0 | Local/media model provider | @Alix-007 | fix(runway): bound video create/poll response reads |
+| 🔀&nbsp;[#96905](https://github.com/openclaw/openclaw/pull/96905) | 0 | Local/media model provider | @Alix-007 | fix(openai): bound video create-submit response reads |
+| 🔀&nbsp;[#96904](https://github.com/openclaw/openclaw/pull/96904) | 0 | Local/media model provider | @Alix-007 | fix(together, pixverse): bound video response reads |
+| 🔀&nbsp;[#96903](https://github.com/openclaw/openclaw/pull/96903) | 0 | Local/media model provider | @Alix-007 | fix(xai): bound video response reads |
+| 🔀&nbsp;[#96899](https://github.com/openclaw/openclaw/pull/96899) | 0 | Local/media model provider | @mushuiyu886 | fix(runway-video): bound JSON response reads |
+| 🔀&nbsp;[#96897](https://github.com/openclaw/openclaw/pull/96897) | 0 | Model routing/config | @krissding | Fix #96588: Use numeric collation for model alias version sorting |
+| 🔀&nbsp;[#96896](https://github.com/openclaw/openclaw/pull/96896) | 0 | OpenAI-compatible/proxy | @ml12580 | fix: streaming chat fails when gateway mislabels SSE as JSON [AI-assisted] |
+| 🔀&nbsp;[#96895](https://github.com/openclaw/openclaw/pull/96895) | 0 | OpenAI-compatible/proxy | @arkyu2077 | fix(llm): preserve structured tool results as text across providers |
+| 🔀&nbsp;[#96893](https://github.com/openclaw/openclaw/pull/96893) | 0 | Local/media model provider | @Alix-007 | fix(image): bound image-generation provider response reads |
+| 🔀&nbsp;[#96890](https://github.com/openclaw/openclaw/pull/96890) | 0 | Model routing/config | @krissding | Fix #96525: Engage model fallback chain on cron result-level failures |
+| 🔀&nbsp;[#96889](https://github.com/openclaw/openclaw/pull/96889) | 0 | Local/media model provider | @Alix-007 | fix(minimax): bound image/video success response reads |
+| 🔀&nbsp;[#96886](https://github.com/openclaw/openclaw/pull/96886) | 0 | Local/media model provider | @Alix-007 | fix(fal): bound image/music/video generation response reads |
+| 🔀&nbsp;[#96885](https://github.com/openclaw/openclaw/pull/96885) | 0 | Local/media model provider | @wangmiao0668000666 | fix(pixverse): bound video-generation success JSON response reads at 16 MiB |
+| 📝&nbsp;[#96882](https://github.com/openclaw/openclaw/issues/96882) | 0 | Model routing/config | @YaxiuElm | Feature Request: Group model dropdown by provider |
 | 📝&nbsp;[#96879](https://github.com/openclaw/openclaw/issues/96879) | 0 | Model/provider behavior | @fenglanhua | [Feature]:  Add Interactions API transport for Gemini provider |
 | 🔀&nbsp;[#96877](https://github.com/openclaw/openclaw/pull/96877) | 0 | Model/provider behavior | @solodmd | fix(copilot-oauth): bound OAuth and API endpoint response reads |
 | 🔀&nbsp;[#96876](https://github.com/openclaw/openclaw/pull/96876) | 0 | Local model runtime | @SnoutFirst | feat(local-realtime-voice): route voice turns through main OpenClaw agent loop |
@@ -2315,4 +2330,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1531 (532 issues, 999 PRs).
+- Kept open threads: 1546 (533 issues, 1013 PRs).

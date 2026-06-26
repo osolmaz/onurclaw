@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 532,
-    "open_prs": 999,
-    "open_threads": 1531
+    "open_issues": 533,
+    "open_prs": 1013,
+    "open_threads": 1546
   },
   "open_threads": [
     {
@@ -5860,6 +5860,141 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@xydt-tanshanshan",
+      "number": 96913,
+      "title": "[AI] fix(ollama): preserve tool_calls.arguments as JSON string for OpenAI-compatible payloads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96913"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96907,
+      "title": "fix(runway): bound video create/poll response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96907"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96905,
+      "title": "fix(openai): bound video create-submit response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96905"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96904,
+      "title": "fix(together, pixverse): bound video response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96904"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96903,
+      "title": "fix(xai): bound video response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96903"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@mushuiyu886",
+      "number": 96899,
+      "title": "fix(runway-video): bound JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96899"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@krissding",
+      "number": 96897,
+      "title": "Fix #96588: Use numeric collation for model alias version sorting",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96897"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ml12580",
+      "number": 96896,
+      "title": "fix: streaming chat fails when gateway mislabels SSE as JSON [AI-assisted]",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96896"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@arkyu2077",
+      "number": 96895,
+      "title": "fix(llm): preserve structured tool results as text across providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96895"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96893,
+      "title": "fix(image): bound image-generation provider response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96893"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@krissding",
+      "number": 96890,
+      "title": "Fix #96525: Engage model fallback chain on cron result-level failures",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96890"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96889,
+      "title": "fix(minimax): bound image/video success response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96889"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96886,
+      "title": "fix(fal): bound image/music/video generation response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96886"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wangmiao0668000666",
+      "number": 96885,
+      "title": "fix(pixverse): bound video-generation success JSON response reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96885"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@YaxiuElm",
+      "number": 96882,
+      "title": "Feature Request: Group model dropdown by provider",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96882"
     },
     {
       "activity": 0,
@@ -18572,8 +18707,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96879,
-    "pr": 96881
+    "issue": 96910,
+    "pr": 96914
   },
   "schema_version": 1,
   "updated": "2026-06-26"
