@@ -4,14 +4,24 @@ Updated: 2026-06-26
 
 Review watermark:
 
-- Last reviewed through issue: #96858.
-- Last reviewed through PR: #96860.
+- Last reviewed through issue: #96879.
+- Last reviewed through PR: #96881.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 📝&nbsp;[#96879](https://github.com/openclaw/openclaw/issues/96879) | 2026-06-26 | 0 | Model/provider behavior | @fenglanhua | [Feature]:  Add Interactions API transport for Gemini provider |
+| 🔀&nbsp;[#96877](https://github.com/openclaw/openclaw/pull/96877) | 2026-06-26 | 0 | Model/provider behavior | @solodmd | fix(copilot-oauth): bound OAuth and API endpoint response reads |
+| 🔀&nbsp;[#96876](https://github.com/openclaw/openclaw/pull/96876) | 2026-06-26 | 0 | Local model runtime | @SnoutFirst | feat(local-realtime-voice): route voice turns through main OpenClaw agent loop |
+| 🔀&nbsp;[#96875](https://github.com/openclaw/openclaw/pull/96875) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(vydra): bound control response reads |
+| 🔀&nbsp;[#96874](https://github.com/openclaw/openclaw/pull/96874) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(speech): bound TTS response reads |
+| 🔀&nbsp;[#96873](https://github.com/openclaw/openclaw/pull/96873) | 2026-06-26 | 0 | Model/provider behavior | @Alix-007 | fix(openrouter): bound media response reads |
+| 🔀&nbsp;[#96870](https://github.com/openclaw/openclaw/pull/96870) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @flashosophy | fix(stream): recover visible content when reasoning_delta straddles an inline code span (closes #96869) |
+| 📝&nbsp;[#96869](https://github.com/openclaw/openclaw/issues/96869) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @flashosophy | [Bug]: Reasoning+content streaming chunk loses visible content when an inline code span straddles the boundary (visible persisted with unclosed backtick, remainder routed to thinking) |
+| 🔀&nbsp;[#96868](https://github.com/openclaw/openclaw/pull/96868) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(embedding): bound OpenAI-compatible embedding response reads |
+| 🔀&nbsp;[#96864](https://github.com/openclaw/openclaw/pull/96864) | 2026-06-25 | 0 | Local memory/embedding | @pdurlej | feat(memory): carry source actor context into recall |
 | 🔀&nbsp;[#96829](https://github.com/openclaw/openclaw/pull/96829) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @jiahjian | fix: detect already-SSE-formatted body to avoid double data: prefix (#96497) |
 | 🔀&nbsp;[#96819](https://github.com/openclaw/openclaw/pull/96819) | 2026-06-25 | 0 | Open-weight/provider behavior | @andreacasini | fix: allow bailian provider in resolveThinkingProfile |
 | 🔀&nbsp;[#96812](https://github.com/openclaw/openclaw/pull/96812) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
@@ -52,18 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96683](https://github.com/openclaw/openclaw/pull/96683) | 2026-06-25 | 0 | Model routing/config | @zhangqueping | fix(model-resolver): use numeric-aware collation for alias/version sort |
 | 🔀&nbsp;[#96682](https://github.com/openclaw/openclaw/pull/96682) | 2026-06-25 | 0 | Open-weight/provider behavior | @tomsun28 | chore: update glm-5.2 model cost pricing for input, output, and cache |
 | 📝&nbsp;[#96677](https://github.com/openclaw/openclaw/issues/96677) | 2026-06-25 | 0 | Model routing/config | @lujiaweichn | [Bug]: 2026.6.9 re-busts prompt prefix caching — per-run :run:<UUID> injected into the system-prompt "Runtime:" line (regression of #43148) |
-| 🔀&nbsp;[#96673](https://github.com/openclaw/openclaw/pull/96673) | 2026-06-25 | 0 | Local memory/embedding | @Colin243 | Harden embedded memory flush isolation |
-| 🔀&nbsp;[#96669](https://github.com/openclaw/openclaw/pull/96669) | 2026-06-25 | 0 | Local model runtime | @harjothkhara | fix(agents): keep lightContext cron prompts within small-context budget |
-| 🔀&nbsp;[#96668](https://github.com/openclaw/openclaw/pull/96668) | 2026-06-25 | 0 | Local model runtime | @MonkeyLeeT | fix(agents): keep lightweight cron prompts out of no-op compaction |
-| 📝&nbsp;[#96667](https://github.com/openclaw/openclaw/issues/96667) | 2026-06-25 | 0 | Model/provider behavior | @kagura-agent | Context trimming corrupts thinking blocks, causing Claude API rejection |
-| 🔀&nbsp;[#96666](https://github.com/openclaw/openclaw/pull/96666) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai,proxy): bound streaming 200 success-body SSE reads via shared internal guard |
-| 📝&nbsp;[#96664](https://github.com/openclaw/openclaw/issues/96664) | 2026-06-25 | 0 | Model routing/config | @jw8957 | Cross-model thinking-signature blocks persist in transcript and permanently brick sessions on replay (Anthropic) |
-| 🔀&nbsp;[#96661](https://github.com/openclaw/openclaw/pull/96661) | 2026-06-25 | 0 | Model routing/config | @SunnyShu0925 | fix(gateway): skip secrets.resolve when target SecretRefs use exec providers |
-| 📝&nbsp;[#96658](https://github.com/openclaw/openclaw/issues/96658) | 2026-06-25 | 0 | Local model runtime | @RedEye1605 | Context overflow in isolated cron sessions with lightweight bootstrap (lightContext: true) |
-| 🔀&nbsp;[#96655](https://github.com/openclaw/openclaw/pull/96655) | 2026-06-25 | 0 | Local memory/embedding | @bek91 | [codex] perf(memory): add QMD search diagnostics and runtime cache |
-| 📝&nbsp;[#96653](https://github.com/openclaw/openclaw/issues/96653) | 2026-06-25 | 0 | Model routing/config | @willfivestar | [Bug]: reply-path secrets.resolve floods gateway log with UNAVAILABLE for model-provider exec SecretRefs (degrades correctly, ~1 line/turn) |
 
-## OPEN THREADS (1521)
+## OPEN THREADS (1531)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1471 open threads, sorted by activity</summary>
+<summary>Remaining 1481 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,16 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#96879](https://github.com/openclaw/openclaw/issues/96879) | 0 | Model/provider behavior | @fenglanhua | [Feature]:  Add Interactions API transport for Gemini provider |
+| 🔀&nbsp;[#96877](https://github.com/openclaw/openclaw/pull/96877) | 0 | Model/provider behavior | @solodmd | fix(copilot-oauth): bound OAuth and API endpoint response reads |
+| 🔀&nbsp;[#96876](https://github.com/openclaw/openclaw/pull/96876) | 0 | Local model runtime | @SnoutFirst | feat(local-realtime-voice): route voice turns through main OpenClaw agent loop |
+| 🔀&nbsp;[#96875](https://github.com/openclaw/openclaw/pull/96875) | 0 | Local/media model provider | @Alix-007 | fix(vydra): bound control response reads |
+| 🔀&nbsp;[#96874](https://github.com/openclaw/openclaw/pull/96874) | 0 | Local/media model provider | @Alix-007 | fix(speech): bound TTS response reads |
+| 🔀&nbsp;[#96873](https://github.com/openclaw/openclaw/pull/96873) | 0 | Model/provider behavior | @Alix-007 | fix(openrouter): bound media response reads |
+| 🔀&nbsp;[#96870](https://github.com/openclaw/openclaw/pull/96870) | 0 | OpenAI-compatible/proxy | @flashosophy | fix(stream): recover visible content when reasoning_delta straddles an inline code span (closes #96869) |
+| 📝&nbsp;[#96869](https://github.com/openclaw/openclaw/issues/96869) | 0 | OpenAI-compatible/proxy | @flashosophy | [Bug]: Reasoning+content streaming chunk loses visible content when an inline code span straddles the boundary (visible persisted with unclosed backtick, remainder routed to thinking) |
+| 🔀&nbsp;[#96868](https://github.com/openclaw/openclaw/pull/96868) | 0 | OpenAI-compatible/proxy | @Alix-007 | fix(embedding): bound OpenAI-compatible embedding response reads |
+| 🔀&nbsp;[#96864](https://github.com/openclaw/openclaw/pull/96864) | 0 | Local memory/embedding | @pdurlej | feat(memory): carry source actor context into recall |
 | 🔀&nbsp;[#96829](https://github.com/openclaw/openclaw/pull/96829) | 0 | OpenAI-compatible/proxy | @jiahjian | fix: detect already-SSE-formatted body to avoid double data: prefix (#96497) |
 | 🔀&nbsp;[#96819](https://github.com/openclaw/openclaw/pull/96819) | 0 | Open-weight/provider behavior | @andreacasini | fix: allow bailian provider in resolveThinkingProfile |
 | 🔀&nbsp;[#96812](https://github.com/openclaw/openclaw/pull/96812) | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
@@ -2305,4 +2315,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1521 (530 issues, 991 PRs).
+- Kept open threads: 1531 (532 issues, 999 PRs).

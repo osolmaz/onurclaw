@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 530,
-    "open_prs": 991,
-    "open_threads": 1521
+    "open_issues": 532,
+    "open_prs": 999,
+    "open_threads": 1531
   },
   "open_threads": [
     {
@@ -5860,6 +5860,96 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@fenglanhua",
+      "number": 96879,
+      "title": "[Feature]:  Add Interactions API transport for Gemini provider",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96879"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@solodmd",
+      "number": 96877,
+      "title": "fix(copilot-oauth): bound OAuth and API endpoint response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96877"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@SnoutFirst",
+      "number": 96876,
+      "title": "feat(local-realtime-voice): route voice turns through main OpenClaw agent loop",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96876"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96875,
+      "title": "fix(vydra): bound control response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96875"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Alix-007",
+      "number": 96874,
+      "title": "fix(speech): bound TTS response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96874"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Alix-007",
+      "number": 96873,
+      "title": "fix(openrouter): bound media response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96873"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@flashosophy",
+      "number": 96870,
+      "title": "fix(stream): recover visible content when reasoning_delta straddles an inline code span (closes #96869)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96870"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@flashosophy",
+      "number": 96869,
+      "title": "[Bug]: Reasoning+content streaming chunk loses visible content when an inline code span straddles the boundary (visible persisted with unclosed backtick, remainder routed to thinking)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96869"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@Alix-007",
+      "number": 96868,
+      "title": "fix(embedding): bound OpenAI-compatible embedding response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96868"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@pdurlej",
+      "number": 96864,
+      "title": "feat(memory): carry source actor context into recall",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96864"
     },
     {
       "activity": 0,
@@ -18482,8 +18572,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96858,
-    "pr": 96860
+    "issue": 96879,
+    "pr": 96881
   },
   "schema_version": 1,
   "updated": "2026-06-26"
