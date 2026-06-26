@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 533,
-    "open_prs": 1013,
-    "open_threads": 1546
+    "open_issues": 534,
+    "open_prs": 1016,
+    "open_threads": 1550
   },
   "open_threads": [
     {
@@ -5860,6 +5860,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@wangmiao0668000666",
+      "number": 96927,
+      "title": "fix(comfy): bound JSON response reads via readProviderJsonResponse",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96927"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@liuhao1024",
+      "number": 96922,
+      "title": "fix(llm): coerce stringified JSON arrays/objects in tool argument validation (fixes #96916) (AI-assisted)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96922"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@mushuiyu886",
+      "number": 96920,
+      "title": "fix(google-media): bound JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96920"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@visail",
+      "number": 96916,
+      "title": "[Bug]: MCP tool calls fail when LLMs serialize array/object parameters as strings (MiMo, Ollama, etc.)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96916"
     },
     {
       "activity": 0,
@@ -18707,8 +18743,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96910,
-    "pr": 96914
+    "issue": 96934,
+    "pr": 96938
   },
   "schema_version": 1,
   "updated": "2026-06-26"

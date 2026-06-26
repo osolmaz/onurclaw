@@ -4,14 +4,18 @@ Updated: 2026-06-26
 
 Review watermark:
 
-- Last reviewed through issue: #96910.
-- Last reviewed through PR: #96914.
+- Last reviewed through issue: #96934.
+- Last reviewed through PR: #96938.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96927](https://github.com/openclaw/openclaw/pull/96927) | 2026-06-26 | 0 | Local/media model provider | @wangmiao0668000666 | fix(comfy): bound JSON response reads via readProviderJsonResponse |
+| 🔀&nbsp;[#96922](https://github.com/openclaw/openclaw/pull/96922) | 2026-06-26 | 0 | Local model runtime | @liuhao1024 | fix(llm): coerce stringified JSON arrays/objects in tool argument validation (fixes #96916) (AI-assisted) |
+| 🔀&nbsp;[#96920](https://github.com/openclaw/openclaw/pull/96920) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(google-media): bound JSON response reads |
+| 📝&nbsp;[#96916](https://github.com/openclaw/openclaw/issues/96916) | 2026-06-26 | 0 | Local model runtime | @visail | [Bug]: MCP tool calls fail when LLMs serialize array/object parameters as strings (MiMo, Ollama, etc.) |
 | 🔀&nbsp;[#96913](https://github.com/openclaw/openclaw/pull/96913) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | [AI] fix(ollama): preserve tool_calls.arguments as JSON string for OpenAI-compatible payloads |
 | 🔀&nbsp;[#96907](https://github.com/openclaw/openclaw/pull/96907) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(runway): bound video create/poll response reads |
 | 🔀&nbsp;[#96905](https://github.com/openclaw/openclaw/pull/96905) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(openai): bound video create-submit response reads |
@@ -58,12 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96764](https://github.com/openclaw/openclaw/pull/96764) | 2026-06-25 | 0 | Local memory/embedding | @maweibin | fix(ollama): preserve custom provider id through memory embedding adapter (#96742) |
 | 🔀&nbsp;[#96762](https://github.com/openclaw/openclaw/pull/96762) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-chatgpt-responses): bound streaming success-body SSE reads at 16 MiB |
 | 🔀&nbsp;[#96753](https://github.com/openclaw/openclaw/pull/96753) | 2026-06-25 | 0 | Open-weight/provider behavior | @krissding | fix(moonshot): prevent reasoning_content leak when reasoning is disabled |
-| 🔀&nbsp;[#96748](https://github.com/openclaw/openclaw/pull/96748) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @ly-wang19 | fix(llm): trust control escapes in JSON strings that escape backslashes |
-| 🔀&nbsp;[#96747](https://github.com/openclaw/openclaw/pull/96747) | 2026-06-25 | 0 | Local memory/embedding | @ly-wang19 | fix(memory): stop chunkMarkdown injecting newlines into single-line chunks |
-| 🔀&nbsp;[#96745](https://github.com/openclaw/openclaw/pull/96745) | 2026-06-25 | 0 | Local memory/embedding | @ly-wang19 | fix(markdown): a fenced-code line with trailing text is content, not a closing fence |
-| 🔀&nbsp;[#96734](https://github.com/openclaw/openclaw/pull/96734) | 2026-06-25 | 0 | Local memory/embedding | @SunnyShu0925 | refactor(memory-core): use replaceFileAtomic for dreaming file writes |
 
-## OPEN THREADS (1546)
+## OPEN THREADS (1550)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1496 open threads, sorted by activity</summary>
+<summary>Remaining 1500 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,10 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96927](https://github.com/openclaw/openclaw/pull/96927) | 0 | Local/media model provider | @wangmiao0668000666 | fix(comfy): bound JSON response reads via readProviderJsonResponse |
+| 🔀&nbsp;[#96922](https://github.com/openclaw/openclaw/pull/96922) | 0 | Local model runtime | @liuhao1024 | fix(llm): coerce stringified JSON arrays/objects in tool argument validation (fixes #96916) (AI-assisted) |
+| 🔀&nbsp;[#96920](https://github.com/openclaw/openclaw/pull/96920) | 0 | Local/media model provider | @mushuiyu886 | fix(google-media): bound JSON response reads |
+| 📝&nbsp;[#96916](https://github.com/openclaw/openclaw/issues/96916) | 0 | Local model runtime | @visail | [Bug]: MCP tool calls fail when LLMs serialize array/object parameters as strings (MiMo, Ollama, etc.) |
 | 🔀&nbsp;[#96913](https://github.com/openclaw/openclaw/pull/96913) | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | [AI] fix(ollama): preserve tool_calls.arguments as JSON string for OpenAI-compatible payloads |
 | 🔀&nbsp;[#96907](https://github.com/openclaw/openclaw/pull/96907) | 0 | Local/media model provider | @Alix-007 | fix(runway): bound video create/poll response reads |
 | 🔀&nbsp;[#96905](https://github.com/openclaw/openclaw/pull/96905) | 0 | Local/media model provider | @Alix-007 | fix(openai): bound video create-submit response reads |
@@ -2330,4 +2334,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1546 (533 issues, 1013 PRs).
+- Kept open threads: 1550 (534 issues, 1016 PRs).
