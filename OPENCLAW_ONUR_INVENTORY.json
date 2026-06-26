@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 544,
+    "open_issues": 545,
     "open_prs": 1057,
-    "open_threads": 1601
+    "open_threads": 1602
   },
   "open_threads": [
     {
@@ -5860,6 +5860,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@tbertran",
+      "number": 97115,
+      "title": "Bug: Cron fallback chain broken — models return zero-token success or killed by shared AbortController",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/97115"
     },
     {
       "activity": 0,
@@ -19202,8 +19211,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 97091,
-    "pr": 97104
+    "issue": 97115,
+    "pr": 97112
   },
   "schema_version": 1,
   "updated": "2026-06-27"
