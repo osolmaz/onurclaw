@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 537,
-    "open_prs": 1031,
-    "open_threads": 1568
+    "open_issues": 540,
+    "open_prs": 1038,
+    "open_threads": 1578
   },
   "open_threads": [
     {
@@ -5860,6 +5860,96 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@ralf003",
+      "number": 97017,
+      "title": "fix(agent-settings): exclude zhipu provider from silentOverflowProneModel detection",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97017"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@hxz398",
+      "number": 97016,
+      "title": "Bug: LM Studio embedding preload ignores contextWindow config, causes CUDA OOM",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/97016"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@mmhzlrj",
+      "number": 97015,
+      "title": "memory_search: index identity check blocks use of valid chunks when memory_index_meta is empty (Ubuntu IP change recovery)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/97015"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangguiping-xydt",
+      "number": 97012,
+      "title": "fix(plugin-sdk): follow paginated live model catalogs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97012"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@lileilei-camera",
+      "number": 97011,
+      "title": "perf: token consumption ~2× higher than OpenCode for equivalent coding tasks",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/97011"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@ChunkyPanda29",
+      "number": 97009,
+      "title": "fix: classify HTTP 429 'temporarily overloaded' as overloaded, not rate_limit",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97009"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@SunnyShu0925",
+      "number": 97007,
+      "title": "fix(session-memory): forward hook config model to LLM slug generator",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97007"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@lsr911",
+      "number": 96996,
+      "title": "fix(opencode-go): disable thinking for minimax-m3 anthropic-messages path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96996"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lsr911",
+      "number": 96995,
+      "title": "fix(opencode-go): treat block-boundary SSE events as liveness for idle timer",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96995"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 96993,
+      "title": "fix(proxy): bound SSE parser buffer to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96993"
     },
     {
       "activity": 0,
@@ -18905,8 +18995,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96988,
-    "pr": 96992
+    "issue": 97016,
+    "pr": 97017
   },
   "schema_version": 1,
   "updated": "2026-06-26"
