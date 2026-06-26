@@ -4,14 +4,21 @@ Updated: 2026-06-27
 
 Review watermark:
 
-- Last reviewed through issue: #97062.
-- Last reviewed through PR: #97063.
+- Last reviewed through issue: #97074.
+- Last reviewed through PR: #97087.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#97083](https://github.com/openclaw/openclaw/pull/97083) | 2026-06-26 | 0 | Open-weight/provider behavior | @zw-xysk | fix(cost): estimate cost when API returns cost.total=0 but pricing is known (fixes #97047) |
+| 🔀&nbsp;[#97082](https://github.com/openclaw/openclaw/pull/97082) | 2026-06-26 | 0 | Open-weight/provider behavior | @zak-li | fix(cost): recalculate usage cost if api returns confident zero (DeepSeek V4) |
+| 🔀&nbsp;[#97071](https://github.com/openclaw/openclaw/pull/97071) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-completions): bound SSE response body reads at 16 MiB |
+| 🔀&nbsp;[#97070](https://github.com/openclaw/openclaw/pull/97070) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(azure-openai-responses): bound SSE response body reads at 16 MiB |
+| 🔀&nbsp;[#97068](https://github.com/openclaw/openclaw/pull/97068) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-responses): bound SSE response body reads at 16 MiB |
+| 🔀&nbsp;[#97066](https://github.com/openclaw/openclaw/pull/97066) | 2026-06-26 | 0 | Model routing/config | @NianJiuZst | [codex] Accept audio and video model catalog inputs |
+| 🔀&nbsp;[#97065](https://github.com/openclaw/openclaw/pull/97065) | 2026-06-26 | 0 | Open-weight/provider behavior | @NianJiuZst | [codex] Estimate known zero transcript costs |
 | 🔀&nbsp;[#97059](https://github.com/openclaw/openclaw/pull/97059) | 2026-06-26 | 0 | Local memory/embedding | @harjothkhara | fix(ollama): preserve custom memory provider endpoints |
 | 📝&nbsp;[#97055](https://github.com/openclaw/openclaw/issues/97055) | 2026-06-26 | 0 | Local memory/embedding | @Tabytha-Stryker | Provider resolution ignores memorySearch.provider config, routing to wrong Ollama instance |
 | 🔀&nbsp;[#97054](https://github.com/openclaw/openclaw/pull/97054) | 2026-06-26 | 0 | Open-weight/provider behavior | @ZOOWH | fix(cost): estimate usage cost when API returns cost.total=0 but pricing is known |
@@ -55,15 +62,8 @@ Review watermark:
 | 📝&nbsp;[#96947](https://github.com/openclaw/openclaw/issues/96947) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @FriendofTob | Bug: OpenRouter Anthropic cacheWrite drops to zero after v2026.6.10 upgrade (conversation cache regression) |
 | 🔀&nbsp;[#96927](https://github.com/openclaw/openclaw/pull/96927) | 2026-06-26 | 0 | Local/media model provider | @wangmiao0668000666 | fix(comfy): bound JSON response reads via readProviderJsonResponse |
 | 🔀&nbsp;[#96922](https://github.com/openclaw/openclaw/pull/96922) | 2026-06-26 | 0 | Local model runtime | @liuhao1024 | fix(llm): coerce stringified JSON arrays/objects in tool argument validation (fixes #96916) (AI-assisted) |
-| 🔀&nbsp;[#96920](https://github.com/openclaw/openclaw/pull/96920) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(google-media): bound JSON response reads |
-| 📝&nbsp;[#96916](https://github.com/openclaw/openclaw/issues/96916) | 2026-06-26 | 0 | Local model runtime | @visail | [Bug]: MCP tool calls fail when LLMs serialize array/object parameters as strings (MiMo, Ollama, etc.) |
-| 🔀&nbsp;[#96913](https://github.com/openclaw/openclaw/pull/96913) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @xydt-tanshanshan | [AI] fix(ollama): preserve tool_calls.arguments as JSON string for OpenAI-compatible payloads |
-| 🔀&nbsp;[#96907](https://github.com/openclaw/openclaw/pull/96907) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(runway): bound video create/poll response reads |
-| 🔀&nbsp;[#96905](https://github.com/openclaw/openclaw/pull/96905) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(openai): bound video create-submit response reads |
-| 🔀&nbsp;[#96904](https://github.com/openclaw/openclaw/pull/96904) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(together, pixverse): bound video response reads |
-| 🔀&nbsp;[#96903](https://github.com/openclaw/openclaw/pull/96903) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(xai): bound video response reads |
 
-## OPEN THREADS (1591)
+## OPEN THREADS (1598)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1541 open threads, sorted by activity</summary>
+<summary>Remaining 1548 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#97083](https://github.com/openclaw/openclaw/pull/97083) | 0 | Open-weight/provider behavior | @zw-xysk | fix(cost): estimate cost when API returns cost.total=0 but pricing is known (fixes #97047) |
+| 🔀&nbsp;[#97082](https://github.com/openclaw/openclaw/pull/97082) | 0 | Open-weight/provider behavior | @zak-li | fix(cost): recalculate usage cost if api returns confident zero (DeepSeek V4) |
+| 🔀&nbsp;[#97071](https://github.com/openclaw/openclaw/pull/97071) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-completions): bound SSE response body reads at 16 MiB |
+| 🔀&nbsp;[#97070](https://github.com/openclaw/openclaw/pull/97070) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(azure-openai-responses): bound SSE response body reads at 16 MiB |
+| 🔀&nbsp;[#97068](https://github.com/openclaw/openclaw/pull/97068) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-responses): bound SSE response body reads at 16 MiB |
+| 🔀&nbsp;[#97066](https://github.com/openclaw/openclaw/pull/97066) | 0 | Model routing/config | @NianJiuZst | [codex] Accept audio and video model catalog inputs |
+| 🔀&nbsp;[#97065](https://github.com/openclaw/openclaw/pull/97065) | 0 | Open-weight/provider behavior | @NianJiuZst | [codex] Estimate known zero transcript costs |
 | 🔀&nbsp;[#97059](https://github.com/openclaw/openclaw/pull/97059) | 0 | Local memory/embedding | @harjothkhara | fix(ollama): preserve custom memory provider endpoints |
 | 📝&nbsp;[#97055](https://github.com/openclaw/openclaw/issues/97055) | 0 | Local memory/embedding | @Tabytha-Stryker | Provider resolution ignores memorySearch.provider config, routing to wrong Ollama instance |
 | 🔀&nbsp;[#97054](https://github.com/openclaw/openclaw/pull/97054) | 0 | Open-weight/provider behavior | @ZOOWH | fix(cost): estimate usage cost when API returns cost.total=0 but pricing is known |
@@ -2375,4 +2382,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1591 (544 issues, 1047 PRs).
+- Kept open threads: 1598 (544 issues, 1054 PRs).

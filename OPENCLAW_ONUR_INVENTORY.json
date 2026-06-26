@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 544,
-    "open_prs": 1047,
-    "open_threads": 1591
+    "open_prs": 1054,
+    "open_threads": 1598
   },
   "open_threads": [
     {
@@ -5860,6 +5860,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@zw-xysk",
+      "number": 97083,
+      "title": "fix(cost): estimate cost when API returns cost.total=0 but pricing is known (fixes #97047)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97083"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@zak-li",
+      "number": 97082,
+      "title": "fix(cost): recalculate usage cost if api returns confident zero (DeepSeek V4)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97082"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 97071,
+      "title": "fix(openai-completions): bound SSE response body reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97071"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 97070,
+      "title": "fix(azure-openai-responses): bound SSE response body reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97070"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 97068,
+      "title": "fix(openai-responses): bound SSE response body reads at 16 MiB",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97068"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@NianJiuZst",
+      "number": 97066,
+      "title": "[codex] Accept audio and video model catalog inputs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97066"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@NianJiuZst",
+      "number": 97065,
+      "title": "[codex] Estimate known zero transcript costs",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97065"
     },
     {
       "activity": 0,
@@ -19112,8 +19175,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 97062,
-    "pr": 97063
+    "issue": 97074,
+    "pr": 97087
   },
   "schema_version": 1,
   "updated": "2026-06-27"
