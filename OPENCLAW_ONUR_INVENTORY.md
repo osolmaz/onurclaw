@@ -4,14 +4,31 @@ Updated: 2026-06-26
 
 Review watermark:
 
-- Last reviewed through issue: #96967.
-- Last reviewed through PR: #96938.
+- Last reviewed through issue: #96988.
+- Last reviewed through PR: #96992.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#96992](https://github.com/openclaw/openclaw/pull/96992) | 2026-06-26 | 0 | Open-weight/provider behavior | @lsr911 | fix(opencode-go): disable thinking for minimax-m3 anthropic-messages path |
+| 🔀&nbsp;[#96991](https://github.com/openclaw/openclaw/pull/96991) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
+| 🔀&nbsp;[#96990](https://github.com/openclaw/openclaw/pull/96990) | 2026-06-26 | 0 | Model routing/config | @maweibin | fix(webchat): make model selector width adaptive to prevent long name… |
+| 🔀&nbsp;[#96989](https://github.com/openclaw/openclaw/pull/96989) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(provider-transport-fetch): bound SSE buffer to prevent OOM |
+| 📝&nbsp;[#96988](https://github.com/openclaw/openclaw/issues/96988) | 2026-06-26 | 0 | Model/provider behavior | @remnant1219 | [Feature]: Request to Add GHE.com Model Integration Feature in OpenCLAW |
+| 🔀&nbsp;[#96985](https://github.com/openclaw/openclaw/pull/96985) | 2026-06-26 | 0 | Model/provider behavior | @anguslogan01 | fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash |
+| 🔀&nbsp;[#96984](https://github.com/openclaw/openclaw/pull/96984) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(google): bound TTS success JSON response reads |
+| 🔀&nbsp;[#96978](https://github.com/openclaw/openclaw/pull/96978) | 2026-06-26 | 0 | Local/media model provider | @Monkey-wusky | fix(together): bound video generation JSON response reads |
+| 🔀&nbsp;[#96977](https://github.com/openclaw/openclaw/pull/96977) | 2026-06-26 | 0 | Local/media model provider | @Monkey-wusky | fix(fal): bound video generation JSON response reads |
+| 🔀&nbsp;[#96976](https://github.com/openclaw/openclaw/pull/96976) | 2026-06-26 | 0 | Local/media model provider | @Monkey-wusky | fix(fal): bound image generation JSON response reads |
+| 📝&nbsp;[#96974](https://github.com/openclaw/openclaw/issues/96974) | 2026-06-26 | 0 | Model/provider behavior | @anguslogan01 | [Bug]: web_search (gemini) default model `gemini-2.5-flash` is retired → 404 out-of-the-box |
+| 🔀&nbsp;[#96972](https://github.com/openclaw/openclaw/pull/96972) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai): bound SSE parser buffer to prevent OOM |
+| 🔀&nbsp;[#96970](https://github.com/openclaw/openclaw/pull/96970) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(clickclack): bound REST success JSON response reads |
+| 🔀&nbsp;[#96969](https://github.com/openclaw/openclaw/pull/96969) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @SymbolStar | fix(runtime): drop intermediate monologue text blocks from visible delivery |
+| 🔀&nbsp;[#96968](https://github.com/openclaw/openclaw/pull/96968) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(qqbot): bound STT transcription JSON response |
+| 🔀&nbsp;[#96960](https://github.com/openclaw/openclaw/pull/96960) | 2026-06-26 | 0 | Model routing/config | @maweibin | fix(auth): resolve alias provider profiles when explicit profileId fails |
+| 🔀&nbsp;[#96952](https://github.com/openclaw/openclaw/pull/96952) | 2026-06-26 | 0 | Local memory/embedding | @ly-wang19 | perf(memory): copy only requested embedding dimensions |
 | 📝&nbsp;[#96947](https://github.com/openclaw/openclaw/issues/96947) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @FriendofTob | Bug: OpenRouter Anthropic cacheWrite drops to zero after v2026.6.10 upgrade (conversation cache regression) |
 | 🔀&nbsp;[#96927](https://github.com/openclaw/openclaw/pull/96927) | 2026-06-26 | 0 | Local/media model provider | @wangmiao0668000666 | fix(comfy): bound JSON response reads via readProviderJsonResponse |
 | 🔀&nbsp;[#96922](https://github.com/openclaw/openclaw/pull/96922) | 2026-06-26 | 0 | Local model runtime | @liuhao1024 | fix(llm): coerce stringified JSON arrays/objects in tool argument validation (fixes #96916) (AI-assisted) |
@@ -45,25 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96829](https://github.com/openclaw/openclaw/pull/96829) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @jiahjian | fix: detect already-SSE-formatted body to avoid double data: prefix (#96497) |
 | 🔀&nbsp;[#96819](https://github.com/openclaw/openclaw/pull/96819) | 2026-06-25 | 0 | Open-weight/provider behavior | @andreacasini | fix: allow bailian provider in resolveThinkingProfile |
 | 🔀&nbsp;[#96812](https://github.com/openclaw/openclaw/pull/96812) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
-| 🔀&nbsp;[#96799](https://github.com/openclaw/openclaw/pull/96799) | 2026-06-25 | 0 | Local memory/embedding | @Neomail2 | fix(memory): distinguish QMD search outcomes |
-| 📝&nbsp;[#96796](https://github.com/openclaw/openclaw/issues/96796) | 2026-06-25 | 0 | Local memory/embedding | @Neomail2 | QMD memory_search can force blocking sync after non-result outcomes |
-| 🔀&nbsp;[#96795](https://github.com/openclaw/openclaw/pull/96795) | 2026-06-25 | 0 | Open-weight/provider behavior | @evan-YM | fix(codex): move turn-scoped workspace context to thread-level developer instructions |
-| 🔀&nbsp;[#96787](https://github.com/openclaw/openclaw/pull/96787) | 2026-06-25 | 0 | Local memory/embedding | @bennewell35 | fix(memory-core): report pending close work errors |
-| 🔀&nbsp;[#96786](https://github.com/openclaw/openclaw/pull/96786) | 2026-06-25 | 0 | Local/media model provider | @wangmiao0668000666 | fix(openai-video-gen): bound video submit response JSON read at 16 MiB |
-| 📝&nbsp;[#96785](https://github.com/openclaw/openclaw/issues/96785) | 2026-06-25 | 0 | Model routing/config | @darealgege | Model Switch (gpt-5.5 → kimi/k2p6) Triggers Context Overflow Without Proper Compaction |
-| 🔀&nbsp;[#96782](https://github.com/openclaw/openclaw/pull/96782) | 2026-06-25 | 0 | Local/media model provider | @wangmiao0668000666 | fix(video-generation): bound dashscope JSON response reads at 16 MiB |
-| 🔀&nbsp;[#96781](https://github.com/openclaw/openclaw/pull/96781) | 2026-06-25 | 0 | Local memory/embedding | @MaHaoHao-ch | fix: log pending sync and provider init errors on manager close |
-| 🔀&nbsp;[#96779](https://github.com/openclaw/openclaw/pull/96779) | 2026-06-25 | 0 | Open-weight/provider behavior | @wangmiao0668000666 | fix(chutes-oauth-plugin): bound plugin JSON response reads at 16 MiB |
-| 🔀&nbsp;[#96777](https://github.com/openclaw/openclaw/pull/96777) | 2026-06-25 | 0 | Open-weight/provider behavior | @wangmiao0668000666 | fix(chutes-oauth): bound core helper JSON response reads at 16 MiB |
-| 🔀&nbsp;[#96776](https://github.com/openclaw/openclaw/pull/96776) | 2026-06-25 | 0 | Local/media model provider | @wangmiao0668000666 | fix(image-generation): replace unbounded response.json() with readProviderJsonResponse |
-| 📝&nbsp;[#96773](https://github.com/openclaw/openclaw/issues/96773) | 2026-06-25 | 0 | Open-weight/provider behavior | @StewartXiang | [Bug]: Turn-scoped developer instructions (SOUL.md/IDENTITY.md/USER.md) create different message prefixes between full-turn and tool-continuation calls, breaking DeepSeek KV cache (20%/99% oscillation) |
-| 📝&nbsp;[#96771](https://github.com/openclaw/openclaw/issues/96771) | 2026-06-25 | 0 | Model routing/config | @FreddieM-engpai | OpenClaw 2026.6.10 provider-unification gotcha: openai/gpt-5.5 requires provider openai to route to the subscription backend |
-| 🔀&nbsp;[#96768](https://github.com/openclaw/openclaw/pull/96768) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(runtime/proxy): bound streaming success-body SSE reads at 16 MiB |
-| 📝&nbsp;[#96766](https://github.com/openclaw/openclaw/issues/96766) | 2026-06-25 | 0 | Local memory/embedding | @LK-BLOG | awaitPendingManagerWork silently swallows all errors from pending sync/provider init on close |
-| 🔀&nbsp;[#96764](https://github.com/openclaw/openclaw/pull/96764) | 2026-06-25 | 0 | Local memory/embedding | @maweibin | fix(ollama): preserve custom provider id through memory embedding adapter (#96742) |
-| 🔀&nbsp;[#96762](https://github.com/openclaw/openclaw/pull/96762) | 2026-06-25 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-chatgpt-responses): bound streaming success-body SSE reads at 16 MiB |
 
-## OPEN THREADS (1551)
+## OPEN THREADS (1568)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1501 open threads, sorted by activity</summary>
+<summary>Remaining 1518 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,23 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#96992](https://github.com/openclaw/openclaw/pull/96992) | 0 | Open-weight/provider behavior | @lsr911 | fix(opencode-go): disable thinking for minimax-m3 anthropic-messages path |
+| 🔀&nbsp;[#96991](https://github.com/openclaw/openclaw/pull/96991) | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
+| 🔀&nbsp;[#96990](https://github.com/openclaw/openclaw/pull/96990) | 0 | Model routing/config | @maweibin | fix(webchat): make model selector width adaptive to prevent long name… |
+| 🔀&nbsp;[#96989](https://github.com/openclaw/openclaw/pull/96989) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(provider-transport-fetch): bound SSE buffer to prevent OOM |
+| 📝&nbsp;[#96988](https://github.com/openclaw/openclaw/issues/96988) | 0 | Model/provider behavior | @remnant1219 | [Feature]: Request to Add GHE.com Model Integration Feature in OpenCLAW |
+| 🔀&nbsp;[#96985](https://github.com/openclaw/openclaw/pull/96985) | 0 | Model/provider behavior | @anguslogan01 | fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash |
+| 🔀&nbsp;[#96984](https://github.com/openclaw/openclaw/pull/96984) | 0 | Local/media model provider | @mushuiyu886 | fix(google): bound TTS success JSON response reads |
+| 🔀&nbsp;[#96978](https://github.com/openclaw/openclaw/pull/96978) | 0 | Local/media model provider | @Monkey-wusky | fix(together): bound video generation JSON response reads |
+| 🔀&nbsp;[#96977](https://github.com/openclaw/openclaw/pull/96977) | 0 | Local/media model provider | @Monkey-wusky | fix(fal): bound video generation JSON response reads |
+| 🔀&nbsp;[#96976](https://github.com/openclaw/openclaw/pull/96976) | 0 | Local/media model provider | @Monkey-wusky | fix(fal): bound image generation JSON response reads |
+| 📝&nbsp;[#96974](https://github.com/openclaw/openclaw/issues/96974) | 0 | Model/provider behavior | @anguslogan01 | [Bug]: web_search (gemini) default model `gemini-2.5-flash` is retired → 404 out-of-the-box |
+| 🔀&nbsp;[#96972](https://github.com/openclaw/openclaw/pull/96972) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai): bound SSE parser buffer to prevent OOM |
+| 🔀&nbsp;[#96970](https://github.com/openclaw/openclaw/pull/96970) | 0 | Local/media model provider | @mushuiyu886 | fix(clickclack): bound REST success JSON response reads |
+| 🔀&nbsp;[#96969](https://github.com/openclaw/openclaw/pull/96969) | 0 | OpenAI-compatible/proxy | @SymbolStar | fix(runtime): drop intermediate monologue text blocks from visible delivery |
+| 🔀&nbsp;[#96968](https://github.com/openclaw/openclaw/pull/96968) | 0 | Local/media model provider | @mushuiyu886 | fix(qqbot): bound STT transcription JSON response |
+| 🔀&nbsp;[#96960](https://github.com/openclaw/openclaw/pull/96960) | 0 | Model routing/config | @maweibin | fix(auth): resolve alias provider profiles when explicit profileId fails |
+| 🔀&nbsp;[#96952](https://github.com/openclaw/openclaw/pull/96952) | 0 | Local memory/embedding | @ly-wang19 | perf(memory): copy only requested embedding dimensions |
 | 📝&nbsp;[#96947](https://github.com/openclaw/openclaw/issues/96947) | 0 | OpenAI-compatible/proxy | @FriendofTob | Bug: OpenRouter Anthropic cacheWrite drops to zero after v2026.6.10 upgrade (conversation cache regression) |
 | 🔀&nbsp;[#96927](https://github.com/openclaw/openclaw/pull/96927) | 0 | Local/media model provider | @wangmiao0668000666 | fix(comfy): bound JSON response reads via readProviderJsonResponse |
 | 🔀&nbsp;[#96922](https://github.com/openclaw/openclaw/pull/96922) | 0 | Local model runtime | @liuhao1024 | fix(llm): coerce stringified JSON arrays/objects in tool argument validation (fixes #96916) (AI-assisted) |
@@ -2335,4 +2352,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1551 (535 issues, 1016 PRs).
+- Kept open threads: 1568 (537 issues, 1031 PRs).

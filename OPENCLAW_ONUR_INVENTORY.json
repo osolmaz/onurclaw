@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 535,
-    "open_prs": 1016,
-    "open_threads": 1551
+    "open_issues": 537,
+    "open_prs": 1031,
+    "open_threads": 1568
   },
   "open_threads": [
     {
@@ -5860,6 +5860,159 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@lsr911",
+      "number": 96992,
+      "title": "fix(opencode-go): disable thinking for minimax-m3 anthropic-messages path",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96992"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lsr911",
+      "number": 96991,
+      "title": "fix(opencode-go): treat block-boundary SSE events as liveness for idle timer",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96991"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@maweibin",
+      "number": 96990,
+      "title": "fix(webchat): make model selector width adaptive to prevent long name…",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96990"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 96989,
+      "title": "fix(provider-transport-fetch): bound SSE buffer to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96989"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@remnant1219",
+      "number": 96988,
+      "title": "[Feature]: Request to Add GHE.com Model Integration Feature in OpenCLAW",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96988"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@anguslogan01",
+      "number": 96985,
+      "title": "fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96985"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@mushuiyu886",
+      "number": 96984,
+      "title": "fix(google): bound TTS success JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96984"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Monkey-wusky",
+      "number": 96978,
+      "title": "fix(together): bound video generation JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96978"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Monkey-wusky",
+      "number": 96977,
+      "title": "fix(fal): bound video generation JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96977"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@Monkey-wusky",
+      "number": 96976,
+      "title": "fix(fal): bound image generation JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96976"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@anguslogan01",
+      "number": 96974,
+      "title": "[Bug]: web_search (gemini) default model `gemini-2.5-flash` is retired → 404 out-of-the-box",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/96974"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 96972,
+      "title": "fix(openai): bound SSE parser buffer to prevent OOM",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96972"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@mushuiyu886",
+      "number": 96970,
+      "title": "fix(clickclack): bound REST success JSON response reads",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96970"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@SymbolStar",
+      "number": 96969,
+      "title": "fix(runtime): drop intermediate monologue text blocks from visible delivery",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96969"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@mushuiyu886",
+      "number": 96968,
+      "title": "fix(qqbot): bound STT transcription JSON response",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96968"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@maweibin",
+      "number": 96960,
+      "title": "fix(auth): resolve alias provider profiles when explicit profileId fails",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96960"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@ly-wang19",
+      "number": 96952,
+      "title": "perf(memory): copy only requested embedding dimensions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/96952"
     },
     {
       "activity": 0,
@@ -18752,8 +18905,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 96967,
-    "pr": 96938
+    "issue": 96988,
+    "pr": 96992
   },
   "schema_version": 1,
   "updated": "2026-06-26"
