@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 540,
-    "open_prs": 1038,
-    "open_threads": 1578
+    "open_issues": 541,
+    "open_prs": 1041,
+    "open_threads": 1582
   },
   "open_threads": [
     {
@@ -5860,6 +5860,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@markoub",
+      "number": 97023,
+      "title": "fix: OpenAI bridge rejects Anthropic custom tools",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97023"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ZOOWH",
+      "number": 97022,
+      "title": "fix(stream-wrapper): convert Anthropic custom tools to OpenAI function format in bridge",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97022"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@chrisbaker2000",
+      "number": 97020,
+      "title": "OpenAI↔Anthropic bridge leaks Anthropic custom tools (type:\"custom\") → OpenAI 400 \"Invalid value: 'custom'\"",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/97020"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@maweibin",
+      "number": 97018,
+      "title": "fix(lmstudio): pass contextWindow to embedding model preload",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97018"
     },
     {
       "activity": 0,
@@ -18995,8 +19031,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 97016,
-    "pr": 97017
+    "issue": 97032,
+    "pr": 97024
   },
   "schema_version": 1,
   "updated": "2026-06-26"
