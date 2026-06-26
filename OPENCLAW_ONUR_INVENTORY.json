@@ -4729,9 +4729,9 @@
   ],
   "counts": {
     "closed_threads": 675,
-    "open_issues": 543,
-    "open_prs": 1044,
-    "open_threads": 1587
+    "open_issues": 544,
+    "open_prs": 1047,
+    "open_threads": 1591
   },
   "open_threads": [
     {
@@ -5860,6 +5860,42 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@harjothkhara",
+      "number": 97059,
+      "title": "fix(ollama): preserve custom memory provider endpoints",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97059"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Tabytha-Stryker",
+      "number": 97055,
+      "title": "Provider resolution ignores memorySearch.provider config, routing to wrong Ollama instance",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/97055"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@ZOOWH",
+      "number": 97054,
+      "title": "fix(cost): estimate usage cost when API returns cost.total=0 but pricing is known",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97054"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@harjothkhara",
+      "number": 97052,
+      "title": "[codex] fix(agents): accept media input catalog modalities",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97052"
     },
     {
       "activity": 0,
@@ -19076,9 +19112,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 97048,
-    "pr": 97046
+    "issue": 97062,
+    "pr": 97063
   },
   "schema_version": 1,
-  "updated": "2026-06-26"
+  "updated": "2026-06-27"
 }

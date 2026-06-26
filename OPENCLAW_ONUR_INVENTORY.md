@@ -1,17 +1,21 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-06-26
+Updated: 2026-06-27
 
 Review watermark:
 
-- Last reviewed through issue: #97048.
-- Last reviewed through PR: #97046.
+- Last reviewed through issue: #97062.
+- Last reviewed through PR: #97063.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#97059](https://github.com/openclaw/openclaw/pull/97059) | 2026-06-26 | 0 | Local memory/embedding | @harjothkhara | fix(ollama): preserve custom memory provider endpoints |
+| 📝&nbsp;[#97055](https://github.com/openclaw/openclaw/issues/97055) | 2026-06-26 | 0 | Local memory/embedding | @Tabytha-Stryker | Provider resolution ignores memorySearch.provider config, routing to wrong Ollama instance |
+| 🔀&nbsp;[#97054](https://github.com/openclaw/openclaw/pull/97054) | 2026-06-26 | 0 | Open-weight/provider behavior | @ZOOWH | fix(cost): estimate usage cost when API returns cost.total=0 but pricing is known |
+| 🔀&nbsp;[#97052](https://github.com/openclaw/openclaw/pull/97052) | 2026-06-26 | 0 | Model routing/config | @harjothkhara | [codex] fix(agents): accept media input catalog modalities |
 | 📝&nbsp;[#97048](https://github.com/openclaw/openclaw/issues/97048) | 2026-06-26 | 0 | Model routing/config | @zackchiutw | Model catalog validation rejects audio/video input modalities produced by OpenClaw's own catalog fetch (MiniMax-M3, phi-4-multimodal dropped) |
 | 📝&nbsp;[#97047](https://github.com/openclaw/openclaw/issues/97047) | 2026-06-26 | 0 | Open-weight/provider behavior | @Yachiyo1680 | [Bug]: DeepSeek V4 API returns usage.cost total as 0, causing Control UI Spend to show zero |
 | 🔀&nbsp;[#97037](https://github.com/openclaw/openclaw/pull/97037) | 2026-06-26 | 0 | Local model runtime | @prasanthmaran | fix(llm-core): coerce JSON-stringified array/object tool arguments |
@@ -58,12 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96905](https://github.com/openclaw/openclaw/pull/96905) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(openai): bound video create-submit response reads |
 | 🔀&nbsp;[#96904](https://github.com/openclaw/openclaw/pull/96904) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(together, pixverse): bound video response reads |
 | 🔀&nbsp;[#96903](https://github.com/openclaw/openclaw/pull/96903) | 2026-06-26 | 0 | Local/media model provider | @Alix-007 | fix(xai): bound video response reads |
-| 🔀&nbsp;[#96899](https://github.com/openclaw/openclaw/pull/96899) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(runway-video): bound JSON response reads |
-| 🔀&nbsp;[#96897](https://github.com/openclaw/openclaw/pull/96897) | 2026-06-26 | 0 | Model routing/config | @krissding | Fix #96588: Use numeric collation for model alias version sorting |
-| 🔀&nbsp;[#96896](https://github.com/openclaw/openclaw/pull/96896) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @ml12580 | fix: streaming chat fails when gateway mislabels SSE as JSON [AI-assisted] |
-| 🔀&nbsp;[#96895](https://github.com/openclaw/openclaw/pull/96895) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @arkyu2077 | fix(llm): preserve structured tool results as text across providers |
 
-## OPEN THREADS (1587)
+## OPEN THREADS (1591)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1537 open threads, sorted by activity</summary>
+<summary>Remaining 1541 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,10 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#97059](https://github.com/openclaw/openclaw/pull/97059) | 0 | Local memory/embedding | @harjothkhara | fix(ollama): preserve custom memory provider endpoints |
+| 📝&nbsp;[#97055](https://github.com/openclaw/openclaw/issues/97055) | 0 | Local memory/embedding | @Tabytha-Stryker | Provider resolution ignores memorySearch.provider config, routing to wrong Ollama instance |
+| 🔀&nbsp;[#97054](https://github.com/openclaw/openclaw/pull/97054) | 0 | Open-weight/provider behavior | @ZOOWH | fix(cost): estimate usage cost when API returns cost.total=0 but pricing is known |
+| 🔀&nbsp;[#97052](https://github.com/openclaw/openclaw/pull/97052) | 0 | Model routing/config | @harjothkhara | [codex] fix(agents): accept media input catalog modalities |
 | 📝&nbsp;[#97048](https://github.com/openclaw/openclaw/issues/97048) | 0 | Model routing/config | @zackchiutw | Model catalog validation rejects audio/video input modalities produced by OpenClaw's own catalog fetch (MiniMax-M3, phi-4-multimodal dropped) |
 | 📝&nbsp;[#97047](https://github.com/openclaw/openclaw/issues/97047) | 0 | Open-weight/provider behavior | @Yachiyo1680 | [Bug]: DeepSeek V4 API returns usage.cost total as 0, causing Control UI Spend to show zero |
 | 🔀&nbsp;[#97037](https://github.com/openclaw/openclaw/pull/97037) | 0 | Local model runtime | @prasanthmaran | fix(llm-core): coerce JSON-stringified array/object tool arguments |
@@ -2371,4 +2375,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1587 (543 issues, 1044 PRs).
+- Kept open threads: 1591 (544 issues, 1047 PRs).
