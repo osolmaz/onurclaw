@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 545,
-    "open_prs": 1069,
-    "open_threads": 1614
+    "open_prs": 1070,
+    "open_threads": 1615
   },
   "open_threads": [
     {
@@ -5860,6 +5860,15 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@solavrc",
+      "number": 97170,
+      "title": "Fix voice-call streaming provider resolution",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97170"
     },
     {
       "activity": 0,
@@ -19319,8 +19328,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 97163,
-    "pr": 97162
+    "issue": 97171,
+    "pr": 97172
   },
   "schema_version": 1,
   "updated": "2026-06-27"

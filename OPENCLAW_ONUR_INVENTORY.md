@@ -4,14 +4,15 @@ Updated: 2026-06-27
 
 Review watermark:
 
-- Last reviewed through issue: #97163.
-- Last reviewed through PR: #97162.
+- Last reviewed through issue: #97171.
+- Last reviewed through PR: #97172.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#97170](https://github.com/openclaw/openclaw/pull/97170) | 2026-06-27 | 0 | Local/media model provider | @solavrc | Fix voice-call streaming provider resolution |
 | 🔀&nbsp;[#97160](https://github.com/openclaw/openclaw/pull/97160) | 2026-06-27 | 0 | OpenAI-compatible/proxy | @lin-hongkuan | fix(openai): honor ChatGPT Responses compaction |
 | 🔀&nbsp;[#97149](https://github.com/openclaw/openclaw/pull/97149) | 2026-06-27 | 0 | Model/provider behavior | @perlowja | feat: add tokenomics plugin for local-first LLM spend accounting |
 | 🔀&nbsp;[#97147](https://github.com/openclaw/openclaw/pull/97147) | 2026-06-27 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-completions): bound SSE response reads via buildGuardedModelFetch |
@@ -61,9 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96992](https://github.com/openclaw/openclaw/pull/96992) | 2026-06-26 | 0 | Open-weight/provider behavior | @lsr911 | fix(opencode-go): disable thinking for minimax-m3 anthropic-messages path |
 | 🔀&nbsp;[#96991](https://github.com/openclaw/openclaw/pull/96991) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
 | 🔀&nbsp;[#96990](https://github.com/openclaw/openclaw/pull/96990) | 2026-06-26 | 0 | Model routing/config | @maweibin | fix(webchat): make model selector width adaptive to prevent long name… |
-| 🔀&nbsp;[#96989](https://github.com/openclaw/openclaw/pull/96989) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(provider-transport-fetch): bound SSE buffer to prevent OOM |
 
-## OPEN THREADS (1614)
+## OPEN THREADS (1615)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1564 open threads, sorted by activity</summary>
+<summary>Remaining 1565 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,7 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#97170](https://github.com/openclaw/openclaw/pull/97170) | 0 | Local/media model provider | @solavrc | Fix voice-call streaming provider resolution |
 | 🔀&nbsp;[#97160](https://github.com/openclaw/openclaw/pull/97160) | 0 | OpenAI-compatible/proxy | @lin-hongkuan | fix(openai): honor ChatGPT Responses compaction |
 | 🔀&nbsp;[#97149](https://github.com/openclaw/openclaw/pull/97149) | 0 | Model/provider behavior | @perlowja | feat: add tokenomics plugin for local-first LLM spend accounting |
 | 🔀&nbsp;[#97147](https://github.com/openclaw/openclaw/pull/97147) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-completions): bound SSE response reads via buildGuardedModelFetch |
@@ -2398,4 +2399,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1614 (545 issues, 1069 PRs).
+- Kept open threads: 1615 (545 issues, 1070 PRs).
