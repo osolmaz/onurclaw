@@ -5,13 +5,18 @@ Updated: 2026-06-27
 Review watermark:
 
 - Last reviewed through issue: #97115.
-- Last reviewed through PR: #97112.
+- Last reviewed through PR: #97135.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#97134](https://github.com/openclaw/openclaw/pull/97134) | 2026-06-27 | 0 | Open-weight/provider behavior | @snowzlmbot | fix(deepseek): recover V4 zero-cost spend |
+| 🔀&nbsp;[#97132](https://github.com/openclaw/openclaw/pull/97132) | 2026-06-27 | 0 | Model routing/config | @LiLan0125 | fix(cron): classify empty fallback results so isolated cron chains recover |
+| 🔀&nbsp;[#97129](https://github.com/openclaw/openclaw/pull/97129) | 2026-06-27 | 0 | Model routing/config | @zw-xysk | fix(cron): classify empty/incomplete embedded results for isolated cron fallback chain (fixes #97115) |
+| 🔀&nbsp;[#97128](https://github.com/openclaw/openclaw/pull/97128) | 2026-06-27 | 0 | OpenAI-compatible/proxy | @LiuwqGit | fix(opencode-go): re-arm idle timer on block-boundary events to prevent false stalled-stream abort |
+| 🔀&nbsp;[#97125](https://github.com/openclaw/openclaw/pull/97125) | 2026-06-26 | 0 | Model routing/config | @giodl73-repo | Doctor: expose auth profile findings |
 | 📝&nbsp;[#97115](https://github.com/openclaw/openclaw/issues/97115) | 2026-06-26 | 0 | Model routing/config | @tbertran | Bug: Cron fallback chain broken — models return zero-token success or killed by shared AbortController |
 | 🔀&nbsp;[#97102](https://github.com/openclaw/openclaw/pull/97102) | 2026-06-26 | 0 | Local model runtime | @hannesrudolph | feat(onboarding): add browser Gemma setup assistant |
 | 🔀&nbsp;[#97095](https://github.com/openclaw/openclaw/pull/97095) | 2026-06-26 | 0 | Local memory/embedding | @849261680 | fix: memory_search honors generic embedding providers |
@@ -57,13 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96977](https://github.com/openclaw/openclaw/pull/96977) | 2026-06-26 | 0 | Local/media model provider | @Monkey-wusky | fix(fal): bound video generation JSON response reads |
 | 🔀&nbsp;[#96976](https://github.com/openclaw/openclaw/pull/96976) | 2026-06-26 | 0 | Local/media model provider | @Monkey-wusky | fix(fal): bound image generation JSON response reads |
 | 📝&nbsp;[#96974](https://github.com/openclaw/openclaw/issues/96974) | 2026-06-26 | 0 | Model/provider behavior | @anguslogan01 | [Bug]: web_search (gemini) default model `gemini-2.5-flash` is retired → 404 out-of-the-box |
-| 🔀&nbsp;[#96972](https://github.com/openclaw/openclaw/pull/96972) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai): bound SSE parser buffer to prevent OOM |
-| 🔀&nbsp;[#96970](https://github.com/openclaw/openclaw/pull/96970) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(clickclack): bound REST success JSON response reads |
-| 🔀&nbsp;[#96969](https://github.com/openclaw/openclaw/pull/96969) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @SymbolStar | fix(runtime): drop intermediate monologue text blocks from visible delivery |
-| 🔀&nbsp;[#96968](https://github.com/openclaw/openclaw/pull/96968) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(qqbot): bound STT transcription JSON response |
-| 🔀&nbsp;[#96960](https://github.com/openclaw/openclaw/pull/96960) | 2026-06-26 | 0 | Model routing/config | @maweibin | fix(auth): resolve alias provider profiles when explicit profileId fails |
 
-## OPEN THREADS (1602)
+## OPEN THREADS (1607)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1552 open threads, sorted by activity</summary>
+<summary>Remaining 1557 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,11 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#97134](https://github.com/openclaw/openclaw/pull/97134) | 0 | Open-weight/provider behavior | @snowzlmbot | fix(deepseek): recover V4 zero-cost spend |
+| 🔀&nbsp;[#97132](https://github.com/openclaw/openclaw/pull/97132) | 0 | Model routing/config | @LiLan0125 | fix(cron): classify empty fallback results so isolated cron chains recover |
+| 🔀&nbsp;[#97129](https://github.com/openclaw/openclaw/pull/97129) | 0 | Model routing/config | @zw-xysk | fix(cron): classify empty/incomplete embedded results for isolated cron fallback chain (fixes #97115) |
+| 🔀&nbsp;[#97128](https://github.com/openclaw/openclaw/pull/97128) | 0 | OpenAI-compatible/proxy | @LiuwqGit | fix(opencode-go): re-arm idle timer on block-boundary events to prevent false stalled-stream abort |
+| 🔀&nbsp;[#97125](https://github.com/openclaw/openclaw/pull/97125) | 0 | Model routing/config | @giodl73-repo | Doctor: expose auth profile findings |
 | 📝&nbsp;[#97115](https://github.com/openclaw/openclaw/issues/97115) | 0 | Model routing/config | @tbertran | Bug: Cron fallback chain broken — models return zero-token success or killed by shared AbortController |
 | 🔀&nbsp;[#97102](https://github.com/openclaw/openclaw/pull/97102) | 0 | Local model runtime | @hannesrudolph | feat(onboarding): add browser Gemma setup assistant |
 | 🔀&nbsp;[#97095](https://github.com/openclaw/openclaw/pull/97095) | 0 | Local memory/embedding | @849261680 | fix: memory_search honors generic embedding providers |
@@ -2386,4 +2391,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1602 (545 issues, 1057 PRs).
+- Kept open threads: 1607 (545 issues, 1062 PRs).

@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 545,
-    "open_prs": 1057,
-    "open_threads": 1602
+    "open_prs": 1062,
+    "open_threads": 1607
   },
   "open_threads": [
     {
@@ -5860,6 +5860,51 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@snowzlmbot",
+      "number": 97134,
+      "title": "fix(deepseek): recover V4 zero-cost spend",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97134"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@LiLan0125",
+      "number": 97132,
+      "title": "fix(cron): classify empty fallback results so isolated cron chains recover",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97132"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zw-xysk",
+      "number": 97129,
+      "title": "fix(cron): classify empty/incomplete embedded results for isolated cron fallback chain (fixes #97115)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97129"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@LiuwqGit",
+      "number": 97128,
+      "title": "fix(opencode-go): re-arm idle timer on block-boundary events to prevent false stalled-stream abort",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97128"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@giodl73-repo",
+      "number": 97125,
+      "title": "Doctor: expose auth profile findings",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97125"
     },
     {
       "activity": 0,
@@ -19212,7 +19257,7 @@
   ],
   "review_watermark": {
     "issue": 97115,
-    "pr": 97112
+    "pr": 97135
   },
   "schema_version": 1,
   "updated": "2026-06-27"
