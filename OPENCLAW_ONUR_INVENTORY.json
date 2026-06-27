@@ -4730,8 +4730,8 @@
   "counts": {
     "closed_threads": 675,
     "open_issues": 545,
-    "open_prs": 1062,
-    "open_threads": 1607
+    "open_prs": 1069,
+    "open_threads": 1614
   },
   "open_threads": [
     {
@@ -5860,6 +5860,69 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@lin-hongkuan",
+      "number": 97160,
+      "title": "fix(openai): honor ChatGPT Responses compaction",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97160"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@perlowja",
+      "number": 97149,
+      "title": "feat: add tokenomics plugin for local-first LLM spend accounting",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97149"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 97147,
+      "title": "fix(openai-completions): bound SSE response reads via buildGuardedModelFetch",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97147"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 97146,
+      "title": "fix(azure-openai-responses): bound SSE response reads via buildGuardedModelFetch",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97146"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wangmiao0668000666",
+      "number": 97139,
+      "title": "fix(openai-responses): bound SSE response reads via buildGuardedModelFetch",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97139"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@giodl73-repo",
+      "number": 97137,
+      "title": "doctor: add memory search lint findings",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97137"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@jperla",
+      "number": 97136,
+      "title": "Add TrustedRouter provider extension",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/97136"
     },
     {
       "activity": 0,
@@ -19256,8 +19319,8 @@
     }
   ],
   "review_watermark": {
-    "issue": 97115,
-    "pr": 97135
+    "issue": 97163,
+    "pr": 97162
   },
   "schema_version": 1,
   "updated": "2026-06-27"

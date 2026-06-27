@@ -4,14 +4,21 @@ Updated: 2026-06-27
 
 Review watermark:
 
-- Last reviewed through issue: #97115.
-- Last reviewed through PR: #97135.
+- Last reviewed through issue: #97163.
+- Last reviewed through PR: #97162.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
+| 🔀&nbsp;[#97160](https://github.com/openclaw/openclaw/pull/97160) | 2026-06-27 | 0 | OpenAI-compatible/proxy | @lin-hongkuan | fix(openai): honor ChatGPT Responses compaction |
+| 🔀&nbsp;[#97149](https://github.com/openclaw/openclaw/pull/97149) | 2026-06-27 | 0 | Model/provider behavior | @perlowja | feat: add tokenomics plugin for local-first LLM spend accounting |
+| 🔀&nbsp;[#97147](https://github.com/openclaw/openclaw/pull/97147) | 2026-06-27 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-completions): bound SSE response reads via buildGuardedModelFetch |
+| 🔀&nbsp;[#97146](https://github.com/openclaw/openclaw/pull/97146) | 2026-06-27 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(azure-openai-responses): bound SSE response reads via buildGuardedModelFetch |
+| 🔀&nbsp;[#97139](https://github.com/openclaw/openclaw/pull/97139) | 2026-06-27 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-responses): bound SSE response reads via buildGuardedModelFetch |
+| 🔀&nbsp;[#97137](https://github.com/openclaw/openclaw/pull/97137) | 2026-06-27 | 0 | Local memory/embedding | @giodl73-repo | doctor: add memory search lint findings |
+| 🔀&nbsp;[#97136](https://github.com/openclaw/openclaw/pull/97136) | 2026-06-27 | 0 | OpenAI-compatible/proxy | @jperla | Add TrustedRouter provider extension |
 | 🔀&nbsp;[#97134](https://github.com/openclaw/openclaw/pull/97134) | 2026-06-27 | 0 | Open-weight/provider behavior | @snowzlmbot | fix(deepseek): recover V4 zero-cost spend |
 | 🔀&nbsp;[#97132](https://github.com/openclaw/openclaw/pull/97132) | 2026-06-27 | 0 | Model routing/config | @LiLan0125 | fix(cron): classify empty fallback results so isolated cron chains recover |
 | 🔀&nbsp;[#97129](https://github.com/openclaw/openclaw/pull/97129) | 2026-06-27 | 0 | Model routing/config | @zw-xysk | fix(cron): classify empty/incomplete embedded results for isolated cron fallback chain (fixes #97115) |
@@ -55,15 +62,8 @@ Review watermark:
 | 🔀&nbsp;[#96991](https://github.com/openclaw/openclaw/pull/96991) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @lsr911 | fix(opencode-go): treat block-boundary SSE events as liveness for idle timer |
 | 🔀&nbsp;[#96990](https://github.com/openclaw/openclaw/pull/96990) | 2026-06-26 | 0 | Model routing/config | @maweibin | fix(webchat): make model selector width adaptive to prevent long name… |
 | 🔀&nbsp;[#96989](https://github.com/openclaw/openclaw/pull/96989) | 2026-06-26 | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(provider-transport-fetch): bound SSE buffer to prevent OOM |
-| 📝&nbsp;[#96988](https://github.com/openclaw/openclaw/issues/96988) | 2026-06-26 | 0 | Model/provider behavior | @remnant1219 | [Feature]: Request to Add GHE.com Model Integration Feature in OpenCLAW |
-| 🔀&nbsp;[#96985](https://github.com/openclaw/openclaw/pull/96985) | 2026-06-26 | 0 | Model/provider behavior | @anguslogan01 | fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash |
-| 🔀&nbsp;[#96984](https://github.com/openclaw/openclaw/pull/96984) | 2026-06-26 | 0 | Local/media model provider | @mushuiyu886 | fix(google): bound TTS success JSON response reads |
-| 🔀&nbsp;[#96978](https://github.com/openclaw/openclaw/pull/96978) | 2026-06-26 | 0 | Local/media model provider | @Monkey-wusky | fix(together): bound video generation JSON response reads |
-| 🔀&nbsp;[#96977](https://github.com/openclaw/openclaw/pull/96977) | 2026-06-26 | 0 | Local/media model provider | @Monkey-wusky | fix(fal): bound video generation JSON response reads |
-| 🔀&nbsp;[#96976](https://github.com/openclaw/openclaw/pull/96976) | 2026-06-26 | 0 | Local/media model provider | @Monkey-wusky | fix(fal): bound image generation JSON response reads |
-| 📝&nbsp;[#96974](https://github.com/openclaw/openclaw/issues/96974) | 2026-06-26 | 0 | Model/provider behavior | @anguslogan01 | [Bug]: web_search (gemini) default model `gemini-2.5-flash` is retired → 404 out-of-the-box |
 
-## OPEN THREADS (1607)
+## OPEN THREADS (1614)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 🔀&nbsp;[#76928](https://github.com/openclaw/openclaw/pull/76928) | 7 | Model routing/config | @dorukardahan | feat(plugins): let hooks prefer auth profiles |
 
 <details>
-<summary>Remaining 1557 open threads, sorted by activity</summary>
+<summary>Remaining 1564 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -198,6 +198,13 @@ Review watermark:
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#73144](https://github.com/openclaw/openclaw/issues/73144) | 1 | Open-weight/provider behavior | @shaolin-cloud | Model switch experience: 5 issues when switching from qwen3.6-plus to deepseek-v4-pro |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 🔀&nbsp;[#97160](https://github.com/openclaw/openclaw/pull/97160) | 0 | OpenAI-compatible/proxy | @lin-hongkuan | fix(openai): honor ChatGPT Responses compaction |
+| 🔀&nbsp;[#97149](https://github.com/openclaw/openclaw/pull/97149) | 0 | Model/provider behavior | @perlowja | feat: add tokenomics plugin for local-first LLM spend accounting |
+| 🔀&nbsp;[#97147](https://github.com/openclaw/openclaw/pull/97147) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-completions): bound SSE response reads via buildGuardedModelFetch |
+| 🔀&nbsp;[#97146](https://github.com/openclaw/openclaw/pull/97146) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(azure-openai-responses): bound SSE response reads via buildGuardedModelFetch |
+| 🔀&nbsp;[#97139](https://github.com/openclaw/openclaw/pull/97139) | 0 | OpenAI-compatible/proxy | @wangmiao0668000666 | fix(openai-responses): bound SSE response reads via buildGuardedModelFetch |
+| 🔀&nbsp;[#97137](https://github.com/openclaw/openclaw/pull/97137) | 0 | Local memory/embedding | @giodl73-repo | doctor: add memory search lint findings |
+| 🔀&nbsp;[#97136](https://github.com/openclaw/openclaw/pull/97136) | 0 | OpenAI-compatible/proxy | @jperla | Add TrustedRouter provider extension |
 | 🔀&nbsp;[#97134](https://github.com/openclaw/openclaw/pull/97134) | 0 | Open-weight/provider behavior | @snowzlmbot | fix(deepseek): recover V4 zero-cost spend |
 | 🔀&nbsp;[#97132](https://github.com/openclaw/openclaw/pull/97132) | 0 | Model routing/config | @LiLan0125 | fix(cron): classify empty fallback results so isolated cron chains recover |
 | 🔀&nbsp;[#97129](https://github.com/openclaw/openclaw/pull/97129) | 0 | Model routing/config | @zw-xysk | fix(cron): classify empty/incomplete embedded results for isolated cron fallback chain (fixes #97115) |
@@ -2391,4 +2398,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 1607 (545 issues, 1062 PRs).
+- Kept open threads: 1614 (545 issues, 1069 PRs).
