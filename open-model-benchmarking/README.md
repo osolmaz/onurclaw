@@ -115,6 +115,10 @@ Manual curation status:
 
 This Hub snapshot is intentionally creator-wide. It includes all model records under the selected creator namespaces, not only chat/instruct/open-weight LLMs. The final ShellBench queue should filter this broad snapshot by task, license, gating, artifact type, model family, and OpenClaw relevance.
 
+## ShellBench Baseline Results
+
+- `shellbench-run-results.md`: redacted public report for local ShellBench public-task sweeps across Codex runtime, Qwen, and Gemma variants. It contains aggregate metrics and anonymized per-task scores only; raw task content and trajectories are intentionally excluded.
+
 ## Intended Workflow
 
 1. Collect candidates from Hugging Face router and Hugging Face Hub.
