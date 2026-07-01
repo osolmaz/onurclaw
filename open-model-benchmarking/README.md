@@ -117,8 +117,7 @@ This Hub snapshot is intentionally creator-wide. It includes all model records u
 
 ## ShellBench Baseline Results
 
-- `shellbench-run-results.md`: compact public summary for local ShellBench public-task sweeps across Codex runtime, Qwen, and Gemma variants.
-- `shellbench-run-results.csv`: row-level pass/fail data with one row per run and task.
+- `shellbench-run-results.md`: public report for local ShellBench public-task sweeps across Codex runtime, Qwen, and Gemma variants. It keeps the leaderboard visible and puts per-run task results in collapsible sections.
 
 ## Intended Workflow
 

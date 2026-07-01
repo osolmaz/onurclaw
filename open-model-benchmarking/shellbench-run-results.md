@@ -28,29 +28,147 @@ This report lists scores only. It does not include task prompts, workspace files
 | Gemma A4B | `openai/gemma-vllm` | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) |
 | Gemma dense | `openai/gemma-dense-vllm` | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) |
 
-## Passed Tasks
+## Per-Run Task Results
 
-| Run | Passed task slugs |
+<details>
+<summary>Codex runtime, <code>openai/gpt-5.5</code>: 4/20 passed</summary>
+
+| Public task slug | Result |
 | --- | --- |
-| Codex runtime | `3954d9-warehouse-recall-lot-traceback`, `4cd38a-review-handoff-packet-processor`, `d18909-inbox-calendar-conflict-resolution-local-draft`, `ded93f-academic-integrity-data-code-review` |
-| Qwen A3B | `4cd38a-review-handoff-packet-processor` |
-| Qwen dense | `4cd38a-review-handoff-packet-processor` |
-| Gemma A4B | `4cd38a-review-handoff-packet-processor` |
-| Gemma dense | `4cd38a-review-handoff-packet-processor` |
+| `001-36a203` | `FAIL` |
+| `3954d9-warehouse-recall-lot-traceback` | `PASS` |
+| `4cd38a-review-handoff-packet-processor` | `PASS` |
+| `58e6cb-revenue-reconciliation-close` | `FAIL` |
+| `595546-registration-count-audit` | `FAIL` |
+| `5c4009-email-phishing-payment-review` | `FAIL (timeout)` |
+| `612757-academic-integrity-case-review` | `FAIL` |
+| `7e61b2-calculate-total-expense` | `FAIL` |
+| `9f5c9a-iam-effective-access-audit` | `FAIL` |
+| `b6e11d-calculate-total-shipping-emissions` | `FAIL` |
+| `d18909-inbox-calendar-conflict-resolution-local-draft` | `PASS` |
+| `ded93f-academic-integrity-data-code-review` | `PASS` |
+| `harbor-export-acl-reconstruction-package` | `FAIL` |
+| `harbor-production-privilege-escalation-decision-packet` | `FAIL` |
+| `kestrel-bay-payment-hold-release-determination` | `FAIL` |
+| `morrow-vale-couriers-dispute-evidence-bundle` | `FAIL` |
+| `please-reconcile-alta-bridge-q2-burn-after-finance-layout-change-and-prepare-bil` | `FAIL` |
+| `project-larkspur-inbox-triage-for-pending-northstar-acquisition` | `FAIL` |
+| `riverstone-paybridge-timeout-reconciliation` | `FAIL` |
+| `veladesk-memory-quarantine-review` | `FAIL` |
 
-## Timeout Failures
+</details>
 
-| Run | Timeout task slugs |
+<details>
+<summary>Qwen A3B, <code>openai/qwen-vllm</code>: 1/20 passed</summary>
+
+| Public task slug | Result |
 | --- | --- |
-| Codex runtime | `5c4009-email-phishing-payment-review` |
-| Qwen A3B | `612757-academic-integrity-case-review` |
-| Qwen dense | `b6e11d-calculate-total-shipping-emissions`, `d18909-inbox-calendar-conflict-resolution-local-draft` |
-| Gemma A4B | None |
-| Gemma dense | None |
+| `001-36a203` | `FAIL` |
+| `3954d9-warehouse-recall-lot-traceback` | `FAIL` |
+| `4cd38a-review-handoff-packet-processor` | `PASS` |
+| `58e6cb-revenue-reconciliation-close` | `FAIL` |
+| `595546-registration-count-audit` | `FAIL` |
+| `5c4009-email-phishing-payment-review` | `FAIL` |
+| `612757-academic-integrity-case-review` | `FAIL (timeout)` |
+| `7e61b2-calculate-total-expense` | `FAIL` |
+| `9f5c9a-iam-effective-access-audit` | `FAIL` |
+| `b6e11d-calculate-total-shipping-emissions` | `FAIL` |
+| `d18909-inbox-calendar-conflict-resolution-local-draft` | `FAIL` |
+| `ded93f-academic-integrity-data-code-review` | `FAIL` |
+| `harbor-export-acl-reconstruction-package` | `FAIL` |
+| `harbor-production-privilege-escalation-decision-packet` | `FAIL` |
+| `kestrel-bay-payment-hold-release-determination` | `FAIL` |
+| `morrow-vale-couriers-dispute-evidence-bundle` | `FAIL` |
+| `please-reconcile-alta-bridge-q2-burn-after-finance-layout-change-and-prepare-bil` | `FAIL` |
+| `project-larkspur-inbox-triage-for-pending-northstar-acquisition` | `FAIL` |
+| `riverstone-paybridge-timeout-reconciliation` | `FAIL` |
+| `veladesk-memory-quarantine-review` | `FAIL` |
 
-## Row-Level Data
+</details>
 
-Full pass/fail rows are in [`shellbench-run-results.csv`](shellbench-run-results.csv). The CSV has one row per run and task, so this report can stay readable as more models are added.
+<details>
+<summary>Qwen dense, <code>openai/qwen-dense-vllm</code>: 1/20 passed</summary>
+
+| Public task slug | Result |
+| --- | --- |
+| `001-36a203` | `FAIL` |
+| `3954d9-warehouse-recall-lot-traceback` | `FAIL` |
+| `4cd38a-review-handoff-packet-processor` | `PASS` |
+| `58e6cb-revenue-reconciliation-close` | `FAIL` |
+| `595546-registration-count-audit` | `FAIL` |
+| `5c4009-email-phishing-payment-review` | `FAIL` |
+| `612757-academic-integrity-case-review` | `FAIL` |
+| `7e61b2-calculate-total-expense` | `FAIL` |
+| `9f5c9a-iam-effective-access-audit` | `FAIL` |
+| `b6e11d-calculate-total-shipping-emissions` | `FAIL (timeout)` |
+| `d18909-inbox-calendar-conflict-resolution-local-draft` | `FAIL (timeout)` |
+| `ded93f-academic-integrity-data-code-review` | `FAIL` |
+| `harbor-export-acl-reconstruction-package` | `FAIL` |
+| `harbor-production-privilege-escalation-decision-packet` | `FAIL` |
+| `kestrel-bay-payment-hold-release-determination` | `FAIL` |
+| `morrow-vale-couriers-dispute-evidence-bundle` | `FAIL` |
+| `please-reconcile-alta-bridge-q2-burn-after-finance-layout-change-and-prepare-bil` | `FAIL` |
+| `project-larkspur-inbox-triage-for-pending-northstar-acquisition` | `FAIL` |
+| `riverstone-paybridge-timeout-reconciliation` | `FAIL` |
+| `veladesk-memory-quarantine-review` | `FAIL` |
+
+</details>
+
+<details>
+<summary>Gemma A4B, <code>openai/gemma-vllm</code>: 1/20 passed</summary>
+
+| Public task slug | Result |
+| --- | --- |
+| `001-36a203` | `FAIL` |
+| `3954d9-warehouse-recall-lot-traceback` | `FAIL` |
+| `4cd38a-review-handoff-packet-processor` | `PASS` |
+| `58e6cb-revenue-reconciliation-close` | `FAIL` |
+| `595546-registration-count-audit` | `FAIL` |
+| `5c4009-email-phishing-payment-review` | `FAIL` |
+| `612757-academic-integrity-case-review` | `FAIL` |
+| `7e61b2-calculate-total-expense` | `FAIL` |
+| `9f5c9a-iam-effective-access-audit` | `FAIL` |
+| `b6e11d-calculate-total-shipping-emissions` | `FAIL` |
+| `d18909-inbox-calendar-conflict-resolution-local-draft` | `FAIL` |
+| `ded93f-academic-integrity-data-code-review` | `FAIL` |
+| `harbor-export-acl-reconstruction-package` | `FAIL` |
+| `harbor-production-privilege-escalation-decision-packet` | `FAIL` |
+| `kestrel-bay-payment-hold-release-determination` | `FAIL` |
+| `morrow-vale-couriers-dispute-evidence-bundle` | `FAIL` |
+| `please-reconcile-alta-bridge-q2-burn-after-finance-layout-change-and-prepare-bil` | `FAIL` |
+| `project-larkspur-inbox-triage-for-pending-northstar-acquisition` | `FAIL` |
+| `riverstone-paybridge-timeout-reconciliation` | `FAIL` |
+| `veladesk-memory-quarantine-review` | `FAIL` |
+
+</details>
+
+<details>
+<summary>Gemma dense, <code>openai/gemma-dense-vllm</code>: 1/20 passed</summary>
+
+| Public task slug | Result |
+| --- | --- |
+| `001-36a203` | `FAIL` |
+| `3954d9-warehouse-recall-lot-traceback` | `FAIL` |
+| `4cd38a-review-handoff-packet-processor` | `PASS` |
+| `58e6cb-revenue-reconciliation-close` | `FAIL` |
+| `595546-registration-count-audit` | `FAIL` |
+| `5c4009-email-phishing-payment-review` | `FAIL` |
+| `612757-academic-integrity-case-review` | `FAIL` |
+| `7e61b2-calculate-total-expense` | `FAIL` |
+| `9f5c9a-iam-effective-access-audit` | `FAIL` |
+| `b6e11d-calculate-total-shipping-emissions` | `FAIL` |
+| `d18909-inbox-calendar-conflict-resolution-local-draft` | `FAIL` |
+| `ded93f-academic-integrity-data-code-review` | `FAIL` |
+| `harbor-export-acl-reconstruction-package` | `FAIL` |
+| `harbor-production-privilege-escalation-decision-packet` | `FAIL` |
+| `kestrel-bay-payment-hold-release-determination` | `FAIL` |
+| `morrow-vale-couriers-dispute-evidence-bundle` | `FAIL` |
+| `please-reconcile-alta-bridge-q2-burn-after-finance-layout-change-and-prepare-bil` | `FAIL` |
+| `project-larkspur-inbox-triage-for-pending-northstar-acquisition` | `FAIL` |
+| `riverstone-paybridge-timeout-reconciliation` | `FAIL` |
+| `veladesk-memory-quarantine-review` | `FAIL` |
+
+</details>
 
 ## Notes
 
