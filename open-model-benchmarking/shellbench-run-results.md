@@ -30,10 +30,10 @@ This report lists scores only. It does not include task prompts, workspace files
 
 ## Combined Task Results
 
-<details>
+<details open>
 <summary>Task-by-run matrix</summary>
 
-| Public task slug | Codex | Qwen A3B | Qwen dense | Gemma A4B | Gemma dense |
+| Public task slug | [`openai/gpt-5.5`](https://platform.openai.com/docs/models) | [`lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit) | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) |
 | --- | --- | --- | --- | --- | --- |
 | `001-36a203` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
 | `3954d9-warehouse-recall-lot-traceback` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
