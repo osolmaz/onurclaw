@@ -1,10 +1,10 @@
 ---
-title: Memory Power and KV-Aware Bounds for Local LLM Inference
-author: Bob <dutifulbob@gmail.com>
+title: Memory power and KV-aware bounds for local LLM inference
+author: Onur Solmaz <onur@solmaz.io>
 date: 2026-06-30
 ---
 
-# Memory Power and KV-Aware Bounds for Local LLM Inference
+# Memory power and KV-aware bounds for local LLM inference
 
 This note builds, from first principles, a memory-side upper bound on how fast a
 local machine can serve large language models. It is the mathematical contract
@@ -30,7 +30,7 @@ Source conversation: <https://chatgpt.com/share/6a4379ca-3ec4-83ec-8dc5-afcee73b
 The converted transcript is `2026-06-30-chatgpt-local-llm-inference-conversation.md`
 and the raw share state is `2026-06-30-chatgpt-local-llm-inference-state.json`.
 
-## What the Model Bounds
+## What the model bounds
 
 Local inference raises three separate questions, and conflating them is the most
 common way to be wrong about a machine.
@@ -53,7 +53,7 @@ interconnects, thermal throttling, sampling, and application overhead. The value
 of a clean upper bound is that it tells you the best case you are allowed to hope
 for, and therefore how much room an implementation still has.
 
-## The Memory System as a Fundable Resource
+## Memory system as a fundable resource
 
 Before any model-specific detail, ask what a memory system fundamentally offers.
 When people compare accelerators for local inference they list many specs:
@@ -62,7 +62,7 @@ lanes, multi-GPU links, power and thermals, host RAM. For the *decode* phase of
 autoregressive generation, two of these recur in almost every bound: how much
 state the memory can hold, and how fast it can move that state. We start there.
 
-### Two Numbers and Their Product
+### Two numbers and their product
 
 Model an idealized memory system by exactly two quantities.
 
@@ -85,7 +85,7 @@ If $C$ is in GB and $R$ is in GB/s, then $D$ is in $\mathrm{GB}^2/\mathrm{s}$.
 The units look strange. The rest of this section explains why this particular
 combination of $C$ and $R$ is the right scalar.
 
-### Units: Bytes, Shannons, and the Dennard
+### Units: bytes, shannons, and the dennard
 
 For engineering we use decimal GB and GB/s, because those are the units in a
 hardware catalog. For the information-theoretic justification it is cleaner to
@@ -119,7 +119,7 @@ you work in shannons or in GB; only the numeric value of $D$ changes. The name
 matters far less than the product, and the next two results explain why the
 product is forced.
 
-### Why the Product: The Resident-Flux Feasibility Theorem
+### Resident-Flux Feasibility Theorem
 
 Here is the toy problem that justifies $CR$, in the same spirit that the
 noisy-channel theorem justifies the bit and the shannon.
@@ -163,7 +163,7 @@ workload region*. A workload lives at a point $(h, r)$ in the plane; the system
 can serve every workload inside its rectangle and none outside; the size of that
 rectangle is $CR$.
 
-### Why the Product, Strengthened: A Uniqueness Argument
+### A uniqueness argument
 
 The feasibility theorem shows $CR$ is *a* natural measure. A short axiomatic
 argument shows it is essentially the *only* one. Suppose we want a scalar
@@ -198,7 +198,7 @@ D(C, R) = k\, C R ,
 and choosing the unit so that $k = 1$ gives $D = CR$. Under these axioms the
 product is the unique admissible measure.
 
-### A Caveat That Keeps the Metric Honest
+### A caveat that keeps the metric honest
 
 One misreading is worth heading off. The product $CR$ measures the
 *workload-feasibility region*: the set of jobs the device can support at an
@@ -214,14 +214,14 @@ The feasibility-region reading is the one an inference-throughput bound will
 need, because serving is the business of keeping feasible workloads resident and
 streaming — which is the subject of the next chapter.
 
-## From Memory Power to a Decode Bound
+## From memory power to a decode bound
 
 The feasibility theorem describes static workloads. Decoding is dynamic: it emits
 tokens over time. This chapter turns memory power into a throughput ceiling for
 batched decoding, and in doing so shows *where* the product $CR$ enters a real
 performance bound.
 
-### A Toy Decoder
+### A toy decoder
 
 Consider the decode phase of an autoregressive transformer, simplified to the
 memory system alone. Let
@@ -242,7 +242,7 @@ Throughput is a product of two things — how many sequences run in parallel, an
 how fast the shared model can be swept — and the memory system caps each factor
 separately.
 
-### The Capacity Limit
+### Capacity limit
 
 The model weights must be resident once, and every active sequence needs its own
 KV cache. So the resident state is $W + bK$, and it must fit:
@@ -254,7 +254,7 @@ W + bK \le C \quad\Longrightarrow\quad b \le \frac{C - W}{K} .
 This is the capacity limit: it sets the *maximum parallelism*. It is exactly the
 $h \le C$ condition of the feasibility theorem, with $h = W + bK$.
 
-### The Bandwidth Limit
+### Bandwidth limit
 
 In a dense transformer, each decode step must apply the model weights. In the
 memory-bound idealization, applying the weights means streaming roughly $W$ of
@@ -267,7 +267,7 @@ s W \le R \quad\Longrightarrow\quad s \le \frac{R}{W} .
 This is the bandwidth limit: it sets the *maximum step rate*. It is the
 $r \le R$ condition, with the per-step traffic playing the role of the flux.
 
-### The Dennard Decode Bound
+### Dennard Decode Bound
 
 Multiply the two caps. Throughput is parallelism times step rate, and each is
 separately bounded, so
@@ -301,7 +301,7 @@ The numerator $D = CR$ is the machine. The denominator $KW$ is the workload: the
 per-session state times the model sweep size. The whole law reads as *throughput
 is memory power divided by memory cost per active model-token*.
 
-### When the Bound Applies, and When It Does Not
+### When the bound applies, and when it does not
 
 The Dennard Decode Bound governs batched throughput. Set $b = 1$ and it
 degenerates:
@@ -323,7 +323,7 @@ for:
 Memory power is the right scalar precisely for the third row. The next chapter
 attacks the reason even that row's bound is too optimistic.
 
-## Why the Loose Bound Is Too Generous
+## The loose bound is too generous
 
 The Dennard Decode Bound assumes the only per-token memory traffic worth counting
 is the model sweep $W$, shared across the batch. Real decoding also reads each
@@ -332,7 +332,7 @@ over the batch. Ignoring it makes the bound promise throughput that long-context
 serving can never reach. This chapter introduces the correct per-token
 accounting, and shows the Dennard bound falls out of it as a loose corollary.
 
-### The Universal Resource Bound
+### Universal resource bound
 
 Step back to the most general statement, which holds regardless of architecture.
 If each output token costs at least $q_{\min}$ of unavoidable memory traffic and
@@ -357,7 +357,7 @@ practical: a hardware catalog can collect capacity and bandwidth consistently
 across consumer and workstation devices, while comparable sustained-compute
 numbers are much harder to obtain.
 
-### A Bytes-Per-Token Model
+### A bytes-per-token model
 
 Split the per-token traffic into the two kinds that behave differently under
 batching. The model (or active-expert) weights are *shared*: one sweep serves the
@@ -377,7 +377,7 @@ sweep. The second term does not move: a larger batch does not make any session's
 context cheaper to read. This asymmetry is the entire reason long-context serving
 behaves differently from short-context serving.
 
-### The Inequality Chain
+### Inequality chain
 
 Treat $q_{\text{simple}}$ as an optimistic *lower* estimate of the true
 bytes/token, $q_{\text{simple}}(b) \le q_{\text{actual}}(b)$. Dividing $R$ by a
@@ -394,7 +394,7 @@ memory stored per session, and $O$ the runtime overhead. This is the honest
 simple bound: bandwidth divided by shared-per-token cost plus private-per-token
 cost, maximized over fitting batches.
 
-### The Dennard Ceiling Is a Corollary
+### The Dennard Ceiling is a corollary
 
 Now recover the previous chapter's bound by deliberately throwing information
 away. Since $K_{\mathrm{read}}(L) \ge 0$, dropping it only loosens the
@@ -423,7 +423,7 @@ The ordering is
 The Dennard bound is the orientation line; the KV-aware bound is the one to
 serve from. The next chapter develops it into the operational calculator.
 
-## The KV-Aware Bound
+## KV-Aware Bound
 
 This chapter turns the simple bytes-per-token bound into the model the calculator
 runs. Three refinements are needed: context must be split into the part that
@@ -432,7 +432,7 @@ be allowed to grow with the batch (for mixture-of-experts models); and the batch
 must be filtered so that we never count concurrency at which every session has
 become uselessly slow.
 
-### Two Context Lengths
+### Two context lengths
 
 A serving system usually *reserves* KV space for a long maximum context but
 *reads*, on average, a shorter active context. These two lengths drive different
@@ -448,7 +448,7 @@ output token must stream, and therefore per-token cost. Collapsing them into one
 number is a common modeling error: it either overcharges memory or overcharges
 speed.
 
-### The Model Quantities
+### Model quantities
 
 A model contributes five quantities. Two are about fitting, two are about speed,
 and one is about decoding style.
@@ -466,7 +466,7 @@ between the two context lengths: allocation controls how many sessions fit, read
 controls how fast each one decodes. Note that $W_{\mathrm{batch}}$ now
 depends on the batch size $b$ — the next refinement explains why.
 
-### The Memory-Fit Batch
+### Memory-fit batch
 
 The first gate is whether sessions fit. Load the model, reserve overhead, and
 divide the remainder by the per-session allocation:
@@ -479,7 +479,7 @@ This is memory-fit concurrency only. It is necessary but not sufficient: it is
 exactly the trap that makes a machine look like it can serve a hundred sessions
 when it cannot serve them *usefully*.
 
-### Traffic Per Token, and the Aggregate Bound
+### Traffic per token and the aggregate bound
 
 The per-token traffic is the shared weight sweep amortized over the emitted
 tokens, plus the private context read:
@@ -503,7 +503,7 @@ r(b, L_{\mathrm{read}}) = \frac{T(b, L_{\mathrm{read}})}{b} = \frac{\rho R}{W_{\
 As $b$ grows, the aggregate $T$ rises but the per-session $r$ falls. That tension
 is the whole serving tradeoff, and it is why a fit-only bound is not enough.
 
-### The Usable-Batch Correction
+### Usable-batch correction
 
 The fix is to refuse batches at which a session would crawl. Impose a per-session
 floor $r_\star$, the minimum useful tokens/s/session, and solve $r(b) \ge r_\star$
@@ -533,7 +533,7 @@ $b_{\mathrm{mem}}$ stays large. The KV slots fit; the useful rate does not. (An
 implementation cap could be folded in as a third term in the minimum, but the
 local frontier app does not impose one, so we omit it.)
 
-### The Bound the Calculator Uses
+### The bound the calculator uses
 
 Collecting the pieces, define the usable batch set as the fitting batches that
 also clear the floor,
@@ -584,7 +584,7 @@ $K = K_{\mathrm{alloc}}(L_{\mathrm{alloc}})$ and $W = W_{\mathrm{active}}$. It i
 the loosest, most optimistic reading, since the resident model and overhead always
 claim a real share of $C$.
 
-### The Single-Session Case
+### Single-session case
 
 Set $b = 1$ to recover the latency-style bound for one conversation. There is no
 batch to amortize the weight sweep over:
@@ -599,7 +599,7 @@ dropped out except as the gate that decides whether the model fits at all —
 consistent with the earlier observation that bandwidth governs single-session
 speed.
 
-### Speculative Decoding
+### Speculative decoding
 
 Speculative decoding lets $\rho > 1$: a draft model proposes several tokens and
 the target verifies them in one iteration, so $\rho$ is the expected number of
@@ -611,7 +611,7 @@ term. The safe rule is to never scale by $\rho$ without charging the draft cost 
 the denominator. With both effects included, speculative decoding moves through
 the same KV-aware formula unchanged.
 
-## Model Adapters
+## Model adapters
 
 The KV-aware bound is architecture-agnostic; an architecture enters only through
 the five quantities. So each model family is captured by a small adapter that
@@ -624,7 +624,7 @@ supplies them:
 Three adapters cover the catalog: dense transformers, mixture-of-experts, and
 hybrid/sliding/recurrent attention.
 
-### Dense Transformer
+### Dense transformer
 
 For a dense model with $P_{\mathrm{total}}$ parameters at $e_w$ bytes each, all
 weights are touched every step, so the resident footprint and the per-step sweep
@@ -646,7 +646,7 @@ where the factor $2$ counts keys and values. Note that weight precision and KV
 precision are independent settings: NVFP4 weights do not imply an NVFP4 cache, so
 $e_w$ and $e_{\mathrm{KV}}$ are tracked separately.
 
-### Mixture-of-Experts
+### Mixture-of-experts
 
 An MoE model is where the constant-$W_{\mathrm{batch}}$ assumption breaks, and
 fixing it is the single most important adapter correction. Let
@@ -687,7 +687,7 @@ At $b\rho = 1$ this reduces to the active-parameter footprint; as $b\rho \to
 why MoE batching does not amortize for free, and why the MoE rows in the worked
 table reach their throughput optimum at modest batch sizes.
 
-### Hybrid, Sliding, and Recurrent Attention
+### Hybrid, sliding, and recurrent attention
 
 Models with local or sliding-window attention, compressed or latent attention, or
 linear/recurrent state must not use the full-KV formula blindly, because their
@@ -709,7 +709,7 @@ up to the window; recurrent or latent state adds a fixed or slowly growing term.
 The same shape covers Gemma-style local/global attention and DeepSeek-style
 compressed/sparse attention; only the coefficients change.
 
-## The Calculator
+## Calculator
 
 The bound is now operational. Because the same computation runs for every
 hardware-and-model pair, it is worth stating once as a procedure.
@@ -751,13 +751,13 @@ report for that case is "fits, but no batch satisfies the floor," a distinct
 verdict from a true fit failure. Keeping the two apart is the reason the floor
 gate exists.
 
-## Worked Examples
+## Worked examples
 
 The theory earns its keep on real hardware. The conversation centered on two
 128 GB machines, one bandwidth-rich and one bandwidth-poor, which isolate the
 effect of $R$ at fixed $C$.
 
-### The Two Machines
+### Two machines
 
 DGX Spark carries 128 GB of LPDDR5x unified memory at 273 GB/s. An Apple M5 Max
 with a 40-core GPU reaches 614 GB/s and is configurable to 128 GB of unified
@@ -768,7 +768,7 @@ memory. At equal capacity their memory powers are
 | DGX Spark | 128 GB | 273 GB/s | 34,944 $\mathrm{GB}^2/\mathrm{s}$ |
 | Apple M5 Max 128GB | 128 GB | 614 GB/s | 78,592 $\mathrm{GB}^2/\mathrm{s}$ |
 
-### The Models
+### Models
 
 Three MoE models, modeled from their published cards as adapter parameters, not
 re-measured here:
@@ -790,7 +790,7 @@ runtime overhead $O = 8$ GB, and the memory roofline only. The numbers are
 memory-side upper bounds from the simplified adapters; read them as ceilings for
 comparing hardware.
 
-### The Main Table
+### Main table
 
 | Hardware | Model | Single-session | $b^\star$ | KV-aware aggregate | Dennard ceiling |
 | --- | --- | ---: | ---: | ---: | ---: |
@@ -809,7 +809,7 @@ one to two orders of magnitude above the KV-aware column. That gap is private
 context traffic and expert diversity eating the memory system's theoretical
 optimism, which is the lesson the whole derivation exists to make visible.
 
-### Forcing the Concurrency
+### Forcing the concurrency
 
 What if concurrency is fixed by policy rather than chosen at the floor-satisfying
 optimum? On DGX Spark, pushing past $b^\star$ buys aggregate throughput at the
@@ -827,7 +827,7 @@ This is the serving tradeoff in numbers. For DGX Spark under these assumptions,
 the regime the usable-batch correction is built to reject, and the reason
 $b^\star$ for these models settles near 16.
 
-### An Empirical Sanity Check
+### An empirical sanity check
 
 A reported DGX Spark run served Gemma at concurrency 16 at roughly 16 to 18
 tok/s/session, an aggregate of $16 \times 16 = 256$ to $16 \times 18 = 288$
@@ -845,7 +845,7 @@ traffic, and proving optimality would require profiler evidence of bandwidth
 saturation with no compute, scheduler, or CPU stalls. A bound this close simply
 means there is little memory headroom left to capture.
 
-## What the Bound Leaves Out
+## What the bound leaves out
 
 The memory roofline is one wall of a larger room. Real throughput is the minimum
 over several rooflines,
@@ -871,7 +871,7 @@ kernel, scheduler, and recurrent-state details must be added before the aggregat
 number is treated as realistic. The memory bound describes the best case the
 hardware allows; reaching it is the implementation's job.
 
-## Compact Template
+## Compact template
 
 For any hardware row and model adapter, the operational core is four boxed
 relations. Fit:
