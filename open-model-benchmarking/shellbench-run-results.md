@@ -8,25 +8,15 @@ Task set: 20 Harbor public tasks.
 
 This report lists scores only. It does not include task prompts, workspace files, generated artifacts, trajectories, judge prompts, or judge rationales.
 
-## Aggregate Results
+## Run Summary
 
-| Run | Completed | Passed | Mean reward | Exceptions |
-| --- | ---: | ---: | ---: | --- |
-| Codex runtime, `openai/gpt-5.5` | `20/20` | `4/20` | `0.200` | `1` timeout |
-| Qwen A3B, `openai/qwen-vllm` | `20/20` | `1/20` | `0.050` | `1` timeout |
-| Qwen dense, `openai/qwen-dense-vllm` | `20/20` | `1/20` | `0.050` | `2` timeouts |
-| Gemma A4B, `openai/gemma-vllm` | `20/20` | `1/20` | `0.050` | `0` |
-| Gemma dense, `openai/gemma-dense-vllm` | `20/20` | `1/20` | `0.050` | `0` |
-
-## Models
-
-| Run | Runtime model id | Model artifact |
-| --- | --- | --- |
-| Codex runtime | `openai/gpt-5.5` | Not a Hugging Face artifact |
-| Qwen A3B | `openai/qwen-vllm` | [`lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit) |
-| Qwen dense | `openai/qwen-dense-vllm` | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) |
-| Gemma A4B | `openai/gemma-vllm` | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) |
-| Gemma dense | `openai/gemma-dense-vllm` | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) |
+| Run | Runtime model id | Model artifact | Completed | Passed | Mean reward | Exceptions |
+| --- | --- | --- | ---: | ---: | ---: | --- |
+| Codex runtime | `openai/gpt-5.5` | Not a Hugging Face artifact | `20/20` | `4/20` | `0.200` | `1` timeout |
+| Qwen A3B | `openai/qwen-vllm` | [`lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit) | `20/20` | `1/20` | `0.050` | `1` timeout |
+| Qwen dense | `openai/qwen-dense-vllm` | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) | `20/20` | `1/20` | `0.050` | `2` timeouts |
+| Gemma A4B | `openai/gemma-vllm` | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) | `20/20` | `1/20` | `0.050` | `0` |
+| Gemma dense | `openai/gemma-dense-vllm` | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) | `20/20` | `1/20` | `0.050` | `0` |
 
 ## Combined Task Results
 
