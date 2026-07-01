@@ -117,7 +117,7 @@ This Hub snapshot is intentionally creator-wide. It includes all model records u
 
 ## ShellBench Baseline Results
 
-- `shellbench-run-results.md`: redacted public report for local ShellBench public-task sweeps across Codex runtime, Qwen, and Gemma variants. It contains aggregate metrics and anonymized per-task scores only; raw task content and trajectories are intentionally excluded.
+- `shellbench-run-results.md`: redacted public report for local ShellBench public-task sweeps across Codex runtime, Qwen, and Gemma variants. It contains aggregate metrics, model artifact links, and public task slug pass/fail results only; raw task content and trajectories are intentionally excluded.
 
 ## Intended Workflow
 
