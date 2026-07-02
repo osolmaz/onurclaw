@@ -15,6 +15,7 @@ All rows are part of the same public-task result stream.
 | Run | Runtime model id | Model artifact | Completed | Passed | Mean reward | Exceptions |
 | --- | --- | --- | ---: | ---: | ---: | --- |
 | Codex runtime | `openai/gpt-5.5` | Not a Hugging Face artifact | `20/20` | `4/20` | `0.200` | `1` timeout |
+| Codex runtime, xhigh mini | `openai/gpt-5.4-mini` | Not a Hugging Face artifact | `20/20` | `2/20` | `0.100` | `12` agent exits, `1` timeout |
 | Qwen A3B | `openai/qwen-vllm` | [`lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit) | `20/20` | `1/20` | `0.050` | `1` timeout |
 | Qwen dense | `openai/qwen-dense-vllm` | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) | `20/20` | `1/20` | `0.050` | `2` timeouts |
 | Gemma A4B | `openai/gemma-vllm` | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) | `20/20` | `1/20` | `0.050` | `0` |
@@ -34,28 +35,28 @@ All rows are part of the same public-task result stream.
 <details open>
 <summary>Task-by-run matrix</summary>
 
-| Public task slug | [`openai/gpt-5.5`](https://platform.openai.com/docs/models) | [`lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit) | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) | [`glm-5.2:cloud`](https://ollama.com/library/glm-5.2) | [`kimi-k2.7-code:cloud`](https://ollama.com/library/kimi-k2.7-code) | [`minimax-m3:cloud`](https://ollama.com/library/minimax-m3) | [`deepseek-v4-flash:cloud`](https://ollama.com/library/deepseek-v4-flash) | [`deepseek-v4-pro:cloud`](https://ollama.com/library/deepseek-v4-pro) | [`qwen3.5:397b-cloud`](https://ollama.com/library/qwen3.5/tags) | [`gemma4:cloud`](https://ollama.com/library/gemma4/tags) | [`claude-sonnet-5`](https://docs.anthropic.com/en/docs/about-claude/models/all-models) | [`claude-opus-4-8`](https://docs.anthropic.com/en/docs/about-claude/models/all-models) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| `001-36a203` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `3954d9-warehouse-recall-lot-traceback` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `FAIL` | `FAIL` | `PASS` | `PASS` |
-| `4cd38a-review-handoff-packet-processor` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` |
-| `58e6cb-revenue-reconciliation-close` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` | `FAIL` | `FAIL (timeout)` | `PASS` | `PASS` |
-| `595546-registration-count-audit` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `5c4009-email-phishing-payment-review` | `FAIL (timeout)` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `612757-academic-integrity-case-review` | `FAIL` | `FAIL (timeout)` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `7e61b2-calculate-total-expense` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (timeout)` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `9f5c9a-iam-effective-access-audit` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `b6e11d-calculate-total-shipping-emissions` | `FAIL` | `FAIL` | `FAIL (timeout)` | `FAIL` | `FAIL` | `PASS` | `FAIL` | `PASS` | `PASS` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `PASS` |
-| `d18909-inbox-calendar-conflict-resolution-local-draft` | `PASS` | `FAIL` | `FAIL (timeout)` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `PASS` | `FAIL` | `PASS` | `PASS` |
-| `ded93f-academic-integrity-data-code-review` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `FAIL` | `FAIL` | `PASS` | `PASS` |
-| `harbor-export-acl-reconstruction-package` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `harbor-production-privilege-escalation-decision-packet` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `kestrel-bay-payment-hold-release-determination` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `morrow-vale-couriers-dispute-evidence-bundle` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `please-reconcile-alta-bridge-q2-burn-after-finance-layout-change-and-prepare-bil` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `project-larkspur-inbox-triage-for-pending-northstar-acquisition` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `riverstone-paybridge-timeout-reconciliation` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
-| `veladesk-memory-quarantine-review` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
+| Public task slug | [`openai/gpt-5.5`](https://platform.openai.com/docs/models) | [`lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit) | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) | [`glm-5.2:cloud`](https://ollama.com/library/glm-5.2) | [`kimi-k2.7-code:cloud`](https://ollama.com/library/kimi-k2.7-code) | [`minimax-m3:cloud`](https://ollama.com/library/minimax-m3) | [`deepseek-v4-flash:cloud`](https://ollama.com/library/deepseek-v4-flash) | [`deepseek-v4-pro:cloud`](https://ollama.com/library/deepseek-v4-pro) | [`qwen3.5:397b-cloud`](https://ollama.com/library/qwen3.5/tags) | [`gemma4:cloud`](https://ollama.com/library/gemma4/tags) | [`claude-sonnet-5`](https://docs.anthropic.com/en/docs/about-claude/models/all-models) | [`claude-opus-4-8`](https://docs.anthropic.com/en/docs/about-claude/models/all-models) | [`openai/gpt-5.4-mini`](https://platform.openai.com/docs/models) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `001-36a203` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
+| `3954d9-warehouse-recall-lot-traceback` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `FAIL` | `FAIL` | `PASS` | `PASS` | `PASS` |
+| `4cd38a-review-handoff-packet-processor` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS` | `PASS (agent exit)` |
+| `58e6cb-revenue-reconciliation-close` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` | `FAIL` | `FAIL (timeout)` | `PASS` | `PASS` | `FAIL (agent exit)` |
+| `595546-registration-count-audit` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` |
+| `5c4009-email-phishing-payment-review` | `FAIL (timeout)` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` |
+| `612757-academic-integrity-case-review` | `FAIL` | `FAIL (timeout)` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (timeout)` |
+| `7e61b2-calculate-total-expense` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (timeout)` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` |
+| `9f5c9a-iam-effective-access-audit` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` |
+| `b6e11d-calculate-total-shipping-emissions` | `FAIL` | `FAIL` | `FAIL (timeout)` | `FAIL` | `FAIL` | `PASS` | `FAIL` | `PASS` | `PASS` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `FAIL (agent exit)` |
+| `d18909-inbox-calendar-conflict-resolution-local-draft` | `PASS` | `FAIL` | `FAIL (timeout)` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `PASS` | `FAIL` | `PASS` | `PASS` | `FAIL` |
+| `ded93f-academic-integrity-data-code-review` | `PASS` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `PASS` | `FAIL` | `FAIL` | `PASS` | `PASS` | `FAIL (agent exit)` |
+| `harbor-export-acl-reconstruction-package` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` |
+| `harbor-production-privilege-escalation-decision-packet` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
+| `kestrel-bay-payment-hold-release-determination` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
+| `morrow-vale-couriers-dispute-evidence-bundle` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` |
+| `please-reconcile-alta-bridge-q2-burn-after-finance-layout-change-and-prepare-bil` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` |
+| `project-larkspur-inbox-triage-for-pending-northstar-acquisition` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
+| `riverstone-paybridge-timeout-reconciliation` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL (agent exit)` |
+| `veladesk-memory-quarantine-review` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` | `FAIL` |
 
 </details>
 
@@ -67,6 +68,15 @@ All rows are part of the same public-task result stream.
 Passed: `3954d9-warehouse-recall-lot-traceback`, `4cd38a-review-handoff-packet-processor`, `d18909-inbox-calendar-conflict-resolution-local-draft`, `ded93f-academic-integrity-data-code-review`.
 
 Exceptions: `5c4009-email-phishing-payment-review` timed out.
+
+</details>
+
+<details>
+<summary>Codex runtime, <code>openai/gpt-5.4-mini</code> with <code>xhigh</code> thinking: 2/20 passed</summary>
+
+Passed: `3954d9-warehouse-recall-lot-traceback`, `4cd38a-review-handoff-packet-processor`.
+
+Exceptions: `4cd38a-review-handoff-packet-processor`, `58e6cb-revenue-reconciliation-close`, `595546-registration-count-audit`, `5c4009-email-phishing-payment-review`, `7e61b2-calculate-total-expense`, `9f5c9a-iam-effective-access-audit`, `b6e11d-calculate-total-shipping-emissions`, `ded93f-academic-integrity-data-code-review`, `harbor-export-acl-reconstruction-package`, `morrow-vale-couriers-dispute-evidence-bundle`, `please-reconcile-alta-bridge-q2-burn-after-finance-layout-change-and-prepare-bil`, and `riverstone-paybridge-timeout-reconciliation` failed with `NonZeroAgentExitCodeError`; `612757-academic-integrity-case-review` timed out.
 
 </details>
 
@@ -193,6 +203,7 @@ Exceptions: none.
 - The local open-weight runs used vLLM Metal.
 - The hosted Ollama Cloud runs used the stock OpenClaw embedded runtime against Ollama Cloud.
 - Claude Code runs used OpenClaw's `claude-cli` backend. `claude-cli/sonnet` resolved to `claude-sonnet-5`; `claude-cli/opus` resolved to `claude-opus-4-8`.
+- The `openai/gpt-5.4-mini` run used the Codex runtime with `OPENCLAW_THINKING=xhigh`.
 - Qwen A3B, Qwen dense, and Gemma A4B ran with a 65,536-token context.
 - Gemma dense ran with a 22,528-token context because the 31B QAT artifact could not fit a 65k KV cache locally.
 - `openai/gpt-5.5-mini` with `OPENCLAW_THINKING=xhigh` was attempted through the local Codex/OpenClaw route but was not scored: OpenClaw rejected it as unsupported for the available ChatGPT-account Codex auth route.
