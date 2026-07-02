@@ -2,9 +2,9 @@
 
 Captured from the Ollama Cloud catalog on 2026-07-02.
 
-This is a shortlist of hosted Ollama Cloud models worth trying next for ShellBench/OpenClaw. It records exact runnable Ollama tags where available and keeps this separate from measured benchmark results.
+This is a shortlist of hosted Ollama Cloud models worth trying next for ShellBench/OpenClaw. It records exact runnable Ollama tags where available.
 
-Measured ShellBench results for this queue are saved in `ollama-cloud-shellbench-results.md`.
+Measured ShellBench results for this queue are saved in `shellbench-run-results.md`.
 
 ## Priority Queue
 

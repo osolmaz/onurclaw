@@ -117,8 +117,7 @@ This Hub snapshot is intentionally creator-wide. It includes all model records u
 
 ## ShellBench Baseline Results
 
-- `shellbench-run-results.md`: public report for local ShellBench public-task sweeps across Codex runtime, Qwen, and Gemma variants. It keeps the leaderboard visible and puts per-run task results in collapsible sections.
-- `ollama-cloud-shellbench-results.md`: hosted Ollama Cloud ShellBench sweep over GLM, Kimi, MiniMax, DeepSeek, Qwen, and Gemma cloud tags.
+- `shellbench-run-results.md`: public report for ShellBench public-task sweeps across Codex runtime, local vLLM Qwen/Gemma variants, and hosted Ollama Cloud models. It keeps the leaderboard visible and puts task results in collapsible sections.
 - `ollama-cloud-candidates.md`: current Ollama Cloud candidate queue for hosted ShellBench/OpenClaw follow-up runs.
 
 ## Intended Workflow
