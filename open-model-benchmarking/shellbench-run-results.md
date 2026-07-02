@@ -1,6 +1,6 @@
 # ShellBench Public Task Results
 
-Run date: 2026-07-01
+Run dates: 2026-07-01 and 2026-07-02
 
 Public task revision: `ShellBench/public-tasks@30d6135`
 
@@ -17,6 +17,20 @@ This report lists scores only. It does not include task prompts, workspace files
 | Qwen dense | `openai/qwen-dense-vllm` | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) | `20/20` | `1/20` | `0.050` | `2` timeouts |
 | Gemma A4B | `openai/gemma-vllm` | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) | `20/20` | `1/20` | `0.050` | `0` |
 | Gemma dense | `openai/gemma-dense-vllm` | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) | `20/20` | `1/20` | `0.050` | `0` |
+
+## Hosted Ollama Cloud Runs
+
+Detailed task-by-model results for the hosted Ollama Cloud sweep are saved in `ollama-cloud-shellbench-results.md`.
+
+| Run | Runtime model id | Model artifact | Completed | Passed | Mean reward | Exceptions |
+| --- | --- | --- | ---: | ---: | ---: | --- |
+| GLM 5.2 | `openai/glm-5.2:cloud` | [`glm-5.2:cloud`](https://ollama.com/library/glm-5.2) | `20/20` | `3/20` | `0.150` | `0` |
+| Kimi K2.7 Code | `openai/kimi-k2.7-code:cloud` | [`kimi-k2.7-code:cloud`](https://ollama.com/library/kimi-k2.7-code) | `20/20` | `2/20` | `0.100` | `0` |
+| MiniMax M3 | `openai/minimax-m3:cloud` | [`minimax-m3:cloud`](https://ollama.com/library/minimax-m3) | `20/20` | `3/20` | `0.150` | `1` timeout |
+| DeepSeek V4 Flash | `openai/deepseek-v4-flash:cloud` | [`deepseek-v4-flash:cloud`](https://ollama.com/library/deepseek-v4-flash) | `20/20` | `4/20` | `0.200` | `0` |
+| DeepSeek V4 Pro | `openai/deepseek-v4-pro:cloud` | [`deepseek-v4-pro:cloud`](https://ollama.com/library/deepseek-v4-pro) | `20/20` | `5/20` | `0.250` | `1` agent exit |
+| Qwen 3.5 397B | `openai/qwen3.5:397b-cloud` | [`qwen3.5:397b-cloud`](https://ollama.com/library/qwen3.5/tags) | `20/20` | `2/20` | `0.100` | `0` |
+| Gemma 4 | `openai/gemma4:cloud` | [`gemma4:cloud`](https://ollama.com/library/gemma4/tags) | `20/20` | `1/20` | `0.050` | `1` timeout |
 
 ## Combined Task Results
 
