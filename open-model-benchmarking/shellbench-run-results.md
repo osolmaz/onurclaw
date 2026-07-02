@@ -12,23 +12,23 @@ This report lists scores only. It does not include task prompts, workspace files
 
 All rows are part of the same public-task result stream and are sorted by decreasing mean reward.
 
-| Run | Runtime model id | Model artifact | Execution | Completed | Passed | Mean reward | Score | Exceptions |
-| --- | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
-| Claude Code Opus 4.8 | `claude-cli/opus` | [`claude-opus-4-8`](https://docs.anthropic.com/en/docs/about-claude/models/all-models) | Harbor + custom OpenClaw Claude Code adapter; Anthropic hosted via Claude Code OAuth | `20/20` | `6/20` | `0.300` | `30%` | `0` |
-| Claude Code Sonnet 5 | `claude-cli/sonnet` | [`claude-sonnet-5`](https://docs.anthropic.com/en/docs/about-claude/models/all-models) | Harbor + custom OpenClaw Claude Code adapter; Anthropic hosted via Claude Code OAuth | `20/20` | `5/20` | `0.250` | `25%` | `0` |
-| DeepSeek V4 Pro | `openai/deepseek-v4-pro:cloud` | [`deepseek-v4-pro:cloud`](https://ollama.com/library/deepseek-v4-pro) | Harbor + stock OpenClaw embedded runtime; Ollama Cloud API | `20/20` | `5/20` | `0.250` | `25%` | `1` agent exit |
-| OpenAI GPT-5.5 | `openai/gpt-5.5` | [`gpt-5.5`](https://platform.openai.com/docs/models) | Harbor + custom OpenClaw Gateway Codex adapter; OpenAI/Codex hosted via Codex auth | `20/20` | `4/20` | `0.200` | `20%` | `1` timeout |
-| DeepSeek V4 Flash | `openai/deepseek-v4-flash:cloud` | [`deepseek-v4-flash:cloud`](https://ollama.com/library/deepseek-v4-flash) | Harbor + stock OpenClaw embedded runtime; Ollama Cloud API | `20/20` | `4/20` | `0.200` | `20%` | `0` |
-| GLM 5.2 | `openai/glm-5.2:cloud` | [`glm-5.2:cloud`](https://ollama.com/library/glm-5.2) | Harbor + stock OpenClaw embedded runtime; Ollama Cloud API | `20/20` | `3/20` | `0.150` | `15%` | `0` |
-| MiniMax M3 | `openai/minimax-m3:cloud` | [`minimax-m3:cloud`](https://ollama.com/library/minimax-m3) | Harbor + stock OpenClaw embedded runtime; Ollama Cloud API | `20/20` | `3/20` | `0.150` | `15%` | `1` timeout |
-| OpenAI GPT-5.4 mini | `openai/gpt-5.4-mini` | [`gpt-5.4-mini`](https://platform.openai.com/docs/models) | Harbor + custom OpenClaw Gateway Codex adapter; OpenAI/Codex hosted via Codex auth | `20/20` | `2/20` | `0.100` | `10%` | `12` agent exits, `1` timeout |
-| Kimi K2.7 Code | `openai/kimi-k2.7-code:cloud` | [`kimi-k2.7-code:cloud`](https://ollama.com/library/kimi-k2.7-code) | Harbor + stock OpenClaw embedded runtime; Ollama Cloud API | `20/20` | `2/20` | `0.100` | `10%` | `0` |
-| Qwen 3.5 397B | `openai/qwen3.5:397b-cloud` | [`qwen3.5:397b-cloud`](https://ollama.com/library/qwen3.5/tags) | Harbor + stock OpenClaw embedded runtime; Ollama Cloud API | `20/20` | `2/20` | `0.100` | `10%` | `0` |
-| Gemma 4 cloud | `openai/gemma4:cloud` | [`gemma4:cloud`](https://ollama.com/library/gemma4/tags) | Harbor + stock OpenClaw embedded runtime; Ollama Cloud API | `20/20` | `1/20` | `0.050` | `5%` | `1` timeout |
-| Gemma A4B | `openai/gemma-vllm` | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) | Harbor + OpenClaw embedded runtime; local vLLM Metal | `20/20` | `1/20` | `0.050` | `5%` | `0` |
-| Gemma dense | `openai/gemma-dense-vllm` | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) | Harbor + OpenClaw embedded runtime; local vLLM Metal | `20/20` | `1/20` | `0.050` | `5%` | `0` |
-| Qwen A3B | `openai/qwen-vllm` | [`lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit) | Harbor + OpenClaw embedded runtime; local vLLM Metal | `20/20` | `1/20` | `0.050` | `5%` | `1` timeout |
-| Qwen dense | `openai/qwen-dense-vllm` | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) | Harbor + OpenClaw embedded runtime; local vLLM Metal | `20/20` | `1/20` | `0.050` | `5%` | `2` timeouts |
+| Run | Runtime model id | Model artifact | Completed | Passed | Mean reward | Score | Exceptions | Run via |
+| --- | --- | --- | ---: | ---: | ---: | ---: | --- | --- |
+| Claude Code Opus 4.8 | `claude-cli/opus` | [`claude-opus-4-8`](https://docs.anthropic.com/en/docs/about-claude/models/all-models) | `20/20` | `6/20` | `0.300` | `30%` | `0` | Claude Code API |
+| Claude Code Sonnet 5 | `claude-cli/sonnet` | [`claude-sonnet-5`](https://docs.anthropic.com/en/docs/about-claude/models/all-models) | `20/20` | `5/20` | `0.250` | `25%` | `0` | Claude Code API |
+| DeepSeek V4 Pro | `openai/deepseek-v4-pro:cloud` | [`deepseek-v4-pro:cloud`](https://ollama.com/library/deepseek-v4-pro) | `20/20` | `5/20` | `0.250` | `25%` | `1` agent exit | Ollama Cloud API |
+| OpenAI GPT-5.5 | `openai/gpt-5.5` | [`gpt-5.5`](https://platform.openai.com/docs/models) | `20/20` | `4/20` | `0.200` | `20%` | `1` timeout | OpenAI/Codex API |
+| DeepSeek V4 Flash | `openai/deepseek-v4-flash:cloud` | [`deepseek-v4-flash:cloud`](https://ollama.com/library/deepseek-v4-flash) | `20/20` | `4/20` | `0.200` | `20%` | `0` | Ollama Cloud API |
+| GLM 5.2 | `openai/glm-5.2:cloud` | [`glm-5.2:cloud`](https://ollama.com/library/glm-5.2) | `20/20` | `3/20` | `0.150` | `15%` | `0` | Ollama Cloud API |
+| MiniMax M3 | `openai/minimax-m3:cloud` | [`minimax-m3:cloud`](https://ollama.com/library/minimax-m3) | `20/20` | `3/20` | `0.150` | `15%` | `1` timeout | Ollama Cloud API |
+| OpenAI GPT-5.4 mini | `openai/gpt-5.4-mini` | [`gpt-5.4-mini`](https://platform.openai.com/docs/models) | `20/20` | `2/20` | `0.100` | `10%` | `12` agent exits, `1` timeout | OpenAI/Codex API |
+| Kimi K2.7 Code | `openai/kimi-k2.7-code:cloud` | [`kimi-k2.7-code:cloud`](https://ollama.com/library/kimi-k2.7-code) | `20/20` | `2/20` | `0.100` | `10%` | `0` | Ollama Cloud API |
+| Qwen 3.5 397B | `openai/qwen3.5:397b-cloud` | [`qwen3.5:397b-cloud`](https://ollama.com/library/qwen3.5/tags) | `20/20` | `2/20` | `0.100` | `10%` | `0` | Ollama Cloud API |
+| Gemma 4 cloud | `openai/gemma4:cloud` | [`gemma4:cloud`](https://ollama.com/library/gemma4/tags) | `20/20` | `1/20` | `0.050` | `5%` | `1` timeout | Ollama Cloud API |
+| Gemma A4B | `openai/gemma-vllm` | [`lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit`](https://huggingface.co/lmstudio-community/gemma-4-26B-A4B-it-QAT-MLX-4bit) | `20/20` | `1/20` | `0.050` | `5%` | `0` | Local vLLM Metal |
+| Gemma dense | `openai/gemma-dense-vllm` | [`mlx-community/gemma-4-31B-it-qat-4bit`](https://huggingface.co/mlx-community/gemma-4-31B-it-qat-4bit) | `20/20` | `1/20` | `0.050` | `5%` | `0` | Local vLLM Metal |
+| Qwen A3B | `openai/qwen-vllm` | [`lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-35B-A3B-MLX-4bit) | `20/20` | `1/20` | `0.050` | `5%` | `1` timeout | Local vLLM Metal |
+| Qwen dense | `openai/qwen-dense-vllm` | [`lmstudio-community/Qwen3.6-27B-MLX-4bit`](https://huggingface.co/lmstudio-community/Qwen3.6-27B-MLX-4bit) | `20/20` | `1/20` | `0.050` | `5%` | `2` timeouts | Local vLLM Metal |
 
 ## Combined Task Results
 
