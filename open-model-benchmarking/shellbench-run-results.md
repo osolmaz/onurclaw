@@ -85,6 +85,23 @@ scored 0.0, so totals reflect a full 115/115 scored.
 | Qwen A3B (Spark NVFP4) | [`nvidia/Qwen3.6-35B-A3B-NVFP4`](https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4) | `115/115` | `5/115` | `0.0435` | `4.3%` | `8` agent exits, `1` timeout (all re-run/scored) |
 | diffusiongemma A4B (Spark NVFP4) | [`nvidia/diffusiongemma-26B-A4B-it-NVFP4`](https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4) | `115/115` | `1/115` (+`1` partial `0.625`) | `0.0141` | `1.4%` | `1` docker-net error, `4` timeouts (all re-run/scored) |
 
+## HF Endpoint Stability Attempts
+
+These are infrastructure/debug attempts, not benchmark results. They used
+`nvidia/Qwen3.6-35B-A3B-NVFP4` on a Hugging Face Inference Endpoint with one
+AWS `nvidia-rtx-pro-6000` replica and vLLM `v0.23.1rc1.dev925+g2afa3f7e9`.
+Task content and trajectories are not included here.
+
+| Attempt | Server shape | Harbor concurrency | Outcome |
+| --- | --- | ---: | --- |
+| Recipe MTP | vLLM recipe flags with ModelOpt NVFP4, fp8 KV, FlashInfer attention, Marlin MoE, prefix caching, chunked prefill, MTP speculative decode `num_speculative_tokens=3`, `max_num_seqs=4` | `16` | Invalid: EngineCore died with CUDA illegal memory access; endpoint returned 5xx bursts. |
+| Recipe MTP | Same recipe server shape | `4` | Invalid: same EngineCore CUDA illegal memory access with only 3 running requests and no queue. |
+| No MTP diagnostic | Same server shape, but without `--speculative-config` | `4` | Endpoint stayed up through `43` completed and `8` errored trial outcomes with `0` endpoint 5xx; run still invalid as a benchmark because agent exits accumulated. |
+
+Current read: the Hugging Face endpoint crash is tied to the MTP speculative
+decoding path for this NVFP4 checkpoint/runtime combination, not raw client
+concurrency, KV pressure, or local Docker OOM.
+
 <details>
 <summary>Qwen A3B 115-task passes</summary>
 
