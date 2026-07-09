@@ -58,7 +58,7 @@ for, and therefore how much room an implementation still has.
 Before any model-specific detail, ask what a memory system fundamentally offers.
 When people compare accelerators for local inference they list many specs:
 capacity, bandwidth, compute throughput, precision support, cache hierarchy, PCIe
-lanes, multi-GPU links, power and thermals, host RAM. For the *decode* phase of
+lanes, multi-GPU links, power draw and thermals, host RAM. For the *decode* phase of
 autoregressive generation, two of these recur in almost every bound: how much
 state the memory can hold, and how fast it can move that state. We start there.
 
@@ -82,41 +82,22 @@ D = C R .
 ```
 
 If $C$ is in GB and $R$ is in GB/s, then $D$ is in $\mathrm{GB}^2/\mathrm{s}$.
-The units look strange. The rest of this section explains why this particular
-combination of $C$ and $R$ is the right scalar.
+*Power* is meant in the colloquial sense of capability, as in computing power,
+not in the electrical sense; no watts appear anywhere in this model. The units
+look strange. The rest of this section explains why this particular combination
+of $C$ and $R$ is the right scalar.
 
-### Units: bytes, shannons, and the dennard
+### Units
 
 For engineering we use decimal GB and GB/s, because those are the units in a
-hardware catalog. For the information-theoretic justification it is cleaner to
-measure memory in *shannons*, the maximum-entropy content of a binary memory
-cell:
-
-```math
-1\ \text{byte} = 8\ \mathrm{Sh}.
-```
-
-In shannon units, capacity $C$ is in $\mathrm{Sh}$, bandwidth $R$ is in
-$\mathrm{Sh}/\mathrm{s}$, and memory power has units $\mathrm{Sh}^2/\mathrm{s}$.
-That product unit deserves a name. We call it the **dennard**:
-
-```math
-1\ \mathrm{Dn} = 1\ \mathrm{Sh}^2/\mathrm{s}.
-```
-
-The eponym is Robert H. Dennard, who invented DRAM — the random-access memory
-lineage that GPU VRAM and unified memory belong to, as opposed to persistent
-flash or disk storage. The name collides slightly with *Dennard scaling*, the
-transistor-scaling law, but the association with memory is the point and the
-collision is tolerable. A worked feel for the unit: a 24 GB GPU at 1000 GB/s has
-$H = 24 \times 8 = 192$ gigashannons of capacity and $\Phi = 8000$
-gigashannons/s of flux, so its memory power is $192 \times 8000 \approx
-1.54 \times 10^{24}\ \mathrm{Sh}^2/\mathrm{s} = 1.54$ yottadennards.
+hardware catalog, so memory power is quoted in $\mathrm{GB}^2/\mathrm{s}$. A
+worked feel for the scale: a 24 GB GPU at 1000 GB/s has
+$D = 24 \times 1000 = 24{,}000\ \mathrm{GB}^2/\mathrm{s}$.
 
 Be careful with one thing throughout: every memory quantity in a given
-calculation must use the *same* unit system. The equations are identical whether
-you work in shannons or in GB; only the numeric value of $D$ changes. The name
-matters far less than the product, and the next two results explain why the
+calculation must use the *same* unit system. The equations are identical in any
+consistent unit — bytes, GB, or bits; only the numeric value of $D$ changes. The
+unit matters far less than the product, and the next two results explain why the
 product is forced.
 
 ### Resident-Flux Feasibility Theorem
@@ -267,7 +248,7 @@ s W \le R \quad\Longrightarrow\quad s \le \frac{R}{W} .
 This is the bandwidth limit: it sets the *maximum step rate*. It is the
 $r \le R$ condition, with the per-step traffic playing the role of the flux.
 
-### Dennard Decode Bound
+### Memory-Power Decode Bound
 
 Multiply the two caps. Throughput is parallelism times step rate, and each is
 separately bounded, so
@@ -289,7 +270,7 @@ and the bound collapses to the memorable form
 T \lesssim \frac{D}{K W} .
 ```
 
-This is the **Dennard Decode Bound**. The product $CR$ appears because maximum
+This is the **Memory-Power Decode Bound**. The product $CR$ appears because maximum
 throughput genuinely factors into maximum parallelism times maximum step rate:
 
 ```math
@@ -303,7 +284,7 @@ is memory power divided by memory cost per active model-token*.
 
 ### When the bound applies, and when it does not
 
-The Dennard Decode Bound governs batched throughput. Set $b = 1$ and it
+The Memory-Power Decode Bound governs batched throughput. Set $b = 1$ and it
 degenerates:
 
 ```math
@@ -325,12 +306,12 @@ attacks the reason even that row's bound is too optimistic.
 
 ## The loose bound is too generous
 
-The Dennard Decode Bound assumes the only per-token memory traffic worth counting
+The Memory-Power Decode Bound assumes the only per-token memory traffic worth counting
 is the model sweep $W$, shared across the batch. Real decoding also reads each
 session's growing KV cache, and that traffic is *private*: it is not amortized
 over the batch. Ignoring it makes the bound promise throughput that long-context
 serving can never reach. This chapter introduces the correct per-token
-accounting, and shows the Dennard bound falls out of it as a loose corollary.
+accounting, and shows the memory-power bound falls out of it as a loose corollary.
 
 ### Universal resource bound
 
@@ -394,7 +375,7 @@ memory stored per session, and $O$ the runtime overhead. This is the honest
 simple bound: bandwidth divided by shared-per-token cost plus private-per-token
 cost, maximized over fitting batches.
 
-### The Dennard Ceiling is a corollary
+### The Memory-Power Ceiling is a corollary
 
 Now recover the previous chapter's bound by deliberately throwing information
 away. Since $K_{\mathrm{read}}(L) \ge 0$, dropping it only loosens the
@@ -411,16 +392,16 @@ $b \le (C - W_{\mathrm{resident}} - O)/K_{\mathrm{store}}$, so
 T_{\max} \le \rho\,\frac{R\,(C - W_{\mathrm{resident}} - O)}{K_{\mathrm{store}}\,W_{\mathrm{active}}} = \rho\,\frac{D}{K_{\mathrm{store}}\,W_{\mathrm{active}}}\left(1 - \frac{W_{\mathrm{resident}} + O}{C}\right).
 ```
 
-This is the Dennard Decode Bound again, now revealed as what you get by
+This is the Memory-Power Decode Bound again, now revealed as what you get by
 *discarding the private context term and using the largest batch that fits*. That
 is why it can sit far above achievable throughput while remaining a true ceiling.
 The ordering is
 
 ```math
-\text{actual throughput} \;\le\; \text{simple (KV-aware) bound} \;\le\; \text{Dennard bound}.
+\text{actual throughput} \;\le\; \text{simple (KV-aware) bound} \;\le\; \text{memory-power bound}.
 ```
 
-The Dennard bound is the orientation line; the KV-aware bound is the one to
+The memory-power bound is the orientation line; the KV-aware bound is the one to
 serve from. The next chapter develops it into the operational calculator.
 
 ## KV-Aware Bound
@@ -508,11 +489,13 @@ is the whole serving tradeoff, and it is why a fit-only bound is not enough.
 The fix is to refuse batches at which a session would crawl. Impose a per-session
 floor $r_\star$, the minimum useful tokens/s/session, and solve $r(b) \ge r_\star$
 for $b$. Replacing the batch-dependent $W_{\mathrm{batch}}(b)$ by its shared lower
-bound $W_{\mathrm{active}}$ keeps a closed form and keeps the result an upper
-bound on the admissible batch:
+bound $W_{\mathrm{active}}$ keeps a closed form. Because
+$W_{\mathrm{batch}}(b) \ge W_{\mathrm{active}}$, the substitution only weakens the
+condition, so the implication runs one way — the closed form is a necessary
+condition on the admissible batch, not a sufficient one:
 
 ```math
-r(b) \ge r_\star \quad\Longleftrightarrow\quad b \le \frac{\rho R / r_\star - W_{\mathrm{active}}}{\rho\,K_{\mathrm{read}}(L_{\mathrm{read}})} ,
+r(b) \ge r_\star \quad\Longrightarrow\quad b \le \frac{\rho R / r_\star - W_{\mathrm{active}}}{\rho\,K_{\mathrm{read}}(L_{\mathrm{read}})} ,
 ```
 
 which defines a rate-limited batch
@@ -527,6 +510,9 @@ The usable batch is whichever gate binds first:
 b_{\mathrm{usable}} = \min\!\big(b_{\mathrm{mem}}(L_{\mathrm{alloc}}),\ b_{\mathrm{rate}}(L_{\mathrm{read}}, r_\star)\big).
 ```
 
+Because $b_{\mathrm{rate}}$ comes from a necessary condition, $b_{\mathrm{usable}}$
+is itself an upper bound on the truly admissible batch; the calculator applies
+the exact floor test with the true $W_{\mathrm{batch}}(b)$ in the next section.
 This is what stops the "hundred sessions" illusion. As context grows,
 $K_{\mathrm{read}}(L)$ grows, so $b_{\mathrm{rate}}$ falls quickly even while
 $b_{\mathrm{mem}}$ stays large. The KV slots fit; the useful rate does not. (An
@@ -552,7 +538,7 @@ This is the **KV-Aware Bound**, the main practical formulation. In words: try
 every batch that fits, reject the ones too slow per session, and for the rest take
 bandwidth divided by bytes per output token, keeping the best.
 
-The looser **Dennard Bound** is its corollary, obtained as before by dropping the
+The looser **Memory-Power Bound** is its corollary, obtained as before by dropping the
 private term and using the largest fitting batch:
 
 ```math
@@ -564,7 +550,7 @@ written first by name and then in full:
 
 ```math
 \begin{aligned}
-T_{\max} \;&\le\; \text{KV-Aware Bound} \;\le\; \text{Dennard Bound} \;\le\; \text{Large-Memory Limit} \\[6pt]
+T_{\max} \;&\le\; \text{KV-Aware Bound} \;\le\; \text{Memory-Power Bound} \;\le\; \text{Large-Memory Limit} \\[6pt]
 T_{\max} \;&\le\; \max_{b \in \mathcal{B}}
 \frac{R}{\dfrac{W_{\mathrm{batch}}(b)}{b\rho} + K_{\mathrm{read}}(L_{\mathrm{read}})} \\[8pt]
 \;&\le\; \rho\,\frac{D}{K_{\mathrm{alloc}}(L_{\mathrm{alloc}})\,W_{\mathrm{active}}}
@@ -574,12 +560,12 @@ T_{\max} \;&\le\; \max_{b \in \mathcal{B}}
 ```
 
 The gap across these terms is the point of the whole derivation. The KV-aware
-line is the tight, practical bound; the Dennard line shows the memory system's
+line is the tight, practical bound; the memory-power line shows the memory system's
 large theoretical capacity-bandwidth product, and the distance between them is the
 private context traffic, expert diversity, and per-session floor that consume most
 of that optimism. The final term drops the resident-model factor
 $\left(1 - (W_{\mathrm{resident}} + O)/C\right)$ as well, so the right-hand side
-is exactly the simplified $D/(KW)$ from the Dennard Decode Bound, now with
+is exactly the simplified $D/(KW)$ from the Memory-Power Decode Bound, now with
 $K = K_{\mathrm{alloc}}(L_{\mathrm{alloc}})$ and $W = W_{\mathrm{active}}$. It is
 the loosest, most optimistic reading, since the resident model and overhead always
 claim a real share of $C$.
@@ -687,6 +673,19 @@ At $b\rho = 1$ this reduces to the active-parameter footprint; as $b\rho \to
 why MoE batching does not amortize for free, and why the MoE rows in the worked
 table reach their throughput optimum at modest batch sizes.
 
+One caveat keeps the upper-bound contract honest. Every other traffic term in
+the bound is a deliberate *under*-estimate of real traffic, which is what makes
+$R/q$ a true ceiling. The expert count $m(b\rho)$ is different: it is an
+*expectation* under independent, uniform routing, not a lower bound. Real
+routing is correlated — load-balancing losses push toward uniform, but hot
+experts and topically similar sessions pull the other way — and correlated
+routing touches *fewer* distinct experts than the formula predicts. In that
+case the modeled traffic overstates the actual traffic, and the computed
+ceiling can sit slightly below the true one. When a guaranteed ceiling is
+required, replace $m(b\rho)$ by its minimum $k$, i.e. replace
+$W_{\mathrm{batch}}(b)$ by $W_{\mathrm{active}}$; the expectation form is the
+better estimate, the floor form is the safe bound.
+
 ### Hybrid, sliding, and recurrent attention
 
 Models with local or sliding-window attention, compressed or latent attention, or
@@ -732,7 +731,7 @@ $(L_{\mathrm{alloc}}, L_{\mathrm{read}}, r_\star)$.
 5. Keep the batches whose per-session ceiling is at least $r_\star$.
 6. Among the kept batches, choose the one with the largest aggregate ceiling;
    report it as the KV-aware result and its batch as $b^\star$.
-7. Separately compute the Dennard ceiling for orientation.
+7. Separately compute the memory-power ceiling for orientation.
 
 **Reading the result.** The output is a stack of gates, and the right phrasing
 depends on which gate bound:
@@ -792,7 +791,7 @@ comparing hardware.
 
 ### Main table
 
-| Hardware | Model | Single-session | $b^\star$ | KV-aware aggregate | Dennard ceiling |
+| Hardware | Model | Single-session | $b^\star$ | KV-aware aggregate | Memory-power ceiling |
 | --- | --- | ---: | ---: | ---: | ---: |
 | DGX Spark | Qwen3.6-35B-A3B | $\le$ 149 tok/s | 17 | $\le$ 345 tok/s | $\le$ 18.2k tok/s |
 | DGX Spark | Gemma 4 26B-A4B-it | $\le$ 120 tok/s | 16 | $\le$ 333 tok/s | $\le$ 23.7k tok/s |
@@ -804,7 +803,7 @@ comparing hardware.
 Two things stand out. First, with capacity held equal, the higher M5 Max
 bandwidth lifts every memory-side ceiling roughly in proportion to $R$, once the
 adapter and the floor are applied — the bandwidth-rich machine wins exactly where
-the theory says it should, in batched throughput. Second, the Dennard column sits
+the theory says it should, in batched throughput. Second, the memory-power column sits
 one to two orders of magnitude above the KV-aware column. That gap is private
 context traffic and expert diversity eating the memory system's theoretical
 optimism, which is the lesson the whole derivation exists to make visible.
@@ -892,7 +891,7 @@ Usable batch set, gated by the per-session floor:
 \mathcal{B} = \left\{ b : 1 \le b \le b_{\mathrm{mem}},\ \frac{R}{b\, q(b, L_{\mathrm{read}})} \ge r_\star \right\} .
 ```
 
-KV-aware bound, with the Dennard ceiling for orientation:
+KV-aware bound, with the memory-power ceiling for orientation:
 
 ```math
 T_{\max} \le \max_{b \in \mathcal{B}} \frac{R}{q(b, L_{\mathrm{read}})} \;\le\; \rho\,\frac{D}{K_{\mathrm{alloc}}(L_{\mathrm{alloc}})\,W_{\mathrm{active}}}\left(1 - \frac{W_{\mathrm{resident}} + O}{C}\right), \qquad D = CR .
