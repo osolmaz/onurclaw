@@ -508,11 +508,13 @@ is the whole serving tradeoff, and it is why a fit-only bound is not enough.
 The fix is to refuse batches at which a session would crawl. Impose a per-session
 floor $r_\star$, the minimum useful tokens/s/session, and solve $r(b) \ge r_\star$
 for $b$. Replacing the batch-dependent $W_{\mathrm{batch}}(b)$ by its shared lower
-bound $W_{\mathrm{active}}$ keeps a closed form and keeps the result an upper
-bound on the admissible batch:
+bound $W_{\mathrm{active}}$ keeps a closed form. Because
+$W_{\mathrm{batch}}(b) \ge W_{\mathrm{active}}$, the substitution only weakens the
+condition, so the implication runs one way — the closed form is a necessary
+condition on the admissible batch, not a sufficient one:
 
 ```math
-r(b) \ge r_\star \quad\Longleftrightarrow\quad b \le \frac{\rho R / r_\star - W_{\mathrm{active}}}{\rho\,K_{\mathrm{read}}(L_{\mathrm{read}})} ,
+r(b) \ge r_\star \quad\Longrightarrow\quad b \le \frac{\rho R / r_\star - W_{\mathrm{active}}}{\rho\,K_{\mathrm{read}}(L_{\mathrm{read}})} ,
 ```
 
 which defines a rate-limited batch
@@ -527,6 +529,9 @@ The usable batch is whichever gate binds first:
 b_{\mathrm{usable}} = \min\!\big(b_{\mathrm{mem}}(L_{\mathrm{alloc}}),\ b_{\mathrm{rate}}(L_{\mathrm{read}}, r_\star)\big).
 ```
 
+Because $b_{\mathrm{rate}}$ comes from a necessary condition, $b_{\mathrm{usable}}$
+is itself an upper bound on the truly admissible batch; the calculator applies
+the exact floor test with the true $W_{\mathrm{batch}}(b)$ in the next section.
 This is what stops the "hundred sessions" illusion. As context grows,
 $K_{\mathrm{read}}(L)$ grows, so $b_{\mathrm{rate}}$ falls quickly even while
 $b_{\mathrm{mem}}$ stays large. The KV slots fit; the useful rate does not. (An
@@ -686,6 +691,19 @@ At $b\rho = 1$ this reduces to the active-parameter footprint; as $b\rho \to
 \infty$ it saturates at all $E$ experts. This rising $W_{\mathrm{batch}}(b)$ is
 why MoE batching does not amortize for free, and why the MoE rows in the worked
 table reach their throughput optimum at modest batch sizes.
+
+One caveat keeps the upper-bound contract honest. Every other traffic term in
+the bound is a deliberate *under*-estimate of real traffic, which is what makes
+$R/q$ a true ceiling. The expert count $m(b\rho)$ is different: it is an
+*expectation* under independent, uniform routing, not a lower bound. Real
+routing is correlated — load-balancing losses push toward uniform, but hot
+experts and topically similar sessions pull the other way — and correlated
+routing touches *fewer* distinct experts than the formula predicts. In that
+case the modeled traffic overstates the actual traffic, and the computed
+ceiling can sit slightly below the true one. When a guaranteed ceiling is
+required, replace $m(b\rho)$ by its minimum $k$, i.e. replace
+$W_{\mathrm{batch}}(b)$ by $W_{\mathrm{active}}$; the expectation form is the
+better estimate, the floor form is the safe bound.
 
 ### Hybrid, sliding, and recurrent attention
 
