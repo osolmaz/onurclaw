@@ -85,22 +85,44 @@ scored 0.0, so totals reflect a full 115/115 scored.
 | Qwen A3B (Spark NVFP4) | [`nvidia/Qwen3.6-35B-A3B-NVFP4`](https://huggingface.co/nvidia/Qwen3.6-35B-A3B-NVFP4) | `115/115` | `5/115` | `0.0435` | `4.3%` | `8` agent exits, `1` timeout (all re-run/scored) |
 | diffusiongemma A4B (Spark NVFP4) | [`nvidia/diffusiongemma-26B-A4B-it-NVFP4`](https://huggingface.co/nvidia/diffusiongemma-26B-A4B-it-NVFP4) | `115/115` | `1/115` (+`1` partial `0.625`) | `0.0141` | `1.4%` | `1` docker-net error, `4` timeouts (all re-run/scored) |
 
-## HF Endpoint Stability Attempts
+## HF Endpoint Stability and Completion Run
 
-These are infrastructure/debug attempts, not benchmark results. They used
-`nvidia/Qwen3.6-35B-A3B-NVFP4` on a Hugging Face Inference Endpoint with one
-AWS `nvidia-rtx-pro-6000` replica and vLLM `v0.23.1rc1.dev925+g2afa3f7e9`.
-Task content and trajectories are not included here.
+These runs used `nvidia/Qwen3.6-35B-A3B-NVFP4` on one AWS
+`nvidia-rtx-pro-6000` Hugging Face Inference Endpoint replica with vLLM
+`v0.23.1rc1.dev925+g2afa3f7e9`. They began as infrastructure diagnostics and
+were then used to finish all 115 tasks. Because the aggregate combines clean
+results from several server configurations, treat it as a completion result,
+not a single immutable benchmark run.
 
 | Attempt | Server shape | Harbor concurrency | Outcome |
 | --- | --- | ---: | --- |
-| Recipe MTP | vLLM recipe flags with ModelOpt NVFP4, fp8 KV, FlashInfer attention, Marlin MoE, prefix caching, chunked prefill, MTP speculative decode `num_speculative_tokens=3`, `max_num_seqs=4` | `16` | Invalid: EngineCore died with CUDA illegal memory access; endpoint returned 5xx bursts. |
-| Recipe MTP | Same recipe server shape | `4` | Invalid: same EngineCore CUDA illegal memory access with only 3 running requests and no queue. |
-| No MTP diagnostic | Same server shape, but without `--speculative-config` | `4` | Endpoint stayed up through `43` completed and `8` errored trial outcomes with `0` endpoint 5xx; run still invalid as a benchmark because agent exits accumulated. |
+| Recipe MTP | ModelOpt NVFP4, fp8 KV, FlashInfer attention, Marlin MoE, prefix caching, chunked prefill, MTP speculative decode, `max_num_seqs=4` | up to `16` | Invalid: EngineCore died with CUDA illegal memory access; endpoint returned 5xx bursts. |
+| No MTP | Removed speculative decoding; CUDA graphs still enabled | up to `8` | Invalid: initially survived lighter traffic, then reproduced the EngineCore illegal-memory crash under sustained concurrent decode. MTP was not the root cause. |
+| Backend bisection | No MTP, FlashInfer sampler disabled, Triton GDN prefill, CUDA graphs enabled | up to `8` | Invalid: still reproduced the illegal-memory crash. The sampler and GDN backend changes were insufficient. |
+| Eager control | Same serving stack with `--enforce-eager` | `8` tasks / `8` agents | Stable, but with lower GPU utilization. |
+| Compiled, no CUDA graphs | Torch compilation enabled with `--compilation-config '{"cudagraph_mode":"NONE"}'`; FlashInfer sampler disabled; Triton GDN prefill | `8` tasks / `8` agents | Stable through the remaining concurrent groups and the long final IAM task. |
 
-Current read: the Hugging Face endpoint crash is tied to the MTP speculative
-decoding path for this NVFP4 checkpoint/runtime combination, not raw client
-concurrency, KV pressure, or local Docker OOM.
+The failure is narrowed to vLLM's CUDA graph capture/replay path for this
+Blackwell + Qwen hybrid NVFP4 stack. It is not an OOM or KV-capacity problem:
+one crash occurred with 4 running and 2 waiting requests at about 6.3% KV-cache
+use. CUDA reported `misaligned address` and `illegal memory access`; because the
+failure surfaced asynchronously at an event synchronization, the endpoint
+trace cannot identify the exact offending kernel. Related upstream reports:
+[vLLM #34948](https://github.com/vllm-project/vllm/issues/34948),
+[#37729](https://github.com/vllm-project/vllm/issues/37729), and
+[#42897](https://github.com/vllm-project/vllm/issues/42897).
+
+The final stable replica recorded 588 successful chat-completion HTTP responses
+with zero vLLM `ERROR` records, zero actual HTTP 503 responses, and zero CUDA
+failures from rollout through completion. The composite result has a clean,
+verifier-scored result for every dataset ID: `115/115`, with `7` full passes, `1`
+partial (`0.643`), reward sum `7.643`, and mean reward `0.0665`. Four transient
+Docker address-pool failures were rerun after pruning unused Harbor networks;
+they were harness failures, not endpoint failures.
+
+The full bisection, stable server arguments, llama.cpp alternative, and compact
+sanitized Harbor/OpenClaw state backup are recorded in
+[`dutifuldev/shellbench-local`](https://github.com/dutifuldev/shellbench-local/blob/main/reports/hf-qwen36-endpoint-shellbench.md).
 
 <details>
 <summary>Qwen A3B 115-task passes</summary>
