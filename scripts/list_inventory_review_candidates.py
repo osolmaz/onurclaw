@@ -12,6 +12,8 @@ from pathlib import Path
 from textwrap import shorten
 from urllib.parse import quote
 
+from inventory_source import validate_exported_source
+
 
 DEFAULT_INVENTORY = Path("OPENCLAW_ONUR_INVENTORY.md")
 DEFAULT_INVENTORY_JSON = Path("OPENCLAW_ONUR_INVENTORY.json")
@@ -305,6 +307,11 @@ def main() -> int:
     parser.add_argument("--gitcrawl-db", type=Path, default=DEFAULT_GITCRAWL_DB)
     parser.add_argument("--format", choices=("markdown", "jsonl"), default="markdown")
     parser.add_argument(
+        "--require-fresh-export",
+        action="store_true",
+        help="Reject a Gitcrawl database without current export freshness metadata.",
+    )
+    parser.add_argument(
         "--output",
         type=Path,
         help="Write candidates to this file and print only a concise summary.",
@@ -315,6 +322,12 @@ def main() -> int:
         help="Include new threads that did not match the broad local-model keyword pool.",
     )
     args = parser.parse_args()
+
+    if args.require_fresh_export:
+        try:
+            validate_exported_source(args.gitcrawl_db)
+        except (OSError, sqlite3.Error, ValueError) as error:
+            raise SystemExit(f"invalid inventory source: {error}") from error
 
     issue_watermark, pr_watermark = read_watermark(args.inventory, args.inventory_json)
     threads = load_threads(args.gitcrawl_db, issue_watermark, pr_watermark)

@@ -34,9 +34,10 @@ The job expects these files to be provided by the private deployment:
 - `/state/inventory-notifier-compare-state.json`: persistent compare state. The
   file is created on first run if missing.
 
-The public script validates that the read-only data files exist before doing
-anything useful. Data export, snapshot freshness, and GitHub publication are
-private deployment responsibilities.
+The private exporter stamps the Gitcrawl snapshot with bounded freshness
+metadata. Candidate generation uses `--require-fresh-export`, and the public
+finalizer independently validates that metadata before doing anything useful.
+Missing, corrupt, future-dated, or stale snapshots fail closed.
 
 ## Skill Copy
 
@@ -60,7 +61,8 @@ The cron message should make the curation step explicit:
 Read /workspace/.agents/skills/openclaw-onur-inventory/SKILL.md and follow it to
 refresh /workspace/OPENCLAW_ONUR_INVENTORY.md from /gitcrawl/gitcrawl.db.
 First run: git checkout main
-Use scripts/list_inventory_review_candidates.py with --format jsonl --output
+Use scripts/list_inventory_review_candidates.py with --require-fresh-export
+--format jsonl --output
 /state/inventory-candidates.jsonl, review candidates from that file in small
 chunks without printing the whole file, update the inventory and watermark only
 for ranges fully reviewed, then run exactly:
@@ -82,7 +84,8 @@ the sandbox command preflight, followed by the sorter/finalizer.
 `scripts/finalize_inventory_job.sh` then:
 
 1. Verifies that it is running from the expected mounted repo.
-2. Verifies the read-only Gitcrawl/notifier inputs and writable state directory.
+2. Verifies the read-only Gitcrawl/notifier inputs, Gitcrawl export freshness,
+   and writable state directory.
 3. Sorts `OPENCLAW_ONUR_INVENTORY.md` without live GitHub activity refresh,
    regenerating the newest-open view and keeping the first 50 canonical open
    rows visible while collapsing only overflow rows.
@@ -113,7 +116,8 @@ bash -n scripts/run_inventory_job.sh scripts/finalize_inventory_job.sh
 python3 scripts/check_synced_skill.py
 # Optional, when comparing against an external source copy:
 python3 scripts/check_synced_skill.py --source /path/to/source/SKILL.md
-python3 -m py_compile scripts/inventory_data.py scripts/export_inventory_json.py scripts/validate_inventory_json.py scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py scripts/list_inventory_review_candidates.py scripts/check_synced_skill.py
+python3 -m py_compile scripts/inventory_data.py scripts/inventory_source.py scripts/export_inventory_json.py scripts/validate_inventory_json.py scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py scripts/list_inventory_review_candidates.py scripts/check_synced_skill.py
+python3 scripts/test_inventory_source.py
 OPENCLAW_ONUR_INVENTORY_SKIP_ACTIVITY=1 python3 scripts/sort_openclaw_onur_inventory.py --no-activity
 python3 scripts/export_inventory_json.py
 python3 scripts/validate_inventory_json.py

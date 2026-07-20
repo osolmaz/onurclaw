@@ -27,6 +27,8 @@ test -r "$notifier_db" || fail "missing readable notifier database"
 mkdir -p "$(dirname "$state_file")"
 test -w "$(dirname "$state_file")" || fail "state directory is not writable"
 
+python3 scripts/inventory_source.py "$gitcrawl_db" >/dev/null
+
 top_level="$(git rev-parse --show-toplevel 2>/dev/null || true)"
 test "$top_level" = "$workspace" || fail "workspace is not the repository root"
 
