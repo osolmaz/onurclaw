@@ -118,6 +118,7 @@ python3 scripts/check_synced_skill.py
 python3 scripts/check_synced_skill.py --source /path/to/source/SKILL.md
 python3 -m py_compile scripts/inventory_data.py scripts/inventory_source.py scripts/export_inventory_json.py scripts/validate_inventory_json.py scripts/sort_openclaw_onur_inventory.py scripts/inventory_notifier_compare.py scripts/list_inventory_review_candidates.py scripts/check_synced_skill.py
 python3 scripts/test_inventory_source.py
+python3 scripts/test_inventory_candidates.py
 OPENCLAW_ONUR_INVENTORY_SKIP_ACTIVITY=1 python3 scripts/sort_openclaw_onur_inventory.py --no-activity
 python3 scripts/export_inventory_json.py
 python3 scripts/validate_inventory_json.py

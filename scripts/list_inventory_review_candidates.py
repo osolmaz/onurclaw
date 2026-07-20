@@ -168,9 +168,18 @@ def connect_readonly(path: Path) -> sqlite3.Connection:
 def load_threads(db: Path, issue_watermark: int, pr_watermark: int) -> list[Thread]:
     conn = connect_readonly(db)
     try:
+        thread_columns = {
+            row["name"] for row in conn.execute("PRAGMA table_info(threads)").fetchall()
+        }
+        if "body" in thread_columns:
+            body_column = "body"
+        elif "body_excerpt" in thread_columns:
+            body_column = "body_excerpt"
+        else:
+            raise ValueError("Gitcrawl threads table has no body or body_excerpt column")
         rows = conn.execute(
-            """
-            SELECT kind, number, state, title, COALESCE(body, '') AS body,
+            f"""
+            SELECT kind, number, state, title, COALESCE({body_column}, '') AS body,
                    labels_json, assignees_json, html_url, updated_at_gh
             FROM threads
             WHERE html_url LIKE ?
