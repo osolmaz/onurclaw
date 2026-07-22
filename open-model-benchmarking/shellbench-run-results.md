@@ -122,7 +122,7 @@ they were harness failures, not endpoint failures.
 
 The full bisection, stable server arguments, llama.cpp alternative, and compact
 sanitized Harbor/OpenClaw state backup are recorded in
-[`dutifuldev/shellbench-local`](https://github.com/dutifuldev/shellbench-local/blob/main/reports/hf-qwen36-endpoint-shellbench.md).
+[`osolmaz/shellbench-local`](https://github.com/osolmaz/shellbench-local/blob/main/reports/hf-qwen36-endpoint-shellbench.md).
 
 <details>
 <summary>Qwen A3B 115-task passes</summary>
@@ -318,6 +318,6 @@ Exceptions: 5 `AgentTimeoutError`.
 - Qwen A3B, Qwen dense, and Gemma A4B ran with a 65,536-token context.
 - Gemma dense ran with a 22,528-token context because the 31B QAT artifact could not fit a 65k KV cache locally.
 - `openai/gpt-5.5-mini` with `OPENCLAW_THINKING=xhigh` was attempted through the local Codex/OpenClaw route but was not scored: OpenClaw rejected it as unsupported for the available ChatGPT-account Codex auth route.
-- DGX Spark (GB10, SM121) rows were served on local vLLM (0.24.0 for Qwen, 0.23.1 for Gemma), NVFP4 weights via ModelOpt, FP8 KV cache, prefix caching on, 65,536-token context, judged by a local codex-backed (`gpt-5.5`) OpenAI-compatible verifier proxy. Harness and full run notes: `dutifuldev/shellbench-local` (`reports/dgx-spark-nvfp4-shellbench-runs.md`).
+- DGX Spark (GB10, SM121) rows were served on local vLLM (0.24.0 for Qwen, 0.23.1 for Gemma), NVFP4 weights via ModelOpt, FP8 KV cache, prefix caching on, 65,536-token context, judged by a local codex-backed (`gpt-5.5`) OpenAI-compatible verifier proxy. Harness and full run notes: `osolmaz/shellbench-local` (`reports/dgx-spark-nvfp4-shellbench-runs.md`).
 - The Spark "diffusiongemma A4B" row uses `nvidia/diffusiongemma-26B-A4B-it-NVFP4`, a diffusion-LM Gemma variant — a DIFFERENT model from `Gemma-4-26B-A4B`. It is not the NVFP4 counterpart of the Mac "Gemma A4B" (`gemma-4-26B-A4B-it-QAT-MLX-4bit`) row. A run of the actual `nvidia/Gemma-4-26B-A4B-NVFP4` is still pending.
 - Spark 20-task runs show high `AgentTimeoutError` counts vs the Mac runs: several 20-task tasks carry tight per-task agent caps (300 s) that Qwen/Gemma thinking=high exceeds at Spark decode speed (~21 tok/s). These are the same tasks the Mac runs also failed, so headline pass counts are unaffected.
