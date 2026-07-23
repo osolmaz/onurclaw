@@ -1,69 +1,69 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-07-20
+Updated: 2026-07-23
 
 Review watermark:
 
-- Last reviewed through issue: #111432.
-- Last reviewed through PR: #111434.
+- Last reviewed through issue: #111969.
+- Last reviewed through PR: #111964.
 - Meaning: all GitHub issues and PRs at or below these numbers were considered for local-model and open-weight relevance; later numbers need review on the next run.
 
 ## NEW OPEN THREADS (50)
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
-| 🔀&nbsp;[#111434](https://github.com/openclaw/openclaw/pull/111434) | 2026-07-19 | 0 | Model routing/config | @mushuiyu886 | fix(vercel-ai-gateway): long-context usage costs are underreported |
-| 🔀&nbsp;[#111428](https://github.com/openclaw/openclaw/pull/111428) | 2026-07-19 | 0 | Model routing/config | @mushuiyu886 | fix(deepinfra): model list fails when HTTP proxy is required |
-| 🔀&nbsp;[#111392](https://github.com/openclaw/openclaw/pull/111392) | 2026-07-19 | 0 | Local memory/embedding | @wuqxuan | fix(memory-core): skip unchanged Dreaming workspace state writes |
-| 🔀&nbsp;[#111389](https://github.com/openclaw/openclaw/pull/111389) | 2026-07-19 | 0 | Model routing/config | @steipete | fix(usage): price usage rows with the owning agent's model registry |
-| 📝&nbsp;[#111386](https://github.com/openclaw/openclaw/issues/111386) | 2026-07-19 | 0 | OpenAI-compatible/proxy | @OliPlus | Azure OpenAI embedding provider fails — api-version not forwarded as URL query parameter |
-| 📝&nbsp;[#111376](https://github.com/openclaw/openclaw/issues/111376) | 2026-07-19 | 0 | Local memory/embedding | @khenn | [Bug]: memory-core Dreaming rewrites unchanged workspace state and stalls the gateway event loop |
-| 📝&nbsp;[#111359](https://github.com/openclaw/openclaw/issues/111359) | 2026-07-19 | 0 | Open-weight/provider behavior | @greggchen308 | Cron job `delivered: false` when deliveryBestEffort: true and interim-message guard fires without active subagents |
-| 📝&nbsp;[#111354](https://github.com/openclaw/openclaw/issues/111354) | 2026-07-19 | 0 | OpenAI-compatible/proxy | @gnnave-sudo | RFC: Declarative provider manifests instead of per-vendor lifecycle re-implementation |
-| 🔀&nbsp;[#111343](https://github.com/openclaw/openclaw/pull/111343) | 2026-07-19 | 0 | OpenAI-compatible/proxy | @mjnkao | feat(durable): persist agent turn front doors |
-| 🔀&nbsp;[#111332](https://github.com/openclaw/openclaw/pull/111332) | 2026-07-19 | 0 | Model routing/config | @nocodet888-arch | fix(agents): web_fetch leaves body open after provider fallback |
-| 🔀&nbsp;[#111304](https://github.com/openclaw/openclaw/pull/111304) | 2026-07-19 | 0 | Open-weight/provider behavior | @yuvrajlaptop2008-byte | fix(agents): strip MiniMax stream-boundary marker from transport payload text (#104403) |
-| 🔀&nbsp;[#111284](https://github.com/openclaw/openclaw/pull/111284) | 2026-07-19 | 0 | Model routing/config | @zenglingbiao | fix(plugin-sdk): decode live model catalog JSON with fatal UTF-8 validation |
-| 🔀&nbsp;[#111279](https://github.com/openclaw/openclaw/pull/111279) | 2026-07-19 | 0 | Local memory/embedding | @zenglingbiao | fix(memory-host-sdk): decode JSON response bodies with fatal UTF-8 validation |
-| 🔀&nbsp;[#111266](https://github.com/openclaw/openclaw/pull/111266) | 2026-07-19 | 0 | Open-weight/provider behavior | @mushuiyu886 | fix(chutes): discover models when HTTP proxy is required |
-| 📝&nbsp;[#111255](https://github.com/openclaw/openclaw/issues/111255) | 2026-07-19 | 0 | Model routing/config | @nftant | Bug: Gateway SIGUSR1 restart regenerates agent models.json with missing providers (reproduced: empty providers when only deepseek configured) |
-| 🔀&nbsp;[#111253](https://github.com/openclaw/openclaw/pull/111253) | 2026-07-19 | 0 | Open-weight/provider behavior | @mushuiyu886 | fix(chutes): cache-read usage is reported as free |
-| 🔀&nbsp;[#111240](https://github.com/openclaw/openclaw/pull/111240) | 2026-07-19 | 0 | Model routing/config | @xydt-juyaohui | fix(usage): reject invalid UTF-8 in Anthropic and OpenAI admin usage responses |
-| 🔀&nbsp;[#111239](https://github.com/openclaw/openclaw/pull/111239) | 2026-07-19 | 0 | Model routing/config | @mushuiyu886 | fix(kilocode): image-output models appear in chat catalog |
-| 🔀&nbsp;[#111237](https://github.com/openclaw/openclaw/pull/111237) | 2026-07-19 | 0 | Model routing/config | @mushuiyu886 | fix(venice): model list shows current live context limits |
-| 🔀&nbsp;[#111226](https://github.com/openclaw/openclaw/pull/111226) | 2026-07-19 | 0 | Local model runtime | @hugenshen | fix(cron): cancel unread local model preflight bodies |
-| 📝&nbsp;[#111219](https://github.com/openclaw/openclaw/issues/111219) | 2026-07-19 | 0 | Model routing/config | @boycez | secrets audit: auth-profile SQLite store scanned for default agent only (multi-agent blind spot) |
-| 🔀&nbsp;[#111212](https://github.com/openclaw/openclaw/pull/111212) | 2026-07-19 | 0 | Model routing/config | @fuller-stack-dev | feat(mcp-apps): support bounded model context updates |
-| 🔀&nbsp;[#111209](https://github.com/openclaw/openclaw/pull/111209) | 2026-07-19 | 0 | Open-weight/provider behavior | @mushuiyu886 | fix(vercel-ai-gateway): discover models when HTTP proxy is required |
-| 🔀&nbsp;[#111198](https://github.com/openclaw/openclaw/pull/111198) | 2026-07-19 | 0 | Open-weight/provider behavior | @ZengWen-DT | fix(xiaomi): reject malformed base64 TTS audio |
-| 🔀&nbsp;[#111182](https://github.com/openclaw/openclaw/pull/111182) | 2026-07-19 | 0 | Open-weight/provider behavior | @wahaha1223 | fix(openrouter): reject invalid UTF-8 usage responses |
-| 🔀&nbsp;[#111180](https://github.com/openclaw/openclaw/pull/111180) | 2026-07-19 | 0 | Open-weight/provider behavior | @wahaha1223 | fix(venice): reject invalid UTF-8 usage responses |
-| 🔀&nbsp;[#111175](https://github.com/openclaw/openclaw/pull/111175) | 2026-07-19 | 0 | Model routing/config | @xydigit-zt | fix(usage): omit costUsd when model pricing is all-zero (unknown) |
-| 🔀&nbsp;[#111173](https://github.com/openclaw/openclaw/pull/111173) | 2026-07-19 | 0 | Model routing/config | @steipete | refactor: own model discovery by runtime lifecycle |
-| 🔀&nbsp;[#111137](https://github.com/openclaw/openclaw/pull/111137) | 2026-07-19 | 0 | Model routing/config | @steipete | refactor(agents): make API registry ownership lifecycle-local |
-| 🔀&nbsp;[#111115](https://github.com/openclaw/openclaw/pull/111115) | 2026-07-19 | 0 | Local memory/embedding | @jwest75674 | fix(memory-core): unify QMD multi-collection search, add phase timings, fix archived-session identity loss |
-| 🔀&nbsp;[#111113](https://github.com/openclaw/openclaw/pull/111113) | 2026-07-19 | 0 | OpenAI-compatible/proxy | @zenglingbiao | fix(plugins): decode self-hosted discovery JSON with fatal UTF-8 validation |
-| 🔀&nbsp;[#111098](https://github.com/openclaw/openclaw/pull/111098) | 2026-07-19 | 0 | Model routing/config | @lsr911-code | fix(model-pricing): guard loopback host checks with isIP to prevent DNS SSRF bypass |
-| 📝&nbsp;[#111085](https://github.com/openclaw/openclaw/issues/111085) | 2026-07-19 | 0 | OpenAI-compatible/proxy | @EricChan2028 | Tool-result truncation jitter invalidates prompt-cache prefixes — quantize truncation to stable steps |
-| 📝&nbsp;[#111084](https://github.com/openclaw/openclaw/issues/111084) | 2026-07-19 | 0 | OpenAI-compatible/proxy | @EricChan2028 | showInjected persists injected context into session history, degrading OpenAI-compatible prompt-cache hit rates |
-| 📝&nbsp;[#111083](https://github.com/openclaw/openclaw/issues/111083) | 2026-07-19 | 0 | OpenAI-compatible/proxy | @EricChan2028 | Feature: documented cache-stable placement for hook-injected system context (`beforeCacheBoundary` variant + `stableSystemContext` hook-result field) |
-| 🔀&nbsp;[#111056](https://github.com/openclaw/openclaw/pull/111056) | 2026-07-19 | 0 | Open-weight/provider behavior | @ZengWen-DT | fix(openrouter): preserve completed music when stream cleanup fails |
-| 🔀&nbsp;[#111016](https://github.com/openclaw/openclaw/pull/111016) | 2026-07-18 | 0 | Open-weight/provider behavior | @yuvrajlaptop2008-byte | fix(agents): strip MiniMax stream-boundary marker from transport payload text |
-| 🔀&nbsp;[#111004](https://github.com/openclaw/openclaw/pull/111004) | 2026-07-18 | 0 | Model routing/config | @cxbAsDev | fix(auth-profiles): bound auth-profile JSON reads with size cap |
-| 🔀&nbsp;[#110998](https://github.com/openclaw/openclaw/pull/110998) | 2026-07-18 | 0 | OpenAI-compatible/proxy | @mushuiyu886 | fix(opencode): public models work without API keys |
-| 🔀&nbsp;[#110990](https://github.com/openclaw/openclaw/pull/110990) | 2026-07-18 | 0 | Model routing/config | @zhangguiping-xydt | fix(plugins): model catalog discovery stalls on an unresponsive plugin |
-| 🔀&nbsp;[#110979](https://github.com/openclaw/openclaw/pull/110979) | 2026-07-18 | 0 | Open-weight/provider behavior | @wuqxuan | fix(provider-usage): parse MiniMax remaining-percent usage payload |
-| 🔀&nbsp;[#110975](https://github.com/openclaw/openclaw/pull/110975) | 2026-07-18 | 0 | Model routing/config | @Duplicity604 | fix(codex): mid-turn usage-limit errors hang the turn until an outer timeout |
-| 📝&nbsp;[#110974](https://github.com/openclaw/openclaw/issues/110974) | 2026-07-18 | 0 | Model routing/config | @Duplicity604 | [Bug]: Codex mid-turn usageLimitExceeded (willRetry) stalls the turn until an outer timeout instead of failing fast with the usage-limit error |
-| 🔀&nbsp;[#110956](https://github.com/openclaw/openclaw/pull/110956) | 2026-07-18 | 0 | Open-weight/provider behavior | @christiandesantis | fix: distinct Responses tool-call ids for repeated native Kimi calls |
-| 📝&nbsp;[#110953](https://github.com/openclaw/openclaw/issues/110953) | 2026-07-18 | 0 | Local model runtime | @Dharaneesh20 | [Bug]: Fresh LM Studio session on Ubuntu fails with "Context overflow" or "Message ordering conflict" after first message |
-| 🔀&nbsp;[#110917](https://github.com/openclaw/openclaw/pull/110917) | 2026-07-18 | 0 | OpenAI-compatible/proxy | @knowhycodata | feat: add LLMTR provider for Turkey-hosted and global models |
-| 📝&nbsp;[#110915](https://github.com/openclaw/openclaw/issues/110915) | 2026-07-18 | 0 | OpenAI-compatible/proxy | @knowhycodata | Add LLMTR provider (Turkey-hosted OpenAI-compatible AI gateway) |
-| 🔀&nbsp;[#110898](https://github.com/openclaw/openclaw/pull/110898) | 2026-07-18 | 0 | Local memory/embedding | @joeykrug | fix(active-memory): recall sub-agent receives huge prompt envelopes; bound recall context to 25K chars |
-| 📝&nbsp;[#110887](https://github.com/openclaw/openclaw/issues/110887) | 2026-07-18 | 0 | Open-weight/provider behavior | @pitcockchris79 | [Bug]: /status reports MiniMax "Unsupported response shape" — fetcher does not recognize current MiniMax API payload (no chat-model entry, remaining percent fields ignored) |
-| 🔀&nbsp;[#110873](https://github.com/openclaw/openclaw/pull/110873) | 2026-07-18 | 0 | Open-weight/provider behavior | @IWhatsskill | fix(minimax): restore X-Api-Key authentication |
+| 📝&nbsp;[#111966](https://github.com/openclaw/openclaw/issues/111966) | 2026-07-20 | 0 | Model/provider behavior | @markcallow-jpg | Bug: `extractRawAssistantText()` flattens multi-segment assistant output with no delimiter |
+| 🔀&nbsp;[#111964](https://github.com/openclaw/openclaw/pull/111964) | 2026-07-20 | 0 | Model routing/config | @dillona | fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash |
+| 📝&nbsp;[#111943](https://github.com/openclaw/openclaw/issues/111943) | 2026-07-20 | 0 | Model routing/config | @Zeus-Deus | [Feature]: Configurable model + reasoning effort for background "learning" subsystems |
+| 📝&nbsp;[#111924](https://github.com/openclaw/openclaw/issues/111924) | 2026-07-20 | 0 | Model routing/config | @japr26 | [Feature]: Buscador/filtro en dropdown de modelos del Control UI |
+| 📝&nbsp;[#111923](https://github.com/openclaw/openclaw/issues/111923) | 2026-07-20 | 0 | Local memory/embedding | @makominsk | Dreaming REM phase extracts junk topics (stop words, numbers, ranges) with no filter/config exposed |
+| 🔀&nbsp;[#111901](https://github.com/openclaw/openclaw/pull/111901) | 2026-07-20 | 0 | Model/provider behavior | @Vicenteut | feat(plugin-runtime): support declarative tools and single-attempt completions |
+| 🔀&nbsp;[#111899](https://github.com/openclaw/openclaw/pull/111899) | 2026-07-20 | 0 | Model routing/config | @xialonglee | fix(cli): block embedded fallback for gateway-accepted agent turns on transport error |
+| 🔀&nbsp;[#111895](https://github.com/openclaw/openclaw/pull/111895) | 2026-07-20 | 0 | Open-weight/provider behavior | @xbrxr03 | fix(failover): classify provider finish_reason: error as server_error, not timeout |
+| 🔀&nbsp;[#111894](https://github.com/openclaw/openclaw/pull/111894) | 2026-07-20 | 0 | Local/media model provider | @xbrxr03 | fix(openai): add handshakeTimeout to realtime voice WebSocket |
+| 🔀&nbsp;[#111892](https://github.com/openclaw/openclaw/pull/111892) | 2026-07-20 | 0 | Model routing/config | @xbrxr03 | fix(compaction): skip preflight compaction when backend owns native compaction |
+| 📝&nbsp;[#111889](https://github.com/openclaw/openclaw/issues/111889) | 2026-07-20 | 0 | Model/provider behavior | @Vicenteut | Plugin runtime: support declarative tools and single-attempt completions |
+| 📝&nbsp;[#111886](https://github.com/openclaw/openclaw/issues/111886) | 2026-07-20 | 0 | Model routing/config | @Olivaryne | Compaction frees zero tokens when transcript estimates undershoot the context-usage trigger (firstKeptEntryId stuck at first entry) |
+| 🔀&nbsp;[#111885](https://github.com/openclaw/openclaw/pull/111885) | 2026-07-20 | 0 | Model routing/config | @xbrxr03 | fix(config): add compaction.enabled to schema so users can disable auto-compaction |
+| 📝&nbsp;[#111884](https://github.com/openclaw/openclaw/issues/111884) | 2026-07-20 | 0 | Model routing/config | @MontanaIrish | [Bug]: Regression of #67988 — model picker shows alias ("Opus"/"Sonnet") instead of versioned display name, now on Opus 4.8 / Sonnet 5 |
+| 🔀&nbsp;[#111882](https://github.com/openclaw/openclaw/pull/111882) | 2026-07-20 | 0 | Open-weight/provider behavior | @xbrxr03 | fix(minimax): recognize coding-plan response shape with remaining-percent fields |
+| 📝&nbsp;[#111879](https://github.com/openclaw/openclaw/issues/111879) | 2026-07-20 | 0 | Model/provider behavior | @shayshimon | [Bug]: Parallel Codex hook relays can exhaust gateway resources and block the control plane |
+| 🔀&nbsp;[#111878](https://github.com/openclaw/openclaw/pull/111878) | 2026-07-20 | 0 | Open-weight/provider behavior | @xbrxr03 | fix(kimi-coding): remove k3[1m] from catalog, normalize to k3, raise context window |
+| 🔀&nbsp;[#111872](https://github.com/openclaw/openclaw/pull/111872) | 2026-07-20 | 0 | Model/provider behavior | @Pick-cat | fix(amazon-bedrock): reject malformed inbound image base64 |
+| 📝&nbsp;[#111870](https://github.com/openclaw/openclaw/issues/111870) | 2026-07-20 | 0 | Model/provider behavior | @Flagrare | [Bug]: @openclaw/codex fails to register in CLI context — TypeError: undefined 'openSyncKeyedStore' |
+| 🔀&nbsp;[#111864](https://github.com/openclaw/openclaw/pull/111864) | 2026-07-20 | 0 | Model/provider behavior | @ooiuuii | fix(ai): trim replay tool call ids |
+| 📝&nbsp;[#111863](https://github.com/openclaw/openclaw/issues/111863) | 2026-07-20 | 0 | Model/provider behavior | @ooiuuii | Provider replay mispairs tool results when call IDs contain surrounding whitespace |
+| 📝&nbsp;[#111857](https://github.com/openclaw/openclaw/issues/111857) | 2026-07-20 | 0 | Model routing/config | @itanyplus | [Bug]: CLI budget reopens the full compacted JSONL branch, inflating prompt estimates and repeatedly compacting low-context parent sessions |
+| 📝&nbsp;[#111856](https://github.com/openclaw/openclaw/issues/111856) | 2026-07-20 | 0 | Model routing/config | @nierob-cmd | Compaction summarization bypasses per-turn image-history pruning, can overflow context |
+| 🔀&nbsp;[#111852](https://github.com/openclaw/openclaw/pull/111852) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @chenyangjun-xy | fix: reject malformed UTF-8 in proxy gateway error response bodies |
+| 📝&nbsp;[#111850](https://github.com/openclaw/openclaw/issues/111850) | 2026-07-20 | 0 | Local memory/embedding | @chrislro | stt-tts Talk: aborted active-memory pre-run surfaces as user-facing "voice config failed" |
+| 📝&nbsp;[#111848](https://github.com/openclaw/openclaw/issues/111848) | 2026-07-20 | 0 | Model routing/config | @Enominera | [Bug]: acp-agent.js env construction missing settingsManager.getSettings().env — auto-compaction relies on gateway coincidence |
+| 📝&nbsp;[#111846](https://github.com/openclaw/openclaw/issues/111846) | 2026-07-20 | 0 | Open-weight/provider behavior | @Enominera | Thinking block loop silently exhausts output tokens → session permanently unusable (976K tokens accumulated) |
+| 🔀&nbsp;[#111845](https://github.com/openclaw/openclaw/pull/111845) | 2026-07-20 | 0 | Model/provider behavior | @dwc1997 | fix(codex): bound app-server websocket upgrade with handshake timeout |
+| 🔀&nbsp;[#111841](https://github.com/openclaw/openclaw/pull/111841) | 2026-07-20 | 0 | Model routing/config | @xialonglee | fix(agents): allow configless gateway rebind to activate standalone owner |
+| 📝&nbsp;[#111839](https://github.com/openclaw/openclaw/issues/111839) | 2026-07-20 | 0 | Model/provider behavior | @LeeroyDing | [Bug]: Channel follow-ups never steer active Codex app-server runs — steer always rejected (transcript_commit_wait_unsupported) and queued as follow-ups, unlike /steer and message-tool paths |
+| 🔀&nbsp;[#111835](https://github.com/openclaw/openclaw/pull/111835) | 2026-07-20 | 0 | Local model runtime | @masatohoshino | fix(ollama): bound DNS preflight with guard-owned request timeouts |
+| 📝&nbsp;[#111827](https://github.com/openclaw/openclaw/issues/111827) | 2026-07-20 | 0 | Model routing/config | @maharrer79-ops | Codex (openai-codex) provider: newer models report "Unknown model" + OAuth refresh_token_reused token race |
+| 🔀&nbsp;[#111826](https://github.com/openclaw/openclaw/pull/111826) | 2026-07-20 | 0 | Model routing/config | @Zeus-Deus | fix: /think off does not disable thinking on claude-cli |
+| 🔀&nbsp;[#111825](https://github.com/openclaw/openclaw/pull/111825) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @wuqxuan | fix(agents): tools-disabled finalizer after blank post-tool stop |
+| 🔀&nbsp;[#111818](https://github.com/openclaw/openclaw/pull/111818) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @ooiuuii | fix(openai): fail fast on invalid TLS certificates |
+| 📝&nbsp;[#111817](https://github.com/openclaw/openclaw/issues/111817) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @ooiuuii | [Bug]: ChatGPT Responses retries deterministic TLS certificate failures |
+| 📝&nbsp;[#111815](https://github.com/openclaw/openclaw/issues/111815) | 2026-07-20 | 0 | Model/provider behavior | @LarrysChef | image tool: 60s timeout for Anthropic vision when direct API returns in ~2s |
+| 🔀&nbsp;[#111813](https://github.com/openclaw/openclaw/pull/111813) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @vyncint | fix: Azure OpenAI memory indexing fails for custom providers |
+| 🔀&nbsp;[#111811](https://github.com/openclaw/openclaw/pull/111811) | 2026-07-20 | 0 | Local memory/embedding | @Atlas-crete | fix(memory): prevent active session ingestion starvation |
+| 🔀&nbsp;[#111810](https://github.com/openclaw/openclaw/pull/111810) | 2026-07-20 | 0 | Open-weight/provider behavior | @Monkey-wusky | fix(zai,amazon-bedrock-mantle): reject invalid UTF-8 in extension API response JSON |
+| 📝&nbsp;[#111807](https://github.com/openclaw/openclaw/issues/111807) | 2026-07-20 | 0 | Model routing/config | @Zeus-Deus | /think off doesn't disable thinking on claude-cli — inherits Claude Code's default effort (contradicts docs) |
+| 📝&nbsp;[#111804](https://github.com/openclaw/openclaw/issues/111804) | 2026-07-20 | 0 | Local memory/embedding | @dom521 | [Bug]: memory-wiki bridge-mode wiki_search/wiki_get/wiki_apply intermittent "path mismatch" causing gateway OOM |
+| 🔀&nbsp;[#111802](https://github.com/openclaw/openclaw/pull/111802) | 2026-07-20 | 0 | Local model runtime | @dwc1997 | fix(ollama): release failed setup response bodies before returning |
+| 📝&nbsp;[#111799](https://github.com/openclaw/openclaw/issues/111799) | 2026-07-20 | 0 | Local memory/embedding | @chrislro | active-memory: ~45% timeout rate and zero cached results during agent turns (2026.7.1-2) |
+| 🔀&nbsp;[#111796](https://github.com/openclaw/openclaw/pull/111796) | 2026-07-20 | 0 | Model routing/config | @steipete | feat(gateway,ui): agent-scoped model provider credentials |
+| 🔀&nbsp;[#111775](https://github.com/openclaw/openclaw/pull/111775) | 2026-07-20 | 0 | Model/provider behavior | @chenyangjun-xy | fix: reject malformed UTF-8 in provider HTTP text responses |
+| 🔀&nbsp;[#111774](https://github.com/openclaw/openclaw/pull/111774) | 2026-07-20 | 0 | Model routing/config | @zhangguiping-xydt | fix(providers): usage returns empty data when a provider response is malformed |
+| 🔀&nbsp;[#111766](https://github.com/openclaw/openclaw/pull/111766) | 2026-07-20 | 0 | Model routing/config | @chenyangjun-xy | fix(plugin-sdk): reject malformed UTF-8 in live provider model catalog responses |
+| 📝&nbsp;[#111764](https://github.com/openclaw/openclaw/issues/111764) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @forrystudio | Empty final completion (whitespace-only thinking, stop) surfaces as generic failure despite all tool work succeeding — add one-shot finalizer before non_deliverable_terminal_turn |
+| 🔀&nbsp;[#111709](https://github.com/openclaw/openclaw/pull/111709) | 2026-07-20 | 0 | Model routing/config | @kesava500 | feat: show thinking level in model summary |
 
-## OPEN THREADS (896)
+## OPEN THREADS (953)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 📝&nbsp;[#77692](https://github.com/openclaw/openclaw/issues/77692) | 4 | OpenAI-compatible/proxy | @kidding1412 | fix(tts/xiaomi): Xiaomi Token Plan endpoint uses Bearer auth, not api-key header |
 
 <details>
-<summary>Remaining 846 open threads, sorted by activity</summary>
+<summary>Remaining 903 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -139,6 +139,63 @@ Review watermark:
 | 📝&nbsp;[#59168](https://github.com/openclaw/openclaw/issues/59168) | 2 | Local model runtime | @Kaspre | feat(models): use provider/name as internal key to decouple from API model ID |
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
+| 📝&nbsp;[#111966](https://github.com/openclaw/openclaw/issues/111966) | 0 | Model/provider behavior | @markcallow-jpg | Bug: `extractRawAssistantText()` flattens multi-segment assistant output with no delimiter |
+| 🔀&nbsp;[#111964](https://github.com/openclaw/openclaw/pull/111964) | 0 | Model routing/config | @dillona | fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash |
+| 📝&nbsp;[#111943](https://github.com/openclaw/openclaw/issues/111943) | 0 | Model routing/config | @Zeus-Deus | [Feature]: Configurable model + reasoning effort for background "learning" subsystems |
+| 📝&nbsp;[#111924](https://github.com/openclaw/openclaw/issues/111924) | 0 | Model routing/config | @japr26 | [Feature]: Buscador/filtro en dropdown de modelos del Control UI |
+| 📝&nbsp;[#111923](https://github.com/openclaw/openclaw/issues/111923) | 0 | Local memory/embedding | @makominsk | Dreaming REM phase extracts junk topics (stop words, numbers, ranges) with no filter/config exposed |
+| 🔀&nbsp;[#111901](https://github.com/openclaw/openclaw/pull/111901) | 0 | Model/provider behavior | @Vicenteut | feat(plugin-runtime): support declarative tools and single-attempt completions |
+| 🔀&nbsp;[#111899](https://github.com/openclaw/openclaw/pull/111899) | 0 | Model routing/config | @xialonglee | fix(cli): block embedded fallback for gateway-accepted agent turns on transport error |
+| 🔀&nbsp;[#111895](https://github.com/openclaw/openclaw/pull/111895) | 0 | Open-weight/provider behavior | @xbrxr03 | fix(failover): classify provider finish_reason: error as server_error, not timeout |
+| 🔀&nbsp;[#111894](https://github.com/openclaw/openclaw/pull/111894) | 0 | Local/media model provider | @xbrxr03 | fix(openai): add handshakeTimeout to realtime voice WebSocket |
+| 🔀&nbsp;[#111892](https://github.com/openclaw/openclaw/pull/111892) | 0 | Model routing/config | @xbrxr03 | fix(compaction): skip preflight compaction when backend owns native compaction |
+| 📝&nbsp;[#111889](https://github.com/openclaw/openclaw/issues/111889) | 0 | Model/provider behavior | @Vicenteut | Plugin runtime: support declarative tools and single-attempt completions |
+| 📝&nbsp;[#111886](https://github.com/openclaw/openclaw/issues/111886) | 0 | Model routing/config | @Olivaryne | Compaction frees zero tokens when transcript estimates undershoot the context-usage trigger (firstKeptEntryId stuck at first entry) |
+| 🔀&nbsp;[#111885](https://github.com/openclaw/openclaw/pull/111885) | 0 | Model routing/config | @xbrxr03 | fix(config): add compaction.enabled to schema so users can disable auto-compaction |
+| 📝&nbsp;[#111884](https://github.com/openclaw/openclaw/issues/111884) | 0 | Model routing/config | @MontanaIrish | [Bug]: Regression of #67988 — model picker shows alias ("Opus"/"Sonnet") instead of versioned display name, now on Opus 4.8 / Sonnet 5 |
+| 🔀&nbsp;[#111882](https://github.com/openclaw/openclaw/pull/111882) | 0 | Open-weight/provider behavior | @xbrxr03 | fix(minimax): recognize coding-plan response shape with remaining-percent fields |
+| 📝&nbsp;[#111879](https://github.com/openclaw/openclaw/issues/111879) | 0 | Model/provider behavior | @shayshimon | [Bug]: Parallel Codex hook relays can exhaust gateway resources and block the control plane |
+| 🔀&nbsp;[#111878](https://github.com/openclaw/openclaw/pull/111878) | 0 | Open-weight/provider behavior | @xbrxr03 | fix(kimi-coding): remove k3[1m] from catalog, normalize to k3, raise context window |
+| 🔀&nbsp;[#111872](https://github.com/openclaw/openclaw/pull/111872) | 0 | Model/provider behavior | @Pick-cat | fix(amazon-bedrock): reject malformed inbound image base64 |
+| 📝&nbsp;[#111870](https://github.com/openclaw/openclaw/issues/111870) | 0 | Model/provider behavior | @Flagrare | [Bug]: @openclaw/codex fails to register in CLI context — TypeError: undefined 'openSyncKeyedStore' |
+| 🔀&nbsp;[#111864](https://github.com/openclaw/openclaw/pull/111864) | 0 | Model/provider behavior | @ooiuuii | fix(ai): trim replay tool call ids |
+| 📝&nbsp;[#111863](https://github.com/openclaw/openclaw/issues/111863) | 0 | Model/provider behavior | @ooiuuii | Provider replay mispairs tool results when call IDs contain surrounding whitespace |
+| 📝&nbsp;[#111857](https://github.com/openclaw/openclaw/issues/111857) | 0 | Model routing/config | @itanyplus | [Bug]: CLI budget reopens the full compacted JSONL branch, inflating prompt estimates and repeatedly compacting low-context parent sessions |
+| 📝&nbsp;[#111856](https://github.com/openclaw/openclaw/issues/111856) | 0 | Model routing/config | @nierob-cmd | Compaction summarization bypasses per-turn image-history pruning, can overflow context |
+| 🔀&nbsp;[#111852](https://github.com/openclaw/openclaw/pull/111852) | 0 | OpenAI-compatible/proxy | @chenyangjun-xy | fix: reject malformed UTF-8 in proxy gateway error response bodies |
+| 📝&nbsp;[#111850](https://github.com/openclaw/openclaw/issues/111850) | 0 | Local memory/embedding | @chrislro | stt-tts Talk: aborted active-memory pre-run surfaces as user-facing "voice config failed" |
+| 📝&nbsp;[#111848](https://github.com/openclaw/openclaw/issues/111848) | 0 | Model routing/config | @Enominera | [Bug]: acp-agent.js env construction missing settingsManager.getSettings().env — auto-compaction relies on gateway coincidence |
+| 📝&nbsp;[#111846](https://github.com/openclaw/openclaw/issues/111846) | 0 | Open-weight/provider behavior | @Enominera | Thinking block loop silently exhausts output tokens → session permanently unusable (976K tokens accumulated) |
+| 🔀&nbsp;[#111845](https://github.com/openclaw/openclaw/pull/111845) | 0 | Model/provider behavior | @dwc1997 | fix(codex): bound app-server websocket upgrade with handshake timeout |
+| 🔀&nbsp;[#111841](https://github.com/openclaw/openclaw/pull/111841) | 0 | Model routing/config | @xialonglee | fix(agents): allow configless gateway rebind to activate standalone owner |
+| 📝&nbsp;[#111839](https://github.com/openclaw/openclaw/issues/111839) | 0 | Model/provider behavior | @LeeroyDing | [Bug]: Channel follow-ups never steer active Codex app-server runs — steer always rejected (transcript_commit_wait_unsupported) and queued as follow-ups, unlike /steer and message-tool paths |
+| 🔀&nbsp;[#111835](https://github.com/openclaw/openclaw/pull/111835) | 0 | Local model runtime | @masatohoshino | fix(ollama): bound DNS preflight with guard-owned request timeouts |
+| 📝&nbsp;[#111827](https://github.com/openclaw/openclaw/issues/111827) | 0 | Model routing/config | @maharrer79-ops | Codex (openai-codex) provider: newer models report "Unknown model" + OAuth refresh_token_reused token race |
+| 🔀&nbsp;[#111826](https://github.com/openclaw/openclaw/pull/111826) | 0 | Model routing/config | @Zeus-Deus | fix: /think off does not disable thinking on claude-cli |
+| 🔀&nbsp;[#111825](https://github.com/openclaw/openclaw/pull/111825) | 0 | OpenAI-compatible/proxy | @wuqxuan | fix(agents): tools-disabled finalizer after blank post-tool stop |
+| 🔀&nbsp;[#111818](https://github.com/openclaw/openclaw/pull/111818) | 0 | OpenAI-compatible/proxy | @ooiuuii | fix(openai): fail fast on invalid TLS certificates |
+| 📝&nbsp;[#111817](https://github.com/openclaw/openclaw/issues/111817) | 0 | OpenAI-compatible/proxy | @ooiuuii | [Bug]: ChatGPT Responses retries deterministic TLS certificate failures |
+| 📝&nbsp;[#111815](https://github.com/openclaw/openclaw/issues/111815) | 0 | Model/provider behavior | @LarrysChef | image tool: 60s timeout for Anthropic vision when direct API returns in ~2s |
+| 🔀&nbsp;[#111813](https://github.com/openclaw/openclaw/pull/111813) | 0 | OpenAI-compatible/proxy | @vyncint | fix: Azure OpenAI memory indexing fails for custom providers |
+| 🔀&nbsp;[#111811](https://github.com/openclaw/openclaw/pull/111811) | 0 | Local memory/embedding | @Atlas-crete | fix(memory): prevent active session ingestion starvation |
+| 🔀&nbsp;[#111810](https://github.com/openclaw/openclaw/pull/111810) | 0 | Open-weight/provider behavior | @Monkey-wusky | fix(zai,amazon-bedrock-mantle): reject invalid UTF-8 in extension API response JSON |
+| 📝&nbsp;[#111807](https://github.com/openclaw/openclaw/issues/111807) | 0 | Model routing/config | @Zeus-Deus | /think off doesn't disable thinking on claude-cli — inherits Claude Code's default effort (contradicts docs) |
+| 📝&nbsp;[#111804](https://github.com/openclaw/openclaw/issues/111804) | 0 | Local memory/embedding | @dom521 | [Bug]: memory-wiki bridge-mode wiki_search/wiki_get/wiki_apply intermittent "path mismatch" causing gateway OOM |
+| 🔀&nbsp;[#111802](https://github.com/openclaw/openclaw/pull/111802) | 0 | Local model runtime | @dwc1997 | fix(ollama): release failed setup response bodies before returning |
+| 📝&nbsp;[#111799](https://github.com/openclaw/openclaw/issues/111799) | 0 | Local memory/embedding | @chrislro | active-memory: ~45% timeout rate and zero cached results during agent turns (2026.7.1-2) |
+| 🔀&nbsp;[#111796](https://github.com/openclaw/openclaw/pull/111796) | 0 | Model routing/config | @steipete | feat(gateway,ui): agent-scoped model provider credentials |
+| 🔀&nbsp;[#111775](https://github.com/openclaw/openclaw/pull/111775) | 0 | Model/provider behavior | @chenyangjun-xy | fix: reject malformed UTF-8 in provider HTTP text responses |
+| 🔀&nbsp;[#111774](https://github.com/openclaw/openclaw/pull/111774) | 0 | Model routing/config | @zhangguiping-xydt | fix(providers): usage returns empty data when a provider response is malformed |
+| 🔀&nbsp;[#111766](https://github.com/openclaw/openclaw/pull/111766) | 0 | Model routing/config | @chenyangjun-xy | fix(plugin-sdk): reject malformed UTF-8 in live provider model catalog responses |
+| 📝&nbsp;[#111764](https://github.com/openclaw/openclaw/issues/111764) | 0 | OpenAI-compatible/proxy | @forrystudio | Empty final completion (whitespace-only thinking, stop) surfaces as generic failure despite all tool work succeeding — add one-shot finalizer before non_deliverable_terminal_turn |
+| 🔀&nbsp;[#111709](https://github.com/openclaw/openclaw/pull/111709) | 0 | Model routing/config | @kesava500 | feat: show thinking level in model summary |
+| 🔀&nbsp;[#111696](https://github.com/openclaw/openclaw/pull/111696) | 0 | Open-weight/provider behavior | @lee-xydt | fix(provider-usage): recognize current MiniMax coding-plan API response shape |
+| 📝&nbsp;[#111654](https://github.com/openclaw/openclaw/issues/111654) | 0 | Model routing/config | @NOVA-Openclaw | runWithModelFallback shares one abortSignal/deadline across all fallback attempts, mislabeling instant failures as provider timeouts |
+| 🔀&nbsp;[#111612](https://github.com/openclaw/openclaw/pull/111612) | 0 | Model routing/config | @ljy-1351 | fix(agents): use \ |
+| 🔀&nbsp;[#111611](https://github.com/openclaw/openclaw/pull/111611) | 0 | Model routing/config | @ljy-1351 | fix(infra): use \ |
+| 🔀&nbsp;[#111594](https://github.com/openclaw/openclaw/pull/111594) | 0 | Model routing/config | @yetval | fix(google): surface public client PKCE mode when OAuth client secret is missing |
+| 🔀&nbsp;[#111587](https://github.com/openclaw/openclaw/pull/111587) | 0 | Open-weight/provider behavior | @yangxiansheng | fix(kimi): use k3 as single API model id, drop k3[1m] wire-id (#111561) |
+| 🔀&nbsp;[#111492](https://github.com/openclaw/openclaw/pull/111492) | 0 | Model routing/config | @wenrizc | fix: honor provider token defaults for custom models |
 | 🔀&nbsp;[#111434](https://github.com/openclaw/openclaw/pull/111434) | 0 | Model routing/config | @mushuiyu886 | fix(vercel-ai-gateway): long-context usage costs are underreported |
 | 🔀&nbsp;[#111428](https://github.com/openclaw/openclaw/pull/111428) | 0 | Model routing/config | @mushuiyu886 | fix(deepinfra): model list fails when HTTP proxy is required |
 | 🔀&nbsp;[#111392](https://github.com/openclaw/openclaw/pull/111392) | 0 | Local memory/embedding | @wuqxuan | fix(memory-core): skip unchanged Dreaming workspace state writes |
@@ -3579,4 +3636,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 896 (467 issues, 429 PRs).
+- Kept open threads: 953 (491 issues, 462 PRs).

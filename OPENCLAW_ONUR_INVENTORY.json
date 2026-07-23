@@ -18106,9 +18106,9 @@
   ],
   "counts": {
     "closed_threads": 2586,
-    "open_issues": 467,
-    "open_prs": 429,
-    "open_threads": 896
+    "open_issues": 491,
+    "open_prs": 462,
+    "open_threads": 953
   },
   "open_threads": [
     {
@@ -18720,6 +18720,519 @@
       "title": "[Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/41135"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@markcallow-jpg",
+      "number": 111966,
+      "title": "Bug: `extractRawAssistantText()` flattens multi-segment assistant output with no delimiter",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111966"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@dillona",
+      "number": 111964,
+      "title": "fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111964"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Zeus-Deus",
+      "number": 111943,
+      "title": "[Feature]: Configurable model + reasoning effort for background \"learning\" subsystems",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111943"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@japr26",
+      "number": 111924,
+      "title": "[Feature]: Buscador/filtro en dropdown de modelos del Control UI",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111924"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@makominsk",
+      "number": 111923,
+      "title": "Dreaming REM phase extracts junk topics (stop words, numbers, ranges) with no filter/config exposed",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111923"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Vicenteut",
+      "number": 111901,
+      "title": "feat(plugin-runtime): support declarative tools and single-attempt completions",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111901"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xialonglee",
+      "number": 111899,
+      "title": "fix(cli): block embedded fallback for gateway-accepted agent turns on transport error",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111899"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@xbrxr03",
+      "number": 111895,
+      "title": "fix(failover): classify provider finish_reason: error as server_error, not timeout",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111895"
+    },
+    {
+      "activity": 0,
+      "area": "Local/media model provider",
+      "creator": "@xbrxr03",
+      "number": 111894,
+      "title": "fix(openai): add handshakeTimeout to realtime voice WebSocket",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111894"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xbrxr03",
+      "number": 111892,
+      "title": "fix(compaction): skip preflight compaction when backend owns native compaction",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111892"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Vicenteut",
+      "number": 111889,
+      "title": "Plugin runtime: support declarative tools and single-attempt completions",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111889"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Olivaryne",
+      "number": 111886,
+      "title": "Compaction frees zero tokens when transcript estimates undershoot the context-usage trigger (firstKeptEntryId stuck at first entry)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111886"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xbrxr03",
+      "number": 111885,
+      "title": "fix(config): add compaction.enabled to schema so users can disable auto-compaction",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111885"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@MontanaIrish",
+      "number": 111884,
+      "title": "[Bug]: Regression of #67988 — model picker shows alias (\"Opus\"/\"Sonnet\") instead of versioned display name, now on Opus 4.8 / Sonnet 5",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111884"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@xbrxr03",
+      "number": 111882,
+      "title": "fix(minimax): recognize coding-plan response shape with remaining-percent fields",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111882"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@shayshimon",
+      "number": 111879,
+      "title": "[Bug]: Parallel Codex hook relays can exhaust gateway resources and block the control plane",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111879"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@xbrxr03",
+      "number": 111878,
+      "title": "fix(kimi-coding): remove k3[1m] from catalog, normalize to k3, raise context window",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111878"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Pick-cat",
+      "number": 111872,
+      "title": "fix(amazon-bedrock): reject malformed inbound image base64",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111872"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@Flagrare",
+      "number": 111870,
+      "title": "[Bug]: @openclaw/codex fails to register in CLI context — TypeError: undefined 'openSyncKeyedStore'",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111870"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@ooiuuii",
+      "number": 111864,
+      "title": "fix(ai): trim replay tool call ids",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111864"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@ooiuuii",
+      "number": 111863,
+      "title": "Provider replay mispairs tool results when call IDs contain surrounding whitespace",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111863"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@itanyplus",
+      "number": 111857,
+      "title": "[Bug]: CLI budget reopens the full compacted JSONL branch, inflating prompt estimates and repeatedly compacting low-context parent sessions",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111857"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@nierob-cmd",
+      "number": 111856,
+      "title": "Compaction summarization bypasses per-turn image-history pruning, can overflow context",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111856"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@chenyangjun-xy",
+      "number": 111852,
+      "title": "fix: reject malformed UTF-8 in proxy gateway error response bodies",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111852"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chrislro",
+      "number": 111850,
+      "title": "stt-tts Talk: aborted active-memory pre-run surfaces as user-facing \"voice config failed\"",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111850"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Enominera",
+      "number": 111848,
+      "title": "[Bug]: acp-agent.js env construction missing settingsManager.getSettings().env — auto-compaction relies on gateway coincidence",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111848"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Enominera",
+      "number": 111846,
+      "title": "Thinking block loop silently exhausts output tokens → session permanently unusable (976K tokens accumulated)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111846"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@dwc1997",
+      "number": 111845,
+      "title": "fix(codex): bound app-server websocket upgrade with handshake timeout",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111845"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@xialonglee",
+      "number": 111841,
+      "title": "fix(agents): allow configless gateway rebind to activate standalone owner",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111841"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@LeeroyDing",
+      "number": 111839,
+      "title": "[Bug]: Channel follow-ups never steer active Codex app-server runs — steer always rejected (transcript_commit_wait_unsupported) and queued as follow-ups, unlike /steer and message-tool paths",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111839"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@masatohoshino",
+      "number": 111835,
+      "title": "fix(ollama): bound DNS preflight with guard-owned request timeouts",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111835"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@maharrer79-ops",
+      "number": 111827,
+      "title": "Codex (openai-codex) provider: newer models report \"Unknown model\" + OAuth refresh_token_reused token race",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111827"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Zeus-Deus",
+      "number": 111826,
+      "title": "fix: /think off does not disable thinking on claude-cli",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111826"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@wuqxuan",
+      "number": 111825,
+      "title": "fix(agents): tools-disabled finalizer after blank post-tool stop",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111825"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ooiuuii",
+      "number": 111818,
+      "title": "fix(openai): fail fast on invalid TLS certificates",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111818"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@ooiuuii",
+      "number": 111817,
+      "title": "[Bug]: ChatGPT Responses retries deterministic TLS certificate failures",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111817"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@LarrysChef",
+      "number": 111815,
+      "title": "image tool: 60s timeout for Anthropic vision when direct API returns in ~2s",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111815"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@vyncint",
+      "number": 111813,
+      "title": "fix: Azure OpenAI memory indexing fails for custom providers",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111813"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@Atlas-crete",
+      "number": 111811,
+      "title": "fix(memory): prevent active session ingestion starvation",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111811"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@Monkey-wusky",
+      "number": 111810,
+      "title": "fix(zai,amazon-bedrock-mantle): reject invalid UTF-8 in extension API response JSON",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111810"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@Zeus-Deus",
+      "number": 111807,
+      "title": "/think off doesn't disable thinking on claude-cli — inherits Claude Code's default effort (contradicts docs)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111807"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@dom521",
+      "number": 111804,
+      "title": "[Bug]: memory-wiki bridge-mode wiki_search/wiki_get/wiki_apply intermittent \"path mismatch\" causing gateway OOM",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111804"
+    },
+    {
+      "activity": 0,
+      "area": "Local model runtime",
+      "creator": "@dwc1997",
+      "number": 111802,
+      "title": "fix(ollama): release failed setup response bodies before returning",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111802"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@chrislro",
+      "number": 111799,
+      "title": "active-memory: ~45% timeout rate and zero cached results during agent turns (2026.7.1-2)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111799"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@steipete",
+      "number": 111796,
+      "title": "feat(gateway,ui): agent-scoped model provider credentials",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111796"
+    },
+    {
+      "activity": 0,
+      "area": "Model/provider behavior",
+      "creator": "@chenyangjun-xy",
+      "number": 111775,
+      "title": "fix: reject malformed UTF-8 in provider HTTP text responses",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111775"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@zhangguiping-xydt",
+      "number": 111774,
+      "title": "fix(providers): usage returns empty data when a provider response is malformed",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111774"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@chenyangjun-xy",
+      "number": 111766,
+      "title": "fix(plugin-sdk): reject malformed UTF-8 in live provider model catalog responses",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111766"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
+      "creator": "@forrystudio",
+      "number": 111764,
+      "title": "Empty final completion (whitespace-only thinking, stop) surfaces as generic failure despite all tool work succeeding — add one-shot finalizer before non_deliverable_terminal_turn",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111764"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@kesava500",
+      "number": 111709,
+      "title": "feat: show thinking level in model summary",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111709"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@lee-xydt",
+      "number": 111696,
+      "title": "fix(provider-usage): recognize current MiniMax coding-plan API response shape",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111696"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@NOVA-Openclaw",
+      "number": 111654,
+      "title": "runWithModelFallback shares one abortSignal/deadline across all fallback attempts, mislabeling instant failures as provider timeouts",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/111654"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ljy-1351",
+      "number": 111612,
+      "title": "fix(agents): use \\",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111612"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@ljy-1351",
+      "number": 111611,
+      "title": "fix(infra): use \\",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111611"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@yetval",
+      "number": 111594,
+      "title": "fix(google): surface public client PKCE mode when OAuth client secret is missing",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111594"
+    },
+    {
+      "activity": 0,
+      "area": "Open-weight/provider behavior",
+      "creator": "@yangxiansheng",
+      "number": 111587,
+      "title": "fix(kimi): use k3 as single API model id, drop k3[1m] wire-id (#111561)",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111587"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@wenrizc",
+      "number": 111492,
+      "title": "fix: honor provider token defaults for custom models",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/111492"
     },
     {
       "activity": 0,
@@ -26216,9 +26729,9 @@
     }
   ],
   "review_watermark": {
-    "issue": 111432,
-    "pr": 111434
+    "issue": 111969,
+    "pr": 111964
   },
   "schema_version": 1,
-  "updated": "2026-07-20"
+  "updated": "2026-07-23"
 }
