@@ -12,7 +12,6 @@ Review watermark:
 
 | Thread | Created | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- | --- |
-| 📝&nbsp;[#111966](https://github.com/openclaw/openclaw/issues/111966) | 2026-07-20 | 0 | Model/provider behavior | @markcallow-jpg | Bug: `extractRawAssistantText()` flattens multi-segment assistant output with no delimiter |
 | 🔀&nbsp;[#111964](https://github.com/openclaw/openclaw/pull/111964) | 2026-07-20 | 0 | Model routing/config | @dillona | fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash |
 | 📝&nbsp;[#111943](https://github.com/openclaw/openclaw/issues/111943) | 2026-07-20 | 0 | Model routing/config | @Zeus-Deus | [Feature]: Configurable model + reasoning effort for background "learning" subsystems |
 | 📝&nbsp;[#111924](https://github.com/openclaw/openclaw/issues/111924) | 2026-07-20 | 0 | Model routing/config | @japr26 | [Feature]: Buscador/filtro en dropdown de modelos del Control UI |
@@ -27,14 +26,11 @@ Review watermark:
 | 🔀&nbsp;[#111885](https://github.com/openclaw/openclaw/pull/111885) | 2026-07-20 | 0 | Model routing/config | @xbrxr03 | fix(config): add compaction.enabled to schema so users can disable auto-compaction |
 | 📝&nbsp;[#111884](https://github.com/openclaw/openclaw/issues/111884) | 2026-07-20 | 0 | Model routing/config | @MontanaIrish | [Bug]: Regression of #67988 — model picker shows alias ("Opus"/"Sonnet") instead of versioned display name, now on Opus 4.8 / Sonnet 5 |
 | 🔀&nbsp;[#111882](https://github.com/openclaw/openclaw/pull/111882) | 2026-07-20 | 0 | Open-weight/provider behavior | @xbrxr03 | fix(minimax): recognize coding-plan response shape with remaining-percent fields |
-| 📝&nbsp;[#111879](https://github.com/openclaw/openclaw/issues/111879) | 2026-07-20 | 0 | Model/provider behavior | @shayshimon | [Bug]: Parallel Codex hook relays can exhaust gateway resources and block the control plane |
 | 🔀&nbsp;[#111878](https://github.com/openclaw/openclaw/pull/111878) | 2026-07-20 | 0 | Open-weight/provider behavior | @xbrxr03 | fix(kimi-coding): remove k3[1m] from catalog, normalize to k3, raise context window |
 | 🔀&nbsp;[#111872](https://github.com/openclaw/openclaw/pull/111872) | 2026-07-20 | 0 | Model/provider behavior | @Pick-cat | fix(amazon-bedrock): reject malformed inbound image base64 |
 | 📝&nbsp;[#111870](https://github.com/openclaw/openclaw/issues/111870) | 2026-07-20 | 0 | Model/provider behavior | @Flagrare | [Bug]: @openclaw/codex fails to register in CLI context — TypeError: undefined 'openSyncKeyedStore' |
 | 🔀&nbsp;[#111864](https://github.com/openclaw/openclaw/pull/111864) | 2026-07-20 | 0 | Model/provider behavior | @ooiuuii | fix(ai): trim replay tool call ids |
 | 📝&nbsp;[#111863](https://github.com/openclaw/openclaw/issues/111863) | 2026-07-20 | 0 | Model/provider behavior | @ooiuuii | Provider replay mispairs tool results when call IDs contain surrounding whitespace |
-| 📝&nbsp;[#111857](https://github.com/openclaw/openclaw/issues/111857) | 2026-07-20 | 0 | Model routing/config | @itanyplus | [Bug]: CLI budget reopens the full compacted JSONL branch, inflating prompt estimates and repeatedly compacting low-context parent sessions |
-| 📝&nbsp;[#111856](https://github.com/openclaw/openclaw/issues/111856) | 2026-07-20 | 0 | Model routing/config | @nierob-cmd | Compaction summarization bypasses per-turn image-history pruning, can overflow context |
 | 🔀&nbsp;[#111852](https://github.com/openclaw/openclaw/pull/111852) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @chenyangjun-xy | fix: reject malformed UTF-8 in proxy gateway error response bodies |
 | 📝&nbsp;[#111850](https://github.com/openclaw/openclaw/issues/111850) | 2026-07-20 | 0 | Local memory/embedding | @chrislro | stt-tts Talk: aborted active-memory pre-run surfaces as user-facing "voice config failed" |
 | 📝&nbsp;[#111848](https://github.com/openclaw/openclaw/issues/111848) | 2026-07-20 | 0 | Model routing/config | @Enominera | [Bug]: acp-agent.js env construction missing settingsManager.getSettings().env — auto-compaction relies on gateway coincidence |
@@ -62,8 +58,12 @@ Review watermark:
 | 🔀&nbsp;[#111766](https://github.com/openclaw/openclaw/pull/111766) | 2026-07-20 | 0 | Model routing/config | @chenyangjun-xy | fix(plugin-sdk): reject malformed UTF-8 in live provider model catalog responses |
 | 📝&nbsp;[#111764](https://github.com/openclaw/openclaw/issues/111764) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @forrystudio | Empty final completion (whitespace-only thinking, stop) surfaces as generic failure despite all tool work succeeding — add one-shot finalizer before non_deliverable_terminal_turn |
 | 🔀&nbsp;[#111709](https://github.com/openclaw/openclaw/pull/111709) | 2026-07-20 | 0 | Model routing/config | @kesava500 | feat: show thinking level in model summary |
+| 🔀&nbsp;[#111696](https://github.com/openclaw/openclaw/pull/111696) | 2026-07-20 | 0 | Open-weight/provider behavior | @lee-xydt | fix(provider-usage): recognize current MiniMax coding-plan API response shape |
+| 📝&nbsp;[#111654](https://github.com/openclaw/openclaw/issues/111654) | 2026-07-20 | 0 | Model routing/config | @NOVA-Openclaw | runWithModelFallback shares one abortSignal/deadline across all fallback attempts, mislabeling instant failures as provider timeouts |
+| 🔀&nbsp;[#111612](https://github.com/openclaw/openclaw/pull/111612) | 2026-07-20 | 0 | Model routing/config | @ljy-1351 | fix(agents): use \ |
+| 🔀&nbsp;[#111611](https://github.com/openclaw/openclaw/pull/111611) | 2026-07-20 | 0 | Model routing/config | @ljy-1351 | fix(infra): use \ |
 
-## OPEN THREADS (945)
+## OPEN THREADS (941)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ Review watermark:
 | 📝&nbsp;[#77675](https://github.com/openclaw/openclaw/issues/77675) | 4 | Local model runtime | @nickytonline | [Bug]: request.headers SecretRefs on model providers fail in embedded agent context with "unresolved SecretRef" error |
 
 <details>
-<summary>Remaining 895 open threads, sorted by activity</summary>
+<summary>Remaining 891 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -138,7 +138,6 @@ Review watermark:
 | 📝&nbsp;[#59168](https://github.com/openclaw/openclaw/issues/59168) | 2 | Local model runtime | @Kaspre | feat(models): use provider/name as internal key to decouple from API model ID |
 | 📝&nbsp;[#77090](https://github.com/openclaw/openclaw/issues/77090) | 1 | Local model runtime | @djpollock | Feature: Auto-revert to primary model after image analysis |
 | 📝&nbsp;[#41135](https://github.com/openclaw/openclaw/issues/41135) | 1 | Local model runtime | @tardis-create | [Feature]: Add provider-profile routing policies for multi-account OAuth/API pools (starting with google-gemini-cli) |
-| 📝&nbsp;[#111966](https://github.com/openclaw/openclaw/issues/111966) | 0 | Model/provider behavior | @markcallow-jpg | Bug: `extractRawAssistantText()` flattens multi-segment assistant output with no delimiter |
 | 🔀&nbsp;[#111964](https://github.com/openclaw/openclaw/pull/111964) | 0 | Model routing/config | @dillona | fix(google): default web_search model to rolling alias, not retired gemini-2.5-flash |
 | 📝&nbsp;[#111943](https://github.com/openclaw/openclaw/issues/111943) | 0 | Model routing/config | @Zeus-Deus | [Feature]: Configurable model + reasoning effort for background "learning" subsystems |
 | 📝&nbsp;[#111924](https://github.com/openclaw/openclaw/issues/111924) | 0 | Model routing/config | @japr26 | [Feature]: Buscador/filtro en dropdown de modelos del Control UI |
@@ -153,14 +152,11 @@ Review watermark:
 | 🔀&nbsp;[#111885](https://github.com/openclaw/openclaw/pull/111885) | 0 | Model routing/config | @xbrxr03 | fix(config): add compaction.enabled to schema so users can disable auto-compaction |
 | 📝&nbsp;[#111884](https://github.com/openclaw/openclaw/issues/111884) | 0 | Model routing/config | @MontanaIrish | [Bug]: Regression of #67988 — model picker shows alias ("Opus"/"Sonnet") instead of versioned display name, now on Opus 4.8 / Sonnet 5 |
 | 🔀&nbsp;[#111882](https://github.com/openclaw/openclaw/pull/111882) | 0 | Open-weight/provider behavior | @xbrxr03 | fix(minimax): recognize coding-plan response shape with remaining-percent fields |
-| 📝&nbsp;[#111879](https://github.com/openclaw/openclaw/issues/111879) | 0 | Model/provider behavior | @shayshimon | [Bug]: Parallel Codex hook relays can exhaust gateway resources and block the control plane |
 | 🔀&nbsp;[#111878](https://github.com/openclaw/openclaw/pull/111878) | 0 | Open-weight/provider behavior | @xbrxr03 | fix(kimi-coding): remove k3[1m] from catalog, normalize to k3, raise context window |
 | 🔀&nbsp;[#111872](https://github.com/openclaw/openclaw/pull/111872) | 0 | Model/provider behavior | @Pick-cat | fix(amazon-bedrock): reject malformed inbound image base64 |
 | 📝&nbsp;[#111870](https://github.com/openclaw/openclaw/issues/111870) | 0 | Model/provider behavior | @Flagrare | [Bug]: @openclaw/codex fails to register in CLI context — TypeError: undefined 'openSyncKeyedStore' |
 | 🔀&nbsp;[#111864](https://github.com/openclaw/openclaw/pull/111864) | 0 | Model/provider behavior | @ooiuuii | fix(ai): trim replay tool call ids |
 | 📝&nbsp;[#111863](https://github.com/openclaw/openclaw/issues/111863) | 0 | Model/provider behavior | @ooiuuii | Provider replay mispairs tool results when call IDs contain surrounding whitespace |
-| 📝&nbsp;[#111857](https://github.com/openclaw/openclaw/issues/111857) | 0 | Model routing/config | @itanyplus | [Bug]: CLI budget reopens the full compacted JSONL branch, inflating prompt estimates and repeatedly compacting low-context parent sessions |
-| 📝&nbsp;[#111856](https://github.com/openclaw/openclaw/issues/111856) | 0 | Model routing/config | @nierob-cmd | Compaction summarization bypasses per-turn image-history pruning, can overflow context |
 | 🔀&nbsp;[#111852](https://github.com/openclaw/openclaw/pull/111852) | 0 | OpenAI-compatible/proxy | @chenyangjun-xy | fix: reject malformed UTF-8 in proxy gateway error response bodies |
 | 📝&nbsp;[#111850](https://github.com/openclaw/openclaw/issues/111850) | 0 | Local memory/embedding | @chrislro | stt-tts Talk: aborted active-memory pre-run surfaces as user-facing "voice config failed" |
 | 📝&nbsp;[#111848](https://github.com/openclaw/openclaw/issues/111848) | 0 | Model routing/config | @Enominera | [Bug]: acp-agent.js env construction missing settingsManager.getSettings().env — auto-compaction relies on gateway coincidence |
@@ -3636,4 +3632,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 945 (481 issues, 464 PRs).
+- Kept open threads: 941 (477 issues, 464 PRs).

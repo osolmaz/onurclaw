@@ -18162,9 +18162,9 @@
   ],
   "counts": {
     "closed_threads": 2594,
-    "open_issues": 481,
+    "open_issues": 477,
     "open_prs": 464,
-    "open_threads": 945
+    "open_threads": 941
   },
   "open_threads": [
     {
@@ -18770,15 +18770,6 @@
     },
     {
       "activity": 0,
-      "area": "Model/provider behavior",
-      "creator": "@markcallow-jpg",
-      "number": 111966,
-      "title": "Bug: `extractRawAssistantText()` flattens multi-segment assistant output with no delimiter",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/111966"
-    },
-    {
-      "activity": 0,
       "area": "Model routing/config",
       "creator": "@dillona",
       "number": 111964,
@@ -18905,15 +18896,6 @@
     },
     {
       "activity": 0,
-      "area": "Model/provider behavior",
-      "creator": "@shayshimon",
-      "number": 111879,
-      "title": "[Bug]: Parallel Codex hook relays can exhaust gateway resources and block the control plane",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/111879"
-    },
-    {
-      "activity": 0,
       "area": "Open-weight/provider behavior",
       "creator": "@xbrxr03",
       "number": 111878,
@@ -18956,24 +18938,6 @@
       "title": "Provider replay mispairs tool results when call IDs contain surrounding whitespace",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/111863"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@itanyplus",
-      "number": 111857,
-      "title": "[Bug]: CLI budget reopens the full compacted JSONL branch, inflating prompt estimates and repeatedly compacting low-context parent sessions",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/111857"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@nierob-cmd",
-      "number": 111856,
-      "title": "Compaction summarization bypasses per-turn image-history pruning, can overflow context",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/111856"
     },
     {
       "activity": 0,
