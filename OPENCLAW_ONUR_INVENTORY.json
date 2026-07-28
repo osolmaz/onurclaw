@@ -751,6 +751,13 @@
       "url": "https://github.com/openclaw/openclaw/pull/108569"
     },
     {
+      "number": 108568,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "[Feature]: Add Image to Video AI video generation provider; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/108568"
+    },
+    {
       "number": 108559,
       "status": "Closed in local gitcrawl",
       "title": "Bug: Dreaming promotes daily-only operational residue despite recall/query gates; no longer open.",
@@ -1393,6 +1400,13 @@
       "title": "refactor(amazon-bedrock): use exact AWS SDK contracts; no longer open.",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/106747"
+    },
+    {
+      "number": 106679,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "[Bug] Infinite fallback loop on generic provider errors; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/106679"
     },
     {
       "number": 106539,
@@ -2711,6 +2725,13 @@
       "url": "https://github.com/openclaw/openclaw/pull/102940"
     },
     {
+      "number": 102907,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "Azure OpenAI Responses throws 400 when prompt_cache_key is sent to endpoints that do not support it; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/102907"
+    },
+    {
       "number": 102890,
       "status": "Closed in local gitcrawl",
       "title": "fix(llm-slug): use UTF-16-safe truncation for session content; no longer open.",
@@ -2807,6 +2828,13 @@
       "title": "feat: show provider plan usage (5h/weekly/credits) in the chat context popover, keep API cost for API billing; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/102784"
+    },
+    {
+      "number": 102779,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "Bug: custom openai-completions GPT-5.5 accepts request-level thinking but rejects session-level /think; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/102779"
     },
     {
       "number": 102774,
@@ -3033,6 +3061,13 @@
       "url": "https://github.com/openclaw/openclaw/pull/102305"
     },
     {
+      "number": 102273,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "Add config flag to always show provider in model picker (not only on name collisions); no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/102273"
+    },
+    {
       "number": 102244,
       "status": "Closed in local gitcrawl",
       "title": "Transcript redaction corrupts Anthropic/Bedrock reasoning signatures (AIza/LTAI false positive), causing persistent replay_invalid; no longer open.",
@@ -3192,6 +3227,13 @@
       "title": "fix(anthropic): add claude-fable-5 to CLI allowlist, aliases, labels, and context window; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/101453"
+    },
+    {
+      "number": 101446,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "Dropdown model switch to claude-cli causes \"reply session initialization conflicted\" on follow-up turns; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/101446"
     },
     {
       "number": 101433,
@@ -6680,6 +6722,13 @@
       "url": "https://github.com/openclaw/openclaw/pull/95896"
     },
     {
+      "number": 95891,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "[Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95891"
+    },
+    {
       "number": 95877,
       "status": "Closed in local gitcrawl",
       "title": "Add hosted catalog snapshot fallback; no longer open.",
@@ -6727,6 +6776,13 @@
       "title": "fix(acpx): keep leaked non-openai model out of the Codex ACP thinking slot; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/95852"
+    },
+    {
+      "number": 95840,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/95840"
     },
     {
       "number": 95838,
@@ -8696,6 +8752,13 @@
       "url": "https://github.com/openclaw/openclaw/issues/94258"
     },
     {
+      "number": 94251,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "[Bug]: Ollama remote provider streaming not consumed — model_call:started never progresses in chat sessions; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94251"
+    },
+    {
       "number": 94244,
       "status": "Closed in local gitcrawl",
       "title": "fix: strip plain-text reasoning from GLM-5.x models; no longer open.",
@@ -8729,6 +8792,13 @@
       "title": "fix(anthropic): allow failover for thinking signature replay errors; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/94234"
+    },
+    {
+      "number": 94228,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "Native Anthropic path: replaying historical `thinking` blocks bricks long tool-use threads (`Invalid signature in thinking block` 400); no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/94228"
     },
     {
       "number": 94214,
@@ -8890,6 +8960,13 @@
       "title": "fix(xai): reject unsupported multi-agent model refs before runtime fallback; no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/93969"
+    },
+    {
+      "number": 93968,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "[Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/93968"
     },
     {
       "number": 93965,
@@ -10642,25 +10719,11 @@
       "url": "https://github.com/openclaw/openclaw/pull/92531"
     },
     {
-      "number": 92529,
-      "status": "0",
-      "title": "Model routing/config",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92529"
-    },
-    {
       "number": 92526,
       "status": "0",
       "title": "Model routing/config",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/92526"
-    },
-    {
-      "number": 92524,
-      "status": "0",
-      "title": "Local memory/embedding",
-      "type": "pull_request",
-      "url": "https://github.com/openclaw/openclaw/pull/92524"
     },
     {
       "number": 92515,
@@ -10857,13 +10920,6 @@
       "title": "fix(agents): resolve fresh model from registry for post-turn reads after /model switch (fixes #92415); no longer open.",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/92424"
-    },
-    {
-      "number": 92415,
-      "status": "Closed in local gitcrawl 2026-06-15",
-      "title": "Session-level AgentSession.this.model snapshot is never refreshed after /model switch (affects contextWindow, reasoning, thinkingLevelMap, branch summary); no longer open.",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/92415"
     },
     {
       "number": 92412,
@@ -17103,13 +17159,6 @@
       "url": "https://github.com/openclaw/openclaw/issues/83709"
     },
     {
-      "number": 83461,
-      "status": "Not resolvable as live issue",
-      "title": "Earlier notes referenced it, but live GitHub issue view did not resolve it as an open issue.",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/83461"
-    },
-    {
       "number": 83436,
       "status": "Closed in local gitcrawl",
       "title": "fix(agents): rethrow EmbeddedAttemptSessionTakeoverError before model fallback; no longer open.",
@@ -18041,6 +18090,13 @@
       "url": "https://github.com/openclaw/openclaw/issues/51593"
     },
     {
+      "number": 51441,
+      "status": "Removed from current Gitcrawl export 2026-07-28",
+      "title": "feat: expose resolved backend model in session_status and agent runtime; no longer present in current Gitcrawl export.",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/51441"
+    },
+    {
       "number": 50051,
       "status": "Closed in local gitcrawl",
       "title": "feat(macos): ExecuTorch Parakeet-TDT STT for Talk Mode + model-plugin runtime; no longer open.",
@@ -18105,10 +18161,10 @@
     }
   ],
   "counts": {
-    "closed_threads": 2586,
-    "open_issues": 491,
-    "open_prs": 462,
-    "open_threads": 953
+    "closed_threads": 2594,
+    "open_issues": 481,
+    "open_prs": 464,
+    "open_threads": 945
   },
   "open_threads": [
     {
@@ -18197,15 +18253,6 @@
       "title": "docs: note LanceDB dreaming v0.2.3 via memory-lancedb-dreaming plugin",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/87247"
-    },
-    {
-      "activity": 12,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@Kyzcreig",
-      "number": 51441,
-      "title": "feat: expose resolved backend model in session_status and agent runtime",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/51441"
     },
     {
       "activity": 12,
@@ -20798,15 +20845,6 @@
     {
       "activity": 0,
       "area": "Model routing/config",
-      "creator": "@waeckerlinfederowicz66-sketch",
-      "number": 108568,
-      "title": "[Feature]: Add Image to Video AI video generation provider",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/108568"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
       "creator": "@arkyu2077",
       "number": 108557,
       "title": "fix: avoid reporting model context window as session context usage",
@@ -21417,15 +21455,6 @@
       "title": "[Bug]: sessions_yield on a subagent's first turn (no children, no wake source) silently finalizes the run as ok with an empty result — tool descriptions invite the misuse",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/106704"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@aniruddhaadak80",
-      "number": 106679,
-      "title": "[Bug] Infinite fallback loop on generic provider errors",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/106679"
     },
     {
       "activity": 0,
@@ -22330,15 +22359,6 @@
     },
     {
       "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@aniruddhaadak80",
-      "number": 102907,
-      "title": "Azure OpenAI Responses throws 400 when prompt_cache_key is sent to endpoints that do not support it",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/102907"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@chengzhichao-xydt",
       "number": 102886,
@@ -22363,15 +22383,6 @@
       "title": "Usage/cost attribution is provider-keyed: mixed API+subscription and multi-account setups show wrong billing mode/quota",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/102807"
-    },
-    {
-      "activity": 0,
-      "area": "OpenAI-compatible/proxy",
-      "creator": "@chaboncarpentier-blip",
-      "number": 102779,
-      "title": "Bug: custom openai-completions GPT-5.5 accepts request-level thinking but rejects session-level /think",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/102779"
     },
     {
       "activity": 0,
@@ -22444,15 +22455,6 @@
       "title": "Windows: multiple gateway-down failure modes (kill-and-rebind restart loop, config-edit no-relaunch, browser launch crash, blocking pricing fetches)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/102286"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@bergaeduardo",
-      "number": 102273,
-      "title": "Add config flag to always show provider in model picker (not only on name collisions)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/102273"
     },
     {
       "activity": 0,
@@ -22670,15 +22672,6 @@
       "title": "[Bug]: openai-responses sends role=\"system\" instead of role=\"developer\" for reasoning models",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/101459"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@danniel0976",
-      "number": 101446,
-      "title": "Dropdown model switch to claude-cli causes \"reply session initialization conflicted\" on follow-up turns",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/101446"
     },
     {
       "activity": 0,
@@ -24156,30 +24149,12 @@
     },
     {
       "activity": 0,
-      "area": "Open-weight/provider behavior",
-      "creator": "@DemonGiggle",
-      "number": 95891,
-      "title": "[Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/95891"
-    },
-    {
-      "activity": 0,
       "area": "Model/provider behavior",
       "creator": "@solodmd",
       "number": 95859,
       "title": "fix(#95840): contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider",
       "type": "pull_request",
       "url": "https://github.com/openclaw/openclaw/pull/95859"
-    },
-    {
-      "activity": 0,
-      "area": "Model/provider behavior",
-      "creator": "@aleps001",
-      "number": 95840,
-      "title": "contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/95840"
     },
     {
       "activity": 0,
@@ -24770,24 +24745,6 @@
     },
     {
       "activity": 0,
-      "area": "Local model runtime",
-      "creator": "@tborer",
-      "number": 94251,
-      "title": "[Bug]: Ollama remote provider streaming not consumed — model_call:started never progresses in chat sessions",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/94251"
-    },
-    {
-      "activity": 0,
-      "area": "Model routing/config",
-      "creator": "@eugkhp",
-      "number": 94228,
-      "title": "Native Anthropic path: replaying historical `thinking` blocks bricks long tool-use threads (`Invalid signature in thinking block` 400)",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/94228"
-    },
-    {
-      "activity": 0,
       "area": "Local memory/embedding",
       "creator": "@dmorn",
       "number": 94166,
@@ -24803,15 +24760,6 @@
       "title": "[Bug]: Memory search completely broken — FTS-only hangs, embeddings hang, --force corrupts meta (Ollama/bge-m3, Linux, 2026.6.8)",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/94125"
-    },
-    {
-      "activity": 0,
-      "area": "Local memory/embedding",
-      "creator": "@edisonxl",
-      "number": 93968,
-      "title": "[Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker",
-      "type": "issue",
-      "url": "https://github.com/openclaw/openclaw/issues/93968"
     },
     {
       "activity": 0,
@@ -25185,6 +25133,24 @@
     },
     {
       "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@jml001",
+      "number": 92529,
+      "title": "fix(agents): prevent local exec policy errors from triggering model fallback",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92529"
+    },
+    {
+      "activity": 0,
+      "area": "Local memory/embedding",
+      "creator": "@yu-xin-c",
+      "number": 92524,
+      "title": "fix(memory-core): preserve keyword-only hybrid results",
+      "type": "pull_request",
+      "url": "https://github.com/openclaw/openclaw/pull/92524"
+    },
+    {
+      "activity": 0,
       "area": "Local/media model provider",
       "creator": "@100yenadmin",
       "number": 92500,
@@ -25218,6 +25184,15 @@
       "title": "Model fallback notice leaks to external user-facing channels",
       "type": "issue",
       "url": "https://github.com/openclaw/openclaw/issues/92473"
+    },
+    {
+      "activity": 0,
+      "area": "Model routing/config",
+      "creator": "@samson910022",
+      "number": 92415,
+      "title": "Session-level AgentSession.this.model snapshot is never refreshed after /model switch (affects contextWindow, reasoning, thinkingLevelMap, branch summary)",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/92415"
     },
     {
       "activity": 0,
@@ -26504,6 +26479,15 @@
     {
       "activity": 0,
       "area": "OpenAI-compatible/proxy",
+      "creator": "@samson1357924",
+      "number": 83461,
+      "title": "fix(provider-catalog): catalog discovery sends GET /models without auth when apiKey is a non-secret marker",
+      "type": "issue",
+      "url": "https://github.com/openclaw/openclaw/issues/83461"
+    },
+    {
+      "activity": 0,
+      "area": "OpenAI-compatible/proxy",
       "creator": "@yuzhihui886",
       "number": 83399,
       "title": "Bug: Tool call loop when assistant generates text + toolCall with openai-completions API",
@@ -26733,5 +26717,5 @@
     "pr": 111964
   },
   "schema_version": 1,
-  "updated": "2026-07-23"
+  "updated": "2026-07-28"
 }

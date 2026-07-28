@@ -1,6 +1,6 @@
 # OPENCLAW ONUR INVENTORY
 
-Updated: 2026-07-23
+Updated: 2026-07-28
 
 Review watermark:
 
@@ -63,7 +63,7 @@ Review watermark:
 | 📝&nbsp;[#111764](https://github.com/openclaw/openclaw/issues/111764) | 2026-07-20 | 0 | OpenAI-compatible/proxy | @forrystudio | Empty final completion (whitespace-only thinking, stop) surfaces as generic failure despite all tool work succeeding — add one-shot finalizer before non_deliverable_terminal_turn |
 | 🔀&nbsp;[#111709](https://github.com/openclaw/openclaw/pull/111709) | 2026-07-20 | 0 | Model routing/config | @kesava500 | feat: show thinking level in model summary |
 
-## OPEN THREADS (953)
+## OPEN THREADS (945)
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
@@ -76,7 +76,6 @@ Review watermark:
 | 🔀&nbsp;[#81834](https://github.com/openclaw/openclaw/pull/81834) | 13 | Local/media model provider | @KLilyZ | feat(senseaudio): add SenseAudio TTS provider |
 | 📝&nbsp;[#79847](https://github.com/openclaw/openclaw/issues/79847) | 13 | Local memory/embedding | @ChrisBot2026 | qmd-manager leaks XDG_CONFIG_HOME / XDG_CACHE_HOME to all child spawns, breaking mcporter >= 0.10 integration<br>Assignee: osolmaz |
 | 🔀&nbsp;[#87247](https://github.com/openclaw/openclaw/pull/87247) | 12 | Local memory/embedding | @airbing11 | docs: note LanceDB dreaming v0.2.3 via memory-lancedb-dreaming plugin |
-| 📝&nbsp;[#51441](https://github.com/openclaw/openclaw/issues/51441) | 12 | OpenAI-compatible/proxy | @Kyzcreig | feat: expose resolved backend model in session_status and agent runtime |
 | 📝&nbsp;[#45049](https://github.com/openclaw/openclaw/issues/45049) | 12 | OpenAI-compatible/proxy | @ArnoldJr | Agent loop allows simulated tool calls instead of enforcing real tool invocation |
 | 🔀&nbsp;[#68079](https://github.com/openclaw/openclaw/pull/68079) | 11 | OpenAI-compatible/proxy | @Frrrrrrrrank | feat(providers/zai): inject X-Session-Id header for prompt cache stickiness |
 | 📝&nbsp;[#85126](https://github.com/openclaw/openclaw/issues/85126) | 10 | Local model runtime | @mlaihk | Bug: Control UI (TUI/WebChat) sessions auto-select wrong authProfileOverride (deepseek instead of minimax) at creation<br>Assignee: osolmaz |
@@ -117,13 +116,13 @@ Review watermark:
 | 📝&nbsp;[#81960](https://github.com/openclaw/openclaw/issues/81960) | 4 | Local model runtime | @alexandre-leng | [Feature]: Allow onboarding to configure multiple providers and models |
 | 📝&nbsp;[#80081](https://github.com/openclaw/openclaw/issues/80081) | 4 | OpenAI-compatible/proxy | @torbisoc | Need documented config keys for disabling plugin/tool/channel/owner-elevated surfaces for proposal-only mode |
 | 📝&nbsp;[#77692](https://github.com/openclaw/openclaw/issues/77692) | 4 | OpenAI-compatible/proxy | @kidding1412 | fix(tts/xiaomi): Xiaomi Token Plan endpoint uses Bearer auth, not api-key header |
+| 📝&nbsp;[#77675](https://github.com/openclaw/openclaw/issues/77675) | 4 | Local model runtime | @nickytonline | [Bug]: request.headers SecretRefs on model providers fail in embedded agent context with "unresolved SecretRef" error |
 
 <details>
-<summary>Remaining 903 open threads, sorted by activity</summary>
+<summary>Remaining 895 open threads, sorted by activity</summary>
 
 | Thread | Activity | Area | Creator | Title |
 | --- | --- | --- | --- | --- |
-| 📝&nbsp;[#77675](https://github.com/openclaw/openclaw/issues/77675) | 4 | Local model runtime | @nickytonline | [Bug]: request.headers SecretRefs on model providers fail in embedded agent context with "unresolved SecretRef" error |
 | 📝&nbsp;[#77142](https://github.com/openclaw/openclaw/issues/77142) | 4 | Local memory/embedding | @vuho60-byte | [Feature]: Parametric consolidation channel for dreaming pipeline (CLS Phase 4) |
 | 📝&nbsp;[#73801](https://github.com/openclaw/openclaw/issues/73801) | 4 | OpenAI-compatible/proxy | @iannwu | Active Memory with Cerebras gpt-oss-120b times out and can pin gateway CPU |
 | 📝&nbsp;[#69943](https://github.com/openclaw/openclaw/issues/69943) | 4 | Local memory/embedding | @reidperyam | [Bug]: session-memory hook persists raw chat-template tokens and unparsed tool calls - re-injected context creates self-reinforcing poisoning loop, agents emit role tokens / NO_REPLY across all subsequent /new sessions |
@@ -369,7 +368,6 @@ Review watermark:
 | 📝&nbsp;[#108614](https://github.com/openclaw/openclaw/issues/108614) | 0 | OpenAI-compatible/proxy | @kopl-blip | [Bug]: ChatGPT/Codex OAuth ignores transport="websocket"; OpenClaw runtime still sends HTTP POST |
 | 📝&nbsp;[#108599](https://github.com/openclaw/openclaw/issues/108599) | 0 | Model routing/config | @WoodyKim554 | sessions_send announce delivery causes 2-3x turn amplification on claude-cli agents (session-limit exhaustion observed) |
 | 📝&nbsp;[#108580](https://github.com/openclaw/openclaw/issues/108580) | 0 | Local model runtime | @arbilli82 | [Bug]: cron tool schema incompatible with llama.cpp grammar-constrained tool calling (2026.7.1 regression) |
-| 📝&nbsp;[#108568](https://github.com/openclaw/openclaw/issues/108568) | 0 | Model routing/config | @waeckerlinfederowicz66-sketch | [Feature]: Add Image to Video AI video generation provider |
 | 🔀&nbsp;[#108557](https://github.com/openclaw/openclaw/pull/108557) | 0 | Model routing/config | @arkyu2077 | fix: avoid reporting model context window as session context usage |
 | 📝&nbsp;[#108555](https://github.com/openclaw/openclaw/issues/108555) | 0 | Local model runtime | @grevock68 | Subagent runtime: exec-tool stalls inside subagent sessions while write-tool and LLM traffic continue to function |
 | 📝&nbsp;[#108473](https://github.com/openclaw/openclaw/issues/108473) | 0 | Local model runtime | @danydavila | [Bug]: cron tool schema breaks llama.cpp tool-calling |
@@ -438,7 +436,6 @@ Review watermark:
 | 🔀&nbsp;[#106752](https://github.com/openclaw/openclaw/pull/106752) | 0 | Model routing/config | @steipete | fix(ui): show readable model fallback removal action<br>Assignee: steipete |
 | 🔀&nbsp;[#106706](https://github.com/openclaw/openclaw/pull/106706) | 0 | Model routing/config | @alithia-dev | Harden Hermes daemon adapter: validate model on session resume (AIA-1231) |
 | 📝&nbsp;[#106704](https://github.com/openclaw/openclaw/issues/106704) | 0 | Open-weight/provider behavior | @Cyb3rb1ade | [Bug]: sessions_yield on a subagent's first turn (no children, no wake source) silently finalizes the run as ok with an empty result — tool descriptions invite the misuse |
-| 📝&nbsp;[#106679](https://github.com/openclaw/openclaw/issues/106679) | 0 | Model routing/config | @aniruddhaadak80 | [Bug] Infinite fallback loop on generic provider errors |
 | 🔀&nbsp;[#106657](https://github.com/openclaw/openclaw/pull/106657) | 0 | Model routing/config | @harjothkhara | fix: stop model fallback on sandbox provisioning failures |
 | 📝&nbsp;[#106617](https://github.com/openclaw/openclaw/issues/106617) | 0 | OpenAI-compatible/proxy | @aniruddhaadak80 | [Bug] Global SSL Verification Disabling Bypass in openai-compatible-embedding-provider.ts |
 | 📝&nbsp;[#106570](https://github.com/openclaw/openclaw/issues/106570) | 0 | OpenAI-compatible/proxy | @aniruddhaadak80 | [Bug] Circular Structure Serialization Crash in OpenAI Completions Stream Error Handler |
@@ -539,11 +536,9 @@ Review watermark:
 | 📝&nbsp;[#103083](https://github.com/openclaw/openclaw/issues/103083) | 0 | Open-weight/provider behavior | @yetval | Video-generation providers fetch the result URL with no SSRF guard (byteplus, minimax, xai, runway, vydra) |
 | 🔀&nbsp;[#103035](https://github.com/openclaw/openclaw/pull/103035) | 0 | Local memory/embedding | @NianJiuZst | fix(memory): keep QMD search hits on the matching file |
 | 📝&nbsp;[#102973](https://github.com/openclaw/openclaw/issues/102973) | 0 | Local memory/embedding | @jgrandguillaume | feat(memory-lancedb): per-agent / per-channel scoping for autoCapture and autoRecall |
-| 📝&nbsp;[#102907](https://github.com/openclaw/openclaw/issues/102907) | 0 | OpenAI-compatible/proxy | @aniruddhaadak80 | Azure OpenAI Responses throws 400 when prompt_cache_key is sent to endpoints that do not support it |
 | 🔀&nbsp;[#102886](https://github.com/openclaw/openclaw/pull/102886) | 0 | Local memory/embedding | @chengzhichao-xydt | fix(github-copilot): add timeout to embedding model discovery |
 | 🔀&nbsp;[#102831](https://github.com/openclaw/openclaw/pull/102831) | 0 | OpenAI-compatible/proxy | @moguangyu5-design | fix(auto-reply): honor compat reasoning efforts for openai-completions session thinking |
 | 📝&nbsp;[#102807](https://github.com/openclaw/openclaw/issues/102807) | 0 | Model routing/config | @steipete | Usage/cost attribution is provider-keyed: mixed API+subscription and multi-account setups show wrong billing mode/quota |
-| 📝&nbsp;[#102779](https://github.com/openclaw/openclaw/issues/102779) | 0 | OpenAI-compatible/proxy | @chaboncarpentier-blip | Bug: custom openai-completions GPT-5.5 accepts request-level thinking but rejects session-level /think |
 | 🔀&nbsp;[#102701](https://github.com/openclaw/openclaw/pull/102701) | 0 | Model routing/config | @ishangodawatta | feat: add auth list shortcut |
 | 🔀&nbsp;[#102554](https://github.com/openclaw/openclaw/pull/102554) | 0 | Local memory/embedding | @gorkem2020 | fix(active-memory): skip prompt-build hooks in the recall sub-run |
 | 🔀&nbsp;[#102402](https://github.com/openclaw/openclaw/pull/102402) | 0 | Model routing/config | @zezaeoh | fix(codex): rotate bounded-turn auth profiles on usage limits |
@@ -552,7 +547,6 @@ Review watermark:
 | 📝&nbsp;[#102323](https://github.com/openclaw/openclaw/issues/102323) | 0 | OpenAI-compatible/proxy | @yetval | anthropic: within-limit HEIC/TIFF images 400 as media_type passes through verbatim (succeeds on OpenAI and Gemini) |
 | 📝&nbsp;[#102288](https://github.com/openclaw/openclaw/issues/102288) | 0 | Local model runtime | @erathia65 | [Bug]: agents set-identity --workspace does not set the agent's stored workspace, but its success response implies it does |
 | 📝&nbsp;[#102286](https://github.com/openclaw/openclaw/issues/102286) | 0 | Model routing/config | @juanjoseesper-blip | Windows: multiple gateway-down failure modes (kill-and-rebind restart loop, config-edit no-relaunch, browser launch crash, blocking pricing fetches) |
-| 📝&nbsp;[#102273](https://github.com/openclaw/openclaw/issues/102273) | 0 | Model routing/config | @bergaeduardo | Add config flag to always show provider in model picker (not only on name collisions) |
 | 🔀&nbsp;[#102242](https://github.com/openclaw/openclaw/pull/102242) | 0 | Model routing/config | @qingminlong | fix: bound gateway model pricing cache |
 | 🔀&nbsp;[#102213](https://github.com/openclaw/openclaw/pull/102213) | 0 | Open-weight/provider behavior | @zhucegep | fix(auto-reply,agents/tools): strip foreign provider prefix in formatProviderModelRef |
 | 🔀&nbsp;[#102204](https://github.com/openclaw/openclaw/pull/102204) | 0 | Model routing/config | @Hackerismydream | fix: stop model catalog warning loop during sidecar refresh<br>Assignee: vincentkoc |
@@ -577,7 +571,6 @@ Review watermark:
 | 📝&nbsp;[#101543](https://github.com/openclaw/openclaw/issues/101543) | 0 | Model routing/config | @aniruddhaadak80 | Unbounded memory growth in model-pricing-cache.ts leads to heap exhaustion (OOM) |
 | 📝&nbsp;[#101537](https://github.com/openclaw/openclaw/issues/101537) | 0 | Open-weight/provider behavior | @Linyi4012 | [Bug]:  cron scheduled wake to main session is skipped (status=skipped, error="disabled"), so the main agent is never woken |
 | 📝&nbsp;[#101459](https://github.com/openclaw/openclaw/issues/101459) | 0 | OpenAI-compatible/proxy | @woohahahaaa | [Bug]: openai-responses sends role="system" instead of role="developer" for reasoning models |
-| 📝&nbsp;[#101446](https://github.com/openclaw/openclaw/issues/101446) | 0 | Model routing/config | @danniel0976 | Dropdown model switch to claude-cli causes "reply session initialization conflicted" on follow-up turns |
 | 📝&nbsp;[#101445](https://github.com/openclaw/openclaw/issues/101445) | 0 | Local model runtime | @Zvimarmor | [Bug]: Embedded Ollama agent reports payloads=0 tools=0 (incomplete_result) for certain prompts even though Ollama's own response contains a valid tool_calls entry |
 | 🔀&nbsp;[#101414](https://github.com/openclaw/openclaw/pull/101414) | 0 | Model routing/config | @lzyyzznl | fix(agents): classify Anthropic invalid_request_error as format for failover |
 | 🔀&nbsp;[#101367](https://github.com/openclaw/openclaw/pull/101367) | 0 | Open-weight/provider behavior | @Robinnnnn | fix(openrouter): use dedicated /api/v1/images endpoint for image generation |
@@ -741,9 +734,7 @@ Review watermark:
 | 📝&nbsp;[#96046](https://github.com/openclaw/openclaw/issues/96046) | 0 | Local memory/embedding | @hearace1 | Gateway 'plugins.slots.memory: plugin not found' for an extensions/ plugin present in plugins list — 2026.6.9 regression |
 | 🔀&nbsp;[#95936](https://github.com/openclaw/openclaw/pull/95936) | 0 | Local memory/embedding | @xmoxmo | feat(memory): shared memory store by directory binding |
 | 📝&nbsp;[#95904](https://github.com/openclaw/openclaw/issues/95904) | 0 | Model routing/config | @buyuangtampan | [Bug]: Non-Codex fallback models fail code-mode tool calls with internal_error in 2026.6.9 |
-| 📝&nbsp;[#95891](https://github.com/openclaw/openclaw/issues/95891) | 0 | Open-weight/provider behavior | @DemonGiggle | [Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path |
 | 🔀&nbsp;[#95859](https://github.com/openclaw/openclaw/pull/95859) | 0 | Model/provider behavior | @solodmd | fix(#95840): contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
-| 📝&nbsp;[#95840](https://github.com/openclaw/openclaw/issues/95840) | 0 | Model/provider behavior | @aleps001 | contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider |
 | 🔀&nbsp;[#95824](https://github.com/openclaw/openclaw/pull/95824) | 0 | OpenAI-compatible/proxy | @ats3v | fix(deepinfra): use OpenAI video end point and tag DeepSeek thinking format |
 | 📝&nbsp;[#95821](https://github.com/openclaw/openclaw/issues/95821) | 0 | Local model runtime | @BryceMurray | [Feature]: log memory-core-local-embedding-worker.js spawn/exit + per-call CPU time at INFO level for CPU-forensics traceability (2026.6.9) |
 | 🔀&nbsp;[#95820](https://github.com/openclaw/openclaw/pull/95820) | 0 | Local memory/embedding | @moeedahmed | fix(session-memory): skip transcript-only assistant rows |
@@ -809,11 +800,8 @@ Review watermark:
 | 🔀&nbsp;[#94344](https://github.com/openclaw/openclaw/pull/94344) | 0 | Local memory/embedding | @mushuiyu886 | fix #94166: memory-core OpenAI-compatible embeddings: honor provider request.allowPrivateNetwork |
 | 📝&nbsp;[#94289](https://github.com/openclaw/openclaw/issues/94289) | 0 | Model routing/config | @Nardoa375 | [Bug]: LCM compaction fails: allowModelOverride not propagated to plugin runtime client until config hot-reload |
 | 🔀&nbsp;[#94252](https://github.com/openclaw/openclaw/pull/94252) | 0 | Local memory/embedding | @bennewell35 | fix(memory): scrub stale dreaming sessions on startup |
-| 📝&nbsp;[#94251](https://github.com/openclaw/openclaw/issues/94251) | 0 | Local model runtime | @tborer | [Bug]: Ollama remote provider streaming not consumed — model_call:started never progresses in chat sessions |
-| 📝&nbsp;[#94228](https://github.com/openclaw/openclaw/issues/94228) | 0 | Model routing/config | @eugkhp | Native Anthropic path: replaying historical `thinking` blocks bricks long tool-use threads (`Invalid signature in thinking block` 400) |
 | 📝&nbsp;[#94166](https://github.com/openclaw/openclaw/issues/94166) | 0 | Local memory/embedding | @dmorn | memory-core OpenAI-compatible embeddings cannot use explicitly configured private endpoints |
 | 📝&nbsp;[#94125](https://github.com/openclaw/openclaw/issues/94125) | 0 | Local memory/embedding | @thedoctormes-hue | [Bug]: Memory search completely broken — FTS-only hangs, embeddings hang, --force corrupts meta (Ollama/bge-m3, Linux, 2026.6.8) |
-| 📝&nbsp;[#93968](https://github.com/openclaw/openclaw/issues/93968) | 0 | Local memory/embedding | @edisonxl | [Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker |
 | 🔀&nbsp;[#93878](https://github.com/openclaw/openclaw/pull/93878) | 0 | Local memory/embedding | @sheyanmin | fix: route memory embeddings to configured baseURL for openai provider |
 | 🔀&nbsp;[#93868](https://github.com/openclaw/openclaw/pull/93868) | 0 | Local/media model provider | @harjothkhara | fix(gateway): dedupe TTS status provider diagnostics [AI-assisted] |
 | 📝&nbsp;[#93741](https://github.com/openclaw/openclaw/issues/93741) | 0 | Model routing/config | @clemenshelm | Allow the `agent` RPC to offload images to `imageModel` for text-only models (opt-in) |
@@ -855,10 +843,13 @@ Review watermark:
 | 📝&nbsp;[#92559](https://github.com/openclaw/openclaw/issues/92559) | 0 | OpenAI-compatible/proxy | @fmsonic | Feature: Session-aware template variables in extra_body (e.g. {{session.channel}}) |
 | 🔀&nbsp;[#92557](https://github.com/openclaw/openclaw/pull/92557) | 0 | Local model runtime | @Patrick-Erichsen | Validate ClawHub plugin metadata in PRs |
 | 🔀&nbsp;[#92556](https://github.com/openclaw/openclaw/pull/92556) | 0 | OpenAI-compatible/proxy | @smolskayanastassia | feat(llm): add Inworld as built-in llm provider |
+| 🔀&nbsp;[#92529](https://github.com/openclaw/openclaw/pull/92529) | 0 | Model routing/config | @jml001 | fix(agents): prevent local exec policy errors from triggering model fallback |
+| 🔀&nbsp;[#92524](https://github.com/openclaw/openclaw/pull/92524) | 0 | Local memory/embedding | @yu-xin-c | fix(memory-core): preserve keyword-only hybrid results |
 | 📝&nbsp;[#92500](https://github.com/openclaw/openclaw/issues/92500) | 0 | Local/media model provider | @100yenadmin | Add Telegram voice/STT handoff telemetry into agent context |
 | 🔀&nbsp;[#92499](https://github.com/openclaw/openclaw/pull/92499) | 0 | Local memory/embedding | @SYU8384 | Memory/QMD: isolate mcporter sidecars per agent |
 | 📝&nbsp;[#92478](https://github.com/openclaw/openclaw/issues/92478) | 0 | Local/media model provider | @novaagentia-cpu | [Bug]: Native Talk button triggers OpenAI Realtime WebRTC call and fails with 500 when Realtime is not configured |
 | 📝&nbsp;[#92473](https://github.com/openclaw/openclaw/issues/92473) | 0 | Model routing/config | @guscamara | Model fallback notice leaks to external user-facing channels |
+| 📝&nbsp;[#92415](https://github.com/openclaw/openclaw/issues/92415) | 0 | Model routing/config | @samson910022 | Session-level AgentSession.this.model snapshot is never refreshed after /model switch (affects contextWindow, reasoning, thinkingLevelMap, branch summary) |
 | 📝&nbsp;[#92405](https://github.com/openclaw/openclaw/issues/92405) | 0 | Model routing/config | @oiGaDio | subagent spawn persists raw provider instead of CLI runtime — depth-2 cold spawns silently die with 'lost execution context' (two unpatched #57326 call sites, fix included) |
 | 🔀&nbsp;[#92359](https://github.com/openclaw/openclaw/pull/92359) | 0 | OpenAI-compatible/proxy | @jiewent1-cmyk | fix(config): allow model.compat.sendSessionAffinityHeaders in ModelCompatSchema |
 | 🔀&nbsp;[#92341](https://github.com/openclaw/openclaw/pull/92341) | 0 | Local memory/embedding | @rrriiiccckkk | fix(memory-core): remove CJK length threshold for trigram LIKE matching |
@@ -1001,6 +992,7 @@ Review watermark:
 | 🔀&nbsp;[#84554](https://github.com/openclaw/openclaw/pull/84554) | 0 | Local memory/embedding | @jetd1 | fix(memory-core): guard builtin fallback after qmd failures |
 | 📝&nbsp;[#84217](https://github.com/openclaw/openclaw/issues/84217) | 0 | Local model runtime | @fanispoulinakisai-boop | [Bug]: Heartbeat dispatch delivers free text block alongside message-tool call (chatty non-Codex providers, v2026.5.18) |
 | 🔀&nbsp;[#84072](https://github.com/openclaw/openclaw/pull/84072) | 0 | Model routing/config | @wiatrM | Add model fallback circuit breaker |
+| 📝&nbsp;[#83461](https://github.com/openclaw/openclaw/issues/83461) | 0 | OpenAI-compatible/proxy | @samson1357924 | fix(provider-catalog): catalog discovery sends GET /models without auth when apiKey is a non-secret marker |
 | 📝&nbsp;[#83399](https://github.com/openclaw/openclaw/issues/83399) | 0 | OpenAI-compatible/proxy | @yuzhihui886 | Bug: Tool call loop when assistant generates text + toolCall with openai-completions API |
 | 📝&nbsp;[#81925](https://github.com/openclaw/openclaw/issues/81925) | 0 | Local memory/embedding | @castigiova | Compaction: `after_compaction` not emitted when `result.compacted:false`; validation: single-quote delimiter trips tool-caller retries |
 | 📝&nbsp;[#81835](https://github.com/openclaw/openclaw/issues/81835) | 0 | OpenAI-compatible/proxy | @STLI69 | Bug: thinking parameter format incompatible with Volcengine CodingPlan v3 API |
@@ -1032,7 +1024,7 @@ Review watermark:
 ## RECENTLY CLOSED OR REMOVED FROM OPEN INVENTORY
 
 <details>
-<summary>2586 closed or removed reviewed threads</summary>
+<summary>2594 closed or removed reviewed threads</summary>
 
 | Thread | Status checked | Note |
 | --- | --- | --- |
@@ -1143,6 +1135,7 @@ Review watermark:
 | [#108592](https://github.com/openclaw/openclaw/pull/108592) | Closed in local gitcrawl | fix: provider dead exports no longer block changed checks; no longer open. |
 | [#108583](https://github.com/openclaw/openclaw/pull/108583) | Closed in local gitcrawl | refactor(memory-core): split manager sync operations; no longer open. |
 | [#108569](https://github.com/openclaw/openclaw/pull/108569) | Closed in local gitcrawl | fix(gradium): return false from isConfigured on invalid baseUrl instead of throwing; no longer open. |
+| [#108568](https://github.com/openclaw/openclaw/issues/108568) | Removed from current Gitcrawl export 2026-07-28 | [Feature]: Add Image to Video AI video generation provider; no longer present in current Gitcrawl export. |
 | [#108559](https://github.com/openclaw/openclaw/issues/108559) | Closed in local gitcrawl | Bug: Dreaming promotes daily-only operational residue despite recall/query gates; no longer open. |
 | [#108558](https://github.com/openclaw/openclaw/pull/108558) | Closed in local gitcrawl | fix(xiaomi): treat blank env API key as unconfigured in speech provider; no longer open. |
 | [#108551](https://github.com/openclaw/openclaw/pull/108551) | Closed in local gitcrawl | fix(gradium): keep isConfigured from throwing on invalid baseUrl; no longer open. |
@@ -1235,6 +1228,7 @@ Review watermark:
 | [#106758](https://github.com/openclaw/openclaw/pull/106758) | Closed in local gitcrawl | fix(migrate): import current Hermes state and provider contracts; no longer open. |
 | [#106754](https://github.com/openclaw/openclaw/pull/106754) | Closed in local gitcrawl | fix: keep unresolved API-key providers visible; no longer open. |
 | [#106747](https://github.com/openclaw/openclaw/issues/106747) | Closed in local gitcrawl | refactor(amazon-bedrock): use exact AWS SDK contracts; no longer open. |
+| [#106679](https://github.com/openclaw/openclaw/issues/106679) | Removed from current Gitcrawl export 2026-07-28 | [Bug] Infinite fallback loop on generic provider errors; no longer present in current Gitcrawl export. |
 | [#106539](https://github.com/openclaw/openclaw/pull/106539) | Closed in local gitcrawl | refactor(active-memory): split recall helpers; no longer open. |
 | [#106500](https://github.com/openclaw/openclaw/pull/106500) | Closed in local gitcrawl | feat(codex): show the account email with app-server usage windows; no longer open. |
 | [#106467](https://github.com/openclaw/openclaw/issues/106467) | Closed in local gitcrawl | [Bug]: openai/gpt-5.6-terra routes to API-key Responses instead of Codex OAuth; no longer open. |
@@ -1423,6 +1417,7 @@ Review watermark:
 | [#102964](https://github.com/openclaw/openclaw/issues/102964) | Closed in local gitcrawl | [Bug] Model registry schema requires cacheRead/cacheWrite but Ollama live discovery returns only input/output; no longer open. |
 | [#102958](https://github.com/openclaw/openclaw/pull/102958) | Closed in local gitcrawl | fix(ai): fold case in OpenAI reasoning-effort matching (#102908); no longer open. |
 | [#102940](https://github.com/openclaw/openclaw/pull/102940) | Closed in local gitcrawl | fix(active-memory): keep timeout partial replies valid at emoji caps; no longer open. |
+| [#102907](https://github.com/openclaw/openclaw/issues/102907) | Removed from current Gitcrawl export 2026-07-28 | Azure OpenAI Responses throws 400 when prompt_cache_key is sent to endpoints that do not support it; no longer present in current Gitcrawl export. |
 | [#102890](https://github.com/openclaw/openclaw/pull/102890) | Closed in local gitcrawl | fix(llm-slug): use UTF-16-safe truncation for session content; no longer open. |
 | [#102877](https://github.com/openclaw/openclaw/pull/102877) | Closed in local gitcrawl | fix(active-memory): recall context breaks when recent turns contain emoji; no longer open. |
 | [#102871](https://github.com/openclaw/openclaw/pull/102871) | Closed in local gitcrawl | improve(webchat): model picker applies changes immediately, no Save/Discard row; no longer open. |
@@ -1437,6 +1432,7 @@ Review watermark:
 | [#102797](https://github.com/openclaw/openclaw/issues/102797) | Closed in local gitcrawl | [Bug]: Invalid `signature` in `thinking` block (replay_invalid) still occurring on 2026.6.11 — likely restart-during-generation / compaction path (edge case flagged in #40512); no longer open. |
 | [#102791](https://github.com/openclaw/openclaw/pull/102791) | Closed in local gitcrawl | feat(providers): add Qwen 3.6 Flash and Gemini 3.1 Live; no longer open. |
 | [#102784](https://github.com/openclaw/openclaw/pull/102784) | Closed in local gitcrawl | feat: show provider plan usage (5h/weekly/credits) in the chat context popover, keep API cost for API billing; no longer open. |
+| [#102779](https://github.com/openclaw/openclaw/issues/102779) | Removed from current Gitcrawl export 2026-07-28 | Bug: custom openai-completions GPT-5.5 accepts request-level thinking but rejects session-level /think; no longer present in current Gitcrawl export. |
 | [#102774](https://github.com/openclaw/openclaw/pull/102774) | Closed in local gitcrawl | fix(embedding-provider): use truncateUtf16Safe for text truncation; no longer open. |
 | [#102771](https://github.com/openclaw/openclaw/issues/102771) | Closed in local gitcrawl | Chat context popover: show Anthropic plan usage (5h/weekly/credits) instead of meaningless cost on subscription billing; no longer open. |
 | [#102767](https://github.com/openclaw/openclaw/pull/102767) | Closed in local gitcrawl | fix(memory-lancedb): use truncateUtf16Safe for sanitize text truncation; no longer open. |
@@ -1469,6 +1465,7 @@ Review watermark:
 | [#102352](https://github.com/openclaw/openclaw/pull/102352) | Closed in local gitcrawl | fix(google): add regex anchors and prefix boundaries in google-shared model id checks; no longer open. |
 | [#102344](https://github.com/openclaw/openclaw/pull/102344) | Closed in local gitcrawl | fix: surface OpenAI chat-completions refusal as assistant text; no longer open. |
 | [#102305](https://github.com/openclaw/openclaw/pull/102305) | Closed in local gitcrawl | fix(gateway): re-check session runtime model against current agent defaults after hot-reload; no longer open. |
+| [#102273](https://github.com/openclaw/openclaw/issues/102273) | Removed from current Gitcrawl export 2026-07-28 | Add config flag to always show provider in model picker (not only on name collisions); no longer present in current Gitcrawl export. |
 | [#102244](https://github.com/openclaw/openclaw/issues/102244) | Closed in local gitcrawl | Transcript redaction corrupts Anthropic/Bedrock reasoning signatures (AIza/LTAI false positive), causing persistent replay_invalid; no longer open. |
 | [#102160](https://github.com/openclaw/openclaw/pull/102160) | Closed in local gitcrawl | fix(agents): run-lifecycle reliability — bounded release, evidence-based liveness, watchdog semantics; no longer open. |
 | [#102148](https://github.com/openclaw/openclaw/pull/102148) | Closed in local gitcrawl | fix(google): normalize legacy provider config with api + cost.cacheWrite compat migration; no longer open. |
@@ -1492,6 +1489,7 @@ Review watermark:
 | [#101488](https://github.com/openclaw/openclaw/pull/101488) | Closed in local gitcrawl | fix(openrouter): bound music SSE buffering; no longer open. |
 | [#101475](https://github.com/openclaw/openclaw/pull/101475) | Closed in local gitcrawl | fix(session-memory): bound session transcript reads to prevent OOM; no longer open. |
 | [#101453](https://github.com/openclaw/openclaw/pull/101453) | Closed in local gitcrawl | fix(anthropic): add claude-fable-5 to CLI allowlist, aliases, labels, and context window; no longer open. |
+| [#101446](https://github.com/openclaw/openclaw/issues/101446) | Removed from current Gitcrawl export 2026-07-28 | Dropdown model switch to claude-cli causes "reply session initialization conflicted" on follow-up turns; no longer present in current Gitcrawl export. |
 | [#101433](https://github.com/openclaw/openclaw/pull/101433) | Closed in local gitcrawl | fix(openai): map Responses refusal chunks during tool calls; no longer open. |
 | [#101432](https://github.com/openclaw/openclaw/pull/101432) | Closed in local gitcrawl | fix(gateway): reset model discovery cache on hot reload; no longer open. |
 | [#101368](https://github.com/openclaw/openclaw/pull/101368) | Closed in local gitcrawl | fix(agents): resolve fable-5 1M context window for claude-cli provider; no longer open. |
@@ -1990,6 +1988,7 @@ Review watermark:
 | [#95906](https://github.com/openclaw/openclaw/pull/95906) | Closed in local gitcrawl | fix(code-mode): surface QuickJS error name and message to the model; no longer open. |
 | [#95897](https://github.com/openclaw/openclaw/pull/95897) | Closed in local gitcrawl | fix(heartbeat-filter): preserve HEARTBEAT_OK detection with reasoning/thinking blocks; no longer open. |
 | [#95896](https://github.com/openclaw/openclaw/pull/95896) | Closed in local gitcrawl | fix(model-catalog): stripPrefixes over-strips when prefix has whitespace; no longer open. |
+| [#95891](https://github.com/openclaw/openclaw/issues/95891) | Removed from current Gitcrawl export 2026-07-28 | [Bug]: opencode-go/minimax-m3 thinking content leaks to channel via Anthropic Messages path; no longer present in current Gitcrawl export. |
 | [#95877](https://github.com/openclaw/openclaw/pull/95877) | Closed in local gitcrawl | Add hosted catalog snapshot fallback; no longer open. |
 | [#95875](https://github.com/openclaw/openclaw/issues/95875) | Closed in local gitcrawl | Codex-backed cron runs can appear as canonical openai/openai-chatgpt-responses in transcript metadata, obscuring actual harness selection; no longer open. |
 | [#95874](https://github.com/openclaw/openclaw/issues/95874) | Closed in local gitcrawl | openclaw cron edit has --model but no --clear-model, so payload.model cannot be removed via the supported CLI; no longer open. |
@@ -1997,6 +1996,7 @@ Review watermark:
 | [#95869](https://github.com/openclaw/openclaw/issues/95869) | Closed in local gitcrawl | sessions_spawn ACP runtime always passes model even when harness lacks session/set_model capability; no longer open. |
 | [#95868](https://github.com/openclaw/openclaw/pull/95868) | Closed in local gitcrawl | Add hosted external catalog feed loader; no longer open. |
 | [#95852](https://github.com/openclaw/openclaw/pull/95852) | Closed in local gitcrawl | fix(acpx): keep leaked non-openai model out of the Codex ACP thinking slot; no longer open. |
+| [#95840](https://github.com/openclaw/openclaw/issues/95840) | Removed from current Gitcrawl export 2026-07-28 | contextPruning (mode: cache-ttl) never fires on OpenAI models: isCacheTtlEligibleProvider excludes OpenAI, so the idle-gap tool-result firebreak is dead for the highest-volume provider; no longer present in current Gitcrawl export. |
 | [#95838](https://github.com/openclaw/openclaw/pull/95838) | Closed in local gitcrawl | feat(heartbeat): add config to preserve silent task results in agent context; no longer open. |
 | [#95831](https://github.com/openclaw/openclaw/pull/95831) | Closed in local gitcrawl | fix: compact Codex OAuth OpenAI sessions without API keys; no longer open. |
 | [#95816](https://github.com/openclaw/openclaw/pull/95816) | Closed in local gitcrawl | fix(model-ref): use normalized prefix length for stripPrefixes; no longer open. |
@@ -2278,11 +2278,13 @@ Review watermark:
 | [#94269](https://github.com/openclaw/openclaw/issues/94269) | Closed in local gitcrawl | Z.ai static catalog models resolve without baseUrl and fall through to OpenAI API; no longer open. |
 | [#94261](https://github.com/openclaw/openclaw/pull/94261) | Closed in local gitcrawl | [Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin; no longer open. |
 | [#94258](https://github.com/openclaw/openclaw/issues/94258) | Closed in local gitcrawl | Bug: Tier routing not resolving tier-* aliases to actual models in v2026.6.8; no longer open. |
+| [#94251](https://github.com/openclaw/openclaw/issues/94251) | Removed from current Gitcrawl export 2026-07-28 | [Bug]: Ollama remote provider streaming not consumed — model_call:started never progresses in chat sessions; no longer present in current Gitcrawl export. |
 | [#94244](https://github.com/openclaw/openclaw/pull/94244) | Closed in local gitcrawl | fix: strip plain-text reasoning from GLM-5.x models; no longer open. |
 | [#94242](https://github.com/openclaw/openclaw/issues/94242) | Closed in local gitcrawl | [Feature]: [FEAT]: Add Adorbis AI as a bundled provider plugin; no longer open. |
 | [#94240](https://github.com/openclaw/openclaw/pull/94240) | Closed in local gitcrawl | fix(memory-core): degrade non-local embedding provider on persistent failure; no longer open. |
 | [#94239](https://github.com/openclaw/openclaw/pull/94239) | Closed in local gitcrawl | fix(memory): align session file counter denominator with indexer filter; no longer open. |
 | [#94234](https://github.com/openclaw/openclaw/pull/94234) | Closed in local gitcrawl | fix(anthropic): allow failover for thinking signature replay errors; no longer open. |
+| [#94228](https://github.com/openclaw/openclaw/issues/94228) | Removed from current Gitcrawl export 2026-07-28 | Native Anthropic path: replaying historical `thinking` blocks bricks long tool-use threads (`Invalid signature in thinking block` 400); no longer present in current Gitcrawl export. |
 | [#94214](https://github.com/openclaw/openclaw/pull/94214) | Closed in local gitcrawl | fix(ollama): resolve thinking profile for live-discovered models; no longer open. |
 | [#94210](https://github.com/openclaw/openclaw/pull/94210) | Closed in local gitcrawl | fix(cli): resolve 200K context window fallback in status command; no longer open. |
 | [#94209](https://github.com/openclaw/openclaw/pull/94209) | Closed in local gitcrawl | fix(model): cap contextWindow at native runtime catalog limit when user config exceeds it; no longer open. |
@@ -2306,6 +2308,7 @@ Review watermark:
 | [#94011](https://github.com/openclaw/openclaw/pull/94011) | Closed in local gitcrawl | fix(cron): treat generic 'LLM request failed' error as transient server_error; no longer open. |
 | [#94004](https://github.com/openclaw/openclaw/pull/94004) | Closed in local gitcrawl | refactor(sqlite): canonicalize memory and proxy storage; no longer open. |
 | [#93969](https://github.com/openclaw/openclaw/pull/93969) | Closed in local gitcrawl | fix(xai): reject unsupported multi-agent model refs before runtime fallback; no longer open. |
+| [#93968](https://github.com/openclaw/openclaw/issues/93968) | Removed from current Gitcrawl export 2026-07-28 | [Bug 6.1] Silent config auto-patch from memory-core + error-message auto-fix breaks all cron jobs on hosts without Docker; no longer present in current Gitcrawl export. |
 | [#93965](https://github.com/openclaw/openclaw/pull/93965) | Closed in local gitcrawl | [Bug]: opencode-go provider streaming — API calls complete on provider side but gateway never receives stream termination signal; no longer open. |
 | [#93956](https://github.com/openclaw/openclaw/pull/93956) | Closed in local gitcrawl | fix(ollama): skip auto-discovery for remote/cloud base URLs; no longer open. |
 | [#93946](https://github.com/openclaw/openclaw/pull/93946) | Closed in local gitcrawl | fix(ollama): show full thinking levels for discovered reasoning models; no longer open. |
@@ -2556,9 +2559,7 @@ Review watermark:
 | [#92538](https://github.com/openclaw/openclaw/pull/92538) | Closed in local gitcrawl 2026-06-15 | fix(memory): persist metadata during safe reindex; no longer open. |
 | [#92536](https://github.com/openclaw/openclaw/issues/92536) | 0 | Local memory/embedding |
 | [#92531](https://github.com/openclaw/openclaw/pull/92531) | 0 | Local memory/embedding |
-| [#92529](https://github.com/openclaw/openclaw/pull/92529) | 0 | Model routing/config |
 | [#92526](https://github.com/openclaw/openclaw/pull/92526) | 0 | Model routing/config |
-| [#92524](https://github.com/openclaw/openclaw/pull/92524) | 0 | Local memory/embedding |
 | [#92515](https://github.com/openclaw/openclaw/pull/92515) | 0 | Local memory/embedding |
 | [#92510](https://github.com/openclaw/openclaw/pull/92510) | 0 | OpenAI-compatible/proxy |
 | [#92509](https://github.com/openclaw/openclaw/pull/92509) | 0 | Local memory/embedding |
@@ -2587,7 +2588,6 @@ Review watermark:
 | [#92436](https://github.com/openclaw/openclaw/pull/92436) | Closed in local gitcrawl | fix: openai-responses adapter sends system prompt in instructions; no longer open. |
 | [#92431](https://github.com/openclaw/openclaw/pull/92431) | Closed in local gitcrawl | fix(agents): use thinking-level fallback for programmatic spawn instead of hard throw (fixes #92412); no longer open. |
 | [#92424](https://github.com/openclaw/openclaw/pull/92424) | Closed in local gitcrawl | fix(agents): resolve fresh model from registry for post-turn reads after /model switch (fixes #92415); no longer open. |
-| [#92415](https://github.com/openclaw/openclaw/issues/92415) | Closed in local gitcrawl 2026-06-15 | Session-level AgentSession.this.model snapshot is never refreshed after /model switch (affects contextWindow, reasoning, thinkingLevelMap, branch summary); no longer open. |
 | [#92412](https://github.com/openclaw/openclaw/issues/92412) | Closed in local gitcrawl | BUG: sessions_spawn silently half-fails when thinking level is unsupported — fan-out spawns produce non-deterministic survivors, no signal to orchestrator (fix: symmetrize CLI-launch fallback with embedded path); no longer open. |
 | [#92404](https://github.com/openclaw/openclaw/pull/92404) | Closed in local gitcrawl | fix(openai-responses): use instructions parameter for system prompt instead of input array; no longer open. |
 | [#92400](https://github.com/openclaw/openclaw/issues/92400) | Closed in local gitcrawl | [Bug]: `openai-responses` adapter sends system prompt in `input` instead of `instructions`; no longer open. |
@@ -3479,7 +3479,6 @@ Review watermark:
 | [#84228](https://github.com/openclaw/openclaw/pull/84228) | Closed in local gitcrawl 2026-06-15 | fix(nvidia): update Nemotron 3 Super contextWindow to 1M per NVIDIA spec; no longer open. |
 | [#84070](https://github.com/openclaw/openclaw/issues/84070) | Closed in local gitcrawl | Active Memory embedded runner fails to expose plugin tools when hidden runner is on the DeepSeek provider path; no longer open. |
 | [#83709](https://github.com/openclaw/openclaw/issues/83709) | Closed in local gitcrawl 2026-06-03 | [Feature]: Add `supportsPromptCacheKey` to Mistral transport compat patch; no longer open. |
-| [#83461](https://github.com/openclaw/openclaw/issues/83461) | Not resolvable as live issue | Earlier notes referenced it, but live GitHub issue view did not resolve it as an open issue. |
 | [#83436](https://github.com/openclaw/openclaw/pull/83436) | Closed in local gitcrawl | fix(agents): rethrow EmbeddedAttemptSessionTakeoverError before model fallback; no longer open. |
 | [#83333](https://github.com/openclaw/openclaw/issues/83333) | Closed in local gitcrawl 2026-06-03 | [Bug]: Memory provider cutover to Ollama leaves production index in mixed OpenAI/Ollama vector state after live sync/reload; no longer open. |
 | [#83227](https://github.com/openclaw/openclaw/pull/83227) | Closed in local gitcrawl | fix(openai): mark mp3 TTS voice output compatible; no longer open. |
@@ -3613,6 +3612,7 @@ Review watermark:
 | [#54155](https://github.com/openclaw/openclaw/issues/54155) | Closed in local gitcrawl | Gateway memory leak: 389MB → 14.7GB over 4 days with session accumulation; no longer open. |
 | [#52029](https://github.com/openclaw/openclaw/issues/52029) | Closed in local gitcrawl | Feature Request: heartbeat.tools option to disable tools during heartbeat; no longer open. |
 | [#51593](https://github.com/openclaw/openclaw/issues/51593) | Closed in local gitcrawl 2026-06-15 | [Bug]: Moonshot/Kimi duplicate tool-call IDs in replay, exposed by WhatsApp group chats; no longer open. |
+| [#51441](https://github.com/openclaw/openclaw/issues/51441) | Removed from current Gitcrawl export 2026-07-28 | feat: expose resolved backend model in session_status and agent runtime; no longer present in current Gitcrawl export. |
 | [#50051](https://github.com/openclaw/openclaw/pull/50051) | Closed in local gitcrawl | feat(macos): ExecuTorch Parakeet-TDT STT for Talk Mode + model-plugin runtime; no longer open. |
 | [#48680](https://github.com/openclaw/openclaw/issues/48680) | Closed in local gitcrawl 2026-05-31 | [Bug] Model fallback treats HTTP 403 business rejection as 'candidate_succeeded', skipping remaining fallback models; no longer open. |
 | [#48300](https://github.com/openclaw/openclaw/issues/48300) | Closed in local gitcrawl 2026-06-11 | Bug: memory_search hybrid mode not returning FTS matches; no longer open. |
@@ -3636,4 +3636,4 @@ Do not regenerate this file by dumping keyword hits. The correct workflow is:
 5. Recount rows and compare against the retained issue/PR number sets before committing.
 6. Run `python3 scripts/sort_openclaw_onur_inventory.py`, then `python3 scripts/export_inventory_json.py` and `python3 scripts/validate_inventory_json.py`, before committing so the Markdown table and JSON mirror stay in sync. The sorter generates `NEW OPEN THREADS` from Gitcrawl creation dates, keeps the canonical `OPEN THREADS` table collapsed with `Thread`, `Activity`, `Area`, `Creator`, and `Title` columns, fills creator handles from Gitcrawl, and sorts the canonical table by `Activity` score descending, then GitHub number descending/latest. Closed or removed rows stay newest-first by GitHub number.
 7. Do not add cumulative source logs, audit-result prose, inclusion-criteria repeats, or generated highest-risk sections to this file. Keep operational notes in commit messages, PRs, or chat, not in the inventory.
-- Kept open threads: 953 (491 issues, 462 PRs).
+- Kept open threads: 945 (481 issues, 464 PRs).
