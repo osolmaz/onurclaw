@@ -17,6 +17,7 @@ This repo contains curated maintainer artifacts that are useful to share openly:
 - `.agents/skills/openclaw-onur-inventory/SKILL.md`: local sandbox skill copy read by the no-network inventory job.
 - `openclaw-model-configuration-registry-proposal.md`: proposal for moving beyond `localModelLean` toward benchmark-informed model configuration management.
 - `openclaw-*.md` and `active-memory-issue.md`: public OpenClaw implementation plans, repro notes, and findings.
+- `extensions/llama-server/`: independently developed OpenClaw provider for an existing llama.cpp `llama-server`.
 - `notes/openclaw/`: older public OpenClaw root-cause notes and PR writeups.
 
 Private scratch notes, raw prompt captures, personal workspace state, and unrelated project artifacts should stay out of this repo.
