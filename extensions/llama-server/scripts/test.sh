@@ -19,3 +19,4 @@ ln -sfn "$openclaw_root/node_modules/vitest" "$plugin_root/node_modules/vitest"
 
 "$openclaw_root/node_modules/.bin/vitest" run --config "$plugin_root/vitest.config.ts"
 "$openclaw_root/node_modules/.bin/tsc" -p "$plugin_root/tsconfig.json"
+"$openclaw_root/node_modules/.bin/tsc" -p "$plugin_root/tsconfig.build.json"
