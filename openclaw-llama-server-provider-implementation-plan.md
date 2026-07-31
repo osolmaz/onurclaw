@@ -2,15 +2,15 @@
 
 ## Goal
 
-Add a first-party `llama-server` model provider to OpenClaw. The provider will connect OpenClaw to an existing llama.cpp `llama-server` process through its OpenAI-compatible HTTP API.
+Maintain an independent `llama-server` provider in this repository. The provider connects OpenClaw to an existing llama.cpp `llama-server` process through its OpenAI-compatible HTTP API.
 
-The result should work for a single loaded model and for llama-server router mode. It should discover models and runtime capabilities without making operators maintain duplicate model metadata in `openclaw.json`.
+The result works for a single loaded model and for llama-server router mode. It discovers models and runtime capabilities without making operators maintain duplicate model metadata in `openclaw.json`.
 
-This plan is based on OpenClaw `main` at `7ea4129227146118096fea4d0706504bef6ad6ca` and the current llama.cpp server API.
+The implementation lives at `extensions/llama-server/` in `osolmaz/onurclaw` and targets the OpenClaw `2026.7.2` Plugin SDK. It is not an OpenClaw core or bundled-plugin change.
 
 ## Design decision
 
-Create a bundled plugin under `extensions/llama-server`. Keep the existing `extensions/llama-cpp` plugin focused on in-process `node-llama-cpp` inference.
+Keep the provider as an independently installed source plugin under `onurclaw/extensions/llama-server`. Keep OpenClaw's bundled `extensions/llama-cpp` plugin focused on in-process `node-llama-cpp` inference.
 
 The provider names describe different runtime boundaries:
 
@@ -19,9 +19,13 @@ llama-cpp/<model>      in-process node-llama-cpp
 llama-server/<model>   external llama-server over HTTP
 ```
 
-The new plugin will use OpenClaw's existing `openai-completions` transport. It will own llama-server discovery, capability mapping, setup, auth, and tool-schema compatibility. OpenClaw core will remain provider-neutral.
+The plugin uses OpenClaw's existing `openai-completions` transport. It owns llama-server discovery, capability mapping, setup, auth, and tool-schema compatibility without changing OpenClaw core.
 
-The first implementation will connect to a server that the operator already runs. It will not download, build, update, or implicitly start llama-server. Operators who want OpenClaw to start a known local binary can use the existing `models.providers.<id>.localService` contract with an explicit absolute command.
+The implementation connects to a server that the operator already runs. It does not download, build, update, or implicitly start llama-server. Operators who want OpenClaw to start a known local binary can use the existing `models.providers.<id>.localService` contract with an explicit absolute command.
+
+## Current status
+
+The implementation is now maintained in this repository. The local suite has 55 passing tests plus a clean standalone type check against the OpenClaw `2026.7.2` Plugin SDK. Earlier live checks covered passive discovery, concurrent generation, cancellation, and a tool-call round trip. The mapped structured-output path still needs another live run when a guarded llama-server is ready.
 
 ## Success criteria
 
@@ -62,17 +66,17 @@ The normal configuration should contain endpoint and auth information only:
   models: {
     providers: {
       "llama-server": {
-        baseUrl: "http://127.0.0.1:8080/v1"
-      }
-    }
+        baseUrl: "http://127.0.0.1:8080/v1",
+      },
+    },
   },
   agents: {
     defaults: {
       model: {
-        primary: "llama-server/my-model"
-      }
-    }
-  }
+        primary: "llama-server/my-model",
+      },
+    },
+  },
 }
 ```
 
@@ -110,7 +114,7 @@ extensions/llama-server/
 
 Keep production imports inside `openclaw/plugin-sdk/*` and the plugin package. Add a small `api.ts` or `runtime-api.ts` barrel only if a real cross-boundary caller needs one.
 
-The manifest should declare the provider, refreshable model discovery, non-secret local auth, self-hosted pricing, setup metadata, and OpenAI completions streaming usage. The new plugin surface also requires the repository's labeler and GitHub label updates.
+The manifest declares the provider, refreshable model discovery, non-secret local auth, self-hosted pricing, setup metadata, and OpenAI completions streaming usage. Package metadata declares the compatible OpenClaw Plugin SDK and gateway versions.
 
 ### Endpoint handling
 
@@ -195,9 +199,9 @@ The plugin should classify known llama-server errors such as context overflow, s
 
 ### Documentation
 
-Add `docs/providers/llama-server.md` and the matching provider navigation entry. Document single-model and router examples, stable aliases, authentication, loopback deployment, optional `localService`, tool-template requirements, and troubleshooting.
+Keep the user guide at `extensions/llama-server/PROVIDER.md`. Document single-model and router examples, stable aliases, authentication, loopback deployment, optional `localService`, tool-template requirements, and troubleshooting.
 
-Update the plugin README and generated plugin inventory. Run the repository generators instead of editing generated reference files by hand.
+Keep development and installation instructions in `extensions/llama-server/README.md`.
 
 The docs should state that a remote endpoint needs authentication and protected networking. An unauthenticated server should bind to loopback.
 
