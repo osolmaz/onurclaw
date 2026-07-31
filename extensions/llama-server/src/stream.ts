@@ -7,6 +7,24 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
 }
 
+/** Disables chat-template reasoning when OpenClaw selected thinking off. */
+export function normalizeLlamaServerThinking(
+  payload: unknown,
+  thinkingLevel: ProviderWrapStreamFnContext["thinkingLevel"],
+): unknown {
+  if (!isRecord(payload) || thinkingLevel !== "off") {
+    return payload;
+  }
+  const existing = isRecord(payload.chat_template_kwargs) ? payload.chat_template_kwargs : {};
+  return {
+    ...payload,
+    chat_template_kwargs: {
+      ...existing,
+      enable_thinking: false,
+    },
+  };
+}
+
 /** Maps the requested response format to the shape llama-server accepts. */
 export function normalizeLlamaServerPayload(
   payload: unknown,
@@ -56,7 +74,8 @@ export function wrapLlamaServerStream(ctx: ProviderWrapStreamFnContext): StreamF
       ...options,
       onPayload: async (payload, requestModel) => {
         const customized = (await onPayload?.(payload, requestModel)) ?? payload;
-        return normalizeLlamaServerPayload(customized, options?.responseFormat);
+        const thinkingNormalized = normalizeLlamaServerThinking(customized, ctx.thinkingLevel);
+        return normalizeLlamaServerPayload(thinkingNormalized, options?.responseFormat);
       },
     });
   };
