@@ -1,5 +1,7 @@
 # OpenClaw llama-server provider implementation plan
 
+> This standalone-package plan is superseded by the [llama.cpp extension implementation plan](openclaw-llama-cpp-extension-implementation-plan.md). This file records the design and verification contract of the implementation being absorbed.
+
 ## Goal
 
 Maintain an independent `llama-server` provider in this repository. The provider connects OpenClaw to an existing llama.cpp `llama-server` process through its OpenAI-compatible HTTP API.
