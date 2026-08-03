@@ -5,6 +5,7 @@ import { hasLlamaServerAuthorizationHeader, shouldUseLlamaServerSyntheticAuth, }
 import { LLAMA_SERVER_DEFAULT_API_KEY_ENV_VAR, LLAMA_SERVER_LOCAL_AUTH_MARKER, LLAMA_SERVER_PROVIDER_ID, LLAMA_SERVER_PROVIDER_LABEL, } from "./src/defaults.js";
 import { normalizeLlamaServerProviderConfig } from "./src/endpoint.js";
 import { discoverLlamaServerProvider, listLlamaServerCatalog, prepareLlamaServerDynamicModels, resolveLlamaServerDynamicModel, } from "./src/provider.js";
+import { resolveLlamaServerLoopRecoveryConfig } from "./src/loop-recovery.js";
 import { configureLlamaServerNonInteractive, detectLlamaServerSetup, prepareLlamaServerSetup, runLlamaServerSetup, validateLlamaServerNonInteractive, } from "./src/setup.js";
 import { wrapLlamaServerStream } from "./src/stream.js";
 export default definePluginEntry({
@@ -55,7 +56,12 @@ export default definePluginEntry({
             normalizeConfig: ({ providerConfig }) => normalizeLlamaServerProviderConfig(providerConfig),
             prepareDynamicModel: prepareLlamaServerDynamicModels,
             resolveDynamicModel: (ctx) => resolveLlamaServerDynamicModel(ctx),
-            wrapStreamFn: wrapLlamaServerStream,
+            wrapStreamFn: (ctx) => wrapLlamaServerStream(ctx, {
+                loopRecovery: resolveLlamaServerLoopRecoveryConfig(api.pluginConfig),
+                onLoopRecovery: ({ model, toolName, repeatCount, collapsedCycles }) => {
+                    api.logger?.warn(`llama-server recovered a repeated tool loop: model=${model} tool=${toolName} repeats=${repeatCount} collapsed=${collapsedCycles}`);
+                },
+            }),
             ...buildProviderToolCompatFamilyHooks("llamacpp-gbnf"),
             wizard: {
                 setup: {
