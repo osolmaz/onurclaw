@@ -2,11 +2,6 @@ import type { StreamFn } from "openclaw/plugin-sdk/agent-core";
 import { streamSimple } from "openclaw/plugin-sdk/llm";
 import type { ProviderWrapStreamFnContext } from "openclaw/plugin-sdk/plugin-entry";
 import { LLAMA_SERVER_PROVIDER_ID } from "./defaults.js";
-import {
-  guardToollessRecoveryStream,
-  recoverRepeatedToolLoop,
-  type LlamaServerLoopRecoveryConfig,
-} from "./loop-recovery.js";
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
@@ -67,48 +62,15 @@ export function normalizeLlamaServerPayload(
   };
 }
 
-export type LlamaServerStreamWrapperOptions = {
-  loopRecovery?: LlamaServerLoopRecoveryConfig;
-  onLoopRecovery?: (event: {
-    model: string;
-    toolName: string;
-    repeatCount: number;
-    collapsedCycles: number;
-  }) => void;
-};
-
-/** Keeps the shared OpenAI transport and adjusts only llama-server request quirks. */
-export function wrapLlamaServerStream(
-  ctx: ProviderWrapStreamFnContext,
-  wrapperOptions: LlamaServerStreamWrapperOptions = {},
-): StreamFn {
+/** Keeps the shared OpenAI transport and adjusts only llama-server payload quirks. */
+export function wrapLlamaServerStream(ctx: ProviderWrapStreamFnContext): StreamFn {
   const underlying = ctx.streamFn ?? streamSimple;
   return (model, context, options) => {
     if (model.provider !== LLAMA_SERVER_PROVIDER_ID) {
       return underlying(model, context, options);
     }
-    const recovery = wrapperOptions.loopRecovery
-      ? recoverRepeatedToolLoop({
-          context,
-          model,
-          config: wrapperOptions.loopRecovery,
-        })
-      : {
-          context,
-          recovered: false,
-          collapsedCycles: 0,
-          repeatCount: 0,
-        };
-    if (recovery.recovered && recovery.toolName) {
-      wrapperOptions.onLoopRecovery?.({
-        model: `${model.provider}/${model.id}`,
-        toolName: recovery.toolName,
-        repeatCount: recovery.repeatCount,
-        collapsedCycles: recovery.collapsedCycles,
-      });
-    }
     const onPayload = options?.onPayload;
-    const source = underlying(model, recovery.context, {
+    return underlying(model, context, {
       ...options,
       onPayload: async (payload, requestModel) => {
         const customized = (await onPayload?.(payload, requestModel)) ?? payload;
@@ -116,6 +78,5 @@ export function wrapLlamaServerStream(
         return normalizeLlamaServerPayload(thinkingNormalized, options?.responseFormat);
       },
     });
-    return recovery.recovered ? guardToollessRecoveryStream({ model, source }) : source;
   };
 }

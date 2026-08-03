@@ -60,40 +60,6 @@
   "configSchema": {
     "type": "object",
     "additionalProperties": false,
-    "properties": {
-      "loopRecovery": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["enabled", "models"],
-        "properties": {
-          "enabled": {
-            "type": "boolean"
-          },
-          "models": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "items": {
-              "type": "string",
-              "pattern": "^llama-server\\/.+$"
-            }
-          },
-          "repeatThreshold": {
-            "type": "integer",
-            "minimum": 2,
-            "maximum": 10
-          },
-          "tools": {
-            "type": "array",
-            "minItems": 1,
-            "uniqueItems": true,
-            "items": {
-              "type": "string",
-              "minLength": 1
-            }
-          }
-        }
-      }
-    }
+    "properties": {}
   }
 }

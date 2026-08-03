@@ -2,7 +2,7 @@
 
 Connect OpenClaw to an existing llama.cpp `llama-server` process over HTTP.
 
-The plugin uses OpenClaw's shared OpenAI completions transport. It owns endpoint normalization, passive model discovery, runtime context and chat-template capability mapping, optional API-key setup, router status, and llama.cpp-safe tool schemas. An opt-in model-specific guard can recover from repeated no-progress tool calls with one text-only response. The plugin does not download, build, launch, stop, or reconfigure `llama-server`.
+The plugin uses OpenClaw's shared OpenAI completions transport. It owns endpoint normalization, passive model discovery, runtime context and chat-template capability mapping, optional API-key setup, router status, and llama.cpp-safe tool schemas. It does not download, build, launch, stop, or reconfigure `llama-server`.
 
 ## Development install
 
@@ -22,4 +22,4 @@ Run the unit tests and type check against a compatible OpenClaw source checkout:
 OPENCLAW_CHECKOUT=/path/to/openclaw ./scripts/test.sh
 ```
 
-See [PROVIDER.md](PROVIDER.md) for setup and configuration. It also documents router behavior and authentication, with a troubleshooting guide at the end.
+See [PROVIDER.md](PROVIDER.md) for setup, configuration, router behavior, authentication, and troubleshooting.

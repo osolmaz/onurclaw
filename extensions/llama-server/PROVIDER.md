@@ -138,37 +138,6 @@ The provider also reads llama.cpp's `chat_template_caps`. Tool use is enabled on
 
 Reasoning remains disabled unless you set it explicitly on the model row. llama-server reports reasoning output format but does not provide a stable per-model reasoning-capability field.
 
-### Repeated tool recovery
-
-Some local models can copy an established assistant/tool pattern even after a tool returns the same result repeatedly. The optional recovery guard detects a contiguous repeated tail before the next model call. It keeps the first tool cycle, summarizes the repeated outcomes, adds a recovery instruction, and submits that one response with an empty tool surface.
-
-Enable it only for exact model references:
-
-```json5
-{
-  plugins: {
-    entries: {
-      "llama-server": {
-        config: {
-          loopRecovery: {
-            enabled: true,
-            models: ["llama-server/qwen3.6-35b-a3b"],
-            repeatThreshold: 2,
-            tools: ["exec"],
-          },
-        },
-      },
-    },
-  },
-}
-```
-
-`repeatThreshold` accepts values from 2 through 10 and defaults to 2. `tools` defaults to `exec`. The guard compares exact normalized arguments and exact model-visible outcomes. Calls with different arguments or results do not match. Polling tools stay outside the default scope.
-
-The recovery response is buffered until complete. If the model emits another tool call despite receiving no tools, the provider replaces it with a terminal explanation, so the call cannot reach OpenClaw's tool registry. Normal responses keep their existing streaming behavior.
-
-The guard changes only the provider-bound copy of the repeated tail. OpenClaw's stored transcript remains unchanged. Keep OpenClaw's built-in `tools.loopDetection` enabled as the final run-level circuit breaker.
-
 ## Router mode
 
 Starting `llama-server` without `--model` enables router mode. OpenClaw lists the IDs and states returned by `GET /models`, including loaded, sleeping, loading, downloading, failed, and unloaded models.
