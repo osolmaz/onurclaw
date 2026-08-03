@@ -22,6 +22,7 @@ import {
   prepareLlamaServerDynamicModels,
   resolveLlamaServerDynamicModel,
 } from "./src/provider.js";
+import { resolveLlamaServerLoopRecoveryConfig } from "./src/loop-recovery.js";
 import {
   configureLlamaServerNonInteractive,
   detectLlamaServerSetup,
@@ -82,7 +83,15 @@ export default definePluginEntry({
       normalizeConfig: ({ providerConfig }) => normalizeLlamaServerProviderConfig(providerConfig),
       prepareDynamicModel: prepareLlamaServerDynamicModels,
       resolveDynamicModel: (ctx) => resolveLlamaServerDynamicModel(ctx),
-      wrapStreamFn: wrapLlamaServerStream,
+      wrapStreamFn: (ctx) =>
+        wrapLlamaServerStream(ctx, {
+          loopRecovery: resolveLlamaServerLoopRecoveryConfig(api.pluginConfig),
+          onLoopRecovery: ({ model, toolName, repeatCount, collapsedCycles }) => {
+            api.logger?.warn(
+              `llama-server recovered a repeated tool loop: model=${model} tool=${toolName} repeats=${repeatCount} collapsed=${collapsedCycles}`,
+            );
+          },
+        }),
       ...buildProviderToolCompatFamilyHooks("llamacpp-gbnf"),
       wizard: {
         setup: {
