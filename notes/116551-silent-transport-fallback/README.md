@@ -4,7 +4,7 @@ These two patches preserve the full silent-transport fallback that abarsegov tri
 
 ## Contents
 
-`af3506f2ae0-dispatch-commit.patch` ("fix(agents): commit admitted prompt state at provider dispatch") moves projection state, the provider call counter, and the user-turn-sent record from the admission callback to a dispatch hook that fires when the payload chain completes. It includes the first fallback layer: a transport that never fires `onPayload` has its pending commit adopted when the next provider call begins.
+`af3506f2ae0-dispatch-commit.patch` ("fix(agents): commit admitted prompt state at provider dispatch") moves projection state, the provider call counter, and the user-turn-sent record from the admission callback to a dispatch hook that fires when the payload chain completes. It includes the first fallback layer, which adopts a silent transport's pending commit when the next provider call begins.
 
 `8b2d2429547-silent-settle.patch` ("fix(agents): settle silent transport prompt state at submission end") is the second fallback layer. A still-unobserved pending commit settles when the submission completes, so the final provider call of a silent transport is not dropped. It includes its regression test.
 
