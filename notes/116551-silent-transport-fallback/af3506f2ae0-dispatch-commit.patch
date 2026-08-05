@@ -1,0 +1,337 @@
+From af3506f2ae0c6ad6bed6503f43eb15f721787d35 Mon Sep 17 00:00:00 2001
+From: Onur Solmaz <2453968+osolmaz@users.noreply.github.com>
+Date: Wed, 5 Aug 2026 00:44:20 +0800
+Subject: [PATCH] fix(agents): commit admitted prompt state at provider
+ dispatch
+
+---
+ .../provider-prompt-state.test.ts             |  43 +++++++-
+ .../provider-prompt-state.ts                  |  24 +++-
+ .../run/attempt-prompt-submit.test.ts         | 104 ++++++++++++++++++
+ .../run/attempt-prompt-submit.ts              |  54 ++++++---
+ 4 files changed, 203 insertions(+), 22 deletions(-)
+
+diff --git a/src/agents/embedded-agent-runner/provider-prompt-state.test.ts b/src/agents/embedded-agent-runner/provider-prompt-state.test.ts
+index 0a07b96ef66..4e2eed0ef98 100644
+--- a/src/agents/embedded-agent-runner/provider-prompt-state.test.ts
++++ b/src/agents/embedded-agent-runner/provider-prompt-state.test.ts
+@@ -446,9 +446,9 @@ describe("provider prompt state", () => {
+       caught = error;
+     }
+     expect(String(caught)).toContain("Context overflow: final provider payload exceeds");
+-    expect(
+-      isLikelyContextOverflowError(caught instanceof Error ? caught.message : undefined),
+-    ).toBe(true);
++    expect(isLikelyContextOverflowError(caught instanceof Error ? caught.message : undefined)).toBe(
++      true,
++    );
+     expect(networkSend).not.toHaveBeenCalled();
+ 
+     markLastProviderPromptContextRejected(state);
+@@ -459,6 +459,43 @@ describe("provider prompt state", () => {
+     clearProviderPromptState(runId);
+   });
+ 
++  it("runs the installed dispatch hook only after every pre-dispatch check passes", async () => {
++    const runId = "dispatch-hook-boundary";
++    const state = getProviderPromptState(runId);
++    const context = { systemPrompt: "system", messages: [], tools: [] } as Context;
++    const dispatch = vi.fn();
++    const transport = vi.fn<StreamFn>(async (_model, _context, options) => {
++      await options?.onPayload?.({ input: "raw", model: model.id }, model);
++      return createResultStream("stop");
++    });
++    const wrapped = wrapStreamFnWithProviderPromptState({
++      streamFn: transport,
++      state,
++      effectiveContextTokenBudget: 128_000,
++    });
++    const removeHooks = installProviderPromptContextAdmission(
++      state,
++      (_model, providerContext) => providerContext,
++      dispatch,
++    );
++
++    const first = await wrapped(model, context);
++    await first.result();
++    expect(dispatch).toHaveBeenCalledTimes(1);
++
++    await expect(
++      wrapped(model, context, {
++        onPayload: () => {
++          throw new Error("payload hook failed");
++        },
++      }),
++    ).rejects.toThrow("payload hook failed");
++    expect(dispatch).toHaveBeenCalledTimes(1);
++
++    removeHooks();
++    clearProviderPromptState(runId);
++  });
++
+   it("flat-rates base64 media blobs in the final payload instead of counting serialized bytes", async () => {
+     const runId = "final-payload-media";
+     const state = getProviderPromptState(runId);
+diff --git a/src/agents/embedded-agent-runner/provider-prompt-state.ts b/src/agents/embedded-agent-runner/provider-prompt-state.ts
+index b48d4bec481..c8c55cd57ca 100644
+--- a/src/agents/embedded-agent-runner/provider-prompt-state.ts
++++ b/src/agents/embedded-agent-runner/provider-prompt-state.ts
+@@ -26,6 +26,12 @@ export type ProviderPromptState = {
+     context: Context,
+     accountingContext?: ProviderPromptAccountingContext,
+   ) => Context;
++  /** Runs once the final payload passed every pre-dispatch check, right before transport send. */
++  promptDispatch?: () => void;
++  /** Set when the current attempt's transport invoked its payload hook at least once. */
++  attemptPayloadObserved?: boolean;
++  /** Observation result of the previous attempt; lets admission settle silent transports. */
++  previousAttemptPayloadObserved?: boolean;
+ };
+ 
+ const PROVIDER_PROMPT_STATES_KEY = Symbol.for("openclaw.providerPromptStates");
+@@ -67,16 +73,22 @@ export function clearProviderPromptState(runId: string): void {
+   providerPromptStates.delete(runId);
+ }
+ 
+-/** Installs a run-scoped admission hook at the innermost provider-context boundary. */
++/** Installs run-scoped admission and dispatch hooks at the innermost provider boundary. */
+ export function installProviderPromptContextAdmission(
+   state: ProviderPromptState,
+   admission: NonNullable<ProviderPromptState["contextAdmission"]>,
++  dispatch?: ProviderPromptState["promptDispatch"],
+ ): () => void {
+-  const previous = state.contextAdmission;
++  const previousAdmission = state.contextAdmission;
++  const previousDispatch = state.promptDispatch;
+   state.contextAdmission = admission;
++  state.promptDispatch = dispatch;
+   return () => {
+     if (state.contextAdmission === admission) {
+-      state.contextAdmission = previous;
++      state.contextAdmission = previousAdmission;
++    }
++    if (state.promptDispatch === dispatch) {
++      state.promptDispatch = previousDispatch;
+     }
+   };
+ }
+@@ -150,6 +162,8 @@ export function wrapStreamFnWithProviderPromptState(params: {
+ }): StreamFn {
+   return async (model, context, options) => {
+     params.state.lastAttempt = undefined; // Custom transports must not leave a stale candidate.
++    params.state.previousAttemptPayloadObserved = params.state.attemptPayloadObserved;
++    params.state.attemptPayloadObserved = false;
+     const accountingContext = readProviderPromptAccountingContext(options);
+     const admittedContext =
+       context && typeof context === "object" && params.state.contextAdmission
+@@ -159,6 +173,7 @@ export function wrapStreamFnWithProviderPromptState(params: {
+     const observedOptions = withoutProviderPromptAccountingContext({
+       ...options,
+       onPayload: async (payload, payloadModel) => {
++        params.state.attemptPayloadObserved = true;
+         const replacement = await originalOnPayload?.(payload, payloadModel);
+         const finalPayload = replacement === undefined ? payload : replacement;
+         const snapshot = snapshotProviderPrompt({
+@@ -172,6 +187,9 @@ export function wrapStreamFnWithProviderPromptState(params: {
+           payload: finalPayload,
+           effectiveContextTokenBudget: params.effectiveContextTokenBudget,
+         });
++        // Every pre-dispatch check passed and the transport sends next; admitted
++        // candidates may only be adopted from this point on.
++        params.state.promptDispatch?.();
+         return finalPayload;
+       },
+     });
+diff --git a/src/agents/embedded-agent-runner/run/attempt-prompt-submit.test.ts b/src/agents/embedded-agent-runner/run/attempt-prompt-submit.test.ts
+index c7445f3d729..b8cf7cd9d19 100644
+--- a/src/agents/embedded-agent-runner/run/attempt-prompt-submit.test.ts
++++ b/src/agents/embedded-agent-runner/run/attempt-prompt-submit.test.ts
+@@ -352,4 +352,108 @@ describe("submitEmbeddedAttemptPrompt", () => {
+       content: [{ type: "text", text: "old answer" }],
+     });
+   });
++
++  it("records the prompt as sent only after the payload reaches transport", async () => {
++    const { activeSession } = createSession();
++    const input = createBaseInput();
++    activeSession.agent.state.messages = [
++      { role: "user", content: "first turn", idempotencyKey: "turn-1", timestamp: 1 },
++    ] as AgentMessage[];
++    activeSession.agent.streamFn = wrapProviderBoundary((async (
++      _model: unknown,
++      _context: unknown,
++      options: unknown,
++    ) => {
++      await (
++        options as { onPayload?: (payload: unknown, model: unknown) => Promise<unknown> }
++      ).onPayload?.({ input: "raw" }, {});
++      return undefined as never;
++    }) as unknown as StreamFn);
++
++    await submitEmbeddedAttemptPrompt({
++      ...input,
++      activeSession,
++      promptActiveSession: async () => {
++        await activeSession.agent.streamFn(
++          {} as never,
++          { messages: activeSession.messages } as never,
++          {} as never,
++        );
++      },
++    });
++
++    expect(input.sessionPromptState.sentUserTurnIds.has("turn-1")).toBe(true);
++  });
++
++  it("does not record an unsent prompt as sent when a payload hook fails before dispatch", async () => {
++    const { activeSession } = createSession();
++    const input = createBaseInput();
++    activeSession.agent.state.messages = [
++      { role: "user", content: "first turn", idempotencyKey: "turn-1", timestamp: 1 },
++    ] as AgentMessage[];
++    const dispatchSettled = vi.fn();
++    activeSession.agent.streamFn = wrapProviderBoundary((async (
++      _model: unknown,
++      _context: unknown,
++      options: unknown,
++    ) => {
++      await (
++        options as { onPayload?: (payload: unknown, model: unknown) => Promise<unknown> }
++      ).onPayload?.({ input: "raw" }, {});
++      dispatchSettled();
++      return undefined as never;
++    }) as unknown as StreamFn);
++
++    await submitEmbeddedAttemptPrompt({
++      ...input,
++      activeSession,
++      promptActiveSession: async () => {
++        await expect(
++          activeSession.agent.streamFn(
++            {} as never,
++            { messages: activeSession.messages } as never,
++            {
++              onPayload: () => {
++                throw new Error("payload hook failed");
++              },
++            } as never,
++          ),
++        ).rejects.toThrow("payload hook failed");
++      },
++    });
++
++    expect(dispatchSettled).not.toHaveBeenCalled();
++    expect(input.sessionPromptState.sentUserTurnIds.has("turn-1")).toBe(false);
++  });
++
++  it("adopts an unobserved transport candidate when the next provider call begins", async () => {
++    const { activeSession } = createSession();
++    const input = createBaseInput();
++    activeSession.agent.state.messages = [
++      { role: "user", content: "first turn", idempotencyKey: "turn-1", timestamp: 1 },
++    ] as AgentMessage[];
++    const silentDispatch = vi.fn(() => undefined as never);
++    activeSession.agent.streamFn = wrapProviderBoundary(silentDispatch as unknown as StreamFn);
++
++    await submitEmbeddedAttemptPrompt({
++      ...input,
++      activeSession,
++      promptActiveSession: async () => {
++        await activeSession.agent.streamFn(
++          {} as never,
++          { messages: activeSession.messages } as never,
++          {} as never,
++        );
++        expect(input.sessionPromptState.sentUserTurnIds.has("turn-1")).toBe(false);
++        await activeSession.agent.streamFn(
++          {} as never,
++          { messages: activeSession.messages } as never,
++          {} as never,
++        );
++      },
++    });
++
++    expect(silentDispatch).toHaveBeenCalledTimes(2);
++    expect(input.sessionPromptState.sentUserTurnIds.has("turn-1")).toBe(true);
++  });
+ });
+diff --git a/src/agents/embedded-agent-runner/run/attempt-prompt-submit.ts b/src/agents/embedded-agent-runner/run/attempt-prompt-submit.ts
+index 56ae12d3474..bdf4d4d99af 100644
+--- a/src/agents/embedded-agent-runner/run/attempt-prompt-submit.ts
++++ b/src/agents/embedded-agent-runner/run/attempt-prompt-submit.ts
+@@ -91,9 +91,21 @@ export async function submitEmbeddedAttemptPrompt(input: {
+ 
+   const installProviderPromptHistoryTransform = (): (() => void) => {
+     let providerCalls = 0;
++    let pendingDispatchCommit: (() => void) | undefined;
++    const providerPromptState = getProviderPromptState(attempt.runId);
+     return installProviderPromptContextAdmission(
+-      getProviderPromptState(attempt.runId),
++      providerPromptState,
+       (_model, context, accountingContext) => {
++        if (pendingDispatchCommit) {
++          // A transport that never observes payloads settles silently; adopt its candidate when
++          // the next provider call begins so precheck gating keeps working for it. An observed
++          // but never dispatched candidate means a payload hook failed pre-dispatch: drop it.
++          const commit = pendingDispatchCommit;
++          pendingDispatchCommit = undefined;
++          if (providerPromptState.previousAttemptPayloadObserved !== true) {
++            commit();
++          }
++        }
+         const admission = admitProviderPrompt({
+           context,
+           accountingContext,
+@@ -114,24 +126,34 @@ export async function submitEmbeddedAttemptPrompt(input: {
+           );
+           throw new MidTurnPrecheckSignal(admission.request);
+         }
+-        replaceToolResultPromptProjectionState(
+-          input.toolResultPromptProjectionState,
+-          admission.projectionState,
+-        );
+-        providerCalls += 1;
+         const providerMessages = admission.context.messages as AgentMessage[];
+-        // Mark the current turn sent at provider dispatch so late media appends
+-        // instead of rewriting its prompt-cache slot (#99495).
+-        markSessionUserTurnsSent(input.sessionPromptState, providerMessages);
+-        const recorder = attempt.userTurnTranscriptRecorder;
+-        if (
+-          recorder &&
+-          hasSessionUserTurnBeenSent(input.sessionPromptState, recorder.message) !== false
+-        ) {
+-          recorder.markSentToProvider?.();
+-        }
++        const admittedProjectionState = admission.projectionState;
++        // Adopt the admitted candidate only once the final payload actually reaches transport,
++        // so a pre-dispatch failure cannot record an unsent prompt as sent.
++        pendingDispatchCommit = () => {
++          replaceToolResultPromptProjectionState(
++            input.toolResultPromptProjectionState,
++            admittedProjectionState,
++          );
++          providerCalls += 1;
++          // Mark the current turn sent at provider dispatch so late media appends
++          // instead of rewriting its prompt-cache slot (#99495).
++          markSessionUserTurnsSent(input.sessionPromptState, providerMessages);
++          const recorder = attempt.userTurnTranscriptRecorder;
++          if (
++            recorder &&
++            hasSessionUserTurnBeenSent(input.sessionPromptState, recorder.message) !== false
++          ) {
++            recorder.markSentToProvider?.();
++          }
++        };
+         return admission.context;
+       },
++      () => {
++        const commit = pendingDispatchCommit;
++        pendingDispatchCommit = undefined;
++        commit?.();
++      },
+     );
+   };
+ 
+-- 
+2.43.0
+
