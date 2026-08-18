@@ -1,121 +1,252 @@
-# Provider request egress design
+---
+title: Provider request egress plan
+author: Onur Solmaz <2453968+osolmaz@users.noreply.github.com>
+date: 2026-08-05
+updated: 2026-08-18
+---
 
-This document proposes a long-term architecture for the provider-prompt boundary in OpenClaw. In short, build the real request first, then measure and decide on that exact object, and stop keeping separate records of things that might happen. PR #116551 ships as the bridge, and its scaffolding gets deleted at the end.
+# Provider request egress plan
 
-## The plain version
+OpenClaw must base prompt reduction on the request that it will send. This plan starts from current `main`. PR [#116551](https://github.com/openclaw/openclaw/pull/116551) remains useful test and design evidence. New work starts from a fresh branch.
 
-OpenClaw decides whether to shorten the conversation by measuring one version of the prompt, then sends a different version to the model. Wrappers change the request after it gets measured, so the measurement can be wrong in both directions. The model loses detail it could have kept, or the provider rejects a request we thought would fit.
+## Current status
 
-The same thing happens with bookkeeping. OpenClaw writes down "this turn was sent" before the request provably goes out. When the request dies on the way, the record is wrong, and other behavior built on that record goes wrong with it.
+Current `main` includes [#124267](https://github.com/openclaw/openclaw/pull/124267), which anchors prompt pressure to provider-reported usage when that usage is available in the expected form. This helps, but it does not establish that OpenClaw measures the final provider request.
 
-The fix has two parts. Build the actual request first and measure that, so the measured thing and the sent thing are the same object. Then replace every "we think it happened" record with a record made by the one piece of code that truly sent it.
+A deterministic local OpenAI Responses test on `f99a0c638ac555d82093779c13403d123fe17961` reproduced the remaining failure. The test requested 30 sequential tool calls with a 50,000-character result from each call. OpenClaw stopped after six calls.
+
+The provider reported 81,684 input tokens for the last accepted request. The prompt budget was 180,000 tokens, leaving 98,316 tokens of headroom. The mid-turn precheck estimated 189,879 tokens and raised a context-overflow error. Its estimate exceeded the provider value by 108,195 tokens, or 2.325 times the provider value.
+
+The earlier live comparison in [#116551](https://github.com/openclaw/openclaw/pull/116551#issuecomment-5241430029) showed the same class of failure against a real provider. The base revision stopped after 16 of 30 tool calls and compacted twice. The PR revision completed all 30 calls without compaction. The sanitized evidence is also available in the linked [test record](https://gist.github.com/abarsegov/56363c22b4d5359bbb3b523d22037be4).
+
+These results justify a structural fix. A small patch that copies OpenAI usage into another field can delay the failure, but it remains one request behind and cannot see later payload changes.
 
 ## Problem
 
-OpenClaw decides whether to compact or send by estimating the token pressure of an agent-level `Context`. The bytes that actually leave are produced later, inside each transport, and then rewritten by an open chain of `onPayload` hooks.
+OpenClaw estimates prompt pressure from an agent-level context. Provider code later builds the wire request, and payload wrappers can then change messages, tools, media, and request options. Admission can therefore measure one prompt and send another.
 
-The Codex web-search wrapper swaps a 498-token managed tool for a 23-token native one after the estimate is taken. Code mode filters the tool list in the same hook. [`createOpenAICompletionsExtraBodyWrapper`](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/agents/embedded-agent-runner/extra-params.ts#L789) lets user config overwrite `messages` and `tools` wholesale. Each of these is a place where the measured object and the sent object diverge, and each review round of PR #116551 has found another one.
+The Codex web-search wrapper can replace a large managed tool with a small native tool. Code mode can filter the tool list. Configured `extra_body` values can replace `messages` or `tools`. Future plugins can add more payload changes through the same hook chain.
 
-Alongside the estimate, the runner keeps records of things it predicts will happen. [`sentUserTurnIds`](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/agents/embedded-agent-runner/session-prompt-state.ts), the tool-result projection adoption, and the [`providerCalls`](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/agents/embedded-agent-runner/run/attempt-prompt-submit.ts#L103) counter are all written by code that has not yet observed a request leaving the process.
+The runner also records predicted events in several places. Sent-turn state, projection adoption, and provider-call counters are committed at convenient points instead of being derived from an observed request lifecycle. Moving those commit points does not give the events one clear owner.
 
-PR #116551 dragged those writes to a dispatch-commit hook that fires after the final pre-send check. That is later than before, but it is still a prediction. The patches are individually correct and collectively non-convergent, because the architecture keeps producing new divergence points faster than they can be guarded.
+## Requirements
 
-## Root cause
+The implementation must satisfy these rules:
 
-The request does not exist when the decision is made. Each transport builds its wire body at the last possible moment: `buildParams` at [openai-completions.ts:173](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/packages/ai/src/providers/openai-completions.ts#L173), [openai-responses-shared.ts:575](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/packages/ai/src/providers/openai-responses-shared.ts#L575), [google-shared.ts:433](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/packages/ai/src/providers/google-shared.ts#L433), and [anthropic.ts:388](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/packages/ai/src/providers/anthropic.ts#L388).
+- Admission measures the final provider-visible request.
+- Dispatch sends the same prepared request that admission measured.
+- An uncertain estimate does not cause destructive compaction.
+- Completed tool calls are never replayed during context recovery.
+- Tool-result reduction happens before conversation compaction.
+- Every built-in transport reports the same request lifecycle stages.
+- Provider and plugin compatibility changes follow a bounded migration.
+- Logs and metrics do not contain prompt text, tool output, media, or credentials.
 
-The only seam before dispatch is the `onPayload` callback, which exists for patching. It was never meant for observation. Because patching was the only seam, fifteen-odd wrappers in [extra-params.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/agents/embedded-agent-runner/extra-params.ts) and [stream-wrappers/openai.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/llm/providers/stream-wrappers/openai.ts) stacked onto it. Anything upstream that wants to know what will be sent must simulate the whole stack.
+## Scope
 
-The accounting context in [provider-prompt-accounting.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/llm/providers/stream-wrappers/provider-prompt-accounting.ts) is exactly that simulation. It is a hidden-symbol side channel that every payload-mutating wrapper must mirror by hand, and [extensions/openai/native-web-search.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/extensions/openai/native-web-search.ts) already carries a hand-written duplicate of its own payload patch just so admission measures the right tool surface. A design that requires every future wrapper author to remember a parallel bookkeeping call does not converge.
+The first behavior change covers OpenAI Responses, including the ChatGPT and Codex variants that share its request family. It includes request construction, payload transforms, prompt measurement, tool-result reduction, dispatch, and lifecycle records for that family.
 
-The second cause is that "this request was sent" has no owner. Nothing records dispatch as a fact, so each consumer invented its own marker: `markSentToProvider`, `sentUserTurnIds`, the projection adoption, the `providerCalls` counter. All of them commit at points chosen because they were probably safe, without being observed. When the point turns out to be wrong, the records lie, and the fix so far has been to move the commit point again.
+Later changes apply the same contract to OpenAI Completions, Anthropic, Google, Mistral, Bedrock, Ollama, and bundled extension transports. Each provider family moves in a separate reviewable change.
+
+## Non-goals
+
+This work does not require an exact tokenizer for every model. It does not change summary quality, summary format, or the normal tool execution contract. It does not rewrite response-only stream wrappers. It does not merge or rebase the old #116551 branch.
 
 ## Design
 
-The target architecture makes the request a first-class object. Two registry-level operations exist per provider family, and one ordered transform plan runs between building and measuring.
+### Prepared provider request
 
-### Request materialization
+Each provider family splits request construction from dispatch:
 
-Each provider module in packages/ai splits its lifecycle function at the point where `buildParams` returns. The build half becomes an exported `materializeProviderRequest(model, context, options)` that produces the exact wire body for that family. The send half becomes `dispatchProviderRequest(materialized, options)`, which takes the materialized object and streams the response.
+```ts
+interface ProviderEgress<Body> {
+  prepare(context: Context, options: StreamOptions): Promise<PreparedProviderRequest<Body>>;
+  dispatch(request: PreparedProviderRequest<Body>, options: DispatchOptions): AssistantMessageEventStream;
+}
 
-The existing `StreamFn` contract survives as the composition of the two halves, so callers that never cared about the boundary keep working unchanged. Payload shapes stay family-specific. The runtime registry in [src/llm/stream.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/llm/stream.ts) gains the two operations next to `stream`, and a family that has not been split yet falls through to the composed path.
+interface PreparedProviderRequest<Body> {
+  requestId: string;
+  family: string;
+  body: Body;
+  digest: string;
+  measurement: PromptMeasurement;
+  projectionReceipt: ProjectionReceipt;
+}
+```
 
-### The egress plan
+The current `StreamFn` API remains available as `prepare()` followed by `dispatch()`. Callers that do not need admission continue to use `stream()` without a behavior change.
 
-Every transform that changes what the model sees moves out of `onPayload` closures into a `requestTransforms` array on the stream options. The transport applies the plan immediately after the body is built and before anything measures it.
+A prepared request is immutable by contract. Production code sends its stored body without rebuilding it. Development builds compute a digest before admission and assert that dispatch receives the same digest.
 
-The runner composes the plan once per run from the same sources that build the wrapper onion today. Config-driven transforms come from extra-params.ts (`extra_body`, `chat_template_kwargs`, `parallel_tool_calls`, store stripping). Provider-family transforms come from stream-wrappers/openai.ts (service tier, text verbosity, reasoning effort, Responses payload policy, code-mode filtering, the Codex web-search swap). Plugin transforms arrive through a new plugin SDK seam that replaces `streamWithPayloadPatch` for request mutation. Order within the plan reproduces today's onion order so materialized bytes do not drift during migration.
+### Ordered request transforms
 
-Stream wrappers do not disappear. Wrappers that normalize the response side, such as DeepSeek `reasoning_content` handling and MiMo thinking-as-text, keep the `StreamFn` shape because they never touch prompt size. The plan enforces one narrow rule that is easy to check. After `requestTransforms` runs, nothing may change the request. `onPayload` stays temporarily as a deprecated observation-only hook and is removed at the end of the migration.
+Every change that affects model-visible input moves into an ordered `requestTransforms` plan. The provider builds its base body, applies the plan once, and then creates the prepared request.
 
-### Admission on the real object
+The plan includes config changes such as `extra_body`, provider-family changes such as service tier and reasoning options, code-mode filtering, native web-search conversion, and plugin request transforms. The migration preserves the current wrapper order so the provider-visible request and prompt-cache prefix do not change by accident.
 
-The runner's outermost streamFn wrapper, today installed through `installProviderPromptContextAdmission`, becomes straight-line code that projects the context, materializes the request, measures it, decides, then dispatches.
+Response-only wrappers remain stream wrappers. No code can change the request after the transform plan completes.
 
-[provider-prompt-admission.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/agents/embedded-agent-runner/run/provider-prompt-admission.ts) survives with its projection loop intact, because tool-result truncation legitimately operates on messages before the request exists. Its measurement input changes from `context.messages` plus the accounting context to the exact materialized request. The overflow loop becomes project, materialize, measure, then on overflow reproject tighter and rematerialize, which costs one extra build only on the overflow path.
+### Prompt measurement
 
-`MidTurnPrecheckSignal` and its re-raise dance in [attempt-prompt-submit.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/agents/embedded-agent-runner/run/attempt-prompt-submit.ts) stay for now. They are AgentCore control flow, and they can be revisited once AgentCore grows a typed pre-dispatch rejection channel.
+The request body is exact, but its token count is not always exact. The measurement records both the value and the evidence behind it:
 
-### Disposition of current mechanisms
+```ts
+type PromptMeasurement = {
+  tokens: number;
+  source: "provider_usage" | "provider_tokenizer" | "bounded_estimate" | "local_estimate";
+  certainty: "authoritative" | "bounded" | "uncertain";
+  outputReserveTokens: number;
+};
+```
 
-[provider-prompt-state.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/agents/embedded-agent-runner/provider-prompt-state.ts) is deleted at the end of the migration. The identical-replay guard is genuinely useful and moves into the runner's attempt state as a plain object passed explicitly, computed on the materialized request. The global singleton keyed by runId and its `clearProviderPromptState` lifecycle go away.
+Provider usage is authoritative only for the request digest that produced it. A later request can use that value as an anchor, but it must account for changes in the newly prepared body.
 
-The final-payload overflow guard becomes a development-build assertion that measured digest equals dispatched digest. It stays through the migration as the canary that proves nothing downstream mutates the request, then gets deleted once the transform plan is the only mutation path.
+Admission has three outcomes:
 
-The `contextAdmission` and `promptDispatch` hook installation is replaced by the straight-line materialize/dispatch code. The `attemptPayloadObserved` settling fields exist only to cope with transports that silently skip `onPayload`, and materialization is not skippable, so they are deleted.
+- `fits` means reliable evidence places the request below the budget.
+- `too_large` means reliable evidence places it above the budget.
+- `uncertain` means the estimate crosses the boundary without enough evidence for a destructive change.
 
-provider-prompt-accounting.ts is deleted entirely, along with its propagation code in [stream-wrappers/openai.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/llm/providers/stream-wrappers/openai.ts) and [extensions/openai/native-web-search.ts](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/extensions/openai/native-web-search.ts). Measuring after the transform plan makes the side channel's job structural.
+An uncertain request is sent. If the provider returns a typed context-limit error, OpenClaw reduces the context and retries once. This follows the safer part of Pi's behavior while still measuring the final OpenClaw request.
 
-## Truth from proof
+### Bounded admission loop
 
-The doctrine here is single-owner recording rather than zero recording. A dispatch is a real event, and the code that performs it is the only code allowed to record it.
+Admission runs immediately before each provider call, including calls inside a tool loop:
 
-The dispatcher emits one event, `provider.request.dispatched`, carrying the run id, the request digest, the ids of user turns contained in the request, and the projection candidate identity. The event lands in the run's event stream, the same path that already carries `provider.prompt.observed`. Everything the extra records answered is derived from that event plus the append-only transcript.
+1. Project the current context.
+2. Prepare and measure the provider request.
+3. Dispatch when it fits or remains uncertain.
+4. If it is too large, reduce old tool results toward an explicit target.
+5. Prepare and measure again.
+6. Compact only when reduction cannot reach the target.
 
-For `sentUserTurnIds`, the question consumers actually ask is whether the bytes of a user turn crossed the LLM boundary, because that decides whether late-resolved media appends as a new turn or rewrites the original (the #99495 fix). A turn counts as sent if any dispatch event in this session includes its idempotency key. Across process restarts, where the in-memory event stream is gone, it counts as sent if the transcript contains an assistant message after it.
+The loop has a fixed iteration limit. Every reduction step must produce a smaller prepared request. Context recovery changes only the next provider projection, so completed tools remain completed.
 
-An aborted request still counts as sent, because dispatch happened and the provider may have cached the prefix. The event is emitted when the transport hands the body to the HTTP client, so an abort between dispatch and first token retains it. A turn dispatched in a process that crashed before any response persisted is treated as unsent after restart. That can rewrite one prompt-cache slot, and it trades that rare cache miss for never lying in the durable record.
+### Request lifecycle
 
-For projection adoption, the candidate projection travels inside the materialized request. Adoption becomes the line after `dispatchProviderRequest` is called, in the same function, with no `pendingDispatchCommit` closure trampolined through a hook. Mid-turn tool loops need no special casing. Each iteration is one materialize/dispatch pair emitting one event, and sent turns accumulate monotonically.
+One lifecycle record replaces the current collection of predictive flags:
 
-For `providerCalls`, the counter's only job is gating the mid-turn precheck to calls after the first. It is replaced by counting dispatch events for the run, and probably by nothing, because once admission measures the real request cheaply on every call, gating the precheck to later calls loses its reason to exist. That last simplification is decided in the step that lands it.
+```text
+prepared
+admitted
+dispatch_started
+provider_accepted
+completed | failed | outcome_unknown
+```
 
-## Migration
+Different consumers use different facts. Prompt-cache accounting can use `dispatch_started`. Accepted-call metrics use `provider_accepted`. Retry policy treats a connection loss after dispatch but before acknowledgement as `outcome_unknown`.
 
-Each step lands independently and names what it deletes.
+Sent-turn state is derived from these records instead of a separate mutable set. Projection adoption is tied to the prepared request and committed at its defined lifecycle stage. Provider-call counts come directly from lifecycle records.
 
-**Step 1, shipped.** PR #116551 is the bridge, carrying admission at the provider boundary, the accounting context, the final-payload guard, and dispatch-boundary commits. Everything below removes it piece by piece.
+### Legacy provider capability
 
-**Step 2, transport split.** Split each provider lifecycle in packages/ai at the `buildParams` return into exported materialize and dispatch halves, with the existing stream entry becoming their composition. One PR per family, or two families per PR: openai-completions, openai-responses-shared plus openai-chatgpt-responses, google-shared, anthropic, mistral. Pure refactor, proven by existing suites plus new materialization snapshot tests. Nothing deleted yet.
+The provider registry advertises whether a family supports prepared requests. Converted built-in providers use prepared admission. Unconverted providers keep the current stream path during migration and report that they lack this capability.
 
-**Step 3, transform plan.** Add `requestTransforms` to the stream options in @openclaw/ai and apply it in each transport after build. Convert the payload-mutating wrappers in extra-params.ts and stream-wrappers/openai.ts, and the two web-search wrappers, into registered transforms. Each converted wrapper is deleted in the same PR, and its `onPayload` closure with it. The delete criterion per PR is that the converted path no longer appears in an `onPayload` grep of the touched files and the materialized-bytes snapshot for that family is unchanged.
+A provider that advertises prepared-request support must never fall back silently. Missing preparation, measurement, or lifecycle data is an error in development and test builds. Production diagnostics identify the provider family and failed stage without recording request content.
 
-**Step 4, exact admission.** Rewire the runner's streamFn wrapper to materialize, measure, decide, dispatch. Point provider-prompt-admission.ts at the materialized request. Delete provider-prompt-accounting.ts, its propagation in stream-wrappers/openai.ts and extensions/openai/native-web-search.ts, and the accounting parameter threading in provider-prompt-state.ts. Demote the final-payload guard to a dev-build digest assertion. The delete criterion is that `readProviderPromptAccountingContext` has no callers.
+The public plugin mutation hook gets a documented transform replacement and a bounded deprecation period. Observation hooks can remain, but observation cannot change a prepared request.
 
-**Step 5, dispatch events.** Emit `provider.request.dispatched` from the dispatch call site and derive turn-sent state from it. Migrate the recorder's `markSentToProvider` callers to the derivation. Delete `sentUserTurnIds`, `markSessionUserTurnsSent`, `hasSessionUserTurnBeenSent`, the `pendingDispatchCommit` closure, the `promptDispatch` hook, and the `providerCalls` counter. The delete criterion is that session-prompt-state.ts contains only the projection types and the event-derived accessors.
+## Implementation sequence
 
-**Step 6, state teardown.** Move the replay guard into attempt-owned state and delete provider-prompt-state.ts, including the global singleton, `clearProviderPromptState`, the observation-settling fields, and the dev-build digest assertion once it has run clean through a release cycle. The delete criterion is that the file is gone and no `Symbol.for("openclaw.providerPromptStates")` remains.
+Each pull request starts from current `main` and leaves the repository in a working state.
 
-**Step 7, SDK deprecation.** Deprecate request mutation through `onPayload` and `streamWithPayloadPatch` in the plugin SDK under the shipped-contract exception. The transform seam is the new API, bundled callers are already migrated in step 3, and external plugins get a deprecation window and a documented migration before the mutating form is removed.
+### OpenAI Responses transport split
 
-**Step 8, calibration.** Optional and last, this step adds observed-usage margin calibration and edge-zone count-tokens consultation.
+Split OpenAI Responses request construction from dispatch. Keep `stream()` as their composition and make no admission change. Add snapshots that compare the old wire body with the prepared body for text, tools, media, reasoning, web search, and configured payload overrides.
 
-## Risks and bounds
+The gate is byte-equivalent provider input for the test matrix and no change to public stream behavior.
 
-Late-media prompt-cache behavior (#99495) depends on the sent marker firing at the right moment. The dispatch event fires at the same boundary the current `promptDispatch` hook does, so behavior is preserved. The existing late-media regression test plus one new fault-injection case, media resolving after dispatch and appending instead of rewriting, bound it.
+### OpenAI transform plan and admission
 
-Third-party transports that implement neither the split nor `onPayload` are today's silent divergence case. In the new design the registry knows whether a family provides materialize, and a family that does not falls back to context-level estimation with the `pressureSource` recorded as an estimate, surfaced in the context-budget status instead of silently trusted. That is strictly better than today, and the plugin SDK surface makes the capability explicit for plugin-provided transports.
+Convert every OpenAI Responses payload mutation to the ordered transform plan. Add prepared-request measurement and the bounded admission loop. Add the deterministic 30-call regression and a true-overflow case.
 
-Context-engine compaction ownership does not move. Admission still returns a recovery route and the runner still compacts through the context engine; only the measurement input changed. Compaction sees agent messages while admission measures wire bytes, so the recovery request keeps reporting both the overflow tokens and the reducible chars, as it does now.
+Remove the hard mid-turn estimate for this capable path. Do not add the accounting side channel, global provider-prompt state, or hook propagation from #116551.
 
-Performance of building before deciding is bounded by what already happens. The current code walks every message in the estimator and then [`stableStringify`s the full payload for the replay digest on every call](https://github.com/openclaw/openclaw/blob/3470f3235230f9e840bb27f68196976868e5ad34/src/agents/embedded-agent-runner/provider-prompt-state.ts#L110), so materializing once and reusing the serialization for measurement and digest is roughly net neutral. A benchmark on a long transcript of 200 or more messages, before and after step 4, is the gate.
+The gate is 30 completed calls, no compaction while the prepared request fits, and successful reduction or compaction when authoritative evidence shows a real overflow.
 
-Byte drift during migration is the quiet risk, since reordering transforms could change materialized bytes and invalidate provider prompt caches for live sessions. The bound is the per-family snapshot suite introduced in step 2, asserting byte-identical output between the wrapper onion and the transform plan for representative contexts before each conversion PR lands.
+### Lifecycle records
+
+Emit request lifecycle records from the prepared-request path. Move sent-turn decisions, projection adoption, and provider-call accounting to these records. Add fault injection before dispatch, after dispatch, after provider acknowledgement, during streaming, and during process termination.
+
+Delete each superseded flag or counter in the same pull request that moves its last consumer.
+
+### Remaining provider families
+
+Convert one provider family at a time. Each conversion includes body-equivalence snapshots, measurement tests, lifecycle fault tests, and a provider-specific live check when credentials and a safe test route are available.
+
+Response-only wrappers remain unchanged. Provider-specific request transforms move into the common ordered plan.
+
+### Plugin migration and cleanup
+
+Publish the transform API through the plugin SDK. Convert bundled plugins first, document the external migration, and keep the old mutation hook only for the announced compatibility period.
+
+After every built-in provider uses prepared requests, remove the legacy mid-turn precheck, wrapper-side request accounting, temporary digest assertions, and any remaining predictive sent-state code.
+
+### Optional measurement calibration
+
+Compare each prepared-request estimate with the provider usage returned for the same digest. Use this evidence to improve conservative bounds for provider and model families. Calibration must not turn uncertain evidence into an authoritative overflow decision.
+
+## Risks and controls
+
+### Provider request drift
+
+Reordering transforms can change messages, tools, headers, or prompt-cache prefixes. Per-family snapshots compare old and new provider bodies before each conversion lands. The first transport split is a pure refactor so request drift is separate from admission behavior.
+
+### False reduction
+
+A weak estimate can remove useful context. Only authoritative or bounded evidence can produce `too_large`. Uncertain requests are sent and can recover from a typed provider overflow.
+
+### Duplicate work
+
+A failed request can leave dispatch outcome unknown. Lifecycle records keep this state explicit. Context recovery never reruns completed tools, and provider retries follow idempotency support when the provider offers it.
+
+### Performance and memory
+
+Materialization must happen once on the normal path. Dispatch reuses the prepared body and serialization. A benchmark with at least 200 messages, large tool schemas, media, and large tool results compares build time, peak memory, and time to first provider byte before behavior changes are enabled.
+
+### Plugin compatibility
+
+The existing `StreamFn` contract remains. External request mutation moves through a documented deprecation period because OpenClaw has a shipped plugin contract. Converted providers cannot silently use the legacy path.
+
+## Acceptance criteria
+
+The work is complete when all of these statements are true:
+
+- The admitted request digest equals the dispatched request digest.
+- The 30-call regression completes all 30 calls without unnecessary compaction.
+- A request with at least 98,316 tokens of measured headroom is not rejected by the old local estimate.
+- A truly oversized request reduces tool results first and compacts only when needed.
+- An uncertain estimate does not trigger compaction.
+- No recovery path repeats a completed tool call.
+- Failures at each lifecycle stage produce the expected durable and in-memory state.
+- Built-in providers use the prepared-request contract or report an explicit legacy capability.
+- Plugin SDK API checks and protocol baselines pass.
+- No diagnostic output contains provider request content or credentials.
+- Performance stays within the limits agreed before the behavior-changing pull request starts.
 
 ## Verification
 
-The invariant the design exists to establish is that the measured request and the dispatched request are the same object. Development builds check it on every call through the digest assertion. A property-style suite runs representative transform plans, including `extra_body` replacing `messages`, the code-mode filter, and both web-search swaps, and asserts measured digest equals dispatched digest for every family. The historical incidents become named regression tests. The web-search case asserts the measured tool surface is the native 23-token tool instead of the 498-token managed one, and the extra-body case asserts admission sees the replacement messages.
+Each provider conversion runs focused provider and agent tests, followed by the repository gates:
 
-Record removal is proven by fault injection at the boundary, per the repo's testing doctrine. Kill the transport before dispatch and assert no turn is marked sent, no projection is adopted, and the retry materializes fresh. Abort after dispatch and assert the turn is sent and late media appends. Restart mid-turn and assert the transcript-derived fallback gives the conservative answer. A mock-gateway harness run covering a full tool loop with one induced overflow provides the channel-visible proof for the landing PR.
+```bash
+pnpm tsgo:prod
+pnpm tsgo:test
+pnpm check
+pnpm test
+```
 
-Live proof closes the loop on measurement with one session per provider family logging estimated tokens against `usage.input`, the delta expected inside the calibrated margin, and the context-budget status showing `pressureSource` as the materialized request. The old failure modes are demonstrated gone when the PR #116551 regression suite passes with provider-prompt-accounting.ts, the final-payload guard, and the dispatch-commit hook deleted, because those tests encoded each historical divergence and now hold without the scaffolding that patched them.
+The focused suite must include payload snapshots, transform ordering, digest identity, measurement certainty, reduction monotonicity, true overflow, uncertain overflow, and lifecycle fault injection.
+
+The OpenAI behavior change also runs the deterministic 30-call local test against an isolated OpenAI-compatible server. A live test then uses the same 30-call shape with a fixed context budget and records request count, provider input usage, admission decisions, compaction count, context-limit errors, and final completion. Live artifacts store only digests and counts.
+
+A provider family is complete only after its focused tests, type checks, repository checks, local behavior proof, and applicable live proof all pass on the exact reviewed revision.
+
+## Open questions
+
+The first transport-split review must settle three details before behavior changes land:
+
+- The stable plugin type for request transforms and provider-family bodies.
+- The lifecycle stage used by each existing sent-turn consumer.
+- The performance limits for request build time and peak memory.
+
+These questions do not change the main rule. OpenClaw must measure and dispatch the same prepared request, and uncertain measurements must preserve context.
