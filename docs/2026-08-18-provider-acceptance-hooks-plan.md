@@ -25,7 +25,9 @@ The following built-in paths do not provide equivalent behavior:
 
 The embedded agent runner installs `onResponse` for model-call diagnostics. Missing calls leave the response status unknown even after generation starts. Other consumers also cannot tell whether request setup failed or the provider accepted the request.
 
-A runtime reproduction on current `main` is still required. It must show a successful provider stream and a zero-call `onResponse` spy for at least one direct transport and one forwarding wrapper. The result must include a working OpenAI control case.
+A deterministic runtime reproduction on the same revision confirmed the issue. A direct Mistral request made one mocked fetch, completed with `stop`, and returned `mistral-ok`, while `onResponse` ran zero times. Anthropic Vertex and Bedrock Mantle both completed with `stop`, but neither forwarded the callback. The OpenAI Completions control made one mocked fetch, called `onResponse` once with the real status and headers, and invoked it before the first stream event. No external network or credentials were used.
+
+Further inspection found two related SDK-backed paths. The canonical Anthropic Messages transport and the OpenAI Responses WebSocket transport can observe an accepted provider stream but do not own HTTP metadata. The bundled Google SSE transport and Ollama own real HTTP responses and can report their exact metadata.
 
 ## Problem
 
@@ -65,7 +67,7 @@ type ProviderAcceptance =
     };
 ```
 
-Expose it through a request-lifecycle callback with an attempt identifier owned by the caller. The final public name must align with the provider-egress lifecycle work. `provider_accepted` is the lifecycle stage; the receipt is its evidence.
+Expose it through a request-lifecycle callback. The caller keeps request correlation through the existing `requestId` option, so the receipt does not copy or invent an identifier. `provider_accepted` is the lifecycle stage; the receipt is its evidence.
 
 Keep `onResponse` as a compatibility callback for transports that hold a real HTTP response. Do not call it with synthetic metadata. Internal diagnostics move to the acceptance receipt and record HTTP status only for the `http_response` case.
 
@@ -81,9 +83,9 @@ An observed retry can emit one receipt per accepted attempt. An SDK that hides i
 
 Convert the affected providers in small groups:
 
-1. Fix Ollama as the raw HTTP case and verify real status and headers.
-2. Fix Google and Mistral as SDK-backed cases with unavailable HTTP metadata.
-3. Fix Google extension transport, Anthropic Vertex, and Bedrock Mantle forwarding.
+1. Fix Ollama and the bundled Google SSE transport as raw HTTP cases with real status and headers.
+2. Fix Google, Mistral, canonical Anthropic Messages, and OpenAI Responses WebSocket as SDK-backed cases with unavailable HTTP metadata.
+3. Fix Anthropic Vertex and Bedrock Mantle forwarding.
 4. Move model-call diagnostics to the canonical receipt.
 
 Each conversion removes its local omission. No provider can advertise the new lifecycle capability and then skip the shared helper.
@@ -96,12 +98,12 @@ This work does not change prompt admission, compaction, provider payloads, tool 
 
 The work is complete when all of these statements are true:
 
-- The current-main failure is reproduced before implementation.
+- The current-main failure is reproduced before implementation, with Mistral and two forwarding wrappers failing while the OpenAI control passes.
 - Every affected successful transport emits one observable acceptance receipt.
 - Ollama supplies its real HTTP status and headers.
 - SDK-backed providers explicitly report unavailable HTTP metadata.
 - A pre-response network or setup failure emits no receipt.
-- Forwarding wrappers preserve the callback and attempt identity.
+- Forwarding wrappers preserve the callback and caller-owned request identity.
 - Existing OpenAI `onResponse` behavior remains unchanged.
 - Diagnostics distinguish accepted-without-metadata from no accepted request.
 - Focused tests, type checks, plugin SDK checks, and repository gates pass.
