@@ -27,7 +27,11 @@ The embedded agent runner installs `onResponse` for model-call diagnostics. Miss
 
 A deterministic runtime reproduction on the same revision confirmed the issue. A direct Mistral request made one mocked fetch, completed with `stop`, and returned `mistral-ok`, while `onResponse` ran zero times. Anthropic Vertex and Bedrock Mantle both completed with `stop`, but neither forwarded the callback. The OpenAI Completions control made one mocked fetch, called `onResponse` once with the real status and headers, and invoked it before the first stream event. No external network or credentials were used.
 
-Further inspection found two related SDK-backed paths. The canonical Anthropic Messages transport and the OpenAI Responses WebSocket transport can observe an accepted provider stream but do not own HTTP metadata. The bundled Google SSE transport and Ollama own real HTTP responses and can report their exact metadata.
+Further inspection found two related SDK-backed paths. The canonical Anthropic Messages transport and the OpenAI Responses WebSocket transport can observe an accepted provider stream but do not own HTTP metadata. The bundled Google SSE transport and Ollama own real HTTP responses and can report their exact metadata. Bedrock exposes real status and request metadata through its SDK response.
+
+## Implementation status
+
+[openclaw/openclaw#125807](https://github.com/openclaw/openclaw/pull/125807) implements this plan. It remains open and unmerged. The implementation also prevents rejected ChatGPT Responses attempts from being marked accepted and cancels unread HTTP response bodies when an acceptance callback fails.
 
 ## Problem
 
@@ -83,7 +87,7 @@ An observed retry can emit one receipt per accepted attempt. An SDK that hides i
 
 Convert the affected providers in small groups:
 
-1. Fix Ollama and the bundled Google SSE transport as raw HTTP cases with real status and headers.
+1. Fix Ollama, Bedrock, and the bundled Google SSE transport as cases with real status and headers.
 2. Fix Google, Mistral, canonical Anthropic Messages, and OpenAI Responses WebSocket as SDK-backed cases with unavailable HTTP metadata.
 3. Fix Anthropic Vertex and Bedrock Mantle forwarding.
 4. Move model-call diagnostics to the canonical receipt.
