@@ -372,9 +372,10 @@ provides a reliable signal.
 Use the shared OpenAI completions transport.
 
 The managed b10357 server accepts both OpenAI `json_schema` and llama.cpp
-`json_object` response formats. Do not port the old unconditional
-response-format rewrite. Set the model compatibility data needed for the shared
-transport and prove structured output against b10357 and current upstream.
+`json_object` response formats. An external b9204 server ignored the nested
+OpenAI shape during live testing and returned fenced JSON instead of constrained
+JSON. Map structured-output requests to llama.cpp's direct `json_object` schema
+shape. This shape works on b9204, b10357, and current upstream.
 
 Keep the narrow thinking-off patch if live tests still show that a reasoning
 chat template continues thinking when OpenClaw selects `off`:
@@ -511,8 +512,9 @@ edit generated plugin reference files by hand.
 4. Update imports to current public Plugin SDK paths.
 5. Reuse current shared provider helpers where they preserve the
    llama.cpp-specific contract.
-6. Re-derive the request patch from b10357 and current upstream instead of
-   copying the old response-format rewrite.
+6. Re-derive the request patch from live external-server behavior, b10357, and
+   current upstream. Keep the direct `json_object` mapping required by b9204 and
+   accepted by newer builds.
 7. Commit the provider with focused unit tests passing.
 
 ### Manifest and setup
