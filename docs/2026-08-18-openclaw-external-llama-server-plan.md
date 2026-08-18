@@ -134,9 +134,10 @@ The user owns:
 - Router load and unload policy.
 - Process supervision and restarts.
 
-`models.providers.llama-server.localService` is outside this contract. The
-provider must reject it with a clear message instead of starting a process.
-Users who want OpenClaw to own the process must use `llama-cpp`.
+New external setup never writes `models.providers.llama-server.localService`.
+Existing manual configurations that already use the generic `localService`
+contract continue to work so the new provider does not break upgrades. New
+managed configurations use `llama-cpp`.
 
 ### Source layout
 
@@ -572,7 +573,8 @@ standalone external tests. It must prove:
 - Tool schemas use the shared llama.cpp profile.
 - Structured output uses the current upstream request shape.
 - Thinking off sends the tested llama.cpp template option only when required.
-- `llama-server.localService` is rejected.
+- New external setup does not create `llama-server.localService`, while existing
+  explicit configurations keep working.
 - Manifest and runtime registration agree.
 
 ### Repository checks
@@ -651,8 +653,9 @@ The change is ready when:
 - A user can configure an existing server without writing model metadata by
   hand.
 - Managed and external providers work at the same time.
-- External requests never start, stop, install, download, or reconfigure a
-  server.
+- New external setup never starts, stops, installs, downloads, or reconfigures a
+  server; existing explicit `localService` configurations retain their current
+  behavior.
 - Discovery is passive, bounded, cancellable, and safe for private endpoints.
 - Auth and cache state stay scoped to the external endpoint and profile.
 - Tool calls and structured output pass against the official server.
