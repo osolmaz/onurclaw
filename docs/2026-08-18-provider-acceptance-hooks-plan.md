@@ -1,62 +1,51 @@
 ---
-title: Provider acceptance hooks plan
+title: Provider acceptance plan
 author: Onur Solmaz <2453968+osolmaz@users.noreply.github.com>
 date: 2026-08-18
+updated: 2026-08-21
 ---
 
-# Provider acceptance hooks plan
+# Provider acceptance plan
 
-Some OpenClaw transports accept the shared `onResponse` option but never call it after a successful provider request. This issue was found while reviewing [openclaw/openclaw#116551](https://github.com/openclaw/openclaw/pull/116551). It has no separate user report.
+Some OpenClaw transports accept the shared `onResponse` option but do not call it after a successful provider request. This issue was found while reviewing [openclaw/openclaw#116551](https://github.com/openclaw/openclaw/pull/116551). It has no separate user report.
 
-This plan defines a truthful provider-acceptance signal. It supports the request lifecycle in the [provider request egress plan](2026-08-05-provider-request-egress-design-plan.md) without copying the broad hook patches from #116551.
+OpenClaw needs truthful acceptance data for built-in model diagnostics. It does not yet have evidence that third-party provider plugins need a new lifecycle API. This plan keeps the signal private until that need exists.
 
 ## Current evidence
 
-On OpenClaw `main` at `7c65bbcee31bd31fa5b46c84f3a3f54c2cc522fb`, `StreamOptions` documents `onResponse` as a callback that runs after an HTTP response arrives and before its body stream is consumed.
+On OpenClaw `main` at `7c65bbcee31bd31fa5b46c84f3a3f54c2cc522fb`, `StreamOptions.onResponse` means that a transport received a real HTTP response before consuming its body.
 
-OpenAI Completions follows that contract. It obtains the real `Response`, records its status and headers, and invokes the hook before stream events are consumed.
+OpenAI Completions follows that contract. Several other built-in paths do not:
 
-The following built-in paths do not provide equivalent behavior:
+- Ollama and the bundled Google SSE transport receive real HTTP responses without calling `onResponse`.
+- Mistral SDK 2.5.0 exposes each real response through its public `HTTPClient` response hook, but OpenClaw does not use it.
+- Anthropic Vertex and Bedrock Mantle rebuild stream options without forwarding `onResponse`.
+- Google SDK and OpenAI Responses WebSocket paths can observe provider acceptance but do not expose complete HTTP metadata.
 
-- Google and Mistral open successful SDK streams without calling `onResponse`.
-- The bundled Google transport opens a successful SSE stream without calling it.
-- Anthropic Vertex and Bedrock Mantle do not forward `onResponse` to their underlying transport.
-- Ollama receives a real HTTP `Response` but does not call the hook.
+The embedded agent runner uses response data for model-call diagnostics. A successful opaque SDK or WebSocket stream can therefore look the same as a request that failed before provider acceptance.
 
-The embedded agent runner installs `onResponse` for model-call diagnostics. Missing calls leave the response status unknown even after generation starts. Other consumers also cannot tell whether request setup failed or the provider accepted the request.
-
-A deterministic runtime reproduction on the same revision confirmed the issue. A direct Mistral request made one mocked fetch, completed with `stop`, and returned `mistral-ok`, while `onResponse` ran zero times. Anthropic Vertex and Bedrock Mantle both completed with `stop`, but neither forwarded the callback. The OpenAI Completions control made one mocked fetch, called `onResponse` once with the real status and headers, and invoked it before the first stream event. No external network or credentials were used.
-
-Further inspection found two related SDK-backed paths. The canonical Anthropic Messages transport and the OpenAI Responses WebSocket transport can observe an accepted provider stream but do not own HTTP metadata. The bundled Google SSE transport and Ollama own real HTTP responses and can report their exact metadata. Bedrock exposes real status and request metadata through its SDK response.
-
-## Implementation status
-
-[openclaw/openclaw#125807](https://github.com/openclaw/openclaw/pull/125807) implements this plan. It remains open and unmerged. The implementation also prevents rejected ChatGPT Responses attempts from being marked accepted and cancels unread HTTP response bodies when an acceptance callback fails.
-
-## Problem
-
-A manual patch in each provider is easy to miss when a transport is added or rewritten. It also encourages fake values such as status `200` and empty headers when an SDK hides the HTTP response. Fake metadata makes diagnostics look complete when the transport did not observe those facts.
-
-Provider acceptance and HTTP response metadata are related but different facts. Some transports own a raw HTTP response. Other transports only know that an SDK returned an open provider stream. OpenClaw needs one contract that represents both cases honestly.
+A deterministic reproduction confirmed the missing response calls in Mistral and the two wrappers. A live Ollama 0.24.0 run also completed successfully without calling `onResponse`.
 
 ## Requirements
 
-The fix must satisfy these rules:
+The repair must satisfy these rules:
 
-- Every built-in text transport reports provider acceptance at the earliest reliable point.
-- A raw HTTP transport reports the real status and headers.
-- An SDK-backed transport says that HTTP metadata is unavailable.
-- No transport invents a status, headers, retries, or request identifier.
-- A setup or connection failure before acceptance emits no acceptance event.
-- Wrappers forward the acceptance contract without provider-specific glue.
-- Retry behavior reports only attempts that the transport can observe.
-- Existing `onResponse` consumers keep their current behavior for real HTTP responses.
+- Keep the supported Plugin SDK unchanged.
+- Keep `onResponse` for real HTTP responses and never fabricate status or headers.
+- Record built-in provider acceptance at the earliest reliable transport boundary.
+- Keep the acceptance observer private to OpenClaw.
+- Preserve the private observer when built-in wrappers copy stream options.
+- Do not let diagnostics add global state or infer acceptance from tokens.
+- A setup or connection failure before acceptance must record no acceptance.
+- Existing `onResponse` consumers must keep their current behavior.
 
 ## Design
 
-### Provider acceptance receipt
+### Private acceptance observer
 
-Add one typed receipt for the fact that a provider accepted or opened a request:
+Carry one private, symbol-keyed observer on the per-call provider options object. This follows the existing private provider-context handoff pattern.
+
+The observer receives one internal discriminated value:
 
 ```ts
 type ProviderAcceptance =
@@ -67,64 +56,68 @@ type ProviderAcceptance =
     }
   | {
       kind: "provider_stream_opened";
-      httpMetadata: "unavailable";
     };
 ```
 
-Expose it through a request-lifecycle callback. The caller keeps request correlation through the existing `requestId` option, so the receipt does not copy or invent an identifier. `provider_accepted` is the lifecycle stage; the receipt is its evidence.
+The embedded runner attaches the observer when it creates the model-call options. Built-in transports call an internal helper after a successful HTTP response or after an opaque SDK or WebSocket stream opens. Object spreads preserve the symbol. Wrappers that rebuild options use one internal copy helper.
 
-Keep `onResponse` as a compatibility callback for transports that hold a real HTTP response. Do not call it with synthetic metadata. Internal diagnostics move to the acceptance receipt and record HTTP status only for the `http_response` case.
+The symbol, type, and helpers stay in `@openclaw/ai/transports`. Bundled plugins receive only the needed helpers through the existing private-local `openclaw/plugin-sdk/provider-transport-runtime` seam. OpenClaw does not add a supported Plugin SDK subpath or a public `StreamOptions` field.
 
-### Shared transport boundary
+### HTTP compatibility
 
-Put acceptance dispatch in one shared transport helper. A transport calls the helper after the HTTP response passes status checks or after an SDK returns an open stream, and before the first model event is exposed.
+Real HTTP paths continue to call `onResponse` with observed status and headers. The shared internal helper also reports accepted 2xx responses to diagnostics. Rejected responses call only `onResponse`.
 
-The helper emits the canonical acceptance receipt and then adapts a real HTTP receipt to the existing `onResponse` callback. Wrappers pass the lifecycle callback through unchanged. They do not reconstruct receipts.
+If an awaited `onResponse` callback fails, the transport cancels the unread body or stream before returning the callback error.
 
-An observed retry can emit one receipt per accepted attempt. An SDK that hides its internal retries emits only the final stream-opened receipt that OpenClaw can observe.
+### Opaque streams
 
-### Provider conversion
+Google SDK and OpenAI Responses WebSocket paths report `provider_stream_opened` through the private observer. They do not call `onResponse` and do not invent HTTP metadata.
 
-Convert the affected providers in small groups:
+The observer is internal diagnostics plumbing. A failure in that plumbing must close an unread stream and must not leave provider resources open.
 
-1. Fix Ollama, Bedrock, and the bundled Google SSE transport as cases with real status and headers.
-2. Fix Google, Mistral, canonical Anthropic Messages, and OpenAI Responses WebSocket as SDK-backed cases with unavailable HTTP metadata.
-3. Fix Anthropic Vertex and Bedrock Mantle forwarding.
-4. Move model-call diagnostics to the canonical receipt.
+## Scope
 
-Each conversion removes its local omission. No provider can advertise the new lifecycle capability and then skip the shared helper.
+Change the built-in Anthropic, Bedrock, Google, Mistral, Ollama, OpenAI HTTP, OpenAI WebSocket, ChatGPT/Codex, and wrapper paths already covered by [openclaw/openclaw#126028](https://github.com/openclaw/openclaw/pull/126028).
+
+Remove these unshipped public additions from the pull request:
+
+- `StreamOptions.onProviderAccepted`
+- the public `ProviderAcceptance` export
+- `openclaw/plugin-sdk/provider-lifecycle`
+- public provider-plugin documentation for the lifecycle helpers
 
 ## Non-goals
 
-This work does not change prompt admission, compaction, provider payloads, tool execution, or retry policy. It does not fabricate HTTP metadata for SDK-backed providers. It does not copy the provider-prompt state system from #116551.
+This work does not add a third-party plugin lifecycle API. It does not change prompt admission, compaction, provider payloads, tool execution, retry policy, configuration, persistent data, or Gateway protocol.
+
+A future external plugin requirement can promote the proven private contract through a separate maintainer decision.
 
 ## Acceptance criteria
 
 The work is complete when all of these statements are true:
 
-- The current-main failure is reproduced before implementation, with Mistral and two forwarding wrappers failing while the OpenAI control passes.
-- Every affected successful transport emits one observable acceptance receipt.
-- Ollama supplies its real HTTP status and headers.
-- SDK-backed providers explicitly report unavailable HTTP metadata.
-- A pre-response network or setup failure emits no receipt.
-- Forwarding wrappers preserve the callback and caller-owned request identity.
-- Existing OpenAI `onResponse` behavior remains unchanged.
-- Diagnostics distinguish accepted-without-metadata from no accepted request.
-- Focused tests, type checks, plugin SDK checks, and repository gates pass.
+- The supported Plugin SDK surface has no provider-acceptance additions.
+- Every affected built-in successful transport records private acceptance once.
+- HTTP transports report only real status and headers.
+- Opaque SDK and WebSocket transports report no fake HTTP metadata.
+- Pre-acceptance failures record no acceptance.
+- Built-in wrappers preserve the private observer and existing `onResponse` callback.
+- Existing `onResponse` behavior remains unchanged.
+- Diagnostics distinguish accepted opaque streams from requests that never reached the provider.
+- Focused tests, changed checks, build, Plugin SDK checks, Pi review, and exact-head CI pass.
 
 ## Verification
 
-Add contract tests that run a successful stream, a setup failure, and a callback failure through the shared helper. Add focused tests for OpenAI Completions, Ollama, Google, Mistral, the Google extension transport, Anthropic Vertex, and Bedrock Mantle.
+Use deterministic mocked provider clients. Do not use live credentials or external network calls.
 
-For the reproduction, use spies with deterministic mocked provider clients. Consume each stream to completion and record the hook count and receipt. Do not use live credentials or external network calls.
-
-Run the focused tests and then the repository gates:
+Run the focused provider and diagnostic tests, then run:
 
 ```bash
-pnpm tsgo:prod
-pnpm tsgo:test
-pnpm check
-pnpm test
+node scripts/check-changed.mjs --base upstream/main --timed
+pnpm build
+pnpm plugin-sdk:surface:check
+node scripts/check-plugin-sdk-subpath-exports.mts
+pi-reviewer --base upstream/main
 ```
 
-The implementation must stop if a provider cannot expose either a real HTTP response or a reliable stream-opened point. Record that provider as blocked instead of inventing acceptance evidence.
+Stop before merge. The pull request must remain open for maintainer review.
